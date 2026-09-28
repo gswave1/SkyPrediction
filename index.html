@@ -1,0 +1,2076 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Golden Hour Board</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#E9EDF2; --surface:#FFFFFF; --surface-2:#F4F6F9;
+  --ink:#111820; --ink-2:#3A4655; --muted:#65758A; --line:#D0D9E4; --line-soft:#E2E8F0;
+  --ember:#C2461A; --dusk:#4A4A8F; --good:#1B7F62; --warn:#B0811C; --cold:#5B7590; --bad:#A3302A;
+  --good-soft:#DDF1E9; --good-ink:#0F5C46; --cirrus:#5B4FC4; --cirrus-soft:#E7E4FA; --cirrus-ink:#3E3496; --sun:#E8792B; --ray:#F0A04B; --ground:#8A9AAD;
+  --shadow:0 1px 2px rgba(17,24,32,.06), 0 8px 24px -12px rgba(17,24,32,.18);
+  --radius:12px;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0C1117; --surface:#141C25; --surface-2:#1B242F;
+    --ink:#E6ECF3; --ink-2:#BCC8D6; --muted:#8B9AAB; --line:#26313D; --line-soft:#1E2833;
+    --ember:#E9703F; --dusk:#8F8FD6; --good:#43B896; --warn:#D9A93F; --cold:#8DA6BF; --bad:#E0655C;
+    --good-soft:#12332A; --good-ink:#7FE0C0; --cirrus:#9C92F0; --cirrus-soft:#241F4A; --cirrus-ink:#C9C2FF; --sun:#F29A4F; --ray:#F5B26B; --ground:#56667A;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0C1117; --surface:#141C25; --surface-2:#1B242F;
+  --ink:#E6ECF3; --ink-2:#BCC8D6; --muted:#8B9AAB; --line:#26313D; --line-soft:#1E2833;
+  --ember:#E9703F; --dusk:#8F8FD6; --good:#43B896; --warn:#D9A93F; --cold:#8DA6BF; --bad:#E0655C;
+  --good-soft:#12332A; --good-ink:#7FE0C0; --cirrus:#9C92F0; --cirrus-soft:#241F4A; --cirrus-ink:#C9C2FF; --sun:#F29A4F; --ray:#F5B26B; --ground:#56667A;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+[hidden]{display:none!important}
+.wrap{max-width:920px;margin:0 auto;padding-inline:16px;padding-block:20px 60px}
+h1,h2,h3{margin:0;text-wrap:balance}
+.masthead{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.masthead h1{font-family:var(--display);font-weight:700;font-size:clamp(26px,5.4vw,38px);letter-spacing:-.015em;line-height:1.05}
+.masthead p{margin:6px 0 0;color:var(--muted);font-size:13.5px;max-width:48ch}
+.stamp{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);text-align:right;line-height:1.8}
+.stamp button{margin-top:4px}
+
+button.ghost{appearance:none;background:var(--surface);border:1px solid var(--line);color:var(--ink-2);
+  font:inherit;font-size:12px;font-weight:500;padding:5px 11px;border-radius:999px;cursor:pointer}
+button.ghost:hover{border-color:var(--ember);color:var(--ember)}
+button.ghost:focus-visible,.seg button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--ember);outline-offset:1px}
+button.primary{appearance:none;background:var(--ember);border:1px solid var(--ember);color:#fff;font:inherit;font-size:13px;font-weight:600;padding:7px 15px;border-radius:999px;cursor:pointer}
+
+.controls{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);
+  padding-block:10px;margin-bottom:14px;border-bottom:1px solid var(--line-soft)}
+.ctrl-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.ctrl-row+.ctrl-row{margin-top:8px}
+.seg{display:inline-flex;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px;max-width:100%;overflow-x:auto}
+.seg button{appearance:none;border:0;background:transparent;color:var(--muted);font:inherit;font-size:13px;font-weight:500;
+  padding:6px 13px;border-radius:999px;cursor:pointer;white-space:nowrap;line-height:1.25}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.seg .dayscore{font-family:var(--mono);font-size:10.5px;display:block;color:var(--muted);font-weight:500}
+.slider-box{display:flex;align-items:center;gap:10px;flex:1;min-width:200px;
+  background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:6px 14px}
+.slider-box label{font-size:12px;color:var(--muted);white-space:nowrap}
+.slider-box output{font-family:var(--mono);font-size:12.5px;font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+input[type=range]{flex:1;min-width:60px;accent-color:var(--ember);background:transparent}
+
+.status{padding:12px 15px;border-radius:var(--radius);border:1px solid var(--line);background:var(--surface);
+  font-size:13.5px;color:var(--ink-2);margin-bottom:16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.status.err{border-color:var(--bad);color:var(--bad)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--warn);flex:none}
+.status.err .dot{background:var(--bad)}
+.status.ok .dot{background:var(--good)}
+
+.lede{display:flex;gap:14px;align-items:center;background:var(--surface);border:1px solid var(--line);
+  border-left:4px solid var(--ember);border-radius:var(--radius);padding:14px 16px;margin-bottom:18px;box-shadow:var(--shadow)}
+.lede .big{font-family:var(--mono);font-size:30px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums}
+.lede .txt{font-size:14px;color:var(--ink-2)}
+.lede .txt strong{font-family:var(--display);font-weight:700;color:var(--ink);font-size:16px}
+
+.list{display:flex;flex-direction:column;gap:9px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:13px 15px;
+  display:grid;grid-template-columns:46px 1fr;gap:13px;align-items:start}
+.card.top{border-color:var(--ember);box-shadow:var(--shadow)}
+.rank{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:center;padding-top:2px}
+.score{font-family:var(--mono);font-size:24px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums}
+.head-line{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.name{font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:-.01em}
+.town{font-size:12.5px;color:var(--muted)}
+.meta{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:3px;font-variant-numeric:tabular-nums}
+.verdict{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+  padding:2px 8px;border-radius:999px;border:1px solid currentColor}
+.why{font-size:13.5px;color:var(--ink-2);margin-top:7px}
+.bars{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
+.bar b{display:block;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:3px}
+.track{height:5px;background:var(--surface-2);border-radius:3px;overflow:hidden}
+.track i{display:block;height:100%;border-radius:3px}
+.bar span{font-family:var(--mono);font-size:10.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.nums{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:9px;display:flex;flex-wrap:wrap;gap:4px 12px;font-variant-numeric:tabular-nums}
+.nums em{font-style:normal;color:var(--ink-2)}
+.cardfoot{display:flex;gap:10px;align-items:flex-end;justify-content:space-between;margin-top:9px;flex-wrap:wrap}
+.trend{display:flex;gap:3px;align-items:flex-end;height:22px}
+.trend div{width:11px;border-radius:2px 2px 0 0;opacity:.5}
+.trend div.now{opacity:1}
+.cardlinks{display:flex;gap:8px}
+.cardlinks a,.cardlinks button{font-size:11.5px}
+
+.matrix-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:4px}
+table.matrix{border-collapse:collapse;width:100%;font-size:12.5px}
+table.matrix th,table.matrix td{padding:6px 8px;text-align:right;border-bottom:1px solid var(--line-soft);white-space:nowrap}
+table.matrix th:first-child,table.matrix td:first-child{text-align:left;position:sticky;left:0;background:var(--surface)}
+table.matrix thead th{font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600}
+table.matrix td.cell{font-family:var(--mono);font-weight:600;font-variant-numeric:tabular-nums}
+table.matrix td.cell span{display:inline-block;min-width:36px;padding:2px 6px;border-radius:5px}
+
+dialog{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);color:var(--ink);
+  padding:0;max-width:640px;width:calc(100% - 32px);box-shadow:var(--shadow)}
+dialog::backdrop{background:rgba(8,12,18,.55)}
+.dlg-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.dlg-head h2{font-family:var(--display);font-size:19px;font-weight:700}
+.dlg-body{padding:16px 18px;max-height:min(70vh,640px);overflow:auto}
+.dlg-foot{padding:12px 18px;border-top:1px solid var(--line);display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+.spotrow{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line-soft)}
+.spotrow .sname{font-weight:500;font-size:14px}
+.spotrow .sdet{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px 12px}
+.field{display:flex;flex-direction:column;gap:4px}
+.field label{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.field input,.field select{font:inherit;font-size:14px;padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink)}
+.arcbox{display:flex;gap:14px;align-items:center;margin-top:12px;padding:12px;background:var(--surface-2);border-radius:10px}
+.arcbox p{margin:0;font-size:12.5px;color:var(--muted)}
+.modelpick{display:flex;align-items:center;gap:8px;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:5px 8px 5px 14px}
+.modelpick label{font-size:12px;color:var(--muted)}
+.modelpick select{font:inherit;font-size:13px;font-weight:500;border:0;background:transparent;color:var(--ink);padding:3px 4px;border-radius:999px;cursor:pointer}
+.agreenote{font-family:var(--mono);font-size:11.5px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.models{display:flex;flex-wrap:wrap;gap:4px 10px;margin-top:9px;font-family:var(--mono);font-size:11px;align-items:center}
+.models b{font-weight:500;color:var(--muted)}
+.models .off{opacity:.45}
+.models .on b{color:var(--ink-2)}
+.models i{font-style:normal;font-weight:600}
+.chip{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:999px;border:1px solid currentColor}
+.cirrus{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:7px;font-variant-numeric:tabular-nums}
+.cirrus em{font-style:normal;color:var(--ink-2)}
+.combo{position:relative}
+.combo input{font:inherit;font-size:13px;font-weight:500;border:0;background:transparent;color:var(--ink);
+  padding:3px 4px;min-width:170px;border-radius:999px}
+.combo input::placeholder{color:var(--muted);font-weight:400}
+.clearx{appearance:none;border:0;background:transparent;color:var(--muted);font-size:16px;line-height:1;
+  cursor:pointer;padding:0 6px;border-radius:999px}
+.clearx:hover{color:var(--ember)}
+.combolist{position:absolute;top:calc(100% + 6px);left:0;min-width:270px;max-height:300px;overflow:auto;z-index:40;
+  background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);padding:4px}
+.combolist button{display:block;width:100%;text-align:left;appearance:none;border:0;background:transparent;
+  color:var(--ink);font:inherit;font-size:13.5px;padding:7px 10px;border-radius:7px;cursor:pointer}
+.combolist button:hover,.combolist button[aria-selected="true"]{background:var(--surface-2)}
+.combolist button span{display:block;font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.combolist .none{padding:10px;font-size:13px;color:var(--muted)}
+#mapWrap{position:relative;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface)}
+#map{height:min(70vh,640px);min-height:380px;width:100%;background:var(--surface-2)}
+.leaflet-container{font-family:var(--sans);background:var(--surface-2)}
+.leaflet-popup-content-wrapper{background:var(--surface);color:var(--ink);border-radius:10px;box-shadow:var(--shadow)}
+.leaflet-popup-tip{background:var(--surface)}
+.leaflet-popup-content{margin:12px 14px;width:264px!important}
+.leaflet-bar a,.leaflet-bar a:hover{background:var(--surface);color:var(--ink);border-bottom-color:var(--line)}
+.mappop .t{font-family:var(--display);font-weight:700;font-size:15px;line-height:1.2}
+.mappop .s{font-size:11.5px;color:var(--muted);margin-top:2px}
+.mappop .m{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:5px;font-variant-numeric:tabular-nums}
+.mappop .w{font-size:12.5px;color:var(--ink-2);margin-top:7px}
+.mappop .near{margin-top:9px;border-top:1px solid var(--line-soft);padding-top:7px;font-size:11.5px;color:var(--muted)}
+.mappop .near b{display:block;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+.mappop .near div{display:flex;justify-content:space-between;gap:8px;padding:1px 0}
+.mappop .near i{font-style:normal;font-family:var(--mono);font-weight:600}
+.mappop .acts{display:flex;gap:6px;margin-top:9px}
+.mapbadge{position:absolute;z-index:500;background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  padding:8px 11px;font-size:11px;box-shadow:var(--shadow)}
+.maplegend{bottom:12px;left:12px}
+.mapstyle{top:12px;left:52px;display:flex;gap:4px;padding:5px 6px;flex-wrap:wrap;max-width:calc(100% - 70px)}
+.mapstyle button{font-size:11.5px;padding:3px 9px}
+.mapstyle button[aria-pressed="true"]{border-color:var(--ember);color:var(--ember)}
+.mapstyle button.needskey{opacity:.5}
+.mapwarn{bottom:12px;right:12px;max-width:320px;color:var(--bad);border-color:var(--bad);line-height:1.5}
+.maplegend b{display:block;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.maplegend span{display:flex;align-items:center;gap:6px;line-height:1.7;color:var(--ink-2)}
+.maplegend i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.mapcount{top:12px;right:12px;font-family:var(--mono);color:var(--muted)}
+.leaflet-tooltip.maptop{background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  font-family:var(--sans);font-size:11.5px;font-weight:600;box-shadow:var(--shadow);padding:3px 7px;border-radius:6px}
+.leaflet-tooltip.maptop::before{border-right-color:var(--line)}
+.mapfail{padding:28px;text-align:center;color:var(--muted)}
+.focushead{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:15px 17px;margin-bottom:12px}
+.focushead h2{font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.015em}
+.focustitle{font-family:var(--display);font-size:15px;font-weight:700;margin:18px 0 8px}
+.ftable td.ev{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:left}
+.ftable td.best span:first-child{outline:2px solid var(--ember)}
+.name.link{cursor:pointer;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.name.link:hover{text-decoration-color:var(--ember);color:var(--ember)}
+.note{margin-top:26px;border-top:1px solid var(--line);padding-top:16px;font-size:13px;color:var(--muted)}
+.note h3{font-family:var(--display);font-size:15px;color:var(--ink);margin-bottom:6px;font-weight:700}
+.note p{margin:0 0 8px}
+.note code{font-family:var(--mono);font-size:11.5px;color:var(--ink-2)}
+.empty{padding:26px;text-align:center;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:var(--radius)}
+a{color:var(--ember)}
+@media (max-width:540px){
+  .card{grid-template-columns:40px 1fr;gap:10px;padding:12px}
+  .bars{grid-template-columns:repeat(2,1fr)}
+  .grid2{grid-template-columns:1fr}
+}
+
+/* ---- sky visual: open-horizon + cirrus flags, side view, panels (Sep 27 2026) ---- */
+.skyflags{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.skyflag{border-radius:10px;padding:8px 10px;display:flex;gap:9px;align-items:center;border:1.5px solid}
+.skyflag svg{flex:none}
+.skyflag strong{display:block;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;line-height:1.2}
+.skyflag span{font-size:12px;line-height:1.35;display:block;margin-top:1px}
+.skyflag.open{background:var(--good-soft);color:var(--good-ink);border-color:var(--good)}
+.skyflag.cirf{background:var(--cirrus-soft);color:var(--cirrus-ink);border-color:var(--cirrus)}
+.skyflag.warnf{background:var(--surface-2);color:var(--warn);border-color:var(--warn)}
+.skyflag.blocked{background:var(--surface-2);color:var(--ink-2);border-color:var(--line)}
+.skyx{margin-top:10px;background:var(--surface-2);border:1px solid var(--line-soft);border-radius:10px;padding:4px 4px 0}
+.skyx svg{display:block;width:100%;height:auto}
+.skyx text{font-family:var(--mono)}
+.skypanels{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:10px}
+.skypanel h5{margin:0 0 8px;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+.skypanel.cir h5{color:var(--cirrus)} .skypanel.hor h5{color:var(--good)}
+.skym{display:grid;grid-template-columns:50px 1fr 56px;gap:8px;align-items:center;margin-bottom:6px;font-size:12px}
+.skym .m{font-family:var(--mono);font-weight:600;font-size:11px}
+.skym .v{font-family:var(--mono);font-size:11.5px;text-align:right;font-variant-numeric:tabular-nums}
+.skym .v s{color:var(--muted)} .skym .v b{color:var(--cirrus)} .skym .v b.cut{color:var(--bad)}
+.skym .tk{height:9px;background:var(--line-soft);border-radius:5px;position:relative;overflow:hidden}
+.skym .tk i{position:absolute;inset:0 auto 0 0;border-radius:5px;background:var(--cirrus)}
+.skym .tk i.ghost{background:repeating-linear-gradient(45deg,var(--cirrus) 0 3px,transparent 3px 6px);opacity:.55}
+.skynote{font-size:11.5px;color:var(--muted);margin:-2px 0 8px;line-height:1.35}
+.skyprof{display:flex;gap:5px}
+.skyprof div{flex:1;text-align:center;font-family:var(--mono);font-size:10px;color:var(--muted)}
+.skyprof em{display:block;font-style:normal;font-size:12px;font-weight:600;color:var(--cirrus-ink);padding:4px 0;border-radius:6px;background:var(--cirrus-soft);margin-bottom:2px}
+.skyprof em.zero{color:var(--muted);background:var(--line-soft)}
+.skycells{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.skycell{border:1.5px solid var(--good);background:var(--good-soft);color:var(--good-ink);border-radius:8px;padding:6px 2px;text-align:center}
+.skycell.thin{border-color:var(--warn);background:var(--surface-2);color:var(--warn)}
+.skycell.shut{border-color:var(--bad);background:var(--surface-2);color:var(--bad)}
+.skycell.key{border-width:2.5px}
+.skycell .km{font-family:var(--mono);font-size:10px;opacity:.85}
+.skycell .pct{font-family:var(--mono);font-size:15px;font-weight:600;line-height:1.2}
+.skycell .w{font-size:9px;letter-spacing:.07em;text-transform:uppercase;font-weight:600}
+.skyhnote{font-size:11.5px;color:var(--ink-2);margin-top:8px;line-height:1.4}
+.skyhnote b{color:var(--good)}
+@media (max-width:540px){.skyflags,.skypanels{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div>
+      <h1>Golden Hour Board</h1>
+      <p>Live cloud-model scoring for sunset, sunrise and lake fog across your spots — scored against three weather models at once, ranked by how far you'd have to drive.</p>
+    </div>
+    <div class="stamp">
+      <div id="stampText">—</div>
+      <button class="ghost" id="refreshBtn" type="button">Refresh forecast</button>
+      <button class="ghost" id="spotsBtn" type="button">Edit spots</button>
+    </div>
+  </header>
+
+  <div class="status" id="status"><span class="dot"></span><span id="statusText">Loading forecast…</span></div>
+
+  <div class="controls" id="controls" hidden>
+    <div class="ctrl-row" id="rowEvent">
+      <div class="seg" role="group" aria-label="Event"><button id="ev-sunset" type="button" data-ev="sunset">Sunset</button><button id="ev-sunrise" type="button" data-ev="sunrise">Sunrise</button><button id="ev-fog" type="button" data-ev="fog">Lake fog</button></div>
+      <div class="seg" id="dayseg" role="group" aria-label="Day"></div>
+    </div>
+    <div class="ctrl-row" id="rowFilters">
+      <div class="slider-box">
+        <label for="drive">Max drive</label>
+        <input type="range" id="drive" min="15" max="240" step="5" value="95">
+        <output id="driveOut" for="drive"></output>
+      </div>
+      <div class="seg" role="group" aria-label="View"><button id="view-list" type="button" data-view="list">Ranked</button><button id="view-map" type="button" data-view="map">Map</button><button id="view-matrix" type="button" data-view="matrix">Matrix</button></div>
+    </div>
+    <div class="ctrl-row">
+      <div class="modelpick"><label for="modelSel">Model</label><select id="modelSel"></select></div>
+      <div class="modelpick combo">
+        <label for="spotSearch">Spot</label>
+        <input id="spotSearch" type="text" placeholder="All spots — type to search" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="spotResults" aria-autocomplete="list">
+        <button class="clearx" id="spotClear" type="button" aria-label="Clear spot search" hidden>&times;</button>
+        <div id="spotResults" class="combolist" role="listbox" hidden></div>
+      </div>
+      <div id="agreeNote" class="agreenote"></div>
+    </div>
+  </div>
+
+  <div class="lede" id="lede" hidden></div>
+  <div id="listView" class="list"></div>
+  <div id="matrixView" class="matrix-wrap" hidden><table class="matrix"><thead id="mhead"></thead><tbody id="mbody"></tbody></table></div>
+  <div id="mapWrap" hidden>
+    <div id="map"></div>
+    <div class="mapbadge mapstyle" id="mapStyle">
+      <button class="ghost" type="button" data-mstyle="plain">Map</button>
+      <button class="ghost" type="button" data-mstyle="terrain">Terrain</button>
+      <button class="ghost" type="button" data-mstyle="satellite">Satellite</button>
+      <button class="ghost" type="button" data-mstyle="hybrid">Hybrid</button>
+      <button class="ghost" type="button" id="mapKeyBtn" title="Google Maps key">Key</button>
+    </div>
+    <div class="mapbadge mapwarn" id="mapWarn" hidden></div>
+    <div class="mapbadge maplegend" id="mapLegend"></div>
+    <div class="mapbadge mapcount" id="mapCount"></div>
+  </div>
+  <div id="focusView" hidden></div>
+
+  <div class="note">
+    <h3>How the number is built</h3>
+    <p>Two things have to line up. <em>Horizon</em> asks whether direct light can even get through: the model samples the sky at <span id="probekm">30, 80, 150, 250</span>&nbsp;km out along the sun's true azimuth for that spot and date, and counts low and mid cloud sitting in that corridor. The light that paints cloud overhead has to travel under the deck from 100–300&nbsp;km away, so a solid wall anywhere in that window shuts the show down even when the sky right above you is perfect; the 150&nbsp;km cell counts most, the 30&nbsp;km cell least. The card shows how much of each cell is blocked. <em>Canvas</em> asks whether there's anything overhead worth lighting — high cloud scores best around 55% cover, mid cloud around 45%, and a low deck above you knocks it down hard. <em>Clarity</em> folds in precipitation, visibility and humidity at showtime, plus aerosols from the CAMS air-quality forecast: haze and wildfire smoke don't add colour, they mute it, so aerosol optical depth above about 0.15 starts cutting the score and 0.6+ (smoke) takes up to half of it. Rain that fell 3–18 hours before showtime and has since cleared earns a bonus — post-front air is the cleanest you get. Aerosol data runs about five days out; past that, clarity scores without it. <em>View fit</em> checks whether the sun's azimuth falls inside the arc that spot is actually open to, so a west-facing dock doesn't get credit for a sunrise.</p>
+    <p><code>score = (0.88·canvas + 0.12·view) × (0.5 + 0.5·clarity) × (0.12 + 0.88·horizon)</code> — sky potential, dimmed by dirty air, multiplied by whether the light gets delivered. Each spot is scored on the hour the sun crosses and the adjacent hour on the golden side, blended.</p>
+    <h3>Cirrus, models and fog</h3>
+    <p><em>Cirrus.</em> Every model reports high cloud, but only ECMWF and M&eacute;t&eacute;o-France actually populate cloud at the 300, 250 and 200&nbsp;hPa pressure levels — the cirrus band itself. The app pulls those three levels plus humidity at 300&nbsp;hPa from ECMWF and treats them as <em>evidence about how much high cloud is actually up there</em>, not as a nudge. When the profile confirms cirrus — 25% or more in the band with humid air at 300&nbsp;hPa — the score uses 80% of that reading in place of the scoring model's own high-cloud figure if that figure is lower. When a model claims a lot of high cloud but the band is nearly empty and dry, the deck is almost certainly altostratus sitting lower than the model labels it, and the figure is cut back. The card shows the substitution as <code>6&rarr;26</code> so you can always see when it happened and by how much.</p>
+    <p><em>Model agreement.</em> Consensus scores every spot against three models — HRDPS, HRRR/GFS and ECMWF — and takes a weighted average rather than a flat one. Those three are also the only ones offered: HRDPS resolves this terrain at 2.5&nbsp;km, HRRR at 3&nbsp;km inside a day, and ECMWF carries the medium range. ICON and GEM sat at the bottom of the weighting and GEM partly duplicates HRDPS; UKMO's high-resolution grid covers only the UK, so over New England it was a delayed 10&nbsp;km global. Picking any of the three is free, because the data is already in hand. The weights shift with lead time, because the models don't rank the same at every range. <strong>Inside 24 hours</strong> the convection-allowing HRRR run leads (2.2) with HRDPS behind it (1.5) — that's the same-day planning case. <strong>One to two days out</strong> HRDPS at 2.5&nbsp;km takes over (1.9) and HRRR drops to 1.4. <strong>Past 48 hours</strong> both high-resolution runs have ended, GFS and HRDPS fall back to 1.0, and ECMWF carries the medium range at 1.6. The line under the controls names which band you're in and which model is leading it. The spread between all contributing models is shown beside the score, because an 80 every model sees is a different proposition from an 80 only one of them sees. Pick a single model from the dropdown to score against it alone.</p>
+    <p><em>Forecast horizons.</em> HRDPS stops at about 48 hours and HRRR at a similar range, after which the board falls back to the models that run further out. A model past its horizon is dropped from the average entirely — never counted as clear sky — and the card names which ones dropped out, so a day-five number is visibly built on fewer, coarser opinions than a day-one number.</p>
+    <p><em>Map imagery.</em> All four views — Map, Terrain, Satellite and Hybrid — come from Google Maps, using the Google key set under Key. The same key fills in drive times in the spot editor. Terrain is the one worth having: it shows the ridge a spot sits behind and how much tree cover stands between the pullout and the horizon, which is exactly what the open-arc guesses keep getting wrong.</p>
+    <p><em>The map.</em> Same scores, placed geographically — each spot is a dot coloured by its score for the day and event you're looking at, sized by how good it is. It answers the question the ranked list can't: if one part of the state looks promising, what else is near it. Click a dot and the popup lists every other spot within 25&nbsp;km with its own score, so you can plan a sunset and the blue hour after it, or a sunrise and a fog stop, without driving back out.</p>
+    <p><em>Finding a spot.</em> Type into the Spot box to filter the board down to matching names and towns — "notch", "lake", "kanc" — and the ranked list narrows as you type. Pick one of the suggestions (or press Enter to take the first) and it opens that spot on its own.</p>
+    <p><em>One spot at a time.</em> Choose a spot from the Spot box (or click its name on any card) and the board switches to a single-location view: every day in the forecast, sunrise and sunset side by side with lake fog, and the best window called out with its full breakdown. That's the view for planning a specific hike on a specific day rather than deciding where to go tonight.</p>
+    <p><em>Lake fog.</em> Scored over the four hours ending at sunrise: clear sky overnight for radiational cooling, wind under about 6&nbsp;km/h, and a dew point sitting on top of the air temperature. Water spots get a steam-fog term from the drop between the previous afternoon's high and the temperature at first light — the bigger the drop over water that's still warm, the more it steams.</p>
+    <p><em>Staying inside the allowance.</em> Open-Meteo bills a request as locations &times; variables &times; models, and a free account gets 600 of those per minute. The app keeps its own ledger of what it has spent and holds off rather than triggering a refusal: cloud comes from three models in one nine-series request, everything else — visibility, precipitation, humidity, temperature, dew point, wind and the three cirrus levels — rides in a single ten-series ECMWF request, and probe points within 20&nbsp;km of each other share one fetch. A default refresh costs about 200 calls instead of 580. Opening the drive filter all the way is still more than a minute's allowance, so it will ask you to narrow it.</p>
+    <p>Live data from Open-Meteo, cached for two hours. Anything past about 48 hours moves a lot — treat the far days as a planning hint, not a promise. Your spot list lives in this browser; use Export in the spot editor to keep a copy.</p>
+  </div>
+</div>
+
+<dialog id="keyDlg">
+  <div class="dlg-head"><h2>Map imagery</h2><button class="ghost" id="closeKey" type="button">Close</button></div>
+  <div class="dlg-body">
+    <p style="margin:0 0 12px;font-size:13.5px;color:var(--ink-2)">Every map view — Map, Terrain, Satellite and Hybrid — comes from Google's Map Tiles API, and the same key fills in drive times in the spot editor. It's set to your "Golden Hour Board" key from Google Cloud; paste a different one to replace it.</p>
+    <div class="field"><label for="k_key">Google Maps API key</label><input id="k_key" type="text" autocomplete="off" spellcheck="false" placeholder="paste your key here"></div>
+    <div hidden><p style="margin:14px 0 6px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600">Style IDs</p>
+    <p style="margin:0 0 10px;font-size:12.5px;color:var(--muted)">Only change these if a style comes back empty — your MapTiler dashboard lists the exact ID for each map.</p>
+    <div class="grid2">
+      <div class="field"><label for="k_terrain">Terrain</label><input id="k_terrain" type="text" spellcheck="false"></div>
+      <div class="field"><label for="k_satellite">Satellite</label><input id="k_satellite" type="text" spellcheck="false"></div>
+      <div class="field"><label for="k_hybrid">Hybrid</label><input id="k_hybrid" type="text" spellcheck="false"></div>
+    </div></div>
+  </div>
+  <div class="dlg-foot">
+    <button class="ghost" id="clearKey" type="button">Remove key</button>
+    <button class="primary" id="saveKey" type="button">Save</button>
+  </div>
+</dialog>
+
+<dialog id="spotDlg">
+  <div class="dlg-head"><h2>Spots</h2><button class="ghost" id="closeSpots" type="button">Close</button></div>
+  <div class="dlg-body">
+    <div id="spotList"></div>
+    <div id="spotForm" hidden>
+      <h3 style="font-family:var(--display);font-size:16px;margin:16px 0 10px" id="formTitle">Edit spot</h3>
+      <div class="grid2">
+        <div class="field"><label for="f_n">Name</label><input id="f_n" type="text"></div>
+        <div class="field"><label for="f_s">Town</label><input id="f_s" type="text"></div>
+        <div class="field"><label for="f_lat">Latitude</label><input id="f_lat" type="number" step="0.0001"></div>
+        <div class="field"><label for="f_lon">Longitude</label><input id="f_lon" type="number" step="0.0001"></div>
+        <div class="field"><label for="f_d">Drive minutes</label><div style="display:flex;gap:6px"><input id="f_d" type="number" step="1" min="0" style="flex:1;min-width:0"><button class="ghost" type="button" id="getDrive" title="Driving time from Meredith, via Google">From Google</button></div></div>
+        <div class="field"><label for="f_t">Terrain</label><select id="f_t"><option>lake</option><option>pond</option><option>ocean</option><option>summit</option><option>ridge</option><option>valley</option><option>field</option><option>other</option></select></div>
+        <div class="field"><label for="f_a1">Open arc from °</label><input id="f_a1" type="number" min="0" max="360" step="5"></div>
+        <div class="field"><label for="f_a2">Open arc to °</label><input id="f_a2" type="number" min="0" max="360" step="5"></div>
+      </div>
+      <div class="arcbox">
+        <svg id="arcDial" width="96" height="96" viewBox="0 0 96 96" aria-label="Open arc"></svg>
+        <p>The open arc is the compass range this spot actually has a clear view across — measured clockwise from the "from" bearing to the "to" bearing. A dock looking west across water might be 175&deg; to 330&deg;. A bald summit is 0&deg; to 360&deg;. Sunsets here run about 240&deg;&ndash;300&deg; through the year; sunrises about 60&deg;&ndash;120&deg;.</p>
+      </div>
+      <div class="dlg-foot" style="border:0;padding-inline:0"><button class="ghost" id="cancelSpot" type="button">Cancel</button><button class="primary" id="saveSpot" type="button">Save spot</button></div>
+    </div>
+  </div>
+  <div class="dlg-foot">
+    <button class="ghost" id="resetSpots" type="button">Reset to defaults</button>
+    <button class="ghost" id="exportSpots" type="button">Export JSON</button>
+    <button class="ghost" id="importSpots" type="button">Import JSON</button>
+    <button class="primary" id="addSpot" type="button">Add spot</button>
+  </div>
+</dialog>
+<script>
+"use strict";
+const DEFAULT_SPOTS=[
+ {id:"meredith",n:"Meredith Bay Docks",s:"Meredith, NH",lat:43.656,lon:-71.498,d:2,t:"lake",az:[175,330]},
+ {id:"squam",n:"Squam Lake",s:"Holderness, NH",lat:43.731,lon:-71.586,d:13,t:"lake",az:[180,320]},
+ {id:"centerharb",n:"Center Harbor Town Dock",s:"Center Harbor, NH",lat:43.71,lon:-71.467,d:10,t:"lake",az:[140,285]},
+ {id:"weirs",n:"Weirs Beach Boardwalk",s:"Laconia, NH",lat:43.608,lon:-71.459,d:11,t:"lake",az:[0,140]},
+ {id:"redhill",n:"Red Hill Fire Tower",s:"Moultonborough, NH",lat:43.766,lon:-71.372,d:20,t:"summit",az:[0,360]},
+ {id:"castle",n:"Castle in the Clouds Overlook",s:"Moultonborough, NH",lat:43.747,lon:-71.323,d:26,t:"ridge",az:[150,300]},
+ {id:"major",n:"Mount Major Summit",s:"Alton, NH",lat:43.5093,lon:-71.2806,d:33,t:"summit",az:[0,360]},
+ {id:"altonbay",n:"Alton Bay",s:"Alton, NH",lat:43.476,lon:-71.24,d:32,t:"lake",az:[335,60]},
+ {id:"wolfeboro",n:"Wolfeboro Town Docks",s:"Wolfeboro, NH",lat:43.582,lon:-71.21,d:46,t:"lake",az:[255,350]},
+ {id:"ossipee",n:"Center Ossipee Pond",s:"Lakes Region, NH",lat:43.8108,lon:-71.1878,d:33,t:"pond",az:[180,320]},
+ {id:"newfound",n:"Newfound Lake, Wellington",s:"Bristol, NH",lat:43.664,lon:-71.767,d:33,t:"lake",az:[350,120]},
+ {id:"kearsarge",n:"Mount Kearsarge Summit",s:"Wilmot, NH",lat:43.385,lon:-71.857,d:80,t:"summit",az:[0,360]},
+ {id:"bog",n:"Bog Mountain",s:"Wilmot, NH",lat:43.469,lon:-71.93,d:46,t:"ridge",az:[200,320]},
+ {id:"sunapee",n:"Mount Sunapee Summit",s:"Newbury, NH",lat:43.321,lon:-72.084,d:70,t:"summit",az:[0,360]},
+ {id:"artists",n:"Artist's Bluff",s:"Franconia Notch, NH",lat:44.181,lon:-71.695,d:51,t:"ridge",az:[140,320]},
+ {id:"baldmtn",n:"Bald Mountain",s:"Franconia Notch, NH",lat:44.183,lon:-71.704,d:52,t:"ridge",az:[180,330]},
+ {id:"cannon",n:"Cannon Mountain Summit",s:"Franconia Notch, NH",lat:44.1569,lon:-71.6992,d:51,t:"summit",az:[0,360]},
+ {id:"sugarhill",n:"Sunset Hill, Sugar Hill",s:"Sugar Hill, NH",lat:44.217,lon:-71.783,d:61,t:"ridge",az:[160,320]},
+ {id:"kancgraham",n:"C.L. Graham Wangan Overlook",s:"Kancamagus Hwy, NH",lat:44.0069,lon:-71.3608,d:78,t:"ridge",az:[140,300]},
+ {id:"kancsugar",n:"Sugar Hill Scenic Vista",s:"Kancamagus Hwy, NH",lat:44.0098,lon:-71.4277,d:65,t:"ridge",az:[180,320]},
+ {id:"bretton",n:"Bretton Woods",s:"Carroll, NH",lat:44.26,lon:-71.443,d:72,t:"valley",az:[60,200]},
+ {id:"cherrypond",n:"Little Cherry Pond",s:"Pondicherry NWR, NH",lat:44.3761,lon:-71.5188,d:81,t:"pond",az:[60,220]},
+ {id:"tablerock",n:"Table Rock",s:"Dixville Notch, NH",lat:44.864,lon:-71.303,d:145,t:"ridge",az:[130,300]},
+ {id:"greatglen",n:"Great Glen / Auto Road Base",s:"Pinkham Notch, NH",lat:44.261,lon:-71.257,d:87,t:"valley",az:[200,340]},
+ {id:"lyndon",n:"Lyndon Farm Fields",s:"Northeast Kingdom, VT",lat:44.565,lon:-71.973,d:96,t:"field",az:[0,360]},
+ {id:"willoughby",n:"Lake Willoughby",s:"Westmore, VT",lat:44.735,lon:-72.047,d:112,t:"lake",az:[140,260]},
+ {id:"odiorne",n:"Odiorne Point",s:"Rye, NH",lat:43.0431,lon:-70.7161,d:86,t:"ocean",az:[30,180]},
+ {id:"hampton",n:"Hampton Beach",s:"Hampton, NH",lat:42.9081,lon:-70.81,d:90,t:"ocean",az:[45,180]},
+ {id:"nubble",n:"Nubble Light",s:"York, ME",lat:43.166,lon:-70.593,d:95,t:"ocean",az:[0,200]},
+ {id:"portlandhd",n:"Portland Head Light",s:"Cape Elizabeth, ME",lat:43.624,lon:-70.209,d:125,t:"ocean",az:[60,220]},
+ {id:"pemaquid",n:"Pemaquid Point Light",s:"Bristol, ME",lat:43.837,lon:-69.506,d:190,t:"ocean",az:[90,270]},
+ {id:"chocorualake",n:"Chocorua Lake (Narrows Bridge)",s:"Tamworth, NH",lat:43.8967,lon:-71.2686,d:41,t:"pond",az:[290,110]},
+ {id:"westrattle",n:"West Rattlesnake",s:"Holderness, NH",lat:43.785,lon:-71.545,d:22,t:"ridge",az:[140,300]},
+ {id:"mtpercival",n:"Mount Percival",s:"Sandwich, NH",lat:43.8022,lon:-71.5225,d:28,t:"summit",az:[0,360]},
+ {id:"mtwillard",n:"Mount Willard",s:"Crawford Notch, NH",lat:44.204,lon:-71.411,d:76,t:"ridge",az:[130,230]},
+ {id:"profilelake",n:"Profile Lake",s:"Franconia Notch, NH",lat:44.162,lon:-71.677,d:51,t:"pond",az:[160,340]},
+ {id:"echolake",n:"Echo Lake",s:"Franconia Notch, NH",lat:44.187,lon:-71.69,d:60,t:"lake",az:[150,330]},
+ {id:"rockygorge",n:"Rocky Gorge",s:"Kancamagus Hwy, NH",lat:44.004,lon:-71.278,d:62,t:"valley",az:[180,300]},
+ {id:"lowerfalls",n:"Lower Falls, Swift River",s:"Albany, NH",lat:43.9964,lon:-71.2336,d:57,t:"valley",az:[180,300]},
+ {id:"pemioverlook",n:"Pemigewasset Overlook",s:"Kancamagus Hwy, NH",lat:44.035,lon:-71.517,d:56,t:"ridge",az:[120,280]},
+ {id:"mtwashington",n:"Mount Washington Summit",s:"Sargent's Purchase, NH",lat:44.27,lon:-71.302,d:116,t:"summit",az:[0,360]},
+ {id:"lafayette",n:"Mount Lafayette Summit",s:"Franconia Ridge, NH",lat:44.1608,lon:-71.6444,d:49,t:"summit",az:[0,360]},
+ {id:"jefferson",n:"Jefferson Fields",s:"Jefferson, NH",lat:44.3892,lon:-71.4789,d:78,t:"field",az:[60,240]},
+ {id:"therocks",n:"The Rocks",s:"Bethlehem, NH",lat:44.283,lon:-71.735,d:61,t:"field",az:[60,220]},
+ {id:"newcastle",n:"New Castle / Portsmouth Harbor",s:"New Castle, NH",lat:43.069,lon:-70.713,d:87,t:"ocean",az:[0,180]},
+ {id:"eaton",n:"Crystal Lake",s:"Eaton, NH",lat:43.914,lon:-71.074,d:55,t:"lake",az:[180,330]},
+ {id:"pequawket",n:"Pequawket Pond",s:"Conway, NH",lat:43.9847,lon:-71.1211,d:54,t:"pond",az:[180,330]},
+ {id:"scarborough",n:"Scarborough Marsh",s:"Scarborough, ME",lat:43.563,lon:-70.365,d:106,t:"field",az:[0,360]},
+ {id:"baileyisland",n:"Bailey Island",s:"Harpswell, ME",lat:43.731,lon:-69.997,d:161,t:"ocean",az:[90,290]},
+ {id:"boothbay",n:"Boothbay Harbor",s:"Boothbay, ME",lat:43.8517,lon:-69.6281,d:177,t:"ocean",az:[60,250]},
+ {id:"jordanpond",n:"Jordan Pond",s:"Acadia NP, ME",lat:44.322,lon:-68.255,d:281,t:"pond",az:[140,340]},
+ {id:"cadillac",n:"Cadillac Mountain",s:"Acadia NP, ME",lat:44.353,lon:-68.223,d:284,t:"summit",az:[0,360]},
+ {id:"otterpoint",n:"Otter Point",s:"Acadia NP, ME",lat:44.307,lon:-68.192,d:284,t:"ocean",az:[60,240]},
+ {id:"bassharbor",n:"Bass Harbor Head Light",s:"Acadia NP, ME",lat:44.2222,lon:-68.3372,d:281,t:"ocean",az:[180,330]},
+ {id:"ravensnest",n:"Ravens Nest",s:"Schoodic Peninsula, ME",lat:44.339,lon:-68.045,d:287,t:"ocean",az:[90,290]},
+ {id:"quoddy",n:"West Quoddy Head Light",s:"Lubec, ME",lat:44.815,lon:-66.95,d:338,t:"ocean",az:[45,225]},
+ {id:"peacham",n:"Peacham Village",s:"Peacham, VT",lat:44.328,lon:-72.175,d:98,t:"field",az:[0,360]},
+ {id:"smugglers",n:"Smugglers' Notch",s:"Cambridge, VT",lat:44.555,lon:-72.796,d:159,t:"valley",az:[120,300]},
+ {id:"owlshead",n:"Owl's Head, Groton State Forest",s:"Groton, VT",lat:44.297,lon:-72.295,d:108,t:"summit",az:[0,360]},
+ {id:"shelburne",n:"Shelburne Beach",s:"Shelburne, VT",lat:44.394,lon:-73.256,d:169,t:"lake",az:[200,340]},
+ {id:"norton",n:"Norton",s:"Northeast Kingdom, VT",lat:44.9906,lon:-71.7936,d:141,t:"field",az:[0,360]},
+ {id:"chocorua16",n:"Chocorua, Route 16",s:"Chocorua, NH",lat:43.897,lon:-71.231,d:39,t:"field",az:[240,20]},
+ {id:"tamworth",n:"Tamworth",s:"Tamworth, NH",lat:43.838,lon:-71.218,d:37,t:"field",az:[240,60]},
+ {id:"leavittpark",n:"Leavitt Park",s:"Meredith, NH",lat:43.681,lon:-71.454,d:8,t:"lake",az:[60,220]},
+ {id:"squamnorth",n:"Squam Lake, north shore",s:"Holderness, NH",lat:43.763,lon:-71.558,d:19,t:"lake",az:[140,300]},
+ {id:"moultonneck",n:"Moultonborough Neck",s:"Moultonborough, NH",lat:43.696,lon:-71.406,d:17,t:"lake",az:[140,320]},
+ {id:"centersandwich",n:"Center Sandwich",s:"Sandwich, NH",lat:43.782,lon:-71.473,d:18,t:"field",az:[0,360]},
+ {id:"ashland",n:"Ashland",s:"Ashland, NH",lat:43.697,lon:-71.63,d:19,t:"field",az:[180,330]},
+ {id:"newfoundsouth",n:"Newfound Lake, Bristol end",s:"Bristol, NH",lat:43.625,lon:-71.745,d:27,t:"lake",az:[330,110]},
+ {id:"kanclincoln",n:"Kancamagus, Lincoln end",s:"Lincoln, NH",lat:44.041,lon:-71.524,d:55,t:"valley",az:[120,280]},
+ {id:"northconway",n:"Cathedral Ledge",s:"Bartlett, NH",lat:44.062,lon:-71.168,d:69,t:"ridge",az:[30,190]},
+ {id:"chatham",n:"Chatham",s:"Chatham, NH",lat:44.271,lon:-71.025,d:95,t:"field",az:[200,340]},
+ {id:"randolph",n:"Randolph",s:"Randolph, NH",lat:44.358,lon:-71.368,d:83,t:"field",az:[120,260]},
+ {id:"kitterypoint",n:"Kittery Point",s:"Kittery, ME",lat:43.06,lon:-70.698,d:94,t:"ocean",az:[90,270]},
+ {id:"longsands",n:"Long Sands Beach",s:"Cape Neddick, ME",lat:43.16,lon:-70.621,d:91,t:"ocean",az:[45,200]},
+ {id:"yorkharbor",n:"York Harbor",s:"York, ME",lat:43.147,lon:-70.626,d:91,t:"ocean",az:[60,220]},
+ {id:"willoughbysouth",n:"Lake Willoughby, south end",s:"Westmore, VT",lat:44.717,lon:-72.031,d:110,t:"lake",az:[330,120]},
+ {id:"jobspond",n:"Jobs Pond",s:"Westmore, VT",lat:44.7622,lon:-71.9534,d:118,t:"pond",az:[180,330]},
+ {id:"cardigan",n:"Mount Cardigan Summit",s:"Orange, NH",lat:43.6495,lon:-71.9144,d:57,t:"summit",az:[0,360]},
+ {id:"chocoruasummit",n:"Mount Chocorua Summit",s:"Albany, NH",lat:43.9541,lon:-71.2734,d:46,t:"summit",az:[0,360]},
+ {id:"moosilauke",n:"Mount Moosilauke Summit",s:"Benton, NH",lat:44.0241,lon:-71.8314,d:67,t:"summit",az:[0,360]},
+ {id:"belknap",n:"Belknap Mountain Fire Tower",s:"Gilford, NH",lat:43.5178,lon:-71.3689,d:29,t:"summit",az:[0,360]},
+ {id:"bluejob",n:"Blue Job Mountain Fire Tower",s:"Farmington, NH",lat:43.3314,lon:-71.1162,d:61,t:"summit",az:[0,360]},
+ {id:"middlesugarloaf",n:"Middle Sugarloaf",s:"Bethlehem, NH",lat:44.2513,lon:-71.5171,d:71,t:"summit",az:[90,270]},
+ {id:"mtavalon",n:"Mount Avalon",s:"Crawford Notch, NH",lat:44.2064,lon:-71.4264,d:84,t:"summit",az:[60,230]},
+ {id:"mtisrael",n:"Mount Israel",s:"Sandwich, NH",lat:43.8454,lon:-71.4716,d:30,t:"summit",az:[270,180]},
+ {id:"mtpemi",n:"Mount Pemigewasset (Indian Head)",s:"Lincoln, NH",lat:44.0975,lon:-71.6997,d:56,t:"summit",az:[180,330]},
+ {id:"welchledges",n:"Welch Mountain Ledges",s:"Thornton, NH",lat:43.919,lon:-71.5754,d:37,t:"ridge",az:[150,300]},
+ {id:"fossmtn",n:"Foss Mountain",s:"Eaton, NH",lat:43.8771,lon:-71.0348,d:64,t:"summit",az:[0,360]},
+ {id:"greenmtn",n:"Green Mountain Fire Tower",s:"Effingham, NH",lat:43.7675,lon:-71.0369,d:55,t:"summit",az:[0,360]},
+ {id:"intervale",n:"Intervale Scenic Vista",s:"Intervale, NH",lat:44.0756,lon:-71.1396,d:67,t:"ridge",az:[200,340]},
+ {id:"ellacoya",n:"Ellacoya State Park",s:"Gilford, NH",lat:43.5694,lon:-71.3547,d:22,t:"lake",az:[340,140]},
+ {id:"ryeharbor",n:"Rye Harbor State Park",s:"Rye, NH",lat:43.0017,lon:-70.7446,d:91,t:"ocean",az:[20,200]},
+ {id:"stinson",n:"Stinson Mountain",s:"Rumney, NH",lat:43.8345,lon:-71.7793,d:40,t:"summit",az:[315,135]},
+ {id:"packmonadnock",n:"Pack Monadnock (Miller SP)",s:"Peterborough, NH",lat:42.8619,lon:-71.8788,d:104,t:"summit",az:[0,360]},
+ {id:"mtphilo",n:"Mount Philo",s:"Charlotte, VT",lat:44.2781,lon:-73.2147,d:180,t:"summit",az:[230,350]},
+ {id:"snakemtn",n:"Snake Mountain",s:"Addison, VT",lat:44.0614,lon:-73.2803,d:174,t:"summit",az:[240,330]},
+ {id:"appgap",n:"Appalachian Gap",s:"Fayston, VT",lat:44.2108,lon:-72.931,d:158,t:"ridge",az:[230,320]},
+ {id:"lincolngap",n:"Lincoln Gap",s:"Lincoln, VT",lat:44.0951,lon:-72.929,d:150,t:"ridge",az:[60,130]},
+ {id:"mtabraham",n:"Mount Abraham",s:"Lincoln, VT",lat:44.1235,lon:-72.9226,d:149,t:"summit",az:[0,360]},
+ {id:"ascutney",n:"Mount Ascutney Summit",s:"Windsor, VT",lat:43.4445,lon:-72.4537,d:111,t:"summit",az:[0,360]},
+ {id:"burkemtn",n:"Burke Mountain",s:"East Burke, VT",lat:44.5705,lon:-71.893,d:110,t:"summit",az:[0,360]},
+ {id:"stowepinnacle",n:"Stowe Pinnacle",s:"Stowe, VT",lat:44.4297,lon:-72.6499,d:157,t:"ridge",az:[220,330]},
+ {id:"elmore",n:"Elmore Mountain Fire Tower",s:"Elmore, VT",lat:44.5263,lon:-72.5456,d:136,t:"summit",az:[0,360]},
+ {id:"mthorrid",n:"Mount Horrid Great Cliff",s:"Goshen, VT",lat:43.8504,lon:-72.9675,d:134,t:"ridge",az:[90,200]},
+ {id:"jennefarm",n:"Jenne Farm",s:"Reading, VT",lat:43.5245,lon:-72.5596,d:111,t:"field",az:[60,180]},
+ {id:"hogback",n:"Hogback Mountain 100-Mile View",s:"Marlboro, VT",lat:42.8527,lon:-72.7938,d:139,t:"ridge",az:[110,250]},
+ {id:"buttonbay",n:"Button Bay State Park",s:"Ferrisburgh, VT",lat:44.1829,lon:-73.3503,d:185,t:"lake",az:[240,330]},
+ {id:"barrhill",n:"Barr Hill Natural Area",s:"Greensboro, VT",lat:44.6114,lon:-72.2898,d:124,t:"field",az:[170,300]},
+ {id:"marshallpoint",n:"Marshall Point Light",s:"Port Clyde, ME",lat:43.9174,lon:-69.2613,d:219,t:"ocean",az:[60,230]},
+ {id:"owlsheadlight",n:"Owls Head Light",s:"Owls Head, ME",lat:44.0922,lon:-69.0441,d:213,t:"ocean",az:[350,170]},
+ {id:"twolights",n:"Two Lights State Park",s:"Cape Elizabeth, ME",lat:43.5606,lon:-70.2059,d:125,t:"ocean",az:[30,210]},
+ {id:"buglight",n:"Bug Light (Portland Breakwater)",s:"South Portland, ME",lat:43.6555,lon:-70.2349,d:141,t:"ocean",az:[315,135]},
+ {id:"springpoint",n:"Spring Point Ledge Light",s:"South Portland, ME",lat:43.6521,lon:-70.2239,d:123,t:"ocean",az:[330,180]},
+ {id:"capeporpoise",n:"Cape Porpoise Pier",s:"Kennebunkport, ME",lat:43.3654,lon:-70.432,d:114,t:"ocean",az:[45,200]},
+ {id:"dicehead",n:"Dice Head Light",s:"Castine, ME",lat:44.3829,lon:-68.819,d:251,t:"ocean",az:[180,340]},
+ {id:"fortpoint",n:"Fort Point Light",s:"Stockton Springs, ME",lat:44.4672,lon:-68.8117,d:223,t:"ocean",az:[100,260]},
+ {id:"doublingpoint",n:"Doubling Point Light",s:"Arrowsic, ME",lat:43.8825,lon:-69.8067,d:152,t:"ocean",az:[200,20]},
+ {id:"hendrickshead",n:"Hendricks Head Light",s:"West Southport, ME",lat:43.8226,lon:-69.6897,d:185,t:"ocean",az:[180,330]},
+ {id:"rocklandbreak",n:"Rockland Breakwater Light",s:"Rockland, ME",lat:44.104,lon:-69.0775,d:228,t:"ocean",az:[0,360]},
+ {id:"schoonerhead",n:"Schooner Head Overlook",s:"Bar Harbor, ME",lat:44.3456,lon:-68.1761,d:280,t:"ocean",az:[350,170]},
+ {id:"beehive",n:"The Beehive",s:"Acadia NP, ME",lat:44.3338,lon:-68.188,d:282,t:"summit",az:[330,180]},
+ {id:"mtbattie",n:"Mount Battie",s:"Camden, ME",lat:44.223,lon:-69.069,d:208,t:"summit",az:[0,360]},
+ {id:"pophambeach",n:"Popham Beach State Park",s:"Phippsburg, ME",lat:43.7381,lon:-69.7996,d:165,t:"ocean",az:[90,270]},
+ {id:"reidstate",n:"Reid State Park (Griffith Head)",s:"Georgetown, ME",lat:43.7901,lon:-69.7284,d:165,t:"ocean",az:[90,270]},
+ {id:"agamenticus",n:"Mount Agamenticus",s:"York, ME",lat:43.2232,lon:-70.6919,d:94,t:"summit",az:[0,360]},
+ {id:"bradbury",n:"Bradbury Mountain",s:"Pownal, ME",lat:43.9026,lon:-70.1823,d:124,t:"summit",az:[0,200]},
+ {id:"pleasantmtn",n:"Pleasant Mountain",s:"Bridgton, ME",lat:44.027,lon:-70.8223,d:90,t:"summit",az:[180,360]},
+ {id:"heightofland",n:"Height of Land Overlook",s:"Rangeley Lakes, ME",lat:44.8384,lon:-70.7106,d:172,t:"ridge",az:[230,340]},
+ {id:"sebago",n:"Sebago Lake State Park",s:"Casco, ME",lat:43.9209,lon:-70.5806,d:95,t:"lake",az:[120,270]},
+ {id:"nausetlight",n:"Nauset Light",s:"Eastham, MA",lat:41.8601,lon:-69.953,d:202,t:"ocean",az:[0,180]},
+ {id:"capecodhighlandlight",n:"Cape Cod (Highland) Light",s:"Truro, MA",lat:42.0391,lon:-70.062,d:222,t:"ocean",az:[350,190]},
+ {id:"racepointlight",n:"Race Point Light",s:"Provincetown, MA",lat:42.0623,lon:-70.2431,d:243,t:"ocean",az:[240,90]},
+ {id:"nobskapointlight",n:"Nobska Point Light",s:"Falmouth, MA",lat:41.5158,lon:-70.6551,d:186,t:"ocean",az:[90,270]},
+ {id:"chathamlight",n:"Chatham Light",s:"Chatham, MA",lat:41.6714,lon:-69.9499,d:200,t:"ocean",az:[0,200]},
+ {id:"scituatelight",n:"Scituate Light",s:"Scituate, MA",lat:42.2048,lon:-70.7157,d:147,t:"ocean",az:[330,180]},
+ {id:"marbleheadlight",n:"Marblehead Light",s:"Marblehead, MA",lat:42.5055,lon:-70.8337,d:129,t:"ocean",az:[300,180]},
+ {id:"easternpointlight",n:"Eastern Point Light",s:"Gloucester, MA",lat:42.5802,lon:-70.6645,d:131,t:"ocean",az:[60,280]},
+ {id:"annisquamharborlight",n:"Annisquam Harbor Light",s:"Gloucester, MA",lat:42.6619,lon:-70.6815,d:128,t:"ocean",az:[280,60]},
+ {id:"newburyportharborlight",n:"Newburyport Harbor Light",s:"Newburyport, MA",lat:42.8151,lon:-70.819,d:110,t:"ocean",az:[320,120]},
+ {id:"nedspointlight",n:"Ned's Point Light",s:"Mattapoisett, MA",lat:41.6509,lon:-70.7956,d:167,t:"ocean",az:[150,340]},
+ {id:"bordenflatslight",n:"Borden Flats Light",s:"Fall River, MA",lat:41.7045,lon:-71.1744,d:156,t:"ocean",az:[140,280]},
+ {id:"gayheadlight",n:"Gay Head Light",s:"Aquinnah, MA",lat:41.3484,lon:-70.8345,d:271,t:"ocean",az:[180,30]},
+ {id:"beavertaillight",n:"Beavertail Light",s:"Jamestown, RI",lat:41.4494,lon:-71.3995,d:190,t:"ocean",az:[100,280]},
+ {id:"castlehilllight",n:"Castle Hill Light",s:"Newport, RI",lat:41.4622,lon:-71.363,d:199,t:"ocean",az:[170,330]},
+ {id:"pointjudithlight",n:"Point Judith Light",s:"Narragansett, RI",lat:41.361,lon:-71.4814,d:192,t:"ocean",az:[60,300]},
+ {id:"watchhilllight",n:"Watch Hill Light",s:"Westerly, RI",lat:41.3039,lon:-71.8586,d:206,t:"ocean",az:[130,300]},
+ {id:"sakonnetlight",n:"Sakonnet Light",s:"Little Compton, RI",lat:41.4532,lon:-71.2025,d:183,t:"ocean",az:[120,260]},
+ {id:"blockislandsoutheastli",n:"Block Island Southeast Light",s:"New Shoreham, RI",lat:41.1534,lon:-71.5521,d:273,t:"ocean",az:[60,220]},
+ {id:"saybrookbreakwaterligh",n:"Saybrook Breakwater Light",s:"Old Saybrook, CT",lat:41.2633,lon:-72.3428,d:209,t:"ocean",az:[120,280]},
+ {id:"lyndepointlight",n:"Lynde Point Light",s:"Old Saybrook, CT",lat:41.2715,lon:-72.3432,d:208,t:"ocean",az:[130,280]},
+ {id:"stoningtonharborlight",n:"Stonington Harbor Light",s:"Stonington, CT",lat:41.3285,lon:-71.9056,d:198,t:"ocean",az:[100,280]},
+ {id:"averypointlight",n:"Avery Point Light",s:"Groton, CT",lat:41.3152,lon:-72.0635,d:198,t:"ocean",az:[150,320]},
+ {id:"stratfordpointlight",n:"Stratford Point Light",s:"Stratford, CT",lat:41.152,lon:-73.1034,d:234,t:"ocean",az:[120,300]},
+ {id:"mountgreylocksummit",n:"Mount Greylock Summit",s:"Adams, MA",lat:42.6371,lon:-73.1663,d:205,t:"summit",az:[0,360]},
+ {id:"mountwachusettsummit",n:"Mount Wachusett Summit",s:"Princeton, MA",lat:42.4891,lon:-71.8868,d:132,t:"summit",az:[0,360]},
+ {id:"mountsugarloaf",n:"Mount Sugarloaf",s:"South Deerfield, MA",lat:42.4796,lon:-72.5868,d:156,t:"summit",az:[120,300]},
+ {id:"mountholyokesummithous",n:"Mount Holyoke Summit House",s:"Hadley, MA",lat:42.3005,lon:-72.5872,d:172,t:"summit",az:[240,60]},
+ {id:"mounttom",n:"Mount Tom",s:"Holyoke, MA",lat:42.2417,lon:-72.6481,d:176,t:"summit",az:[180,360]},
+ {id:"monumentmountain",n:"Monument Mountain",s:"Great Barrington, MA",lat:42.2585,lon:-73.3501,d:215,t:"summit",az:[150,30]},
+ {id:"mounteverett",n:"Mount Everett",s:"Mount Washington, MA",lat:42.1018,lon:-73.4327,d:246,t:"summit",az:[0,360]},
+ {id:"greatbluehill",n:"Great Blue Hill",s:"Milton, MA",lat:42.2119,lon:-71.1143,d:127,t:"summit",az:[0,360]},
+ {id:"quabbinenfieldlookout",n:"Quabbin Enfield Lookout",s:"Ware, MA",lat:42.3092,lon:-72.3354,d:176,t:"ridge",az:[270,45]},
+ {id:"mohawktrailhairpinturn",n:"Mohawk Trail Hairpin Turn",s:"Clarksburg, MA",lat:42.7094,lon:-73.063,d:181,t:"ridge",az:[180,330]},
+ {id:"shelburnefalls",n:"Shelburne Falls",s:"Shelburne, MA",lat:42.6036,lon:-72.7395,d:150,t:"valley",az:[90,270]},
+ {id:"stockbridgebowl",n:"Stockbridge Bowl",s:"Stockbridge, MA",lat:42.3353,lon:-73.3187,d:215,t:"lake",az:[180,30]},
+ {id:"halibutpointstatepark",n:"Halibut Point State Park",s:"Rockport, MA",lat:42.692,lon:-70.6287,d:134,t:"ocean",az:[250,110]},
+ {id:"goodharborbeach",n:"Good Harbor Beach",s:"Gloucester, MA",lat:42.6195,lon:-70.6314,d:125,t:"ocean",az:[20,180]},
+ {id:"racepointbeach",n:"Race Point Beach",s:"Provincetown, MA",lat:42.0673,lon:-70.2321,d:239,t:"ocean",az:[240,90]},
+ {id:"moheganbluffs",n:"Mohegan Bluffs",s:"New Shoreham, RI",lat:41.1518,lon:-71.5567,d:274,t:"ridge",az:[60,220]},
+ {id:"sachuestpoint",n:"Sachuest Point",s:"Middletown, RI",lat:41.4815,lon:-71.2439,d:184,t:"ocean",az:[90,300]},
+ {id:"brentonpointstatepark",n:"Brenton Point State Park",s:"Newport, RI",lat:41.4519,lon:-71.3542,d:200,t:"ocean",az:[120,300]},
+ {id:"napatreepoint",n:"Napatree Point",s:"Westerly, RI",lat:41.3069,lon:-71.8861,d:373,t:"ocean",az:[0,360]},
+ {id:"coltstatepark",n:"Colt State Park",s:"Bristol, RI",lat:41.6777,lon:-71.2929,d:173,t:"ocean",az:[180,340]},
+ {id:"heubleintowertalcottmo",n:"Heublein Tower, Talcott Mountain",s:"Simsbury, CT",lat:41.8113,lon:-72.7989,d:200,t:"summit",az:[0,360]},
+ {id:"castlecraighubbardpark",n:"Castle Craig, Hubbard Park",s:"Meriden, CT",lat:41.5565,lon:-72.8354,d:213,t:"summit",az:[0,360]},
+ {id:"sleepinggianttower",n:"Sleeping Giant Tower",s:"Hamden, CT",lat:41.4306,lon:-72.8908,d:208,t:"summit",az:[90,270]},
+ {id:"eastrockpark",n:"East Rock Park",s:"New Haven, CT",lat:41.327,lon:-72.905,d:219,t:"ridge",az:[90,300]},
+ {id:"bearmountain",n:"Bear Mountain",s:"Salisbury, CT",lat:42.0449,lon:-73.4545,d:250,t:"summit",az:[0,360]},
+ {id:"haystackmountaintower",n:"Haystack Mountain Tower",s:"Norfolk, CT",lat:42.0048,lon:-73.2084,d:239,t:"summit",az:[0,360]},
+ {id:"lakewaramaug",n:"Lake Waramaug",s:"Warren, CT",lat:41.6962,lon:-73.3639,d:248,t:"lake",az:[0,360]},
+ {id:"kentfallsstatepark",n:"Kent Falls State Park",s:"Kent, CT",lat:41.7759,lon:-73.4093,d:256,t:"valley",az:[120,240]},
+ {id:"hammonassetmeigspoint",n:"Hammonasset Meigs Point",s:"Madison, CT",lat:41.2586,lon:-72.5574,d:212,t:"ocean",az:[90,270]},
+ {id:"bluffpointstatepark",n:"Bluff Point State Park",s:"Groton, CT",lat:41.3251,lon:-72.0287,d:201,t:"ocean",az:[120,300]},
+ {id:"litchfieldgreen",n:"Litchfield Green",s:"Litchfield, CT",lat:41.746,lon:-73.1895,d:225,t:"field",az:[0,360]},
+ {id:"whitefacemountainsummi",n:"Whiteface Mountain Summit",s:"Wilmington, NY",lat:44.3658,lon:-73.903,d:263,t:"summit",az:[0,360]},
+ {id:"cascademountain",n:"Cascade Mountain",s:"Keene, NY",lat:44.2186,lon:-73.8602,d:238,t:"summit",az:[0,360]},
+ {id:"mountjo",n:"Mount Jo",s:"North Elba, NY",lat:44.1894,lon:-73.9674,d:251,t:"summit",az:[120,300]},
+ {id:"hurricanemountainfiret",n:"Hurricane Mountain Fire Tower",s:"Keene, NY",lat:44.2353,lon:-73.7107,d:231,t:"summit",az:[0,360]},
+ {id:"ampersandmountain",n:"Ampersand Mountain",s:"Harrietstown, NY",lat:44.2346,lon:-74.2027,d:269,t:"summit",az:[0,360]},
+ {id:"goodnowmountainfiretow",n:"Goodnow Mountain Fire Tower",s:"Newcomb, NY",lat:43.9601,lon:-74.2099,d:257,t:"summit",az:[0,360]},
+ {id:"coneymountain",n:"Coney Mountain",s:"Tupper Lake, NY",lat:44.1017,lon:-74.5235,d:275,t:"summit",az:[0,360]},
+ {id:"mountarabfiretower",n:"Mount Arab Fire Tower",s:"Piercefield, NY",lat:44.1742,lon:-74.6013,d:307,t:"summit",az:[0,360]},
+ {id:"pokeomoonshinefiretowe",n:"Poke-O-Moonshine Fire Tower",s:"Chesterfield, NY",lat:44.4017,lon:-73.5132,d:228,t:"summit",az:[0,360]},
+ {id:"azuremountainfiretower",n:"Azure Mountain Fire Tower",s:"Waverly, NY",lat:44.541,lon:-74.5007,d:314,t:"summit",az:[0,360]},
+ {id:"hadleymountainfiretowe",n:"Hadley Mountain Fire Tower",s:"Hadley, NY",lat:43.3812,lon:-73.969,d:229,t:"summit",az:[0,360]},
+ {id:"vanderwhackermountainf",n:"Vanderwhacker Mountain Fire Tower",s:"Minerva, NY",lat:43.8984,lon:-74.096,d:256,t:"summit",az:[0,360]},
+ {id:"snowymountainfiretower",n:"Snowy Mountain Fire Tower",s:"Indian Lake, NY",lat:43.7,lon:-74.3871,d:263,t:"summit",az:[0,360]},
+ {id:"bluemountainfiretower",n:"Blue Mountain Fire Tower",s:"Indian Lake, NY",lat:43.8719,lon:-74.4014,d:282,t:"summit",az:[0,360]},
+ {id:"owlsheadmountainfireto",n:"Owls Head Mountain Fire Tower",s:"Long Lake, NY",lat:43.9545,lon:-74.4988,d:316,t:"summit",az:[0,360]},
+ {id:"noonmarkmountain",n:"Noonmark Mountain",s:"Keene, NY",lat:44.1285,lon:-73.7725,d:226,t:"summit",az:[0,360]},
+ {id:"wakelymountainfiretowe",n:"Wakely Mountain Fire Tower",s:"Lake Pleasant, NY",lat:43.7359,lon:-74.5152,d:285,t:"summit",az:[0,360]},
+ {id:"baldrondaxemountainfir",n:"Bald (Rondaxe) Mountain Fire Tower",s:"Old Forge, NY",lat:43.7387,lon:-74.9138,d:308,t:"ridge",az:[0,360]},
+ {id:"silverlakemountain",n:"Silver Lake Mountain",s:"Black Brook, NY",lat:44.5196,lon:-73.8403,d:256,t:"summit",az:[180,330]},
+ {id:"mountvanhoevenberg",n:"Mount Van Hoevenberg",s:"North Elba, NY",lat:44.2101,lon:-73.9293,d:244,t:"summit",az:[180,300]},
+ {id:"roostercomb",n:"Rooster Comb",s:"Keene Valley, NY",lat:44.1723,lon:-73.8118,d:230,t:"summit",az:[170,60]},
+ {id:"baxtermountain",n:"Baxter Mountain",s:"Keene, NY",lat:44.2167,lon:-73.7651,d:228,t:"summit",az:[0,360]},
+ {id:"bigcrowmountain",n:"Big Crow Mountain",s:"Keene, NY",lat:44.2663,lon:-73.7401,d:236,t:"summit",az:[0,360]},
+ {id:"belfrymountainfiretowe",n:"Belfry Mountain Fire Tower",s:"Moriah, NY",lat:44.0978,lon:-73.5476,d:200,t:"summit",az:[0,360]},
+ {id:"giantmountainsummit",n:"Giant Mountain Summit",s:"Keene, NY",lat:44.1612,lon:-73.7202,d:219,t:"summit",az:[0,360]},
+ {id:"pitchoffbalancedrocks",n:"Pitchoff Balanced Rocks",s:"Keene, NY",lat:44.2375,lon:-73.8776,d:245,t:"ridge",az:[90,270]},
+ {id:"prospectmountain",n:"Prospect Mountain",s:"Lake George, NY",lat:43.4245,lon:-73.7459,d:218,t:"summit",az:[0,360]},
+ {id:"buckmountain",n:"Buck Mountain",s:"Fort Ann, NY",lat:43.5201,lon:-73.5959,d:208,t:"summit",az:[250,20]},
+ {id:"panthermountainroute3",n:"Panther Mountain (Route 3)",s:"Harrietstown, NY",lat:44.2342,lon:-74.3346,d:276,t:"summit",az:[150,270]},
+ {id:"kanemountainfiretower",n:"Kane Mountain Fire Tower",s:"Caroga, NY",lat:43.1808,lon:-74.5155,d:282,t:"summit",az:[0,360]},
+ {id:"goremountainfiretower",n:"Gore Mountain Fire Tower",s:"North Creek, NY",lat:43.6733,lon:-74.0486,d:251,t:"summit",az:[0,360]},
+ {id:"chapelpond",n:"Chapel Pond",s:"Keene, NY",lat:44.1402,lon:-73.7489,d:219,t:"pond",az:[200,340]},
+ {id:"connerypond",n:"Connery Pond",s:"North Elba, NY",lat:44.3126,lon:-73.9317,d:255,t:"pond",az:[340,90]},
+ {id:"heartlakeadirondakloj",n:"Heart Lake (Adirondak Loj)",s:"North Elba, NY",lat:44.1819,lon:-73.964,d:252,t:"lake",az:[120,260]},
+ {id:"mirrorlake",n:"Mirror Lake",s:"Lake Placid, NY",lat:44.2904,lon:-73.9796,d:251,t:"lake",az:[0,360]},
+ {id:"lakeplacid",n:"Lake Placid",s:"Lake Placid, NY",lat:44.3082,lon:-73.9733,d:255,t:"lake",az:[320,140]},
+ {id:"indianhead",n:"Indian Head Vista (hike in from AMR lot)",s:"Keene Valley, NY",lat:44.1117,lon:-73.8242,d:221,t:"ridge",az:[120,300]},
+ {id:"uppercascadelake",n:"Upper Cascade Lake",s:"Keene, NY",lat:44.2235,lon:-73.8785,d:237,t:"lake",az:[200,60]},
+ {id:"lakedurant",n:"Lake Durant",s:"Blue Mountain Lake, NY",lat:43.8431,lon:-74.4084,d:266,t:"lake",az:[90,270]},
+ {id:"bluemountainlake",n:"Blue Mountain Lake",s:"Indian Lake, NY",lat:43.8563,lon:-74.4315,d:268,t:"lake",az:[0,360]},
+ {id:"richlakenewcomb",n:"Rich Lake (Newcomb)",s:"Newcomb, NY",lat:43.9759,lon:-74.2062,d:249,t:"lake",az:[270,45]},
+ {id:"lowersaranaclake",n:"Lower Saranac Lake",s:"Harrietstown, NY",lat:44.3028,lon:-74.1931,d:265,t:"lake",az:[0,360]},
+ {id:"lakeflower",n:"Lake Flower",s:"Saranac Lake, NY",lat:44.3138,lon:-74.1262,d:259,t:"lake",az:[0,360]},
+ {id:"longlake",n:"Long Lake",s:"Long Lake, NY",lat:43.9731,lon:-74.421,d:262,t:"lake",az:[90,270]},
+ {id:"indianlakeroute30",n:"Indian Lake (Route 30)",s:"Indian Lake, NY",lat:43.7822,lon:-74.266,d:252,t:"lake",az:[0,360]},
+ {id:"schroonlake",n:"Schroon Lake",s:"Schroon, NY",lat:43.8497,lon:-73.7658,d:219,t:"lake",az:[90,270]},
+ {id:"marcyfield",n:"Marcy Field",s:"Keene, NY",lat:44.2215,lon:-73.7882,d:229,t:"field",az:[0,360]},
+ {id:"jaycoveredbridge",n:"Jay Covered Bridge",s:"Jay, NY",lat:44.3728,lon:-73.725,d:243,t:"valley",az:[90,270]},
+ {id:"tupperlakeskycenterare",n:"Tupper Lake (Sky Center area)",s:"Tupper Lake, NY",lat:44.224,lon:-74.464,d:285,t:"lake",az:[0,360]},
+ {id:"crownpointlakechamplai",n:"Crown Point / Lake Champlain",s:"Crown Point, NY",lat:43.95,lon:-73.44,d:189,t:"ridge",az:[0,180]}
+];
+const MODELS=[
+ {id:"gem_hrdps_continental",label:"HRDPS 2.5 km (Canada, 48 h)",short:"HRDPS"},
+ {id:"gfs_seamless",label:"HRRR / GFS (NOAA)",short:"HRRR"},
+ {id:"ecmwf_ifs025",label:"ECMWF IFS",short:"ECMWF"}
+];
+/* Three models, and only three. Open-Meteo bills by variables x models x locations, and a
+   request stays at weight 1.0 per location only while it carries 10 or fewer series — three
+   models of three cloud variables is exactly 9. ICON, GEM, UKMO and Meteo-France were dropped:
+   each one selected forced a whole extra refetch, and none of them earned it. UKMO's 2 km grid
+   covers only the UK, so over New England it was a delayed 10 km global. */
+const CONSENSUS=["gem_hrdps_continental","gfs_seamless","ecmwf_ifs025"];
+/* Consensus weights vary with LEAD TIME — the models don't rank the same at every range.
+   Inside a day the convection-allowing runs win; at 1-2 days the 2.5 km HRDPS does;
+   past that the high-res runs have ended and ECMWF carries the medium range. */
+const WEIGHT_BANDS=[
+ {maxH:24, label:"same day", w:{gfs_seamless:2.2,gem_hrdps_continental:1.5,ecmwf_ifs025:1.0}},
+ {maxH:48, label:"1–2 days", w:{gem_hrdps_continental:1.9,gfs_seamless:1.4,ecmwf_ifs025:1.3}},
+ {maxH:1e9, label:"3+ days", w:{ecmwf_ifs025:1.6,gfs_seamless:1.0,gem_hrdps_continental:1.0}}
+];
+const leadBand=h=>WEIGHT_BANDS.find(b=>h<=b.maxH)||WEIGHT_BANDS[WEIGHT_BANDS.length-1];
+const weightFor=(id,h)=>{const w=leadBand(h).w[id];return w==null?1:w;};
+const CIRRUS_MODEL="ecmwf_ifs025";
+/* Clarity, fog and cirrus all come from ECMWF in one request. Ten series exactly, which is
+   the largest a request can carry before Open-Meteo starts billing it as more than one call
+   per location. */
+const FOG_MODELS=["ecmwf_ifs025"];
+const PROBE_GRID_KM=20;   /* probes closer together than this share one fetch */
+const BUDGET={min:520,hour:4200,day:8500};  /* leave headroom under 600 / 5000 / 10000 */
+const SPOTS_VERSION=10;
+/* Spots retired from the defaults, by version — removed from saved lists once. */
+const DROP_IN={9:["lowerausablelake"]};
+/* v7: drive minutes from Google Routes (Meredith, NH, typical traffic), replacing the hand estimates.
+   Only applied where a spot still carries the old estimate, so hand-set times stay. */
+const DRIVE_FIX={8:{"kancsugar":[55,65]},7:{"meredith":[3,2],"squam":[14,13],"centerharb":[12,10],"weirs":[16,11],"redhill":[30,20],"castle":[27,26],"major":[42,33],"altonbay":[38,32],"wolfeboro":[35,46],"ossipee":[38,33],"newfound":[32,33],"kearsarge":[55,80],"bog":[52,46],"sunapee":[65,70],"artists":[72,51],"baldmtn":[72,52],"cannon":[78,51],"sugarhill":[82,61],"kancgraham":[62,78],"bretton":[84,72],"cherrypond":[92,81],"tablerock":[140,145],"greatglen":[95,87],"lyndon":[130,96],"willoughby":[150,112],"odiorne":[78,86],"hampton":[88,90],"nubble":[100,95],"portlandhd":[115,125],"pemaquid":[165,190],"chocorualake":[40,41],"westrattle":[25,22],"mtpercival":[32,28],"mtwillard":[78,76],"profilelake":[75,51],"echolake":[72,60],"rockygorge":[55,62],"lowerfalls":[52,57],"pemioverlook":[60,56],"mtwashington":[105,116],"lafayette":[85,49],"jefferson":[90,78],"therocks":[85,61],"newcastle":[80,87],"eaton":[50,55],"pequawket":[52,54],"scarborough":[120,106],"baileyisland":[150,161],"boothbay":[160,177],"jordanpond":[245,281],"cadillac":[250,284],"otterpoint":[250,284],"bassharbor":[255,281],"ravensnest":[270,287],"quoddy":[320,338],"peacham":[150,98],"smugglers":[165,159],"owlshead":[140,108],"shelburne":[190,169],"norton":[185,141],"chocorua16":[42,39],"tamworth":[40,37],"squamnorth":[20,19],"moultonneck":[22,17],"centersandwich":[22,18],"ashland":[18,19],"newfoundsouth":[35,27],"kanclincoln":[62,55],"northconway":[55,69],"chatham":[70,95],"randolph":[95,83],"kitterypoint":[82,94],"longsands":[100,91],"yorkharbor":[102,91],"willoughbysouth":[148,110],"cardigan":[45,57],"chocoruasummit":[50,46],"moosilauke":[75,67],"belknap":[30,29],"bluejob":[50,61],"middlesugarloaf":[80,71],"mtavalon":[78,84],"mtisrael":[35,30],"mtpemi":[70,56],"welchledges":[45,37],"fossmtn":[55,64],"greenmtn":[50,55],"intervale":[57,67],"ellacoya":[25,22],"ryeharbor":[82,91],"packmonadnock":[90,104],"snakemtn":[175,174],"appgap":[150,158],"mtabraham":[155,149],"ascutney":[110,111],"burkemtn":[135,110],"stowepinnacle":[160,157],"elmore":[155,136],"mthorrid":[155,134],"jennefarm":[115,111],"hogback":[140,139],"barrhill":[150,124],"marshallpoint":[195,219],"owlsheadlight":[210,213],"twolights":[118,125],"buglight":[115,141],"springpoint":[116,123],"capeporpoise":[105,114],"dicehead":[235,251],"fortpoint":[225,223],"doublingpoint":[155,152],"hendrickshead":[165,185],"rocklandbreak":[205,228],"schoonerhead":[250,280],"beehive":[250,282],"mtbattie":[205,208],"pophambeach":[150,165],"reidstate":[155,165],"agamenticus":[95,94],"bradbury":[115,124],"pleasantmtn":[65,90],"heightofland":[165,172],"sebago":[80,95],"nausetlight":[245,202],"capecodhighlandlight":[225,222],"racepointlight":[215,243],"nobskapointlight":[255,186],"chathamlight":[260,200],"scituatelight":[185,147],"marbleheadlight":[150,129],"easternpointlight":[150,131],"annisquamharborlight":[145,128],"newburyportharborlight":[125,110],"nedspointlight":[240,167],"bordenflatslight":[230,156],"gayheadlight":[270,271],"beavertaillight":[255,190],"castlehilllight":[250,199],"pointjudithlight":[265,192],"watchhilllight":[270,206],"sakonnetlight":[255,183],"blockislandsoutheastli":[285,273],"saybrookbreakwaterligh":[280,209],"lyndepointlight":[280,208],"stoningtonharborlight":[270,198],"averypointlight":[270,198],"stratfordpointlight":[315,234],"mountgreylocksummit":[190,205],"mountwachusettsummit":[145,132],"mountsugarloaf":[170,156],"mountholyokesummithous":[185,172],"mounttom":[195,176],"monumentmountain":[225,215],"mounteverett":[240,246],"greatbluehill":[175,127],"quabbinenfieldlookout":[175,176],"mohawktrailhairpinturn":[175,181],"shelburnefalls":[165,150],"stockbridgebowl":[220,215],"halibutpointstatepark":[140,134],"goodharborbeach":[150,125],"racepointbeach":[215,239],"moheganbluffs":[285,274],"sachuestpoint":[250,184],"brentonpointstatepark":[255,200],"napatreepoint":[270,373],"coltstatepark":[230,173],"heubleintowertalcottmo":[240,200],"castlecraighubbardpark":[265,213],"sleepinggianttower":[280,208],"eastrockpark":[290,219],"haystackmountaintower":[240,239],"lakewaramaug":[275,248],"kentfallsstatepark":[270,256],"hammonassetmeigspoint":[285,212],"bluffpointstatepark":[270,201],"litchfieldgreen":[260,225],"whitefacemountainsummi":[245,263],"cascademountain":[235,238],"mountjo":[240,251],"hurricanemountainfiret":[225,231],"ampersandmountain":[265,269],"goodnowmountainfiretow":[255,257],"coneymountain":[285,275],"mountarabfiretower":[295,307],"pokeomoonshinefiretowe":[215,228],"azuremountainfiretower":[300,314],"hadleymountainfiretowe":[235,229],"vanderwhackermountainf":[245,256],"snowymountainfiretower":[270,263],"bluemountainfiretower":[270,282],"owlsheadmountainfireto":[280,316],"noonmarkmountain":[225,226],"wakelymountainfiretowe":[280,285],"baldrondaxemountainfir":[315,308],"silverlakemountain":[245,256],"mountvanhoevenberg":[240,244],"baxtermountain":[225,228],"bigcrowmountain":[225,236],"belfrymountainfiretowe":[205,200],"giantmountainsummit":[220,219],"pitchoffbalancedrocks":[235,245],"prospectmountain":[215,218],"buckmountain":[205,208],"panthermountainroute3":[275,276],"kanemountainfiretower":[290,282],"goremountainfiretower":[240,251],"chapelpond":[225,219],"connerypond":[245,255],"heartlakeadirondakloj":[240,252],"mirrorlake":[245,251],"lakeplacid":[245,255],"uppercascadelake":[235,237],"lakedurant":[270,266],"bluemountainlake":[275,268],"richlakenewcomb":[255,249],"lakeflower":[260,259],"longlake":[275,262],"indianlakeroute30":[260,252],"schroonlake":[220,219],"marcyfield":[230,229],"jaycoveredbridge":[230,243],"crownpointlakechamplai":[190,189]}};
+const HOME_LL=[43.6556,-71.5010];
+const COORD_FIX={8:{"kancsugar":[44.0016,-71.4614,44.0098,-71.4277]},4:{"meredith":[43.6556,-71.501,43.656,-71.498],"squam":[43.73,-71.588,43.731,-71.586],"centerharb":[43.708,-71.465,43.71,-71.467],"weirs":[43.612,-71.458,43.608,-71.459],"altonbay":[43.456,-71.232,43.476,-71.24],"wolfeboro":[43.585,-71.208,43.582,-71.21],"kearsarge":[43.384,-71.864,43.385,-71.857],"bog":[43.44,-71.92,43.469,-71.93],"artists":[44.1836,-71.6968,44.181,-71.695],"baldmtn":[44.1856,-71.7028,44.183,-71.704],"sugarhill":[44.22,-71.78,44.217,-71.783],"bretton":[44.2583,-71.4406,44.26,-71.443],"tablerock":[44.8657,-71.3033,44.864,-71.303],"greatglen":[44.258,-71.253,44.261,-71.257],"lyndon":[44.53,-72,44.565,-71.973],"willoughby":[44.7333,-72.05,44.735,-72.047],"nubble":[43.165,-70.5919,43.166,-70.593],"portlandhd":[43.6231,-70.2078,43.624,-70.209],"pemaquid":[43.8342,-69.5058,43.837,-69.506],"westrattle":[43.7876,-71.5442,43.785,-71.545],"mtwillard":[44.2074,-71.4118,44.204,-71.411],"profilelake":[44.1585,-71.6822,44.162,-71.677],"echolake":[44.1869,-71.6889,44.187,-71.69],"rockygorge":[43.9985,-71.2711,44.004,-71.278],"pemioverlook":[44.0006,-71.5411,44.035,-71.517],"mtwashington":[44.2706,-71.3033,44.27,-71.302],"therocks":[44.2711,-71.6797,44.283,-71.735],"newcastle":[43.0703,-70.7106,43.069,-70.713],"eaton":[43.8864,-71.0836,43.914,-71.074],"scarborough":[43.5731,-70.3592,43.563,-70.365],"baileyisland":[43.7364,-69.9986,43.731,-69.997],"jordanpond":[44.3208,-68.2533,44.322,-68.255],"cadillac":[44.3526,-68.2253,44.353,-68.223],"otterpoint":[44.305,-68.1911,44.307,-68.192],"ravensnest":[44.335,-68.0561,44.339,-68.045],"quoddy":[44.8151,-66.9508,44.815,-66.95],"peacham":[44.3242,-72.1417,44.328,-72.175],"smugglers":[44.5553,-72.7972,44.555,-72.796],"owlshead":[44.2831,-72.2856,44.297,-72.295],"shelburne":[44.3806,-73.2447,44.394,-73.256]}};
+const RENAME={5:{"northconway":{"was":"North Conway","n":"Cathedral Ledge","s":"Bartlett, NH","t":"ridge","az":[30,190]}}};
+const NEW_IN={10:["jobspond"],9:["indianhead"],2:["tablerock"],3:["chocorualake", "westrattle", "mtpercival", "mtwillard", "profilelake", "echolake", "rockygorge", "lowerfalls", "pemioverlook", "mtwashington", "lafayette", "jefferson", "therocks", "newcastle", "eaton", "pequawket", "scarborough", "baileyisland", "boothbay", "jordanpond", "cadillac", "otterpoint", "bassharbor", "ravensnest", "quoddy", "peacham", "smugglers", "owlshead", "shelburne", "norton"],4:["chocorua16", "tamworth", "leavittpark", "squamnorth", "moultonneck", "centersandwich", "ashland", "newfoundsouth", "kanclincoln", "northconway", "chatham", "randolph", "kitterypoint", "longsands", "yorkharbor", "willoughbysouth"],5:["cardigan", "chocoruasummit", "moosilauke", "belknap", "bluejob", "middlesugarloaf", "mtavalon", "mtisrael", "mtpemi", "welchledges", "fossmtn", "greenmtn", "intervale", "ellacoya", "ryeharbor", "stinson", "packmonadnock", "mtphilo", "snakemtn", "appgap", "lincolngap", "mtabraham", "ascutney", "burkemtn", "stowepinnacle", "elmore", "mthorrid", "jennefarm", "hogback", "buttonbay", "barrhill", "marshallpoint", "owlsheadlight", "twolights", "buglight", "springpoint", "capeporpoise", "dicehead", "fortpoint", "doublingpoint", "hendrickshead", "rocklandbreak", "schoonerhead", "beehive", "mtbattie", "pophambeach", "reidstate", "agamenticus", "bradbury", "pleasantmtn", "heightofland", "sebago"],6:["nausetlight", "capecodhighlandlight", "racepointlight", "nobskapointlight", "chathamlight", "scituatelight", "marbleheadlight", "easternpointlight", "annisquamharborlight", "newburyportharborlight", "nedspointlight", "bordenflatslight", "gayheadlight", "beavertaillight", "castlehilllight", "pointjudithlight", "watchhilllight", "sakonnetlight", "blockislandsoutheastli", "saybrookbreakwaterligh", "lyndepointlight", "stoningtonharborlight", "averypointlight", "stratfordpointlight", "mountgreylocksummit", "mountwachusettsummit", "mountsugarloaf", "mountholyokesummithous", "mounttom", "monumentmountain", "mounteverett", "greatbluehill", "quabbinenfieldlookout", "mohawktrailhairpinturn", "shelburnefalls", "stockbridgebowl", "halibutpointstatepark", "goodharborbeach", "racepointbeach", "moheganbluffs", "sachuestpoint", "brentonpointstatepark", "napatreepoint", "coltstatepark", "heubleintowertalcottmo", "castlecraighubbardpark", "sleepinggianttower", "eastrockpark", "bearmountain", "haystackmountaintower", "lakewaramaug", "kentfallsstatepark", "hammonassetmeigspoint", "bluffpointstatepark", "litchfieldgreen", "whitefacemountainsummi", "cascademountain", "mountjo", "hurricanemountainfiret", "ampersandmountain", "goodnowmountainfiretow", "coneymountain", "mountarabfiretower", "pokeomoonshinefiretowe", "azuremountainfiretower", "hadleymountainfiretowe", "vanderwhackermountainf", "snowymountainfiretower", "bluemountainfiretower", "owlsheadmountainfireto", "noonmarkmountain", "wakelymountainfiretowe", "baldrondaxemountainfir", "silverlakemountain", "mountvanhoevenberg", "roostercomb", "baxtermountain", "bigcrowmountain", "belfrymountainfiretowe", "giantmountainsummit", "pitchoffbalancedrocks", "prospectmountain", "buckmountain", "panthermountainroute3", "kanemountainfiretower", "goremountainfiretower", "chapelpond", "connerypond", "heartlakeadirondakloj", "mirrorlake", "lakeplacid", "lowerausablelake", "uppercascadelake", "lakedurant", "bluemountainlake", "richlakenewcomb", "lowersaranaclake", "lakeflower", "longlake", "indianlakeroute30", "schroonlake", "marcyfield", "jaycoveredbridge", "tupperlakeskycenterare", "crownpointlakechamplai"]};
+const TZ="America/New_York", NDAYS=7,
+/* Corridor: the sun's light has to travel under the cloud deck to reach it, so the gap is sampled at
+   several distances along the sun's azimuth, not one. Weights say how much a blocked cell at that
+   distance costs — the 100-250 km window is the "projector" that lights cloud overhead. */
+CORRIDOR_KM=[30,80,150,250], CORRIDOR_W=[0.55,0.9,1.0,0.75], AQ_GRID_KM=40, CACHE_MS=2*3600*1000;
+const WATER={lake:1,pond:1,ocean:1};
+/* score array layout */
+const S={score:0,horizon:1,canvas:2,clarity:3,view:4,cl:5,cm:6,ch:7,pcl:8,pcm:9,visKm:10,precip:11,chEff:12,
+  g0:13,g1:14,g2:15,g3:16,aod:17,rainPrior:18,dust:19};  /* g0-g3: % of the gap blocked at each corridor distance */
+const G={score:0,clear:1,calm:2,satur:3,steam:4,wind:5,spread:6,drop:7};
+
+/* ---------- solar geometry ---------- */
+const RAD=Math.PI/180,DAYMS=864e5,J1970=2440588,J2000=2451545,OBL=RAD*23.4397;
+const toJulian=d=>d.valueOf()/DAYMS-0.5+J1970;
+const fromJulian=j=>new Date((j+0.5-J1970)*DAYMS);
+const toDays=d=>toJulian(d)-J2000;
+const rightAsc=(l,b)=>Math.atan2(Math.sin(l)*Math.cos(OBL)-Math.tan(b)*Math.sin(OBL),Math.cos(l));
+const decl=(l,b)=>Math.asin(Math.sin(b)*Math.cos(OBL)+Math.cos(b)*Math.sin(OBL)*Math.sin(l));
+const sidereal=(d,lw)=>RAD*(280.16+360.9856235*d)-lw;
+const sma=d=>RAD*(357.5291+0.98560028*d);
+const eclon=M=>M+RAD*(1.9148*Math.sin(M)+0.02*Math.sin(2*M)+0.0003*Math.sin(3*M))+RAD*102.9372+Math.PI;
+function sunPos(date,lat,lon){
+  const lw=RAD*-lon,phi=RAD*lat,d=toDays(date),M=sma(d),L=eclon(M),dec=decl(L,0),ra=rightAsc(L,0),H=sidereal(d,lw)-ra;
+  return {az:(Math.atan2(Math.sin(H),Math.cos(H)*Math.sin(phi)-Math.tan(dec)*Math.cos(phi))/RAD+180+360)%360};
+}
+const J0=0.0009;
+const julianCycle=(d,lw)=>Math.round(d-J0-lw/(2*Math.PI));
+const approxTransit=(Ht,lw,n)=>J0+(Ht+lw)/(2*Math.PI)+n;
+const solarTransitJ=(ds,M,L)=>J2000+ds+0.0053*Math.sin(M)-0.0069*Math.sin(2*L);
+const hourAngle=(h,phi,d)=>Math.acos((Math.sin(h)-Math.sin(phi)*Math.sin(d))/(Math.cos(phi)*Math.cos(d)));
+function sunTimes(date,lat,lon){
+  const lw=RAD*-lon,phi=RAD*lat,d=toDays(date),n=julianCycle(d,lw),ds=approxTransit(0,lw,n);
+  const M=sma(ds),L=eclon(M),dec=decl(L,0),Jnoon=solarTransitJ(ds,M,L);
+  const w=hourAngle(-0.833*RAD,phi,dec);
+  if(!isFinite(w)) return null;
+  const Jset=solarTransitJ(approxTransit(w,lw,n),M,L);
+  return {sunrise:fromJulian(Jnoon-(Jset-Jnoon)),sunset:fromJulian(Jset)};
+}
+function destPoint(lat,lon,brg,km){
+  const R=6371,d=km/R,b=brg*RAD,p1=lat*RAD,l1=lon*RAD;
+  const p2=Math.asin(Math.sin(p1)*Math.cos(d)+Math.cos(p1)*Math.sin(d)*Math.cos(b));
+  const l2=l1+Math.atan2(Math.sin(b)*Math.sin(d)*Math.cos(p1),Math.cos(d)-Math.sin(p1)*Math.sin(p2));
+  return {lat:+(p2/RAD).toFixed(4),lon:+(((l2/RAD)+540)%360-180).toFixed(4)};
+}
+const nyKey=dt=>new Intl.DateTimeFormat('sv-SE',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(dt).replace(' ','T');
+const nyHour=dt=>nyKey(dt).slice(0,13)+':00';
+const nyDate=dt=>nyKey(dt).slice(0,10);
+const nyTime=dt=>nyKey(dt).slice(11,16);
+
+/* ---------- scoring ---------- */
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const bell=(x,c,w)=>Math.exp(-((x-c)*(x-c))/(2*w*w));
+const mean=a=>a.reduce((x,y)=>x+y,0)/a.length;
+function arcFit(az,arc){
+  const a=arc[0],b=arc[1];
+  if(a===0&&b===360) return 1;
+  const s=((az-a)%360+360)%360, e=((b-a)%360+360)%360;
+  if(s<=e) return 1;
+  const dTo=(x,y)=>Math.abs(((x-y)%360+540)%360-180);
+  const near=Math.min(dTo(az,a),dTo(az,b));
+  return near<=20?0.55:(near<=40?0.25:0.1);
+}
+/* ECMWF's cloud at 300/250/200 hPa is a direct reading of the cirrus band — the layer that
+   actually catches colour after the sun is below the horizon. Treat it as EVIDENCE about how
+   much high cloud is there, not as a nudge to a number another model got wrong.
+   Sep 22 2026: HRRR put 6% high cloud over the Pemigewasset Overlook while ECMWF read 33% at
+   250 hPa with 70% humidity. The sky was full of lit cirrus. That case is why this exists.
+   cir = {c3,c25,c2,rh} or null. Returns the high-cloud figure to score with. */
+const CIRRUS_TRUST=0.8;   /* how much of ECMWF's cirrus reading to carry across to other models */
+function cirrusCheck(cir,ch){
+  if(!cir||cir.c3==null) return {ch:ch,state:0};
+  const top=Math.max(cir.c3,cir.c25,cir.c2);
+  if(top>=25&&cir.rh>=55) return {ch:Math.max(ch,CIRRUS_TRUST*top),state:2};   /* confirmed: believe the profile */
+  /* The mirror case: a model claims a lot of "high" cloud, but the cirrus band is nearly empty
+     and dry. That deck is almost certainly altostratus sitting lower than the model labels it,
+     and it will go flat grey rather than light up. */
+  if(ch>=45&&top<0.4*ch&&cir.rh<50) return {ch:Math.max(25,top*1.5),state:-1};
+  return {ch:ch,state:1};
+}
+function scoreLight(loc,probes,sunAz,arc,cir){
+  const CL=loc.cl,CM=loc.cm,CH_raw=loc.ch;
+  const cc=cirrusCheck(cir,CH_raw);
+  const CH=cc.ch;                      /* the cirrus profile can raise or cap this */
+  /* Corridor transmission: each distance lets through (1 - weight x blocked). Multiply along the ray,
+     softened, so one partly filled cell dents the score and a solid wall anywhere in the window kills it. */
+  const blk=probes.map(p=>clamp((p.cl+0.45*p.cm)/95,0,1));
+  let trans=1, worst=0;
+  blk.forEach((b,i)=>{trans*=1-CORRIDOR_W[i]*b; if(CORRIDOR_W[i]*b>CORRIDOR_W[worst]*blk[worst]) worst=i;});
+  const hProbe=Math.pow(clamp(trans,0,1),0.7);
+  const hLocal=1-0.5*clamp(CL/90,0,1);
+  const horizon=clamp(0.75*hProbe+0.25*hLocal,0,1);
+  const hi=bell(CH,55,28),mid=bell(CM,45,30);
+  const raw=clamp(0.60*hi+0.40*mid+0.15*Math.min(hi,mid),0,1);
+  let canvas=clamp(raw*(1-0.8*clamp((CL-30)/60,0,1)),0,1);
+  /* Clarity: haze and smoke don't add colour, they mute it. Base 0.9 on an ordinary day; washed air
+     after rain earns the last tenth, smoke or heavy haze takes up to half away. */
+  let clarity=0.9;
+  if(loc.pr>0.15)clarity-=0.45;
+  if(loc.pr>1.0)clarity-=0.3;
+  if(loc.vis!=null&&loc.vis<20000)clarity-=0.25*clamp((20000-loc.vis)/16000,0,1);
+  if(loc.rh>92)clarity-=0.15; else if(loc.rh>85)clarity-=0.05;
+  if(loc.aod!=null){
+    clarity-=0.5*clamp((loc.aod-0.15)/0.45,0,1);       /* 0.15 normal, 0.6+ = smoke */
+    if(loc.aod<0.08) clarity+=0.05;                     /* unusually clean air */
+  }
+  if(loc.dust!=null&&loc.dust>40) clarity-=0.1*clamp((loc.dust-40)/100,0,1);
+  const washed=loc.rainPrior!=null&&loc.rainPrior>=1&&loc.pr<=0.15&&(loc.aod==null||loc.aod<0.25);
+  if(washed) clarity+=0.1;
+  clarity=clamp(clarity,0,1);
+  const view=arcFit(sunAz,arc);
+  const quality=(0.88*canvas+0.12*view)*(0.5+0.5*clarity);
+  const arr=[];
+  arr[S.score]=+(100*quality*(0.12+0.88*horizon)).toFixed(1);
+  arr[S.horizon]=Math.round(horizon*100); arr[S.canvas]=Math.round(canvas*100);
+  arr[S.clarity]=Math.round(clarity*100); arr[S.view]=Math.round(view*100);
+  arr[S.cl]=Math.round(CL); arr[S.cm]=Math.round(CM); arr[S.ch]=Math.round(CH_raw); arr[S.chEff]=Math.round(CH);
+  arr[S.pcl]=Math.round(probes[worst].cl); arr[S.pcm]=Math.round(probes[worst].cm);
+  arr[S.visKm]=loc.vis==null?null:Math.round(loc.vis/1000); arr[S.precip]=+loc.pr.toFixed(2);
+  [S.g0,S.g1,S.g2,S.g3].forEach((k,i)=>arr[k]=Math.round((blk[i]||0)*100));
+  arr[S.aod]=loc.aod==null?null:+loc.aod.toFixed(2);
+  arr[S.rainPrior]=loc.rainPrior==null?null:+loc.rainPrior.toFixed(1);
+  arr[S.dust]=loc.dust==null?null:Math.round(loc.dust);
+  return arr;
+}
+/* fog: night = array of hourly {cl,cm,ch,t,td,ws,pr} for the 4 h ending at sunrise; tmaxPrev = prev afternoon max */
+function scoreFog(night,tmaxPrev,isWater){
+  const tot=night.map(h=>100*(1-(1-h.cl/100)*(1-h.cm/100)*(1-h.ch/100)));
+  const clear=1-clamp(mean(tot)/100,0,1);
+  const wind=mean(night.map(h=>h.ws));
+  const calm=1-clamp((wind-3)/12,0,1);
+  const last=night[night.length-1];
+  const spread=last.t-last.td;
+  const satur=1-clamp((spread-0.3)/3.0,0,1);
+  const drop=tmaxPrev==null?0:(tmaxPrev-last.t);
+  const steam=clamp((drop-6)/10,0,1);
+  let base=0.34*clear+0.30*calm+0.36*satur;
+  let score=100*base*(isWater?1:0.75)+(isWater?14*steam:0);
+  const pr=mean(night.map(h=>h.pr));
+  if(pr>0.2) score*=0.35;
+  score=clamp(score,0,100);
+  const arr=[];
+  arr[G.score]=+score.toFixed(1); arr[G.clear]=Math.round(clear*100); arr[G.calm]=Math.round(calm*100);
+  arr[G.satur]=Math.round(satur*100); arr[G.steam]=Math.round(steam*100);
+  arr[G.wind]=+wind.toFixed(1); arr[G.spread]=+spread.toFixed(1); arr[G.drop]=+drop.toFixed(1);
+  return arr;
+}
+</script>
+<script>
+"use strict";
+const LS={spots:"ghb.spots",ui:"ghb.ui",cache:"ghb.cache4",mapkey:"ghb.gmapkey"};
+/* The key lives on its own, outside the settings blob, so exporting or resetting settings
+   never carries it around and the HTML file itself stays free of credentials. */
+const DEFAULT_STYLE_IDS={terrain:"outdoor-v2",satellite:"satellite",hybrid:"hybrid"};
+const GMAP_DEFAULT_KEY="";  /* public copy: key is entered per device under Map › Key and kept in that browser only */
+function mapKey(){try{const v=localStorage.getItem(LS.mapkey);return v===null?GMAP_DEFAULT_KEY:v;}catch(e){return GMAP_DEFAULT_KEY;}}
+function setMapKey(v){try{ localStorage.setItem(LS.mapkey,v||""); gSessions={}; gFailed={}; localStorage.removeItem("ghb.gsess"); }catch(e){}}
+function lsGet(k,fb){try{const v=localStorage.getItem(k);return v?JSON.parse(v):fb;}catch(e){return fb;}}
+function lsSet(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+
+let SPOTS=lsGet(LS.spots,null);
+if(!Array.isArray(SPOTS)||!SPOTS.length) SPOTS=JSON.parse(JSON.stringify(DEFAULT_SPOTS));
+const ui=Object.assign({ev:"sunset",day:0,drive:95,view:"list",model:"consensus",focus:null,spotsVersion:0,
+  mapStyle:"plain",styleIds:Object.assign({},DEFAULT_STYLE_IDS)},lsGet(LS.ui,{}));
+ui.styleIds=Object.assign({},DEFAULT_STYLE_IDS,ui.styleIds||{});
+ui.query=""; /* a search is for right now, not something to inherit on the next open */
+/* A model that no longer exists would resolve to nothing and blank the board. */
+if(ui.model!=="consensus" && !MODELS.some(m=>m.id===ui.model)) ui.model="consensus";
+/* Repair anything malformed in the saved list before it reaches the forecast code.
+   One spot missing its arc used to throw inside dataKey() and wedge the whole app. */
+(function healSpots(){
+  const num=(v,fb)=>typeof v==="number"&&isFinite(v)?v:fb;
+  let fixed=0, dropped=0;
+  SPOTS=SPOTS.filter(sp=>{
+    if(!sp||typeof sp!=="object") {dropped++;return false;}
+    const def=DEFAULT_SPOTS.find(d=>d.id===sp.id);
+    if(typeof sp.id!=="string"||!sp.id) {dropped++;return false;}
+    if(!isFinite(sp.lat)||!isFinite(sp.lon)||Math.abs(sp.lat)>90||Math.abs(sp.lon)>180){
+      if(def){sp.lat=def.lat;sp.lon=def.lon;fixed++;} else {dropped++;return false;}
+    }
+    if(typeof sp.n!=="string"||!sp.n){sp.n=(def&&def.n)||sp.id;fixed++;}
+    if(typeof sp.s!=="string"){sp.s=(def&&def.s)||"";fixed++;}
+    if(typeof sp.t!=="string"||!sp.t){sp.t=(def&&def.t)||"other";fixed++;}
+    if(!(typeof sp.d==="number"&&isFinite(sp.d)&&sp.d>=0)){sp.d=num(def&&def.d,60);fixed++;}
+    if(!Array.isArray(sp.az)||sp.az.length!==2||!isFinite(sp.az[0])||!isFinite(sp.az[1])){
+      sp.az=(def&&def.az)?def.az.slice():[0,360]; fixed++;
+    }else{
+      sp.az=[num(+sp.az[0],0),num(+sp.az[1],360)];
+    }
+    return true;
+  });
+  if(fixed||dropped) lsSet(LS.spots,SPOTS);
+})();
+/* Spots added to the defaults since this browser last saved its list get merged in once,
+   by version — so a spot the user deliberately removed never comes back. */
+(function migrateSpots(){
+  let added=0;
+  for(let v=(ui.spotsVersion||0)+1; v<=SPOTS_VERSION; v++){
+    for(const id of (NEW_IN[v]||[])){
+      if(SPOTS.some(s=>s.id===id)) continue;
+      const def=DEFAULT_SPOTS.find(s=>s.id===id);
+      if(def){SPOTS.push(JSON.parse(JSON.stringify(def)));added++;}
+    }
+    /* Coordinate corrections only land on spots still sitting exactly where the old default put
+       them — anything moved by hand is left alone. */
+    const ren=RENAME[v]||{};
+    for(const id in ren){
+      const r=ren[id], sp=SPOTS.find(s=>s.id===id);
+      if(sp && sp.n===r.was){sp.n=r.n; sp.s=r.s; sp.t=r.t; sp.az=r.az.slice(); added++;}
+    }
+    const fixes=COORD_FIX[v]||{};
+    for(const id in fixes){
+      const f=fixes[id], sp=SPOTS.find(s=>s.id===id);
+      if(!sp) continue;
+      if(Math.abs(sp.lat-f[0])<1e-9 && Math.abs(sp.lon-f[1])<1e-9){sp.lat=f[2];sp.lon=f[3];added++;}
+    }
+    for(const id of (DROP_IN[v]||[])){const i=SPOTS.findIndex(s=>s.id===id); if(i>=0){SPOTS.splice(i,1);added++;}}
+    const dfix=DRIVE_FIX[v]||{};
+    for(const sp of SPOTS){const df=dfix[sp.id]; if(df && sp.d===df[0]){sp.d=df[1];added++;}}
+  }
+  ui.spotsVersion=SPOTS_VERSION;
+  if(added){lsSet(LS.spots,SPOTS);}
+  lsSet(LS.ui,ui);
+})();
+let MODEL=null, loading=false, editingId=null;
+const saveUI=()=>lsSet(LS.ui,ui);
+const saveSpots=()=>lsSet(LS.spots,SPOTS);
+const fetchSet=()=>{const s=CONSENSUS.slice();if(ui.model!=="consensus"&&s.indexOf(ui.model)<0)s.push(ui.model);return s;};
+/* Only pull weather for spots the drive filter can actually surface, plus whatever is focused.
+   The list runs to 130 spots; fetching all of them to show the 40 inside 95 minutes is waste. */
+const coverDrive=()=>{
+  let c=Math.max(ui.drive||0,45);
+  if(ui.focus){const f=SPOTS.find(s=>s.id===ui.focus); if(f) c=Math.max(c,f.d);}
+  return c;
+};
+const inScope=()=>SPOTS.filter(s=>s.d<=coverDrive());
+const dataKey=()=>inScope().map(s=>[s.id,s.lat,s.lon,s.az[0],s.az[1]].join(",")).join("|")+"::"+fetchSet().slice().sort().join(",");
+
+/* ---------- fetch ---------- */
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+
+/* Open-Meteo bills a request as locations x max(1, series/10), where series = variables x models.
+   Keep our own ledger so we throttle ourselves instead of discovering the limit as a 429. */
+const LS_LEDGER="ghb.ledger";
+const weightOf=(locs,series)=>locs*Math.max(1,series/10);
+function ledgerRead(){
+  let a=[]; try{a=JSON.parse(localStorage.getItem(LS_LEDGER)||"[]");}catch(e){a=[];}
+  const cut=Date.now()-24*3600*1000;
+  return a.filter(x=>x&&x.t>cut);
+}
+function ledgerAdd(cost){
+  const a=ledgerRead(); a.push({t:Date.now(),c:cost});
+  try{localStorage.setItem(LS_LEDGER,JSON.stringify(a));}catch(e){}
+}
+function spent(){
+  const a=ledgerRead(), now=Date.now();
+  const sum=ms=>a.filter(x=>x.t>now-ms).reduce((s,x)=>s+x.c,0);
+  return {min:sum(60e3),hour:sum(3600e3),day:sum(24*3600e3)};
+}
+function headroom(){
+  const s=spent();
+  return Math.min(BUDGET.min-s.min, BUDGET.hour-s.hour, BUDGET.day-s.day);
+}
+const COST_PER_SPOT=5.2;   /* measured Sep 24: 1.0 cloud + 1.0 ECMWF + ~2.9 corridor probes (4 distances x sunrise/sunset, deduped) + ~0.3 air quality */
+/* A full pull can now cost more than one minute's allowance, so instead of trimming spots to fit the
+   minute, pause between requests until the minute window frees up. Only the hour/day allowance trims. */
+async function pace(cost){
+  for(let i=0;i<90;i++){
+    if(spent().min+cost<=BUDGET.min) return;
+    setStatus("Pausing a moment to stay under Open-Meteo's per-minute limit…");
+    await sleep(1000);
+  }
+}
+function longHeadroom(){ const s=spent(); return Math.min(BUDGET.hour-s.hour, BUDGET.day-s.day); }
+async function getJSON(url,attempt){
+  attempt=attempt||1;
+  const ac=new AbortController();
+  const timer=setTimeout(()=>ac.abort(),35000);
+  let r;
+  try{ r=await fetch(url,{signal:ac.signal}); }
+  catch(e){
+    clearTimeout(timer);
+    if(attempt<3) { await sleep(800*attempt); return getJSON(url,attempt+1); }
+    throw new Error(e.name==="AbortError" ? "the request timed out after 35 s" : "the network request failed ("+e.message+")");
+  }
+  clearTimeout(timer);
+  if(r.status===429||r.status>=500){
+    if(attempt<4){ await sleep(1500*attempt); return getJSON(url,attempt+1); }
+    throw new Error(r.status===429 ? "Open-Meteo is rate-limiting this browser (HTTP 429). Give it a few minutes." : "Open-Meteo returned HTTP "+r.status);
+  }
+  if(!r.ok){
+    let detail=""; try{ detail=(await r.text()).slice(0,140); }catch(e){}
+    throw new Error("Open-Meteo returned HTTP "+r.status+(detail?" — "+detail:""));
+  }
+  let j;
+  try{ j=await r.json(); }catch(e){ throw new Error("Open-Meteo sent something that isn't JSON"); }
+  return Array.isArray(j)?j:[j];
+}
+async function chunked(points,vars,models,extra){
+  const out=new Array(points.length), CH=15;
+  const series=vars.split(",").length*models.length;
+  for(let i=0;i<points.length;i+=CH){
+    const c=points.slice(i,i+CH);
+    await pace(weightOf(c.length,series));
+    ledgerAdd(weightOf(c.length,series));
+    const url="https://api.open-meteo.com/v1/forecast?latitude="+c.map(p=>p.lat).join(",")+
+      "&longitude="+c.map(p=>p.lon).join(",")+"&hourly="+vars+"&models="+models.join(",")+
+      "&timezone="+encodeURIComponent(TZ)+"&forecast_days="+NDAYS+(extra||"");
+    const j=await getJSON(url);
+    for(let k=0;k<j.length;k++) out[i+k]=j[k];
+    bump();
+  }
+  return out;
+}
+async function aqChunked(points){
+  const out=new Array(points.length), CH=15;
+  for(let i=0;i<points.length;i+=CH){
+    const c=points.slice(i,i+CH);
+    await pace(weightOf(c.length,2));
+    ledgerAdd(weightOf(c.length,2));
+    const url="https://air-quality-api.open-meteo.com/v1/air-quality?latitude="+c.map(p=>p.lat).join(",")+
+      "&longitude="+c.map(p=>p.lon).join(",")+"&hourly=aerosol_optical_depth,dust"+
+      "&timezone="+encodeURIComponent(TZ)+"&forecast_days=5";
+    const j=await getJSON(url);
+    for(let k=0;k<j.length;k++) out[i+k]=j[k];
+    bump();
+  }
+  return out;
+}
+let prog=0,progTotal=1;
+function bump(){prog++;setStatus("Pulling cloud models… "+Math.min(100,Math.round(prog/progTotal*100))+"%");}
+
+async function buildModel(){
+  const models=fetchSet();
+  const today=nyDate(new Date());
+  const day0=new Date(today+"T12:00:00");
+  const days=[];
+  for(let i=0;i<NDAYS;i++){const dt=new Date(day0.getTime()+i*DAYMS);days.push({date:nyDate(dt),dt});}
+
+  /* Fit the work to what the allowance can pay for right now. Trimming to the nearest spots
+     always beats refusing outright — a short board is still a board. */
+  let SCOPE=inScope();
+  const room=longHeadroom();
+  let trimmedFrom=0;
+  const affordable=Math.max(8,Math.floor(room/COST_PER_SPOT));
+  if(SCOPE.length>affordable){
+    trimmedFrom=SCOPE.length;
+    const keep=SCOPE.slice().sort((a,b)=>a.d-b.d).slice(0,affordable);
+    if(ui.focus && !keep.some(s=>s.id===ui.focus)){
+      const f=SCOPE.find(s=>s.id===ui.focus); if(f){keep.pop(); keep.push(f);}
+    }
+    const ids={}; keep.forEach(s=>ids[s.id]=1);
+    SCOPE=SCOPE.filter(s=>ids[s.id]);
+  }
+  if(room<20){ const e=new Error("this browser has used its Open-Meteo allowance for the moment"); e.budget=true; throw e; }
+  const geo={};
+  for(const s of SCOPE){
+    geo[s.id]={sunset:[],sunrise:[]};
+    for(const d of days){
+      const t=sunTimes(d.dt,s.lat,s.lon);
+      if(!t){geo[s.id].sunset.push(null);geo[s.id].sunrise.push(null);continue;}
+      geo[s.id].sunset.push({t:t.sunset,az:sunPos(t.sunset,s.lat,s.lon).az});
+      geo[s.id].sunrise.push({t:t.sunrise,az:sunPos(t.sunrise,s.lat,s.lon).az});
+    }
+  }
+  const spotPts=SCOPE.map(s=>({lat:+s.lat.toFixed(4),lon:+s.lon.toFixed(4)}));
+  /* Probe points sit 85 km out along the sun's azimuth. Spots a few km apart end up with
+     probes a few km apart, sampling the same cloud. Snap them to a grid and fetch each once. */
+  const probePts=[],probeIdx={},probeSeen={};
+  /* Far probes snap to a coarser grid: at 250 km out, spots 30 km apart are looking at the same air. */
+  const gridKey=(la,lo,g)=>g+"@"+Math.round(la/(g/111.32))+":"+Math.round(lo/(g/(111.32*Math.cos(la*RAD))));
+  const addProbe=(key,pt,km)=>{
+    const gk=gridKey(pt.lat,pt.lon,Math.max(PROBE_GRID_KM,Math.round(km*0.2)));
+    if(probeSeen[gk]==null){ probeSeen[gk]=probePts.length; probePts.push(pt); }
+    probeIdx[key]=probeSeen[gk];
+  };
+  for(const s of SCOPE){
+    const gs=geo[s.id].sunset.find(Boolean), gr=geo[s.id].sunrise.find(Boolean);
+    for(const km of CORRIDOR_KM){
+      addProbe("sunset:"+s.id+":"+km, destPoint(s.lat,s.lon,gs?gs.az:270,km),km);
+      addProbe("sunrise:"+s.id+":"+km, destPoint(s.lat,s.lon,gr?gr.az:90,km),km);
+    }
+  }
+  const V_SPOT="cloud_cover_low,cloud_cover_mid,cloud_cover_high";                 /* x models */
+  const V_EXTRA="visibility,precipitation,relative_humidity_2m,temperature_2m,dew_point_2m,wind_speed_10m,"+
+                "cloud_cover_300hPa,cloud_cover_250hPa,cloud_cover_200hPa,relative_humidity_300hPa"; /* 10 series, one model */
+  const V_PROBE="cloud_cover_low,cloud_cover_mid,cloud_cover_high";
+  /* Air quality (CAMS) is a ~40 km grid, so nearby spots share one lookup. */
+  const aqPts=[],aqIdx=[],aqSeen={};
+  spotPts.forEach(pt=>{const gk=gridKey(pt.lat,pt.lon,AQ_GRID_KM);
+    if(aqSeen[gk]==null){aqSeen[gk]=aqPts.length;aqPts.push(pt);} aqIdx.push(aqSeen[gk]);});
+  /* Cost check before we spend anything, so a wide drive filter fails politely
+     instead of burning the allowance and coming back 429. */
+  const est = weightOf(spotPts.length, V_SPOT.split(",").length*models.length)
+            + weightOf(spotPts.length, V_EXTRA.split(",").length*FOG_MODELS.length)
+            + weightOf(probePts.length, V_PROBE.split(",").length*models.length);
+  progTotal=Math.ceil(spotPts.length/15)*2+Math.ceil(probePts.length/15)+Math.ceil(aqPts.length/15); prog=0;
+
+  const spotData=await chunked(spotPts,V_SPOT,models,"");
+  const probeData=await chunked(probePts,V_PROBE,models,"");
+  /* Clarity and fog inputs come from two models, not the full consensus — they feed small
+     terms, and carrying them across every model is what made the old request so expensive. */
+  let fogData=null;
+  try{ fogData=await chunked(spotPts,V_EXTRA,FOG_MODELS,"&past_days=1"); }catch(e){ fogData=null; }
+  const cirData=fogData;   /* same request — the cirrus levels ride along with the ECMWF pull */
+  /* Aerosols are a refinement: if the air-quality API is down, score without them rather than fail. */
+  let aqData=null;
+  try{ aqData=await aqChunked(aqPts); }catch(e){ aqData=null; }
+  const aqMap=aqData?aqData.map(d=>{const m=new Map();if(d&&d.hourly)d.hourly.time.forEach((t,i)=>m.set(t,i));return m;}):null;
+
+  const mapOf=d=>{const m=new Map();d.hourly.time.forEach((t,i)=>m.set(t,i));return m;};
+  const spotMap=spotData.map(mapOf), probeMap=probeData.map(mapOf);
+  const cirMap=cirData?cirData.map(mapOf):null, fogMap=fogData?fogData.map(mapOf):null;
+  const fogMapOK=spotPts.map((_,i)=>!!(fogData&&fogData[i]&&fogData[i].hourly));
+  /* A model that has run out of forecast hours returns nulls. Those slots must DROP the model,
+     never default to zero — zero cloud reads as a perfect horizon and invents a high score. */
+  /* A single-model request comes back with unsuffixed variable names; a multi-model one
+     suffixes every key. Handle both rather than assuming. */
+  const col=(h,v,m)=>h[v+"_"+m]!==undefined?h[v+"_"+m]:h[v];
+  const EX=FOG_MODELS[0];
+  const gS=(pi,ti,m)=>{const h=spotData[pi].hourly;return{
+    cl:h["cloud_cover_low_"+m][ti],cm:h["cloud_cover_mid_"+m][ti],ch:h["cloud_cover_high_"+m][ti]};};
+  const gAQ=(pi,ti)=>{ if(!aqMap) return {aod:null,dust:null};
+    const d=aqData[aqIdx[pi]], j=aqMap[aqIdx[pi]].get(spotData[pi].hourly.time[ti]);
+    if(!d||!d.hourly||j==null) return {aod:null,dust:null};
+    const a=d.hourly.aerosol_optical_depth, u=d.hourly.dust;
+    return {aod:a?a[j]??null:null, dust:u?u[j]??null:null};};
+  const gX=(pi,ti)=>{ const aq=gAQ(pi,ti);
+    if(!fogData||!fogMapOK[pi]) return Object.assign({vis:null,pr:0,rh:60,rainPrior:null},aq);
+    const h=fogData[pi].hourly, j=fogMap[pi].get(spotData[pi].hourly.time[ti]);
+    if(j==null) return Object.assign({vis:null,pr:0,rh:60,rainPrior:null},aq);
+    const v=col(h,"visibility",EX), pr=col(h,"precipitation",EX), rh=col(h,"relative_humidity_2m",EX);
+    /* rain that fell 3-18 h before showtime: a front that has already cleared through */
+    let rainPrior=null;
+    if(pr&&j>=18){ rainPrior=0; for(let k=j-18;k<=j-3;k++) rainPrior+=(pr[k]||0); }
+    return Object.assign({vis:v?v[j]:null, pr:(pr?pr[j]:0)??0, rh:(rh?rh[j]:60)??60, rainPrior},aq);};
+  const gF=(pi,ti,m)=>{const h=fogData[pi].hourly;
+    const t=col(h,"temperature_2m",m),td=col(h,"dew_point_2m",m),ws=col(h,"wind_speed_10m",m);
+    return {t:t?t[ti]:null, td:td?td[ti]:null, ws:(ws?ws[ti]:0)??0};};
+  const gP=(pi,ti,m)=>{const h=probeData[pi].hourly;return{
+    cl:h["cloud_cover_low_"+m][ti],cm:h["cloud_cover_mid_"+m][ti],ch:h["cloud_cover_high_"+m][ti]};};
+  const okCloud=o=>o&&o.cl!=null&&o.cm!=null&&o.ch!=null;
+  const okFogHour=o=>okCloud(o)&&o.t!=null&&o.td!=null;
+  const blend=(a,b,w)=>{const o={};for(const k in a){const x=a[k],y=b[k];o[k]=(x==null||y==null)?(x==null?y:x):(x*w+y*(1-w));}return o;};
+
+  const rows={};
+  SCOPE.forEach((s,si)=>{
+    rows[s.id]={sunset:[],sunrise:[],fog:[]};
+    for(let di=0;di<NDAYS;di++){
+      /* --- light events --- */
+      for(const ev of ["sunset","sunrise"]){
+        const g=geo[s.id][ev][di];
+        if(!g){rows[s.id][ev].push(null);continue;}
+        const hA=ev==="sunset"?nyHour(new Date(g.t.getTime()-3600e3)):nyHour(g.t);
+        const hB=ev==="sunset"?nyHour(g.t):nyHour(new Date(g.t.getTime()+3600e3));
+        const sA=spotMap[si].get(hA), sB=spotMap[si].get(hB);
+        const PI=CORRIDOR_KM.map(km=>probeIdx[ev+":"+s.id+":"+km]);
+        const PA=PI.map(pi=>probeMap[pi].get(hA)), PB=PI.map(pi=>probeMap[pi].get(hB));
+        if(sA==null||sB==null||PA.some(x=>x==null)||PB.some(x=>x==null)){rows[s.id][ev].push(null);continue;}
+        const w=ev==="sunset"?0.45:0.55;
+        let cir=null;
+        if(cirMap){
+          const cA=cirMap[si].get(hA),cB=cirMap[si].get(hB),h=cirData[si].hourly;
+          if(cA!=null&&cB!=null){
+            const av=(k)=>{const a=col(h,k,CIRRUS_MODEL); if(!a) return null;
+              const x=a[cA],y=a[cB];return (x==null||y==null)?(x==null?y:x):Math.round(x*w+y*(1-w));};
+            cir={c3:av("cloud_cover_300hPa"),c25:av("cloud_cover_250hPa"),c2:av("cloud_cover_200hPa"),rh:av("relative_humidity_300hPa")};
+          }
+        }
+        const per={};
+        for(const m of models){
+          const lA=Object.assign({},gS(si,sA,m),gX(si,sA)), lB=Object.assign({},gS(si,sB,m),gX(si,sB));
+          const pa=PI.map((pi,k)=>gP(pi,PA[k],m)), pb=PI.map((pi,k)=>gP(pi,PB[k],m));
+          if(!okCloud(lA)||!okCloud(lB)||!pa.every(okCloud)||!pb.every(okCloud)) continue; /* model out of range here */
+          per[m]=scoreLight(blend(lA,lB,w),pa.map((x,k)=>blend(x,pb[k],w)),g.az,s.az,cir);
+        }
+        const firstKey=Object.keys(per)[0];
+        if(!firstKey){rows[s.id][ev].push(null);continue;}
+        const cst=cir?cirrusCheck(cir,per[firstKey][S.ch]).state:0;
+        rows[s.id][ev].push({t:nyTime(g.t),az:Math.round(g.az),cir:cir?[cir.c3,cir.c25,cir.c2,cir.rh]:null,cst,m:per});
+      }
+      /* --- lake fog at sunrise --- */
+      const gr=geo[s.id].sunrise[di];
+      if(!gr){rows[s.id].fog.push(null);continue;}
+      if(!fogData){rows[s.id].fog.push(null);continue;}
+      const hours=[];
+      for(let k=3;k>=0;k--) hours.push(nyHour(new Date(gr.t.getTime()-k*3600e3)));
+      const cIdx=hours.map(h=>spotMap[si].get(h));      /* cloud, from the main pull */
+      const fIdx=hours.map(h=>fogMap[si].get(h));       /* temp/dew/wind, from the fog pull */
+      if(cIdx.some(v=>v==null)||fIdx.some(v=>v==null)){rows[s.id].fog.push(null);continue;}
+      const prevAft=[];
+      for(let hh=12;hh<=18;hh++){
+        const key=nyDate(new Date(gr.t.getTime()-DAYMS))+"T"+String(hh).padStart(2,"0")+":00";
+        const ix=fogMap[si].get(key); if(ix!=null) prevAft.push(ix);
+      }
+      const perF={};
+      for(const m of FOG_MODELS){
+        if(models.indexOf(m)<0) continue;
+        const night=hours.map((_,k)=>Object.assign({},gS(si,cIdx[k],m),gF(si,fIdx[k],m)));
+        if(!night.every(okFogHour)) continue; /* model out of range here */
+        const temps=prevAft.map(ix=>gF(si,ix,m).t).filter(v=>v!=null);
+        perF[m]=scoreFog(night,temps.length?Math.max.apply(null,temps):null,!!WATER[s.t]);
+      }
+      if(!Object.keys(perF).length){rows[s.id].fog.push(null);continue;}
+      rows[s.id].fog.push({t:nyTime(gr.t),m:perF});
+    }
+  });
+  return {generated:Date.now(),key:dataKey(),models,cover:coverDrive(),spots:SCOPE.length,
+          trimmedFrom:trimmedFrom,cirrus:!!cirData,aq:!!aqData,days:days.map(d=>d.date),rows};
+}
+function setStatus(msg,kind){
+  const el=document.getElementById("status");
+  el.className="status"+(kind?" "+kind:"");
+  document.getElementById("statusText").textContent=msg;
+  el.hidden=false;
+}
+async function load(force){
+  if(loading) return;
+  loading=true;
+  try{
+  const cached=lsGet(LS.cache,null);
+  const fresh=cached&&cached.key===dataKey()&&!cached.trimmedFrom&&Date.now()-cached.generated<CACHE_MS;
+  const hasModel=cached&&cached.models&&(ui.model==="consensus"||cached.models.indexOf(ui.model)>=0);
+  if(!force&&fresh&&hasModel){
+    MODEL=cached; loading=false; document.getElementById("status").hidden=true; render(); return;
+  }
+  setStatus("Pulling cloud models…");
+  try{
+    MODEL=await buildModel();
+    lsSet(LS.cache,MODEL);
+    if(MODEL.trimmedFrom){
+      setStatus("Showing the "+MODEL.spots+" closest of "+MODEL.trimmedFrom+" spots inside "+ui.drive+
+        " minutes — the rest would go past Open-Meteo's allowance for this minute. Hit Refresh again in a minute for the full set.");
+    } else {
+      document.getElementById("status").hidden=true;
+    }
+    ui.day=nextDay(); saveUI();
+    render();
+  }catch(e){
+    const lead=e.budget?"Holding off — ":"Couldn't reach Open-Meteo — ";
+    const tail=e.budget?" Narrow the drive filter, or wait a minute and refresh.":"";
+    if(cached&&cached.rows){
+      MODEL=cached;
+      setStatus(lead+e.message+". Showing the last forecast, pulled "+new Date(cached.generated).toLocaleString()+"."+tail,"err");
+      render();
+    }else{
+      setStatus(lead+e.message+"."+(tail||" Check your connection and hit Refresh forecast."),"err");
+    }
+  }
+  }catch(outer){
+    /* Anything that escapes the inner handler — a malformed saved spot, a corrupt cache —
+       must still release the lock, or Refresh becomes a dead button. */
+    setStatus("Something went wrong preparing the forecast: "+(outer&&outer.message||outer)+" — try Reset saved data.","err");
+    showReset();
+  }finally{loading=false;}
+}
+function showReset(){
+  const el=document.getElementById("status");
+  if(el.querySelector("#resetData")) return;
+  const b=document.createElement("button");
+  b.id="resetData"; b.className="ghost"; b.type="button"; b.textContent="Reset saved data";
+  b.onclick=()=>{
+    try{localStorage.removeItem(LS.cache);localStorage.removeItem(LS.ui);}catch(e){}
+    if(confirm("Also reset your spot list to the built-in one? Cancel keeps your spots and clears only the cached forecast.")){
+      try{localStorage.removeItem(LS.spots);}catch(e){}
+    }
+    location.reload();
+  };
+  el.appendChild(b);
+}
+</script>
+<script>
+"use strict";
+/* ---------- display helpers ---------- */
+const band=v=> v>=75?{c:"var(--ember)",l:"Go"} : v>=60?{c:"var(--warn)",l:"Strong"} : v>=45?{c:"var(--dusk)",l:"Worth it"} : v>=30?{c:"var(--cold)",l:"Marginal"} : {c:"var(--muted)",l:"Skip"};
+const fogBand=v=> v>=70?{c:"var(--ember)",l:"Likely"} : v>=55?{c:"var(--warn)",l:"Good odds"} : v>=40?{c:"var(--dusk)",l:"Possible"} : v>=25?{c:"var(--cold)",l:"Unlikely"} : {c:"var(--muted)",l:"No"};
+const compass=a=>["N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"][Math.round(a/22.5)%16];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shortOf=id=>{const m=MODELS.find(x=>x.id===id);return m?m.short:id;};
+const bandOf=(v,ev)=>ev==="fog"?fogBand(v):band(v);
+function fmtDay(iso,i){
+  const d=new Date(iso+"T12:00:00");
+  if(i===0) return "Today";
+  if(i===1) return "Tomorrow";
+  return d.toLocaleDateString("en-US",{weekday:"short"})+" "+d.toLocaleDateString("en-US",{month:"numeric",day:"numeric"});
+}
+const fmtDayLong=iso=>new Date(iso+"T12:00:00").toLocaleDateString("en-US",{weekday:"long",month:"short",day:"numeric"});
+function leadHours(dateStr,hhmm){
+  if(!dateStr||!hhmm) return 0;
+  const nowET=new Date(new Date().toLocaleString("en-US",{timeZone:TZ}));
+  return Math.max(0,(new Date(dateStr+"T"+hhmm+":00").getTime()-nowET.getTime())/3600000);
+}
+function resolve(o,dateStr){
+  if(!o||!o.m) return null;
+  const want=(ui.model==="consensus"?CONSENSUS:[ui.model]);
+  const have=want.filter(m=>o.m[m]);
+  if(!have.length) return null;
+  const lead=leadHours(dateStr,o.t);
+  const w=have.map(m=>weightFor(m,lead));
+  const len=Math.max.apply(null,have.map(m=>o.m[m].length));
+  const v=[];
+  for(let i=0;i<len;i++){
+    let sum=0,tot=0;
+    have.forEach((m,k)=>{const x=o.m[m][i];if(typeof x==="number"){sum+=x*w[k];tot+=w[k];}});
+    v[i]=tot?sum/tot:null;
+  }
+  const sc=have.map(m=>o.m[m][0]);
+  return {v,spread:Math.max.apply(null,sc)-Math.min.apply(null,sc),lead,band:leadBand(lead),
+    per:have.map(m=>({id:m,short:shortOf(m),score:o.m[m][0],w:weightFor(m,lead)})),
+    miss:want.filter(m=>!o.m[m]).map(shortOf), multi:have.length>1, o};
+}
+const agree=sp=> sp<12?{c:"var(--good)",l:"Tight"} : sp<28?{c:"var(--warn)",l:"Mixed"} : {c:"var(--bad)",l:"Split"};
+const rowAt=(spId,ev,day)=>{const r=MODEL.rows[spId];return r&&r[ev]&&r[ev][day];};
+const resolveAt=(spId,ev,day)=>resolve(rowAt(spId,ev,day),MODEL.days[day]);
+const norm=s=>String(s||"").toLowerCase();
+function matchesQuery(sp){
+  const q=norm(ui.query).trim();
+  if(!q) return true;
+  return q.split(/\s+/).every(w=>norm(sp.n).indexOf(w)>=0||norm(sp.s).indexOf(w)>=0||norm(sp.t).indexOf(w)>=0);
+}
+function rowsFor(ev,day){
+  if(!MODEL) return [];
+  return SPOTS.filter(matchesQuery).map(sp=>({sp,d:resolveAt(sp.id,ev,day)})).filter(x=>x.d);
+}
+function nextDay(){
+  if(!MODEL) return 0;
+  const nowET=new Date(new Date().toLocaleString("en-US",{timeZone:TZ}));
+  const ref=SPOTS[0]&&MODEL.rows[SPOTS[0].id];
+  if(!ref) return 0;
+  for(let i=0;i<MODEL.days.length;i++){
+    const o=ref[ui.ev]&&ref[ui.ev][i];
+    if(!o) continue;
+    if(new Date(MODEL.days[i]+"T"+o.t+":00").getTime()+40*60000>nowET.getTime()) return i;
+  }
+  return 0;
+}
+function whyLight(v,o,ev){
+  const verb=ev==="sunset"?"sets":"rises";
+  const H=v[S.horizon],C=v[S.canvas],cl=v[S.cl],cm=v[S.cm],p=v[S.precip];
+  const ch=(v[S.chEff]!=null?v[S.chEff]:v[S.ch]);
+  let t;
+  if(p>0.5) t="Rain at showtime — the gap would have to open fast.";
+  else if(H<30){
+    const g=[S.g0,S.g1,S.g2,S.g3].map(k=>v[k]);
+    const wi=g.every(x=>x==null)?-1:g.reduce((b,x,i)=>(x||0)*CORRIDOR_W[i]>(g[b]||0)*CORRIDOR_W[b]?i:b,0);
+    t="Light can't get in. Low cloud is parked in the gap the sun has to come through"+(wi>=0?" — worst about "+CORRIDOR_KM[wi]+" km out.":".");
+  }
+  else if(cl>65) t="Low deck overhead — flat grey, no separation.";
+  else if(C<18) t="Sky's empty. Nothing up there to take the color.";
+  else if(ch>=40&&H>=70) t=(o.cst===2?"Confirmed cirrus overhead with an open gap at the horizon. That's the combination."
+                                      :"High cloud overhead with an open gap at the horizon. That's the combination.");
+  else if(o.cst===2&&v[S.chEff]>v[S.ch]+3&&H>=70) t="ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its "+Math.round(v[S.ch])+"% high cloud. Open gap at the horizon.";
+  else if(cm>=35&&H>=70) t="Mid-level cloud overhead and a clear run to the horizon.";
+  else if(H>=70&&C<30) t="Clean horizon but thin cover — expect a quiet gradient, not fire.";
+  else t="Partial setup: some cloud to catch light, some of the gap filled in.";
+  const aod=v[S.aod];
+  if(p<=0.5&&aod!=null&&aod>=0.4) t+=" Heavy haze or smoke in the air (AOD "+aod.toFixed(2)+") will mute the color.";
+  else if(p<=0.5&&aod!=null&&aod>=0.25) t+=" Some haze (AOD "+aod.toFixed(2)+") — colors a notch softer.";
+  else if(p<=0.15&&v[S.rainPrior]!=null&&v[S.rainPrior]>=1&&H>=50&&C>=30) t+=" Rain cleared through earlier — washed air, so the color should run saturated.";
+  if(o.cst===-1&&ch>=45) t+=" ECMWF sees nothing at cirrus level, so that high cloud is probably lower and flatter than it looks.";
+  if(v[S.view]<40) t+=" And the sun "+verb+" outside this spot's open arc.";
+  else if(p>0.15&&p<=0.5) t+=" Showers around.";
+  return t;
+}
+function whyFog(v,sp){
+  const water=!!WATER[sp.t];
+  if(v[G.satur]<35) return "Air's too dry at first light — dew point sits "+v[G.spread].toFixed(1)+"°C below the temperature.";
+  if(v[G.calm]<40) return "Too much wind ("+v[G.wind].toFixed(0)+" km/h) — anything that forms gets mixed out.";
+  if(v[G.clear]<40) return "Cloudy overnight, so nothing cools off enough to condense.";
+  if(water&&v[G.steam]>=50) return "Cold calm morning over water that's still holding the afternoon's heat — "+v[G.drop].toFixed(0)+"°C drop. Steam fog setup.";
+  if(water) return "Saturated and calm over water — mist is a real possibility at first light.";
+  return "Saturated and calm — worth checking low ground and river valleys, but there's no water here to steam.";
+}
+const whyOf=(d,sp,ev)=>ev==="fog"?whyFog(d.v,sp):whyLight(d.v,d.o,ev);
+function bar(label,val){
+  const col=val>=60?"var(--good)":val>=35?"var(--warn)":"var(--cold)";
+  return '<div class="bar"><b>'+label+'</b><div class="track"><i style="width:'+Math.max(2,Math.round(val))+'%;background:'+col+'"></i></div><span>'+Math.round(val)+'</span></div>';
+}
+function modelStrip(d){
+  const o=d.o;
+  if(!o||!o.m) return "";
+  const ids=MODELS.map(m=>m.id).filter(m=>o.m[m]);
+  if(ids.length<2) return "";
+  const active=(ui.model==="consensus"?CONSENSUS:[ui.model]);
+  const wOf={}; (d.per||[]).forEach(x=>wOf[x.id]=x.w);
+  const sc=ids.map(m=>o.m[m][0]);
+  const sp=Math.max.apply(null,sc)-Math.min.apply(null,sc);
+  const a=agree(sp);
+  const miss=(ui.model==="consensus"?CONSENSUS:[]).filter(m=>!o.m[m]).map(shortOf);
+  return '<div class="models"><span class="chip" style="color:'+a.c+'">'+a.l+' · '+Math.round(sp)+' pts</span>'+
+    ids.map(m=>{
+      const on=active.indexOf(m)>=0, v=o.m[m][0];
+      return '<span class="'+(on?"on":"off")+'" title="'+esc((MODELS.find(x=>x.id===m)||{}).label||m)+
+        (on?" · weight "+(wOf[m]!=null?wOf[m]:1).toFixed(1)+" at this lead time":" · not in this score")+'">'+
+        '<b>'+shortOf(m)+'</b> <i style="color:'+(on?bandOf(v,ui.ev).c:"var(--muted)")+'">'+Math.round(v)+'</i></span>';
+    }).join("")+
+    (miss.length?'<span class="off"><b>'+miss.join(", ")+'</b> past its horizon</span>':"")+'</div>';
+}
+function cirrusLine(o,v){
+  if(!o.cir) return "";
+  const lbl={2:["confirmed","var(--good)"],1:["none aloft","var(--muted)"],0:["no data","var(--muted)"],"-1":["not cirrus","var(--bad)"]}[o.cst]||["no data","var(--muted)"];
+  let adj="";
+  if(v&&v[S.chEff]!=null&&Math.abs(v[S.chEff]-v[S.ch])>=3){
+    const up=v[S.chEff]>v[S.ch];
+    adj=' · <em style="color:'+(up?"var(--good)":"var(--bad)")+'">high cloud '+Math.round(v[S.ch])+' &rarr; '+Math.round(v[S.chEff])+'</em>';
+  }
+  return '<div class="cirrus">cirrus 300/250/200&nbsp;hPa <em>'+o.cir[0]+'/'+o.cir[1]+'/'+o.cir[2]+'</em> · RH300 <em>'+o.cir[3]+'%</em> · <em style="color:'+lbl[1]+'">'+lbl[0]+'</em>'+adj+' <span style="opacity:.7">(ECMWF)</span></div>';
+}
+
+/* ---------- sky visual (Sep 27 2026) ----------
+   Two things decide a sunset: can the light get in, and is there cirrus to catch it. The card makes
+   both impossible to miss — a flag for each, a side view along the sun's azimuth, and the per-model
+   evidence underneath. Built only from numbers the row already carries. */
+const GK=()=>[S.g0,S.g1,S.g2,S.g3];
+function skyFacts(o,v){
+  const ids=MODELS.map(m=>m.id).filter(m=>o.m[m]);
+  const g=GK().map(k=>v[k]);
+  const hasG=g.every(x=>x!=null);
+  const lowFree=hasG&&ids.every(m=>GK().every(k=>(o.m[m][k]||0)<=10));
+  const open=hasG&&g.every(x=>x<=10)&&v[S.horizon]>=80;
+  const worst=hasG?g.reduce((b,x,i)=>x*CORRIDOR_W[i]>g[b]*CORRIDOR_W[b]?i:b,0):-1;
+  const seeHi=ids.filter(m=>o.m[m][S.ch]>=40);
+  const cirrus=o.cst===2||(seeHi.length>=2&&o.cst!==-1);
+  return {ids,g,hasG,lowFree,open,worst,seeHi,cirrus};
+}
+function skyFlags(o,v,f,ev){
+  const out=[];
+  const sunIco='<svg width="26" height="26" viewBox="0 0 30 30" aria-hidden="true"><line x1="2" y1="21" x2="28" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9 21a6 6 0 0 1 12 0" fill="var(--sun)"/><path d="M15 9v-3M7.5 12.5l-2-2M22.5 12.5l2-2" stroke="var(--sun)" stroke-width="2" stroke-linecap="round"/></svg>';
+  const cirIco='<svg width="26" height="26" viewBox="0 0 30 30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 10c5-3 9 2 15-1s7-2 9-1"/><path d="M5 16c4-2 7 1 12-1"/><path d="M9 22c4-2 8 1 16-2"/></svg>';
+  if(f.open) out.push('<div class="skyflag open">'+sunIco+'<div><strong>Horizon open</strong><span>'+
+    (f.lowFree?'No low cloud in the '+CORRIDOR_KM[CORRIDOR_KM.length-1]+' km path to the sun'+(f.ids.length>1?' · all '+f.ids.length+' models agree':''):'Clear run to the sun out to '+CORRIDOR_KM[CORRIDOR_KM.length-1]+' km')+'</span></div></div>');
+  else if(f.hasG&&f.g[f.worst]>=40) out.push('<div class="skyflag blocked">'+sunIco+'<div><strong>Horizon blocked</strong><span>'+Math.round(f.g[f.worst])+'% of the path shut about '+CORRIDOR_KM[f.worst]+' km out</span></div></div>');
+  if(f.cirrus) out.push('<div class="skyflag cirf">'+cirIco+'<div><strong>Cirrus overhead</strong><span>'+
+    (f.seeHi.length?f.seeHi.length+' of '+f.ids.length+' model'+(f.ids.length>1?'s':''):'No model shows it')+(o.cst===2?(f.seeHi.length?' + ':', but ')+'ECMWF\'s 300 hPa profile confirm'+(f.seeHi.length?'s':'s')+' it':' show high cloud')+'</span></div></div>');
+  else if(o.cst===-1&&f.seeHi.length) out.push('<div class="skyflag warnf">'+cirIco+'<div><strong>Not cirrus</strong><span>Models show high cloud but the cirrus band is empty and dry — likely flat altostratus</span></div></div>');
+  return out.length?'<div class="skyflags">'+out.join("")+'</div>':'';
+}
+function skyXsec(o,v,f,ev){
+  if(!f.hasG) return '';
+  const X=km=>44+km/CORRIDOR_KM[CORRIDOR_KM.length-1]*556;
+  const chE=v[S.chEff]!=null?v[S.chEff]:v[S.ch], a=clamp(chE/100,0,1), H=v[S.horizon];
+  const walls=f.g.map((b,i)=>({b,i,x:X(CORRIDOR_KM[i])})).filter(w=>w.b>25);
+  const firstWall=walls.length?walls[walls.length-1]:null;   /* light from the sun meets the far wall first */
+  let svg='<svg viewBox="0 0 640 210" role="img" aria-label="Side view toward the sun: high cloud '+Math.round(chE)+'%, path to the sun '+(f.open?'open':'partly blocked')+'">';
+  svg+='<text x="8" y="44" font-size="10" fill="var(--cirrus)">HIGH</text><text x="8" y="98" font-size="10" fill="var(--muted)">MID</text><text x="8" y="146" font-size="10" fill="var(--muted)">LOW</text>';
+  svg+='<rect x="44" y="124" width="566" height="40" rx="4" fill="'+(f.open?'var(--good)':'var(--muted)')+'" opacity=".10"/>';
+  walls.forEach(w=>{const h=Math.round(12+34*Math.min(1,w.b/100));svg+='<rect x="'+(w.x-20).toFixed(0)+'" y="'+(164-h)+'" width="40" height="'+h+'" rx="5" fill="var(--muted)" opacity="'+(0.25+0.5*Math.min(1,w.b/100)).toFixed(2)+'"/>';});
+  const zl=f.open?(f.lowFree?'LOW 0% · the whole path':'LOW CLEAR · the whole path'):(firstWall?'wall '+Math.round(f.g[f.worst])+'% at '+CORRIDOR_KM[f.worst]+' km':'mostly clear');
+  svg+='<text x="327" y="'+(walls.length?117:149)+'" font-size="11" fill="'+(f.open?'var(--good)':'var(--ink-2)')+'" text-anchor="middle" font-weight="600">'+zl+'</text>';
+  /* rays: under the deck if the gap is open; stopped at the first wall if not */
+  const sx=606,sy=170;
+  if(H>=55&&a>0.12){
+    svg+='<g stroke="var(--ray)" stroke-width="1.6" stroke-dasharray="5 5" opacity=".9">'+[70,170,280,400].map(x=>'<line x1="'+sx+'" y1="'+sy+'" x2="'+x+'" y2="'+(58-(x>250?-2:0))+'"/>').join("")+'</g>';
+  } else if(firstWall){
+    svg+='<g stroke="var(--ray)" stroke-width="1.6" stroke-dasharray="5 5" opacity=".6">'+[0,1,2].map(k=>'<line x1="'+sx+'" y1="'+sy+'" x2="'+(firstWall.x+22).toFixed(0)+'" y2="'+(150-k*10)+'"/>').join("")+'</g>';
+  }
+  if(a>0.12){
+    const st=(d,w,op)=>'<path d="'+d+'" stroke-width="'+w+'" opacity="'+(op*a).toFixed(2)+'"/>';
+    svg+='<g fill="none" stroke="var(--cirrus)" stroke-linecap="round">'+
+      st("M44 38c30-8 55 6 90-2s60-6 90 2",5,.95)+st("M60 50c28-6 52 4 82-1s52-5 80 1",4,.85)+st("M150 30c26-5 48 4 76 0",3.5,.8)+
+      st("M230 44c24-5 44 3 70 0s40-3 60 1",3,.55)+st("M380 36c20-4 36 3 56 0",2.5,.4)+st("M520 40c22-5 40 4 62 0",3,.35)+'</g>';
+    if(H>=55) svg+='<path d="M50 60c60 6 180 6 330 0" fill="none" stroke="var(--sun)" stroke-width="3" opacity="'+(0.6*a).toFixed(2)+'" stroke-linecap="round"/>';
+  } else svg+='<text x="327" y="44" font-size="10" fill="var(--muted)" text-anchor="middle">no high cloud overhead</text>';
+  if(v[S.cm]>=15) svg+='<g fill="var(--muted)" opacity="'+(0.15+0.45*clamp(v[S.cm]/100,0,1)).toFixed(2)+'"><ellipse cx="120" cy="96" rx="22" ry="6"/><ellipse cx="148" cy="94" rx="14" ry="5"/></g><text x="172" y="99" font-size="10" fill="var(--muted)">mid '+Math.round(v[S.cm])+'%</text>';
+  svg+='<line x1="44" y1="170" x2="612" y2="170" stroke="var(--ground)" stroke-width="1.5"/>';
+  svg+='<ellipse cx="50" cy="171" rx="14" ry="3" fill="var(--cold)" opacity=".7"/><circle cx="50" cy="160" r="3.5" fill="var(--ink)"/><line x1="50" y1="163" x2="50" y2="169" stroke="var(--ink)" stroke-width="2"/>';
+  svg+='<path d="M592 170a14 14 0 0 1 28 0z" fill="var(--sun)"/><text x="606" y="150" font-size="10" fill="var(--sun)" text-anchor="middle" font-weight="600">'+o.az+'°</text>';
+  svg+='<g font-size="10.5" text-anchor="middle">'+CORRIDOR_KM.map((km,i)=>{
+    const b=f.g[i], col=b<=10?'var(--good)':b<=40?'var(--warn)':'var(--bad)', key=CORRIDOR_W[i]===Math.max.apply(null,CORRIDOR_W);
+    const x=X(km);
+    return '<rect x="'+(x-(key?16:12)).toFixed(0)+'" y="'+(key?175:176)+'" width="'+(key?32:24)+'" height="'+(key?12:10)+'" rx="3" fill="'+col+'"/>'+
+      '<text x="'+x.toFixed(0)+'" y="202" fill="'+(key?col:'var(--muted)')+'"'+(key?' font-weight="600"':'')+'>'+km+' km</text>';
+  }).join("")+'</g><text x="50" y="202" font-size="10" fill="var(--ink-2)" text-anchor="middle">you</text></svg>';
+  return '<div class="skyx">'+svg+'</div>';
+}
+function skyPanels(o,v,f){
+  if(!f.ids.length) return '';
+  let cir='<div class="skypanel cir"><h5>High cloud overhead, by model</h5>';
+  const ups=[],cuts=[]; let upTo=0,cutTo=0;
+  f.ids.forEach(m=>{
+    const r=o.m[m], raw=Math.round(r[S.ch]), eff=Math.round(r[S.chEff]!=null?r[S.chEff]:r[S.ch]);
+    const up=eff>raw+3, cut=eff<raw-3;
+    if(up){ups.push(shortOf(m));upTo=eff;}
+    if(cut){cuts.push(shortOf(m));cutTo=eff;}
+    cir+='<div class="skym"><span class="m">'+shortOf(m)+'</span><div class="tk">'+
+      (up?'<i class="ghost" style="width:'+eff+'%"></i>':'')+'<i style="width:'+Math.max(1,cut?eff:raw)+'%"></i></div>'+
+      '<span class="v">'+(up||cut?'<s>'+raw+'</s>→<b'+(cut?' class="cut"':'')+'>'+eff+'</b>':raw+'%')+'</span></div>';
+  });
+  const fixed=[];
+  if(ups.length) fixed.push(ups.join(' and ')+(ups.length>1?' missed':' missed')+' the deck — raised to '+upTo+'% from ECMWF\'s cirrus profile.');
+  if(cuts.length) fixed.push(cuts.join(' and ')+' high cloud cut to '+cutTo+'% — the cirrus band is empty and dry, so it\'s likely lower, flatter cloud.');
+  if(fixed.length) cir+='<p class="skynote">'+fixed.join(' ')+'</p>';
+  if(o.cir){
+    const lab=['300 hPa','250 hPa','200 hPa','RH 300'];
+    cir+='<div class="skyprof" title="ECMWF cloud in the cirrus band">'+o.cir.map((x,i)=>'<div><em'+(i<3&&(x||0)<5?' class="zero"':'')+'>'+(x==null?'–':x+'%')+'</em>'+lab[i]+'</div>').join("")+'</div>';
+  }
+  cir+='</div>';
+  const maxW=Math.max.apply(null,CORRIDOR_W);
+  let hor='<div class="skypanel hor"><h5>Path to the sun · % blocked</h5><div class="skycells">'+CORRIDOR_KM.map((km,i)=>{
+    const b=Math.round(f.g[i]||0), cls=b<=10?'':b<=40?' thin':' shut', w=b<=10?'open':b<=40?'thin':'blocked';
+    return '<div class="skycell'+cls+(CORRIDOR_W[i]===maxW?' key':'')+'"><div class="km">'+km+' km</div><div class="pct">'+b+'%</div><div class="w">'+w+'</div></div>';
+  }).join("")+'</div>';
+  if(f.lowFree) hor+='<p class="skyhnote"><b>'+(f.ids.length>1?'All '+f.ids.length+' models agree:':'Clear:')+'</b> no low cloud at any distance on the way to the sun.</p>';
+  else if(f.hasG){
+    let wm=null,wv=-1; f.ids.forEach(m=>{const x=o.m[m][GK()[f.worst]]||0; if(x>wv){wv=x;wm=m;}});
+    hor+='<p class="skyhnote">Worst cell: '+CORRIDOR_KM[f.worst]+' km'+(wm&&f.ids.length>1?' — '+shortOf(wm)+' has it '+Math.round(wv)+'% blocked':'')+'.</p>';
+  }
+  hor+='</div>';
+  return '<div class="skypanels">'+cir+hor+'</div>';
+}
+function skyVisual(o,v,ev){
+  if(!o||!o.m||!v) return '';
+  const f=skyFacts(o,v);
+  return skyFlags(o,v,f,ev)+skyXsec(o,v,f,ev)+skyPanels(o,v,f);
+}
+/* the right-hand column of a card — shared by the ranked list and the focus view */
+function detailBody(sp,d,ev,opts){
+  opts=opts||{};
+  const v=d.v,o=d.o,bd=bandOf(v[0],ev),fog=ev==="fog";
+  const bars=fog
+    ? bar("Clear night",v[G.clear])+bar("Calm",v[G.calm])+bar("Saturation",v[G.satur])+bar("Steam",v[G.steam])
+    : bar("Horizon",v[S.horizon])+bar("Canvas",v[S.canvas])+bar("Clarity",v[S.clarity])+bar("View fit",v[S.view]);
+  const nums=fog
+    ? '<span>wind <em>'+v[G.wind].toFixed(0)+' km/h</em></span><span>dew point spread <em>'+v[G.spread].toFixed(1)+'&deg;C</em></span><span>afternoon-to-dawn drop <em>'+v[G.drop].toFixed(0)+'&deg;C</em></span>'
+    : '<span>cloud here <em>'+Math.round(v[S.cl])+'/'+Math.round(v[S.cm])+'/'+Math.round(v[S.ch])+'</em> low·mid·high</span>'+
+      (v[S.g0]!=null
+        ? ''   /* the path panel above shows the corridor cells */
+        : '<span>in the gap <em>'+Math.round(v[S.pcl])+'/'+Math.round(v[S.pcm])+'</em> low·mid</span>')+
+      (v[S.aod]!=null?'<span>AOD <em>'+v[S.aod].toFixed(2)+'</em></span>':'')+
+      (v[S.rainPrior]!=null&&v[S.rainPrior]>=1?'<span>rain earlier <em>'+v[S.rainPrior].toFixed(1)+' mm</em></span>':'')+
+      '<span>vis <em>'+(v[S.visKm]==null?"–":Math.round(v[S.visKm])+" km")+'</em></span>'+
+      '<span>precip <em>'+v[S.precip].toFixed(2)+' mm</em></span>';
+  const meta=fog
+    ? 'sunrise '+o.t+' · '+sp.d+' min drive · '+esc(sp.t)
+    : o.t+' · '+sp.d+' min drive · sun '+o.az+'&deg; '+compass(o.az)+' · open '+sp.az[0]+'&ndash;'+sp.az[1]+'&deg; · '+esc(sp.t);
+  const title=opts.dayLabel
+    ? '<span class="name">'+esc(opts.dayLabel)+'</span>'
+    : '<span class="name link" data-focus="'+sp.id+'" role="button" tabindex="0">'+esc(sp.n)+'</span>';
+  const sub=opts.dayLabel ? (fog?"Lake fog":(ev==="sunset"?"Sunset":"Sunrise")) : esc(sp.s);
+  const links=opts.noLinks?"":'<div class="cardlinks"><a class="ghost" style="text-decoration:none" target="_blank" rel="noopener" href="https://maps.apple.com/?ll='+sp.lat+','+sp.lon+'&q='+encodeURIComponent(sp.n)+'">Map</a>'+
+    '<button class="ghost" type="button" data-edit="'+sp.id+'">Edit</button></div>';
+  return '<div class="head-line">'+title+'<span class="verdict" style="color:'+bd.c+'">'+bd.l+'</span></div>'+
+    '<div class="town">'+sub+'</div><div class="meta">'+meta+'</div>'+
+    '<div class="why">'+whyOf(d,sp,ev)+'</div>'+
+    (fog?"":skyVisual(o,v,ev))+
+    '<div class="bars">'+bars+'</div>'+
+    '<div class="nums">'+nums+'</div>'+
+    modelStrip(d)+
+    '<div class="cardfoot">'+(opts.trend||'<div></div>')+links+'</div>';
+}
+function trendHTML(spId,ev){
+  const series=MODEL.days.map((dd,di)=>{const q=resolveAt(spId,ev,di);return q?q.v[0]:0;});
+  return '<div class="trend" aria-label="7 day trend">'+series.map((s,di)=>
+    '<div class="'+(di===ui.day?"now":"")+'" title="'+fmtDay(MODEL.days[di],di)+': '+Math.round(s)+'" style="height:'+Math.max(3,Math.round(s/100*22))+'px;background:'+bandOf(s,ev).c+'"></div>').join("")+'</div>';
+}
+
+/* ---------- map ---------- */
+let LMAP=null, LLAYER=null, LTILE=null, LTHEME=null, LTILEKEY=null, tileErrors=0;
+const MAPTILER_ATTR='<a href="https://www.maptiler.com/copyright/" target="_blank" rel="noopener">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">&copy; OpenStreetMap contributors</a>';
+const GOOGLE_ATTR='Map data &copy;'+new Date().getFullYear()+' Google';
+/* Google Map Tiles API: each style needs a session token (valid ~2 weeks), created once and cached. */
+const GDARK=[{elementType:"geometry",stylers:[{color:"#1d2530"}]},{elementType:"labels.text.fill",stylers:[{color:"#9aa7b6"}]},{elementType:"labels.text.stroke",stylers:[{color:"#11171e"}]},{featureType:"water",elementType:"geometry",stylers:[{color:"#0e1621"}]},{featureType:"road",elementType:"geometry",stylers:[{color:"#2c3744"}]},{featureType:"poi",stylers:[{visibility:"off"}]},{featureType:"transit",stylers:[{visibility:"off"}]}];
+const GSTYLE={plain:{mapType:"roadmap"},plaindark:{mapType:"roadmap",styles:GDARK},terrain:{mapType:"terrain",layerTypes:["layerRoadmap"]},satellite:{mapType:"satellite"},hybrid:{mapType:"satellite",layerTypes:["layerRoadmap"]}};
+let gSessions=lsGet("ghb.gsess",{}), gPending={}, gFailed={};
+function gSession(st){
+  const s=gSessions[st], key=mapKey();
+  if(s && s.key===key && s.exp>Date.now()+6*3600e3) return s.session;
+  if(gFailed[st]===key) return null;
+  if(!gPending[st]){
+    gPending[st]=fetch("https://tile.googleapis.com/v1/createSession?key="+encodeURIComponent(key),{method:"POST",
+      headers:{"Content-Type":"application/json"},body:JSON.stringify(Object.assign({language:"en-US",region:"US"},GSTYLE[st]))})
+    .then(r=>r.json().then(j=>{ if(!r.ok||!j.session) throw new Error((j.error&&j.error.message)||("HTTP "+r.status));
+      gSessions[st]={session:j.session,exp:(+j.expiry||0)*1000||Date.now()+7*864e5,key}; lsSet("ghb.gsess",gSessions); }))
+    .catch(e=>{ gFailed[st]=key; gFailed[st+":msg"]=e.message; })
+    .finally(()=>{ delete gPending[st]; LTILEKEY=null; if(ui.view==="map" && typeof MODEL!=="undefined" && MODEL) renderMap(); });
+  }
+  return null;
+}
+function tileSpec(){
+  const key=mapKey(); let st=ui.mapStyle||"plain";
+  if(st==="plain"&&isDark()) st="plaindark";
+  if(!key) return {url:"",attr:"",maxZoom:20,id:"nokey",maptiler:false,nokey:true};
+  const sess=gSession(st);
+  if(!sess) return {url:"",attr:"",maxZoom:20,id:(gFailed[st]===key?"failed:":"pending:")+st,maptiler:false,
+    warn:gFailed[st]===key?"Google didn't open a map session: "+esc(gFailed[st+":msg"]||"")+". Check the key under Key.":""};
+  return {url:"https://tile.googleapis.com/v1/2dtiles/{z}/{x}/{y}?session="+encodeURIComponent(sess)+"&key="+encodeURIComponent(key),
+          attr:GOOGLE_ATTR, maxZoom:(st==="terrain"?15:20), id:"g:"+st+":"+sess, maptiler:true};
+}
+const cssVar=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim()||"#888";
+const bandHex=(v,ev)=>cssVar(bandOf(v,ev).c.replace(/^var\(|\)$/g,""));
+function isDark(){
+  const r=document.documentElement.getAttribute("data-theme");
+  if(r==="dark") return true; if(r==="light") return false;
+  return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+}
+function kmBetween(a,b){
+  const dy=(a[0]-b[0])*111.32, dx=(a[1]-b[1])*111.32*Math.cos((a[0]+b[0])/2*RAD);
+  return Math.hypot(dx,dy);
+}
+function renderMap(){
+  const wrap=document.getElementById("mapWrap");
+  if(typeof L==="undefined"){
+    wrap.innerHTML='<div class="mapfail">The map library didn\'t load — it comes from a CDN, so this view needs a connection. Ranked and Matrix still work offline from the cached forecast.</div>';
+    return;
+  }
+  if(!LMAP){
+    LMAP=L.map("map",{scrollWheelZoom:true,attributionControl:true}).setView([44.0,-71.5],7);
+    LLAYER=L.layerGroup().addTo(LMAP);
+  }
+  const spec=tileSpec();
+  if(LTILEKEY!==spec.id){
+    LTILEKEY=spec.id; tileErrors=0;
+    document.getElementById("mapWarn").hidden=true;
+    if(LTILE) LMAP.removeLayer(LTILE);
+    LTILE=null;
+    if(spec.nokey||spec.warn){const w=document.getElementById("mapWarn");w.innerHTML=spec.warn||"The map needs a Google Maps key — add one under Key.";w.hidden=false;}
+    if(spec.url) LTILE=L.tileLayer(spec.url,{maxZoom:spec.maxZoom,attribution:spec.attr}).addTo(LMAP);
+    if(LTILE&&spec.maptiler){
+      /* A wrong key or a style ID MapTiler doesn't recognise returns errors, not tiles.
+         Say so rather than leaving a blank grey map. */
+      LTILE.on("tileerror",()=>{
+        if(++tileErrors===6){
+          const w=document.getElementById("mapWarn");
+          w.innerHTML="Google isn't serving <b>"+esc(ui.mapStyle)+"</b> tiles. Check the key under Key — it needs the Map Tiles API enabled.";
+          w.hidden=false;
+        }
+      });
+    }
+  }
+  document.querySelectorAll("[data-mstyle]").forEach(b=>{
+    const on=b.dataset.mstyle===(ui.mapStyle||"plain");
+    b.setAttribute("aria-pressed",on);
+    /* Not disabled — clicking one without a key should open the key dialog, which a
+       disabled button can't do. Just mark it. */
+    const needs = !mapKey();
+    b.classList.toggle("needskey",needs);
+    b.title = needs ? "Needs a Google Maps key — click to add one" : "";
+  });
+  const rows=rowsFor(ui.ev,ui.day).filter(x=>x.sp.d<=ui.drive).sort((a,b)=>b.d.v[0]-a.d.v[0]);
+  LLAYER.clearLayers();
+  document.getElementById("mapCount").textContent=rows.length+" spots · "+fmtDay(MODEL.days[ui.day],ui.day)+" "+(ui.ev==="fog"?"fog":ui.ev);
+  const bands=(ui.ev==="fog"
+    ? [[70,"Likely"],[55,"Good odds"],[40,"Possible"],[25,"Unlikely"],[0,"No"]]
+    : [[75,"Go"],[60,"Strong"],[45,"Worth it"],[30,"Marginal"],[0,"Skip"]]);
+  document.getElementById("mapLegend").innerHTML="<b>score</b>"+bands.map(([v,l])=>
+    '<span><i style="background:'+bandHex(v,ui.ev)+'"></i>'+l+' '+(v?v+"+":"under 30")+'</span>').join("");
+  if(!rows.length) return;
+  const pts=[];
+  const ring=isDark()?"#0C1117":"#FFFFFF";
+  rows.forEach((x,i)=>{
+    const v=x.d.v[0], col=bandHex(v,ui.ev);
+    const m=L.circleMarker([x.sp.lat,x.sp.lon],{
+      radius:5+Math.round(v/100*8), color:ring, weight:1.5, opacity:.9,
+      fillColor:col, fillOpacity:.35+0.55*(v/100)
+    });
+    /* the best few stay labelled, so a good area reads without clicking */
+    if(i<3) m.bindTooltip(Math.round(v)+" "+x.sp.n,{permanent:true,direction:"right",offset:[8,0],className:"maptop"});
+    else m.bindTooltip(x.sp.n+" · "+Math.round(v),{direction:"top",opacity:.95});
+    m.on("click",()=>m.setPopupContent(popupFor(x,rows)));
+    m.bindPopup(popupFor(x,rows),{autoPan:true});
+    m.addTo(LLAYER);
+    pts.push([x.sp.lat,x.sp.lon]);
+  });
+  LMAP.fitBounds(L.latLngBounds(pts).pad(0.12),{animate:false});
+  setTimeout(()=>LMAP.invalidateSize(),60);
+}
+function popupFor(x,rows){
+  const v=x.d.v, bd=bandOf(v[0],ui.ev), o=x.d.o;
+  const here=[x.sp.lat,x.sp.lon];
+  const near=rows.filter(y=>y.sp.id!==x.sp.id&&kmBetween(here,[y.sp.lat,y.sp.lon])<=25)
+                 .sort((a,b)=>b.d.v[0]-a.d.v[0]).slice(0,5);
+  return '<div class="mappop"><div class="t">'+esc(x.sp.n)+' <span style="color:'+bd.c+'">'+Math.round(v[0])+'</span></div>'+
+    '<div class="s">'+esc(x.sp.s)+' · '+bd.l+'</div>'+
+    '<div class="m">'+(ui.ev==="fog"?"sunrise "+o.t:o.t+" · sun "+o.az+"&deg; "+compass(o.az))+' · '+x.sp.d+' min drive</div>'+
+    '<div class="w">'+whyOf(x.d,x.sp,ui.ev)+'</div>'+
+    (near.length?'<div class="near"><b>within 25 km</b>'+near.map(y=>
+      '<div><span>'+esc(y.sp.n)+'</span><i style="color:'+bandOf(y.d.v[0],ui.ev).c+'">'+Math.round(y.d.v[0])+'</i></div>').join("")+'</div>':"")+
+    '<div class="acts"><button class="ghost" type="button" data-mapfocus="'+x.sp.id+'">Open spot</button>'+
+    '<a class="ghost" style="text-decoration:none" target="_blank" rel="noopener" href="https://maps.apple.com/?ll='+x.sp.lat+','+x.sp.lon+'&q='+encodeURIComponent(x.sp.n)+'">Directions</a></div></div>';
+}
+
+/* ---------- focus (single spot, all days) ---------- */
+function renderFocus(){
+  const sp=SPOTS.find(x=>x.id===ui.focus);
+  const el=document.getElementById("focusView");
+  if(!sp){el.innerHTML='<div class="empty">That spot is no longer on the list.</div>';return;}
+  const evs=[["sunrise","Sunrise"],["sunset","Sunset"],["fog","Lake fog"]];
+  let best=null;
+  MODEL.days.forEach((dd,di)=>evs.forEach(([ev])=>{
+    if(ev==="fog") return;
+    const d=resolveAt(sp.id,ev,di);
+    if(d&&(!best||d.v[0]>best.d.v[0])) best={d,ev,di};
+  }));
+  let bestFog=null;
+  MODEL.days.forEach((dd,di)=>{const d=resolveAt(sp.id,"fog",di);if(d&&(!bestFog||d.v[0]>bestFog.d.v[0]))bestFog={d,di};});
+
+  const head='<div class="focushead"><div><h2>'+esc(sp.n)+'</h2><div class="town">'+esc(sp.s)+'</div>'+
+    '<div class="meta">'+sp.d+' min drive · '+sp.lat.toFixed(4)+', '+sp.lon.toFixed(4)+' · open '+sp.az[0]+'&ndash;'+sp.az[1]+'&deg; · '+esc(sp.t)+'</div></div>'+
+    '<div class="cardlinks"><a class="ghost" style="text-decoration:none" target="_blank" rel="noopener" href="https://maps.apple.com/?ll='+sp.lat+','+sp.lon+'&q='+encodeURIComponent(sp.n)+'">Map</a>'+
+    '<button class="ghost" type="button" data-edit="'+sp.id+'">Edit</button>'+
+    '<button class="ghost" type="button" id="focusBack">All spots</button></div></div>';
+
+  const cell=(ev,di)=>{
+    const d=resolveAt(sp.id,ev,di);
+    if(!d) return '<td class="cell"><span style="color:var(--muted);opacity:.5">–</span></td>';
+    const b=bandOf(d.v[0],ev);
+    const isBest=(ev!=="fog"&&best&&best.ev===ev&&best.di===di)||(ev==="fog"&&bestFog&&bestFog.di===di);
+    return '<td class="cell'+(isBest?" best":"")+'"><span style="color:'+b.c+';background:color-mix(in srgb, '+b.c+' 14%, transparent)" title="'+
+      esc(whyOf(d,sp,ev))+'">'+Math.round(d.v[0])+'</span> <span class="sdet">'+(ev==="fog"?"":d.o.t)+'</span></td>';
+  };
+  const table='<div class="matrix-wrap"><table class="matrix ftable"><thead><tr><th>Day</th>'+
+    evs.map(e=>'<th>'+e[1]+'</th>').join("")+'<th>Agreement</th></tr></thead><tbody>'+
+    MODEL.days.map((dd,di)=>{
+      const any=resolveAt(sp.id,"sunset",di)||resolveAt(sp.id,"sunrise",di);
+      return '<tr><td>'+fmtDay(dd,di)+'</td>'+evs.map(e=>cell(e[0],di)).join("")+
+        '<td class="ev">'+(any?'<span style="color:'+agree(any.spread).c+'">'+agree(any.spread).l+' · '+Math.round(any.spread)+'</span>':'–')+'</td></tr>';
+    }).join("")+'</tbody></table></div>';
+
+  let bestBlock="";
+  if(best){
+    bestBlock='<h3 class="focustitle">Best window — '+fmtDayLong(MODEL.days[best.di])+', '+(best.ev==="sunset"?"sunset":"sunrise")+'</h3>'+
+      '<article class="card top"><div><div class="score" style="color:'+bandOf(best.d.v[0],best.ev).c+'">'+Math.round(best.d.v[0])+'</div></div><div>'+
+      detailBody(sp,best.d,best.ev,{dayLabel:fmtDayLong(MODEL.days[best.di]),noLinks:true})+'</div></article>';
+  }
+  let fogBlock="";
+  if(bestFog&&bestFog.d.v[0]>=40){
+    fogBlock='<h3 class="focustitle">Best fog morning — '+fmtDayLong(MODEL.days[bestFog.di])+'</h3>'+
+      '<article class="card"><div><div class="score" style="color:'+fogBand(bestFog.d.v[0]).c+'">'+Math.round(bestFog.d.v[0])+'</div></div><div>'+
+      detailBody(sp,bestFog.d,"fog",{dayLabel:fmtDayLong(MODEL.days[bestFog.di]),noLinks:true})+'</div></article>';
+  }
+  el.innerHTML=head+table+bestBlock+fogBlock;
+  const back=document.getElementById("focusBack");
+  if(back) back.onclick=()=>{ui.focus=null;saveUI();render();};
+  el.querySelectorAll("[data-edit]").forEach(b=>b.onclick=()=>{openSpots();editSpot(b.dataset.edit);});
+}
+
+/* ---------- render ---------- */
+function render(){
+  if(!MODEL) return;
+  const focused=!!(ui.focus&&SPOTS.some(s=>s.id===ui.focus));
+  document.getElementById("controls").hidden=false;
+  document.getElementById("stampText").innerHTML="Pulled "+new Date(MODEL.generated).toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})+"<br>"+(MODEL.spots||SPOTS.length)+" of "+SPOTS.length+" spots · "+MODEL.models.length+" models";
+  document.getElementById("driveOut").textContent=ui.drive>=240?"240 min (max)":ui.drive+" min";
+  document.getElementById("drive").value=ui.drive;
+  document.querySelectorAll("[data-ev]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.ev===ui.ev));
+  document.querySelectorAll("[data-view]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===ui.view));
+  document.getElementById("modelSel").value=ui.model;
+  const si=document.getElementById("spotSearch");
+  if(document.activeElement!==si) si.value=focused?(SPOTS.find(s=>s.id===ui.focus)||{}).n||"":(ui.query||"");
+  document.getElementById("spotClear").hidden=!(focused||(ui.query||"").length);
+  if(ui.day>=MODEL.days.length) ui.day=0;
+
+  /* controls that only make sense across spots */
+  document.getElementById("rowEvent").hidden=focused;
+  document.getElementById("rowFilters").hidden=focused;
+
+  document.getElementById("listView").hidden=true;
+  document.getElementById("matrixView").hidden=true;
+  document.getElementById("mapWrap").hidden=true;
+  document.getElementById("focusView").hidden=!focused;
+  document.getElementById("lede").hidden=focused;
+  document.getElementById("agreeNote").hidden=focused;
+
+  if(focused){renderFocus();return;}
+
+  const seg=document.getElementById("dayseg");
+  seg.innerHTML=MODEL.days.map((dt,i)=>{
+    const best=rowsFor(ui.ev,i).filter(x=>x.sp.d<=ui.drive).reduce((m,x)=>Math.max(m,x.d.v[0]),0);
+    return '<button type="button" data-day="'+i+'" aria-pressed="'+(i===ui.day)+'">'+fmtDay(dt,i)+
+      '<span class="dayscore" style="color:'+bandOf(best,ui.ev).c+'">best '+Math.round(best)+'</span></button>';
+  }).join("");
+  seg.querySelectorAll("button").forEach(b=>b.onclick=()=>{ui.day=+b.dataset.day;saveUI();render();});
+
+  const rows=rowsFor(ui.ev,ui.day).filter(x=>x.sp.d<=ui.drive).sort((a,b)=>b.d.v[0]-a.d.v[0]);
+  const note=document.getElementById("agreeNote");
+  if(ui.model==="consensus"&&rows.length){
+    const avg=rows.reduce((m,x)=>m+x.d.spread,0)/rows.length;
+    const a=agree(avg);
+    const n=rows[0].d.per.length, gone=rows[0].d.miss||[], bnd=rows[0].d.band;
+    const lead=rows[0].d.per.slice().sort((x,y)=>y.w-x.w)[0];
+    note.innerHTML='<span class="chip" style="color:'+a.c+'">'+a.l+'</span> '+n+' of '+CONSENSUS.length+' models · '+Math.round(avg)+' pts apart · '+
+      bnd.label+' weighting, '+esc(lead.short)+' leads'+(gone.length?' · '+gone.join(", ")+' past horizon':'');
+  } else if(ui.model!=="consensus"){
+    note.innerHTML='scoring against '+esc((MODELS.find(m=>m.id===ui.model)||{}).label||ui.model)+' alone';
+  } else note.innerHTML="";
+
+  const lede=document.getElementById("lede");
+  if(!rows.length){lede.hidden=true;}
+  else{
+    const top=rows[0],v=top.d.v,bd=bandOf(v[0],ui.ev);
+    lede.hidden=false; lede.style.borderLeftColor=bd.c;
+    const body=ui.ev==="fog"
+      ? 'Best fog odds for '+fmtDay(MODEL.days[ui.day],ui.day).toLowerCase()+' inside '+ui.drive+' minutes: <strong>'+esc(top.sp.n)+'</strong>, '+esc(top.sp.s)+'. Sunrise '+top.d.o.t+'. '+whyFog(v,top.sp)
+      : 'Best bet for '+fmtDay(MODEL.days[ui.day],ui.day).toLowerCase()+"'s "+ui.ev+' inside '+ui.drive+' minutes: <strong>'+esc(top.sp.n)+'</strong>, '+esc(top.sp.s)+
+        '. Sun '+(ui.ev==="sunset"?"sets":"rises")+' '+top.d.o.t+' at '+top.d.o.az+'&deg; '+compass(top.d.o.az)+'. '+whyLight(v,top.d.o,ui.ev);
+    lede.innerHTML='<div class="big" style="color:'+bd.c+'">'+Math.round(v[0])+'</div><div class="txt">'+body+'</div>';
+  }
+
+  const list=document.getElementById("listView");
+  list.hidden=ui.view!=="list";
+  document.getElementById("matrixView").hidden=ui.view!=="matrix";
+  document.getElementById("mapWrap").hidden=ui.view!=="map";
+
+  if(ui.view==="map"){ renderMap(); return; }
+  if(ui.view==="list"){
+    if(!rows.length){
+      if((ui.query||"").trim()&&!SPOTS.filter(matchesQuery).length){
+        list.innerHTML='<div class="empty">Nothing matches &ldquo;'+esc(ui.query)+'&rdquo;. Clear the search, or add it in Edit spots.</div>';
+        return;}
+      const anyNear=SPOTS.filter(matchesQuery).some(sp=>sp.d<=ui.drive);
+      list.innerHTML='<div class="empty">'+(anyNear
+        ? esc((MODELS.find(m=>m.id===ui.model)||{}).label||ui.model)+" doesn't run this far out — it has no forecast for "+fmtDay(MODEL.days[ui.day],ui.day)+". Switch to Consensus, or pick a nearer day."
+        : ((ui.query||"").trim()
+            ? "Nothing matching &ldquo;"+esc(ui.query)+"&rdquo; is inside "+ui.drive+" minutes. Drag the drive slider right."
+            : "No spots inside "+ui.drive+" minutes. Drag the drive slider right, or add one in Edit spots."))+'</div>';
+      return;}
+    list.innerHTML=rows.map((x,i)=>{
+      const bd=bandOf(x.d.v[0],ui.ev);
+      return '<article class="card'+(i===0?" top":"")+'">'+
+        '<div><div class="score" style="color:'+bd.c+'">'+Math.round(x.d.v[0])+'</div><div class="rank">#'+(i+1)+'</div></div><div>'+
+        detailBody(x.sp,x.d,ui.ev,{trend:trendHTML(x.sp.id,ui.ev)})+'</div></article>';
+    }).join("");
+    list.querySelectorAll("[data-edit]").forEach(b=>b.onclick=()=>{openSpots();editSpot(b.dataset.edit);});
+    list.querySelectorAll("[data-focus]").forEach(b=>{
+      const go=()=>{ui.focus=b.dataset.focus;saveUI();render();window.scrollTo({top:0,behavior:"smooth"});};
+      b.onclick=go; b.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}};
+    });
+  } else {
+    const near=SPOTS.filter(matchesQuery).filter(sp=>sp.d<=ui.drive);
+    document.getElementById("mhead").innerHTML='<tr><th>Spot</th><th>Drive</th>'+MODEL.days.map((d,i)=>'<th>'+fmtDay(d,i)+'</th>').join("")+'</tr>';
+    const scored=near.map(sp=>({sp,vals:MODEL.days.map((dd,i)=>{const q=resolveAt(sp.id,ui.ev,i);return q?q.v[0]:0;})}));
+    scored.sort((a,b)=>Math.max.apply(null,b.vals)-Math.max.apply(null,a.vals));
+    document.getElementById("mbody").innerHTML=scored.map(o=>'<tr><td>'+esc(o.sp.n)+'</td><td style="font-family:var(--mono);color:var(--muted)">'+o.sp.d+"'</td>"+
+      o.vals.map((v,i)=>'<td class="cell"><span style="color:'+bandOf(v,ui.ev).c+';background:color-mix(in srgb, '+bandOf(v,ui.ev).c+' 14%, transparent);'+(i===ui.day?"outline:1px solid var(--line);":"")+'">'+Math.round(v)+'</span></td>').join("")+'</tr>').join("");
+  }
+}
+</script>
+<script>
+"use strict";
+const dlg=document.getElementById("spotDlg");
+function openSpots(){renderSpotList();document.getElementById("spotForm").hidden=true;if(!dlg.open)dlg.showModal();}
+function slug(n){return n.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,28)||("spot"+Date.now());}
+function renderSpotList(){
+  const el=document.getElementById("spotList");
+  el.innerHTML=SPOTS.slice().sort((a,b)=>a.d-b.d).map(s=>
+    '<div class="spotrow"><div><div class="sname">'+esc(s.n)+'</div>'+
+    '<div class="sdet">'+esc(s.s)+' · '+s.d+' min · '+s.lat.toFixed(4)+', '+s.lon.toFixed(4)+' · open '+s.az[0]+'–'+s.az[1]+'°</div></div>'+
+    '<div style="display:flex;gap:6px"><button class="ghost" type="button" data-e="'+s.id+'">Edit</button>'+
+    '<button class="ghost" type="button" data-x="'+s.id+'">Remove</button></div></div>').join("");
+  el.querySelectorAll("[data-e]").forEach(b=>b.onclick=()=>editSpot(b.dataset.e));
+  el.querySelectorAll("[data-x]").forEach(b=>b.onclick=()=>{
+    if(!confirm("Remove this spot from the board?")) return;
+    SPOTS=SPOTS.filter(s=>s.id!==b.dataset.x); saveSpots(); renderSpotList(); load(true);
+  });
+}
+function drawDial(){
+  const a1=+document.getElementById("f_a1").value||0, a2=+document.getElementById("f_a2").value||0;
+  const R=34,cx=48,cy=48;
+  const pt=(a,r)=>[(cx+r*Math.sin(a*Math.PI/180)).toFixed(2),(cy-r*Math.cos(a*Math.PI/180)).toFixed(2)];
+  const delta=((a2-a1)%360+360)%360;
+  let wedge;
+  if((a1===0&&a2===360)||delta===0) wedge='<circle cx="48" cy="48" r="'+R+'" fill="var(--ember)" opacity="0.22"></circle>';
+  else{const p1=pt(a1,R),p2=pt(a2,R);
+    wedge='<path d="M '+cx+' '+cy+' L '+p1[0]+' '+p1[1]+' A '+R+' '+R+' 0 '+(delta>180?1:0)+' 1 '+p2[0]+' '+p2[1]+' Z" fill="var(--ember)" opacity="0.28"></path>';}
+  document.getElementById("arcDial").innerHTML=
+    '<circle cx="48" cy="48" r="'+R+'" fill="none" stroke="var(--line)" stroke-width="1"></circle>'+wedge+
+    '<line x1="48" y1="10" x2="48" y2="16" stroke="var(--muted)" stroke-width="1.5"></line>'+
+    '<text x="48" y="9" text-anchor="middle" font-size="9" fill="var(--muted)" font-family="monospace">N</text>'+
+    '<text x="90" y="51" text-anchor="middle" font-size="9" fill="var(--muted)" font-family="monospace">E</text>'+
+    '<text x="6" y="51" text-anchor="middle" font-size="9" fill="var(--muted)" font-family="monospace">W</text>';
+}
+function editSpot(id){
+  const s=SPOTS.find(x=>x.id===id)||{n:"",s:"",lat:43.65,lon:-71.50,d:30,t:"lake",az:[180,320]};
+  editingId=id||null;
+  document.getElementById("formTitle").textContent=id?"Edit spot":"New spot";
+  document.getElementById("f_n").value=s.n; document.getElementById("f_s").value=s.s;
+  document.getElementById("f_lat").value=s.lat; document.getElementById("f_lon").value=s.lon;
+  document.getElementById("f_d").value=s.d; document.getElementById("f_t").value=s.t;
+  document.getElementById("f_a1").value=s.az[0]; document.getElementById("f_a2").value=s.az[1];
+  const form=document.getElementById("spotForm");
+  form.hidden=false; drawDial();
+  form.scrollIntoView({block:"start",behavior:"smooth"});
+  document.getElementById("f_n").focus({preventScroll:true});
+}
+document.getElementById("f_a1").addEventListener("input",drawDial);
+document.getElementById("f_a2").addEventListener("input",drawDial);
+document.getElementById("cancelSpot").onclick=()=>{document.getElementById("spotForm").hidden=true;editingId=null;};
+document.getElementById("saveSpot").onclick=()=>{
+  const n=document.getElementById("f_n").value.trim();
+  const lat=+document.getElementById("f_lat").value, lon=+document.getElementById("f_lon").value;
+  if(!n){alert("Give the spot a name.");return;}
+  if(!isFinite(lat)||!isFinite(lon)||Math.abs(lat)>90||Math.abs(lon)>180){alert("Latitude and longitude need to be real coordinates — e.g. 44.1836 and -71.6968.");return;}
+  const rec={id:editingId||slug(n),n,s:document.getElementById("f_s").value.trim(),lat,lon,
+    d:Math.max(0,+document.getElementById("f_d").value||0),t:document.getElementById("f_t").value,
+    az:[((+document.getElementById("f_a1").value||0)%361+360)%361,((+document.getElementById("f_a2").value||0)%361+360)%361]};
+  const i=SPOTS.findIndex(x=>x.id===rec.id);
+  if(i>=0) SPOTS[i]=rec; else SPOTS.push(rec);
+  saveSpots(); editingId=null;
+  document.getElementById("spotForm").hidden=true;
+  renderSpotList(); load(true);
+};
+document.getElementById("addSpot").onclick=()=>editSpot(null);
+/* Driving time from home (Meredith) to the coordinates in the form, via Google Routes. */
+async function googleDrive(lat,lon){
+  const key=mapKey(); if(!key) throw new Error("no Google key — add one under Map › Key");
+  const ll=(a,b)=>({waypoint:{location:{latLng:{latitude:a,longitude:b}}}});
+  const r=await fetch("https://routes.googleapis.com/distanceMatrix/v2:computeRouteMatrix",{method:"POST",
+    headers:{"Content-Type":"application/json","X-Goog-Api-Key":key,"X-Goog-FieldMask":"duration,condition"},
+    body:JSON.stringify({origins:[ll(HOME_LL[0],HOME_LL[1])],destinations:[ll(lat,lon)],travelMode:"DRIVE"})});
+  const j=await r.json();
+  if(!r.ok) throw new Error((j.error&&j.error.message)||("HTTP "+r.status));
+  const e=Array.isArray(j)&&j[0];
+  if(!e||e.condition!=="ROUTE_EXISTS"||!e.duration) throw new Error("Google found no driving route to that point — nudge the pin onto a road or trailhead");
+  return Math.max(1,Math.round(parseInt(e.duration)/60));
+}
+document.getElementById("getDrive").onclick=async()=>{
+  const b=document.getElementById("getDrive"), lat=+document.getElementById("f_lat").value, lon=+document.getElementById("f_lon").value;
+  if(!isFinite(lat)||!isFinite(lon)){alert("Enter the latitude and longitude first.");return;}
+  b.disabled=true; b.textContent="…";
+  try{ document.getElementById("f_d").value=await googleDrive(lat,lon); }
+  catch(e){ alert("Couldn't get a drive time: "+e.message); }
+  finally{ b.disabled=false; b.textContent="From Google"; }
+};
+document.getElementById("closeSpots").onclick=()=>dlg.close();
+document.getElementById("spotsBtn").onclick=openSpots;
+document.getElementById("resetSpots").onclick=()=>{
+  if(!confirm("Replace your spot list with the 30 defaults? Anything you added or edited is lost.")) return;
+  SPOTS=JSON.parse(JSON.stringify(DEFAULT_SPOTS)); saveSpots(); renderSpotList(); load(true);
+};
+document.getElementById("exportSpots").onclick=()=>{
+  const blob=new Blob([JSON.stringify(SPOTS,null,2)],{type:"application/json"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob); a.download="golden-hour-spots.json";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+};
+document.getElementById("importSpots").onclick=()=>{
+  const inp=document.createElement("input"); inp.type="file"; inp.accept="application/json,.json";
+  inp.onchange=()=>{
+    const f=inp.files&&inp.files[0]; if(!f) return;
+    const rd=new FileReader();
+    rd.onload=()=>{
+      try{
+        const arr=JSON.parse(rd.result);
+        if(!Array.isArray(arr)||!arr.length) throw new Error("that file isn't a spot list");
+        arr.forEach(s=>{ if(!s.n||!isFinite(s.lat)||!isFinite(s.lon)) throw new Error("a spot is missing a name or coordinates");
+          s.id=s.id||slug(s.n); s.s=s.s||""; s.d=+s.d||0; s.t=s.t||"other";
+          s.az=Array.isArray(s.az)&&s.az.length===2?[+s.az[0],+s.az[1]]:[0,360]; });
+        SPOTS=arr; saveSpots(); renderSpotList(); load(true);
+      }catch(e){ alert("Couldn't import: "+e.message); }
+    };
+    rd.readAsText(f);
+  };
+  inp.click();
+};
+
+/* ---------- map imagery ---------- */
+const keyDlg=document.getElementById("keyDlg");
+function openKeyDlg(){
+  document.getElementById("k_key").value=mapKey();
+  document.getElementById("k_terrain").value=ui.styleIds.terrain;
+  document.getElementById("k_satellite").value=ui.styleIds.satellite;
+  document.getElementById("k_hybrid").value=ui.styleIds.hybrid;
+  if(!keyDlg.open) keyDlg.showModal();
+}
+document.getElementById("mapKeyBtn").onclick=openKeyDlg;
+document.getElementById("closeKey").onclick=()=>keyDlg.close();
+document.getElementById("saveKey").onclick=()=>{
+  setMapKey(document.getElementById("k_key").value.trim());
+  ui.styleIds={terrain:document.getElementById("k_terrain").value.trim()||DEFAULT_STYLE_IDS.terrain,
+               satellite:document.getElementById("k_satellite").value.trim()||DEFAULT_STYLE_IDS.satellite,
+               hybrid:document.getElementById("k_hybrid").value.trim()||DEFAULT_STYLE_IDS.hybrid};
+  
+  saveUI(); keyDlg.close(); LTILEKEY=null; if(ui.view==="map") renderMap();
+};
+document.getElementById("clearKey").onclick=()=>{
+  setMapKey(""); ui.mapStyle="plain"; saveUI(); keyDlg.close(); LTILEKEY=null;
+  if(ui.view==="map") renderMap();
+};
+document.querySelectorAll("[data-mstyle]").forEach(b=>b.onclick=()=>{
+  if(!mapKey()) return openKeyDlg();
+  ui.mapStyle=b.dataset.mstyle; saveUI(); renderMap();
+});
+
+/* ---------- wiring ---------- */
+const sel=document.getElementById("modelSel");
+sel.innerHTML='<option value="consensus">Consensus ('+CONSENSUS.length+' models)</option>'+MODELS.map(m=>'<option value="'+m.id+'">'+esc(m.label)+'</option>').join("");
+sel.value=ui.model;
+sel.onchange=()=>{ ui.model=sel.value; saveUI(); if(MODEL&&(ui.model==="consensus"||MODEL.models.indexOf(ui.model)>=0)) render(); else load(true); };
+/* ---------- spot search / picker ---------- */
+const sInput=document.getElementById("spotSearch"), sList=document.getElementById("spotResults"), sClear=document.getElementById("spotClear");
+let sIdx=-1, sMatches=[];
+function comboMatches(q){
+  const t=String(q||"").toLowerCase().trim();
+  const hit=sp=>!t||t.split(/\s+/).every(w=>(sp.n+" "+sp.s+" "+sp.t).toLowerCase().indexOf(w)>=0);
+  return SPOTS.filter(hit).sort((a,b)=>a.n.localeCompare(b.n));
+}
+function openCombo(){
+  sMatches=comboMatches(sInput.value);
+  sList.innerHTML=sMatches.length
+    ? sMatches.map((sp,i)=>'<button type="button" role="option" data-id="'+sp.id+'" aria-selected="'+(i===sIdx)+'">'+esc(sp.n)+
+        '<span>'+esc(sp.s)+' · '+sp.d+' min</span></button>').join("")
+    : '<div class="none">No spot matches that. Add it with Edit spots.</div>';
+  sList.hidden=false; sInput.setAttribute("aria-expanded","true");
+  sList.querySelectorAll("button").forEach(b=>b.onmousedown=e=>{e.preventDefault();pickSpot(b.dataset.id);});
+}
+function closeCombo(){sList.hidden=true;sInput.setAttribute("aria-expanded","false");sIdx=-1;}
+function pickSpot(id){
+  const sp=SPOTS.find(x=>x.id===id); if(!sp) return;
+  ui.focus=id; ui.query=""; sInput.value=sp.n;
+  closeCombo(); saveUI();
+  if(MODEL && !MODEL.rows[id]) load(true); else render();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+sInput.onfocus=()=>{if(ui.focus){sInput.value="";ui.focus=null;saveUI();render();}openCombo();};
+sInput.oninput=()=>{ui.query=sInput.value;ui.focus=null;sIdx=-1;openCombo();render();};
+sInput.onblur=()=>setTimeout(closeCombo,120);
+sInput.onkeydown=e=>{
+  if(e.key==="ArrowDown"||e.key==="ArrowUp"){
+    e.preventDefault();
+    if(sList.hidden) openCombo();
+    if(!sMatches.length) return;
+    sIdx=(sIdx+(e.key==="ArrowDown"?1:-1)+sMatches.length)%sMatches.length;
+    openCombo();
+    const b=sList.querySelectorAll("button")[sIdx]; if(b) b.scrollIntoView({block:"nearest"});
+  } else if(e.key==="Enter"){
+    e.preventDefault();
+    if(sMatches.length) pickSpot(sMatches[sIdx>=0?sIdx:0].id);
+  } else if(e.key==="Escape"){
+    e.preventDefault(); sInput.value=""; ui.query=""; ui.focus=null; closeCombo(); saveUI(); render(); sInput.blur();
+  }
+};
+sClear.onclick=()=>{sInput.value="";ui.query="";ui.focus=null;closeCombo();saveUI();render();sInput.focus();};
+document.querySelectorAll("[data-ev]").forEach(b=>b.onclick=()=>{ui.ev=b.dataset.ev;ui.day=nextDay();saveUI();render();});
+document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>{ui.view=b.dataset.view;saveUI();render();});
+/* popup buttons are created after render, so delegate */
+document.addEventListener("click",e=>{
+  const b=e.target.closest&&e.target.closest("[data-mapfocus]");
+  if(!b) return;
+  ui.focus=b.dataset.mapfocus; saveUI(); render(); window.scrollTo({top:0,behavior:"smooth"});
+});
+if(window.matchMedia){
+  const mq=window.matchMedia("(prefers-color-scheme: dark)");
+  const onTheme=()=>{ if(ui.view==="map"&&MODEL){ LTILEKEY=null; renderMap(); } };
+  mq.addEventListener?mq.addEventListener("change",onTheme):mq.addListener(onTheme);
+}
+let driveTimer=null;
+document.getElementById("drive").addEventListener("input",e=>{
+  ui.drive=+e.target.value; saveUI(); render();
+  clearTimeout(driveTimer);
+  driveTimer=setTimeout(()=>{ if(MODEL && ui.drive>(MODEL.cover||0)) load(true); },700);
+});
+document.getElementById("refreshBtn").onclick=()=>load(true);
+document.getElementById("probekm").textContent=CORRIDOR_KM.join(", ");
+load(false);
+</script>
+<script>
+"use strict";
+/* ---------- spoken brief (Sep 27 2026) ----------
+   Plain-text summary for Siri / push alerts. Built by the GitHub Action (brief.txt, brief.json)
+   and also reachable in-page as ghbBrief(). Uses the same scores the cards show. */
+function ghbNextDay(ev){
+  if(!MODEL) return -1;
+  const nowET=new Date(new Date().toLocaleString("en-US",{timeZone:TZ}));
+  for(let i=0;i<MODEL.days.length;i++){
+    const r=SPOTS.map(sp=>rowAt(sp.id,ev,i)).find(Boolean);
+    if(r&&new Date(MODEL.days[i]+"T"+r.t+":00").getTime()>nowET.getTime()) return i;
+  }
+  return -1;
+}
+function ghbSpeakTime(hhmm){
+  const [h,m]=hhmm.split(":").map(Number);
+  return ((h%12)||12)+":"+String(m).padStart(2,"0")+(h<12?" AM":" PM");
+}
+function ghbDrive(min){
+  if(min<60) return min+" minutes away";
+  const h=Math.floor(min/60),m=min%60;
+  return h+(h>1?" hours":" hour")+(m?" "+m+" minutes":"")+" away";
+}
+function ghbBrief(maxDrive){
+  if(!MODEL) return null;
+  const lim=maxDrive||ui.drive;
+  const out={generated:new Date().toISOString(),drive:lim,events:[]};
+  for(const ev of ["sunset","sunrise"]){
+    const day=ghbNextDay(ev);
+    if(day<0) continue;
+    const rows=SPOTS.filter(sp=>sp.d<=lim).map(sp=>({sp,d:resolveAt(sp.id,ev,day)})).filter(x=>x.d)
+      .sort((a,b)=>b.d.v[0]-a.d.v[0]);
+    if(!rows.length) continue;
+    const top=rows.slice(0,3).map(x=>{
+      const f=skyFacts(x.d.o,x.d.v);
+      const flags=[];
+      if(f.open) flags.push("horizon open");
+      else if(f.hasG&&f.g[f.worst]>=40) flags.push("horizon blocked");
+      if(f.cirrus) flags.push("cirrus overhead");
+      return {id:x.sp.id,name:x.sp.n,place:x.sp.s,score:Math.round(x.d.v[0]),label:band(x.d.v[0]).l,
+              drive:x.sp.d,flags,why:whyLight(x.d.v,x.d.o,ev),lat:x.sp.lat,lon:x.sp.lon};
+    });
+    const when=day===0?(ev==="sunset"?"tonight":"this morning"):day===1?"tomorrow":new Date(MODEL.days[day]+"T12:00:00").toLocaleDateString("en-US",{weekday:"long"});
+    out.events.push({ev,day:MODEL.days[day],when,time:rowAt(top[0].id,ev,day).t,top});
+  }
+  const sentences=out.events.map(e=>{
+    const t=e.top[0], cap=e.ev[0].toUpperCase()+e.ev.slice(1);
+    let s=cap+" "+e.when+" at "+ghbSpeakTime(e.time)+". ";
+    if(t.score<30){ s+="Nothing looks good. The best is "+t.name+" at "+t.score+". "; return s; }
+    s+="Best bet: "+t.name+", "+t.score+", "+t.label+". "+(t.flags.length?t.flags.join(", ")+". ":"")+ghbDrive(t.drive)+". ";
+    const rest=e.top.slice(1).filter(x=>x.score>=30);
+    if(rest.length) s+="Then "+rest.map(x=>x.name+" "+x.score).join(", and ")+".";
+    return s.trim();
+  });
+  out.text=sentences.join("\n\n")||"No forecast available right now.";
+  return out;
+}
+window.ghbBrief=ghbBrief;
+</script>
+</body>
+</html>
