@@ -1,0 +1,112 @@
+{
+  "generated": "2026-09-28T01:34:52.873Z",
+  "drive": 120,
+  "events": [
+    {
+      "ev": "sunset",
+      "day": "2026-09-28",
+      "when": "tomorrow",
+      "time": "18:37",
+      "top": [
+        {
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 10,
+          "label": "Skip",
+          "drive": 98,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "lat": 44.328,
+          "lon": -72.175
+        },
+        {
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 9,
+          "label": "Skip",
+          "drive": 108,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "lat": 44.297,
+          "lon": -72.295
+        },
+        {
+          "id": "burkemtn",
+          "name": "Burke Mountain",
+          "place": "East Burke, VT",
+          "score": 8,
+          "label": "Skip",
+          "drive": 110,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. Showers around.",
+          "lat": 44.5705,
+          "lon": -71.893
+        }
+      ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-09-28",
+      "when": "tomorrow",
+      "time": "06:41",
+      "top": [
+        {
+          "id": "cherrypond",
+          "name": "Little Cherry Pond",
+          "place": "Pondicherry NWR, NH",
+          "score": 20,
+          "label": "Skip",
+          "drive": 81,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "lat": 44.3761,
+          "lon": -71.5188
+        },
+        {
+          "id": "jefferson",
+          "name": "Jefferson Fields",
+          "place": "Jefferson, NH",
+          "score": 20,
+          "label": "Skip",
+          "drive": 78,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "lat": 44.3892,
+          "lon": -71.4789
+        },
+        {
+          "id": "middlesugarloaf",
+          "name": "Middle Sugarloaf",
+          "place": "Bethlehem, NH",
+          "score": 20,
+          "label": "Skip",
+          "drive": 71,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "lat": 44.2513,
+          "lon": -71.5171
+        }
+      ]
+    }
+  ],
+  "text": "Sunset tomorrow at 6:37 PM. Nothing looks good. The best is Peacham Village at 10. \n\nSunrise tomorrow at 6:41 AM. Nothing looks good. The best is Little Cherry Pond at 20. "
+}
