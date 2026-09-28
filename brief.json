@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T16:35:31.102Z",
+  "generated": "2026-09-28T22:27:46.103Z",
   "drive": 120,
   "events": [
     {
@@ -12,7 +12,7 @@
           "id": "burkemtn",
           "name": "Burke Mountain",
           "place": "East Burke, VT",
-          "score": 7,
+          "score": 5,
           "label": "Skip",
           "drive": 110,
           "flags": [
@@ -26,29 +26,29 @@
           "id": "jobspond",
           "name": "Jobs Pond",
           "place": "Westmore, VT",
-          "score": 7,
+          "score": 4,
           "label": "Skip",
           "drive": 118,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. Showers around.",
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. Showers around.",
           "lat": 44.7622,
           "lon": -71.9534
         },
         {
-          "id": "lyndon",
-          "name": "Lyndon Farm Fields",
-          "place": "Northeast Kingdom, VT",
-          "score": 5,
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 4,
           "label": "Skip",
-          "drive": 96,
+          "drive": 108,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. Showers around.",
-          "lat": 44.565,
-          "lon": -71.973
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "lat": 44.297,
+          "lon": -72.295
         }
       ]
     },
@@ -56,52 +56,52 @@
       "ev": "sunrise",
       "day": "2026-09-29",
       "when": "tomorrow",
-      "time": "06:42",
+      "time": "06:43",
       "top": [
         {
-          "id": "mtavalon",
-          "name": "Mount Avalon",
-          "place": "Crawford Notch, NH",
+          "id": "moosilauke",
+          "name": "Mount Moosilauke Summit",
+          "place": "Benton, NH",
           "score": 8,
           "label": "Skip",
-          "drive": 84,
+          "drive": 67,
           "flags": [
             "horizon blocked"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "lat": 44.2064,
-          "lon": -71.4264
+          "lat": 44.0241,
+          "lon": -71.8314
         },
         {
-          "id": "willoughbysouth",
-          "name": "Lake Willoughby, south end",
-          "place": "Westmore, VT",
+          "id": "mtpercival",
+          "name": "Mount Percival",
+          "place": "Sandwich, NH",
           "score": 8,
           "label": "Skip",
-          "drive": 110,
+          "drive": 28,
           "flags": [
             "horizon blocked"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "lat": 44.717,
-          "lon": -72.031
+          "lat": 43.8022,
+          "lon": -71.5225
         },
         {
-          "id": "jennefarm",
-          "name": "Jenne Farm",
-          "place": "Reading, VT",
-          "score": 7,
+          "id": "stinson",
+          "name": "Stinson Mountain",
+          "place": "Rumney, NH",
+          "score": 8,
           "label": "Skip",
-          "drive": 111,
+          "drive": 40,
           "flags": [
             "horizon blocked"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "lat": 43.5245,
-          "lon": -72.5596
+          "lat": 43.8345,
+          "lon": -71.7793
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:36 PM. Nothing looks good. The best is Burke Mountain at 7. \n\nSunrise tomorrow at 6:42 AM. Nothing looks good. The best is Mount Avalon at 8. "
+  "text": "Sunset tonight at 6:36 PM. Nothing looks good. The best is Burke Mountain at 5. \n\nSunrise tomorrow at 6:43 AM. Nothing looks good. The best is Mount Moosilauke Summit at 8. "
 }
