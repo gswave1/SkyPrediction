@@ -2040,25 +2040,37 @@ function ghbBrief(maxDrive){
   if(!MODEL) return null;
   const lim=maxDrive||ui.drive;
   const out={generated:new Date().toISOString(),drive:lim,events:[]};
-  for(const ev of ["sunset","sunrise"]){
-    const day=ghbNextDay(ev);
-    if(day<0) continue;
-    const rows=SPOTS.filter(sp=>sp.d<=lim).map(sp=>({sp,d:resolveAt(sp.id,ev,day)})).filter(x=>x.d)
+  const card=(sp,d,ev,day)=>{
+    const f=skyFacts(d.o,d.v);
+    const flags=[];
+    if(f.open) flags.push("horizon open");
+    else if(f.hasG&&f.g[f.worst]>=40) flags.push("horizon blocked");
+    if(f.cirrus) flags.push("cirrus overhead");
+    const r=rowAt(sp.id,ev,day);
+    return {id:sp.id,name:sp.n,place:sp.s,score:Math.round(d.v[0]),label:band(d.v[0]).l,
+            drive:sp.d,flags,why:whyLight(d.v,d.o,ev),time:r?r.t:null,lat:sp.lat,lon:sp.lon};
+  };
+  // Next sunset, next sunrise, and the sunset after that — so a morning question about
+  // "tonight" and an evening question about "tomorrow night" both have an answer.
+  const plan=[];
+  const s0=ghbNextDay("sunset"), r0=ghbNextDay("sunrise");
+  if(s0>=0) plan.push(["sunset",s0]);
+  if(r0>=0) plan.push(["sunrise",r0]);
+  if(s0>=0&&s0+1<MODEL.days.length) plan.push(["sunset",s0+1]);
+  for(const [ev,day] of plan){
+    const scored=SPOTS.map(sp=>({sp,d:resolveAt(sp.id,ev,day)})).filter(x=>x.d)
       .sort((a,b)=>b.d.v[0]-a.d.v[0]);
-    if(!rows.length) continue;
-    const top=rows.slice(0,3).map(x=>{
-      const f=skyFacts(x.d.o,x.d.v);
-      const flags=[];
-      if(f.open) flags.push("horizon open");
-      else if(f.hasG&&f.g[f.worst]>=40) flags.push("horizon blocked");
-      if(f.cirrus) flags.push("cirrus overhead");
-      return {id:x.sp.id,name:x.sp.n,place:x.sp.s,score:Math.round(x.d.v[0]),label:band(x.d.v[0]).l,
-              drive:x.sp.d,flags,why:whyLight(x.d.v,x.d.o,ev),lat:x.sp.lat,lon:x.sp.lon};
-    });
-    const when=day===0?(ev==="sunset"?"tonight":"this morning"):day===1?"tomorrow":new Date(MODEL.days[day]+"T12:00:00").toLocaleDateString("en-US",{weekday:"long"});
-    out.events.push({ev,day:MODEL.days[day],when,time:rowAt(top[0].id,ev,day).t,top});
+    if(!scored.length) continue;
+    // "all" = every spot regardless of drive time, so a caller on the road can re-rank by
+    // distance from wherever they are. "top" keeps the old home-radius shortlist for Siri.
+    const all=scored.map(x=>card(x.sp,x.d,ev,day));
+    const top=all.filter(c=>c.drive<=lim).slice(0,3);
+    if(!top.length) continue;
+    const when=day===0?(ev==="sunset"?"tonight":"this morning"):day===1?(ev==="sunset"?"tomorrow night":"tomorrow"):new Date(MODEL.days[day]+"T12:00:00").toLocaleDateString("en-US",{weekday:"long"});
+    out.events.push({ev,day:MODEL.days[day],when,time:top[0].time,top,all});
   }
-  const sentences=out.events.map(e=>{
+  // Spoken text stays as before: next sunset + next sunrise only.
+  const sentences=out.events.slice(0,2).map(e=>{
     const t=e.top[0], cap=e.ev[0].toUpperCase()+e.ev.slice(1);
     let s=cap+" "+e.when+" at "+ghbSpeakTime(e.time)+". ";
     if(t.score<30){ s+="Nothing looks good. The best is "+t.name+" at "+t.score+". "; return s; }
@@ -2068,6 +2080,7 @@ function ghbBrief(maxDrive){
     return s.trim();
   });
   out.text=sentences.join("\n\n")||"No forecast available right now.";
+  out.note="drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100.";
   return out;
 }
 window.ghbBrief=ghbBrief;
