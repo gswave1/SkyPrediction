@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29T17:16:25.420Z",
+  "generated": "2026-09-29T19:52:30.618Z",
   "drive": 120,
   "events": [
     {
@@ -12,7 +12,7 @@
           "id": "mtpemi",
           "name": "Mount Pemigewasset (Indian Head)",
           "place": "Lincoln, NH",
-          "score": 15,
+          "score": 14,
           "label": "Skip",
           "drive": 56,
           "flags": [
@@ -39,19 +39,19 @@
           "lon": -71.857
         },
         {
-          "id": "chatham",
-          "name": "Chatham",
-          "place": "Chatham, NH",
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
           "score": 11,
           "label": "Skip",
-          "drive": 95,
+          "drive": 104,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
-          "time": "18:30",
-          "lat": 44.271,
-          "lon": -71.025
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:34",
+          "lat": 42.8619,
+          "lon": -71.8788
         }
       ]
     },
@@ -59,52 +59,52 @@
       "ev": "sunrise",
       "day": "2026-09-30",
       "when": "tomorrow",
-      "time": "06:46",
+      "time": "06:45",
       "top": [
         {
-          "id": "owlshead",
-          "name": "Owl's Head, Groton State Forest",
-          "place": "Groton, VT",
+          "id": "burkemtn",
+          "name": "Burke Mountain",
+          "place": "East Burke, VT",
           "score": 11,
           "label": "Skip",
-          "drive": 108,
+          "drive": 110,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
-          "time": "06:46",
-          "lat": 44.297,
-          "lon": -72.295
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:45",
+          "lat": 44.5705,
+          "lon": -71.893
         },
         {
-          "id": "cannon",
-          "name": "Cannon Mountain Summit",
-          "place": "Franconia Notch, NH",
-          "score": 10,
+          "id": "lyndon",
+          "name": "Lyndon Farm Fields",
+          "place": "Northeast Kingdom, VT",
+          "score": 9,
           "label": "Skip",
-          "drive": 51,
+          "drive": 96,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
-          "time": "06:44",
-          "lat": 44.1569,
-          "lon": -71.6992
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:45",
+          "lat": 44.565,
+          "lon": -71.973
         },
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 10,
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
+          "score": 9,
           "label": "Skip",
-          "drive": 104,
+          "drive": 111,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
-          "time": "06:44",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:47",
+          "lat": 43.4445,
+          "lon": -72.4537
         }
       ]
     },
@@ -118,50 +118,50 @@
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
           "place": "Peterborough, NH",
-          "score": 46,
+          "score": 53,
           "label": "Worth it",
           "drive": 104,
           "flags": [
             "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
           "time": "18:32",
           "lat": 42.8619,
           "lon": -71.8788
         },
         {
-          "id": "mtpercival",
-          "name": "Mount Percival",
-          "place": "Sandwich, NH",
-          "score": 45,
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 52,
           "label": "Worth it",
-          "drive": 28,
+          "drive": 70,
           "flags": [
             "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:31",
-          "lat": 43.8022,
-          "lon": -71.5225
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "18:33",
+          "lat": 43.321,
+          "lon": -72.084
         },
         {
-          "id": "kancsugar",
-          "name": "Sugar Hill Scenic Vista",
-          "place": "Kancamagus Hwy, NH",
-          "score": 45,
-          "label": "Marginal",
-          "drive": 65,
+          "id": "ossipee",
+          "name": "Center Ossipee Pond",
+          "place": "Lakes Region, NH",
+          "score": 52,
+          "label": "Worth it",
+          "drive": 33,
           "flags": [
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:30",
-          "lat": 44.0098,
-          "lon": -71.4277
+          "time": "18:29",
+          "lat": 43.8108,
+          "lon": -71.1878
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:33 PM. Nothing looks good. The best is Mount Pemigewasset (Indian Head) at 15. \n\nSunrise tomorrow at 6:46 AM. Nothing looks good. The best is Owl's Head, Groton State Forest at 11. ",
+  "text": "Sunset tonight at 6:33 PM. Nothing looks good. The best is Mount Pemigewasset (Indian Head) at 14. \n\nSunrise tomorrow at 6:45 AM. Nothing looks good. The best is Burke Mountain at 11. ",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
