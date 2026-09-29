@@ -1,33 +1,18 @@
 {
-  "generated": "2026-09-29T02:31:34.519Z",
+  "generated": "2026-09-29T14:43:15.174Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-09-29",
-      "when": "tomorrow",
-      "time": "18:30",
+      "when": "tonight",
+      "time": "18:33",
       "top": [
-        {
-          "id": "chatham",
-          "name": "Chatham",
-          "place": "Chatham, NH",
-          "score": 20,
-          "label": "Skip",
-          "drive": 95,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "lat": 44.271,
-          "lon": -71.025
-        },
         {
           "id": "mtpemi",
           "name": "Mount Pemigewasset (Indian Head)",
           "place": "Lincoln, NH",
-          "score": 18,
+          "score": 14,
           "label": "Skip",
           "drive": 56,
           "flags": [
@@ -38,72 +23,85 @@
           "lon": -71.6997
         },
         {
-          "id": "burkemtn",
-          "name": "Burke Mountain",
-          "place": "East Burke, VT",
-          "score": 18,
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 13,
           "label": "Skip",
-          "drive": 110,
+          "drive": 80,
           "flags": [
-            "horizon blocked",
-            "cirrus overhead"
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "lat": 43.385,
+          "lon": -71.857
+        },
+        {
+          "id": "ashland",
+          "name": "Ashland",
+          "place": "Ashland, NH",
+          "score": 11,
+          "label": "Skip",
+          "drive": 19,
+          "flags": [
+            "horizon blocked"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
-          "lat": 44.5705,
-          "lon": -71.893
+          "lat": 43.697,
+          "lon": -71.63
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-09-29",
+      "day": "2026-09-30",
       "when": "tomorrow",
       "time": "06:46",
       "top": [
         {
-          "id": "jennefarm",
-          "name": "Jenne Farm",
-          "place": "Reading, VT",
-          "score": 9,
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 11,
           "label": "Skip",
-          "drive": 111,
+          "drive": 108,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "lat": 43.5245,
-          "lon": -72.5596
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "lat": 44.297,
+          "lon": -72.295
         },
         {
-          "id": "ascutney",
-          "name": "Mount Ascutney Summit",
-          "place": "Windsor, VT",
-          "score": 9,
+          "id": "cannon",
+          "name": "Cannon Mountain Summit",
+          "place": "Franconia Notch, NH",
+          "score": 10,
           "label": "Skip",
-          "drive": 111,
+          "drive": 51,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "lat": 43.4445,
-          "lon": -72.4537
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "lat": 44.1569,
+          "lon": -71.6992
         },
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 8,
+          "id": "moosilauke",
+          "name": "Mount Moosilauke Summit",
+          "place": "Benton, NH",
+          "score": 9,
           "label": "Skip",
-          "drive": 104,
+          "drive": 67,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "lat": 44.0241,
+          "lon": -71.8314
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow at 6:30 PM. Nothing looks good. The best is Chatham at 20. \n\nSunrise tomorrow at 6:46 AM. Nothing looks good. The best is Jenne Farm at 9. "
+  "text": "Sunset tonight at 6:33 PM. Nothing looks good. The best is Mount Pemigewasset (Indian Head) at 14. \n\nSunrise tomorrow at 6:46 AM. Nothing looks good. The best is Owl's Head, Groton State Forest at 11. "
 }
