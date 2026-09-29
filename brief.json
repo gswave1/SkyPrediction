@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29T14:43:15.174Z",
+  "generated": "2026-09-29T17:13:11.805Z",
   "drive": 120,
   "events": [
     {
@@ -12,13 +12,14 @@
           "id": "mtpemi",
           "name": "Mount Pemigewasset (Indian Head)",
           "place": "Lincoln, NH",
-          "score": 14,
+          "score": 15,
           "label": "Skip",
           "drive": 56,
           "flags": [
             "horizon blocked"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:33",
           "lat": 44.0975,
           "lon": -71.6997
         },
@@ -32,23 +33,1362 @@
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:34",
           "lat": 43.385,
           "lon": -71.857
+        },
+        {
+          "id": "chatham",
+          "name": "Chatham",
+          "place": "Chatham, NH",
+          "score": 11,
+          "label": "Skip",
+          "drive": 95,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:30",
+          "lat": 44.271,
+          "lon": -71.025
+        }
+      ],
+      "all": [
+        {
+          "id": "mtpemi",
+          "name": "Mount Pemigewasset (Indian Head)",
+          "place": "Lincoln, NH",
+          "score": 15,
+          "label": "Skip",
+          "drive": 56,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:33",
+          "lat": 44.0975,
+          "lon": -71.6997
+        },
+        {
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 13,
+          "label": "Skip",
+          "drive": 80,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:34",
+          "lat": 43.385,
+          "lon": -71.857
+        },
+        {
+          "id": "chatham",
+          "name": "Chatham",
+          "place": "Chatham, NH",
+          "score": 11,
+          "label": "Skip",
+          "drive": 95,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:30",
+          "lat": 44.271,
+          "lon": -71.025
+        },
+        {
+          "id": "kanclincoln",
+          "name": "Kancamagus, Lincoln end",
+          "place": "Lincoln, NH",
+          "score": 10,
+          "label": "Skip",
+          "drive": 55,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:32",
+          "lat": 44.041,
+          "lon": -71.524
+        },
+        {
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
+          "score": 10,
+          "label": "Skip",
+          "drive": 111,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:36",
+          "lat": 43.4445,
+          "lon": -72.4537
+        },
+        {
+          "id": "pemioverlook",
+          "name": "Pemigewasset Overlook",
+          "place": "Kancamagus Hwy, NH",
+          "score": 10,
+          "label": "Skip",
+          "drive": 56,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:32",
+          "lat": 44.035,
+          "lon": -71.517
+        },
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 10,
+          "label": "Skip",
+          "drive": 104,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:34",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
+        {
+          "id": "welchledges",
+          "name": "Welch Mountain Ledges",
+          "place": "Thornton, NH",
+          "score": 10,
+          "label": "Skip",
+          "drive": 37,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:33",
+          "lat": 43.919,
+          "lon": -71.5754
+        },
+        {
+          "id": "cardigan",
+          "name": "Mount Cardigan Summit",
+          "place": "Orange, NH",
+          "score": 10,
+          "label": "Skip",
+          "drive": 57,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:34",
+          "lat": 43.6495,
+          "lon": -71.9144
+        },
+        {
+          "id": "chocoruasummit",
+          "name": "Mount Chocorua Summit",
+          "place": "Albany, NH",
+          "score": 9,
+          "label": "Skip",
+          "drive": 46,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:31",
+          "lat": 43.9541,
+          "lon": -71.2734
+        },
+        {
+          "id": "bog",
+          "name": "Bog Mountain",
+          "place": "Wilmot, NH",
+          "score": 9,
+          "label": "Skip",
+          "drive": 46,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:34",
+          "lat": 43.469,
+          "lon": -71.93
+        },
+        {
+          "id": "lowerfalls",
+          "name": "Lower Falls, Swift River",
+          "place": "Albany, NH",
+          "score": 9,
+          "label": "Skip",
+          "drive": 57,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Low deck overhead — flat grey, no separation.",
+          "time": "18:31",
+          "lat": 43.9964,
+          "lon": -71.2336
+        },
+        {
+          "id": "stinson",
+          "name": "Stinson Mountain",
+          "place": "Rumney, NH",
+          "score": 9,
+          "label": "Skip",
+          "drive": 40,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:34",
+          "lat": 43.8345,
+          "lon": -71.7793
         },
         {
           "id": "ashland",
           "name": "Ashland",
           "place": "Ashland, NH",
-          "score": 11,
+          "score": 8,
           "label": "Skip",
           "drive": 19,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:33",
           "lat": 43.697,
           "lon": -71.63
+        },
+        {
+          "id": "rockygorge",
+          "name": "Rocky Gorge",
+          "place": "Kancamagus Hwy, NH",
+          "score": 8,
+          "label": "Skip",
+          "drive": 62,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:31",
+          "lat": 44.004,
+          "lon": -71.278
+        },
+        {
+          "id": "fossmtn",
+          "name": "Foss Mountain",
+          "place": "Eaton, NH",
+          "score": 8,
+          "label": "Skip",
+          "drive": 64,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:31",
+          "lat": 43.8771,
+          "lon": -71.0348
+        },
+        {
+          "id": "greatglen",
+          "name": "Great Glen / Auto Road Base",
+          "place": "Pinkham Notch, NH",
+          "score": 8,
+          "label": "Skip",
+          "drive": 87,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:31",
+          "lat": 44.261,
+          "lon": -71.257
+        },
+        {
+          "id": "intervale",
+          "name": "Intervale Scenic Vista",
+          "place": "Intervale, NH",
+          "score": 7,
+          "label": "Skip",
+          "drive": 67,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:31",
+          "lat": 44.0756,
+          "lon": -71.1396
+        },
+        {
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 7,
+          "label": "Skip",
+          "drive": 95,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:29",
+          "lat": 43.9209,
+          "lon": -70.5806
+        },
+        {
+          "id": "pequawket",
+          "name": "Pequawket Pond",
+          "place": "Conway, NH",
+          "score": 7,
+          "label": "Skip",
+          "drive": 54,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:31",
+          "lat": 43.9847,
+          "lon": -71.1211
+        },
+        {
+          "id": "sugarhill",
+          "name": "Sunset Hill, Sugar Hill",
+          "place": "Sugar Hill, NH",
+          "score": 7,
+          "label": "Skip",
+          "drive": 61,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:33",
+          "lat": 44.217,
+          "lon": -71.783
+        },
+        {
+          "id": "kancsugar",
+          "name": "Sugar Hill Scenic Vista",
+          "place": "Kancamagus Hwy, NH",
+          "score": 7,
+          "label": "Skip",
+          "drive": 65,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:32",
+          "lat": 44.0098,
+          "lon": -71.4277
+        },
+        {
+          "id": "moosilauke",
+          "name": "Mount Moosilauke Summit",
+          "place": "Benton, NH",
+          "score": 7,
+          "label": "Skip",
+          "drive": 67,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:34",
+          "lat": 44.0241,
+          "lon": -71.8314
+        },
+        {
+          "id": "kancgraham",
+          "name": "C.L. Graham Wangan Overlook",
+          "place": "Kancamagus Hwy, NH",
+          "score": 7,
+          "label": "Skip",
+          "drive": 78,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:32",
+          "lat": 44.0069,
+          "lon": -71.3608
+        },
+        {
+          "id": "eaton",
+          "name": "Crystal Lake",
+          "place": "Eaton, NH",
+          "score": 7,
+          "label": "Skip",
+          "drive": 55,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:31",
+          "lat": 43.914,
+          "lon": -71.074
+        },
+        {
+          "id": "burkemtn",
+          "name": "Burke Mountain",
+          "place": "East Burke, VT",
+          "score": 7,
+          "label": "Skip",
+          "drive": 110,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:34",
+          "lat": 44.5705,
+          "lon": -71.893
+        },
+        {
+          "id": "baldmtn",
+          "name": "Bald Mountain",
+          "place": "Franconia Notch, NH",
+          "score": 7,
+          "label": "Skip",
+          "drive": 52,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:33",
+          "lat": 44.183,
+          "lon": -71.704
+        },
+        {
+          "id": "lafayette",
+          "name": "Mount Lafayette Summit",
+          "place": "Franconia Ridge, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 49,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:33",
+          "lat": 44.1608,
+          "lon": -71.6444
+        },
+        {
+          "id": "squamnorth",
+          "name": "Squam Lake, north shore",
+          "place": "Holderness, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 19,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:33",
+          "lat": 43.763,
+          "lon": -71.558
+        },
+        {
+          "id": "cannon",
+          "name": "Cannon Mountain Summit",
+          "place": "Franconia Notch, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 51,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:33",
+          "lat": 44.1569,
+          "lon": -71.6992
+        },
+        {
+          "id": "westrattle",
+          "name": "West Rattlesnake",
+          "place": "Holderness, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 22,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:33",
+          "lat": 43.785,
+          "lon": -71.545
+        },
+        {
+          "id": "centersandwich",
+          "name": "Center Sandwich",
+          "place": "Sandwich, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 18,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:32",
+          "lat": 43.782,
+          "lon": -71.473
+        },
+        {
+          "id": "artists",
+          "name": "Artist's Bluff",
+          "place": "Franconia Notch, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 51,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:33",
+          "lat": 44.181,
+          "lon": -71.695
+        },
+        {
+          "id": "profilelake",
+          "name": "Profile Lake",
+          "place": "Franconia Notch, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 51,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:33",
+          "lat": 44.162,
+          "lon": -71.677
+        },
+        {
+          "id": "echolake",
+          "name": "Echo Lake",
+          "place": "Franconia Notch, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 60,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:33",
+          "lat": 44.187,
+          "lon": -71.69
+        },
+        {
+          "id": "meredith",
+          "name": "Meredith Bay Docks",
+          "place": "Meredith, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 2,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:32",
+          "lat": 43.656,
+          "lon": -71.498
+        },
+        {
+          "id": "mtpercival",
+          "name": "Mount Percival",
+          "place": "Sandwich, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 28,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:32",
+          "lat": 43.8022,
+          "lon": -71.5225
+        },
+        {
+          "id": "squam",
+          "name": "Squam Lake",
+          "place": "Holderness, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 13,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:33",
+          "lat": 43.731,
+          "lon": -71.586
+        },
+        {
+          "id": "centerharb",
+          "name": "Center Harbor Town Dock",
+          "place": "Center Harbor, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 10,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:32",
+          "lat": 43.71,
+          "lon": -71.467
+        },
+        {
+          "id": "moultonneck",
+          "name": "Moultonborough Neck",
+          "place": "Moultonborough, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 17,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:32",
+          "lat": 43.696,
+          "lon": -71.406
+        },
+        {
+          "id": "redhill",
+          "name": "Red Hill Fire Tower",
+          "place": "Moultonborough, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 20,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:32",
+          "lat": 43.766,
+          "lon": -71.372
+        },
+        {
+          "id": "lyndon",
+          "name": "Lyndon Farm Fields",
+          "place": "Northeast Kingdom, VT",
+          "score": 6,
+          "label": "Skip",
+          "drive": 96,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:34",
+          "lat": 44.565,
+          "lon": -71.973
+        },
+        {
+          "id": "pleasantmtn",
+          "name": "Pleasant Mountain",
+          "place": "Bridgton, ME",
+          "score": 6,
+          "label": "Skip",
+          "drive": 90,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:30",
+          "lat": 44.027,
+          "lon": -70.8223
+        },
+        {
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 6,
+          "label": "Skip",
+          "drive": 108,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:35",
+          "lat": 44.297,
+          "lon": -72.295
+        },
+        {
+          "id": "chocorua16",
+          "name": "Chocorua, Route 16",
+          "place": "Chocorua, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 39,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:31",
+          "lat": 43.897,
+          "lon": -71.231
+        },
+        {
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 70,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:35",
+          "lat": 43.321,
+          "lon": -72.084
+        },
+        {
+          "id": "mtwashington",
+          "name": "Mount Washington Summit",
+          "place": "Sargent's Purchase, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 116,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:32",
+          "lat": 44.27,
+          "lon": -71.302
+        },
+        {
+          "id": "jennefarm",
+          "name": "Jenne Farm",
+          "place": "Reading, VT",
+          "score": 6,
+          "label": "Skip",
+          "drive": 111,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:37",
+          "lat": 43.5245,
+          "lon": -72.5596
+        },
+        {
+          "id": "newfound",
+          "name": "Newfound Lake, Wellington",
+          "place": "Bristol, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 33,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:34",
+          "lat": 43.664,
+          "lon": -71.767
+        },
+        {
+          "id": "greenmtn",
+          "name": "Green Mountain Fire Tower",
+          "place": "Effingham, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 55,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:31",
+          "lat": 43.7675,
+          "lon": -71.0369
+        },
+        {
+          "id": "castle",
+          "name": "Castle in the Clouds Overlook",
+          "place": "Moultonborough, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 26,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:32",
+          "lat": 43.747,
+          "lon": -71.323
+        },
+        {
+          "id": "major",
+          "name": "Mount Major Summit",
+          "place": "Alton, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 33,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:32",
+          "lat": 43.5093,
+          "lon": -71.2806
+        },
+        {
+          "id": "middlesugarloaf",
+          "name": "Middle Sugarloaf",
+          "place": "Bethlehem, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 71,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:32",
+          "lat": 44.2513,
+          "lon": -71.5171
+        },
+        {
+          "id": "newfoundsouth",
+          "name": "Newfound Lake, Bristol end",
+          "place": "Bristol, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 27,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:33",
+          "lat": 43.625,
+          "lon": -71.745
+        },
+        {
+          "id": "jobspond",
+          "name": "Jobs Pond",
+          "place": "Westmore, VT",
+          "score": 5,
+          "label": "Skip",
+          "drive": 118,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:34",
+          "lat": 44.7622,
+          "lon": -71.9534
+        },
+        {
+          "id": "ossipee",
+          "name": "Center Ossipee Pond",
+          "place": "Lakes Region, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 33,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:31",
+          "lat": 43.8108,
+          "lon": -71.1878
+        },
+        {
+          "id": "tamworth",
+          "name": "Tamworth",
+          "place": "Tamworth, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 37,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:31",
+          "lat": 43.838,
+          "lon": -71.218
+        },
+        {
+          "id": "belknap",
+          "name": "Belknap Mountain Fire Tower",
+          "place": "Gilford, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 29,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:32",
+          "lat": 43.5178,
+          "lon": -71.3689
+        },
+        {
+          "id": "wolfeboro",
+          "name": "Wolfeboro Town Docks",
+          "place": "Wolfeboro, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 46,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:31",
+          "lat": 43.582,
+          "lon": -71.21
+        },
+        {
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 5,
+          "label": "Skip",
+          "drive": 98,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:35",
+          "lat": 44.328,
+          "lon": -72.175
+        },
+        {
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 5,
+          "label": "Skip",
+          "drive": 106,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:28",
+          "lat": 43.563,
+          "lon": -70.365
+        },
+        {
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 61,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:31",
+          "lat": 43.3314,
+          "lon": -71.1162
+        },
+        {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 5,
+          "label": "Skip",
+          "drive": 94,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:29",
+          "lat": 43.06,
+          "lon": -70.698
+        },
+        {
+          "id": "mtisrael",
+          "name": "Mount Israel",
+          "place": "Sandwich, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 30,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:32",
+          "lat": 43.8454,
+          "lon": -71.4716
+        },
+        {
+          "id": "willoughby",
+          "name": "Lake Willoughby",
+          "place": "Westmore, VT",
+          "score": 4,
+          "label": "Skip",
+          "drive": 112,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:34",
+          "lat": 44.735,
+          "lon": -72.047
+        },
+        {
+          "id": "randolph",
+          "name": "Randolph",
+          "place": "Randolph, NH",
+          "score": 4,
+          "label": "Skip",
+          "drive": 83,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:32",
+          "lat": 44.358,
+          "lon": -71.368
+        },
+        {
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 4,
+          "label": "Skip",
+          "drive": 94,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:29",
+          "lat": 43.2232,
+          "lon": -70.6919
+        },
+        {
+          "id": "jefferson",
+          "name": "Jefferson Fields",
+          "place": "Jefferson, NH",
+          "score": 4,
+          "label": "Skip",
+          "drive": 78,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:32",
+          "lat": 44.3892,
+          "lon": -71.4789
+        },
+        {
+          "id": "mtavalon",
+          "name": "Mount Avalon",
+          "place": "Crawford Notch, NH",
+          "score": 4,
+          "label": "Skip",
+          "drive": 84,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:32",
+          "lat": 44.2064,
+          "lon": -71.4264
+        },
+        {
+          "id": "northconway",
+          "name": "Cathedral Ledge",
+          "place": "Bartlett, NH",
+          "score": 4,
+          "label": "Skip",
+          "drive": 69,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:31",
+          "lat": 44.062,
+          "lon": -71.168
+        },
+        {
+          "id": "chocorualake",
+          "name": "Chocorua Lake (Narrows Bridge)",
+          "place": "Tamworth, NH",
+          "score": 3,
+          "label": "Skip",
+          "drive": 41,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:31",
+          "lat": 43.8967,
+          "lon": -71.2686
+        },
+        {
+          "id": "cherrypond",
+          "name": "Little Cherry Pond",
+          "place": "Pondicherry NWR, NH",
+          "score": 3,
+          "label": "Skip",
+          "drive": 81,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:32",
+          "lat": 44.3761,
+          "lon": -71.5188
+        },
+        {
+          "id": "willoughbysouth",
+          "name": "Lake Willoughby, south end",
+          "place": "Westmore, VT",
+          "score": 3,
+          "label": "Skip",
+          "drive": 110,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:34",
+          "lat": 44.717,
+          "lon": -72.031
+        },
+        {
+          "id": "therocks",
+          "name": "The Rocks",
+          "place": "Bethlehem, NH",
+          "score": 3,
+          "label": "Skip",
+          "drive": 61,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:33",
+          "lat": 44.283,
+          "lon": -71.735
+        },
+        {
+          "id": "leavittpark",
+          "name": "Leavitt Park",
+          "place": "Meredith, NH",
+          "score": 3,
+          "label": "Skip",
+          "drive": 8,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:32",
+          "lat": 43.681,
+          "lon": -71.454
+        },
+        {
+          "id": "mtwillard",
+          "name": "Mount Willard",
+          "place": "Crawford Notch, NH",
+          "score": 3,
+          "label": "Skip",
+          "drive": 76,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:32",
+          "lat": 44.204,
+          "lon": -71.411
+        },
+        {
+          "id": "altonbay",
+          "name": "Alton Bay",
+          "place": "Alton, NH",
+          "score": 3,
+          "label": "Skip",
+          "drive": 32,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:31",
+          "lat": 43.476,
+          "lon": -71.24
+        },
+        {
+          "id": "weirs",
+          "name": "Weirs Beach Boardwalk",
+          "place": "Laconia, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 11,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:32",
+          "lat": 43.608,
+          "lon": -71.459
+        },
+        {
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 2,
+          "label": "Skip",
+          "drive": 110,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:30",
+          "lat": 42.8151,
+          "lon": -70.819
+        },
+        {
+          "id": "bretton",
+          "name": "Bretton Woods",
+          "place": "Carroll, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 72,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:32",
+          "lat": 44.26,
+          "lon": -71.443
+        },
+        {
+          "id": "capeporpoise",
+          "name": "Cape Porpoise Pier",
+          "place": "Kennebunkport, ME",
+          "score": 2,
+          "label": "Skip",
+          "drive": 114,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:28",
+          "lat": 43.3654,
+          "lon": -70.432
+        },
+        {
+          "id": "ellacoya",
+          "name": "Ellacoya State Park",
+          "place": "Gilford, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 22,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:32",
+          "lat": 43.5694,
+          "lon": -71.3547
+        },
+        {
+          "id": "hampton",
+          "name": "Hampton Beach",
+          "place": "Hampton, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 90,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:30",
+          "lat": 42.9081,
+          "lon": -70.81
+        },
+        {
+          "id": "odiorne",
+          "name": "Odiorne Point",
+          "place": "Rye, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 86,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:29",
+          "lat": 43.0431,
+          "lon": -70.7161
+        },
+        {
+          "id": "ryeharbor",
+          "name": "Rye Harbor State Park",
+          "place": "Rye, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 91,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:30",
+          "lat": 43.0017,
+          "lon": -70.7446
+        },
+        {
+          "id": "newcastle",
+          "name": "New Castle / Portsmouth Harbor",
+          "place": "New Castle, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 87,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:29",
+          "lat": 43.069,
+          "lon": -70.713
+        },
+        {
+          "id": "nubble",
+          "name": "Nubble Light",
+          "place": "York, ME",
+          "score": 2,
+          "label": "Skip",
+          "drive": 95,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:29",
+          "lat": 43.166,
+          "lon": -70.593
+        },
+        {
+          "id": "longsands",
+          "name": "Long Sands Beach",
+          "place": "Cape Neddick, ME",
+          "score": 2,
+          "label": "Skip",
+          "drive": 91,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:29",
+          "lat": 43.16,
+          "lon": -70.621
+        },
+        {
+          "id": "yorkharbor",
+          "name": "York Harbor",
+          "place": "York, ME",
+          "score": 2,
+          "label": "Skip",
+          "drive": 91,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun sets outside this spot's open arc.",
+          "time": "18:29",
+          "lat": 43.147,
+          "lon": -70.626
         }
       ]
     },
@@ -69,6 +1409,7 @@
             "horizon blocked"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:46",
           "lat": 44.297,
           "lon": -72.295
         },
@@ -83,8 +1424,71 @@
             "horizon blocked"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:44",
           "lat": 44.1569,
           "lon": -71.6992
+        },
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 10,
+          "label": "Skip",
+          "drive": 104,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:44",
+          "lat": 42.8619,
+          "lon": -71.8788
+        }
+      ],
+      "all": [
+        {
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 11,
+          "label": "Skip",
+          "drive": 108,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:46",
+          "lat": 44.297,
+          "lon": -72.295
+        },
+        {
+          "id": "cannon",
+          "name": "Cannon Mountain Summit",
+          "place": "Franconia Notch, NH",
+          "score": 10,
+          "label": "Skip",
+          "drive": 51,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:44",
+          "lat": 44.1569,
+          "lon": -71.6992
+        },
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 10,
+          "label": "Skip",
+          "drive": 104,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:44",
+          "lat": 42.8619,
+          "lon": -71.8788
         },
         {
           "id": "moosilauke",
@@ -97,11 +1501,2695 @@
             "horizon blocked"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:44",
           "lat": 44.0241,
           "lon": -71.8314
+        },
+        {
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
+          "score": 9,
+          "label": "Skip",
+          "drive": 111,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:47",
+          "lat": 43.4445,
+          "lon": -72.4537
+        },
+        {
+          "id": "greatglen",
+          "name": "Great Glen / Auto Road Base",
+          "place": "Pinkham Notch, NH",
+          "score": 9,
+          "label": "Skip",
+          "drive": 87,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:42",
+          "lat": 44.261,
+          "lon": -71.257
+        },
+        {
+          "id": "jennefarm",
+          "name": "Jenne Farm",
+          "place": "Reading, VT",
+          "score": 9,
+          "label": "Skip",
+          "drive": 111,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:47",
+          "lat": 43.5245,
+          "lon": -72.5596
+        },
+        {
+          "id": "lyndon",
+          "name": "Lyndon Farm Fields",
+          "place": "Northeast Kingdom, VT",
+          "score": 8,
+          "label": "Skip",
+          "drive": 96,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:45",
+          "lat": 44.565,
+          "lon": -71.973
+        },
+        {
+          "id": "burkemtn",
+          "name": "Burke Mountain",
+          "place": "East Burke, VT",
+          "score": 8,
+          "label": "Skip",
+          "drive": 110,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:45",
+          "lat": 44.5705,
+          "lon": -71.893
+        },
+        {
+          "id": "lafayette",
+          "name": "Mount Lafayette Summit",
+          "place": "Franconia Ridge, NH",
+          "score": 8,
+          "label": "Skip",
+          "drive": 49,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:44",
+          "lat": 44.1608,
+          "lon": -71.6444
+        },
+        {
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 8,
+          "label": "Skip",
+          "drive": 70,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:45",
+          "lat": 43.321,
+          "lon": -72.084
+        },
+        {
+          "id": "therocks",
+          "name": "The Rocks",
+          "place": "Bethlehem, NH",
+          "score": 8,
+          "label": "Skip",
+          "drive": 61,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:44",
+          "lat": 44.283,
+          "lon": -71.735
+        },
+        {
+          "id": "stinson",
+          "name": "Stinson Mountain",
+          "place": "Rumney, NH",
+          "score": 8,
+          "label": "Skip",
+          "drive": 40,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:44",
+          "lat": 43.8345,
+          "lon": -71.7793
+        },
+        {
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 7,
+          "label": "Skip",
+          "drive": 98,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:46",
+          "lat": 44.328,
+          "lon": -72.175
+        },
+        {
+          "id": "willoughbysouth",
+          "name": "Lake Willoughby, south end",
+          "place": "Westmore, VT",
+          "score": 7,
+          "label": "Skip",
+          "drive": 110,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:45",
+          "lat": 44.717,
+          "lon": -72.031
+        },
+        {
+          "id": "mtwillard",
+          "name": "Mount Willard",
+          "place": "Crawford Notch, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 76,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:43",
+          "lat": 44.204,
+          "lon": -71.411
+        },
+        {
+          "id": "jefferson",
+          "name": "Jefferson Fields",
+          "place": "Jefferson, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 78,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:43",
+          "lat": 44.3892,
+          "lon": -71.4789
+        },
+        {
+          "id": "middlesugarloaf",
+          "name": "Middle Sugarloaf",
+          "place": "Bethlehem, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 71,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:43",
+          "lat": 44.2513,
+          "lon": -71.5171
+        },
+        {
+          "id": "mtavalon",
+          "name": "Mount Avalon",
+          "place": "Crawford Notch, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 84,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:43",
+          "lat": 44.2064,
+          "lon": -71.4264
+        },
+        {
+          "id": "mtwashington",
+          "name": "Mount Washington Summit",
+          "place": "Sargent's Purchase, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 116,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:42",
+          "lat": 44.27,
+          "lon": -71.302
+        },
+        {
+          "id": "mtpemi",
+          "name": "Mount Pemigewasset (Indian Head)",
+          "place": "Lincoln, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 56,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:44",
+          "lat": 44.0975,
+          "lon": -71.6997
+        },
+        {
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 80,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:44",
+          "lat": 43.385,
+          "lon": -71.857
+        },
+        {
+          "id": "nubble",
+          "name": "Nubble Light",
+          "place": "York, ME",
+          "score": 6,
+          "label": "Skip",
+          "drive": 95,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "06:39",
+          "lat": 43.166,
+          "lon": -70.593
+        },
+        {
+          "id": "cherrypond",
+          "name": "Little Cherry Pond",
+          "place": "Pondicherry NWR, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 81,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:43",
+          "lat": 44.3761,
+          "lon": -71.5188
+        },
+        {
+          "id": "capeporpoise",
+          "name": "Cape Porpoise Pier",
+          "place": "Kennebunkport, ME",
+          "score": 5,
+          "label": "Skip",
+          "drive": 114,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "06:39",
+          "lat": 43.3654,
+          "lon": -70.432
+        },
+        {
+          "id": "longsands",
+          "name": "Long Sands Beach",
+          "place": "Cape Neddick, ME",
+          "score": 5,
+          "label": "Skip",
+          "drive": 91,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "06:39",
+          "lat": 43.16,
+          "lon": -70.621
+        },
+        {
+          "id": "yorkharbor",
+          "name": "York Harbor",
+          "place": "York, ME",
+          "score": 5,
+          "label": "Skip",
+          "drive": 91,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "06:39",
+          "lat": 43.147,
+          "lon": -70.626
+        },
+        {
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 5,
+          "label": "Skip",
+          "drive": 94,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "06:40",
+          "lat": 43.2232,
+          "lon": -70.6919
+        },
+        {
+          "id": "sugarhill",
+          "name": "Sunset Hill, Sugar Hill",
+          "place": "Sugar Hill, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 61,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:44",
+          "lat": 44.217,
+          "lon": -71.783
+        },
+        {
+          "id": "cardigan",
+          "name": "Mount Cardigan Summit",
+          "place": "Orange, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 57,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:45",
+          "lat": 43.6495,
+          "lon": -71.9144
+        },
+        {
+          "id": "profilelake",
+          "name": "Profile Lake",
+          "place": "Franconia Notch, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 51,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:44",
+          "lat": 44.162,
+          "lon": -71.677
+        },
+        {
+          "id": "echolake",
+          "name": "Echo Lake",
+          "place": "Franconia Notch, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 60,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:44",
+          "lat": 44.187,
+          "lon": -71.69
+        },
+        {
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 61,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:41",
+          "lat": 43.3314,
+          "lon": -71.1162
+        },
+        {
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 5,
+          "label": "Skip",
+          "drive": 106,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:38",
+          "lat": 43.563,
+          "lon": -70.365
+        },
+        {
+          "id": "chocoruasummit",
+          "name": "Mount Chocorua Summit",
+          "place": "Albany, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 46,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:42",
+          "lat": 43.9541,
+          "lon": -71.2734
+        },
+        {
+          "id": "bretton",
+          "name": "Bretton Woods",
+          "place": "Carroll, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 72,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:43",
+          "lat": 44.26,
+          "lon": -71.443
+        },
+        {
+          "id": "odiorne",
+          "name": "Odiorne Point",
+          "place": "Rye, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 86,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:40",
+          "lat": 43.0431,
+          "lon": -70.7161
+        },
+        {
+          "id": "newcastle",
+          "name": "New Castle / Portsmouth Harbor",
+          "place": "New Castle, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 87,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:40",
+          "lat": 43.069,
+          "lon": -70.713
+        },
+        {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 5,
+          "label": "Skip",
+          "drive": 94,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:39",
+          "lat": 43.06,
+          "lon": -70.698
+        },
+        {
+          "id": "chocorualake",
+          "name": "Chocorua Lake (Narrows Bridge)",
+          "place": "Tamworth, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 41,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:42",
+          "lat": 43.8967,
+          "lon": -71.2686
+        },
+        {
+          "id": "fossmtn",
+          "name": "Foss Mountain",
+          "place": "Eaton, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 64,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:41",
+          "lat": 43.8771,
+          "lon": -71.0348
+        },
+        {
+          "id": "northconway",
+          "name": "Cathedral Ledge",
+          "place": "Bartlett, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 69,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:42",
+          "lat": 44.062,
+          "lon": -71.168
+        },
+        {
+          "id": "newfound",
+          "name": "Newfound Lake, Wellington",
+          "place": "Bristol, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 33,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:44",
+          "lat": 43.664,
+          "lon": -71.767
+        },
+        {
+          "id": "newfoundsouth",
+          "name": "Newfound Lake, Bristol end",
+          "place": "Bristol, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 27,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:44",
+          "lat": 43.625,
+          "lon": -71.745
+        },
+        {
+          "id": "artists",
+          "name": "Artist's Bluff",
+          "place": "Franconia Notch, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 51,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:44",
+          "lat": 44.181,
+          "lon": -71.695
+        },
+        {
+          "id": "ryeharbor",
+          "name": "Rye Harbor State Park",
+          "place": "Rye, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 91,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "06:40",
+          "lat": 43.0017,
+          "lon": -70.7446
+        },
+        {
+          "id": "leavittpark",
+          "name": "Leavitt Park",
+          "place": "Meredith, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 8,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:43",
+          "lat": 43.681,
+          "lon": -71.454
+        },
+        {
+          "id": "baldmtn",
+          "name": "Bald Mountain",
+          "place": "Franconia Notch, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 52,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:44",
+          "lat": 44.183,
+          "lon": -71.704
+        },
+        {
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 5,
+          "label": "Skip",
+          "drive": 110,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "06:40",
+          "lat": 42.8151,
+          "lon": -70.819
+        },
+        {
+          "id": "weirs",
+          "name": "Weirs Beach Boardwalk",
+          "place": "Laconia, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 11,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:43",
+          "lat": 43.608,
+          "lon": -71.459
+        },
+        {
+          "id": "greenmtn",
+          "name": "Green Mountain Fire Tower",
+          "place": "Effingham, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 55,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:41",
+          "lat": 43.7675,
+          "lon": -71.0369
+        },
+        {
+          "id": "major",
+          "name": "Mount Major Summit",
+          "place": "Alton, NH",
+          "score": 4,
+          "label": "Skip",
+          "drive": 33,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:42",
+          "lat": 43.5093,
+          "lon": -71.2806
+        },
+        {
+          "id": "ellacoya",
+          "name": "Ellacoya State Park",
+          "place": "Gilford, NH",
+          "score": 4,
+          "label": "Skip",
+          "drive": 22,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:42",
+          "lat": 43.5694,
+          "lon": -71.3547
+        },
+        {
+          "id": "mtpercival",
+          "name": "Mount Percival",
+          "place": "Sandwich, NH",
+          "score": 4,
+          "label": "Skip",
+          "drive": 28,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:43",
+          "lat": 43.8022,
+          "lon": -71.5225
+        },
+        {
+          "id": "centersandwich",
+          "name": "Center Sandwich",
+          "place": "Sandwich, NH",
+          "score": 4,
+          "label": "Skip",
+          "drive": 18,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:43",
+          "lat": 43.782,
+          "lon": -71.473
+        },
+        {
+          "id": "mtisrael",
+          "name": "Mount Israel",
+          "place": "Sandwich, NH",
+          "score": 4,
+          "label": "Skip",
+          "drive": 30,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:43",
+          "lat": 43.8454,
+          "lon": -71.4716
+        },
+        {
+          "id": "belknap",
+          "name": "Belknap Mountain Fire Tower",
+          "place": "Gilford, NH",
+          "score": 4,
+          "label": "Skip",
+          "drive": 29,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:42",
+          "lat": 43.5178,
+          "lon": -71.3689
+        },
+        {
+          "id": "redhill",
+          "name": "Red Hill Fire Tower",
+          "place": "Moultonborough, NH",
+          "score": 4,
+          "label": "Skip",
+          "drive": 20,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:42",
+          "lat": 43.766,
+          "lon": -71.372
+        },
+        {
+          "id": "hampton",
+          "name": "Hampton Beach",
+          "place": "Hampton, NH",
+          "score": 4,
+          "label": "Skip",
+          "drive": 90,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:40",
+          "lat": 42.9081,
+          "lon": -70.81
+        },
+        {
+          "id": "willoughby",
+          "name": "Lake Willoughby",
+          "place": "Westmore, VT",
+          "score": 4,
+          "label": "Skip",
+          "drive": 112,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:45",
+          "lat": 44.735,
+          "lon": -72.047
+        },
+        {
+          "id": "jobspond",
+          "name": "Jobs Pond",
+          "place": "Westmore, VT",
+          "score": 4,
+          "label": "Skip",
+          "drive": 118,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:45",
+          "lat": 44.7622,
+          "lon": -71.9534
+        },
+        {
+          "id": "randolph",
+          "name": "Randolph",
+          "place": "Randolph, NH",
+          "score": 3,
+          "label": "Skip",
+          "drive": 83,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:43",
+          "lat": 44.358,
+          "lon": -71.368
+        },
+        {
+          "id": "kancsugar",
+          "name": "Sugar Hill Scenic Vista",
+          "place": "Kancamagus Hwy, NH",
+          "score": 3,
+          "label": "Skip",
+          "drive": 65,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:43",
+          "lat": 44.0098,
+          "lon": -71.4277
+        },
+        {
+          "id": "kanclincoln",
+          "name": "Kancamagus, Lincoln end",
+          "place": "Lincoln, NH",
+          "score": 3,
+          "label": "Skip",
+          "drive": 55,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:43",
+          "lat": 44.041,
+          "lon": -71.524
+        },
+        {
+          "id": "pemioverlook",
+          "name": "Pemigewasset Overlook",
+          "place": "Kancamagus Hwy, NH",
+          "score": 3,
+          "label": "Skip",
+          "drive": 56,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:43",
+          "lat": 44.035,
+          "lon": -71.517
+        },
+        {
+          "id": "welchledges",
+          "name": "Welch Mountain Ledges",
+          "place": "Thornton, NH",
+          "score": 3,
+          "label": "Skip",
+          "drive": 37,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:43",
+          "lat": 43.919,
+          "lon": -71.5754
+        },
+        {
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 2,
+          "label": "Skip",
+          "drive": 95,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:39",
+          "lat": 43.9209,
+          "lon": -70.5806
+        },
+        {
+          "id": "chatham",
+          "name": "Chatham",
+          "place": "Chatham, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 95,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:41",
+          "lat": 44.271,
+          "lon": -71.025
+        },
+        {
+          "id": "ashland",
+          "name": "Ashland",
+          "place": "Ashland, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 19,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:43",
+          "lat": 43.697,
+          "lon": -71.63
+        },
+        {
+          "id": "bog",
+          "name": "Bog Mountain",
+          "place": "Wilmot, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 46,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:45",
+          "lat": 43.469,
+          "lon": -71.93
+        },
+        {
+          "id": "tamworth",
+          "name": "Tamworth",
+          "place": "Tamworth, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 37,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:42",
+          "lat": 43.838,
+          "lon": -71.218
+        },
+        {
+          "id": "altonbay",
+          "name": "Alton Bay",
+          "place": "Alton, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 32,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:42",
+          "lat": 43.476,
+          "lon": -71.24
+        },
+        {
+          "id": "rockygorge",
+          "name": "Rocky Gorge",
+          "place": "Kancamagus Hwy, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 62,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:42",
+          "lat": 44.004,
+          "lon": -71.278
+        },
+        {
+          "id": "kancgraham",
+          "name": "C.L. Graham Wangan Overlook",
+          "place": "Kancamagus Hwy, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 78,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:42",
+          "lat": 44.0069,
+          "lon": -71.3608
+        },
+        {
+          "id": "eaton",
+          "name": "Crystal Lake",
+          "place": "Eaton, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 55,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:41",
+          "lat": 43.914,
+          "lon": -71.074
+        },
+        {
+          "id": "pequawket",
+          "name": "Pequawket Pond",
+          "place": "Conway, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 54,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:41",
+          "lat": 43.9847,
+          "lon": -71.1211
+        },
+        {
+          "id": "lowerfalls",
+          "name": "Lower Falls, Swift River",
+          "place": "Albany, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 57,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:42",
+          "lat": 43.9964,
+          "lon": -71.2336
+        },
+        {
+          "id": "chocorua16",
+          "name": "Chocorua, Route 16",
+          "place": "Chocorua, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 39,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:42",
+          "lat": 43.897,
+          "lon": -71.231
+        },
+        {
+          "id": "intervale",
+          "name": "Intervale Scenic Vista",
+          "place": "Intervale, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 67,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:42",
+          "lat": 44.0756,
+          "lon": -71.1396
+        },
+        {
+          "id": "centerharb",
+          "name": "Center Harbor Town Dock",
+          "place": "Center Harbor, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 10,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:43",
+          "lat": 43.71,
+          "lon": -71.467
+        },
+        {
+          "id": "wolfeboro",
+          "name": "Wolfeboro Town Docks",
+          "place": "Wolfeboro, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 46,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:42",
+          "lat": 43.582,
+          "lon": -71.21
+        },
+        {
+          "id": "ossipee",
+          "name": "Center Ossipee Pond",
+          "place": "Lakes Region, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 33,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:42",
+          "lat": 43.8108,
+          "lon": -71.1878
+        },
+        {
+          "id": "meredith",
+          "name": "Meredith Bay Docks",
+          "place": "Meredith, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 2,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:43",
+          "lat": 43.656,
+          "lon": -71.498
+        },
+        {
+          "id": "squam",
+          "name": "Squam Lake",
+          "place": "Holderness, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 13,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:43",
+          "lat": 43.731,
+          "lon": -71.586
+        },
+        {
+          "id": "westrattle",
+          "name": "West Rattlesnake",
+          "place": "Holderness, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 22,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:43",
+          "lat": 43.785,
+          "lon": -71.545
+        },
+        {
+          "id": "squamnorth",
+          "name": "Squam Lake, north shore",
+          "place": "Holderness, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 19,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:43",
+          "lat": 43.763,
+          "lon": -71.558
+        },
+        {
+          "id": "moultonneck",
+          "name": "Moultonborough Neck",
+          "place": "Moultonborough, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 17,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:43",
+          "lat": 43.696,
+          "lon": -71.406
+        },
+        {
+          "id": "castle",
+          "name": "Castle in the Clouds Overlook",
+          "place": "Moultonborough, NH",
+          "score": 2,
+          "label": "Skip",
+          "drive": 26,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:42",
+          "lat": 43.747,
+          "lon": -71.323
+        },
+        {
+          "id": "pleasantmtn",
+          "name": "Pleasant Mountain",
+          "place": "Bridgton, ME",
+          "score": 2,
+          "label": "Skip",
+          "drive": 90,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:40",
+          "lat": 44.027,
+          "lon": -70.8223
+        }
+      ]
+    },
+    {
+      "ev": "sunset",
+      "day": "2026-09-30",
+      "when": "tomorrow night",
+      "time": "18:32",
+      "top": [
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 46,
+          "label": "Worth it",
+          "drive": 104,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:32",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
+        {
+          "id": "mtpercival",
+          "name": "Mount Percival",
+          "place": "Sandwich, NH",
+          "score": 45,
+          "label": "Worth it",
+          "drive": 28,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 43.8022,
+          "lon": -71.5225
+        },
+        {
+          "id": "kancsugar",
+          "name": "Sugar Hill Scenic Vista",
+          "place": "Kancamagus Hwy, NH",
+          "score": 45,
+          "label": "Marginal",
+          "drive": 65,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 44.0098,
+          "lon": -71.4277
+        }
+      ],
+      "all": [
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 46,
+          "label": "Worth it",
+          "drive": 104,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:32",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
+        {
+          "id": "mtpercival",
+          "name": "Mount Percival",
+          "place": "Sandwich, NH",
+          "score": 45,
+          "label": "Worth it",
+          "drive": 28,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 43.8022,
+          "lon": -71.5225
+        },
+        {
+          "id": "kancsugar",
+          "name": "Sugar Hill Scenic Vista",
+          "place": "Kancamagus Hwy, NH",
+          "score": 45,
+          "label": "Marginal",
+          "drive": 65,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 44.0098,
+          "lon": -71.4277
+        },
+        {
+          "id": "pemioverlook",
+          "name": "Pemigewasset Overlook",
+          "place": "Kancamagus Hwy, NH",
+          "score": 45,
+          "label": "Marginal",
+          "drive": 56,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 44.035,
+          "lon": -71.517
+        },
+        {
+          "id": "kanclincoln",
+          "name": "Kancamagus, Lincoln end",
+          "place": "Lincoln, NH",
+          "score": 45,
+          "label": "Marginal",
+          "drive": 55,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 44.041,
+          "lon": -71.524
+        },
+        {
+          "id": "westrattle",
+          "name": "West Rattlesnake",
+          "place": "Holderness, NH",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 22,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 43.785,
+          "lon": -71.545
+        },
+        {
+          "id": "meredith",
+          "name": "Meredith Bay Docks",
+          "place": "Meredith, NH",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 2,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 43.656,
+          "lon": -71.498
+        },
+        {
+          "id": "moultonneck",
+          "name": "Moultonborough Neck",
+          "place": "Moultonborough, NH",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 17,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 43.696,
+          "lon": -71.406
+        },
+        {
+          "id": "squamnorth",
+          "name": "Squam Lake, north shore",
+          "place": "Holderness, NH",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 19,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 43.763,
+          "lon": -71.558
+        },
+        {
+          "id": "squam",
+          "name": "Squam Lake",
+          "place": "Holderness, NH",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 13,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 43.731,
+          "lon": -71.586
+        },
+        {
+          "id": "centersandwich",
+          "name": "Center Sandwich",
+          "place": "Sandwich, NH",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 18,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 43.782,
+          "lon": -71.473
+        },
+        {
+          "id": "centerharb",
+          "name": "Center Harbor Town Dock",
+          "place": "Center Harbor, NH",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 10,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 43.71,
+          "lon": -71.467
+        },
+        {
+          "id": "middlesugarloaf",
+          "name": "Middle Sugarloaf",
+          "place": "Bethlehem, NH",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 71,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 44.2513,
+          "lon": -71.5171
+        },
+        {
+          "id": "greatglen",
+          "name": "Great Glen / Auto Road Base",
+          "place": "Pinkham Notch, NH",
+          "score": 43,
+          "label": "Marginal",
+          "drive": 87,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:29",
+          "lat": 44.261,
+          "lon": -71.257
+        },
+        {
+          "id": "mtwashington",
+          "name": "Mount Washington Summit",
+          "place": "Sargent's Purchase, NH",
+          "score": 43,
+          "label": "Marginal",
+          "drive": 116,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 44.27,
+          "lon": -71.302
+        },
+        {
+          "id": "jobspond",
+          "name": "Jobs Pond",
+          "place": "Westmore, VT",
+          "score": 43,
+          "label": "Marginal",
+          "drive": 118,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:32",
+          "lat": 44.7622,
+          "lon": -71.9534
+        },
+        {
+          "id": "welchledges",
+          "name": "Welch Mountain Ledges",
+          "place": "Thornton, NH",
+          "score": 42,
+          "label": "Marginal",
+          "drive": 37,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 43.919,
+          "lon": -71.5754
+        },
+        {
+          "id": "chocoruasummit",
+          "name": "Mount Chocorua Summit",
+          "place": "Albany, NH",
+          "score": 42,
+          "label": "Marginal",
+          "drive": 46,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 43.9541,
+          "lon": -71.2734
+        },
+        {
+          "id": "willoughby",
+          "name": "Lake Willoughby",
+          "place": "Westmore, VT",
+          "score": 42,
+          "label": "Marginal",
+          "drive": 112,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:32",
+          "lat": 44.735,
+          "lon": -72.047
+        },
+        {
+          "id": "chocorua16",
+          "name": "Chocorua, Route 16",
+          "place": "Chocorua, NH",
+          "score": 42,
+          "label": "Marginal",
+          "drive": 39,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:29",
+          "lat": 43.897,
+          "lon": -71.231
+        },
+        {
+          "id": "jefferson",
+          "name": "Jefferson Fields",
+          "place": "Jefferson, NH",
+          "score": 42,
+          "label": "Marginal",
+          "drive": 78,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:30",
+          "lat": 44.3892,
+          "lon": -71.4789
+        },
+        {
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 42,
+          "label": "Marginal",
+          "drive": 108,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:34",
+          "lat": 44.297,
+          "lon": -72.295
+        },
+        {
+          "id": "kancgraham",
+          "name": "C.L. Graham Wangan Overlook",
+          "place": "Kancamagus Hwy, NH",
+          "score": 42,
+          "label": "Marginal",
+          "drive": 78,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 44.0069,
+          "lon": -71.3608
+        },
+        {
+          "id": "lowerfalls",
+          "name": "Lower Falls, Swift River",
+          "place": "Albany, NH",
+          "score": 41,
+          "label": "Marginal",
+          "drive": 57,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:29",
+          "lat": 43.9964,
+          "lon": -71.2336
+        },
+        {
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
+          "score": 41,
+          "label": "Marginal",
+          "drive": 111,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:34",
+          "lat": 43.4445,
+          "lon": -72.4537
+        },
+        {
+          "id": "mtisrael",
+          "name": "Mount Israel",
+          "place": "Sandwich, NH",
+          "score": 41,
+          "label": "Marginal",
+          "drive": 30,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 43.8454,
+          "lon": -71.4716
+        },
+        {
+          "id": "mtpemi",
+          "name": "Mount Pemigewasset (Indian Head)",
+          "place": "Lincoln, NH",
+          "score": 40,
+          "label": "Marginal",
+          "drive": 56,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 44.0975,
+          "lon": -71.6997
+        },
+        {
+          "id": "rockygorge",
+          "name": "Rocky Gorge",
+          "place": "Kancamagus Hwy, NH",
+          "score": 40,
+          "label": "Marginal",
+          "drive": 62,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 44.004,
+          "lon": -71.278
+        },
+        {
+          "id": "randolph",
+          "name": "Randolph",
+          "place": "Randolph, NH",
+          "score": 40,
+          "label": "Marginal",
+          "drive": 83,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 44.358,
+          "lon": -71.368
+        },
+        {
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 40,
+          "label": "Marginal",
+          "drive": 61,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:29",
+          "lat": 43.3314,
+          "lon": -71.1162
+        },
+        {
+          "id": "sugarhill",
+          "name": "Sunset Hill, Sugar Hill",
+          "place": "Sugar Hill, NH",
+          "score": 40,
+          "label": "Marginal",
+          "drive": 61,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:32",
+          "lat": 44.217,
+          "lon": -71.783
+        },
+        {
+          "id": "chatham",
+          "name": "Chatham",
+          "place": "Chatham, NH",
+          "score": 40,
+          "label": "Marginal",
+          "drive": 95,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:29",
+          "lat": 44.271,
+          "lon": -71.025
+        },
+        {
+          "id": "artists",
+          "name": "Artist's Bluff",
+          "place": "Franconia Notch, NH",
+          "score": 40,
+          "label": "Marginal",
+          "drive": 51,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 44.181,
+          "lon": -71.695
+        },
+        {
+          "id": "baldmtn",
+          "name": "Bald Mountain",
+          "place": "Franconia Notch, NH",
+          "score": 40,
+          "label": "Marginal",
+          "drive": 52,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 44.183,
+          "lon": -71.704
+        },
+        {
+          "id": "cannon",
+          "name": "Cannon Mountain Summit",
+          "place": "Franconia Notch, NH",
+          "score": 40,
+          "label": "Marginal",
+          "drive": 51,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 44.1569,
+          "lon": -71.6992
+        },
+        {
+          "id": "profilelake",
+          "name": "Profile Lake",
+          "place": "Franconia Notch, NH",
+          "score": 40,
+          "label": "Marginal",
+          "drive": 51,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 44.162,
+          "lon": -71.677
+        },
+        {
+          "id": "echolake",
+          "name": "Echo Lake",
+          "place": "Franconia Notch, NH",
+          "score": 40,
+          "label": "Marginal",
+          "drive": 60,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 44.187,
+          "lon": -71.69
+        },
+        {
+          "id": "moosilauke",
+          "name": "Mount Moosilauke Summit",
+          "place": "Benton, NH",
+          "score": 39,
+          "label": "Marginal",
+          "drive": 67,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:32",
+          "lat": 44.0241,
+          "lon": -71.8314
+        },
+        {
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 39,
+          "label": "Marginal",
+          "drive": 70,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:33",
+          "lat": 43.321,
+          "lon": -72.084
+        },
+        {
+          "id": "mtwillard",
+          "name": "Mount Willard",
+          "place": "Crawford Notch, NH",
+          "score": 39,
+          "label": "Marginal",
+          "drive": 76,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:30",
+          "lat": 44.204,
+          "lon": -71.411
+        },
+        {
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 39,
+          "label": "Marginal",
+          "drive": 98,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:33",
+          "lat": 44.328,
+          "lon": -72.175
+        },
+        {
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 39,
+          "label": "Marginal",
+          "drive": 80,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "18:32",
+          "lat": 43.385,
+          "lon": -71.857
+        },
+        {
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 95,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:27",
+          "lat": 43.9209,
+          "lon": -70.5806
+        },
+        {
+          "id": "castle",
+          "name": "Castle in the Clouds Overlook",
+          "place": "Moultonborough, NH",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 26,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 43.747,
+          "lon": -71.323
+        },
+        {
+          "id": "cherrypond",
+          "name": "Little Cherry Pond",
+          "place": "Pondicherry NWR, NH",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 81,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:30",
+          "lat": 44.3761,
+          "lon": -71.5188
+        },
+        {
+          "id": "mtavalon",
+          "name": "Mount Avalon",
+          "place": "Crawford Notch, NH",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 84,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:30",
+          "lat": 44.2064,
+          "lon": -71.4264
+        },
+        {
+          "id": "ossipee",
+          "name": "Center Ossipee Pond",
+          "place": "Lakes Region, NH",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 33,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:29",
+          "lat": 43.8108,
+          "lon": -71.1878
+        },
+        {
+          "id": "redhill",
+          "name": "Red Hill Fire Tower",
+          "place": "Moultonborough, NH",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 20,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 43.766,
+          "lon": -71.372
+        },
+        {
+          "id": "tamworth",
+          "name": "Tamworth",
+          "place": "Tamworth, NH",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 37,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:29",
+          "lat": 43.838,
+          "lon": -71.218
+        },
+        {
+          "id": "bretton",
+          "name": "Bretton Woods",
+          "place": "Carroll, NH",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 72,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:30",
+          "lat": 44.26,
+          "lon": -71.443
+        },
+        {
+          "id": "intervale",
+          "name": "Intervale Scenic Vista",
+          "place": "Intervale, NH",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 67,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:29",
+          "lat": 44.0756,
+          "lon": -71.1396
+        },
+        {
+          "id": "major",
+          "name": "Mount Major Summit",
+          "place": "Alton, NH",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 33,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 43.5093,
+          "lon": -71.2806
+        },
+        {
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 37,
+          "label": "Marginal",
+          "drive": 94,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:28",
+          "lat": 43.2232,
+          "lon": -70.6919
+        },
+        {
+          "id": "eaton",
+          "name": "Crystal Lake",
+          "place": "Eaton, NH",
+          "score": 37,
+          "label": "Marginal",
+          "drive": 55,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:29",
+          "lat": 43.914,
+          "lon": -71.074
+        },
+        {
+          "id": "fossmtn",
+          "name": "Foss Mountain",
+          "place": "Eaton, NH",
+          "score": 37,
+          "label": "Marginal",
+          "drive": 64,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:29",
+          "lat": 43.8771,
+          "lon": -71.0348
+        },
+        {
+          "id": "leavittpark",
+          "name": "Leavitt Park",
+          "place": "Meredith, NH",
+          "score": 37,
+          "label": "Marginal",
+          "drive": 8,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:30",
+          "lat": 43.681,
+          "lon": -71.454
+        },
+        {
+          "id": "lafayette",
+          "name": "Mount Lafayette Summit",
+          "place": "Franconia Ridge, NH",
+          "score": 37,
+          "label": "Marginal",
+          "drive": 49,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 44.1608,
+          "lon": -71.6444
+        },
+        {
+          "id": "greenmtn",
+          "name": "Green Mountain Fire Tower",
+          "place": "Effingham, NH",
+          "score": 37,
+          "label": "Marginal",
+          "drive": 55,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:29",
+          "lat": 43.7675,
+          "lon": -71.0369
+        },
+        {
+          "id": "belknap",
+          "name": "Belknap Mountain Fire Tower",
+          "place": "Gilford, NH",
+          "score": 37,
+          "label": "Marginal",
+          "drive": 29,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 43.5178,
+          "lon": -71.3689
+        },
+        {
+          "id": "wolfeboro",
+          "name": "Wolfeboro Town Docks",
+          "place": "Wolfeboro, NH",
+          "score": 37,
+          "label": "Marginal",
+          "drive": 46,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:29",
+          "lat": 43.582,
+          "lon": -71.21
+        },
+        {
+          "id": "chocorualake",
+          "name": "Chocorua Lake (Narrows Bridge)",
+          "place": "Tamworth, NH",
+          "score": 36,
+          "label": "Marginal",
+          "drive": 41,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:30",
+          "lat": 43.8967,
+          "lon": -71.2686
+        },
+        {
+          "id": "willoughbysouth",
+          "name": "Lake Willoughby, south end",
+          "place": "Westmore, VT",
+          "score": 36,
+          "label": "Marginal",
+          "drive": 110,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:32",
+          "lat": 44.717,
+          "lon": -72.031
+        },
+        {
+          "id": "cardigan",
+          "name": "Mount Cardigan Summit",
+          "place": "Orange, NH",
+          "score": 35,
+          "label": "Marginal",
+          "drive": 57,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:32",
+          "lat": 43.6495,
+          "lon": -71.9144
+        },
+        {
+          "id": "burkemtn",
+          "name": "Burke Mountain",
+          "place": "East Burke, VT",
+          "score": 35,
+          "label": "Marginal",
+          "drive": 110,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:32",
+          "lat": 44.5705,
+          "lon": -71.893
+        },
+        {
+          "id": "pleasantmtn",
+          "name": "Pleasant Mountain",
+          "place": "Bridgton, ME",
+          "score": 35,
+          "label": "Marginal",
+          "drive": 90,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:28",
+          "lat": 44.027,
+          "lon": -70.8223
+        },
+        {
+          "id": "hampton",
+          "name": "Hampton Beach",
+          "place": "Hampton, NH",
+          "score": 35,
+          "label": "Marginal",
+          "drive": 90,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:28",
+          "lat": 42.9081,
+          "lon": -70.81
+        },
+        {
+          "id": "lyndon",
+          "name": "Lyndon Farm Fields",
+          "place": "Northeast Kingdom, VT",
+          "score": 35,
+          "label": "Marginal",
+          "drive": 96,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:32",
+          "lat": 44.565,
+          "lon": -71.973
+        },
+        {
+          "id": "weirs",
+          "name": "Weirs Beach Boardwalk",
+          "place": "Laconia, NH",
+          "score": 34,
+          "label": "Marginal",
+          "drive": 11,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:30",
+          "lat": 43.608,
+          "lon": -71.459
+        },
+        {
+          "id": "altonbay",
+          "name": "Alton Bay",
+          "place": "Alton, NH",
+          "score": 34,
+          "label": "Marginal",
+          "drive": 32,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun sets outside this spot's open arc.",
+          "time": "18:30",
+          "lat": 43.476,
+          "lon": -71.24
+        },
+        {
+          "id": "pequawket",
+          "name": "Pequawket Pond",
+          "place": "Conway, NH",
+          "score": 34,
+          "label": "Marginal",
+          "drive": 54,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:29",
+          "lat": 43.9847,
+          "lon": -71.1211
+        },
+        {
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 34,
+          "label": "Marginal",
+          "drive": 110,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:28",
+          "lat": 42.8151,
+          "lon": -70.819
+        },
+        {
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 34,
+          "label": "Marginal",
+          "drive": 106,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:26",
+          "lat": 43.563,
+          "lon": -70.365
+        },
+        {
+          "id": "bog",
+          "name": "Bog Mountain",
+          "place": "Wilmot, NH",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 46,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:32",
+          "lat": 43.469,
+          "lon": -71.93
+        },
+        {
+          "id": "therocks",
+          "name": "The Rocks",
+          "place": "Bethlehem, NH",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 61,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:31",
+          "lat": 44.283,
+          "lon": -71.735
+        },
+        {
+          "id": "northconway",
+          "name": "Cathedral Ledge",
+          "place": "Bartlett, NH",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 69,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:29",
+          "lat": 44.062,
+          "lon": -71.168
+        },
+        {
+          "id": "jennefarm",
+          "name": "Jenne Farm",
+          "place": "Reading, VT",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 111,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:35",
+          "lat": 43.5245,
+          "lon": -72.5596
+        },
+        {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 94,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:28",
+          "lat": 43.06,
+          "lon": -70.698
+        },
+        {
+          "id": "nubble",
+          "name": "Nubble Light",
+          "place": "York, ME",
+          "score": 30,
+          "label": "Marginal",
+          "drive": 95,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:27",
+          "lat": 43.166,
+          "lon": -70.593
+        },
+        {
+          "id": "longsands",
+          "name": "Long Sands Beach",
+          "place": "Cape Neddick, ME",
+          "score": 30,
+          "label": "Marginal",
+          "drive": 91,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:27",
+          "lat": 43.16,
+          "lon": -70.621
+        },
+        {
+          "id": "ashland",
+          "name": "Ashland",
+          "place": "Ashland, NH",
+          "score": 30,
+          "label": "Marginal",
+          "drive": 19,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 43.697,
+          "lon": -71.63
+        },
+        {
+          "id": "ellacoya",
+          "name": "Ellacoya State Park",
+          "place": "Gilford, NH",
+          "score": 29,
+          "label": "Skip",
+          "drive": 22,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:30",
+          "lat": 43.5694,
+          "lon": -71.3547
+        },
+        {
+          "id": "capeporpoise",
+          "name": "Cape Porpoise Pier",
+          "place": "Kennebunkport, ME",
+          "score": 28,
+          "label": "Skip",
+          "drive": 114,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:26",
+          "lat": 43.3654,
+          "lon": -70.432
+        },
+        {
+          "id": "stinson",
+          "name": "Stinson Mountain",
+          "place": "Rumney, NH",
+          "score": 27,
+          "label": "Skip",
+          "drive": 40,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:32",
+          "lat": 43.8345,
+          "lon": -71.7793
+        },
+        {
+          "id": "yorkharbor",
+          "name": "York Harbor",
+          "place": "York, ME",
+          "score": 26,
+          "label": "Skip",
+          "drive": 91,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:27",
+          "lat": 43.147,
+          "lon": -70.626
+        },
+        {
+          "id": "newfound",
+          "name": "Newfound Lake, Wellington",
+          "place": "Bristol, NH",
+          "score": 26,
+          "label": "Skip",
+          "drive": 33,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:32",
+          "lat": 43.664,
+          "lon": -71.767
+        },
+        {
+          "id": "ryeharbor",
+          "name": "Rye Harbor State Park",
+          "place": "Rye, NH",
+          "score": 26,
+          "label": "Skip",
+          "drive": 91,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:28",
+          "lat": 43.0017,
+          "lon": -70.7446
+        },
+        {
+          "id": "odiorne",
+          "name": "Odiorne Point",
+          "place": "Rye, NH",
+          "score": 25,
+          "label": "Skip",
+          "drive": 86,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:28",
+          "lat": 43.0431,
+          "lon": -70.7161
+        },
+        {
+          "id": "newcastle",
+          "name": "New Castle / Portsmouth Harbor",
+          "place": "New Castle, NH",
+          "score": 25,
+          "label": "Skip",
+          "drive": 87,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:28",
+          "lat": 43.069,
+          "lon": -70.713
+        },
+        {
+          "id": "newfoundsouth",
+          "name": "Newfound Lake, Bristol end",
+          "place": "Bristol, NH",
+          "score": 25,
+          "label": "Skip",
+          "drive": 27,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:32",
+          "lat": 43.625,
+          "lon": -71.745
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:33 PM. Nothing looks good. The best is Mount Pemigewasset (Indian Head) at 14. \n\nSunrise tomorrow at 6:46 AM. Nothing looks good. The best is Owl's Head, Groton State Forest at 11. "
+  "text": "Sunset tonight at 6:33 PM. Nothing looks good. The best is Mount Pemigewasset (Indian Head) at 15. \n\nSunrise tomorrow at 6:46 AM. Nothing looks good. The best is Owl's Head, Groton State Forest at 11. ",
+  "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
