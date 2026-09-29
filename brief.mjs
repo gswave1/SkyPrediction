@@ -17,7 +17,15 @@ page.on("console", m => { if (m.type() === "error") console.log("page:", m.text(
 await page.goto("http://127.0.0.1:8765/", { waitUntil: "domcontentloaded" });
 
 const ready = () => page.waitForFunction(() => typeof MODEL !== "undefined" && MODEL && !loading, null, { timeout: 240000 });
-await ready();
+// A single Open-Meteo request timing out (net::ERR_TIMED_OUT) leaves the board waiting forever.
+// Reload once and try again before giving up.
+try { await ready(); }
+catch (e) {
+  console.log("Board didn't finish loading (" + e.name + "); reloading once");
+  await page.waitForTimeout(30000);
+  await page.reload({ waitUntil: "domcontentloaded" });
+  await ready();
+}
 if (await page.evaluate(() => !!MODEL.trimmedFrom)) {
   console.log("Open-Meteo per-minute allowance hit; waiting 65 s for the rest");
   await page.waitForTimeout(65000);
