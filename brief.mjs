@@ -37,5 +37,25 @@ const brief = await page.evaluate(d => ghbBrief(d), DRIVE);
 await browser.close(); server.close();
 if (!brief || !brief.events.length) { console.error("No brief produced"); process.exit(1); }
 writeFileSync("brief.txt", brief.text + "\n");
+
+// road.txt: compact, plain-text ranking for Claude to read from the car (web readers truncate big JSON).
+// Top 30 spots per event, every spot with coordinates so Claude can re-rank from wherever Gal is.
+const ROAD_N = 30;
+const lines = [
+  "Golden Hour Board — generated " + brief.generated + " (UTC). Hourly 4 AM-9 PM ET.",
+  "Columns: score 0-100 | spot | place | lat,lon | drive min FROM HOME (Meredith NH) | sun time | flags | why",
+  "Scores under 30 = not worth the drive.",
+];
+for (const e of brief.events) {
+  lines.push("", "## " + e.ev.toUpperCase() + " " + e.when + " (" + e.day + ", ~" + e.time + ")");
+  for (const t of (e.all || e.top).slice(0, ROAD_N)) {
+    lines.push([t.score, t.name, t.place, t.lat.toFixed(3) + "," + t.lon.toFixed(3), t.drive + " min",
+                t.time || "", t.flags.join(", ") || "-", t.why].join(" | "));
+  }
+}
+writeFileSync("road.txt", lines.join("\n") + "\n");
+
+// brief.json stays small (Siri Shortcut + push alert): top 3 only.
+for (const e of brief.events) delete e.all;
 writeFileSync("brief.json", JSON.stringify(brief, null, 2) + "\n");
 console.log(brief.text);

@@ -23,5 +23,5 @@ jobs:
         run: |
           git config user.name "golden-hour-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add brief.txt brief.json
+          git add brief.txt brief.json road.txt
           git diff --cached --quiet || (git commit -m "Update brief" && git push)
