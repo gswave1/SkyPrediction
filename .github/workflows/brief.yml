@@ -5,7 +5,7 @@ on:
     - cron: "0 8-23,0-1 * * *"
   workflow_dispatch:
   push:
-    paths: ["index.html", "brief.mjs"]
+    paths: ["index.html", "brief.mjs", "box-upload.mjs"]
 permissions:
   contents: write
 concurrency: { group: brief, cancel-in-progress: false }
@@ -25,3 +25,14 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add brief.txt brief.json road.txt README.md
           git diff --cached --quiet || (git commit -m "Update brief" && git push)
+      - name: Keep the full run (raw model data + analysis) as a run artifact
+        if: always() && hashFiles('out/run.json') != ''
+        uses: actions/upload-artifact@v4
+        with: { name: "run-${{ github.run_id }}", path: out, retention-days: 30 }
+      - name: Upload the full run to Box (Photography/Apps/SkyPrediction)
+        if: hashFiles('out/run.json') != ''
+        env:
+          BOX_CLIENT_ID: ${{ secrets.BOX_CLIENT_ID }}
+          BOX_CLIENT_SECRET: ${{ secrets.BOX_CLIENT_SECRET }}
+          BOX_USER_ID: ${{ secrets.BOX_USER_ID }}
+        run: node box-upload.mjs
