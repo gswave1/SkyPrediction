@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T15:58:22.318Z",
+  "generated": "2026-09-30T16:44:20.424Z",
   "drive": 120,
   "events": [
     {
@@ -12,22 +12,37 @@
           "id": "sunapee",
           "name": "Mount Sunapee Summit",
           "place": "Newbury, NH",
-          "score": 59,
+          "score": 47,
           "label": "Worth it",
           "drive": 70,
           "flags": [
             "cirrus overhead"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:33",
           "lat": 43.321,
           "lon": -72.084
         },
         {
+          "id": "pleasantmtn",
+          "name": "Pleasant Mountain",
+          "place": "Bridgton, ME",
+          "score": 46,
+          "label": "Worth it",
+          "drive": 90,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:28",
+          "lat": 44.027,
+          "lon": -70.8223
+        },
+        {
           "id": "belknap",
           "name": "Belknap Mountain Fire Tower",
           "place": "Gilford, NH",
-          "score": 58,
+          "score": 46,
           "label": "Worth it",
           "drive": 29,
           "flags": [
@@ -37,21 +52,6 @@
           "time": "18:30",
           "lat": 43.5178,
           "lon": -71.3689
-        },
-        {
-          "id": "major",
-          "name": "Mount Major Summit",
-          "place": "Alton, NH",
-          "score": 57,
-          "label": "Worth it",
-          "drive": 33,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:30",
-          "lat": 43.5093,
-          "lon": -71.2806
         }
       ]
     },
@@ -59,29 +59,13 @@
       "ev": "sunrise",
       "day": "2026-10-01",
       "when": "tomorrow",
-      "time": "06:42",
+      "time": "06:41",
       "top": [
-        {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 50,
-          "label": "Worth it",
-          "drive": 61,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:42",
-          "lat": 43.3314,
-          "lon": -71.1162
-        },
         {
           "id": "hampton",
           "name": "Hampton Beach",
           "place": "Hampton, NH",
-          "score": 48,
+          "score": 46,
           "label": "Worth it",
           "drive": 90,
           "flags": [
@@ -94,20 +78,36 @@
           "lon": -70.81
         },
         {
-          "id": "newcastle",
-          "name": "New Castle / Portsmouth Harbor",
-          "place": "New Castle, NH",
-          "score": 48,
+          "id": "ryeharbor",
+          "name": "Rye Harbor State Park",
+          "place": "Rye, NH",
+          "score": 45,
           "label": "Worth it",
-          "drive": 87,
+          "drive": 91,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:41",
-          "lat": 43.069,
-          "lon": -70.713
+          "lat": 43.0017,
+          "lon": -70.7446
+        },
+        {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 94,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:41",
+          "lat": 43.06,
+          "lon": -70.698
         }
       ]
     },
@@ -121,7 +121,7 @@
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 28,
+          "score": 29,
           "label": "Skip",
           "drive": 94,
           "flags": [
@@ -136,7 +136,7 @@
           "id": "agamenticus",
           "name": "Mount Agamenticus",
           "place": "York, ME",
-          "score": 27,
+          "score": 28,
           "label": "Skip",
           "drive": 94,
           "flags": [
@@ -148,23 +148,23 @@
           "lon": -70.6919
         },
         {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
+          "id": "newcastle",
+          "name": "New Castle / Portsmouth Harbor",
+          "place": "New Castle, NH",
           "score": 26,
           "label": "Skip",
-          "drive": 61,
+          "drive": 87,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:27",
-          "lat": 43.3314,
-          "lon": -71.1162
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:26",
+          "lat": 43.069,
+          "lon": -70.713
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:33 PM. Best bet: Mount Sunapee Summit, 59, Worth it. cirrus overhead. 1 hour 10 minutes away. Then Belknap Mountain Fire Tower 58, and Mount Major Summit 57.\n\nSunrise tomorrow at 6:42 AM. Best bet: Blue Job Mountain Fire Tower, 50, Worth it. horizon blocked, cirrus overhead. 1 hour 1 minutes away. Then Hampton Beach 48, and New Castle / Portsmouth Harbor 48.",
+  "text": "Sunset tonight at 6:33 PM. Best bet: Mount Sunapee Summit, 47, Worth it. cirrus overhead. 1 hour 10 minutes away. Then Pleasant Mountain 46, and Belknap Mountain Fire Tower 46.\n\nSunrise tomorrow at 6:41 AM. Best bet: Hampton Beach, 46, Worth it. horizon blocked, cirrus overhead. 1 hour 30 minutes away. Then Rye Harbor State Park 45, and Kittery Point 44.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
