@@ -1,7 +1,10 @@
-Golden Hour Board — generated 2026-09-30T00:26:14.173Z (UTC). Hourly 4 AM-9 PM ET.
-Columns: score 0-100 | spot | place | lat,lon | drive min FROM HOME (Meredith NH) | sun time | flags | why
-Scores under 30 = not worth the drive.
+# Golden Hour Board — live sunset & sunrise ranking
 
+Updated Tue 8:26 PM Eastern (hourly, 4 AM–9 PM). Board: https://gswave1.github.io/SkyPrediction/
+
+Columns: score 0–100 | spot | place | lat,lon | drive min from home (Meredith, NH) | sun time | flags | why. Under 30 = not worth the drive.
+
+```
 ## SUNSET tomorrow night (2026-09-30, ~18:33)
 50 | Mount Sunapee Summit | Newbury, NH | 43.321,-72.084 | 70 min | 18:33 | cirrus overhead | Partial setup: some cloud to catch light, some of the gap filled in.
 50 | Castle in the Clouds Overlook | Moultonborough, NH | 43.747,-71.323 | 26 min | 18:30 | cirrus overhead | Partial setup: some cloud to catch light, some of the gap filled in.
@@ -97,3 +100,4 @@ Scores under 30 = not worth the drive.
 20 | Squam Lake | Holderness, NH | 43.731,-71.586 | 13 min | 18:29 | horizon blocked | Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.
 20 | Pack Monadnock (Miller SP) | Peterborough, NH | 42.862,-71.879 | 104 min | 18:31 | horizon blocked | Partial setup: some cloud to catch light, some of the gap filled in.
 20 | West Rattlesnake | Holderness, NH | 43.785,-71.545 | 22 min | 18:29 | horizon blocked | Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.
+```
