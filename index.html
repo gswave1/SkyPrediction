@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Golden Hour Board</title>
+<link rel="icon" type="image/png" href="favicon.png?v=2">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+<meta name="apple-mobile-web-app-title" content="Golden Hour">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
@@ -184,6 +187,8 @@ dialog::backdrop{background:rgba(8,12,18,.55)}
 .mapstyle button{font-size:11.5px;padding:3px 9px}
 .mapstyle button[aria-pressed="true"]{border-color:var(--ember);color:var(--ember)}
 .mapstyle button.needskey{opacity:.5}
+.mapempty{top:50%;left:50%;transform:translate(-50%,-50%);max-width:300px;text-align:center;font-size:12.5px;line-height:1.5}
+.mapempty button{margin-top:8px}
 .mapwarn{bottom:12px;right:12px;max-width:320px;color:var(--bad);border-color:var(--bad);line-height:1.5}
 .maplegend b{display:block;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
 .maplegend span{display:flex;align-items:center;gap:6px;line-height:1.7;color:var(--ink-2)}
@@ -311,6 +316,7 @@ a{color:var(--ember)}
     <div class="mapbadge mapwarn" id="mapWarn" hidden></div>
     <div class="mapbadge maplegend" id="mapLegend"></div>
     <div class="mapbadge mapcount" id="mapCount"></div>
+    <div class="mapbadge mapempty" id="mapEmpty" hidden></div>
   </div>
   <div id="focusView" hidden></div>
 
@@ -1274,9 +1280,10 @@ function leadHours(dateStr,hhmm){
   const nowET=new Date(new Date().toLocaleString("en-US",{timeZone:TZ}));
   return Math.max(0,(new Date(dateStr+"T"+hhmm+":00").getTime()-nowET.getTime())/3600000);
 }
-function resolve(o,dateStr){
+function resolve(o,dateStr,ev){
   if(!o||!o.m) return null;
-  const want=(ui.model==="consensus"?CONSENSUS:[ui.model]);
+  /* Lake fog is scored from ECMWF only, so the model picker doesn't apply to it. */
+  const want=ev==="fog"?FOG_MODELS:(ui.model==="consensus"?CONSENSUS:[ui.model]);
   const have=want.filter(m=>o.m[m]);
   if(!have.length) return null;
   const lead=leadHours(dateStr,o.t);
@@ -1295,7 +1302,7 @@ function resolve(o,dateStr){
 }
 const agree=sp=> sp<12?{c:"var(--good)",l:"Tight"} : sp<28?{c:"var(--warn)",l:"Mixed"} : {c:"var(--bad)",l:"Split"};
 const rowAt=(spId,ev,day)=>{const r=MODEL.rows[spId];return r&&r[ev]&&r[ev][day];};
-const resolveAt=(spId,ev,day)=>resolve(rowAt(spId,ev,day),MODEL.days[day]);
+const resolveAt=(spId,ev,day)=>resolve(rowAt(spId,ev,day),MODEL.days[day],ev);
 const norm=s=>String(s||"").toLowerCase();
 function matchesQuery(sp){
   const q=norm(ui.query).trim();
@@ -1636,7 +1643,21 @@ function renderMap(){
     : [[75,"Go"],[60,"Strong"],[45,"Worth it"],[30,"Marginal"],[0,"Skip"]]);
   document.getElementById("mapLegend").innerHTML="<b>score</b>"+bands.map(([v,l])=>
     '<span><i style="background:'+bandHex(v,ui.ev)+'"></i>'+l+' '+(v?v+"+":"under 30")+'</span>').join("");
-  if(!rows.length) return;
+  const empty=document.getElementById("mapEmpty");
+  empty.hidden=true;
+  if(!rows.length){
+    const anyNear=SPOTS.filter(matchesQuery).some(sp=>sp.d<=ui.drive);
+    const single=ui.model!=="consensus"&&ui.ev!=="fog";
+    empty.innerHTML=(anyNear&&single
+      ? esc((MODELS.find(m=>m.id===ui.model)||{}).label||ui.model)+" has no forecast for "+fmtDay(MODEL.days[ui.day],ui.day)+" — it doesn't run this far out."+
+        '<br><button class="ghost" type="button" id="mapToConsensus">Switch to Consensus</button>'
+      : anyNear ? "No scores for this day yet."
+      : "No spots inside "+ui.drive+" minutes. Drag the drive slider right.");
+    empty.hidden=false;
+    const b=document.getElementById("mapToConsensus");
+    if(b) b.onclick=()=>{ui.model="consensus";saveUI();render();};
+    return;
+  }
   const pts=[];
   const ring=isDark()?"#0C1117":"#FFFFFF";
   rows.forEach((x,i)=>{
@@ -1772,6 +1793,8 @@ function render(){
     const lead=rows[0].d.per.slice().sort((x,y)=>y.w-x.w)[0];
     note.innerHTML='<span class="chip" style="color:'+a.c+'">'+a.l+'</span> '+n+' of '+CONSENSUS.length+' models · '+Math.round(avg)+' pts apart · '+
       bnd.label+' weighting, '+esc(lead.short)+' leads'+(gone.length?' · '+gone.join(", ")+' past horizon':'');
+  } else if(ui.ev==="fog"&&ui.model!=="consensus"){
+    note.innerHTML='lake fog is scored from ECMWF only — the model picker applies to sunrise and sunset';
   } else if(ui.model!=="consensus"){
     note.innerHTML='scoring against '+esc((MODELS.find(m=>m.id===ui.model)||{}).label||ui.model)+' alone';
   } else note.innerHTML="";
