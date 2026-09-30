@@ -1,57 +1,57 @@
 {
-  "generated": "2026-09-30T14:47:47.157Z",
+  "generated": "2026-09-30T15:58:22.318Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-09-30",
       "when": "tonight",
-      "time": "18:29",
+      "time": "18:33",
       "top": [
         {
-          "id": "wolfeboro",
-          "name": "Wolfeboro Town Docks",
-          "place": "Wolfeboro, NH",
-          "score": 63,
-          "label": "Strong",
-          "drive": 46,
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 59,
+          "label": "Worth it",
+          "drive": 70,
           "flags": [
             "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:29",
-          "lat": 43.582,
-          "lon": -71.21
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "18:33",
+          "lat": 43.321,
+          "lon": -72.084
         },
         {
-          "id": "altonbay",
-          "name": "Alton Bay",
-          "place": "Alton, NH",
+          "id": "belknap",
+          "name": "Belknap Mountain Fire Tower",
+          "place": "Gilford, NH",
           "score": 58,
           "label": "Worth it",
-          "drive": 32,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun sets outside this spot's open arc.",
-          "time": "18:30",
-          "lat": 43.476,
-          "lon": -71.24
-        },
-        {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 57,
-          "label": "Worth it",
-          "drive": 61,
+          "drive": 29,
           "flags": [
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:29",
-          "lat": 43.3314,
-          "lon": -71.1162
+          "time": "18:30",
+          "lat": 43.5178,
+          "lon": -71.3689
+        },
+        {
+          "id": "major",
+          "name": "Mount Major Summit",
+          "place": "Alton, NH",
+          "score": 57,
+          "label": "Worth it",
+          "drive": 33,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:30",
+          "lat": 43.5093,
+          "lon": -71.2806
         }
       ]
     },
@@ -165,6 +165,6 @@
       ]
     }
   ],
-  "text": "Sunset tonight at 6:29 PM. Best bet: Wolfeboro Town Docks, 63, Strong. cirrus overhead. 46 minutes away. Then Alton Bay 58, and Blue Job Mountain Fire Tower 57.\n\nSunrise tomorrow at 6:42 AM. Best bet: Blue Job Mountain Fire Tower, 50, Worth it. horizon blocked, cirrus overhead. 1 hour 1 minutes away. Then Hampton Beach 48, and New Castle / Portsmouth Harbor 48.",
+  "text": "Sunset tonight at 6:33 PM. Best bet: Mount Sunapee Summit, 59, Worth it. cirrus overhead. 1 hour 10 minutes away. Then Belknap Mountain Fire Tower 58, and Mount Major Summit 57.\n\nSunrise tomorrow at 6:42 AM. Best bet: Blue Job Mountain Fire Tower, 50, Worth it. horizon blocked, cirrus overhead. 1 hour 1 minutes away. Then Hampton Beach 48, and New Castle / Portsmouth Harbor 48.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
