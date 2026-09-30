@@ -1,6 +1,6 @@
 # Golden Hour Board — live sunset & sunrise ranking
 
-Updated Tue 9:50 PM Eastern (hourly, 4 AM–9 PM). Board: https://gswave1.github.io/SkyPrediction/
+Updated Tue 9:51 PM Eastern (hourly, 4 AM–9 PM). Board: https://gswave1.github.io/SkyPrediction/
 
 Columns: score 0–100 | spot | place | lat,lon | drive min from home (Meredith, NH) | sun time | flags | why. Under 30 = not worth the drive.
 
@@ -100,4 +100,7 @@ Columns: score 0–100 | spot | place | lat,lon | drive min from home (Meredith,
 18 | Green Mountain Fire Tower | Effingham, NH | 43.767,-71.037 | 55 min | 18:27 | horizon blocked | Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.
 18 | Bog Mountain | Wilmot, NH | 43.469,-71.930 | 46 min | 18:31 | horizon blocked | Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.
 18 | Belknap Mountain Fire Tower | Gilford, NH | 43.518,-71.369 | 29 min | 18:28 | horizon blocked | Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.
+
+## VALLEY FOG (river fog below the viewpoint, at sunrise)
+valley fog possible (41) | Kimball Road | Lunenburg, VT | 44.476,-71.704 | 89 min | sunrise tomorrow 06:44 | sunrise score 5
 ```
