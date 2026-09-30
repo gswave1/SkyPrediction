@@ -1172,6 +1172,9 @@ async function buildModel(){
         if(!night.every(okFogHour)) continue; /* model out of range here */
         const temps=prevAft.map(ix=>gF(fPi,ix,m,fSrc).t).filter(v=>v!=null);
         perF[m]=scoreFog(night,temps.length?Math.max.apply(null,temps):null,!!WATER[s.t]||!!useV);
+        /* Looking down on the valley only works under a clear sky: a calm, saturated but overcast
+           night makes low cloud you'd be standing in, not a fog sea below you. */
+        if(useV){ const f=perF[m]; f[G.score]=+(f[G.score]*(0.25+0.75*f[G.clear]/100)).toFixed(1); }
       }
       if(!Object.keys(perF).length){rows[s.id].fog.push(null);continue;}
       rows[s.id].fog.push({t:nyTime(gr.t),m:perF});
