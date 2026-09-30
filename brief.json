@@ -1,43 +1,13 @@
 {
-  "generated": "2026-09-30T01:51:32.102Z",
+  "generated": "2026-09-30T02:07:19.319Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-09-30",
       "when": "tomorrow night",
-      "time": "18:33",
+      "time": "18:31",
       "top": [
-        {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 48,
-          "label": "Worth it",
-          "drive": 70,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:33",
-          "lat": 43.321,
-          "lon": -72.084
-        },
-        {
-          "id": "moultonneck",
-          "name": "Moultonborough Neck",
-          "place": "Moultonborough, NH",
-          "score": 46,
-          "label": "Worth it",
-          "drive": 17,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:30",
-          "lat": 43.696,
-          "lon": -71.406
-        },
         {
           "id": "ashland",
           "name": "Ashland",
@@ -50,6 +20,34 @@
           "time": "18:31",
           "lat": 43.697,
           "lon": -71.63
+        },
+        {
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 43,
+          "label": "Marginal",
+          "drive": 80,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:32",
+          "lat": 43.385,
+          "lon": -71.857
+        },
+        {
+          "id": "artists",
+          "name": "Artist's Bluff",
+          "place": "Franconia Notch, NH",
+          "score": 43,
+          "label": "Marginal",
+          "drive": 51,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 44.181,
+          "lon": -71.695
         }
       ]
     },
@@ -57,8 +55,38 @@
       "ev": "sunrise",
       "day": "2026-09-30",
       "when": "tomorrow",
-      "time": "06:47",
+      "time": "06:44",
       "top": [
+        {
+          "id": "cannon",
+          "name": "Cannon Mountain Summit",
+          "place": "Franconia Notch, NH",
+          "score": 10,
+          "label": "Skip",
+          "drive": 51,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:44",
+          "lat": 44.1569,
+          "lon": -71.6992
+        },
+        {
+          "id": "lafayette",
+          "name": "Mount Lafayette Summit",
+          "place": "Franconia Ridge, NH",
+          "score": 10,
+          "label": "Skip",
+          "drive": 49,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:44",
+          "lat": 44.1608,
+          "lon": -71.6444
+        },
         {
           "id": "jennefarm",
           "name": "Jenne Farm",
@@ -73,36 +101,6 @@
           "time": "06:47",
           "lat": 43.5245,
           "lon": -72.5596
-        },
-        {
-          "id": "ascutney",
-          "name": "Mount Ascutney Summit",
-          "place": "Windsor, VT",
-          "score": 10,
-          "label": "Skip",
-          "drive": 111,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "06:47",
-          "lat": 43.4445,
-          "lon": -72.4537
-        },
-        {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 9,
-          "label": "Skip",
-          "drive": 70,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "06:45",
-          "lat": 43.321,
-          "lon": -72.084
         }
       ]
     },
@@ -110,57 +108,56 @@
       "ev": "sunset",
       "day": "2026-10-01",
       "when": "Thursday",
-      "time": "18:27",
+      "time": "18:33",
       "top": [
         {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 27,
-          "label": "Skip",
-          "drive": 61,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:27",
-          "lat": 43.3314,
-          "lon": -71.1162
-        },
-        {
-          "id": "chocorua16",
-          "name": "Chocorua, Route 16",
-          "place": "Chocorua, NH",
-          "score": 26,
-          "label": "Skip",
-          "drive": 39,
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
+          "score": 31,
+          "label": "Marginal",
+          "drive": 111,
           "flags": [
             "horizon blocked"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "18:28",
-          "lat": 43.897,
-          "lon": -71.231
+          "time": "18:33",
+          "lat": 43.4445,
+          "lon": -72.4537
         },
         {
-          "id": "tamworth",
-          "name": "Tamworth",
-          "place": "Tamworth, NH",
-          "score": 25,
-          "label": "Skip",
-          "drive": 37,
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 30,
+          "label": "Marginal",
+          "drive": 106,
           "flags": [
-            "horizon blocked",
-            "cirrus overhead"
+            "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
-          "time": "18:28",
-          "lat": 43.838,
-          "lon": -71.218
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:24",
+          "lat": 43.563,
+          "lon": -70.365
+        },
+        {
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 28,
+          "label": "Skip",
+          "drive": 70,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:31",
+          "lat": 43.321,
+          "lon": -72.084
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 6:33 PM. Best bet: Mount Sunapee Summit, 48, Worth it. cirrus overhead. 1 hour 10 minutes away. Then Moultonborough Neck 46, and Ashland 46.\n\nSunrise tomorrow at 6:47 AM. Nothing looks good. The best is Jenne Farm at 10. ",
+  "text": "Sunset tomorrow night at 6:31 PM. Best bet: Ashland, 46, Worth it. 19 minutes away. Then Mount Kearsarge Summit 43, and Artist's Bluff 43.\n\nSunrise tomorrow at 6:44 AM. Nothing looks good. The best is Cannon Mountain Summit at 10. ",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
