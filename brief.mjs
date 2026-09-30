@@ -53,6 +53,18 @@ for (const e of brief.events) {
                 t.time || "", t.flags.join(", ") || "-", t.why].join(" | "));
   }
 }
+// Valley fog: viewpoints above a river valley get their fog odds listed every run, even when their
+// sunrise score keeps them out of the top 30 (a fog sea can be the whole shot on a grey sunrise).
+const fogRows = [];
+for (const e of brief.events) {
+  if (e.ev !== "sunrise") continue;
+  for (const t of (e.all || [])) {
+    const f = t.flags.find(x => x.includes("valley fog"));
+    if (f) fogRows.push([f, t.name, t.place, t.lat.toFixed(3) + "," + t.lon.toFixed(3), t.drive + " min",
+                         "sunrise " + e.when + " " + (t.time || ""), "sunrise score " + t.score].join(" | "));
+  }
+}
+if (fogRows.length) lines.push("", "## VALLEY FOG (river fog below the viewpoint, at sunrise)", ...fogRows);
 writeFileSync("road.txt", lines.join("\n") + "\n");
 
 // README.md: same ranking on the repo's front page. The Claude app can only open pages that turned up
