@@ -462,7 +462,7 @@ const DEFAULT_SPOTS=[
  {id:"yorkharbor",n:"York Harbor",s:"York, ME",lat:43.147,lon:-70.626,d:91,t:"ocean",az:[60,220]},
  {id:"willoughbysouth",n:"Lake Willoughby, south end",s:"Westmore, VT",lat:44.717,lon:-72.031,d:110,t:"lake",az:[330,120]},
  {id:"jobspond",n:"Jobs Pond",s:"Westmore, VT",lat:44.7622,lon:-71.9534,d:118,t:"pond",az:[180,330]},
- {id:"kimballrd",n:"Kimball Road",s:"Lunenburg, VT",lat:44.4759,lon:-71.7045,d:89,t:"field",az:[70,200]},
+ {id:"kimballrd",n:"Kimball Road",s:"Lunenburg, VT",lat:44.4759,lon:-71.7045,d:89,t:"field",az:[70,200],fogAt:[44.4857,-71.6062]},
  {id:"cardigan",n:"Mount Cardigan Summit",s:"Orange, NH",lat:43.6495,lon:-71.9144,d:57,t:"summit",az:[0,360]},
  {id:"chocoruasummit",n:"Mount Chocorua Summit",s:"Albany, NH",lat:43.9541,lon:-71.2734,d:46,t:"summit",az:[0,360]},
  {id:"moosilauke",n:"Mount Moosilauke Summit",s:"Benton, NH",lat:44.0241,lon:-71.8314,d:67,t:"summit",az:[0,360]},
@@ -649,7 +649,7 @@ const CIRRUS_MODEL="ecmwf_ifs025";
 const FOG_MODELS=["ecmwf_ifs025"];
 const PROBE_GRID_KM=20;   /* probes closer together than this share one fetch */
 const BUDGET={min:520,hour:4200,day:8500};  /* leave headroom under 600 / 5000 / 10000 */
-const SPOTS_VERSION=10;
+const SPOTS_VERSION=11;
 /* Spots retired from the defaults, by version — removed from saved lists once. */
 const DROP_IN={9:["lowerausablelake"]};
 /* v7: drive minutes from Google Routes (Meredith, NH, typical traffic), replacing the hand estimates.
@@ -658,13 +658,17 @@ const DRIVE_FIX={8:{"kancsugar":[55,65]},7:{"meredith":[3,2],"squam":[14,13],"ce
 const HOME_LL=[43.6556,-71.5010];
 const COORD_FIX={8:{"kancsugar":[44.0016,-71.4614,44.0098,-71.4277]},4:{"meredith":[43.6556,-71.501,43.656,-71.498],"squam":[43.73,-71.588,43.731,-71.586],"centerharb":[43.708,-71.465,43.71,-71.467],"weirs":[43.612,-71.458,43.608,-71.459],"altonbay":[43.456,-71.232,43.476,-71.24],"wolfeboro":[43.585,-71.208,43.582,-71.21],"kearsarge":[43.384,-71.864,43.385,-71.857],"bog":[43.44,-71.92,43.469,-71.93],"artists":[44.1836,-71.6968,44.181,-71.695],"baldmtn":[44.1856,-71.7028,44.183,-71.704],"sugarhill":[44.22,-71.78,44.217,-71.783],"bretton":[44.2583,-71.4406,44.26,-71.443],"tablerock":[44.8657,-71.3033,44.864,-71.303],"greatglen":[44.258,-71.253,44.261,-71.257],"lyndon":[44.53,-72,44.565,-71.973],"willoughby":[44.7333,-72.05,44.735,-72.047],"nubble":[43.165,-70.5919,43.166,-70.593],"portlandhd":[43.6231,-70.2078,43.624,-70.209],"pemaquid":[43.8342,-69.5058,43.837,-69.506],"westrattle":[43.7876,-71.5442,43.785,-71.545],"mtwillard":[44.2074,-71.4118,44.204,-71.411],"profilelake":[44.1585,-71.6822,44.162,-71.677],"echolake":[44.1869,-71.6889,44.187,-71.69],"rockygorge":[43.9985,-71.2711,44.004,-71.278],"pemioverlook":[44.0006,-71.5411,44.035,-71.517],"mtwashington":[44.2706,-71.3033,44.27,-71.302],"therocks":[44.2711,-71.6797,44.283,-71.735],"newcastle":[43.0703,-70.7106,43.069,-70.713],"eaton":[43.8864,-71.0836,43.914,-71.074],"scarborough":[43.5731,-70.3592,43.563,-70.365],"baileyisland":[43.7364,-69.9986,43.731,-69.997],"jordanpond":[44.3208,-68.2533,44.322,-68.255],"cadillac":[44.3526,-68.2253,44.353,-68.223],"otterpoint":[44.305,-68.1911,44.307,-68.192],"ravensnest":[44.335,-68.0561,44.339,-68.045],"quoddy":[44.8151,-66.9508,44.815,-66.95],"peacham":[44.3242,-72.1417,44.328,-72.175],"smugglers":[44.5553,-72.7972,44.555,-72.796],"owlshead":[44.2831,-72.2856,44.297,-72.295],"shelburne":[44.3806,-73.2447,44.394,-73.256]}};
 const RENAME={5:{"northconway":{"was":"North Conway","n":"Cathedral Ledge","s":"Bartlett, NH","t":"ridge","az":[30,190]}}};
-const NEW_IN={10:["jobspond"],9:["indianhead"],2:["tablerock"],3:["chocorualake", "westrattle", "mtpercival", "mtwillard", "profilelake", "echolake", "rockygorge", "lowerfalls", "pemioverlook", "mtwashington", "lafayette", "jefferson", "therocks", "newcastle", "eaton", "pequawket", "scarborough", "baileyisland", "boothbay", "jordanpond", "cadillac", "otterpoint", "bassharbor", "ravensnest", "quoddy", "peacham", "smugglers", "owlshead", "shelburne", "norton"],4:["chocorua16", "tamworth", "leavittpark", "squamnorth", "moultonneck", "centersandwich", "ashland", "newfoundsouth", "kanclincoln", "northconway", "chatham", "randolph", "kitterypoint", "longsands", "yorkharbor", "willoughbysouth"],5:["cardigan", "chocoruasummit", "moosilauke", "belknap", "bluejob", "middlesugarloaf", "mtavalon", "mtisrael", "mtpemi", "welchledges", "fossmtn", "greenmtn", "intervale", "ellacoya", "ryeharbor", "stinson", "packmonadnock", "mtphilo", "snakemtn", "appgap", "lincolngap", "mtabraham", "ascutney", "burkemtn", "stowepinnacle", "elmore", "mthorrid", "jennefarm", "hogback", "buttonbay", "barrhill", "marshallpoint", "owlsheadlight", "twolights", "buglight", "springpoint", "capeporpoise", "dicehead", "fortpoint", "doublingpoint", "hendrickshead", "rocklandbreak", "schoonerhead", "beehive", "mtbattie", "pophambeach", "reidstate", "agamenticus", "bradbury", "pleasantmtn", "heightofland", "sebago"],6:["nausetlight", "capecodhighlandlight", "racepointlight", "nobskapointlight", "chathamlight", "scituatelight", "marbleheadlight", "easternpointlight", "annisquamharborlight", "newburyportharborlight", "nedspointlight", "bordenflatslight", "gayheadlight", "beavertaillight", "castlehilllight", "pointjudithlight", "watchhilllight", "sakonnetlight", "blockislandsoutheastli", "saybrookbreakwaterligh", "lyndepointlight", "stoningtonharborlight", "averypointlight", "stratfordpointlight", "mountgreylocksummit", "mountwachusettsummit", "mountsugarloaf", "mountholyokesummithous", "mounttom", "monumentmountain", "mounteverett", "greatbluehill", "quabbinenfieldlookout", "mohawktrailhairpinturn", "shelburnefalls", "stockbridgebowl", "halibutpointstatepark", "goodharborbeach", "racepointbeach", "moheganbluffs", "sachuestpoint", "brentonpointstatepark", "napatreepoint", "coltstatepark", "heubleintowertalcottmo", "castlecraighubbardpark", "sleepinggianttower", "eastrockpark", "bearmountain", "haystackmountaintower", "lakewaramaug", "kentfallsstatepark", "hammonassetmeigspoint", "bluffpointstatepark", "litchfieldgreen", "whitefacemountainsummi", "cascademountain", "mountjo", "hurricanemountainfiret", "ampersandmountain", "goodnowmountainfiretow", "coneymountain", "mountarabfiretower", "pokeomoonshinefiretowe", "azuremountainfiretower", "hadleymountainfiretowe", "vanderwhackermountainf", "snowymountainfiretower", "bluemountainfiretower", "owlsheadmountainfireto", "noonmarkmountain", "wakelymountainfiretowe", "baldrondaxemountainfir", "silverlakemountain", "mountvanhoevenberg", "roostercomb", "baxtermountain", "bigcrowmountain", "belfrymountainfiretowe", "giantmountainsummit", "pitchoffbalancedrocks", "prospectmountain", "buckmountain", "panthermountainroute3", "kanemountainfiretower", "goremountainfiretower", "chapelpond", "connerypond", "heartlakeadirondakloj", "mirrorlake", "lakeplacid", "lowerausablelake", "uppercascadelake", "lakedurant", "bluemountainlake", "richlakenewcomb", "lowersaranaclake", "lakeflower", "longlake", "indianlakeroute30", "schroonlake", "marcyfield", "jaycoveredbridge", "tupperlakeskycenterare", "crownpointlakechamplai"]};
+const NEW_IN={11:["kimballrd"],10:["jobspond"],9:["indianhead"],2:["tablerock"],3:["chocorualake", "westrattle", "mtpercival", "mtwillard", "profilelake", "echolake", "rockygorge", "lowerfalls", "pemioverlook", "mtwashington", "lafayette", "jefferson", "therocks", "newcastle", "eaton", "pequawket", "scarborough", "baileyisland", "boothbay", "jordanpond", "cadillac", "otterpoint", "bassharbor", "ravensnest", "quoddy", "peacham", "smugglers", "owlshead", "shelburne", "norton"],4:["chocorua16", "tamworth", "leavittpark", "squamnorth", "moultonneck", "centersandwich", "ashland", "newfoundsouth", "kanclincoln", "northconway", "chatham", "randolph", "kitterypoint", "longsands", "yorkharbor", "willoughbysouth"],5:["cardigan", "chocoruasummit", "moosilauke", "belknap", "bluejob", "middlesugarloaf", "mtavalon", "mtisrael", "mtpemi", "welchledges", "fossmtn", "greenmtn", "intervale", "ellacoya", "ryeharbor", "stinson", "packmonadnock", "mtphilo", "snakemtn", "appgap", "lincolngap", "mtabraham", "ascutney", "burkemtn", "stowepinnacle", "elmore", "mthorrid", "jennefarm", "hogback", "buttonbay", "barrhill", "marshallpoint", "owlsheadlight", "twolights", "buglight", "springpoint", "capeporpoise", "dicehead", "fortpoint", "doublingpoint", "hendrickshead", "rocklandbreak", "schoonerhead", "beehive", "mtbattie", "pophambeach", "reidstate", "agamenticus", "bradbury", "pleasantmtn", "heightofland", "sebago"],6:["nausetlight", "capecodhighlandlight", "racepointlight", "nobskapointlight", "chathamlight", "scituatelight", "marbleheadlight", "easternpointlight", "annisquamharborlight", "newburyportharborlight", "nedspointlight", "bordenflatslight", "gayheadlight", "beavertaillight", "castlehilllight", "pointjudithlight", "watchhilllight", "sakonnetlight", "blockislandsoutheastli", "saybrookbreakwaterligh", "lyndepointlight", "stoningtonharborlight", "averypointlight", "stratfordpointlight", "mountgreylocksummit", "mountwachusettsummit", "mountsugarloaf", "mountholyokesummithous", "mounttom", "monumentmountain", "mounteverett", "greatbluehill", "quabbinenfieldlookout", "mohawktrailhairpinturn", "shelburnefalls", "stockbridgebowl", "halibutpointstatepark", "goodharborbeach", "racepointbeach", "moheganbluffs", "sachuestpoint", "brentonpointstatepark", "napatreepoint", "coltstatepark", "heubleintowertalcottmo", "castlecraighubbardpark", "sleepinggianttower", "eastrockpark", "bearmountain", "haystackmountaintower", "lakewaramaug", "kentfallsstatepark", "hammonassetmeigspoint", "bluffpointstatepark", "litchfieldgreen", "whitefacemountainsummi", "cascademountain", "mountjo", "hurricanemountainfiret", "ampersandmountain", "goodnowmountainfiretow", "coneymountain", "mountarabfiretower", "pokeomoonshinefiretowe", "azuremountainfiretower", "hadleymountainfiretowe", "vanderwhackermountainf", "snowymountainfiretower", "bluemountainfiretower", "owlsheadmountainfireto", "noonmarkmountain", "wakelymountainfiretowe", "baldrondaxemountainfir", "silverlakemountain", "mountvanhoevenberg", "roostercomb", "baxtermountain", "bigcrowmountain", "belfrymountainfiretowe", "giantmountainsummit", "pitchoffbalancedrocks", "prospectmountain", "buckmountain", "panthermountainroute3", "kanemountainfiretower", "goremountainfiretower", "chapelpond", "connerypond", "heartlakeadirondakloj", "mirrorlake", "lakeplacid", "lowerausablelake", "uppercascadelake", "lakedurant", "bluemountainlake", "richlakenewcomb", "lowersaranaclake", "lakeflower", "longlake", "indianlakeroute30", "schroonlake", "marcyfield", "jaycoveredbridge", "tupperlakeskycenterare", "crownpointlakechamplai"]};
 const TZ="America/New_York", NDAYS=7,
 /* Corridor: the sun's light has to travel under the cloud deck to reach it, so the gap is sampled at
    several distances along the sun's azimuth, not one. Weights say how much a blocked cell at that
    distance costs — the 100-250 km window is the "projector" that lights cloud overhead. */
 CORRIDOR_KM=[30,80,150,250], CORRIDOR_W=[0.55,0.9,1.0,0.75], AQ_GRID_KM=40, CACHE_MS=2*3600*1000;
 const WATER={lake:1,pond:1,ocean:1};
+/* Viewpoints above a river valley: fog is scored on the valley floor (fogAt), treated as water,
+   because the river holds the day's heat and feeds steam fog the spot looks down on. */
+const fogPointOf=s=>{const f=s.fogAt||((DEFAULT_SPOTS.find(d=>d.id===s.id)||{}).fogAt);
+  return Array.isArray(f)&&f.length===2&&isFinite(f[0])&&isFinite(f[1])?f:null;};
 /* score array layout */
 const S={score:0,horizon:1,canvas:2,clarity:3,view:4,cl:5,cm:6,ch:7,pcl:8,pcm:9,visKm:10,precip:11,chEff:12,
   g0:13,g1:14,g2:15,g3:16,aod:17,rainPrior:18,dust:19};  /* g0-g3: % of the gap blocked at each corridor distance */
@@ -1063,6 +1067,12 @@ async function buildModel(){
   let fogData=null;
   try{ fogData=await chunked(spotPts,V_EXTRA,FOG_MODELS,"&past_days=1"); }catch(e){ fogData=null; }
   const cirData=fogData;   /* same request — the cirrus levels ride along with the ECMWF pull */
+  /* Valley-floor points for viewpoints that look down on river fog: one small extra pull. */
+  const valleyIdx={}, valleyPts=[];
+  SCOPE.forEach((s,i)=>{const f=fogPointOf(s); if(f){valleyIdx[i]=valleyPts.length; valleyPts.push({lat:+(+f[0]).toFixed(4),lon:+(+f[1]).toFixed(4)});}});
+  let valleyData=null;
+  if(valleyPts.length){ try{ valleyData=await chunked(valleyPts,V_EXTRA,FOG_MODELS,"&past_days=1"); }catch(e){ valleyData=null; } }
+  const valleyMap=valleyData?valleyData.map(d=>{const m=new Map();if(d&&d.hourly)d.hourly.time.forEach((t,i)=>m.set(t,i));return m;}):null;
   /* Aerosols are a refinement: if the air-quality API is down, score without them rather than fail. */
   let aqData=null;
   try{ aqData=await aqChunked(aqPts); }catch(e){ aqData=null; }
@@ -1094,7 +1104,7 @@ async function buildModel(){
     let rainPrior=null;
     if(pr&&j>=18){ rainPrior=0; for(let k=j-18;k<=j-3;k++) rainPrior+=(pr[k]||0); }
     return Object.assign({vis:v?v[j]:null, pr:(pr?pr[j]:0)??0, rh:(rh?rh[j]:60)??60, rainPrior},aq);};
-  const gF=(pi,ti,m)=>{const h=fogData[pi].hourly;
+  const gF=(pi,ti,m,src)=>{const h=(src||fogData)[pi].hourly;
     const t=col(h,"temperature_2m",m),td=col(h,"dew_point_2m",m),ws=col(h,"wind_speed_10m",m);
     return {t:t?t[ti]:null, td:td?td[ti]:null, ws:(ws?ws[ti]:0)??0};};
   const gP=(pi,ti,m)=>{const h=probeData[pi].hourly;return{
@@ -1143,23 +1153,25 @@ async function buildModel(){
       const gr=geo[s.id].sunrise[di];
       if(!gr){rows[s.id].fog.push(null);continue;}
       if(!fogData){rows[s.id].fog.push(null);continue;}
+      const vi=valleyIdx[si], useV=vi!=null&&valleyData&&valleyData[vi]&&valleyData[vi].hourly;
+      const fSrc=useV?valleyData:fogData, fPi=useV?vi:si, fM=useV?valleyMap[vi]:fogMap[si];
       const hours=[];
       for(let k=3;k>=0;k--) hours.push(nyHour(new Date(gr.t.getTime()-k*3600e3)));
       const cIdx=hours.map(h=>spotMap[si].get(h));      /* cloud, from the main pull */
-      const fIdx=hours.map(h=>fogMap[si].get(h));       /* temp/dew/wind, from the fog pull */
+      const fIdx=hours.map(h=>fM.get(h));               /* temp/dew/wind, from the fog pull (valley floor if set) */
       if(cIdx.some(v=>v==null)||fIdx.some(v=>v==null)){rows[s.id].fog.push(null);continue;}
       const prevAft=[];
       for(let hh=12;hh<=18;hh++){
         const key=nyDate(new Date(gr.t.getTime()-DAYMS))+"T"+String(hh).padStart(2,"0")+":00";
-        const ix=fogMap[si].get(key); if(ix!=null) prevAft.push(ix);
+        const ix=fM.get(key); if(ix!=null) prevAft.push(ix);
       }
       const perF={};
       for(const m of FOG_MODELS){
         if(models.indexOf(m)<0) continue;
-        const night=hours.map((_,k)=>Object.assign({},gS(si,cIdx[k],m),gF(si,fIdx[k],m)));
+        const night=hours.map((_,k)=>Object.assign({},gS(si,cIdx[k],m),gF(fPi,fIdx[k],m,fSrc)));
         if(!night.every(okFogHour)) continue; /* model out of range here */
-        const temps=prevAft.map(ix=>gF(si,ix,m).t).filter(v=>v!=null);
-        perF[m]=scoreFog(night,temps.length?Math.max.apply(null,temps):null,!!WATER[s.t]);
+        const temps=prevAft.map(ix=>gF(fPi,ix,m,fSrc).t).filter(v=>v!=null);
+        perF[m]=scoreFog(night,temps.length?Math.max.apply(null,temps):null,!!WATER[s.t]||!!useV);
       }
       if(!Object.keys(perF).length){rows[s.id].fog.push(null);continue;}
       rows[s.id].fog.push({t:nyTime(gr.t),m:perF});
@@ -1323,6 +1335,7 @@ function whyLight(v,o,ev){
   return t;
 }
 function whyFog(v,sp){
+  if(fogPointOf(sp)) return whyValleyFog(v);
   const water=!!WATER[sp.t];
   if(v[G.satur]<35) return "Air's too dry at first light — dew point sits "+v[G.spread].toFixed(1)+"°C below the temperature.";
   if(v[G.calm]<40) return "Too much wind ("+v[G.wind].toFixed(0)+" km/h) — anything that forms gets mixed out.";
@@ -1330,6 +1343,13 @@ function whyFog(v,sp){
   if(water&&v[G.steam]>=50) return "Cold calm morning over water that's still holding the afternoon's heat — "+v[G.drop].toFixed(0)+"°C drop. Steam fog setup.";
   if(water) return "Saturated and calm over water — mist is a real possibility at first light.";
   return "Saturated and calm — worth checking low ground and river valleys, but there's no water here to steam.";
+}
+function whyValleyFog(v){
+  if(v[G.satur]<35) return "Valley air's too dry at first light — dew point "+v[G.spread].toFixed(1)+"°C below the temperature down by the river.";
+  if(v[G.calm]<40) return "Too much wind in the valley ("+v[G.wind].toFixed(0)+" km/h) — fog gets mixed out before it can pool.";
+  if(v[G.clear]<40) return "Cloudy overnight, so the valley doesn't cool enough for fog to form.";
+  if(v[G.steam]>=50) return "Clear, calm and cold over a river still warm from the afternoon ("+v[G.drop].toFixed(0)+"°C drop) — river fog should fill the valley below you.";
+  return "Calm and saturated down by the river — fog in the valley below is a real possibility.";
 }
 const whyOf=(d,sp,ev)=>ev==="fog"?whyFog(d.v,sp):whyLight(d.v,d.o,ev);
 function bar(label,val){
@@ -2047,6 +2067,11 @@ function ghbBrief(maxDrive){
     if(f.open) flags.push("horizon open");
     else if(f.hasG&&f.g[f.worst]>=40) flags.push("horizon blocked");
     if(f.cirrus) flags.push("cirrus overhead");
+    if(ev==="sunrise"&&fogPointOf(sp)){
+      let fd=null; try{ fd=resolveAt(sp.id,"fog",day); }catch(e){ fd=null; }
+      if(fd&&fd.v){ const fv=fd.v[0];
+        flags.push(fv>=55?"valley fog likely ("+Math.round(fv)+")":fv>=40?"valley fog possible ("+Math.round(fv)+")":"no valley fog ("+Math.round(fv)+")"); }
+    }
     const r=rowAt(sp.id,ev,day);
     return {id:sp.id,name:sp.n,place:sp.s,score:Math.round(d.v[0]),label:band(d.v[0]).l,
             drive:sp.d,flags,why:whyLight(d.v,d.o,ev),time:r?r.t:null,lat:sp.lat,lon:sp.lon};
