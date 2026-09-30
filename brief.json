@@ -1,116 +1,7 @@
 {
-  "generated": "2026-09-30T19:54:01.889Z",
+  "generated": "2026-09-30T23:34:51.555Z",
   "drive": 120,
   "events": [
-    {
-      "ev": "sunset",
-      "day": "2026-09-30",
-      "when": "tonight",
-      "time": "18:32",
-      "top": [
-        {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 58,
-          "label": "Worth it",
-          "drive": 104,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
-          "time": "18:32",
-          "lat": 42.8619,
-          "lon": -71.8788
-        },
-        {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 52,
-          "label": "Worth it",
-          "drive": 61,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:29",
-          "lat": 43.3314,
-          "lon": -71.1162
-        },
-        {
-          "id": "belknap",
-          "name": "Belknap Mountain Fire Tower",
-          "place": "Gilford, NH",
-          "score": 50,
-          "label": "Worth it",
-          "drive": 29,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "18:30",
-          "lat": 43.5178,
-          "lon": -71.3689
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-10-01",
-      "when": "tomorrow",
-      "time": "06:41",
-      "top": [
-        {
-          "id": "hampton",
-          "name": "Hampton Beach",
-          "place": "Hampton, NH",
-          "score": 46,
-          "label": "Worth it",
-          "drive": 90,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:41",
-          "lat": 42.9081,
-          "lon": -70.81
-        },
-        {
-          "id": "ryeharbor",
-          "name": "Rye Harbor State Park",
-          "place": "Rye, NH",
-          "score": 40,
-          "label": "Marginal",
-          "drive": 91,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:41",
-          "lat": 43.0017,
-          "lon": -70.7446
-        },
-        {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 40,
-          "label": "Marginal",
-          "drive": 61,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:42",
-          "lat": 43.3314,
-          "lon": -71.1162
-        }
-      ]
-    },
     {
       "ev": "sunset",
       "day": "2026-10-01",
@@ -121,11 +12,12 @@
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 29,
+          "score": 30,
           "label": "Skip",
           "drive": 94,
           "flags": [
-            "horizon blocked"
+            "horizon blocked",
+            "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:26",
@@ -133,38 +25,149 @@
           "lon": -70.698
         },
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 28,
-          "label": "Skip",
-          "drive": 94,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:26",
-          "lat": 43.2232,
-          "lon": -70.6919
-        },
-        {
           "id": "newcastle",
           "name": "New Castle / Portsmouth Harbor",
           "place": "New Castle, NH",
-          "score": 26,
+          "score": 27,
           "label": "Skip",
           "drive": 87,
           "flags": [
-            "horizon blocked"
+            "horizon blocked",
+            "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
           "time": "18:26",
           "lat": 43.069,
           "lon": -70.713
+        },
+        {
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 26,
+          "label": "Skip",
+          "drive": 61,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:27",
+          "lat": 43.3314,
+          "lon": -71.1162
+        }
+      ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-10-01",
+      "when": "tomorrow",
+      "time": "06:41",
+      "top": [
+        {
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 36,
+          "label": "Marginal",
+          "drive": 110,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:41",
+          "lat": 42.8151,
+          "lon": -70.819
+        },
+        {
+          "id": "hampton",
+          "name": "Hampton Beach",
+          "place": "Hampton, NH",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 90,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:41",
+          "lat": 42.9081,
+          "lon": -70.81
+        },
+        {
+          "id": "newcastle",
+          "name": "New Castle / Portsmouth Harbor",
+          "place": "New Castle, NH",
+          "score": 31,
+          "label": "Marginal",
+          "drive": 87,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:41",
+          "lat": 43.069,
+          "lon": -70.713
+        }
+      ]
+    },
+    {
+      "ev": "sunset",
+      "day": "2026-10-02",
+      "when": "Friday",
+      "time": "18:28",
+      "top": [
+        {
+          "id": "jobspond",
+          "name": "Jobs Pond",
+          "place": "Westmore, VT",
+          "score": 24,
+          "label": "Skip",
+          "drive": 118,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Low deck overhead — flat grey, no separation.",
+          "time": "18:28",
+          "lat": 44.7622,
+          "lon": -71.9534
+        },
+        {
+          "id": "willoughby",
+          "name": "Lake Willoughby",
+          "place": "Westmore, VT",
+          "score": 22,
+          "label": "Skip",
+          "drive": 112,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Low deck overhead — flat grey, no separation.",
+          "time": "18:29",
+          "lat": 44.735,
+          "lon": -72.047
+        },
+        {
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 21,
+          "label": "Skip",
+          "drive": 108,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Low deck overhead — flat grey, no separation.",
+          "time": "18:30",
+          "lat": 44.297,
+          "lon": -72.295
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:32 PM. Best bet: Pack Monadnock (Miller SP), 58, Worth it. cirrus overhead. 1 hour 44 minutes away. Then Blue Job Mountain Fire Tower 52, and Belknap Mountain Fire Tower 50.\n\nSunrise tomorrow at 6:41 AM. Best bet: Hampton Beach, 46, Worth it. horizon blocked, cirrus overhead. 1 hour 30 minutes away. Then Rye Harbor State Park 40, and Blue Job Mountain Fire Tower 40.",
+  "text": "Sunset tomorrow night at 6:26 PM. Best bet: Kittery Point, 30, Skip. horizon blocked, cirrus overhead. 1 hour 34 minutes away.\n\nSunrise tomorrow at 6:41 AM. Best bet: Newburyport Harbor Light, 36, Marginal. horizon blocked, cirrus overhead. 1 hour 50 minutes away. Then Hampton Beach 33, and New Castle / Portsmouth Harbor 31.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
