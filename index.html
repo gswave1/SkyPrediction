@@ -928,10 +928,19 @@ function headroom(){
 const COST_PER_SPOT=5.2;   /* measured Sep 24: 1.0 cloud + 1.0 ECMWF + ~2.9 corridor probes (4 distances x sunrise/sunset, deduped) + ~0.3 air quality */
 /* A full pull can now cost more than one minute's allowance, so instead of trimming spots to fit the
    minute, pause between requests until the minute window frees up. Only the hour/day allowance trims. */
+/* Seconds until enough of the last minute's spend ages out of the window for this request to fit. */
+function secsUntilFits(cost){
+  const now=Date.now(), recent=ledgerRead().filter(x=>x.t>now-60e3).sort((a,b)=>a.t-b.t);
+  let over=recent.reduce((s,x)=>s+x.c,0)+cost-BUDGET.min;
+  if(over<=0) return 0;
+  for(const x of recent){ over-=x.c; if(over<=0) return Math.max(1,Math.ceil((x.t+60e3-now)/1000)); }
+  return 60;
+}
 async function pace(cost){
   for(let i=0;i<90;i++){
-    if(spent().min+cost<=BUDGET.min) return;
-    setStatus("Pausing a moment to stay under Open-Meteo's per-minute limit…");
+    const left=secsUntilFits(cost);
+    if(left<=0) return;
+    setStatus("Pausing "+left+" s to stay under Open-Meteo's per-minute limit…");
     await sleep(1000);
   }
 }
