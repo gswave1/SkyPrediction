@@ -55,6 +55,22 @@ for (const e of brief.events) {
 }
 writeFileSync("road.txt", lines.join("\n") + "\n");
 
+// README.md: same ranking on the repo's front page. The Claude app can only open pages that turned up
+// in a web search, and the repo page (github.com/gswave1/SkyPrediction) does; road.txt doesn't.
+const et = new Date(brief.generated).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", hour: "numeric", minute: "2-digit" });
+writeFileSync("README.md", [
+  "# Golden Hour Board — live sunset & sunrise ranking",
+  "",
+  "Updated " + et + " Eastern (hourly, 4 AM–9 PM). Board: https://gswave1.github.io/SkyPrediction/",
+  "",
+  "Columns: score 0–100 | spot | place | lat,lon | drive min from home (Meredith, NH) | sun time | flags | why. Under 30 = not worth the drive.",
+  "",
+  "```",
+  lines.slice(3).join("\n").trim(),
+  "```",
+  "",
+].join("\n"));
+
 // brief.json stays small (Siri Shortcut + push alert): top 3 only.
 for (const e of brief.events) delete e.all;
 writeFileSync("brief.json", JSON.stringify(brief, null, 2) + "\n");
