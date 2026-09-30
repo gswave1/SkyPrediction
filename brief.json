@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T00:26:14.173Z",
+  "generated": "2026-09-30T01:45:21.518Z",
   "drive": 120,
   "events": [
     {
@@ -12,7 +12,7 @@
           "id": "sunapee",
           "name": "Mount Sunapee Summit",
           "place": "Newbury, NH",
-          "score": 50,
+          "score": 48,
           "label": "Worth it",
           "drive": 70,
           "flags": [
@@ -24,25 +24,10 @@
           "lon": -72.084
         },
         {
-          "id": "castle",
-          "name": "Castle in the Clouds Overlook",
-          "place": "Moultonborough, NH",
-          "score": 50,
-          "label": "Worth it",
-          "drive": 26,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:30",
-          "lat": 43.747,
-          "lon": -71.323
-        },
-        {
           "id": "moultonneck",
           "name": "Moultonborough Neck",
           "place": "Moultonborough, NH",
-          "score": 49,
+          "score": 46,
           "label": "Worth it",
           "drive": 17,
           "flags": [
@@ -52,6 +37,19 @@
           "time": "18:30",
           "lat": 43.696,
           "lon": -71.406
+        },
+        {
+          "id": "ashland",
+          "name": "Ashland",
+          "place": "Ashland, NH",
+          "score": 46,
+          "label": "Worth it",
+          "drive": 19,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:31",
+          "lat": 43.697,
+          "lon": -71.63
         }
       ]
     },
@@ -112,22 +110,22 @@
       "ev": "sunset",
       "day": "2026-10-01",
       "when": "Thursday",
-      "time": "18:28",
+      "time": "18:27",
       "top": [
         {
-          "id": "major",
-          "name": "Mount Major Summit",
-          "place": "Alton, NH",
-          "score": 26,
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 27,
           "label": "Skip",
-          "drive": 33,
+          "drive": 61,
           "flags": [
             "horizon blocked"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:28",
-          "lat": 43.5093,
-          "lon": -71.2806
+          "time": "18:27",
+          "lat": 43.3314,
+          "lon": -71.1162
         },
         {
           "id": "chocorua16",
@@ -145,23 +143,24 @@
           "lon": -71.231
         },
         {
-          "id": "wolfeboro",
-          "name": "Wolfeboro Town Docks",
-          "place": "Wolfeboro, NH",
+          "id": "tamworth",
+          "name": "Tamworth",
+          "place": "Tamworth, NH",
           "score": 25,
           "label": "Skip",
-          "drive": 46,
+          "drive": 37,
           "flags": [
-            "horizon blocked"
+            "horizon blocked",
+            "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
           "time": "18:28",
-          "lat": 43.582,
-          "lon": -71.21
+          "lat": 43.838,
+          "lon": -71.218
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 6:33 PM. Best bet: Mount Sunapee Summit, 50, Worth it. cirrus overhead. 1 hour 10 minutes away. Then Castle in the Clouds Overlook 50, and Moultonborough Neck 49.\n\nSunrise tomorrow at 6:47 AM. Nothing looks good. The best is Jenne Farm at 10. ",
+  "text": "Sunset tomorrow night at 6:33 PM. Best bet: Mount Sunapee Summit, 48, Worth it. cirrus overhead. 1 hour 10 minutes away. Then Moultonborough Neck 46, and Ashland 46.\n\nSunrise tomorrow at 6:47 AM. Nothing looks good. The best is Jenne Farm at 10. ",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
