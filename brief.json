@@ -1,93 +1,76 @@
 {
-  "generated": "2026-09-30T23:34:51.555Z",
+  "generated": "2026-10-01T04:56:28.096Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-01",
-      "when": "tomorrow night",
-      "time": "18:26",
+      "when": "tonight",
+      "time": "18:28",
       "top": [
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 30,
-          "label": "Skip",
-          "drive": 94,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:26",
-          "lat": 43.06,
-          "lon": -70.698
-        },
-        {
-          "id": "newcastle",
-          "name": "New Castle / Portsmouth Harbor",
-          "place": "New Castle, NH",
-          "score": 27,
+          "id": "greatglen",
+          "name": "Great Glen / Auto Road Base",
+          "place": "Pinkham Notch, NH",
+          "score": 25,
           "label": "Skip",
           "drive": 87,
           "flags": [
-            "horizon blocked",
-            "cirrus overhead"
+            "horizon blocked"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "18:26",
-          "lat": 43.069,
-          "lon": -70.713
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:28",
+          "lat": 44.261,
+          "lon": -71.257
         },
         {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 26,
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 24,
           "label": "Skip",
-          "drive": 61,
+          "drive": 94,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:27",
-          "lat": 43.3314,
-          "lon": -71.1162
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:26",
+          "lat": 43.2232,
+          "lon": -70.6919
+        },
+        {
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 23,
+          "label": "Skip",
+          "drive": 110,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:26",
+          "lat": 42.8151,
+          "lon": -70.819
         }
       ]
     },
     {
       "ev": "sunrise",
       "day": "2026-10-01",
-      "when": "tomorrow",
+      "when": "this morning",
       "time": "06:41",
       "top": [
-        {
-          "id": "newburyportharborlight",
-          "name": "Newburyport Harbor Light",
-          "place": "Newburyport, MA",
-          "score": 36,
-          "label": "Marginal",
-          "drive": 110,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:41",
-          "lat": 42.8151,
-          "lon": -70.819
-        },
         {
           "id": "hampton",
           "name": "Hampton Beach",
           "place": "Hampton, NH",
-          "score": 33,
+          "score": 31,
           "label": "Marginal",
           "drive": 90,
           "flags": [
-            "horizon blocked"
+            "horizon blocked",
+            "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:41",
@@ -98,76 +81,92 @@
           "id": "newcastle",
           "name": "New Castle / Portsmouth Harbor",
           "place": "New Castle, NH",
-          "score": 31,
-          "label": "Marginal",
+          "score": 29,
+          "label": "Skip",
           "drive": 87,
           "flags": [
-            "horizon blocked"
+            "horizon blocked",
+            "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:41",
           "lat": 43.069,
           "lon": -70.713
+        },
+        {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 29,
+          "label": "Skip",
+          "drive": 94,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:41",
+          "lat": 43.06,
+          "lon": -70.698
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-10-02",
-      "when": "Friday",
-      "time": "18:28",
+      "when": "tomorrow night",
+      "time": "18:26",
       "top": [
         {
-          "id": "jobspond",
-          "name": "Jobs Pond",
-          "place": "Westmore, VT",
-          "score": 24,
+          "id": "ossipee",
+          "name": "Center Ossipee Pond",
+          "place": "Lakes Region, NH",
+          "score": 23,
           "label": "Skip",
-          "drive": 118,
+          "drive": 33,
           "flags": [
-            "horizon blocked",
-            "cirrus overhead"
+            "horizon blocked"
           ],
-          "why": "Low deck overhead — flat grey, no separation.",
-          "time": "18:28",
-          "lat": 44.7622,
-          "lon": -71.9534
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:26",
+          "lat": 43.8108,
+          "lon": -71.1878
         },
         {
-          "id": "willoughby",
-          "name": "Lake Willoughby",
-          "place": "Westmore, VT",
-          "score": 22,
+          "id": "greenmtn",
+          "name": "Green Mountain Fire Tower",
+          "place": "Effingham, NH",
+          "score": 20,
           "label": "Skip",
-          "drive": 112,
+          "drive": 55,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Low deck overhead — flat grey, no separation.",
-          "time": "18:29",
-          "lat": 44.735,
-          "lon": -72.047
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:25",
+          "lat": 43.7675,
+          "lon": -71.0369
         },
         {
-          "id": "owlshead",
-          "name": "Owl's Head, Groton State Forest",
-          "place": "Groton, VT",
-          "score": 21,
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 20,
           "label": "Skip",
-          "drive": 108,
+          "drive": 94,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Low deck overhead — flat grey, no separation.",
-          "time": "18:30",
-          "lat": 44.297,
-          "lon": -72.295
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out. Some haze (AOD 0.25) — colors a notch softer.",
+          "time": "18:24",
+          "lat": 43.06,
+          "lon": -70.698
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 6:26 PM. Best bet: Kittery Point, 30, Skip. horizon blocked, cirrus overhead. 1 hour 34 minutes away.\n\nSunrise tomorrow at 6:41 AM. Best bet: Newburyport Harbor Light, 36, Marginal. horizon blocked, cirrus overhead. 1 hour 50 minutes away. Then Hampton Beach 33, and New Castle / Portsmouth Harbor 31.",
+  "text": "Sunset tonight at 6:28 PM. Nothing looks good. The best is Great Glen / Auto Road Base at 25. \n\nSunrise this morning at 6:41 AM. Best bet: Hampton Beach, 31, Marginal. horizon blocked, cirrus overhead. 1 hour 30 minutes away.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
