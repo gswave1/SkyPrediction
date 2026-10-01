@@ -1,59 +1,59 @@
 {
-  "generated": "2026-10-01T15:14:21.173Z",
+  "generated": "2026-10-01T20:53:40.784Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-01",
       "when": "tonight",
-      "time": "18:31",
+      "time": "18:26",
       "top": [
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 28,
-          "label": "Skip",
-          "drive": 104,
+          "id": "odiorne",
+          "name": "Odiorne Point",
+          "place": "Rye, NH",
+          "score": 42,
+          "label": "Marginal",
+          "drive": 86,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:26",
+          "lat": 43.0431,
+          "lon": -70.7161
+        },
+        {
+          "id": "ryeharbor",
+          "name": "Rye Harbor State Park",
+          "place": "Rye, NH",
+          "score": 41,
+          "label": "Marginal",
+          "drive": 91,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:26",
+          "lat": 43.0017,
+          "lon": -70.7446
+        },
+        {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 35,
+          "label": "Marginal",
+          "drive": 94,
           "flags": [
             "horizon blocked"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:31",
-          "lat": 42.8619,
-          "lon": -71.8788
-        },
-        {
-          "id": "chatham",
-          "name": "Chatham",
-          "place": "Chatham, NH",
-          "score": 26,
-          "label": "Skip",
-          "drive": 95,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:27",
-          "lat": 44.271,
-          "lon": -71.025
-        },
-        {
-          "id": "pleasantmtn",
-          "name": "Pleasant Mountain",
-          "place": "Bridgton, ME",
-          "score": 25,
-          "label": "Skip",
-          "drive": 90,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
           "time": "18:26",
-          "lat": 44.027,
-          "lon": -70.8223
+          "lat": 43.06,
+          "lon": -70.698
         }
       ]
     },
@@ -61,51 +61,53 @@
       "ev": "sunrise",
       "day": "2026-10-02",
       "when": "tomorrow",
-      "time": "06:47",
+      "time": "06:46",
       "top": [
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 61,
+          "label": "Strong",
+          "drive": 104,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Some haze (AOD 0.26) — colors a notch softer.",
+          "time": "06:46",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
         {
           "id": "sunapee",
           "name": "Mount Sunapee Summit",
           "place": "Newbury, NH",
-          "score": 69,
-          "label": "Strong",
+          "score": 44,
+          "label": "Marginal",
           "drive": 70,
           "flags": [
-            "cirrus overhead"
+            "horizon blocked"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:47",
           "lat": 43.321,
           "lon": -72.084
         },
         {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 58,
-          "label": "Worth it",
-          "drive": 61,
+          "id": "chocoruasummit",
+          "name": "Mount Chocorua Summit",
+          "place": "Albany, NH",
+          "score": 41,
+          "label": "Marginal",
+          "drive": 46,
           "flags": [
-            "horizon open",
-            "cirrus overhead"
+            "horizon blocked"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:44",
-          "lat": 43.3314,
-          "lon": -71.1162
-        },
-        {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 57,
-          "label": "Worth it",
-          "drive": 80,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "06:47",
-          "lat": 43.385,
-          "lon": -71.857
+          "lat": 43.9541,
+          "lon": -71.2734
         }
       ]
     },
@@ -113,58 +115,59 @@
       "ev": "sunset",
       "day": "2026-10-02",
       "when": "tomorrow night",
-      "time": "18:26",
+      "time": "18:27",
       "top": [
         {
-          "id": "wolfeboro",
-          "name": "Wolfeboro Town Docks",
-          "place": "Wolfeboro, NH",
-          "score": 22,
-          "label": "Skip",
-          "drive": 46,
+          "id": "squamnorth",
+          "name": "Squam Lake, north shore",
+          "place": "Holderness, NH",
+          "score": 42,
+          "label": "Marginal",
+          "drive": 19,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
-          "time": "18:26",
-          "lat": 43.582,
-          "lon": -71.21
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:27",
+          "lat": 43.763,
+          "lon": -71.558
         },
         {
-          "id": "major",
-          "name": "Mount Major Summit",
-          "place": "Alton, NH",
-          "score": 21,
-          "label": "Skip",
-          "drive": 33,
+          "id": "squam",
+          "name": "Squam Lake",
+          "place": "Holderness, NH",
+          "score": 41,
+          "label": "Marginal",
+          "drive": 13,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "18:26",
-          "lat": 43.5093,
-          "lon": -71.2806
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:27",
+          "lat": 43.731,
+          "lon": -71.586
         },
         {
-          "id": "lowerfalls",
-          "name": "Lower Falls, Swift River",
-          "place": "Albany, NH",
-          "score": 20,
-          "label": "Skip",
-          "drive": 57,
+          "id": "mtpercival",
+          "name": "Mount Percival",
+          "place": "Sandwich, NH",
+          "score": 40,
+          "label": "Marginal",
+          "drive": 28,
           "flags": [
-            "horizon blocked"
+            "horizon blocked",
+            "cirrus overhead"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "18:26",
-          "lat": 43.9964,
-          "lon": -71.2336
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:27",
+          "lat": 43.8022,
+          "lon": -71.5225
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:31 PM. Nothing looks good. The best is Pack Monadnock (Miller SP) at 28. \n\nSunrise tomorrow at 6:47 AM. Best bet: Mount Sunapee Summit, 69, Strong. cirrus overhead. 1 hour 10 minutes away. Then Blue Job Mountain Fire Tower 58, and Mount Kearsarge Summit 57.",
+  "text": "Sunset tonight at 6:26 PM. Best bet: Odiorne Point, 42, Marginal. horizon blocked, cirrus overhead. 1 hour 26 minutes away. Then Rye Harbor State Park 41, and Kittery Point 35.\n\nSunrise tomorrow at 6:46 AM. Best bet: Pack Monadnock (Miller SP), 61, Strong. horizon open, cirrus overhead. 1 hour 44 minutes away. Then Mount Sunapee Summit 44, and Mount Chocorua Summit 41.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
