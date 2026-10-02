@@ -1,60 +1,58 @@
 {
-  "generated": "2026-10-02T14:34:39.987Z",
+  "generated": "2026-10-02T19:49:11.947Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-02",
       "when": "tonight",
-      "time": "18:26",
+      "time": "18:25",
       "top": [
         {
-          "id": "lowerfalls",
-          "name": "Lower Falls, Swift River",
-          "place": "Albany, NH",
-          "score": 35,
-          "label": "Marginal",
-          "drive": 57,
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 46,
+          "label": "Worth it",
+          "drive": 110,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:26",
-          "lat": 43.9964,
-          "lon": -71.2336
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Some haze (AOD 0.29) — colors a notch softer. And the sun sets outside this spot's open arc.",
+          "time": "18:25",
+          "lat": 42.8151,
+          "lon": -70.819
         },
         {
-          "id": "rockygorge",
-          "name": "Rocky Gorge",
-          "place": "Kancamagus Hwy, NH",
-          "score": 33,
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 40,
           "label": "Marginal",
-          "drive": 62,
+          "drive": 94,
           "flags": [
-            "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:26",
-          "lat": 44.004,
-          "lon": -71.278
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Showers around.",
+          "time": "18:24",
+          "lat": 43.06,
+          "lon": -70.698
         },
         {
-          "id": "kancgraham",
-          "name": "C.L. Graham Wangan Overlook",
-          "place": "Kancamagus Hwy, NH",
-          "score": 31,
+          "id": "odiorne",
+          "name": "Odiorne Point",
+          "place": "Rye, NH",
+          "score": 37,
           "label": "Marginal",
-          "drive": 78,
+          "drive": 86,
           "flags": [
-            "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:26",
-          "lat": 44.0069,
-          "lon": -71.3608
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:24",
+          "lat": 43.0431,
+          "lon": -70.7161
         }
       ]
     },
@@ -62,27 +60,27 @@
       "ev": "sunrise",
       "day": "2026-10-03",
       "when": "tomorrow",
-      "time": "06:46",
+      "time": "06:47",
       "top": [
         {
-          "id": "weirs",
-          "name": "Weirs Beach Boardwalk",
-          "place": "Laconia, NH",
+          "id": "newfoundsouth",
+          "name": "Newfound Lake, Bristol end",
+          "place": "Bristol, NH",
           "score": 33,
           "label": "Marginal",
-          "drive": 11,
+          "drive": 27,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:46",
-          "lat": 43.608,
-          "lon": -71.459
+          "time": "06:47",
+          "lat": 43.625,
+          "lon": -71.745
         },
         {
-          "id": "major",
-          "name": "Mount Major Summit",
-          "place": "Alton, NH",
+          "id": "newfound",
+          "name": "Newfound Lake, Wellington",
+          "place": "Bristol, NH",
           "score": 33,
           "label": "Marginal",
           "drive": 33,
@@ -90,24 +88,24 @@
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:45",
-          "lat": 43.5093,
-          "lon": -71.2806
+          "time": "06:47",
+          "lat": 43.664,
+          "lon": -71.767
         },
         {
-          "id": "belknap",
-          "name": "Belknap Mountain Fire Tower",
-          "place": "Gilford, NH",
+          "id": "mtpercival",
+          "name": "Mount Percival",
+          "place": "Sandwich, NH",
           "score": 33,
           "label": "Marginal",
-          "drive": 29,
+          "drive": 28,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "06:46",
-          "lat": 43.5178,
-          "lon": -71.3689
+          "lat": 43.8022,
+          "lon": -71.5225
         }
       ]
     },
@@ -133,6 +131,21 @@
           "lon": -71.2806
         },
         {
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 70,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:28",
+          "lat": 43.321,
+          "lon": -72.084
+        },
+        {
           "id": "belknap",
           "name": "Belknap Mountain Fire Tower",
           "place": "Gilford, NH",
@@ -146,25 +159,10 @@
           "time": "18:25",
           "lat": 43.5178,
           "lon": -71.3689
-        },
-        {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 80,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:27",
-          "lat": 43.385,
-          "lon": -71.857
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:26 PM. Best bet: Lower Falls, Swift River, 35, Marginal. horizon blocked, cirrus overhead. 57 minutes away. Then Rocky Gorge 33, and C.L. Graham Wangan Overlook 31.\n\nSunrise tomorrow at 6:46 AM. Best bet: Weirs Beach Boardwalk, 33, Marginal. horizon open. 11 minutes away. Then Mount Major Summit 33, and Belknap Mountain Fire Tower 33.",
+  "text": "Sunset tonight at 6:25 PM. Best bet: Newburyport Harbor Light, 46, Worth it. horizon blocked, cirrus overhead. 1 hour 50 minutes away. Then Kittery Point 40, and Odiorne Point 37.\n\nSunrise tomorrow at 6:47 AM. Best bet: Newfound Lake, Bristol end, 33, Marginal. horizon open. 27 minutes away. Then Newfound Lake, Wellington 33, and Mount Percival 33.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
