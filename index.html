@@ -53,6 +53,7 @@ h1,h2,h3{margin:0;text-wrap:balance}
 .stamp{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);text-align:right;line-height:1.8}
 .stamp button{margin-top:4px}
 .runtext{margin-top:4px;text-transform:none;letter-spacing:0;font-size:12px;max-width:260px;margin-left:auto}
+.runtext.stale{color:var(--bad);font-weight:600}
 .runtext.ok{color:var(--good)} .runtext.err{color:var(--bad)} .runtext.busy{color:var(--warn)}
 
 button.ghost{appearance:none;background:var(--surface);border:1px solid var(--line);color:var(--ink-2);
@@ -274,6 +275,7 @@ a{color:var(--ember)}
       <button class="ghost" id="refreshBtn" type="button">Refresh forecast</button>
       <button class="ghost" id="spotsBtn" type="button">Edit spots</button>
       <button class="ghost" id="runBtn" type="button" title="Start a full run: rewrites the ranking on GitHub and uploads everything to Box">Run full update</button>
+      <div id="lastRun" class="runtext" title="When the last full run (ranking + Box upload) finished"></div>
       <div id="runText" class="runtext" hidden></div>
     </div>
   </header>
@@ -2130,7 +2132,7 @@ function pollRun(t0){
           const mins=Math.max(1,Math.round((Date.now()-t0)/60000));
           if(run.status!=="completed"){ setRun((run.status==="queued"?"Queued":"Running")+" — "+mins+" min so far. Box updates when it's done.","busy"); }
           else{
-            btn.disabled=false;
+            btn.disabled=false; showLastRun();
             if(run.conclusion==="success") setRun("Done "+hhmm(new Date(run.updated_at))+" — ranking and Box are updated.","ok");
             else setRun("Run finished with "+run.conclusion+" — check Actions on GitHub.","err");
             return;
@@ -2142,6 +2144,38 @@ function pollRun(t0){
   };
   runPoll=setTimeout(tick,8000);
 }
+/* Last full run: newest successful brief.yml run (public API; uses the token
+   when one is saved, for a higher rate limit). Falls back to brief.json. */
+function agoText(ms){const m=Math.round(ms/60000); if(m<60) return m+" min ago"; const h=Math.floor(m/60); return h+" h "+(m%60)+" min ago";}
+async function showLastRun(){
+  const el=document.getElementById("lastRun");
+  let done=null, failedNewer=null, running=false;
+  try{
+    const r=await fetch("https://api.github.com/repos/"+GH_REPO+"/actions/workflows/"+GH_WF+"/runs?per_page=10",
+      {cache:"no-store",headers:Object.assign({"Accept":"application/vnd.github+json"},ghTok()?{"Authorization":"Bearer "+ghTok()}:{})});
+    if(r.ok){
+      const runs=((await r.json()).workflow_runs)||[];
+      running=runs.some(x=>x.status!=="completed");
+      for(const x of runs){
+        if(x.status!=="completed") continue;
+        if(x.conclusion==="success"){ done=new Date(x.updated_at); break; }
+        if(!failedNewer && x.conclusion==="failure") failedNewer=new Date(x.updated_at);
+      }
+    }
+  }catch(e){}
+  if(!done){
+    try{ const r=await fetch("brief.json?v="+Date.now(),{cache:"no-store"}); if(r.ok){ const j=await r.json(); if(j.generated) done=new Date(j.generated); } }catch(e){}
+  }
+  if(!done){ el.textContent="Last full run: unknown"; el.className="runtext"; return; }
+  const age=Date.now()-done.getTime(), stale=age>2*3600*1000;
+  let t="Last full run "+hhmm(done)+" ("+agoText(age)+")";
+  if(stale) t+=" — over 2 hours old";
+  if(failedNewer) t+=" · run at "+hhmm(failedNewer)+" failed";
+  if(running) t+=" · a run is going now";
+  el.textContent=t; el.className="runtext"+(stale||failedNewer?" stale":"");
+}
+showLastRun(); setInterval(showLastRun,5*60*1000);
+document.addEventListener("visibilitychange",()=>{ if(!document.hidden) showLastRun(); });
 document.getElementById("runBtn").onclick=startRun;
 document.getElementById("closeGh").onclick=()=>ghDlg.close();
 document.getElementById("saveGh").onclick=()=>{
