@@ -52,6 +52,8 @@ h1,h2,h3{margin:0;text-wrap:balance}
 .masthead p{margin:6px 0 0;color:var(--muted);font-size:13.5px;max-width:48ch}
 .stamp{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);text-align:right;line-height:1.8}
 .stamp button{margin-top:4px}
+.runtext{margin-top:4px;text-transform:none;letter-spacing:0;font-size:12px;max-width:260px;margin-left:auto}
+.runtext.ok{color:var(--good)} .runtext.err{color:var(--bad)} .runtext.busy{color:var(--warn)}
 
 button.ghost{appearance:none;background:var(--surface);border:1px solid var(--line);color:var(--ink-2);
   font:inherit;font-size:12px;font-weight:500;padding:5px 11px;border-radius:999px;cursor:pointer}
@@ -271,6 +273,8 @@ a{color:var(--ember)}
       <div id="stampText">—</div>
       <button class="ghost" id="refreshBtn" type="button">Refresh forecast</button>
       <button class="ghost" id="spotsBtn" type="button">Edit spots</button>
+      <button class="ghost" id="runBtn" type="button" title="Start a full run: rewrites the ranking on GitHub and uploads everything to Box">Run full update</button>
+      <div id="runText" class="runtext" hidden></div>
     </div>
   </header>
 
@@ -354,6 +358,19 @@ a{color:var(--ember)}
   <div class="dlg-foot">
     <button class="ghost" id="clearKey" type="button">Remove key</button>
     <button class="primary" id="saveKey" type="button">Save</button>
+  </div>
+</dialog>
+
+<dialog id="ghDlg">
+  <div class="dlg-head"><h2>Run full update</h2><button class="ghost" id="closeGh" type="button">Close</button></div>
+  <div class="dlg-body">
+    <p style="margin:0 0 10px;font-size:13.5px;color:var(--ink-2)">This button starts the same run the hourly schedule does: it rewrites the ranking on GitHub and uploads LATEST.md and the full data to Box. Starting it needs a GitHub token, saved only in this browser on this device — it never goes into the repo.</p>
+    <p style="margin:0 0 12px;font-size:13px;color:var(--ink-2)">Make one at <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub › Fine-grained tokens</a>: Repository access <b>Only SkyPrediction</b>, Permissions <b>Actions: Read and write</b>, nothing else. Pick a long expiry.</p>
+    <div class="field"><label for="gh_tok">GitHub token</label><input id="gh_tok" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…"></div>
+  </div>
+  <div class="dlg-foot">
+    <button class="ghost" id="clearGh" type="button">Remove token</button>
+    <button class="primary" id="saveGh" type="button">Save and run</button>
   </div>
 </dialog>
 
@@ -2066,6 +2083,77 @@ document.getElementById("drive").addEventListener("input",e=>{
   driveTimer=setTimeout(()=>{ if(MODEL && ui.drive>(MODEL.cover||0)) load(true); },700);
 });
 document.getElementById("refreshBtn").onclick=()=>load(true);
+
+/* ---- Run full update: dispatches the GitHub Actions workflow (brief.yml),
+   which rewrites the README ranking and uploads the run to Box. The token
+   lives only in this browser's localStorage. ---- */
+const GH_REPO="gswave1/SkyPrediction", GH_WF="brief.yml", LS_GH="ghb.ghtoken";
+const ghDlg=document.getElementById("ghDlg");
+let runPoll=null;
+function ghTok(){try{return localStorage.getItem(LS_GH)||"";}catch(e){return "";}}
+function setRun(msg,kind){
+  const el=document.getElementById("runText");
+  el.textContent=msg; el.className="runtext"+(kind?" "+kind:""); el.hidden=!msg;
+}
+function ghFetch(path,opt){
+  return fetch("https://api.github.com/repos/"+GH_REPO+path,Object.assign({cache:"no-store"},opt||{},{
+    headers:Object.assign({"Accept":"application/vnd.github+json","Authorization":"Bearer "+ghTok(),
+      "X-GitHub-Api-Version":"2022-11-28"},(opt&&opt.headers)||{})}));
+}
+function hhmm(d){return d.toLocaleTimeString([],{hour:"numeric",minute:"2-digit"});}
+async function startRun(){
+  if(!ghTok()){ document.getElementById("gh_tok").value=""; return ghDlg.showModal(); }
+  const btn=document.getElementById("runBtn");
+  btn.disabled=true; setRun("Starting run…","busy");
+  const t0=Date.now();
+  try{
+    const r=await ghFetch("/actions/workflows/"+GH_WF+"/dispatches",{method:"POST",
+      headers:{"Content-Type":"application/json"},body:JSON.stringify({ref:"main"})});
+    if(r.status===401){ setRun("GitHub rejected the token — paste a new one.","err"); btn.disabled=false; return ghDlg.showModal(); }
+    if(r.status===403||r.status===404){ setRun("The token can't start runs. It needs Actions: Read and write on SkyPrediction.","err"); btn.disabled=false; return; }
+    if(!r.ok){ setRun("GitHub said "+r.status+" — try again in a minute.","err"); btn.disabled=false; return; }
+  }catch(e){ setRun("Couldn't reach GitHub — check your connection.","err"); btn.disabled=false; return; }
+  setRun("Run started "+hhmm(new Date())+" — about 4 minutes. Box and the ranking update when it's done.","busy");
+  pollRun(t0);
+}
+function pollRun(t0){
+  clearTimeout(runPoll);
+  const btn=document.getElementById("runBtn");
+  const tick=async()=>{
+    if(Date.now()-t0>15*60*1000){ setRun("No result after 15 minutes — check Actions on GitHub.","err"); btn.disabled=false; return; }
+    try{
+      const r=await ghFetch("/actions/workflows/"+GH_WF+"/runs?event=workflow_dispatch&per_page=5");
+      if(r.ok){
+        const j=await r.json();
+        const run=(j.workflow_runs||[]).find(x=>Date.parse(x.created_at)>=t0-60000);
+        if(run){
+          const mins=Math.max(1,Math.round((Date.now()-t0)/60000));
+          if(run.status!=="completed"){ setRun((run.status==="queued"?"Queued":"Running")+" — "+mins+" min so far. Box updates when it's done.","busy"); }
+          else{
+            btn.disabled=false;
+            if(run.conclusion==="success") setRun("Done "+hhmm(new Date(run.updated_at))+" — ranking and Box are updated.","ok");
+            else setRun("Run finished with "+run.conclusion+" — check Actions on GitHub.","err");
+            return;
+          }
+        }
+      }
+    }catch(e){}
+    runPoll=setTimeout(tick,15000);
+  };
+  runPoll=setTimeout(tick,8000);
+}
+document.getElementById("runBtn").onclick=startRun;
+document.getElementById("closeGh").onclick=()=>ghDlg.close();
+document.getElementById("saveGh").onclick=()=>{
+  const v=document.getElementById("gh_tok").value.trim();
+  if(!v) return;
+  try{localStorage.setItem(LS_GH,v);}catch(e){}
+  ghDlg.close(); startRun();
+};
+document.getElementById("clearGh").onclick=()=>{
+  try{localStorage.removeItem(LS_GH);}catch(e){}
+  document.getElementById("gh_tok").value=""; ghDlg.close(); setRun("Token removed from this device.","");
+};
 document.getElementById("probekm").textContent=CORRIDOR_KM.join(", ");
 load(false);
 </script>
