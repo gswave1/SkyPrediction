@@ -1,59 +1,60 @@
 {
-  "generated": "2026-10-01T20:53:40.784Z",
+  "generated": "2026-10-02T00:36:20.836Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
-      "day": "2026-10-01",
-      "when": "tonight",
+      "day": "2026-10-02",
+      "when": "tomorrow night",
       "time": "18:26",
       "top": [
         {
-          "id": "odiorne",
-          "name": "Odiorne Point",
-          "place": "Rye, NH",
-          "score": 42,
+          "id": "rockygorge",
+          "name": "Rocky Gorge",
+          "place": "Kancamagus Hwy, NH",
+          "score": 40,
           "label": "Marginal",
-          "drive": 86,
+          "drive": 62,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "18:26",
-          "lat": 43.0431,
-          "lon": -70.7161
-        },
-        {
-          "id": "ryeharbor",
-          "name": "Rye Harbor State Park",
-          "place": "Rye, NH",
-          "score": 41,
-          "label": "Marginal",
-          "drive": 91,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "18:26",
-          "lat": 43.0017,
-          "lon": -70.7446
-        },
-        {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 35,
-          "label": "Marginal",
-          "drive": 94,
-          "flags": [
-            "horizon blocked"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:26",
-          "lat": 43.06,
-          "lon": -70.698
+          "lat": 44.004,
+          "lon": -71.278
+        },
+        {
+          "id": "chocorua16",
+          "name": "Chocorua, Route 16",
+          "place": "Chocorua, NH",
+          "score": 39,
+          "label": "Marginal",
+          "drive": 39,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:26",
+          "lat": 43.897,
+          "lon": -71.231
+        },
+        {
+          "id": "chocoruasummit",
+          "name": "Mount Chocorua Summit",
+          "place": "Albany, NH",
+          "score": 37,
+          "label": "Marginal",
+          "drive": 46,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:26",
+          "lat": 43.9541,
+          "lon": -71.2734
         }
       ]
     },
@@ -61,23 +62,20 @@
       "ev": "sunrise",
       "day": "2026-10-02",
       "when": "tomorrow",
-      "time": "06:46",
+      "time": "06:49",
       "top": [
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 61,
-          "label": "Strong",
-          "drive": 104,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Some haze (AOD 0.26) — colors a notch softer.",
-          "time": "06:46",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 111,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:49",
+          "lat": 43.4445,
+          "lon": -72.4537
         },
         {
           "id": "sunapee",
@@ -87,7 +85,7 @@
           "label": "Marginal",
           "drive": 70,
           "flags": [
-            "horizon blocked"
+            "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:47",
@@ -95,79 +93,76 @@
           "lon": -72.084
         },
         {
-          "id": "chocoruasummit",
-          "name": "Mount Chocorua Summit",
-          "place": "Albany, NH",
-          "score": 41,
+          "id": "newfound",
+          "name": "Newfound Lake, Wellington",
+          "place": "Bristol, NH",
+          "score": 42,
           "label": "Marginal",
-          "drive": 46,
+          "drive": 33,
           "flags": [
             "horizon blocked"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:44",
-          "lat": 43.9541,
-          "lon": -71.2734
+          "time": "06:46",
+          "lat": 43.664,
+          "lon": -71.767
         }
       ]
     },
     {
       "ev": "sunset",
-      "day": "2026-10-02",
-      "when": "tomorrow night",
-      "time": "18:27",
+      "day": "2026-10-03",
+      "when": "Saturday",
+      "time": "18:28",
       "top": [
         {
-          "id": "squamnorth",
-          "name": "Squam Lake, north shore",
-          "place": "Holderness, NH",
-          "score": 42,
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 34,
           "label": "Marginal",
-          "drive": 19,
+          "drive": 108,
           "flags": [
-            "horizon blocked",
-            "cirrus overhead"
+            "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:27",
-          "lat": 43.763,
-          "lon": -71.558
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:28",
+          "lat": 44.297,
+          "lon": -72.295
         },
         {
-          "id": "squam",
-          "name": "Squam Lake",
-          "place": "Holderness, NH",
-          "score": 41,
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 34,
           "label": "Marginal",
-          "drive": 13,
+          "drive": 98,
           "flags": [
-            "horizon blocked",
-            "cirrus overhead"
+            "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:27",
-          "lat": 43.731,
-          "lon": -71.586
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:28",
+          "lat": 44.328,
+          "lon": -72.175
         },
         {
-          "id": "mtpercival",
-          "name": "Mount Percival",
-          "place": "Sandwich, NH",
-          "score": 40,
+          "id": "jobspond",
+          "name": "Jobs Pond",
+          "place": "Westmore, VT",
+          "score": 33,
           "label": "Marginal",
-          "drive": 28,
+          "drive": 118,
           "flags": [
-            "horizon blocked",
-            "cirrus overhead"
+            "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:27",
-          "lat": 43.8022,
-          "lon": -71.5225
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:26",
+          "lat": 44.7622,
+          "lon": -71.9534
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:26 PM. Best bet: Odiorne Point, 42, Marginal. horizon blocked, cirrus overhead. 1 hour 26 minutes away. Then Rye Harbor State Park 41, and Kittery Point 35.\n\nSunrise tomorrow at 6:46 AM. Best bet: Pack Monadnock (Miller SP), 61, Strong. horizon open, cirrus overhead. 1 hour 44 minutes away. Then Mount Sunapee Summit 44, and Mount Chocorua Summit 41.",
+  "text": "Sunset tomorrow night at 6:26 PM. Best bet: Rocky Gorge, 40, Marginal. horizon blocked, cirrus overhead. 1 hour 2 minutes away. Then Chocorua, Route 16 39, and Mount Chocorua Summit 37.\n\nSunrise tomorrow at 6:49 AM. Best bet: Mount Ascutney Summit, 44, Marginal. 1 hour 51 minutes away. Then Mount Sunapee Summit 44, and Newfound Lake, Wellington 42.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
