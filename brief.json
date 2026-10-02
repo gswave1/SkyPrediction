@@ -1,60 +1,60 @@
 {
-  "generated": "2026-10-02T13:04:19.086Z",
+  "generated": "2026-10-02T14:25:47.697Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-02",
       "when": "tonight",
-      "time": "18:24",
+      "time": "18:26",
       "top": [
         {
-          "id": "yorkharbor",
-          "name": "York Harbor",
-          "place": "York, ME",
-          "score": 36,
-          "label": "Marginal",
-          "drive": 91,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "18:24",
-          "lat": 43.147,
-          "lon": -70.626
-        },
-        {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 36,
-          "label": "Marginal",
-          "drive": 94,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:24",
-          "lat": 43.2232,
-          "lon": -70.6919
-        },
-        {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
+          "id": "lowerfalls",
+          "name": "Lower Falls, Swift River",
+          "place": "Albany, NH",
           "score": 35,
           "label": "Marginal",
-          "drive": 61,
+          "drive": 57,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:26",
-          "lat": 43.3314,
-          "lon": -71.1162
+          "lat": 43.9964,
+          "lon": -71.2336
+        },
+        {
+          "id": "rockygorge",
+          "name": "Rocky Gorge",
+          "place": "Kancamagus Hwy, NH",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 62,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:26",
+          "lat": 44.004,
+          "lon": -71.278
+        },
+        {
+          "id": "kancgraham",
+          "name": "C.L. Graham Wangan Overlook",
+          "place": "Kancamagus Hwy, NH",
+          "score": 31,
+          "label": "Marginal",
+          "drive": 78,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:26",
+          "lat": 44.0069,
+          "lon": -71.3608
         }
       ]
     },
@@ -62,12 +62,27 @@
       "ev": "sunrise",
       "day": "2026-10-03",
       "when": "tomorrow",
-      "time": "06:47",
+      "time": "06:46",
       "top": [
         {
-          "id": "newfound",
-          "name": "Newfound Lake, Wellington",
-          "place": "Bristol, NH",
+          "id": "weirs",
+          "name": "Weirs Beach Boardwalk",
+          "place": "Laconia, NH",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 11,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "06:46",
+          "lat": 43.608,
+          "lon": -71.459
+        },
+        {
+          "id": "major",
+          "name": "Mount Major Summit",
+          "place": "Alton, NH",
           "score": 33,
           "label": "Marginal",
           "drive": 33,
@@ -75,39 +90,24 @@
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:47",
-          "lat": 43.664,
-          "lon": -71.767
+          "time": "06:45",
+          "lat": 43.5093,
+          "lon": -71.2806
         },
         {
-          "id": "newfoundsouth",
-          "name": "Newfound Lake, Bristol end",
-          "place": "Bristol, NH",
+          "id": "belknap",
+          "name": "Belknap Mountain Fire Tower",
+          "place": "Gilford, NH",
           "score": 33,
           "label": "Marginal",
-          "drive": 27,
+          "drive": 29,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:47",
-          "lat": 43.625,
-          "lon": -71.745
-        },
-        {
-          "id": "stinson",
-          "name": "Stinson Mountain",
-          "place": "Rumney, NH",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 40,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:48",
-          "lat": 43.8345,
-          "lon": -71.7793
+          "time": "06:46",
+          "lat": 43.5178,
+          "lon": -71.3689
         }
       ]
     },
@@ -115,22 +115,22 @@
       "ev": "sunset",
       "day": "2026-10-03",
       "when": "tomorrow night",
-      "time": "18:23",
+      "time": "18:24",
       "top": [
         {
-          "id": "chatham",
-          "name": "Chatham",
-          "place": "Chatham, NH",
+          "id": "major",
+          "name": "Mount Major Summit",
+          "place": "Alton, NH",
           "score": 32,
           "label": "Marginal",
-          "drive": 95,
+          "drive": 33,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:23",
-          "lat": 44.271,
-          "lon": -71.025
+          "time": "18:24",
+          "lat": 43.5093,
+          "lon": -71.2806
         },
         {
           "id": "belknap",
@@ -148,23 +148,23 @@
           "lon": -71.3689
         },
         {
-          "id": "major",
-          "name": "Mount Major Summit",
-          "place": "Alton, NH",
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
           "score": 32,
           "label": "Marginal",
-          "drive": 33,
+          "drive": 80,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:24",
-          "lat": 43.5093,
-          "lon": -71.2806
+          "time": "18:27",
+          "lat": 43.385,
+          "lon": -71.857
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:24 PM. Best bet: York Harbor, 36, Marginal. horizon blocked, cirrus overhead. 1 hour 31 minutes away. Then Mount Agamenticus 36, and Blue Job Mountain Fire Tower 35.\n\nSunrise tomorrow at 6:47 AM. Best bet: Newfound Lake, Wellington, 33, Marginal. horizon open. 33 minutes away. Then Newfound Lake, Bristol end 33, and Stinson Mountain 33.",
+  "text": "Sunset tonight at 6:26 PM. Best bet: Lower Falls, Swift River, 35, Marginal. horizon blocked, cirrus overhead. 57 minutes away. Then Rocky Gorge 33, and C.L. Graham Wangan Overlook 31.\n\nSunrise tomorrow at 6:46 AM. Best bet: Weirs Beach Boardwalk, 33, Marginal. horizon open. 11 minutes away. Then Mount Major Summit 33, and Belknap Mountain Fire Tower 33.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
