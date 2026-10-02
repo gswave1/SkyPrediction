@@ -49,6 +49,7 @@ img{max-width:100%}
 h1,h2,h3{margin:0;text-wrap:balance}
 .masthead{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:16px}
 .masthead h1{font-family:var(--display);font-weight:700;font-size:clamp(26px,5.4vw,38px);letter-spacing:-.015em;line-height:1.05}
+.buildstamp{font-family:var(--mono);font-size:11px;font-weight:400;letter-spacing:0;color:var(--muted);white-space:nowrap;vertical-align:middle}
 .masthead p{margin:6px 0 0;color:var(--muted);font-size:13.5px;max-width:48ch}
 .stamp{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);text-align:right;line-height:1.8}
 .stamp button{margin-top:4px}
@@ -267,7 +268,7 @@ a{color:var(--ember)}
 <div class="wrap">
   <header class="masthead">
     <div>
-      <h1>Golden Hour Board</h1>
+      <h1>Golden Hour Board <span class="buildstamp" title="When this version of the board was published">(built <!--BUILD-->Oct 2, 10:33 AM<!--/BUILD-->)</span></h1>
       <p>Live cloud-model scoring for sunset, sunrise and lake fog across your spots — scored against three weather models at once, ranked by how far you'd have to drive.</p>
     </div>
     <div class="stamp">
