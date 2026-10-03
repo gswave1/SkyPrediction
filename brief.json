@@ -1,167 +1,167 @@
 {
-  "generated": "2026-10-02T23:37:50.316Z",
+  "generated": "2026-10-03T04:29:21.996Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-03",
-      "when": "tomorrow night",
-      "time": "18:27",
+      "when": "tonight",
+      "time": "18:26",
       "top": [
         {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 32,
+          "id": "jobspond",
+          "name": "Jobs Pond",
+          "place": "Westmore, VT",
+          "score": 33,
           "label": "Marginal",
-          "drive": 80,
+          "drive": 118,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:26",
+          "lat": 44.7622,
+          "lon": -71.9534
+        },
+        {
+          "id": "burkemtn",
+          "name": "Burke Mountain",
+          "place": "East Burke, VT",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 110,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:26",
+          "lat": 44.5705,
+          "lon": -71.893
+        },
+        {
+          "id": "lyndon",
+          "name": "Lyndon Farm Fields",
+          "place": "Northeast Kingdom, VT",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 96,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "18:27",
-          "lat": 43.385,
-          "lon": -71.857
-        },
-        {
-          "id": "bog",
-          "name": "Bog Mountain",
-          "place": "Wilmot, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 46,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:27",
-          "lat": 43.469,
-          "lon": -71.93
-        },
-        {
-          "id": "centerharb",
-          "name": "Center Harbor Town Dock",
-          "place": "Center Harbor, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 10,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:25",
-          "lat": 43.71,
-          "lon": -71.467
+          "lat": 44.565,
+          "lon": -71.973
         }
       ]
     },
     {
       "ev": "sunrise",
       "day": "2026-10-03",
-      "when": "tomorrow",
-      "time": "06:46",
+      "when": "this morning",
+      "time": "06:49",
       "top": [
         {
-          "id": "mtpercival",
-          "name": "Mount Percival",
-          "place": "Sandwich, NH",
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
           "score": 33,
           "label": "Marginal",
-          "drive": 28,
+          "drive": 70,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:46",
-          "lat": 43.8022,
-          "lon": -71.5225
+          "time": "06:49",
+          "lat": 43.321,
+          "lon": -72.084
         },
         {
-          "id": "leavittpark",
-          "name": "Leavitt Park",
-          "place": "Meredith, NH",
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
           "score": 33,
           "label": "Marginal",
-          "drive": 8,
+          "drive": 111,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:46",
-          "lat": 43.681,
-          "lon": -71.454
+          "time": "06:50",
+          "lat": 43.4445,
+          "lon": -72.4537
         },
         {
-          "id": "centersandwich",
-          "name": "Center Sandwich",
-          "place": "Sandwich, NH",
+          "id": "jennefarm",
+          "name": "Jenne Farm",
+          "place": "Reading, VT",
           "score": 33,
           "label": "Marginal",
-          "drive": 18,
+          "drive": 111,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:46",
-          "lat": 43.782,
-          "lon": -71.473
+          "time": "06:51",
+          "lat": 43.5245,
+          "lon": -72.5596
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-10-04",
-      "when": "Sunday",
-      "time": "18:25",
+      "when": "tomorrow night",
+      "time": "18:22",
       "top": [
         {
-          "id": "bog",
-          "name": "Bog Mountain",
-          "place": "Wilmot, NH",
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 60,
+          "label": "Strong",
+          "drive": 61,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "18:22",
+          "lat": 43.3314,
+          "lon": -71.1162
+        },
+        {
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
           "score": 48,
           "label": "Worth it",
-          "drive": 46,
+          "drive": 106,
           "flags": [
-            "horizon blocked"
+            "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:25",
-          "lat": 43.469,
-          "lon": -71.93
+          "time": "18:19",
+          "lat": 43.563,
+          "lon": -70.365
         },
         {
-          "id": "meredith",
-          "name": "Meredith Bay Docks",
-          "place": "Meredith, NH",
-          "score": 39,
-          "label": "Marginal",
-          "drive": 2,
+          "id": "capeporpoise",
+          "name": "Cape Porpoise Pier",
+          "place": "Kennebunkport, ME",
+          "score": 46,
+          "label": "Worth it",
+          "drive": 114,
           "flags": [
-            "horizon blocked"
+            "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:23",
-          "lat": 43.656,
-          "lon": -71.498
-        },
-        {
-          "id": "centerharb",
-          "name": "Center Harbor Town Dock",
-          "place": "Center Harbor, NH",
-          "score": 39,
-          "label": "Marginal",
-          "drive": 10,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:23",
-          "lat": 43.71,
-          "lon": -71.467
+          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 23% high cloud. Open gap at the horizon. And the sun sets outside this spot's open arc.",
+          "time": "18:19",
+          "lat": 43.3654,
+          "lon": -70.432
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 6:27 PM. Best bet: Mount Kearsarge Summit, 32, Marginal. horizon open. 1 hour 20 minutes away. Then Bog Mountain 32, and Center Harbor Town Dock 32.\n\nSunrise tomorrow at 6:46 AM. Best bet: Mount Percival, 33, Marginal. horizon open. 28 minutes away. Then Leavitt Park 33, and Center Sandwich 33.",
+  "text": "Sunset tonight at 6:26 PM. Best bet: Jobs Pond, 33, Marginal. horizon open. 1 hour 58 minutes away. Then Burke Mountain 33, and Lyndon Farm Fields 33.\n\nSunrise this morning at 6:49 AM. Best bet: Mount Sunapee Summit, 33, Marginal. horizon open. 1 hour 10 minutes away. Then Mount Ascutney Summit 33, and Jenne Farm 33.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
