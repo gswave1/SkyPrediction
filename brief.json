@@ -1,57 +1,57 @@
 {
-  "generated": "2026-10-03T16:23:18.343Z",
+  "generated": "2026-10-03T17:51:33.584Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-03",
       "when": "tonight",
-      "time": "18:24",
+      "time": "18:25",
       "top": [
         {
-          "id": "major",
-          "name": "Mount Major Summit",
-          "place": "Alton, NH",
+          "id": "centerharb",
+          "name": "Center Harbor Town Dock",
+          "place": "Center Harbor, NH",
           "score": 32,
           "label": "Marginal",
-          "drive": 33,
+          "drive": 10,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:25",
+          "lat": 43.71,
+          "lon": -71.467
+        },
+        {
+          "id": "redhill",
+          "name": "Red Hill Fire Tower",
+          "place": "Moultonborough, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 20,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:25",
+          "lat": 43.766,
+          "lon": -71.372
+        },
+        {
+          "id": "castle",
+          "name": "Castle in the Clouds Overlook",
+          "place": "Moultonborough, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 26,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "18:24",
-          "lat": 43.5093,
-          "lon": -71.2806
-        },
-        {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 80,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:27",
-          "lat": 43.385,
-          "lon": -71.857
-        },
-        {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 70,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:28",
-          "lat": 43.321,
-          "lon": -72.084
+          "lat": 43.747,
+          "lon": -71.323
         }
       ]
     },
@@ -98,7 +98,7 @@
           "name": "The Rocks",
           "place": "Bethlehem, NH",
           "score": 60,
-          "label": "Worth it",
+          "label": "Strong",
           "drive": 61,
           "flags": [
             "horizon open",
@@ -115,20 +115,35 @@
       "ev": "sunset",
       "day": "2026-10-04",
       "when": "tomorrow night",
-      "time": "18:25",
+      "time": "18:21",
       "top": [
         {
-          "id": "moosilauke",
-          "name": "Mount Moosilauke Summit",
-          "place": "Benton, NH",
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 34,
+          "label": "Marginal",
+          "drive": 110,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:21",
+          "lat": 42.8151,
+          "lon": -70.819
+        },
+        {
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
           "score": 31,
           "label": "Marginal",
-          "drive": 67,
+          "drive": 94,
           "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:25",
-          "lat": 44.0241,
-          "lon": -71.8314
+          "time": "18:20",
+          "lat": 43.2232,
+          "lon": -70.6919
         },
         {
           "id": "middlesugarloaf",
@@ -142,23 +157,10 @@
           "time": "18:23",
           "lat": 44.2513,
           "lon": -71.5171
-        },
-        {
-          "id": "sugarhill",
-          "name": "Sunset Hill, Sugar Hill",
-          "place": "Sugar Hill, NH",
-          "score": 30,
-          "label": "Skip",
-          "drive": 61,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:24",
-          "lat": 44.217,
-          "lon": -71.783
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:24 PM. Best bet: Mount Major Summit, 32, Marginal. horizon open. 33 minutes away. Then Mount Kearsarge Summit 32, and Mount Sunapee Summit 32.\n\nSunrise tomorrow at 6:51 AM. Best bet: Peacham Village, 73, Strong. horizon open, cirrus overhead. 1 hour 38 minutes away. Then Owl's Head, Groton State Forest 73, and The Rocks 60.",
+  "text": "Sunset tonight at 6:25 PM. Best bet: Center Harbor Town Dock, 32, Marginal. horizon open. 10 minutes away. Then Red Hill Fire Tower 32, and Castle in the Clouds Overlook 32.\n\nSunrise tomorrow at 6:51 AM. Best bet: Peacham Village, 73, Strong. horizon open, cirrus overhead. 1 hour 38 minutes away. Then Owl's Head, Groton State Forest 73, and The Rocks 60.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
