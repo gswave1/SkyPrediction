@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-03T04:29:21.996Z",
+  "generated": "2026-10-03T13:09:55.115Z",
   "drive": 120,
   "events": [
     {
@@ -24,87 +24,90 @@
           "lon": -71.9534
         },
         {
-          "id": "burkemtn",
-          "name": "Burke Mountain",
-          "place": "East Burke, VT",
-          "score": 33,
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 32,
           "label": "Marginal",
-          "drive": 110,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:26",
-          "lat": 44.5705,
-          "lon": -71.893
-        },
-        {
-          "id": "lyndon",
-          "name": "Lyndon Farm Fields",
-          "place": "Northeast Kingdom, VT",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 96,
+          "drive": 80,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "18:27",
-          "lat": 44.565,
-          "lon": -71.973
+          "lat": 43.385,
+          "lon": -71.857
+        },
+        {
+          "id": "eaton",
+          "name": "Crystal Lake",
+          "place": "Eaton, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 55,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:23",
+          "lat": 43.914,
+          "lon": -71.074
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-03",
-      "when": "this morning",
+      "day": "2026-10-04",
+      "when": "tomorrow",
       "time": "06:49",
       "top": [
         {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 70,
+          "id": "moosilauke",
+          "name": "Mount Moosilauke Summit",
+          "place": "Benton, NH",
+          "score": 62,
+          "label": "Strong",
+          "drive": 67,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "cirrus overhead"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:49",
-          "lat": 43.321,
-          "lon": -72.084
+          "lat": 44.0241,
+          "lon": -71.8314
         },
         {
-          "id": "ascutney",
-          "name": "Mount Ascutney Summit",
-          "place": "Windsor, VT",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 111,
+          "id": "chocorualake",
+          "name": "Chocorua Lake (Narrows Bridge)",
+          "place": "Tamworth, NH",
+          "score": 62,
+          "label": "Strong",
+          "drive": 41,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "cirrus overhead"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:50",
-          "lat": 43.4445,
-          "lon": -72.4537
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:47",
+          "lat": 43.8967,
+          "lon": -71.2686
         },
         {
-          "id": "jennefarm",
-          "name": "Jenne Farm",
-          "place": "Reading, VT",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 111,
+          "id": "chocoruasummit",
+          "name": "Mount Chocorua Summit",
+          "place": "Albany, NH",
+          "score": 62,
+          "label": "Strong",
+          "drive": 46,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "cirrus overhead"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:51",
-          "lat": 43.5245,
-          "lon": -72.5596
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:47",
+          "lat": 43.9541,
+          "lon": -71.2734
         }
       ]
     },
@@ -112,56 +115,50 @@
       "ev": "sunset",
       "day": "2026-10-04",
       "when": "tomorrow night",
-      "time": "18:22",
+      "time": "18:20",
       "top": [
         {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 60,
-          "label": "Strong",
-          "drive": 61,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "18:22",
-          "lat": 43.3314,
-          "lon": -71.1162
-        },
-        {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 48,
-          "label": "Worth it",
-          "drive": 106,
-          "flags": [
-            "cirrus overhead"
-          ],
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 39,
+          "label": "Marginal",
+          "drive": 95,
+          "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:19",
-          "lat": 43.563,
-          "lon": -70.365
+          "time": "18:20",
+          "lat": 43.9209,
+          "lon": -70.5806
         },
         {
-          "id": "capeporpoise",
-          "name": "Cape Porpoise Pier",
-          "place": "Kennebunkport, ME",
-          "score": 46,
-          "label": "Worth it",
-          "drive": 114,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 23% high cloud. Open gap at the horizon. And the sun sets outside this spot's open arc.",
-          "time": "18:19",
-          "lat": 43.3654,
-          "lon": -70.432
+          "id": "pleasantmtn",
+          "name": "Pleasant Mountain",
+          "place": "Bridgton, ME",
+          "score": 34,
+          "label": "Marginal",
+          "drive": 90,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:20",
+          "lat": 44.027,
+          "lon": -70.8223
+        },
+        {
+          "id": "sugarhill",
+          "name": "Sunset Hill, Sugar Hill",
+          "place": "Sugar Hill, NH",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 61,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:24",
+          "lat": 44.217,
+          "lon": -71.783
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:26 PM. Best bet: Jobs Pond, 33, Marginal. horizon open. 1 hour 58 minutes away. Then Burke Mountain 33, and Lyndon Farm Fields 33.\n\nSunrise this morning at 6:49 AM. Best bet: Mount Sunapee Summit, 33, Marginal. horizon open. 1 hour 10 minutes away. Then Mount Ascutney Summit 33, and Jenne Farm 33.",
+  "text": "Sunset tonight at 6:26 PM. Best bet: Jobs Pond, 33, Marginal. horizon open. 1 hour 58 minutes away. Then Mount Kearsarge Summit 32, and Crystal Lake 32.\n\nSunrise tomorrow at 6:49 AM. Best bet: Mount Moosilauke Summit, 62, Strong. horizon open, cirrus overhead. 1 hour 7 minutes away. Then Chocorua Lake (Narrows Bridge) 62, and Mount Chocorua Summit 62.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
