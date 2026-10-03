@@ -81,6 +81,22 @@ input[type=range]{flex:1;min-width:60px;accent-color:var(--ember);background:tra
 .status{padding:12px 15px;border-radius:var(--radius);border:1px solid var(--line);background:var(--surface);
   font-size:13.5px;color:var(--ink-2);margin-bottom:16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .status.err{border-color:var(--bad);color:var(--bad)}
+.sat{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);margin-bottom:16px;padding:10px 14px}
+.sat summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:baseline}
+.sat summary::-webkit-details-marker{display:none}
+.sat summary::before{content:"\25B8";color:var(--muted);font-size:12px;transition:transform .15s}
+.sat[open] summary::before{transform:rotate(90deg)}
+.sat-title{white-space:nowrap;font-family:var(--display);font-weight:700;font-size:15px;color:var(--ink)}
+.sat-sub{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.03em}
+.sat-bar{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.sat-bar .seg{flex-wrap:wrap;max-width:100%;overflow:visible}
+.sat-img{position:relative;background:#000;border-radius:8px;overflow:hidden;min-height:120px}
+.sat-img img{display:block;width:100%;max-width:900px;margin:0 auto;height:auto}
+.sat-err{padding:24px 16px;color:#ddd;font-size:13px;text-align:center}
+.sat-err a{color:#fff}
+.sat-read{margin:8px 0 2px;font-size:13px;color:var(--ink-2)}
+.sat-links{margin:2px 0 0;font-size:12px;color:var(--muted)}
+.sat-links a{color:var(--ink-2)}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--warn);flex:none}
 .status.err .dot{background:var(--bad)}
 .status.ok .dot{background:var(--good)}
@@ -282,6 +298,19 @@ a{color:var(--ember)}
   </header>
 
   <div class="status" id="status"><span class="dot"></span><span id="statusText">Loading forecast…</span></div>
+
+  <details class="sat" id="satPanel" open>
+    <summary><span class="sat-title">Satellite now</span> <span class="sat-sub" id="satSub">GOES-East · Northeast</span></summary>
+    <div class="sat-bar">
+      <div class="seg" role="group" aria-label="Satellite product">
+        <button type="button" data-satp="auto">Auto</button><button type="button" data-satp="NightMicrophysics">Night micro</button><button type="button" data-satp="DayCloudPhase">Day cloud phase</button><button type="button" data-satp="GEOCOLOR">GeoColor</button>
+      </div>
+      <div class="seg" role="group" aria-label="Frame"><button type="button" data-satm="latest">Latest</button><button type="button" data-satm="loop">Loop</button></div>
+    </div>
+    <div class="sat-img"><img id="satImg" alt="Latest GOES-East satellite image of the Northeast" decoding="async"><div class="sat-err" id="satErr" hidden></div></div>
+    <p class="sat-read" id="satRead"></p>
+    <p class="sat-links"><a id="satStar" target="_blank" rel="noopener">Open on NOAA STAR</a> · <a href="https://weather.cod.edu/satrad/?parms=regional-northeast-48-1-100-1&checked=map&colorbar=undefined" target="_blank" rel="noopener">College of DuPage viewer</a> · <span id="satAge"></span></p>
+  </details>
 
   <div class="controls" id="controls" hidden>
     <div class="ctrl-row" id="rowEvent">
@@ -2086,6 +2115,55 @@ document.getElementById("drive").addEventListener("input",e=>{
   driveTimer=setTimeout(()=>{ if(MODEL && ui.drive>(MODEL.cover||0)) load(true); },700);
 });
 document.getElementById("refreshBtn").onclick=()=>load(true);
+
+/* ---- Satellite now: latest GOES-East image for the Northeast sector, straight
+   from NOAA STAR's CDN (fixed "latest" URLs). Display only, not scored. ---- */
+const SAT_SATS=["GOES19","GOES16"];
+const SAT_INFO={
+  NightMicrophysics:{label:"Nighttime Microphysics",read:"Night view. Pale aqua/cyan = low cloud or fog (look for it pooling in valleys); dark red/maroon wisps = thin high cirrus; pink/magenta = clear ground; mottled orange-red blobs = thick high cloud."},
+  DayCloudPhase:{label:"Day Cloud Phase",read:"Day view. Green = thick ice cloud; red/orange = thin high ice (cirrus); magenta/purple = low water cloud; blue-cyan = ground; white = deep mixed cloud."},
+  GEOCOLOR:{label:"GeoColor",read:"True colour by day; at night low cloud shows pale blue over city lights, high cloud white."}
+};
+let satPinned="auto", satMode="latest", satTimer=null, satLoadedAt=null;
+try{const s=JSON.parse(localStorage.getItem("ghb.sat")||"{}"); if(s.p) satPinned=s.p; if(s.m) satMode=s.m; if(s.closed) document.getElementById("satPanel").open=false;}catch(e){}
+function satSave(){try{localStorage.setItem("ghb.sat",JSON.stringify({p:satPinned,m:satMode,closed:!document.getElementById("satPanel").open}));}catch(e){}}
+function satAutoProduct(){
+  const now=new Date(), t=sunTimes(now,HOME_LL[0],HOME_LL[1]);
+  if(!t) return "NightMicrophysics";
+  const pad=20*60000; /* switch 20 min inside daylight so the day product has light */
+  return (now>t.sunrise.getTime()+pad && now<t.sunset.getTime()-pad)?"DayCloudPhase":"NightMicrophysics";
+}
+function satUrl(sat,p,mode){
+  const base="https://cdn.star.nesdis.noaa.gov/"+sat+"/ABI/SECTOR/ne/"+p+"/";
+  return base+(mode==="loop"? sat+"-NE-"+p+"-600x600.gif" : "latest.jpg")+"?t="+Math.floor(Date.now()/300000);
+}
+function satShow(){
+  const p=satPinned==="auto"?satAutoProduct():satPinned, info=SAT_INFO[p];
+  document.querySelectorAll("[data-satp]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.satp===satPinned));
+  document.querySelectorAll("[data-satm]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.satm===satMode));
+  document.getElementById("satSub").textContent="GOES-East · Northeast · "+info.label+(satPinned==="auto"?" (auto)":"")+(satMode==="loop"?" · loop":"");
+  document.getElementById("satRead").textContent=info.read;
+  document.getElementById("satStar").href="https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G19&sector=ne&band="+p+"&length=24";
+  const img=document.getElementById("satImg"), err=document.getElementById("satErr");
+  let i=0;
+  img.onerror=()=>{
+    i++;
+    if(i<SAT_SATS.length){ img.src=satUrl(SAT_SATS[i],p,satMode); return; }
+    img.hidden=true; err.hidden=false;
+    err.innerHTML='The satellite image didn\'t load. <a href="'+document.getElementById("satStar").href+'" target="_blank" rel="noopener">Open it on NOAA STAR</a>.';
+  };
+  img.onload=()=>{ img.hidden=false; err.hidden=true; satLoadedAt=new Date(); satAgeText(); };
+  img.src=satUrl(SAT_SATS[0],p,satMode);
+}
+function satAgeText(){
+  document.getElementById("satAge").textContent=satLoadedAt?"image fetched "+satLoadedAt.toLocaleTimeString([],{hour:"numeric",minute:"2-digit"})+" — the frame's own time is printed on the image":"";
+}
+document.querySelectorAll("[data-satp]").forEach(b=>b.onclick=()=>{satPinned=b.dataset.satp;satSave();satShow();});
+document.querySelectorAll("[data-satm]").forEach(b=>b.onclick=()=>{satMode=b.dataset.satm;satSave();satShow();});
+document.getElementById("satPanel").addEventListener("toggle",()=>{satSave(); if(document.getElementById("satPanel").open) satShow();});
+satShow();
+satTimer=setInterval(()=>{ if(!document.hidden && document.getElementById("satPanel").open) satShow(); },5*60*1000);
+document.addEventListener("visibilitychange",()=>{ if(!document.hidden && document.getElementById("satPanel").open) satShow(); });
 
 /* ---- Run full update: dispatches the GitHub Actions workflow (brief.yml),
    which rewrites the README ranking and uploads the run to Box. The token
