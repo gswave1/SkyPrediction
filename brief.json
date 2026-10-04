@@ -1,166 +1,162 @@
 {
-  "generated": "2026-10-03T23:36:36.187Z",
+  "generated": "2026-10-04T05:00:43.882Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-04",
-      "when": "tomorrow night",
-      "time": "18:19",
+      "when": "tonight",
+      "time": "18:22",
       "top": [
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 43,
-          "label": "Marginal",
-          "drive": 106,
+          "id": "wolfeboro",
+          "name": "Wolfeboro Town Docks",
+          "place": "Wolfeboro, NH",
+          "score": 48,
+          "label": "Worth it",
+          "drive": 46,
           "flags": [],
           "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "18:19",
-          "lat": 43.563,
-          "lon": -70.365
+          "time": "18:22",
+          "lat": 43.582,
+          "lon": -71.21
         },
         {
-          "id": "major",
-          "name": "Mount Major Summit",
-          "place": "Alton, NH",
-          "score": 35,
-          "label": "Marginal",
-          "drive": 33,
-          "flags": [
-            "horizon blocked"
-          ],
+          "id": "pleasantmtn",
+          "name": "Pleasant Mountain",
+          "place": "Bridgton, ME",
+          "score": 47,
+          "label": "Worth it",
+          "drive": 90,
+          "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:23",
-          "lat": 43.5093,
-          "lon": -71.2806
+          "time": "18:20",
+          "lat": 44.027,
+          "lon": -70.8223
         },
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 35,
-          "label": "Marginal",
-          "drive": 94,
+          "id": "fossmtn",
+          "name": "Foss Mountain",
+          "place": "Eaton, NH",
+          "score": 45,
+          "label": "Worth it",
+          "drive": 64,
           "flags": [],
           "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "18:20",
-          "lat": 43.2232,
-          "lon": -70.6919
+          "time": "18:21",
+          "lat": 43.8771,
+          "lon": -71.0348
         }
       ]
     },
     {
       "ev": "sunrise",
       "day": "2026-10-04",
-      "when": "tomorrow",
-      "time": "06:52",
+      "when": "this morning",
+      "time": "06:49",
       "top": [
         {
-          "id": "jennefarm",
-          "name": "Jenne Farm",
-          "place": "Reading, VT",
-          "score": 70,
+          "id": "newfound",
+          "name": "Newfound Lake, Wellington",
+          "place": "Bristol, NH",
+          "score": 75,
           "label": "Strong",
-          "drive": 111,
+          "drive": 33,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:52",
-          "lat": 43.5245,
-          "lon": -72.5596
+          "time": "06:49",
+          "lat": 43.664,
+          "lon": -71.767
         },
         {
-          "id": "ascutney",
-          "name": "Mount Ascutney Summit",
-          "place": "Windsor, VT",
-          "score": 69,
+          "id": "newfoundsouth",
+          "name": "Newfound Lake, Bristol end",
+          "place": "Bristol, NH",
+          "score": 75,
           "label": "Strong",
-          "drive": 111,
+          "drive": 27,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:51",
-          "lat": 43.4445,
-          "lon": -72.4537
-        },
-        {
-          "id": "bretton",
-          "name": "Bretton Woods",
-          "place": "Carroll, NH",
-          "score": 62,
-          "label": "Strong",
-          "drive": 72,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:48",
-          "lat": 44.26,
-          "lon": -71.443
+          "lat": 43.625,
+          "lon": -71.745
+        },
+        {
+          "id": "stinson",
+          "name": "Stinson Mountain",
+          "place": "Rumney, NH",
+          "score": 75,
+          "label": "Strong",
+          "drive": 40,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "06:49",
+          "lat": 43.8345,
+          "lon": -71.7793
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-10-05",
-      "when": "Monday",
-      "time": "18:19",
+      "when": "tomorrow night",
+      "time": "18:17",
       "top": [
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 32,
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 39,
           "label": "Marginal",
-          "drive": 94,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:19",
-          "lat": 43.06,
-          "lon": -70.698
+          "drive": 106,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:17",
+          "lat": 43.563,
+          "lon": -70.365
         },
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 32,
+          "id": "belknap",
+          "name": "Belknap Mountain Fire Tower",
+          "place": "Gilford, NH",
+          "score": 35,
           "label": "Marginal",
-          "drive": 94,
+          "drive": 29,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:19",
-          "lat": 43.2232,
-          "lon": -70.6919
+          "time": "18:21",
+          "lat": 43.5178,
+          "lon": -71.3689
         },
         {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 31,
+          "id": "major",
+          "name": "Mount Major Summit",
+          "place": "Alton, NH",
+          "score": 34,
           "label": "Marginal",
-          "drive": 61,
+          "drive": 33,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:20",
-          "lat": 43.3314,
-          "lon": -71.1162
+          "time": "18:21",
+          "lat": 43.5093,
+          "lon": -71.2806
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 6:19 PM. Best bet: Scarborough Marsh, 43, Marginal. 1 hour 46 minutes away. Then Mount Major Summit 35, and Mount Agamenticus 35.\n\nSunrise tomorrow at 6:52 AM. Best bet: Jenne Farm, 70, Strong. horizon open, cirrus overhead. 1 hour 51 minutes away. Then Mount Ascutney Summit 69, and Bretton Woods 62.",
+  "text": "Sunset tonight at 6:22 PM. Best bet: Wolfeboro Town Docks, 48, Worth it. 46 minutes away. Then Pleasant Mountain 47, and Foss Mountain 45.\n\nSunrise this morning at 6:49 AM. Best bet: Newfound Lake, Wellington, 75, Strong. horizon open, cirrus overhead. 33 minutes away. Then Newfound Lake, Bristol end 75, and Stinson Mountain 75.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
