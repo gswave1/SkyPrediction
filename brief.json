@@ -1,18 +1,44 @@
 {
-  "generated": "2026-10-04T18:03:36.285Z",
+  "generated": "2026-10-04T22:15:29.004Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-04",
       "when": "tonight",
-      "time": "18:20",
+      "time": "18:19",
       "top": [
+        {
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 49,
+          "label": "Worth it",
+          "drive": 106,
+          "flags": [],
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "time": "18:19",
+          "lat": 43.563,
+          "lon": -70.365
+        },
+        {
+          "id": "capeporpoise",
+          "name": "Cape Porpoise Pier",
+          "place": "Kennebunkport, ME",
+          "score": 42,
+          "label": "Marginal",
+          "drive": 114,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:19",
+          "lat": 43.3654,
+          "lon": -70.432
+        },
         {
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 44,
+          "score": 41,
           "label": "Marginal",
           "drive": 94,
           "flags": [],
@@ -20,32 +46,6 @@
           "time": "18:20",
           "lat": 43.06,
           "lon": -70.698
-        },
-        {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 43,
-          "label": "Marginal",
-          "drive": 94,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:20",
-          "lat": 43.2232,
-          "lon": -70.6919
-        },
-        {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 42,
-          "label": "Marginal",
-          "drive": 106,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "18:19",
-          "lat": 43.563,
-          "lon": -70.365
         }
       ]
     },
@@ -53,52 +53,52 @@
       "ev": "sunrise",
       "day": "2026-10-05",
       "when": "tomorrow",
-      "time": "06:51",
+      "time": "06:47",
       "top": [
         {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
+          "id": "fossmtn",
+          "name": "Foss Mountain",
+          "place": "Eaton, NH",
           "score": 12,
           "label": "Skip",
-          "drive": 70,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:51",
-          "lat": 43.321,
-          "lon": -72.084
-        },
-        {
-          "id": "bretton",
-          "name": "Bretton Woods",
-          "place": "Carroll, NH",
-          "score": 12,
-          "label": "Skip",
-          "drive": 72,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "06:49",
-          "lat": 44.26,
-          "lon": -71.443
-        },
-        {
-          "id": "newfoundsouth",
-          "name": "Newfound Lake, Bristol end",
-          "place": "Bristol, NH",
-          "score": 11,
-          "label": "Skip",
-          "drive": 27,
+          "drive": 64,
           "flags": [
             "horizon blocked"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:47",
+          "lat": 43.8771,
+          "lon": -71.0348
+        },
+        {
+          "id": "cardigan",
+          "name": "Mount Cardigan Summit",
+          "place": "Orange, NH",
+          "score": 11,
+          "label": "Skip",
+          "drive": 57,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:50",
-          "lat": 43.625,
-          "lon": -71.745
+          "lat": 43.6495,
+          "lon": -71.9144
+        },
+        {
+          "id": "ellacoya",
+          "name": "Ellacoya State Park",
+          "place": "Gilford, NH",
+          "score": 11,
+          "label": "Skip",
+          "drive": 22,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:48",
+          "lat": 43.5694,
+          "lon": -71.3547
         }
       ]
     },
@@ -112,10 +112,12 @@
           "id": "squamnorth",
           "name": "Squam Lake, north shore",
           "place": "Holderness, NH",
-          "score": 36,
+          "score": 37,
           "label": "Marginal",
           "drive": 19,
-          "flags": [],
+          "flags": [
+            "horizon open"
+          ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:22",
           "lat": 43.763,
@@ -125,33 +127,35 @@
           "id": "squam",
           "name": "Squam Lake",
           "place": "Holderness, NH",
-          "score": 34,
+          "score": 36,
           "label": "Marginal",
           "drive": 13,
-          "flags": [],
+          "flags": [
+            "horizon open"
+          ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "18:22",
           "lat": 43.731,
           "lon": -71.586
         },
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 32,
+          "id": "westrattle",
+          "name": "West Rattlesnake",
+          "place": "Holderness, NH",
+          "score": 34,
           "label": "Marginal",
-          "drive": 94,
+          "drive": 22,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:19",
-          "lat": 43.06,
-          "lon": -70.698
+          "time": "18:22",
+          "lat": 43.785,
+          "lon": -71.545
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:20 PM. Best bet: Kittery Point, 44, Marginal. 1 hour 34 minutes away. Then Mount Agamenticus 43, and Scarborough Marsh 42.\n\nSunrise tomorrow at 6:51 AM. Nothing looks good. The best is Mount Sunapee Summit at 12. ",
+  "text": "Sunset tonight at 6:19 PM. Best bet: Scarborough Marsh, 49, Worth it. 1 hour 46 minutes away. Then Cape Porpoise Pier 42, and Kittery Point 41.\n\nSunrise tomorrow at 6:47 AM. Nothing looks good. The best is Foss Mountain at 12. ",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
