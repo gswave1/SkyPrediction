@@ -1,107 +1,106 @@
 {
-  "generated": "2026-10-04T05:46:54.285Z",
+  "generated": "2026-10-04T13:49:22.177Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-04",
       "when": "tonight",
-      "time": "18:25",
+      "time": "18:20",
       "top": [
         {
-          "id": "bog",
-          "name": "Bog Mountain",
-          "place": "Wilmot, NH",
-          "score": 46,
-          "label": "Worth it",
-          "drive": 46,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:25",
-          "lat": 43.469,
-          "lon": -71.93
-        },
-        {
-          "id": "cardigan",
-          "name": "Mount Cardigan Summit",
-          "place": "Orange, NH",
-          "score": 46,
-          "label": "Worth it",
-          "drive": 57,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:25",
-          "lat": 43.6495,
-          "lon": -71.9144
-        },
-        {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 45,
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 42,
           "label": "Marginal",
-          "drive": 80,
+          "drive": 94,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "time": "18:20",
+          "lat": 43.2232,
+          "lon": -70.6919
+        },
+        {
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 39,
+          "label": "Marginal",
+          "drive": 95,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:20",
+          "lat": 43.9209,
+          "lon": -70.5806
+        },
+        {
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 61,
           "flags": [],
           "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "18:25",
-          "lat": 43.385,
-          "lon": -71.857
+          "time": "18:22",
+          "lat": 43.3314,
+          "lon": -71.1162
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-04",
-      "when": "this morning",
-      "time": "06:49",
+      "day": "2026-10-05",
+      "when": "tomorrow",
+      "time": "06:53",
       "top": [
         {
-          "id": "newfound",
-          "name": "Newfound Lake, Wellington",
-          "place": "Bristol, NH",
-          "score": 74,
-          "label": "Strong",
-          "drive": 33,
+          "id": "jennefarm",
+          "name": "Jenne Farm",
+          "place": "Reading, VT",
+          "score": 13,
+          "label": "Skip",
+          "drive": 111,
           "flags": [
-            "horizon open",
-            "cirrus overhead"
+            "horizon blocked"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:49",
-          "lat": 43.664,
-          "lon": -71.767
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:53",
+          "lat": 43.5245,
+          "lon": -72.5596
         },
         {
-          "id": "stinson",
-          "name": "Stinson Mountain",
-          "place": "Rumney, NH",
-          "score": 74,
-          "label": "Strong",
-          "drive": 40,
+          "id": "ellacoya",
+          "name": "Ellacoya State Park",
+          "place": "Gilford, NH",
+          "score": 13,
+          "label": "Skip",
+          "drive": 22,
           "flags": [
-            "horizon open",
-            "cirrus overhead"
+            "horizon blocked"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:49",
-          "lat": 43.8345,
-          "lon": -71.7793
-        },
-        {
-          "id": "newfoundsouth",
-          "name": "Newfound Lake, Bristol end",
-          "place": "Bristol, NH",
-          "score": 74,
-          "label": "Strong",
-          "drive": 27,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:48",
-          "lat": 43.625,
-          "lon": -71.745
+          "lat": 43.5694,
+          "lon": -71.3547
+        },
+        {
+          "id": "belknap",
+          "name": "Belknap Mountain Fire Tower",
+          "place": "Gilford, NH",
+          "score": 13,
+          "label": "Skip",
+          "drive": 29,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:48",
+          "lat": 43.5178,
+          "lon": -71.3689
         }
       ]
     },
@@ -109,35 +108,35 @@
       "ev": "sunset",
       "day": "2026-10-05",
       "when": "tomorrow night",
-      "time": "18:17",
+      "time": "18:21",
       "top": [
-        {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 39,
-          "label": "Marginal",
-          "drive": 106,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:17",
-          "lat": 43.563,
-          "lon": -70.365
-        },
         {
           "id": "belknap",
           "name": "Belknap Mountain Fire Tower",
           "place": "Gilford, NH",
-          "score": 35,
+          "score": 36,
           "label": "Marginal",
           "drive": 29,
           "flags": [
             "horizon open"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:21",
           "lat": 43.5178,
           "lon": -71.3689
+        },
+        {
+          "id": "mtpemi",
+          "name": "Mount Pemigewasset (Indian Head)",
+          "place": "Lincoln, NH",
+          "score": 35,
+          "label": "Marginal",
+          "drive": 56,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "18:22",
+          "lat": 44.0975,
+          "lon": -71.6997
         },
         {
           "id": "major",
@@ -157,6 +156,6 @@
       ]
     }
   ],
-  "text": "Sunset tonight at 6:25 PM. Best bet: Bog Mountain, 46, Worth it. 46 minutes away. Then Mount Cardigan Summit 46, and Mount Kearsarge Summit 45.\n\nSunrise this morning at 6:49 AM. Best bet: Newfound Lake, Wellington, 74, Strong. horizon open, cirrus overhead. 33 minutes away. Then Stinson Mountain 74, and Newfound Lake, Bristol end 74.",
+  "text": "Sunset tonight at 6:20 PM. Best bet: Mount Agamenticus, 42, Marginal. horizon blocked. 1 hour 34 minutes away. Then Sebago Lake State Park 39, and Blue Job Mountain Fire Tower 38.\n\nSunrise tomorrow at 6:53 AM. Nothing looks good. The best is Jenne Farm at 13. ",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
