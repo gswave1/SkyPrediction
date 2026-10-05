@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05T01:45:14.022Z",
+  "generated": "2026-10-05T03:53:45.313Z",
   "drive": 120,
   "events": [
     {
@@ -12,12 +12,10 @@
           "id": "squamnorth",
           "name": "Squam Lake, north shore",
           "place": "Holderness, NH",
-          "score": 37,
+          "score": 34,
           "label": "Marginal",
           "drive": 19,
-          "flags": [
-            "horizon open"
-          ],
+          "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:22",
           "lat": 43.763,
@@ -27,12 +25,10 @@
           "id": "squam",
           "name": "Squam Lake",
           "place": "Holderness, NH",
-          "score": 36,
+          "score": 33,
           "label": "Marginal",
           "drive": 13,
-          "flags": [
-            "horizon open"
-          ],
+          "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:22",
           "lat": 43.731,
@@ -42,12 +38,10 @@
           "id": "westrattle",
           "name": "West Rattlesnake",
           "place": "Holderness, NH",
-          "score": 36,
+          "score": 32,
           "label": "Marginal",
           "drive": 22,
-          "flags": [
-            "horizon open"
-          ],
+          "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:22",
           "lat": 43.785,
@@ -59,13 +53,43 @@
       "ev": "sunrise",
       "day": "2026-10-05",
       "when": "tomorrow",
-      "time": "06:48",
+      "time": "06:52",
       "top": [
+        {
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 13,
+          "label": "Skip",
+          "drive": 98,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:52",
+          "lat": 44.328,
+          "lon": -72.175
+        },
+        {
+          "id": "cardigan",
+          "name": "Mount Cardigan Summit",
+          "place": "Orange, NH",
+          "score": 13,
+          "label": "Skip",
+          "drive": 57,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:50",
+          "lat": 43.6495,
+          "lon": -71.9144
+        },
         {
           "id": "ellacoya",
           "name": "Ellacoya State Park",
           "place": "Gilford, NH",
-          "score": 12,
+          "score": 13,
           "label": "Skip",
           "drive": 22,
           "flags": [
@@ -75,36 +99,6 @@
           "time": "06:48",
           "lat": 43.5694,
           "lon": -71.3547
-        },
-        {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 11,
-          "label": "Skip",
-          "drive": 80,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
-          "time": "06:50",
-          "lat": 43.385,
-          "lon": -71.857
-        },
-        {
-          "id": "mtpercival",
-          "name": "Mount Percival",
-          "place": "Sandwich, NH",
-          "score": 11,
-          "label": "Skip",
-          "drive": 28,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
-          "time": "06:49",
-          "lat": 43.8022,
-          "lon": -71.5225
         }
       ]
     },
@@ -118,8 +112,8 @@
           "id": "major",
           "name": "Mount Major Summit",
           "place": "Alton, NH",
-          "score": 60,
-          "label": "Strong",
+          "score": 43,
+          "label": "Marginal",
           "drive": 33,
           "flags": [
             "horizon open"
@@ -130,38 +124,38 @@
           "lon": -71.2806
         },
         {
-          "id": "ossipee",
-          "name": "Center Ossipee Pond",
-          "place": "Lakes Region, NH",
-          "score": 55,
-          "label": "Worth it",
-          "drive": 33,
+          "id": "wolfeboro",
+          "name": "Wolfeboro Town Docks",
+          "place": "Wolfeboro, NH",
+          "score": 40,
+          "label": "Marginal",
+          "drive": 46,
           "flags": [
             "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:18",
-          "lat": 43.8108,
-          "lon": -71.1878
+          "time": "18:19",
+          "lat": 43.582,
+          "lon": -71.21
         },
         {
-          "id": "altonbay",
-          "name": "Alton Bay",
-          "place": "Alton, NH",
-          "score": 50,
-          "label": "Worth it",
-          "drive": 32,
+          "id": "belknap",
+          "name": "Belknap Mountain Fire Tower",
+          "place": "Gilford, NH",
+          "score": 39,
+          "label": "Marginal",
+          "drive": 29,
           "flags": [
             "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:19",
-          "lat": 43.476,
-          "lon": -71.24
+          "lat": 43.5178,
+          "lon": -71.3689
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 6:22 PM. Best bet: Squam Lake, north shore, 37, Marginal. horizon open. 19 minutes away. Then Squam Lake 36, and West Rattlesnake 36.\n\nSunrise tomorrow at 6:48 AM. Nothing looks good. The best is Ellacoya State Park at 12. ",
+  "text": "Sunset tomorrow night at 6:22 PM. Best bet: Squam Lake, north shore, 34, Marginal. 19 minutes away. Then Squam Lake 33, and West Rattlesnake 32.\n\nSunrise tomorrow at 6:52 AM. Nothing looks good. The best is Peacham Village at 13. ",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
