@@ -1,102 +1,102 @@
-Golden Hour Board — generated 2026-10-06T14:53:44.643Z (UTC). Hourly 4 AM-9 PM ET.
+Golden Hour Board — generated 2026-10-06T20:04:52.542Z (UTC). Hourly 4 AM-9 PM ET.
 Columns: score 0-100 | spot | place | lat,lon | drive min FROM HOME (Meredith NH) | sun time | flags | why
 Scores under 30 = not worth the drive.
 
 ## SUNSET tonight (2026-10-06, ~18:24)
-55 | Mount Ascutney Summit | Windsor, VT | 43.444,-72.454 | 111 min | 18:24 | horizon open, cirrus overhead | ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 7% high cloud. Open gap at the horizon.
-44 | Jenne Farm | Reading, VT | 43.525,-72.560 | 111 min | 18:24 | horizon open, cirrus overhead | ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 7% high cloud. Open gap at the horizon. And the sun sets outside this spot's open arc.
-37 | Blue Job Mountain Fire Tower | Farmington, NH | 43.331,-71.116 | 61 min | 18:18 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-36 | Mount Sunapee Summit | Newbury, NH | 43.321,-72.084 | 70 min | 18:22 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+37 | Mount Ascutney Summit | Windsor, VT | 43.444,-72.454 | 111 min | 18:24 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 36 | Mount Major Summit | Alton, NH | 43.509,-71.281 | 33 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-36 | Belknap Mountain Fire Tower | Gilford, NH | 43.518,-71.369 | 29 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 36 | Wolfeboro Town Docks | Wolfeboro, NH | 43.582,-71.210 | 46 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-35 | Red Hill Fire Tower | Moultonborough, NH | 43.766,-71.372 | 20 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-35 | Castle in the Clouds Overlook | Moultonborough, NH | 43.747,-71.323 | 26 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-35 | Center Ossipee Pond | Lakes Region, NH | 43.811,-71.188 | 33 min | 18:18 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-35 | Tamworth | Tamworth, NH | 43.838,-71.218 | 37 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-34 | Green Mountain Fire Tower | Effingham, NH | 43.767,-71.037 | 55 min | 18:18 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-34 | Kittery Point | Kittery, ME | 43.060,-70.698 | 94 min | 18:17 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-34 | Mount Agamenticus | York, ME | 43.223,-70.692 | 94 min | 18:17 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-34 | Bog Mountain | Wilmot, NH | 43.469,-71.930 | 46 min | 18:22 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-33 | Mount Kearsarge Summit | Wilmot, NH | 43.385,-71.857 | 80 min | 18:21 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-33 | Crystal Lake | Eaton, NH | 43.914,-71.074 | 55 min | 18:18 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-33 | Foss Mountain | Eaton, NH | 43.877,-71.035 | 64 min | 18:18 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-33 | Meredith Bay Docks | Meredith, NH | 43.656,-71.498 | 2 min | 18:20 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-33 | Squam Lake | Holderness, NH | 43.731,-71.586 | 13 min | 18:20 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-33 | Center Harbor Town Dock | Center Harbor, NH | 43.710,-71.467 | 10 min | 18:20 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-33 | West Rattlesnake | Holderness, NH | 43.785,-71.545 | 22 min | 18:20 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-33 | Mount Percival | Sandwich, NH | 43.802,-71.522 | 28 min | 18:20 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-33 | Squam Lake, north shore | Holderness, NH | 43.763,-71.558 | 19 min | 18:20 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-33 | Moultonborough Neck | Moultonborough, NH | 43.696,-71.406 | 17 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-33 | Center Sandwich | Sandwich, NH | 43.782,-71.473 | 18 min | 18:20 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-33 | Pequawket Pond | Conway, NH | 43.985,-71.121 | 54 min | 18:18 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+36 | Belknap Mountain Fire Tower | Gilford, NH | 43.518,-71.369 | 29 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+36 | Mount Sunapee Summit | Newbury, NH | 43.321,-72.084 | 70 min | 18:22 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+36 | Red Hill Fire Tower | Moultonborough, NH | 43.766,-71.372 | 20 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+36 | Castle in the Clouds Overlook | Moultonborough, NH | 43.747,-71.323 | 26 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+36 | Center Ossipee Pond | Lakes Region, NH | 43.811,-71.188 | 33 min | 18:18 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+36 | Tamworth | Tamworth, NH | 43.838,-71.218 | 37 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+36 | Green Mountain Fire Tower | Effingham, NH | 43.767,-71.037 | 55 min | 18:18 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+35 | Blue Job Mountain Fire Tower | Farmington, NH | 43.331,-71.116 | 61 min | 18:18 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+35 | Meredith Bay Docks | Meredith, NH | 43.656,-71.498 | 2 min | 18:20 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+35 | Squam Lake | Holderness, NH | 43.731,-71.586 | 13 min | 18:20 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+35 | Center Harbor Town Dock | Center Harbor, NH | 43.710,-71.467 | 10 min | 18:20 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+35 | West Rattlesnake | Holderness, NH | 43.785,-71.545 | 22 min | 18:20 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+35 | Mount Percival | Sandwich, NH | 43.802,-71.522 | 28 min | 18:20 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+35 | Squam Lake, north shore | Holderness, NH | 43.763,-71.558 | 19 min | 18:20 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+35 | Moultonborough Neck | Moultonborough, NH | 43.696,-71.406 | 17 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+35 | Center Sandwich | Sandwich, NH | 43.782,-71.473 | 18 min | 18:20 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+34 | Pack Monadnock (Miller SP) | Peterborough, NH | 42.862,-71.879 | 104 min | 18:22 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+34 | Mount Kearsarge Summit | Wilmot, NH | 43.385,-71.857 | 80 min | 18:21 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+34 | Mount Cardigan Summit | Orange, NH | 43.650,-71.914 | 57 min | 18:21 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+33 | Bog Mountain | Wilmot, NH | 43.469,-71.930 | 46 min | 18:22 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+33 | Ashland | Ashland, NH | 43.697,-71.630 | 19 min | 18:20 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 33 | C.L. Graham Wangan Overlook | Kancamagus Hwy, NH | 44.007,-71.361 | 78 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 33 | Rocky Gorge | Kancamagus Hwy, NH | 44.004,-71.278 | 62 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 33 | Lower Falls, Swift River | Albany, NH | 43.996,-71.234 | 57 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+33 | Chocorua, Route 16 | Chocorua, NH | 43.897,-71.231 | 39 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+33 | Kittery Point | Kittery, ME | 43.060,-70.698 | 94 min | 18:17 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+33 | Mount Chocorua Summit | Albany, NH | 43.954,-71.273 | 46 min | 18:19 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 
-## SUNRISE tomorrow (2026-10-07, ~06:51)
-60 | Red Hill Fire Tower | Moultonborough, NH | 43.766,-71.372 | 20 min | 06:51 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in.
-60 | Mount Ascutney Summit | Windsor, VT | 43.444,-72.454 | 111 min | 06:55 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in.
-60 | Little Cherry Pond | Pondicherry NWR, NH | 44.376,-71.519 | 81 min | 06:52 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
-60 | Jefferson Fields | Jefferson, NH | 44.389,-71.479 | 78 min | 06:51 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
-59 | Newfound Lake, Wellington | Bristol, NH | 43.664,-71.767 | 33 min | 06:52 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-58 | Jenne Farm | Reading, VT | 43.525,-72.560 | 111 min | 06:55 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in.
-58 | Mount Washington Summit | Sargent's Purchase, NH | 44.270,-71.302 | 116 min | 06:51 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
-58 | Chocorua Lake (Narrows Bridge) | Tamworth, NH | 43.897,-71.269 | 41 min | 06:50 | horizon open | Mid-level cloud overhead and a clear run to the horizon.
-58 | Cathedral Ledge | Bartlett, NH | 44.062,-71.168 | 69 min | 06:50 | horizon open | Mid-level cloud overhead and a clear run to the horizon.
-57 | Leavitt Park | Meredith, NH | 43.681,-71.454 | 8 min | 06:51 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in.
-57 | Newfound Lake, Bristol end | Bristol, NH | 43.625,-71.745 | 27 min | 06:52 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-57 | Mount Sunapee Summit | Newbury, NH | 43.321,-72.084 | 70 min | 06:53 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in.
-57 | Bretton Woods | Carroll, NH | 44.260,-71.443 | 72 min | 06:51 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
-56 | Middle Sugarloaf | Bethlehem, NH | 44.251,-71.517 | 71 min | 06:51 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
-56 | Mount Chocorua Summit | Albany, NH | 43.954,-71.273 | 46 min | 06:50 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in.
-54 | Mount Kearsarge Summit | Wilmot, NH | 43.385,-71.857 | 80 min | 06:52 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in.
-53 | Mount Avalon | Crawford Notch, NH | 44.206,-71.426 | 84 min | 06:51 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
-53 | Mount Cardigan Summit | Orange, NH | 43.650,-71.914 | 57 min | 06:53 | - | Mid-level cloud overhead and a clear run to the horizon.
-53 | Randolph | Randolph, NH | 44.358,-71.368 | 83 min | 06:51 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun rises outside this spot's open arc.
-52 | Center Sandwich | Sandwich, NH | 43.782,-71.473 | 18 min | 06:51 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in.
-52 | Intervale Scenic Vista | Intervale, NH | 44.076,-71.140 | 67 min | 06:50 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in. And the sun rises outside this spot's open arc.
-52 | Ashland | Ashland, NH | 43.697,-71.630 | 19 min | 06:52 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in. And the sun rises outside this spot's open arc.
-51 | Lower Falls, Swift River | Albany, NH | 43.996,-71.234 | 57 min | 06:50 | - | Partial setup: some cloud to catch light, some of the gap filled in. And the sun rises outside this spot's open arc.
-50 | Sebago Lake State Park | Casco, ME | 43.921,-70.581 | 95 min | 06:48 | horizon open, cirrus overhead | ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 9% high cloud. Open gap at the horizon. And the sun rises outside this spot's open arc.
-49 | Kimball Road | Lunenburg, VT | 44.476,-71.704 | 89 min | 06:52 | cirrus overhead, no valley fog (22) | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
-48 | Chatham | Chatham, NH | 44.271,-71.025 | 95 min | 06:50 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun rises outside this spot's open arc.
-48 | Bog Mountain | Wilmot, NH | 43.469,-71.930 | 46 min | 06:53 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in. And the sun rises outside this spot's open arc.
-48 | Great Glen / Auto Road Base | Pinkham Notch, NH | 44.261,-71.257 | 87 min | 06:50 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun rises outside this spot's open arc.
-48 | Meredith Bay Docks | Meredith, NH | 43.656,-71.498 | 2 min | 06:51 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in. And the sun rises outside this spot's open arc.
-48 | Center Harbor Town Dock | Center Harbor, NH | 43.710,-71.467 | 10 min | 06:51 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in. And the sun rises outside this spot's open arc.
+## SUNRISE tomorrow (2026-10-07, ~06:52)
+72 | The Rocks | Bethlehem, NH | 44.283,-71.735 | 61 min | 06:52 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+71 | Mount Moosilauke Summit | Benton, NH | 44.024,-71.831 | 67 min | 06:53 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+69 | Mount Washington Summit | Sargent's Purchase, NH | 44.270,-71.302 | 116 min | 06:51 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+69 | Bretton Woods | Carroll, NH | 44.260,-71.443 | 72 min | 06:51 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+68 | Cannon Mountain Summit | Franconia Notch, NH | 44.157,-71.699 | 51 min | 06:52 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+68 | Mount Avalon | Crawford Notch, NH | 44.206,-71.426 | 84 min | 06:51 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+68 | Mount Lafayette Summit | Franconia Ridge, NH | 44.161,-71.644 | 49 min | 06:52 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+67 | Pemigewasset Overlook | Kancamagus Hwy, NH | 44.035,-71.517 | 56 min | 06:51 | cirrus overhead | ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 28% high cloud. Open gap at the horizon. And the sun rises outside this spot's open arc.
+67 | Kancamagus, Lincoln end | Lincoln, NH | 44.041,-71.524 | 55 min | 06:51 | cirrus overhead | ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 28% high cloud. Open gap at the horizon. And the sun rises outside this spot's open arc.
+67 | Middle Sugarloaf | Bethlehem, NH | 44.251,-71.517 | 71 min | 06:51 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+66 | Welch Mountain Ledges | Thornton, NH | 43.919,-71.575 | 37 min | 06:51 | horizon open, cirrus overhead | ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 24% high cloud. Open gap at the horizon. And the sun rises outside this spot's open arc.
+64 | Lyndon Farm Fields | Northeast Kingdom, VT | 44.565,-71.973 | 96 min | 06:54 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+63 | Profile Lake | Franconia Notch, NH | 44.162,-71.677 | 51 min | 06:52 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun rises outside this spot's open arc.
+63 | Echo Lake | Franconia Notch, NH | 44.187,-71.690 | 60 min | 06:52 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun rises outside this spot's open arc.
+63 | Artist's Bluff | Franconia Notch, NH | 44.181,-71.695 | 51 min | 06:52 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun rises outside this spot's open arc.
+62 | Bald Mountain | Franconia Notch, NH | 44.183,-71.704 | 52 min | 06:52 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun rises outside this spot's open arc.
+62 | Jefferson Fields | Jefferson, NH | 44.389,-71.479 | 78 min | 06:51 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+62 | Owl's Head, Groton State Forest | Groton, VT | 44.297,-72.295 | 108 min | 06:55 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+61 | Randolph | Randolph, NH | 44.358,-71.368 | 83 min | 06:51 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun rises outside this spot's open arc.
+61 | Sunset Hill, Sugar Hill | Sugar Hill, NH | 44.217,-71.783 | 61 min | 06:53 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun rises outside this spot's open arc.
+61 | Little Cherry Pond | Pondicherry NWR, NH | 44.376,-71.519 | 81 min | 06:52 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+61 | Peacham Village | Peacham, VT | 44.328,-72.175 | 98 min | 06:54 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+61 | Kimball Road | Lunenburg, VT | 44.476,-71.704 | 89 min | 06:52 | cirrus overhead, no valley fog (14) | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+61 | Mount Willard | Crawford Notch, NH | 44.204,-71.411 | 76 min | 06:51 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun rises outside this spot's open arc.
+60 | Great Glen / Auto Road Base | Pinkham Notch, NH | 44.261,-71.257 | 87 min | 06:50 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun rises outside this spot's open arc.
+60 | Mount Pemigewasset (Indian Head) | Lincoln, NH | 44.097,-71.700 | 56 min | 06:52 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun rises outside this spot's open arc.
+58 | Mount Cardigan Summit | Orange, NH | 43.650,-71.914 | 57 min | 06:53 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in.
+57 | Lake Willoughby, south end | Westmore, VT | 44.717,-72.031 | 110 min | 06:54 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+57 | Burke Mountain | East Burke, VT | 44.571,-71.893 | 110 min | 06:53 | cirrus overhead | Confirmed cirrus overhead with an open gap at the horizon. That's the combination.
+55 | Scarborough Marsh | Scarborough, ME | 43.563,-70.365 | 106 min | 06:46 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in.
 
-## SUNSET tomorrow night (2026-10-07, ~18:15)
-38 | Kittery Point | Kittery, ME | 43.060,-70.698 | 94 min | 18:15 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in.
+## SUNSET tomorrow night (2026-10-07, ~18:14)
 38 | Sebago Lake State Park | Casco, ME | 43.921,-70.581 | 95 min | 18:14 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-37 | Pequawket Pond | Conway, NH | 43.985,-71.121 | 54 min | 18:16 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+37 | Intervale Scenic Vista | Intervale, NH | 44.076,-71.140 | 67 min | 18:16 | - | Partial setup: some cloud to catch light, some of the gap filled in.
 37 | Scarborough Marsh | Scarborough, ME | 43.563,-70.365 | 106 min | 18:14 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-36 | Intervale Scenic Vista | Intervale, NH | 44.076,-71.140 | 67 min | 18:16 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-36 | Great Glen / Auto Road Base | Pinkham Notch, NH | 44.261,-71.257 | 87 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-35 | Mount Agamenticus | York, ME | 43.223,-70.692 | 94 min | 18:15 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-35 | Mount Lafayette Summit | Franconia Ridge, NH | 44.161,-71.644 | 49 min | 18:18 | horizon blocked | Partial setup: some cloud to catch light, some of the gap filled in.
-34 | Middle Sugarloaf | Bethlehem, NH | 44.251,-71.517 | 71 min | 18:18 | - | Mid-level cloud overhead and a clear run to the horizon.
-34 | Cannon Mountain Summit | Franconia Notch, NH | 44.157,-71.699 | 51 min | 18:18 | horizon blocked | Partial setup: some cloud to catch light, some of the gap filled in.
-33 | Artist's Bluff | Franconia Notch, NH | 44.181,-71.695 | 51 min | 18:18 | horizon blocked | Partial setup: some cloud to catch light, some of the gap filled in.
-33 | Profile Lake | Franconia Notch, NH | 44.162,-71.677 | 51 min | 18:18 | horizon blocked | Partial setup: some cloud to catch light, some of the gap filled in.
-33 | Echo Lake | Franconia Notch, NH | 44.187,-71.690 | 60 min | 18:18 | horizon blocked | Partial setup: some cloud to catch light, some of the gap filled in.
+36 | Lower Falls, Swift River | Albany, NH | 43.996,-71.234 | 57 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+36 | Pequawket Pond | Conway, NH | 43.985,-71.121 | 54 min | 18:16 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+36 | Rocky Gorge | Kancamagus Hwy, NH | 44.004,-71.278 | 62 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+35 | Kittery Point | Kittery, ME | 43.060,-70.698 | 94 min | 18:15 | horizon open | Partial setup: some cloud to catch light, some of the gap filled in.
+35 | Pleasant Mountain | Bridgton, ME | 44.027,-70.822 | 90 min | 18:15 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+34 | Moultonborough Neck | Moultonborough, NH | 43.696,-71.406 | 17 min | 18:18 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+34 | Chocorua, Route 16 | Chocorua, NH | 43.897,-71.231 | 39 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+34 | C.L. Graham Wangan Overlook | Kancamagus Hwy, NH | 44.007,-71.361 | 78 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+34 | Center Sandwich | Sandwich, NH | 43.782,-71.473 | 18 min | 18:18 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+34 | Mount Chocorua Summit | Albany, NH | 43.954,-71.273 | 46 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+34 | Wolfeboro Town Docks | Wolfeboro, NH | 43.582,-71.210 | 46 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+33 | Mount Percival | Sandwich, NH | 43.802,-71.522 | 28 min | 18:18 | - | Partial setup: some cloud to catch light, some of the gap filled in.
 33 | Green Mountain Fire Tower | Effingham, NH | 43.767,-71.037 | 55 min | 18:16 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-33 | Foss Mountain | Eaton, NH | 43.877,-71.035 | 64 min | 18:16 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+33 | Center Ossipee Pond | Lakes Region, NH | 43.811,-71.188 | 33 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+33 | Meredith Bay Docks | Meredith, NH | 43.656,-71.498 | 2 min | 18:18 | horizon blocked | Partial setup: some cloud to catch light, some of the gap filled in.
+33 | Center Harbor Town Dock | Center Harbor, NH | 43.710,-71.467 | 10 min | 18:18 | horizon blocked | Partial setup: some cloud to catch light, some of the gap filled in.
+33 | Castle in the Clouds Overlook | Moultonborough, NH | 43.747,-71.323 | 26 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
 33 | Crystal Lake | Eaton, NH | 43.914,-71.074 | 55 min | 18:16 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-32 | Center Ossipee Pond | Lakes Region, NH | 43.811,-71.188 | 33 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-32 | Sugar Hill Scenic Vista | Kancamagus Hwy, NH | 44.010,-71.428 | 65 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-32 | Peacham Village | Peacham, VT | 44.328,-72.175 | 98 min | 18:20 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-32 | Bald Mountain | Franconia Notch, NH | 44.183,-71.704 | 52 min | 18:18 | horizon blocked | Partial setup: some cloud to catch light, some of the gap filled in.
-32 | Rocky Gorge | Kancamagus Hwy, NH | 44.004,-71.278 | 62 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-32 | Lower Falls, Swift River | Albany, NH | 43.996,-71.234 | 57 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-31 | Sunset Hill, Sugar Hill | Sugar Hill, NH | 44.217,-71.783 | 61 min | 18:19 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-31 | Welch Mountain Ledges | Thornton, NH | 43.919,-71.575 | 37 min | 18:18 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-31 | Chatham | Chatham, NH | 44.271,-71.025 | 95 min | 18:16 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-31 | Pleasant Mountain | Bridgton, ME | 44.027,-70.822 | 90 min | 18:15 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-31 | Pemigewasset Overlook | Kancamagus Hwy, NH | 44.035,-71.517 | 56 min | 18:18 | horizon blocked | Partial setup: some cloud to catch light, some of the gap filled in.
-31 | Moultonborough Neck | Moultonborough, NH | 43.696,-71.406 | 17 min | 18:18 | - | Partial setup: some cloud to catch light, some of the gap filled in.
-31 | Kancamagus, Lincoln end | Lincoln, NH | 44.041,-71.524 | 55 min | 18:18 | horizon blocked | Partial setup: some cloud to catch light, some of the gap filled in.
-31 | Mount Washington Summit | Sargent's Purchase, NH | 44.270,-71.302 | 116 min | 18:17 | horizon blocked | Partial setup: some cloud to catch light, some of the gap filled in.
+32 | Red Hill Fire Tower | Moultonborough, NH | 43.766,-71.372 | 20 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+32 | Foss Mountain | Eaton, NH | 43.877,-71.035 | 64 min | 18:16 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+32 | West Rattlesnake | Holderness, NH | 43.785,-71.545 | 22 min | 18:18 | horizon blocked | Partial setup: some cloud to catch light, some of the gap filled in.
+32 | Great Glen / Auto Road Base | Pinkham Notch, NH | 44.261,-71.257 | 87 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+32 | Mount Agamenticus | York, ME | 43.223,-70.692 | 94 min | 18:15 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+32 | Tamworth | Tamworth, NH | 43.838,-71.218 | 37 min | 18:17 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+32 | Squam Lake, north shore | Holderness, NH | 43.763,-71.558 | 19 min | 18:18 | horizon blocked | Partial setup: some cloud to catch light, some of the gap filled in.
+32 | Chatham | Chatham, NH | 44.271,-71.025 | 95 min | 18:16 | - | Partial setup: some cloud to catch light, some of the gap filled in.
+32 | Squam Lake | Holderness, NH | 43.731,-71.586 | 13 min | 18:18 | horizon blocked | Partial setup: some cloud to catch light, some of the gap filled in.
 
 ## VALLEY FOG (river fog below the viewpoint, at sunrise)
-no valley fog (22) | Kimball Road | Lunenburg, VT | 44.476,-71.704 | 89 min | sunrise tomorrow 06:52 | sunrise score 49
+no valley fog (14) | Kimball Road | Lunenburg, VT | 44.476,-71.704 | 89 min | sunrise tomorrow 06:52 | sunrise score 61
