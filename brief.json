@@ -1,113 +1,112 @@
 {
-  "generated": "2026-10-06T05:34:05.939Z",
+  "generated": "2026-10-06T14:53:44.643Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-06",
       "when": "tonight",
-      "time": "18:19",
+      "time": "18:24",
       "top": [
         {
-          "id": "major",
-          "name": "Mount Major Summit",
-          "place": "Alton, NH",
-          "score": 69,
-          "label": "Strong",
-          "drive": 33,
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
+          "score": 55,
+          "label": "Worth it",
+          "drive": 111,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
-          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 13% high cloud. Open gap at the horizon.",
-          "time": "18:19",
-          "lat": 43.5093,
-          "lon": -71.2806
+          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 7% high cloud. Open gap at the horizon.",
+          "time": "18:24",
+          "lat": 43.4445,
+          "lon": -72.4537
         },
         {
-          "id": "wolfeboro",
-          "name": "Wolfeboro Town Docks",
-          "place": "Wolfeboro, NH",
-          "score": 69,
-          "label": "Strong",
-          "drive": 46,
+          "id": "jennefarm",
+          "name": "Jenne Farm",
+          "place": "Reading, VT",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 111,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
-          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 13% high cloud. Open gap at the horizon.",
-          "time": "18:19",
-          "lat": 43.582,
-          "lon": -71.21
+          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 7% high cloud. Open gap at the horizon. And the sun sets outside this spot's open arc.",
+          "time": "18:24",
+          "lat": 43.5245,
+          "lon": -72.5596
         },
-        {
-          "id": "belknap",
-          "name": "Belknap Mountain Fire Tower",
-          "place": "Gilford, NH",
-          "score": 69,
-          "label": "Strong",
-          "drive": 29,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 13% high cloud. Open gap at the horizon.",
-          "time": "18:19",
-          "lat": 43.5178,
-          "lon": -71.3689
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-10-06",
-      "when": "this morning",
-      "time": "06:48",
-      "top": [
         {
           "id": "bluejob",
           "name": "Blue Job Mountain Fire Tower",
           "place": "Farmington, NH",
-          "score": 32,
+          "score": 37,
           "label": "Marginal",
           "drive": 61,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:48",
+          "time": "18:18",
           "lat": 43.3314,
           "lon": -71.1162
-        },
+        }
+      ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-10-07",
+      "when": "tomorrow",
+      "time": "06:51",
+      "top": [
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 94,
+          "id": "redhill",
+          "name": "Red Hill Fire Tower",
+          "place": "Moultonborough, NH",
+          "score": 60,
+          "label": "Strong",
+          "drive": 20,
           "flags": [
             "horizon open"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:46",
-          "lat": 43.2232,
-          "lon": -70.6919
-        },
-        {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 104,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:51",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "lat": 43.766,
+          "lon": -71.372
+        },
+        {
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
+          "score": 60,
+          "label": "Strong",
+          "drive": 111,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:55",
+          "lat": 43.4445,
+          "lon": -72.4537
+        },
+        {
+          "id": "cherrypond",
+          "name": "Little Cherry Pond",
+          "place": "Pondicherry NWR, NH",
+          "score": 60,
+          "label": "Worth it",
+          "drive": 81,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "06:52",
+          "lat": 44.3761,
+          "lon": -71.5188
         }
       ]
     },
@@ -115,50 +114,52 @@
       "ev": "sunset",
       "day": "2026-10-07",
       "when": "tomorrow night",
-      "time": "18:17",
+      "time": "18:15",
       "top": [
         {
-          "id": "tamworth",
-          "name": "Tamworth",
-          "place": "Tamworth, NH",
-          "score": 39,
-          "label": "Marginal",
-          "drive": 37,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "18:17",
-          "lat": 43.838,
-          "lon": -71.218
-        },
-        {
-          "id": "ossipee",
-          "name": "Center Ossipee Pond",
-          "place": "Lakes Region, NH",
-          "score": 38,
-          "label": "Marginal",
-          "drive": 33,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "18:17",
-          "lat": 43.8108,
-          "lon": -71.1878
-        },
-        {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
           "score": 38,
           "label": "Marginal",
           "drive": 94,
-          "flags": [],
+          "flags": [
+            "horizon open"
+          ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:15",
-          "lat": 43.2232,
-          "lon": -70.6919
+          "lat": 43.06,
+          "lon": -70.698
+        },
+        {
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 95,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:14",
+          "lat": 43.9209,
+          "lon": -70.5806
+        },
+        {
+          "id": "pequawket",
+          "name": "Pequawket Pond",
+          "place": "Conway, NH",
+          "score": 37,
+          "label": "Marginal",
+          "drive": 54,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:16",
+          "lat": 43.9847,
+          "lon": -71.1211
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:19 PM. Best bet: Mount Major Summit, 69, Strong. horizon open, cirrus overhead. 33 minutes away. Then Wolfeboro Town Docks 69, and Belknap Mountain Fire Tower 69.\n\nSunrise this morning at 6:48 AM. Best bet: Blue Job Mountain Fire Tower, 32, Marginal. horizon open. 1 hour 1 minutes away. Then Mount Agamenticus 32, and Pack Monadnock (Miller SP) 32.",
+  "text": "Sunset tonight at 6:24 PM. Best bet: Mount Ascutney Summit, 55, Worth it. horizon open, cirrus overhead. 1 hour 51 minutes away. Then Jenne Farm 44, and Blue Job Mountain Fire Tower 37.\n\nSunrise tomorrow at 6:51 AM. Best bet: Red Hill Fire Tower, 60, Strong. horizon open. 20 minutes away. Then Mount Ascutney Summit 60, and Little Cherry Pond 60.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
