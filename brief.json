@@ -1,57 +1,57 @@
 {
-  "generated": "2026-10-06T20:04:52.542Z",
+  "generated": "2026-10-07T00:29:08.813Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
-      "day": "2026-10-06",
-      "when": "tonight",
-      "time": "18:24",
+      "day": "2026-10-07",
+      "when": "tomorrow night",
+      "time": "18:14",
       "top": [
         {
-          "id": "ascutney",
-          "name": "Mount Ascutney Summit",
-          "place": "Windsor, VT",
-          "score": 37,
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 36,
           "label": "Marginal",
-          "drive": 111,
+          "drive": 106,
           "flags": [
             "horizon open"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:24",
-          "lat": 43.4445,
-          "lon": -72.4537
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:14",
+          "lat": 43.563,
+          "lon": -70.365
         },
         {
-          "id": "major",
-          "name": "Mount Major Summit",
-          "place": "Alton, NH",
-          "score": 36,
+          "id": "chatham",
+          "name": "Chatham",
+          "place": "Chatham, NH",
+          "score": 34,
           "label": "Marginal",
-          "drive": 33,
+          "drive": 95,
           "flags": [
-            "horizon open"
+            "horizon blocked"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:19",
-          "lat": 43.5093,
-          "lon": -71.2806
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:16",
+          "lat": 44.271,
+          "lon": -71.025
         },
         {
-          "id": "wolfeboro",
-          "name": "Wolfeboro Town Docks",
-          "place": "Wolfeboro, NH",
-          "score": 36,
+          "id": "chocoruasummit",
+          "name": "Mount Chocorua Summit",
+          "place": "Albany, NH",
+          "score": 34,
           "label": "Marginal",
           "drive": 46,
           "flags": [
-            "horizon open"
+            "horizon blocked"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:19",
-          "lat": 43.582,
-          "lon": -71.21
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:17",
+          "lat": 43.9541,
+          "lon": -71.2734
         }
       ]
     },
@@ -65,10 +65,11 @@
           "id": "therocks",
           "name": "The Rocks",
           "place": "Bethlehem, NH",
-          "score": 72,
-          "label": "Strong",
+          "score": 89,
+          "label": "Go",
           "drive": 61,
           "flags": [
+            "horizon open",
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
@@ -77,28 +78,30 @@
           "lon": -71.735
         },
         {
-          "id": "moosilauke",
-          "name": "Mount Moosilauke Summit",
-          "place": "Benton, NH",
-          "score": 71,
-          "label": "Strong",
-          "drive": 67,
+          "id": "bretton",
+          "name": "Bretton Woods",
+          "place": "Carroll, NH",
+          "score": 86,
+          "label": "Go",
+          "drive": 72,
           "flags": [
+            "horizon open",
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:53",
-          "lat": 44.0241,
-          "lon": -71.8314
+          "time": "06:51",
+          "lat": 44.26,
+          "lon": -71.443
         },
         {
           "id": "mtwashington",
           "name": "Mount Washington Summit",
           "place": "Sargent's Purchase, NH",
-          "score": 69,
-          "label": "Strong",
+          "score": 84,
+          "label": "Go",
           "drive": 116,
           "flags": [
+            "horizon open",
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
@@ -110,52 +113,58 @@
     },
     {
       "ev": "sunset",
-      "day": "2026-10-07",
-      "when": "tomorrow night",
-      "time": "18:14",
+      "day": "2026-10-08",
+      "when": "Thursday",
+      "time": "18:18",
       "top": [
         {
-          "id": "sebago",
-          "name": "Sebago Lake State Park",
-          "place": "Casco, ME",
-          "score": 38,
+          "id": "bog",
+          "name": "Bog Mountain",
+          "place": "Wilmot, NH",
+          "score": 33,
           "label": "Marginal",
-          "drive": 95,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:14",
-          "lat": 43.9209,
-          "lon": -70.5806
+          "drive": 46,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:18",
+          "lat": 43.469,
+          "lon": -71.93
         },
         {
-          "id": "intervale",
-          "name": "Intervale Scenic Vista",
-          "place": "Intervale, NH",
-          "score": 37,
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 33,
           "label": "Marginal",
-          "drive": 67,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:16",
-          "lat": 44.0756,
-          "lon": -71.1396
+          "drive": 94,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:13",
+          "lat": 43.06,
+          "lon": -70.698
         },
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 37,
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 33,
           "label": "Marginal",
-          "drive": 106,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:14",
-          "lat": 43.563,
-          "lon": -70.365
+          "drive": 80,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:18",
+          "lat": 43.385,
+          "lon": -71.857
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:24 PM. Best bet: Mount Ascutney Summit, 37, Marginal. horizon open. 1 hour 51 minutes away. Then Mount Major Summit 36, and Wolfeboro Town Docks 36.\n\nSunrise tomorrow at 6:52 AM. Best bet: The Rocks, 72, Strong. cirrus overhead. 1 hour 1 minutes away. Then Mount Moosilauke Summit 71, and Mount Washington Summit 69.",
+  "text": "Sunset tomorrow night at 6:14 PM. Best bet: Scarborough Marsh, 36, Marginal. horizon open. 1 hour 46 minutes away. Then Chatham 34, and Mount Chocorua Summit 34.\n\nSunrise tomorrow at 6:52 AM. Best bet: The Rocks, 89, Go. horizon open, cirrus overhead. 1 hour 1 minutes away. Then Bretton Woods 86, and Mount Washington Summit 84.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
