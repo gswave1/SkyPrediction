@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07T20:35:24.669Z",
+  "generated": "2026-10-07T21:08:13.151Z",
   "drive": 120,
   "events": [
     {
@@ -12,7 +12,7 @@
           "id": "rockygorge",
           "name": "Rocky Gorge",
           "place": "Kancamagus Hwy, NH",
-          "score": 37,
+          "score": 36,
           "label": "Marginal",
           "drive": 62,
           "flags": [
@@ -22,21 +22,6 @@
           "time": "18:17",
           "lat": 44.004,
           "lon": -71.278
-        },
-        {
-          "id": "sebago",
-          "name": "Sebago Lake State Park",
-          "place": "Casco, ME",
-          "score": 37,
-          "label": "Marginal",
-          "drive": 95,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:14",
-          "lat": 43.9209,
-          "lon": -70.5806
         },
         {
           "id": "lowerfalls",
@@ -52,6 +37,21 @@
           "time": "18:17",
           "lat": 43.9964,
           "lon": -71.2336
+        },
+        {
+          "id": "kancgraham",
+          "name": "C.L. Graham Wangan Overlook",
+          "place": "Kancamagus Hwy, NH",
+          "score": 34,
+          "label": "Marginal",
+          "drive": 78,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:17",
+          "lat": 44.0069,
+          "lon": -71.3608
         }
       ]
     },
@@ -68,9 +68,7 @@
           "score": 38,
           "label": "Marginal",
           "drive": 110,
-          "flags": [
-            "horizon open"
-          ],
+          "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:49",
           "lat": 42.8151,
@@ -83,9 +81,7 @@
           "score": 32,
           "label": "Marginal",
           "drive": 104,
-          "flags": [
-            "horizon blocked"
-          ],
+          "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:53",
           "lat": 42.8619,
@@ -95,12 +91,10 @@
           "id": "hampton",
           "name": "Hampton Beach",
           "place": "Hampton, NH",
-          "score": 31,
+          "score": 30,
           "label": "Marginal",
           "drive": 90,
-          "flags": [
-            "horizon open"
-          ],
+          "flags": [],
           "why": "Rain at showtime — the gap would have to open fast.",
           "time": "06:49",
           "lat": 42.9081,
@@ -163,6 +157,6 @@
       ]
     }
   ],
-  "text": "Sunset tonight at 6:17 PM. Best bet: Rocky Gorge, 37, Marginal. horizon blocked. 1 hour 2 minutes away. Then Sebago Lake State Park 37, and Lower Falls, Swift River 36.\n\nSunrise tomorrow at 6:49 AM. Best bet: Newburyport Harbor Light, 38, Marginal. horizon open. 1 hour 50 minutes away. Then Pack Monadnock (Miller SP) 32, and Hampton Beach 31.",
+  "text": "Sunset tonight at 6:17 PM. Best bet: Rocky Gorge, 36, Marginal. horizon blocked. 1 hour 2 minutes away. Then Lower Falls, Swift River 36, and C.L. Graham Wangan Overlook 34.\n\nSunrise tomorrow at 6:49 AM. Best bet: Newburyport Harbor Light, 38, Marginal. 1 hour 50 minutes away. Then Pack Monadnock (Miller SP) 32, and Hampton Beach 30.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
