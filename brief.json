@@ -1,47 +1,17 @@
 {
-  "generated": "2026-10-07T00:29:08.813Z",
+  "generated": "2026-10-07T06:59:46.690Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-07",
-      "when": "tomorrow night",
-      "time": "18:14",
+      "when": "tonight",
+      "time": "18:20",
       "top": [
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 36,
-          "label": "Marginal",
-          "drive": 106,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:14",
-          "lat": 43.563,
-          "lon": -70.365
-        },
-        {
-          "id": "chatham",
-          "name": "Chatham",
-          "place": "Chatham, NH",
-          "score": 34,
-          "label": "Marginal",
-          "drive": 95,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:16",
-          "lat": 44.271,
-          "lon": -71.025
-        },
-        {
-          "id": "chocoruasummit",
-          "name": "Mount Chocorua Summit",
-          "place": "Albany, NH",
+          "id": "bog",
+          "name": "Bog Mountain",
+          "place": "Wilmot, NH",
           "score": 34,
           "label": "Marginal",
           "drive": 46,
@@ -49,94 +19,122 @@
             "horizon blocked"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:20",
+          "lat": 43.469,
+          "lon": -71.93
+        },
+        {
+          "id": "major",
+          "name": "Mount Major Summit",
+          "place": "Alton, NH",
+          "score": 34,
+          "label": "Marginal",
+          "drive": 33,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:17",
-          "lat": 43.9541,
-          "lon": -71.2734
+          "lat": 43.5093,
+          "lon": -71.2806
+        },
+        {
+          "id": "belknap",
+          "name": "Belknap Mountain Fire Tower",
+          "place": "Gilford, NH",
+          "score": 34,
+          "label": "Marginal",
+          "drive": 29,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:18",
+          "lat": 43.5178,
+          "lon": -71.3689
         }
       ]
     },
     {
       "ev": "sunrise",
       "day": "2026-10-07",
-      "when": "tomorrow",
-      "time": "06:52",
+      "when": "this morning",
+      "time": "06:51",
       "top": [
         {
-          "id": "therocks",
-          "name": "The Rocks",
-          "place": "Bethlehem, NH",
+          "id": "mtavalon",
+          "name": "Mount Avalon",
+          "place": "Crawford Notch, NH",
+          "score": 90,
+          "label": "Go",
+          "drive": 84,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "06:51",
+          "lat": 44.2064,
+          "lon": -71.4264
+        },
+        {
+          "id": "moosilauke",
+          "name": "Mount Moosilauke Summit",
+          "place": "Benton, NH",
           "score": 89,
           "label": "Go",
-          "drive": 61,
+          "drive": 67,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:52",
-          "lat": 44.283,
-          "lon": -71.735
+          "time": "06:53",
+          "lat": 44.0241,
+          "lon": -71.8314
         },
         {
-          "id": "bretton",
-          "name": "Bretton Woods",
-          "place": "Carroll, NH",
-          "score": 86,
+          "id": "middlesugarloaf",
+          "name": "Middle Sugarloaf",
+          "place": "Bethlehem, NH",
+          "score": 87,
           "label": "Go",
-          "drive": 72,
+          "drive": 71,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
           "time": "06:51",
-          "lat": 44.26,
-          "lon": -71.443
-        },
-        {
-          "id": "mtwashington",
-          "name": "Mount Washington Summit",
-          "place": "Sargent's Purchase, NH",
-          "score": 84,
-          "label": "Go",
-          "drive": 116,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:51",
-          "lat": 44.27,
-          "lon": -71.302
+          "lat": 44.2513,
+          "lon": -71.5171
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-10-08",
-      "when": "Thursday",
-      "time": "18:18",
+      "when": "tomorrow night",
+      "time": "18:14",
       "top": [
         {
-          "id": "bog",
-          "name": "Bog Mountain",
-          "place": "Wilmot, NH",
-          "score": 33,
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 34,
           "label": "Marginal",
-          "drive": 46,
+          "drive": 110,
           "flags": [
             "horizon open"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:18",
-          "lat": 43.469,
-          "lon": -71.93
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:14",
+          "lat": 42.8151,
+          "lon": -70.819
         },
         {
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 33,
+          "score": 32,
           "label": "Marginal",
           "drive": 94,
           "flags": [
@@ -148,23 +146,21 @@
           "lon": -70.698
         },
         {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 33,
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 31,
           "label": "Marginal",
-          "drive": 80,
-          "flags": [
-            "horizon open"
-          ],
+          "drive": 61,
+          "flags": [],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:18",
-          "lat": 43.385,
-          "lon": -71.857
+          "time": "18:15",
+          "lat": 43.3314,
+          "lon": -71.1162
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 6:14 PM. Best bet: Scarborough Marsh, 36, Marginal. horizon open. 1 hour 46 minutes away. Then Chatham 34, and Mount Chocorua Summit 34.\n\nSunrise tomorrow at 6:52 AM. Best bet: The Rocks, 89, Go. horizon open, cirrus overhead. 1 hour 1 minutes away. Then Bretton Woods 86, and Mount Washington Summit 84.",
+  "text": "Sunset tonight at 6:20 PM. Best bet: Bog Mountain, 34, Marginal. horizon blocked. 46 minutes away. Then Mount Major Summit 34, and Belknap Mountain Fire Tower 34.\n\nSunrise this morning at 6:51 AM. Best bet: Mount Avalon, 90, Go. horizon open, cirrus overhead. 1 hour 24 minutes away. Then Mount Moosilauke Summit 89, and Middle Sugarloaf 87.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
