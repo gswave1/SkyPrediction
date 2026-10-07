@@ -1,53 +1,57 @@
 {
-  "generated": "2026-10-07T15:20:44.314Z",
+  "generated": "2026-10-07T20:35:24.669Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-07",
       "when": "tonight",
-      "time": "18:15",
+      "time": "18:17",
       "top": [
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 33,
+          "id": "rockygorge",
+          "name": "Rocky Gorge",
+          "place": "Kancamagus Hwy, NH",
+          "score": 37,
           "label": "Marginal",
-          "drive": 94,
+          "drive": 62,
           "flags": [
-            "horizon open"
+            "horizon blocked"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:15",
-          "lat": 43.06,
-          "lon": -70.698
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:17",
+          "lat": 44.004,
+          "lon": -71.278
         },
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 32,
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 37,
           "label": "Marginal",
-          "drive": 106,
-          "flags": [],
+          "drive": 95,
+          "flags": [
+            "horizon blocked"
+          ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:14",
-          "lat": 43.563,
-          "lon": -70.365
+          "lat": 43.9209,
+          "lon": -70.5806
         },
         {
-          "id": "mtpercival",
-          "name": "Mount Percival",
-          "place": "Sandwich, NH",
-          "score": 30,
+          "id": "lowerfalls",
+          "name": "Lower Falls, Swift River",
+          "place": "Albany, NH",
+          "score": 36,
           "label": "Marginal",
-          "drive": 28,
-          "flags": [],
+          "drive": 57,
+          "flags": [
+            "horizon blocked"
+          ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:18",
-          "lat": 43.8022,
-          "lon": -71.5225
+          "time": "18:17",
+          "lat": 43.9964,
+          "lon": -71.2336
         }
       ]
     },
@@ -58,25 +62,10 @@
       "time": "06:49",
       "top": [
         {
-          "id": "hampton",
-          "name": "Hampton Beach",
-          "place": "Hampton, NH",
-          "score": 37,
-          "label": "Marginal",
-          "drive": 90,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:49",
-          "lat": 42.9081,
-          "lon": -70.81
-        },
-        {
           "id": "newburyportharborlight",
           "name": "Newburyport Harbor Light",
           "place": "Newburyport, MA",
-          "score": 36,
+          "score": 38,
           "label": "Marginal",
           "drive": 110,
           "flags": [
@@ -88,19 +77,34 @@
           "lon": -70.819
         },
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 29,
-          "label": "Skip",
-          "drive": 106,
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 104,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:53",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
+        {
+          "id": "hampton",
+          "name": "Hampton Beach",
+          "place": "Hampton, NH",
+          "score": 31,
+          "label": "Marginal",
+          "drive": 90,
           "flags": [
             "horizon open"
           ],
           "why": "Rain at showtime — the gap would have to open fast.",
-          "time": "06:48",
-          "lat": 43.563,
-          "lon": -70.365
+          "time": "06:49",
+          "lat": 42.9081,
+          "lon": -70.81
         }
       ]
     },
@@ -108,56 +112,57 @@
       "ev": "sunset",
       "day": "2026-10-08",
       "when": "tomorrow night",
-      "time": "18:18",
+      "time": "18:13",
       "top": [
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 104,
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 68,
+          "label": "Strong",
+          "drive": 94,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "cirrus overhead"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:18",
-          "lat": 42.8619,
-          "lon": -71.8788
-        },
-        {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 61,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:15",
-          "lat": 43.3314,
-          "lon": -71.1162
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "18:13",
+          "lat": 43.06,
+          "lon": -70.698
         },
         {
           "id": "agamenticus",
           "name": "Mount Agamenticus",
           "place": "York, ME",
-          "score": 32,
-          "label": "Marginal",
+          "score": 65,
+          "label": "Strong",
           "drive": 94,
           "flags": [
-            "horizon open"
+            "cirrus overhead"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated.",
           "time": "18:13",
           "lat": 43.2232,
           "lon": -70.6919
+        },
+        {
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 63,
+          "label": "Strong",
+          "drive": 61,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 15% high cloud. Open gap at the horizon. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "18:15",
+          "lat": 43.3314,
+          "lon": -71.1162
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:15 PM. Best bet: Kittery Point, 33, Marginal. horizon open. 1 hour 34 minutes away. Then Scarborough Marsh 32, and Mount Percival 30.\n\nSunrise tomorrow at 6:49 AM. Best bet: Hampton Beach, 37, Marginal. horizon open. 1 hour 30 minutes away. Then Newburyport Harbor Light 36.",
+  "text": "Sunset tonight at 6:17 PM. Best bet: Rocky Gorge, 37, Marginal. horizon blocked. 1 hour 2 minutes away. Then Sebago Lake State Park 37, and Lower Falls, Swift River 36.\n\nSunrise tomorrow at 6:49 AM. Best bet: Newburyport Harbor Light, 38, Marginal. horizon open. 1 hour 50 minutes away. Then Pack Monadnock (Miller SP) 32, and Hampton Beach 31.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
