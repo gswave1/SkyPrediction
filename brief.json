@@ -1,131 +1,144 @@
 {
-  "generated": "2026-10-08T01:37:44.889Z",
+  "generated": "2026-10-08T15:23:04.997Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-08",
-      "when": "tomorrow night",
-      "time": "18:13",
+      "when": "tonight",
+      "time": "18:16",
       "top": [
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 38,
+          "id": "belknap",
+          "name": "Belknap Mountain Fire Tower",
+          "place": "Gilford, NH",
+          "score": 40,
           "label": "Marginal",
-          "drive": 94,
+          "drive": 29,
           "flags": [
             "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "18:13",
-          "lat": 43.06,
-          "lon": -70.698
+          "time": "18:16",
+          "lat": 43.5178,
+          "lon": -71.3689
         },
         {
-          "id": "newburyportharborlight",
-          "name": "Newburyport Harbor Light",
-          "place": "Newburyport, MA",
-          "score": 33,
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 38,
           "label": "Marginal",
-          "drive": 110,
+          "drive": 95,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "18:12",
+          "lat": 43.9209,
+          "lon": -70.5806
+        },
+        {
+          "id": "meredith",
+          "name": "Meredith Bay Docks",
+          "place": "Meredith, NH",
+          "score": 36,
+          "label": "Marginal",
+          "drive": 2,
           "flags": [
             "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "18:14",
-          "lat": 42.8151,
-          "lon": -70.819
-        },
-        {
-          "id": "hampton",
-          "name": "Hampton Beach",
-          "place": "Hampton, NH",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 90,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated. And the sun sets outside this spot's open arc.",
-          "time": "18:14",
-          "lat": 42.9081,
-          "lon": -70.81
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:16",
+          "lat": 43.656,
+          "lon": -71.498
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-08",
+      "day": "2026-10-09",
       "when": "tomorrow",
-      "time": "06:49",
+      "time": "06:50",
       "top": [
         {
-          "id": "newburyportharborlight",
-          "name": "Newburyport Harbor Light",
-          "place": "Newburyport, MA",
-          "score": 34,
-          "label": "Marginal",
-          "drive": 110,
+          "id": "odiorne",
+          "name": "Odiorne Point",
+          "place": "Rye, NH",
+          "score": 47,
+          "label": "Worth it",
+          "drive": 86,
           "flags": [
-            "horizon blocked"
+            "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:49",
-          "lat": 42.8151,
-          "lon": -70.819
+          "time": "06:50",
+          "lat": 43.0431,
+          "lon": -70.7161
         },
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 31,
-          "label": "Marginal",
-          "drive": 104,
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 46,
+          "label": "Worth it",
+          "drive": 94,
           "flags": [
-            "horizon blocked"
+            "horizon open"
           ],
           "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "06:53",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "time": "06:50",
+          "lat": 43.06,
+          "lon": -70.698
         },
         {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 24,
-          "label": "Skip",
-          "drive": 70,
+          "id": "newcastle",
+          "name": "New Castle / Portsmouth Harbor",
+          "place": "New Castle, NH",
+          "score": 46,
+          "label": "Worth it",
+          "drive": 87,
           "flags": [
-            "horizon blocked"
+            "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "06:54",
-          "lat": 43.321,
-          "lon": -72.084
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "time": "06:50",
+          "lat": 43.069,
+          "lon": -70.713
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-10-09",
-      "when": "Friday",
-      "time": "18:16",
+      "when": "tomorrow night",
+      "time": "18:17",
       "top": [
         {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 32,
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 39,
           "label": "Marginal",
-          "drive": 80,
+          "drive": 104,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:17",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
+        {
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 95,
           "flags": [],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:16",
-          "lat": 43.385,
-          "lon": -71.857
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:11",
+          "lat": 43.9209,
+          "lon": -70.5806
         },
         {
           "id": "kitterypoint",
@@ -141,25 +154,10 @@
           "time": "18:12",
           "lat": 43.06,
           "lon": -70.698
-        },
-        {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 30,
-          "label": "Marginal",
-          "drive": 104,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:17",
-          "lat": 42.8619,
-          "lon": -71.8788
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 6:13 PM. Best bet: Kittery Point, 38, Marginal. horizon open. 1 hour 34 minutes away. Then Newburyport Harbor Light 33, and Hampton Beach 33.\n\nSunrise tomorrow at 6:49 AM. Best bet: Newburyport Harbor Light, 34, Marginal. horizon blocked. 1 hour 50 minutes away. Then Pack Monadnock (Miller SP) 31.",
+  "text": "Sunset tonight at 6:16 PM. Best bet: Belknap Mountain Fire Tower, 40, Marginal. horizon open. 29 minutes away. Then Sebago Lake State Park 38, and Meredith Bay Docks 36.\n\nSunrise tomorrow at 6:50 AM. Best bet: Odiorne Point, 47, Worth it. horizon open. 1 hour 26 minutes away. Then Kittery Point 46, and New Castle / Portsmouth Harbor 46.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
