@@ -1,57 +1,57 @@
 {
-  "generated": "2026-10-07T21:08:13.151Z",
+  "generated": "2026-10-08T01:37:44.889Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
-      "day": "2026-10-07",
-      "when": "tonight",
-      "time": "18:17",
+      "day": "2026-10-08",
+      "when": "tomorrow night",
+      "time": "18:13",
       "top": [
         {
-          "id": "rockygorge",
-          "name": "Rocky Gorge",
-          "place": "Kancamagus Hwy, NH",
-          "score": 36,
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 38,
           "label": "Marginal",
-          "drive": 62,
+          "drive": 94,
           "flags": [
-            "horizon blocked"
+            "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:17",
-          "lat": 44.004,
-          "lon": -71.278
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "18:13",
+          "lat": 43.06,
+          "lon": -70.698
         },
         {
-          "id": "lowerfalls",
-          "name": "Lower Falls, Swift River",
-          "place": "Albany, NH",
-          "score": 36,
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 33,
           "label": "Marginal",
-          "drive": 57,
+          "drive": 110,
           "flags": [
-            "horizon blocked"
+            "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:17",
-          "lat": 43.9964,
-          "lon": -71.2336
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:14",
+          "lat": 42.8151,
+          "lon": -70.819
         },
         {
-          "id": "kancgraham",
-          "name": "C.L. Graham Wangan Overlook",
-          "place": "Kancamagus Hwy, NH",
-          "score": 34,
+          "id": "hampton",
+          "name": "Hampton Beach",
+          "place": "Hampton, NH",
+          "score": 33,
           "label": "Marginal",
-          "drive": 78,
+          "drive": 90,
           "flags": [
-            "horizon blocked"
+            "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:17",
-          "lat": 44.0069,
-          "lon": -71.3608
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated. And the sun sets outside this spot's open arc.",
+          "time": "18:14",
+          "lat": 42.9081,
+          "lon": -70.81
         }
       ]
     },
@@ -65,10 +65,12 @@
           "id": "newburyportharborlight",
           "name": "Newburyport Harbor Light",
           "place": "Newburyport, MA",
-          "score": 38,
+          "score": 34,
           "label": "Marginal",
           "drive": 110,
-          "flags": [],
+          "flags": [
+            "horizon blocked"
+          ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:49",
           "lat": 42.8151,
@@ -78,85 +80,86 @@
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
           "place": "Peterborough, NH",
-          "score": 32,
+          "score": 31,
           "label": "Marginal",
           "drive": 104,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
           "time": "06:53",
           "lat": 42.8619,
           "lon": -71.8788
         },
         {
-          "id": "hampton",
-          "name": "Hampton Beach",
-          "place": "Hampton, NH",
-          "score": 30,
-          "label": "Marginal",
-          "drive": 90,
-          "flags": [],
-          "why": "Rain at showtime — the gap would have to open fast.",
-          "time": "06:49",
-          "lat": 42.9081,
-          "lon": -70.81
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 24,
+          "label": "Skip",
+          "drive": 70,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "06:54",
+          "lat": 43.321,
+          "lon": -72.084
         }
       ]
     },
     {
       "ev": "sunset",
-      "day": "2026-10-08",
-      "when": "tomorrow night",
-      "time": "18:13",
+      "day": "2026-10-09",
+      "when": "Friday",
+      "time": "18:16",
       "top": [
+        {
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 80,
+          "flags": [],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:16",
+          "lat": 43.385,
+          "lon": -71.857
+        },
         {
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 68,
-          "label": "Strong",
+          "score": 31,
+          "label": "Marginal",
           "drive": 94,
           "flags": [
-            "horizon open",
-            "cirrus overhead"
+            "horizon open"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "18:13",
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:12",
           "lat": 43.06,
           "lon": -70.698
         },
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 65,
-          "label": "Strong",
-          "drive": 94,
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 30,
+          "label": "Marginal",
+          "drive": 104,
           "flags": [
-            "cirrus overhead"
+            "horizon open"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "18:13",
-          "lat": 43.2232,
-          "lon": -70.6919
-        },
-        {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 63,
-          "label": "Strong",
-          "drive": 61,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 15% high cloud. Open gap at the horizon. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "18:15",
-          "lat": 43.3314,
-          "lon": -71.1162
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:17",
+          "lat": 42.8619,
+          "lon": -71.8788
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:17 PM. Best bet: Rocky Gorge, 36, Marginal. horizon blocked. 1 hour 2 minutes away. Then Lower Falls, Swift River 36, and C.L. Graham Wangan Overlook 34.\n\nSunrise tomorrow at 6:49 AM. Best bet: Newburyport Harbor Light, 38, Marginal. 1 hour 50 minutes away. Then Pack Monadnock (Miller SP) 32, and Hampton Beach 30.",
+  "text": "Sunset tomorrow night at 6:13 PM. Best bet: Kittery Point, 38, Marginal. horizon open. 1 hour 34 minutes away. Then Newburyport Harbor Light 33, and Hampton Beach 33.\n\nSunrise tomorrow at 6:49 AM. Best bet: Newburyport Harbor Light, 34, Marginal. horizon blocked. 1 hour 50 minutes away. Then Pack Monadnock (Miller SP) 31.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
