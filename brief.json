@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T15:05:33.455Z",
+  "generated": "2026-10-09T20:42:44.771Z",
   "drive": 120,
   "events": [
     {
@@ -8,36 +8,6 @@
       "when": "tonight",
       "time": "18:16",
       "top": [
-        {
-          "id": "bog",
-          "name": "Bog Mountain",
-          "place": "Wilmot, NH",
-          "score": 35,
-          "label": "Marginal",
-          "drive": 46,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:16",
-          "lat": 43.469,
-          "lon": -71.93
-        },
-        {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 34,
-          "label": "Marginal",
-          "drive": 80,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:16",
-          "lat": 43.385,
-          "lon": -71.857
-        },
         {
           "id": "cardigan",
           "name": "Mount Cardigan Summit",
@@ -50,6 +20,36 @@
           "time": "18:16",
           "lat": 43.6495,
           "lon": -71.9144
+        },
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 104,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:17",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
+        {
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 94,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:12",
+          "lat": 43.2232,
+          "lon": -70.6919
         }
       ]
     },
@@ -57,52 +57,52 @@
       "ev": "sunrise",
       "day": "2026-10-10",
       "when": "tomorrow",
-      "time": "06:56",
+      "time": "06:51",
       "top": [
-        {
-          "id": "moosilauke",
-          "name": "Mount Moosilauke Summit",
-          "place": "Benton, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 67,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:56",
-          "lat": 44.0241,
-          "lon": -71.8314
-        },
         {
           "id": "newburyportharborlight",
           "name": "Newburyport Harbor Light",
           "place": "Newburyport, MA",
-          "score": 32,
+          "score": 42,
           "label": "Marginal",
           "drive": 110,
           "flags": [
             "horizon open"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:51",
           "lat": 42.8151,
           "lon": -70.819
         },
         {
-          "id": "weirs",
-          "name": "Weirs Beach Boardwalk",
-          "place": "Laconia, NH",
-          "score": 32,
+          "id": "hampton",
+          "name": "Hampton Beach",
+          "place": "Hampton, NH",
+          "score": 39,
           "label": "Marginal",
-          "drive": 11,
+          "drive": 90,
           "flags": [
             "horizon open"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:54",
-          "lat": 43.608,
-          "lon": -71.459
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:51",
+          "lat": 42.9081,
+          "lon": -70.81
+        },
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 104,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:55",
+          "lat": 42.8619,
+          "lon": -71.8788
         }
       ]
     },
@@ -110,59 +110,58 @@
       "ev": "sunset",
       "day": "2026-10-10",
       "when": "tomorrow night",
-      "time": "18:15",
+      "time": "18:13",
       "top": [
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 49,
+          "id": "westrattle",
+          "name": "West Rattlesnake",
+          "place": "Holderness, NH",
+          "score": 58,
           "label": "Worth it",
-          "drive": 104,
+          "drive": 22,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
-          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
-          "time": "18:15",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:13",
+          "lat": 43.785,
+          "lon": -71.545
         },
         {
-          "id": "ascutney",
-          "name": "Mount Ascutney Summit",
-          "place": "Windsor, VT",
-          "score": 49,
+          "id": "squamnorth",
+          "name": "Squam Lake, north shore",
+          "place": "Holderness, NH",
+          "score": 57,
           "label": "Worth it",
-          "drive": 111,
+          "drive": 19,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
-          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
-          "time": "18:17",
-          "lat": 43.4445,
-          "lon": -72.4537
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:13",
+          "lat": 43.763,
+          "lon": -71.558
         },
         {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 47,
+          "id": "centersandwich",
+          "name": "Center Sandwich",
+          "place": "Sandwich, NH",
+          "score": 53,
           "label": "Worth it",
-          "drive": 70,
+          "drive": 18,
           "flags": [
-            "horizon open",
-            "cirrus overhead"
+            "horizon open"
           ],
-          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
-          "time": "18:15",
-          "lat": 43.321,
-          "lon": -72.084
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:13",
+          "lat": 43.782,
+          "lon": -71.473
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:16 PM. Best bet: Bog Mountain, 35, Marginal. horizon open. 46 minutes away. Then Mount Kearsarge Summit 34, and Mount Cardigan Summit 34.\n\nSunrise tomorrow at 6:56 AM. Best bet: Mount Moosilauke Summit, 32, Marginal. horizon open. 1 hour 7 minutes away. Then Newburyport Harbor Light 32, and Weirs Beach Boardwalk 32.",
+  "text": "Sunset tonight at 6:16 PM. Best bet: Mount Cardigan Summit, 34, Marginal. 57 minutes away. Then Pack Monadnock (Miller SP) 32, and Mount Agamenticus 32.\n\nSunrise tomorrow at 6:51 AM. Best bet: Newburyport Harbor Light, 42, Marginal. horizon open. 1 hour 50 minutes away. Then Hampton Beach 39, and Pack Monadnock (Miller SP) 38.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
