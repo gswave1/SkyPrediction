@@ -1,107 +1,7 @@
 {
-  "generated": "2026-10-08T21:09:32.078Z",
+  "generated": "2026-10-09T01:50:14.990Z",
   "drive": 120,
   "events": [
-    {
-      "ev": "sunset",
-      "day": "2026-10-08",
-      "when": "tonight",
-      "time": "18:13",
-      "top": [
-        {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 38,
-          "label": "Marginal",
-          "drive": 94,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:13",
-          "lat": 43.2232,
-          "lon": -70.6919
-        },
-        {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 37,
-          "label": "Marginal",
-          "drive": 94,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:13",
-          "lat": 43.06,
-          "lon": -70.698
-        },
-        {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 61,
-          "flags": [],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:15",
-          "lat": 43.3314,
-          "lon": -71.1162
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-10-09",
-      "when": "tomorrow",
-      "time": "06:50",
-      "top": [
-        {
-          "id": "newcastle",
-          "name": "New Castle / Portsmouth Harbor",
-          "place": "New Castle, NH",
-          "score": 42,
-          "label": "Marginal",
-          "drive": 87,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:50",
-          "lat": 43.069,
-          "lon": -70.713
-        },
-        {
-          "id": "hampton",
-          "name": "Hampton Beach",
-          "place": "Hampton, NH",
-          "score": 42,
-          "label": "Marginal",
-          "drive": 90,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:50",
-          "lat": 42.9081,
-          "lon": -70.81
-        },
-        {
-          "id": "ryeharbor",
-          "name": "Rye Harbor State Park",
-          "place": "Rye, NH",
-          "score": 42,
-          "label": "Marginal",
-          "drive": 91,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:50",
-          "lat": 43.0017,
-          "lon": -70.7446
-        }
-      ]
-    },
     {
       "ev": "sunset",
       "day": "2026-10-09",
@@ -112,44 +12,148 @@
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
           "place": "Peterborough, NH",
-          "score": 31,
+          "score": 34,
           "label": "Marginal",
           "drive": 104,
           "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "18:17",
           "lat": 42.8619,
           "lon": -71.8788
         },
         {
-          "id": "mtwashington",
-          "name": "Mount Washington Summit",
-          "place": "Sargent's Purchase, NH",
-          "score": 31,
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 30,
           "label": "Marginal",
-          "drive": 116,
+          "drive": 94,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:12",
+          "lat": 43.06,
+          "lon": -70.698
+        },
+        {
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 26,
+          "label": "Skip",
+          "drive": 94,
           "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "18:13",
-          "lat": 44.27,
-          "lon": -71.302
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:12",
+          "lat": 43.2232,
+          "lon": -70.6919
+        }
+      ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-10-09",
+      "when": "tomorrow",
+      "time": "06:53",
+      "top": [
+        {
+          "id": "chocoruasummit",
+          "name": "Mount Chocorua Summit",
+          "place": "Albany, NH",
+          "score": 40,
+          "label": "Marginal",
+          "drive": 46,
+          "flags": [],
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "time": "06:53",
+          "lat": 43.9541,
+          "lon": -71.2734
+        },
+        {
+          "id": "fossmtn",
+          "name": "Foss Mountain",
+          "place": "Eaton, NH",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 64,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:52",
+          "lat": 43.8771,
+          "lon": -71.0348
+        },
+        {
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
+          "score": 37,
+          "label": "Marginal",
+          "drive": 111,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:57",
+          "lat": 43.4445,
+          "lon": -72.4537
+        }
+      ]
+    },
+    {
+      "ev": "sunset",
+      "day": "2026-10-10",
+      "when": "Saturday",
+      "time": "18:17",
+      "top": [
+        {
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
+          "score": 70,
+          "label": "Strong",
+          "drive": 111,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:17",
+          "lat": 43.4445,
+          "lon": -72.4537
         },
         {
           "id": "bog",
           "name": "Bog Mountain",
           "place": "Wilmot, NH",
-          "score": 30,
-          "label": "Skip",
+          "score": 59,
+          "label": "Worth it",
           "drive": 46,
-          "flags": [],
+          "flags": [
+            "horizon open"
+          ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:16",
+          "time": "18:15",
           "lat": 43.469,
           "lon": -71.93
+        },
+        {
+          "id": "jennefarm",
+          "name": "Jenne Farm",
+          "place": "Reading, VT",
+          "score": 59,
+          "label": "Worth it",
+          "drive": 111,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:17",
+          "lat": 43.5245,
+          "lon": -72.5596
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:13 PM. Best bet: Mount Agamenticus, 38, Marginal. horizon open. 1 hour 34 minutes away. Then Kittery Point 37, and Blue Job Mountain Fire Tower 33.\n\nSunrise tomorrow at 6:50 AM. Best bet: New Castle / Portsmouth Harbor, 42, Marginal. 1 hour 27 minutes away. Then Hampton Beach 42, and Rye Harbor State Park 42.",
+  "text": "Sunset tomorrow night at 6:17 PM. Best bet: Pack Monadnock (Miller SP), 34, Marginal. 1 hour 44 minutes away. Then Kittery Point 30.\n\nSunrise tomorrow at 6:53 AM. Best bet: Mount Chocorua Summit, 40, Marginal. 46 minutes away. Then Foss Mountain 38, and Mount Ascutney Summit 37.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
