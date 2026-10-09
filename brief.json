@@ -1,159 +1,168 @@
 {
-  "generated": "2026-10-09T01:50:14.990Z",
+  "generated": "2026-10-09T15:05:33.455Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-09",
-      "when": "tomorrow night",
-      "time": "18:17",
+      "when": "tonight",
+      "time": "18:16",
       "top": [
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 34,
+          "id": "bog",
+          "name": "Bog Mountain",
+          "place": "Wilmot, NH",
+          "score": 35,
           "label": "Marginal",
-          "drive": 104,
-          "flags": [],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:17",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "drive": 46,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:16",
+          "lat": 43.469,
+          "lon": -71.93
         },
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 30,
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 34,
           "label": "Marginal",
-          "drive": 94,
+          "drive": 80,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:12",
-          "lat": 43.06,
-          "lon": -70.698
+          "time": "18:16",
+          "lat": 43.385,
+          "lon": -71.857
         },
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 26,
-          "label": "Skip",
-          "drive": 94,
+          "id": "cardigan",
+          "name": "Mount Cardigan Summit",
+          "place": "Orange, NH",
+          "score": 34,
+          "label": "Marginal",
+          "drive": 57,
           "flags": [],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:12",
-          "lat": 43.2232,
-          "lon": -70.6919
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:16",
+          "lat": 43.6495,
+          "lon": -71.9144
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-09",
+      "day": "2026-10-10",
       "when": "tomorrow",
-      "time": "06:53",
+      "time": "06:56",
       "top": [
         {
-          "id": "chocoruasummit",
-          "name": "Mount Chocorua Summit",
-          "place": "Albany, NH",
-          "score": 40,
+          "id": "moosilauke",
+          "name": "Mount Moosilauke Summit",
+          "place": "Benton, NH",
+          "score": 32,
           "label": "Marginal",
-          "drive": 46,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "06:53",
-          "lat": 43.9541,
-          "lon": -71.2734
-        },
-        {
-          "id": "fossmtn",
-          "name": "Foss Mountain",
-          "place": "Eaton, NH",
-          "score": 38,
-          "label": "Marginal",
-          "drive": 64,
+          "drive": 67,
           "flags": [
             "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:52",
-          "lat": 43.8771,
-          "lon": -71.0348
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "06:56",
+          "lat": 44.0241,
+          "lon": -71.8314
         },
         {
-          "id": "ascutney",
-          "name": "Mount Ascutney Summit",
-          "place": "Windsor, VT",
-          "score": 37,
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 32,
           "label": "Marginal",
-          "drive": 111,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:57",
-          "lat": 43.4445,
-          "lon": -72.4537
+          "drive": 110,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "06:51",
+          "lat": 42.8151,
+          "lon": -70.819
+        },
+        {
+          "id": "weirs",
+          "name": "Weirs Beach Boardwalk",
+          "place": "Laconia, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 11,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "06:54",
+          "lat": 43.608,
+          "lon": -71.459
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-10-10",
-      "when": "Saturday",
-      "time": "18:17",
+      "when": "tomorrow night",
+      "time": "18:15",
       "top": [
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 49,
+          "label": "Worth it",
+          "drive": 104,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
+          "time": "18:15",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
         {
           "id": "ascutney",
           "name": "Mount Ascutney Summit",
           "place": "Windsor, VT",
-          "score": 70,
-          "label": "Strong",
+          "score": 49,
+          "label": "Worth it",
           "drive": 111,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
           "time": "18:17",
           "lat": 43.4445,
           "lon": -72.4537
         },
         {
-          "id": "bog",
-          "name": "Bog Mountain",
-          "place": "Wilmot, NH",
-          "score": 59,
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 47,
           "label": "Worth it",
-          "drive": 46,
+          "drive": 70,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
           "time": "18:15",
-          "lat": 43.469,
-          "lon": -71.93
-        },
-        {
-          "id": "jennefarm",
-          "name": "Jenne Farm",
-          "place": "Reading, VT",
-          "score": 59,
-          "label": "Worth it",
-          "drive": 111,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "18:17",
-          "lat": 43.5245,
-          "lon": -72.5596
+          "lat": 43.321,
+          "lon": -72.084
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 6:17 PM. Best bet: Pack Monadnock (Miller SP), 34, Marginal. 1 hour 44 minutes away. Then Kittery Point 30.\n\nSunrise tomorrow at 6:53 AM. Best bet: Mount Chocorua Summit, 40, Marginal. 46 minutes away. Then Foss Mountain 38, and Mount Ascutney Summit 37.",
+  "text": "Sunset tonight at 6:16 PM. Best bet: Bog Mountain, 35, Marginal. horizon open. 46 minutes away. Then Mount Kearsarge Summit 34, and Mount Cardigan Summit 34.\n\nSunrise tomorrow at 6:56 AM. Best bet: Mount Moosilauke Summit, 32, Marginal. horizon open. 1 hour 7 minutes away. Then Newburyport Harbor Light 32, and Weirs Beach Boardwalk 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
