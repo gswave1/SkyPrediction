@@ -1,34 +1,18 @@
 {
-  "generated": "2026-10-10T00:35:11.353Z",
+  "generated": "2026-10-10T06:48:42.590Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-10",
-      "when": "tomorrow night",
+      "when": "tonight",
       "time": "18:13",
       "top": [
         {
-          "id": "westrattle",
-          "name": "West Rattlesnake",
-          "place": "Holderness, NH",
-          "score": 63,
-          "label": "Strong",
-          "drive": 22,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:13",
-          "lat": 43.785,
-          "lon": -71.545
-        },
-        {
-          "id": "squamnorth",
-          "name": "Squam Lake, north shore",
-          "place": "Holderness, NH",
-          "score": 62,
+          "id": "ashland",
+          "name": "Ashland",
+          "place": "Ashland, NH",
+          "score": 64,
           "label": "Strong",
           "drive": 19,
           "flags": [
@@ -37,53 +21,54 @@
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:13",
-          "lat": 43.763,
-          "lon": -71.558
+          "lat": 43.697,
+          "lon": -71.63
         },
         {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 58,
-          "label": "Worth it",
-          "drive": 70,
+          "id": "meredith",
+          "name": "Meredith Bay Docks",
+          "place": "Meredith, NH",
+          "score": 63,
+          "label": "Strong",
+          "drive": 2,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
-          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
-          "time": "18:15",
-          "lat": 43.321,
-          "lon": -72.084
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:13",
+          "lat": 43.656,
+          "lon": -71.498
+        },
+        {
+          "id": "squam",
+          "name": "Squam Lake",
+          "place": "Holderness, NH",
+          "score": 63,
+          "label": "Strong",
+          "drive": 13,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:13",
+          "lat": 43.731,
+          "lon": -71.586
         }
       ]
     },
     {
       "ev": "sunrise",
       "day": "2026-10-10",
-      "when": "tomorrow",
-      "time": "06:51",
+      "when": "this morning",
+      "time": "06:55",
       "top": [
-        {
-          "id": "newburyportharborlight",
-          "name": "Newburyport Harbor Light",
-          "place": "Newburyport, MA",
-          "score": 41,
-          "label": "Marginal",
-          "drive": 110,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:51",
-          "lat": 42.8151,
-          "lon": -70.819
-        },
         {
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
           "place": "Peterborough, NH",
-          "score": 39,
+          "score": 40,
           "label": "Marginal",
           "drive": 104,
           "flags": [
@@ -95,16 +80,31 @@
           "lon": -71.8788
         },
         {
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 37,
+          "label": "Marginal",
+          "drive": 110,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "06:51",
+          "lat": 42.8151,
+          "lon": -70.819
+        },
+        {
           "id": "hampton",
           "name": "Hampton Beach",
           "place": "Hampton, NH",
-          "score": 38,
+          "score": 35,
           "label": "Marginal",
           "drive": 90,
           "flags": [
             "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "06:51",
           "lat": 42.9081,
           "lon": -70.81
@@ -114,15 +114,15 @@
     {
       "ev": "sunset",
       "day": "2026-10-11",
-      "when": "Sunday",
+      "when": "tomorrow night",
       "time": "18:12",
       "top": [
         {
           "id": "jobspond",
           "name": "Jobs Pond",
           "place": "Westmore, VT",
-          "score": 23,
-          "label": "Skip",
+          "score": 46,
+          "label": "Worth it",
           "drive": 118,
           "flags": [
             "horizon blocked",
@@ -134,40 +134,40 @@
           "lon": -71.9534
         },
         {
-          "id": "pleasantmtn",
-          "name": "Pleasant Mountain",
-          "place": "Bridgton, ME",
-          "score": 21,
-          "label": "Skip",
-          "drive": 90,
+          "id": "willoughby",
+          "name": "Lake Willoughby",
+          "place": "Westmore, VT",
+          "score": 43,
+          "label": "Marginal",
+          "drive": 112,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:08",
-          "lat": 44.027,
-          "lon": -70.8223
+          "time": "18:12",
+          "lat": 44.735,
+          "lon": -72.047
         },
         {
-          "id": "sebago",
-          "name": "Sebago Lake State Park",
-          "place": "Casco, ME",
-          "score": 21,
-          "label": "Skip",
-          "drive": 95,
+          "id": "willoughbysouth",
+          "name": "Lake Willoughby, south end",
+          "place": "Westmore, VT",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 110,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:07",
-          "lat": 43.9209,
-          "lon": -70.5806
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:12",
+          "lat": 44.717,
+          "lon": -72.031
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 6:13 PM. Best bet: West Rattlesnake, 63, Strong. horizon open, cirrus overhead. 22 minutes away. Then Squam Lake, north shore 62, and Mount Sunapee Summit 58.\n\nSunrise tomorrow at 6:51 AM. Best bet: Newburyport Harbor Light, 41, Marginal. horizon open. 1 hour 50 minutes away. Then Pack Monadnock (Miller SP) 39, and Hampton Beach 38.",
+  "text": "Sunset tonight at 6:13 PM. Best bet: Ashland, 64, Strong. horizon open, cirrus overhead. 19 minutes away. Then Meredith Bay Docks 63, and Squam Lake 63.\n\nSunrise this morning at 6:55 AM. Best bet: Pack Monadnock (Miller SP), 40, Marginal. horizon open. 1 hour 44 minutes away. Then Newburyport Harbor Light 37, and Hampton Beach 35.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
