@@ -1,113 +1,114 @@
 {
-  "generated": "2026-10-10T06:48:42.590Z",
+  "generated": "2026-10-10T14:20:31.959Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-10",
       "when": "tonight",
-      "time": "18:13",
+      "time": "18:11",
       "top": [
         {
-          "id": "ashland",
-          "name": "Ashland",
-          "place": "Ashland, NH",
-          "score": 64,
-          "label": "Strong",
-          "drive": 19,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:13",
-          "lat": 43.697,
-          "lon": -71.63
-        },
-        {
-          "id": "meredith",
-          "name": "Meredith Bay Docks",
-          "place": "Meredith, NH",
+          "id": "eaton",
+          "name": "Crystal Lake",
+          "place": "Eaton, NH",
           "score": 63,
           "label": "Strong",
-          "drive": 2,
+          "drive": 55,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:13",
-          "lat": 43.656,
-          "lon": -71.498
+          "time": "18:11",
+          "lat": 43.914,
+          "lon": -71.074
         },
         {
-          "id": "squam",
-          "name": "Squam Lake",
-          "place": "Holderness, NH",
+          "id": "fossmtn",
+          "name": "Foss Mountain",
+          "place": "Eaton, NH",
           "score": 63,
           "label": "Strong",
-          "drive": 13,
+          "drive": 64,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:13",
-          "lat": 43.731,
-          "lon": -71.586
+          "time": "18:11",
+          "lat": 43.8771,
+          "lon": -71.0348
+        },
+        {
+          "id": "greenmtn",
+          "name": "Green Mountain Fire Tower",
+          "place": "Effingham, NH",
+          "score": 62,
+          "label": "Strong",
+          "drive": 55,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:11",
+          "lat": 43.7675,
+          "lon": -71.0369
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-10",
-      "when": "this morning",
-      "time": "06:55",
+      "day": "2026-10-11",
+      "when": "tomorrow",
+      "time": "06:57",
       "top": [
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 40,
-          "label": "Marginal",
-          "drive": 104,
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 82,
+          "label": "Go",
+          "drive": 80,
           "flags": [
-            "horizon open"
+            "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:55",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "06:57",
+          "lat": 43.385,
+          "lon": -71.857
         },
         {
-          "id": "newburyportharborlight",
-          "name": "Newburyport Harbor Light",
-          "place": "Newburyport, MA",
-          "score": 37,
-          "label": "Marginal",
-          "drive": 110,
+          "id": "bog",
+          "name": "Bog Mountain",
+          "place": "Wilmot, NH",
+          "score": 72,
+          "label": "Strong",
+          "drive": 46,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "cirrus overhead"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:51",
-          "lat": 42.8151,
-          "lon": -70.819
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun rises outside this spot's open arc.",
+          "time": "06:57",
+          "lat": 43.469,
+          "lon": -71.93
         },
         {
-          "id": "hampton",
-          "name": "Hampton Beach",
-          "place": "Hampton, NH",
-          "score": 35,
-          "label": "Marginal",
-          "drive": 90,
+          "id": "ryeharbor",
+          "name": "Rye Harbor State Park",
+          "place": "Rye, NH",
+          "score": 64,
+          "label": "Strong",
+          "drive": 91,
           "flags": [
-            "horizon open"
+            "cirrus overhead"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:51",
-          "lat": 42.9081,
-          "lon": -70.81
+          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
+          "time": "06:52",
+          "lat": 43.0017,
+          "lon": -70.7446
         }
       ]
     },
@@ -115,59 +116,59 @@
       "ev": "sunset",
       "day": "2026-10-11",
       "when": "tomorrow night",
-      "time": "18:12",
+      "time": "18:09",
       "top": [
         {
-          "id": "jobspond",
-          "name": "Jobs Pond",
-          "place": "Westmore, VT",
-          "score": 46,
-          "label": "Worth it",
-          "drive": 118,
+          "id": "chatham",
+          "name": "Chatham",
+          "place": "Chatham, NH",
+          "score": 42,
+          "label": "Marginal",
+          "drive": 95,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:12",
-          "lat": 44.7622,
-          "lon": -71.9534
+          "time": "18:09",
+          "lat": 44.271,
+          "lon": -71.025
         },
         {
-          "id": "willoughby",
-          "name": "Lake Willoughby",
-          "place": "Westmore, VT",
-          "score": 43,
+          "id": "mtwashington",
+          "name": "Mount Washington Summit",
+          "place": "Sargent's Purchase, NH",
+          "score": 39,
           "label": "Marginal",
-          "drive": 112,
+          "drive": 116,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:12",
-          "lat": 44.735,
-          "lon": -72.047
+          "time": "18:10",
+          "lat": 44.27,
+          "lon": -71.302
         },
         {
-          "id": "willoughbysouth",
-          "name": "Lake Willoughby, south end",
-          "place": "Westmore, VT",
-          "score": 38,
+          "id": "greatglen",
+          "name": "Great Glen / Auto Road Base",
+          "place": "Pinkham Notch, NH",
+          "score": 39,
           "label": "Marginal",
-          "drive": 110,
+          "drive": 87,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "18:12",
-          "lat": 44.717,
-          "lon": -72.031
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:10",
+          "lat": 44.261,
+          "lon": -71.257
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:13 PM. Best bet: Ashland, 64, Strong. horizon open, cirrus overhead. 19 minutes away. Then Meredith Bay Docks 63, and Squam Lake 63.\n\nSunrise this morning at 6:55 AM. Best bet: Pack Monadnock (Miller SP), 40, Marginal. horizon open. 1 hour 44 minutes away. Then Newburyport Harbor Light 37, and Hampton Beach 35.",
+  "text": "Sunset tonight at 6:11 PM. Best bet: Crystal Lake, 63, Strong. horizon open, cirrus overhead. 55 minutes away. Then Foss Mountain 63, and Green Mountain Fire Tower 62.\n\nSunrise tomorrow at 6:57 AM. Best bet: Mount Kearsarge Summit, 82, Go. cirrus overhead. 1 hour 20 minutes away. Then Bog Mountain 72, and Rye Harbor State Park 64.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
