@@ -1,111 +1,7 @@
 {
-  "generated": "2026-10-09T20:42:44.771Z",
+  "generated": "2026-10-10T00:35:11.353Z",
   "drive": 120,
   "events": [
-    {
-      "ev": "sunset",
-      "day": "2026-10-09",
-      "when": "tonight",
-      "time": "18:16",
-      "top": [
-        {
-          "id": "cardigan",
-          "name": "Mount Cardigan Summit",
-          "place": "Orange, NH",
-          "score": 34,
-          "label": "Marginal",
-          "drive": 57,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:16",
-          "lat": 43.6495,
-          "lon": -71.9144
-        },
-        {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 104,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:17",
-          "lat": 42.8619,
-          "lon": -71.8788
-        },
-        {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 94,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:12",
-          "lat": 43.2232,
-          "lon": -70.6919
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-10-10",
-      "when": "tomorrow",
-      "time": "06:51",
-      "top": [
-        {
-          "id": "newburyportharborlight",
-          "name": "Newburyport Harbor Light",
-          "place": "Newburyport, MA",
-          "score": 42,
-          "label": "Marginal",
-          "drive": 110,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:51",
-          "lat": 42.8151,
-          "lon": -70.819
-        },
-        {
-          "id": "hampton",
-          "name": "Hampton Beach",
-          "place": "Hampton, NH",
-          "score": 39,
-          "label": "Marginal",
-          "drive": 90,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:51",
-          "lat": 42.9081,
-          "lon": -70.81
-        },
-        {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 38,
-          "label": "Marginal",
-          "drive": 104,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:55",
-          "lat": 42.8619,
-          "lon": -71.8788
-        }
-      ]
-    },
     {
       "ev": "sunset",
       "day": "2026-10-10",
@@ -116,8 +12,8 @@
           "id": "westrattle",
           "name": "West Rattlesnake",
           "place": "Holderness, NH",
-          "score": 58,
-          "label": "Worth it",
+          "score": 63,
+          "label": "Strong",
           "drive": 22,
           "flags": [
             "horizon open",
@@ -132,8 +28,8 @@
           "id": "squamnorth",
           "name": "Squam Lake, north shore",
           "place": "Holderness, NH",
-          "score": 57,
-          "label": "Worth it",
+          "score": 62,
+          "label": "Strong",
           "drive": 19,
           "flags": [
             "horizon open",
@@ -145,23 +41,133 @@
           "lon": -71.558
         },
         {
-          "id": "centersandwich",
-          "name": "Center Sandwich",
-          "place": "Sandwich, NH",
-          "score": 53,
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 58,
           "label": "Worth it",
-          "drive": 18,
+          "drive": 70,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
+          "time": "18:15",
+          "lat": 43.321,
+          "lon": -72.084
+        }
+      ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-10-10",
+      "when": "tomorrow",
+      "time": "06:51",
+      "top": [
+        {
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 41,
+          "label": "Marginal",
+          "drive": 110,
           "flags": [
             "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:13",
-          "lat": 43.782,
-          "lon": -71.473
+          "time": "06:51",
+          "lat": 42.8151,
+          "lon": -70.819
+        },
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 39,
+          "label": "Marginal",
+          "drive": 104,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:55",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
+        {
+          "id": "hampton",
+          "name": "Hampton Beach",
+          "place": "Hampton, NH",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 90,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:51",
+          "lat": 42.9081,
+          "lon": -70.81
+        }
+      ]
+    },
+    {
+      "ev": "sunset",
+      "day": "2026-10-11",
+      "when": "Sunday",
+      "time": "18:12",
+      "top": [
+        {
+          "id": "jobspond",
+          "name": "Jobs Pond",
+          "place": "Westmore, VT",
+          "score": 23,
+          "label": "Skip",
+          "drive": 118,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:12",
+          "lat": 44.7622,
+          "lon": -71.9534
+        },
+        {
+          "id": "pleasantmtn",
+          "name": "Pleasant Mountain",
+          "place": "Bridgton, ME",
+          "score": 21,
+          "label": "Skip",
+          "drive": 90,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:08",
+          "lat": 44.027,
+          "lon": -70.8223
+        },
+        {
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 21,
+          "label": "Skip",
+          "drive": 95,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:07",
+          "lat": 43.9209,
+          "lon": -70.5806
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:16 PM. Best bet: Mount Cardigan Summit, 34, Marginal. 57 minutes away. Then Pack Monadnock (Miller SP) 32, and Mount Agamenticus 32.\n\nSunrise tomorrow at 6:51 AM. Best bet: Newburyport Harbor Light, 42, Marginal. horizon open. 1 hour 50 minutes away. Then Hampton Beach 39, and Pack Monadnock (Miller SP) 38.",
+  "text": "Sunset tomorrow night at 6:13 PM. Best bet: West Rattlesnake, 63, Strong. horizon open, cirrus overhead. 22 minutes away. Then Squam Lake, north shore 62, and Mount Sunapee Summit 58.\n\nSunrise tomorrow at 6:51 AM. Best bet: Newburyport Harbor Light, 41, Marginal. horizon open. 1 hour 50 minutes away. Then Pack Monadnock (Miller SP) 39, and Hampton Beach 38.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
