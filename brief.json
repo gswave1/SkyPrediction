@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-11T14:46:04.942Z",
+  "generated": "2026-10-11T19:24:29.985Z",
   "drive": 120,
   "events": [
     {
@@ -9,10 +9,26 @@
       "time": "18:12",
       "top": [
         {
+          "id": "lyndon",
+          "name": "Lyndon Farm Fields",
+          "place": "Northeast Kingdom, VT",
+          "score": 20,
+          "label": "Skip",
+          "drive": 96,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:12",
+          "lat": 44.565,
+          "lon": -71.973
+        },
+        {
           "id": "jobspond",
           "name": "Jobs Pond",
           "place": "Westmore, VT",
-          "score": 25,
+          "score": 18,
           "label": "Skip",
           "drive": 118,
           "flags": [
@@ -25,66 +41,10 @@
           "lon": -71.9534
         },
         {
-          "id": "willoughby",
-          "name": "Lake Willoughby",
-          "place": "Westmore, VT",
-          "score": 25,
-          "label": "Skip",
-          "drive": 112,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:12",
-          "lat": 44.735,
-          "lon": -72.047
-        },
-        {
-          "id": "jefferson",
-          "name": "Jefferson Fields",
-          "place": "Jefferson, NH",
-          "score": 23,
-          "label": "Skip",
-          "drive": 78,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "18:10",
-          "lat": 44.3892,
-          "lon": -71.4789
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-10-12",
-      "when": "tomorrow",
-      "time": "07:00",
-      "top": [
-        {
-          "id": "lyndon",
-          "name": "Lyndon Farm Fields",
-          "place": "Northeast Kingdom, VT",
-          "score": 16,
-          "label": "Skip",
-          "drive": 96,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "07:00",
-          "lat": 44.565,
-          "lon": -71.973
-        },
-        {
           "id": "burkemtn",
           "name": "Burke Mountain",
           "place": "East Burke, VT",
-          "score": 16,
+          "score": 18,
           "label": "Skip",
           "drive": 110,
           "flags": [
@@ -92,25 +52,65 @@
             "cirrus overhead"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "06:59",
+          "time": "18:12",
           "lat": 44.5705,
           "lon": -71.893
+        }
+      ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-10-12",
+      "when": "tomorrow",
+      "time": "06:57",
+      "top": [
+        {
+          "id": "greatglen",
+          "name": "Great Glen / Auto Road Base",
+          "place": "Pinkham Notch, NH",
+          "score": 24,
+          "label": "Skip",
+          "drive": 87,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun rises outside this spot's open arc.",
+          "time": "06:57",
+          "lat": 44.261,
+          "lon": -71.257
         },
         {
-          "id": "peacham",
-          "name": "Peacham Village",
-          "place": "Peacham, VT",
-          "score": 15,
+          "id": "mtwashington",
+          "name": "Mount Washington Summit",
+          "place": "Sargent's Purchase, NH",
+          "score": 13,
           "label": "Skip",
-          "drive": 98,
+          "drive": 116,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "07:00",
-          "lat": 44.328,
-          "lon": -72.175
+          "time": "06:57",
+          "lat": 44.27,
+          "lon": -71.302
+        },
+        {
+          "id": "mtavalon",
+          "name": "Mount Avalon",
+          "place": "Crawford Notch, NH",
+          "score": 13,
+          "label": "Skip",
+          "drive": 84,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:57",
+          "lat": 44.2064,
+          "lon": -71.4264
         }
       ]
     },
@@ -124,7 +124,7 @@
           "id": "meredith",
           "name": "Meredith Bay Docks",
           "place": "Meredith, NH",
-          "score": 55,
+          "score": 48,
           "label": "Worth it",
           "drive": 2,
           "flags": [
@@ -137,40 +137,37 @@
           "lon": -71.498
         },
         {
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 94,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "18:06",
+          "lat": 43.2232,
+          "lon": -70.6919
+        },
+        {
           "id": "centerharb",
           "name": "Center Harbor Town Dock",
           "place": "Center Harbor, NH",
-          "score": 52,
-          "label": "Worth it",
+          "score": 44,
+          "label": "Marginal",
           "drive": 10,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:09",
           "lat": 43.71,
           "lon": -71.467
-        },
-        {
-          "id": "ashland",
-          "name": "Ashland",
-          "place": "Ashland, NH",
-          "score": 50,
-          "label": "Worth it",
-          "drive": 19,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "18:10",
-          "lat": 43.697,
-          "lon": -71.63
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:12 PM. Nothing looks good. The best is Jobs Pond at 25. \n\nSunrise tomorrow at 7:00 AM. Nothing looks good. The best is Lyndon Farm Fields at 16. ",
+  "text": "Sunset tonight at 6:12 PM. Nothing looks good. The best is Lyndon Farm Fields at 20. \n\nSunrise tomorrow at 6:57 AM. Nothing looks good. The best is Great Glen / Auto Road Base at 24. ",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
