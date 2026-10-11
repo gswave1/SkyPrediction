@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-11T10:09:42.794Z",
+  "generated": "2026-10-11T14:46:04.942Z",
   "drive": 120,
   "events": [
     {
@@ -12,7 +12,7 @@
           "id": "jobspond",
           "name": "Jobs Pond",
           "place": "Westmore, VT",
-          "score": 27,
+          "score": 25,
           "label": "Skip",
           "drive": 118,
           "flags": [
@@ -25,26 +25,50 @@
           "lon": -71.9534
         },
         {
-          "id": "burkemtn",
-          "name": "Burke Mountain",
-          "place": "East Burke, VT",
-          "score": 27,
+          "id": "willoughby",
+          "name": "Lake Willoughby",
+          "place": "Westmore, VT",
+          "score": 25,
           "label": "Skip",
-          "drive": 110,
+          "drive": 112,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:12",
-          "lat": 44.5705,
-          "lon": -71.893
+          "lat": 44.735,
+          "lon": -72.047
         },
+        {
+          "id": "jefferson",
+          "name": "Jefferson Fields",
+          "place": "Jefferson, NH",
+          "score": 23,
+          "label": "Skip",
+          "drive": 78,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:10",
+          "lat": 44.3892,
+          "lon": -71.4789
+        }
+      ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-10-12",
+      "when": "tomorrow",
+      "time": "07:00",
+      "top": [
         {
           "id": "lyndon",
           "name": "Lyndon Farm Fields",
           "place": "Northeast Kingdom, VT",
-          "score": 26,
+          "score": 16,
           "label": "Skip",
           "drive": 96,
           "flags": [
@@ -52,64 +76,41 @@
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:12",
+          "time": "07:00",
           "lat": 44.565,
           "lon": -71.973
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-10-11",
-      "when": "this morning",
-      "time": "06:52",
-      "top": [
-        {
-          "id": "hampton",
-          "name": "Hampton Beach",
-          "place": "Hampton, NH",
-          "score": 67,
-          "label": "Strong",
-          "drive": 90,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:52",
-          "lat": 42.9081,
-          "lon": -70.81
         },
         {
-          "id": "newcastle",
-          "name": "New Castle / Portsmouth Harbor",
-          "place": "New Castle, NH",
-          "score": 60,
-          "label": "Strong",
-          "drive": 87,
+          "id": "burkemtn",
+          "name": "Burke Mountain",
+          "place": "East Burke, VT",
+          "score": 16,
+          "label": "Skip",
+          "drive": 110,
           "flags": [
-            "horizon open",
+            "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:52",
-          "lat": 43.069,
-          "lon": -70.713
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:59",
+          "lat": 44.5705,
+          "lon": -71.893
         },
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 60,
-          "label": "Strong",
-          "drive": 94,
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 15,
+          "label": "Skip",
+          "drive": 98,
           "flags": [
-            "horizon open",
+            "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:52",
-          "lat": 43.06,
-          "lon": -70.698
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "07:00",
+          "lat": 44.328,
+          "lon": -72.175
         }
       ]
     },
@@ -117,28 +118,13 @@
       "ev": "sunset",
       "day": "2026-10-12",
       "when": "tomorrow night",
-      "time": "18:05",
+      "time": "18:09",
       "top": [
-        {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 57,
-          "label": "Worth it",
-          "drive": 106,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 10% high cloud. Open gap at the horizon. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "18:05",
-          "lat": 43.563,
-          "lon": -70.365
-        },
         {
           "id": "meredith",
           "name": "Meredith Bay Docks",
           "place": "Meredith, NH",
-          "score": 56,
+          "score": 55,
           "label": "Worth it",
           "drive": 2,
           "flags": [
@@ -151,24 +137,40 @@
           "lon": -71.498
         },
         {
-          "id": "squam",
-          "name": "Squam Lake",
-          "place": "Holderness, NH",
-          "score": 54,
+          "id": "centerharb",
+          "name": "Center Harbor Town Dock",
+          "place": "Center Harbor, NH",
+          "score": 52,
           "label": "Worth it",
-          "drive": 13,
+          "drive": 10,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "18:09",
+          "lat": 43.71,
+          "lon": -71.467
+        },
+        {
+          "id": "ashland",
+          "name": "Ashland",
+          "place": "Ashland, NH",
+          "score": 50,
+          "label": "Worth it",
+          "drive": 19,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
           "time": "18:10",
-          "lat": 43.731,
-          "lon": -71.586
+          "lat": 43.697,
+          "lon": -71.63
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:12 PM. Nothing looks good. The best is Jobs Pond at 27. \n\nSunrise this morning at 6:52 AM. Best bet: Hampton Beach, 67, Strong. cirrus overhead. 1 hour 30 minutes away. Then New Castle / Portsmouth Harbor 60, and Kittery Point 60.",
+  "text": "Sunset tonight at 6:12 PM. Nothing looks good. The best is Jobs Pond at 25. \n\nSunrise tomorrow at 7:00 AM. Nothing looks good. The best is Lyndon Farm Fields at 16. ",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
