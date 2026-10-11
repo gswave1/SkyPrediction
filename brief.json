@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-11T23:12:25.126Z",
+  "generated": "2026-10-11T23:31:06.445Z",
   "drive": 120,
   "events": [
     {
@@ -136,14 +136,14 @@
           "id": "newburyportharborlight",
           "name": "Newburyport Harbor Light",
           "place": "Newburyport, MA",
-          "score": 11,
+          "score": 12,
           "label": "Skip",
           "drive": 110,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. Some haze (AOD 0.32) — colors a notch softer. And the sun sets outside this spot's open arc.",
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. Some haze (AOD 0.34) — colors a notch softer. And the sun sets outside this spot's open arc.",
           "time": "18:06",
           "lat": 42.8151,
           "lon": -70.819
@@ -152,14 +152,14 @@
           "id": "hampton",
           "name": "Hampton Beach",
           "place": "Hampton, NH",
-          "score": 6,
+          "score": 7,
           "label": "Skip",
           "drive": 90,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. Some haze (AOD 0.32) — colors a notch softer. And the sun sets outside this spot's open arc.",
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. Some haze (AOD 0.34) — colors a notch softer. And the sun sets outside this spot's open arc.",
           "time": "18:06",
           "lat": 42.9081,
           "lon": -70.81
