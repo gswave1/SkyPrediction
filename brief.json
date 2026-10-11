@@ -1,19 +1,19 @@
 {
-  "generated": "2026-10-10T23:20:40.792Z",
+  "generated": "2026-10-11T04:50:17.284Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-11",
-      "when": "tomorrow night",
+      "when": "tonight",
       "time": "18:12",
       "top": [
         {
           "id": "jobspond",
           "name": "Jobs Pond",
           "place": "Westmore, VT",
-          "score": 28,
-          "label": "Skip",
+          "score": 33,
+          "label": "Marginal",
           "drive": 118,
           "flags": [
             "horizon blocked",
@@ -25,26 +25,26 @@
           "lon": -71.9534
         },
         {
-          "id": "lyndon",
-          "name": "Lyndon Farm Fields",
-          "place": "Northeast Kingdom, VT",
-          "score": 25,
+          "id": "willoughby",
+          "name": "Lake Willoughby",
+          "place": "Westmore, VT",
+          "score": 30,
           "label": "Skip",
-          "drive": 96,
+          "drive": 112,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:12",
-          "lat": 44.565,
-          "lon": -71.973
+          "lat": 44.735,
+          "lon": -72.047
         },
         {
           "id": "burkemtn",
           "name": "Burke Mountain",
           "place": "East Burke, VT",
-          "score": 23,
+          "score": 29,
           "label": "Skip",
           "drive": 110,
           "flags": [
@@ -61,117 +61,111 @@
     {
       "ev": "sunrise",
       "day": "2026-10-11",
-      "when": "tomorrow",
-      "time": "06:55",
+      "when": "this morning",
+      "time": "06:52",
       "top": [
         {
-          "id": "greatglen",
-          "name": "Great Glen / Auto Road Base",
-          "place": "Pinkham Notch, NH",
-          "score": 74,
+          "id": "yorkharbor",
+          "name": "York Harbor",
+          "place": "York, ME",
+          "score": 64,
           "label": "Strong",
-          "drive": 87,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun rises outside this spot's open arc.",
-          "time": "06:55",
-          "lat": 44.261,
-          "lon": -71.257
-        },
-        {
-          "id": "fossmtn",
-          "name": "Foss Mountain",
-          "place": "Eaton, NH",
-          "score": 69,
-          "label": "Strong",
-          "drive": 64,
+          "drive": 91,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:54",
-          "lat": 43.8771,
-          "lon": -71.0348
+          "time": "06:52",
+          "lat": 43.147,
+          "lon": -70.626
         },
         {
-          "id": "kimballrd",
-          "name": "Kimball Road",
-          "place": "Lunenburg, VT",
-          "score": 68,
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 62,
           "label": "Strong",
-          "drive": 89,
+          "drive": 106,
           "flags": [
             "horizon open",
-            "cirrus overhead",
-            "valley fog possible (51)"
+            "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:57",
-          "lat": 44.4759,
-          "lon": -71.7045
+          "time": "06:51",
+          "lat": 43.563,
+          "lon": -70.365
+        },
+        {
+          "id": "capeporpoise",
+          "name": "Cape Porpoise Pier",
+          "place": "Kennebunkport, ME",
+          "score": 62,
+          "label": "Strong",
+          "drive": 114,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "06:51",
+          "lat": 43.3654,
+          "lon": -70.432
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-10-12",
-      "when": "Monday",
-      "time": "18:11",
+      "when": "tomorrow night",
+      "time": "18:09",
       "top": [
         {
-          "id": "bog",
-          "name": "Bog Mountain",
-          "place": "Wilmot, NH",
-          "score": 40,
+          "id": "meredith",
+          "name": "Meredith Bay Docks",
+          "place": "Meredith, NH",
+          "score": 32,
           "label": "Marginal",
-          "drive": 46,
+          "drive": 2,
           "flags": [
-            "horizon blocked",
-            "cirrus overhead"
+            "horizon blocked"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "18:11",
-          "lat": 43.469,
-          "lon": -71.93
-        },
-        {
-          "id": "ashland",
-          "name": "Ashland",
-          "place": "Ashland, NH",
-          "score": 39,
-          "label": "Marginal",
-          "drive": 19,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:10",
-          "lat": 43.697,
-          "lon": -71.63
-        },
-        {
-          "id": "welchledges",
-          "name": "Welch Mountain Ledges",
-          "place": "Thornton, NH",
-          "score": 37,
-          "label": "Marginal",
-          "drive": 37,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:09",
-          "lat": 43.919,
-          "lon": -71.5754
+          "lat": 43.656,
+          "lon": -71.498
+        },
+        {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 29,
+          "label": "Skip",
+          "drive": 94,
+          "flags": [],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:07",
+          "lat": 43.06,
+          "lon": -70.698
+        },
+        {
+          "id": "centerharb",
+          "name": "Center Harbor Town Dock",
+          "place": "Center Harbor, NH",
+          "score": 29,
+          "label": "Skip",
+          "drive": 10,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "18:09",
+          "lat": 43.71,
+          "lon": -71.467
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 6:12 PM. Nothing looks good. The best is Jobs Pond at 28. \n\nSunrise tomorrow at 6:55 AM. Best bet: Great Glen / Auto Road Base, 74, Strong. horizon open, cirrus overhead. 1 hour 27 minutes away. Then Foss Mountain 69, and Kimball Road 68.",
+  "text": "Sunset tonight at 6:12 PM. Best bet: Jobs Pond, 33, Marginal. horizon blocked, cirrus overhead. 1 hour 58 minutes away. Then Lake Willoughby 30.\n\nSunrise this morning at 6:52 AM. Best bet: York Harbor, 64, Strong. horizon open, cirrus overhead. 1 hour 31 minutes away. Then Scarborough Marsh 62, and Cape Porpoise Pier 62.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
