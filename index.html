@@ -726,7 +726,8 @@ const fogPointOf=s=>{const f=s.fogAt||((DEFAULT_SPOTS.find(d=>d.id===s.id)||{}).
   return Array.isArray(f)&&f.length===2&&isFinite(f[0])&&isFinite(f[1])?f:null;};
 /* score array layout */
 const S={score:0,horizon:1,canvas:2,clarity:3,view:4,cl:5,cm:6,ch:7,pcl:8,pcm:9,visKm:10,precip:11,chEff:12,
-  g0:13,g1:14,g2:15,g3:16,aod:17,rainPrior:18,dust:19};  /* g0-g3: % of the gap blocked at each corridor distance */
+  g0:13,g1:14,g2:15,g3:16,aod:17,rainPrior:18,dust:19,  /* g0-g3: % of the gap blocked at each corridor distance */
+  sheet:20,base:21,glow:22};  /* sheet: glow-window high-cloud sheet 0-100; base = sun-crossing score, glow = pre-glow/afterglow score; score = the higher */
 const G={score:0,clear:1,calm:2,satur:3,steam:4,wind:5,spread:6,drop:7};
 
 /* ---------- solar geometry ---------- */
@@ -797,28 +798,47 @@ function cirrusCheck(cir,ch){
   if(ch>=45&&top<0.4*ch&&cir.rh<50) return {ch:Math.max(25,top*1.5),state:-1};
   return {ch:ch,state:1};
 }
-function scoreLight(loc,probes,sunAz,arc,cir){
+/* Glow window: pre-glow before sunrise, afterglow after sunset.
+   Oct 11 2026: a full cirrus sheet with a clear gap toward the sun set the whole sky on fire from
+   ~45 min before sunrise (Whites, northern VT, Maine coast). The board scored it 46-67 because the
+   canvas bell punishes 100% high cloud and the window only looked at the sun-crossing hour.
+   With the sun 3-8° below the horizon, a thin ice sheet is lit from underneath across the whole
+   dome (NOAA/Corfidi: solid high decks with a clear strip at the horizon give the "bathed in red"
+   skies). Coverage isn't the enemy there; a thick mid deck or a blocked path is. */
+const GLOW_MIN=45;
+const GLOW_W=[0.3,0.6,0.9,1.0];   /* far cells matter most: the light skims the surface hundreds of km out */
+function scoreLight(loc,probes,sunAz,arc,cir,glow){
   const CL=loc.cl,CM=loc.cm,CH_raw=loc.ch;
   const cc=cirrusCheck(cir,CH_raw);
   const CH=cc.ch;                      /* the cirrus profile can raise or cap this */
+  const CW=glow?GLOW_W:CORRIDOR_W;
   /* Corridor transmission: each distance lets through (1 - weight x blocked). Multiply along the ray,
      softened, so one partly filled cell dents the score and a solid wall anywhere in the window kills it. */
   const blk=probes.map(p=>clamp((p.cl+0.45*p.cm)/95,0,1));
   let trans=1, worst=0;
-  blk.forEach((b,i)=>{trans*=1-CORRIDOR_W[i]*b; if(CORRIDOR_W[i]*b>CORRIDOR_W[worst]*blk[worst]) worst=i;});
+  blk.forEach((b,i)=>{trans*=1-CW[i]*b; if(CW[i]*b>CW[worst]*blk[worst]) worst=i;});
   const hProbe=Math.pow(clamp(trans,0,1),0.7);
   const hLocal=1-0.5*clamp(CL/90,0,1);
   const horizon=clamp(0.75*hProbe+0.25*hLocal,0,1);
   const hi=bell(CH,55,28),mid=bell(CM,45,30);
   const raw=clamp(0.60*hi+0.40*mid+0.15*Math.min(hi,mid),0,1);
   let canvas=clamp(raw*(1-0.8*clamp((CL-30)/60,0,1)),0,1);
+  /* Glow sheet: lots of high cloud, little mid or low under it = a thin ice veil the low sun lights
+     from below, edge to edge. In the glow window that is the best canvas there is, not "too much". */
+  let sheet=0;
+  if(glow){
+    sheet=clamp((CH-55)/35,0,1)*(1-clamp((CM-30)/40,0,1))*(1-clamp((CL-20)/40,0,1));
+    canvas=Math.max(canvas,0.95*sheet);
+  }
   /* Clarity: haze and smoke don't add colour, they mute it. Base 0.9 on an ordinary day; washed air
      after rain earns the last tenth, smoke or heavy haze takes up to half away. */
   let clarity=0.9;
   if(loc.pr>0.15)clarity-=0.45;
   if(loc.pr>1.0)clarity-=0.3;
   if(loc.vis!=null&&loc.vis<20000)clarity-=0.25*clamp((20000-loc.vis)/16000,0,1);
-  if(loc.rh>92)clarity-=0.15; else if(loc.rh>85)clarity-=0.05;
+  /* Damp air at the ground is near-universal at dawn. In the glow window the colour is on cloud
+     at 8-11 km, lit by light that ran above the boundary layer, so surface humidity doesn't mute it. */
+  if(!glow){ if(loc.rh>92)clarity-=0.15; else if(loc.rh>85)clarity-=0.05; }
   if(loc.aod!=null){
     clarity-=0.5*clamp((loc.aod-0.15)/0.45,0,1);       /* 0.15 normal, 0.6+ = smoke */
     if(loc.aod<0.08) clarity+=0.05;                     /* unusually clean air */
@@ -840,6 +860,7 @@ function scoreLight(loc,probes,sunAz,arc,cir){
   arr[S.aod]=loc.aod==null?null:+loc.aod.toFixed(2);
   arr[S.rainPrior]=loc.rainPrior==null?null:+loc.rainPrior.toFixed(1);
   arr[S.dust]=loc.dust==null?null:Math.round(loc.dust);
+  arr[S.sheet]=Math.round(sheet*100);
   return arr;
 }
 /* fog: night = array of hourly {cl,cm,ch,t,td,ws,pr} for the 4 h ending at sunrise; tmaxPrev = prev afternoon max */
@@ -1185,33 +1206,51 @@ async function buildModel(){
       for(const ev of ["sunset","sunrise"]){
         const g=geo[s.id][ev][di];
         if(!g){rows[s.id][ev].push(null);continue;}
-        const hA=ev==="sunset"?nyHour(new Date(g.t.getTime()-3600e3)):nyHour(g.t);
-        const hB=ev==="sunset"?nyHour(g.t):nyHour(new Date(g.t.getTime()+3600e3));
-        const sA=spotMap[si].get(hA), sB=spotMap[si].get(hB);
         const PI=CORRIDOR_KM.map(km=>probeIdx[ev+":"+s.id+":"+km]);
-        const PA=PI.map(pi=>probeMap[pi].get(hA)), PB=PI.map(pi=>probeMap[pi].get(hB));
-        if(sA==null||sB==null||PA.some(x=>x==null)||PB.some(x=>x==null)){rows[s.id][ev].push(null);continue;}
-        const w=ev==="sunset"?0.45:0.55;
-        let cir=null;
-        if(cirMap){
-          const cA=cirMap[si].get(hA),cB=cirMap[si].get(hB),h=cirData[si].hourly;
-          if(cA!=null&&cB!=null){
-            const av=(k)=>{const a=col(h,k,CIRRUS_MODEL); if(!a) return null;
-              const x=a[cA],y=a[cB];return (x==null||y==null)?(x==null?y:x):Math.round(x*w+y*(1-w));};
-            cir={c3:av("cloud_cover_300hPa"),c25:av("cloud_cover_250hPa"),c2:av("cloud_cover_200hPa"),rh:av("relative_humidity_300hPa")};
+        /* Score one window [hA,hB] blended with weight w on hA. Returns {per, cir} or null. */
+        const windowScore=(hA,hB,w,glow)=>{
+          const sA=spotMap[si].get(hA), sB=spotMap[si].get(hB);
+          const PA=PI.map(pi=>probeMap[pi].get(hA)), PB=PI.map(pi=>probeMap[pi].get(hB));
+          if(sA==null||sB==null||PA.some(x=>x==null)||PB.some(x=>x==null)) return null;
+          let cir=null;
+          if(cirMap){
+            const cA=cirMap[si].get(hA),cB=cirMap[si].get(hB),h=cirData[si].hourly;
+            if(cA!=null&&cB!=null){
+              const av=(k)=>{const a=col(h,k,CIRRUS_MODEL); if(!a) return null;
+                const x=a[cA],y=a[cB];return (x==null||y==null)?(x==null?y:x):Math.round(x*w+y*(1-w));};
+              cir={c3:av("cloud_cover_300hPa"),c25:av("cloud_cover_250hPa"),c2:av("cloud_cover_200hPa"),rh:av("relative_humidity_300hPa")};
+            }
           }
-        }
-        const per={};
-        for(const m of models){
-          const lA=Object.assign({},gS(si,sA,m),gX(si,sA)), lB=Object.assign({},gS(si,sB,m),gX(si,sB));
-          const pa=PI.map((pi,k)=>gP(pi,PA[k],m)), pb=PI.map((pi,k)=>gP(pi,PB[k],m));
-          if(!okCloud(lA)||!okCloud(lB)||!pa.every(okCloud)||!pb.every(okCloud)) continue; /* model out of range here */
-          per[m]=scoreLight(blend(lA,lB,w),pa.map((x,k)=>blend(x,pb[k],w)),g.az,s.az,cir);
+          const per={};
+          for(const m of models){
+            const lA=Object.assign({},gS(si,sA,m),gX(si,sA)), lB=Object.assign({},gS(si,sB,m),gX(si,sB));
+            const pa=PI.map((pi,k)=>gP(pi,PA[k],m)), pb=PI.map((pi,k)=>gP(pi,PB[k],m));
+            if(!okCloud(lA)||!okCloud(lB)||!pa.every(okCloud)||!pb.every(okCloud)) continue; /* model out of range here */
+            per[m]=scoreLight(blend(lA,lB,w),pa.map((x,k)=>blend(x,pb[k],w)),g.az,s.az,cir,glow);
+          }
+          return {per,cir};
+        };
+        /* Sun-crossing window: the hour the sun crosses and the adjacent hour on the golden side. */
+        const main=ev==="sunset"
+          ? windowScore(nyHour(new Date(g.t.getTime()-3600e3)),nyHour(g.t),0.45,false)
+          : windowScore(nyHour(g.t),nyHour(new Date(g.t.getTime()+3600e3)),0.55,false);
+        if(!main){rows[s.id][ev].push(null);continue;}
+        /* Glow window: from GLOW_MIN before sunrise to sunrise; sunset to GLOW_MIN after sunset. */
+        const gl=ev==="sunset"
+          ? windowScore(nyHour(g.t),nyHour(new Date(g.t.getTime()+GLOW_MIN*60e3)),0.5,true)
+          : windowScore(nyHour(new Date(g.t.getTime()-GLOW_MIN*60e3)),nyHour(g.t),0.5,true);
+        const per=main.per, cir=main.cir;
+        /* Rank on whichever window is better; keep both numbers. When the glow wins, show its inputs. */
+        for(const m of Object.keys(per)){
+          const ga=gl&&gl.per[m], b=per[m][S.score], gv=ga?ga[S.score]:null;
+          if(gv!=null&&gv>b) per[m]=ga;
+          per[m][S.base]=b; per[m][S.glow]=gv; per[m][S.sheet]=ga?ga[S.sheet]:0;
         }
         const firstKey=Object.keys(per)[0];
         if(!firstKey){rows[s.id][ev].push(null);continue;}
         const cst=cir?cirrusCheck(cir,per[firstKey][S.ch]).state:0;
-        rows[s.id][ev].push({t:nyTime(g.t),az:Math.round(g.az),cir:cir?[cir.c3,cir.c25,cir.c2,cir.rh]:null,cst,m:per});
+        rows[s.id][ev].push({t:nyTime(g.t),az:Math.round(g.az),cir:cir?[cir.c3,cir.c25,cir.c2,cir.rh]:null,cst,m:per,
+          gt:nyTime(new Date(g.t.getTime()+(ev==="sunset"?1:-1)*GLOW_MIN*60e3))});
       }
       /* --- lake fog at sunrise --- */
       const gr=geo[s.id].sunrise[di];
@@ -1374,6 +1413,8 @@ function nextDay(){
   }
   return 0;
 }
+/* The glow window carried the score: a real sheet, a worthwhile score, and clearly better than the sun-crossing hour. */
+const glowWins=v=>v[S.glow]!=null&&v[S.base]!=null&&v[S.glow]>=45&&v[S.glow]>v[S.base]+5&&(v[S.sheet]||0)>=40;
 function whyLight(v,o,ev){
   const verb=ev==="sunset"?"sets":"rises";
   const H=v[S.horizon],C=v[S.canvas],cl=v[S.cl],cm=v[S.cm],p=v[S.precip];
@@ -1400,6 +1441,12 @@ function whyLight(v,o,ev){
   if(o.cst===-1&&ch>=45) t+=" ECMWF sees nothing at cirrus level, so that high cloud is probably lower and flatter than it looks.";
   if(v[S.view]<40) t+=" And the sun "+verb+" outside this spot's open arc.";
   else if(p>0.15&&p<=0.5) t+=" Showers around.";
+  const gl=glowWins(v);
+  if(gl){
+    const when=ev==="sunset"?"after sunset, until about "+(o.gt||"45 min later"):"from about "+(o.gt||"45 min before sunrise")+", before the sun is up";
+    t=(ev==="sunset"?"Afterglow: ":"Pre-glow: ")+"a sheet of high cloud over a clear gap — the whole sky can go red "+when+". Be set up early."+
+      (Math.round(v[S.base])<Math.round(v[S.score])-4?" (Sun-crossing score alone: "+Math.round(v[S.base])+".)":"");
+  }
   return t;
 }
 function whyFog(v,sp){
@@ -2303,6 +2350,7 @@ function ghbBrief(maxDrive){
     if(f.open) flags.push("horizon open");
     else if(f.hasG&&f.g[f.worst]>=40) flags.push("horizon blocked");
     if(f.cirrus) flags.push("cirrus overhead");
+    if(glowWins(d.v)) flags.push(ev==="sunrise"?"pre-glow from "+(d.o.gt||"45 min before"):"afterglow to "+(d.o.gt||"45 min after"));
     if(ev==="sunrise"&&fogPointOf(sp)){
       let fd=null; try{ fd=resolveAt(sp.id,"fog",day); }catch(e){ fd=null; }
       if(fd&&fd.v){ const fv=fd.v[0];
