@@ -1,114 +1,119 @@
 {
-  "generated": "2026-10-12T05:05:39.649Z",
+  "generated": "2026-10-12T17:34:19.540Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-12",
       "when": "tonight",
-      "time": "18:07",
+      "time": "18:06",
       "top": [
-        {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 75,
-          "label": "Go",
-          "drive": 94,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 12% high cloud. Open gap at the horizon. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "18:07",
-          "lat": 43.06,
-          "lon": -70.698
-        },
         {
           "id": "agamenticus",
           "name": "Mount Agamenticus",
           "place": "York, ME",
-          "score": 74,
-          "label": "Strong",
+          "score": 81,
+          "label": "Go",
           "drive": 94,
           "flags": [
             "horizon open",
-            "cirrus overhead"
+            "cirrus overhead",
+            "afterglow to 18:51"
           ],
-          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 15% high cloud. Open gap at the horizon. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:51. Be set up early. (Sun-crossing score alone: 67.)",
           "time": "18:06",
           "lat": 43.2232,
           "lon": -70.6919
         },
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 76,
+          "label": "Go",
+          "drive": 94,
+          "flags": [
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 18:52"
+          ],
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:52. Be set up early. (Sun-crossing score alone: 66.)",
+          "time": "18:07",
+          "lat": 43.06,
+          "lon": -70.698
+        },
+        {
+          "id": "yorkharbor",
+          "name": "York Harbor",
+          "place": "York, ME",
           "score": 70,
           "label": "Strong",
-          "drive": 106,
+          "drive": 91,
           "flags": [
-            "cirrus overhead"
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 18:51"
           ],
-          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 32% high cloud. Open gap at the horizon. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "18:05",
-          "lat": 43.563,
-          "lon": -70.365
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:51. Be set up early. (Sun-crossing score alone: 56.)",
+          "time": "18:06",
+          "lat": 43.147,
+          "lon": -70.626
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-12",
-      "when": "this morning",
-      "time": "06:57",
+      "day": "2026-10-13",
+      "when": "tomorrow",
+      "time": "07:02",
       "top": [
         {
-          "id": "weirs",
-          "name": "Weirs Beach Boardwalk",
-          "place": "Laconia, NH",
-          "score": 25,
+          "id": "jennefarm",
+          "name": "Jenne Farm",
+          "place": "Reading, VT",
+          "score": 5,
           "label": "Skip",
-          "drive": 11,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "06:57",
-          "lat": 43.608,
-          "lon": -71.459
-        },
-        {
-          "id": "leavittpark",
-          "name": "Leavitt Park",
-          "place": "Meredith, NH",
-          "score": 24,
-          "label": "Skip",
-          "drive": 8,
+          "drive": 111,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "06:57",
-          "lat": 43.681,
-          "lon": -71.454
+          "why": "Rain at showtime — the gap would have to open fast.",
+          "time": "07:02",
+          "lat": 43.5245,
+          "lon": -72.5596
         },
         {
-          "id": "redhill",
-          "name": "Red Hill Fire Tower",
-          "place": "Moultonborough, NH",
-          "score": 23,
+          "id": "yorkharbor",
+          "name": "York Harbor",
+          "place": "York, ME",
+          "score": 5,
           "label": "Skip",
-          "drive": 20,
+          "drive": 91,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "06:57",
-          "lat": 43.766,
-          "lon": -71.372
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. Showers around.",
+          "time": "06:54",
+          "lat": 43.147,
+          "lon": -70.626
+        },
+        {
+          "id": "longsands",
+          "name": "Long Sands Beach",
+          "place": "Cape Neddick, ME",
+          "score": 5,
+          "label": "Skip",
+          "drive": 91,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. Showers around.",
+          "time": "06:54",
+          "lat": 43.16,
+          "lon": -70.621
         }
       ]
     },
@@ -116,8 +121,40 @@
       "ev": "sunset",
       "day": "2026-10-13",
       "when": "tomorrow night",
-      "time": "18:08",
+      "time": "18:10",
       "top": [
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 8,
+          "label": "Skip",
+          "drive": 104,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:10",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
+        {
+          "id": "cannon",
+          "name": "Cannon Mountain Summit",
+          "place": "Franconia Notch, NH",
+          "score": 8,
+          "label": "Skip",
+          "drive": 51,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Rain at showtime — the gap would have to open fast.",
+          "time": "18:08",
+          "lat": 44.1569,
+          "lon": -71.6992
+        },
         {
           "id": "profilelake",
           "name": "Profile Lake",
@@ -133,42 +170,10 @@
           "time": "18:08",
           "lat": 44.162,
           "lon": -71.677
-        },
-        {
-          "id": "echolake",
-          "name": "Echo Lake",
-          "place": "Franconia Notch, NH",
-          "score": 7,
-          "label": "Skip",
-          "drive": 60,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Rain at showtime — the gap would have to open fast.",
-          "time": "18:08",
-          "lat": 44.187,
-          "lon": -71.69
-        },
-        {
-          "id": "artists",
-          "name": "Artist's Bluff",
-          "place": "Franconia Notch, NH",
-          "score": 7,
-          "label": "Skip",
-          "drive": 51,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Rain at showtime — the gap would have to open fast.",
-          "time": "18:08",
-          "lat": 44.181,
-          "lon": -71.695
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:07 PM. Best bet: Kittery Point, 75, Go. horizon open, cirrus overhead. 1 hour 34 minutes away. Then Mount Agamenticus 74, and Scarborough Marsh 70.\n\nSunrise this morning at 6:57 AM. Nothing looks good. The best is Weirs Beach Boardwalk at 25. ",
+  "text": "Sunset tonight at 6:06 PM. Best bet: Mount Agamenticus, 81, Go. horizon open, cirrus overhead, afterglow to 18:51. 1 hour 34 minutes away. Then Kittery Point 76, and York Harbor 70.\n\nSunrise tomorrow at 7:02 AM. Nothing looks good. The best is Jenne Farm at 5. ",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
