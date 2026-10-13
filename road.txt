@@ -1,4 +1,4 @@
-Golden Hour Board — generated 2026-10-13T20:30:53.668Z (UTC). Hourly 4 AM-9 PM ET.
+Golden Hour Board — generated 2026-10-13T21:05:02.088Z (UTC). Hourly 4 AM-9 PM ET.
 Columns: score 0-100 | spot | place | lat,lon | drive min FROM HOME (Meredith NH) | sun time | flags | why
 Scores under 30 = not worth the drive.
 

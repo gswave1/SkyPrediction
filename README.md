@@ -1,6 +1,6 @@
 # Golden Hour Board — live sunset & sunrise ranking
 
-Updated Tue 4:30 PM Eastern (hourly, 4 AM–9 PM). Board: https://gswave1.github.io/SkyPrediction/
+Updated Tue 5:05 PM Eastern (hourly, 4 AM–9 PM). Board: https://gswave1.github.io/SkyPrediction/
 
 Columns: score 0–100 | spot | place | lat,lon | drive min from home (Meredith, NH) | sun time | flags | why. Under 30 = not worth the drive.
 
