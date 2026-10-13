@@ -1,44 +1,28 @@
 {
-  "generated": "2026-10-13T07:29:22.503Z",
+  "generated": "2026-10-13T20:30:53.668Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-13",
       "when": "tonight",
-      "time": "18:10",
+      "time": "18:08",
       "top": [
         {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 8,
-          "label": "Skip",
-          "drive": 70,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Low deck overhead — flat grey, no separation. Some haze (AOD 0.26) — colors a notch softer. Showers around.",
-          "time": "18:10",
-          "lat": 43.321,
-          "lon": -72.084
-        },
-        {
-          "id": "echolake",
-          "name": "Echo Lake",
+          "id": "baldmtn",
+          "name": "Bald Mountain",
           "place": "Franconia Notch, NH",
           "score": 7,
           "label": "Skip",
-          "drive": 60,
+          "drive": 52,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Rain at showtime — the gap would have to open fast.",
           "time": "18:08",
-          "lat": 44.187,
-          "lon": -71.69
+          "lat": 44.183,
+          "lon": -71.704
         },
         {
           "id": "artists",
@@ -55,20 +39,12 @@
           "time": "18:08",
           "lat": 44.181,
           "lon": -71.695
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-10-13",
-      "when": "this morning",
-      "time": "06:59",
-      "top": [
+        },
         {
           "id": "middlesugarloaf",
           "name": "Middle Sugarloaf",
           "place": "Bethlehem, NH",
-          "score": 9,
+          "score": 6,
           "label": "Skip",
           "drive": 71,
           "flags": [
@@ -76,41 +52,60 @@
             "cirrus overhead"
           ],
           "why": "Rain at showtime — the gap would have to open fast.",
-          "time": "06:59",
+          "time": "18:07",
           "lat": 44.2513,
           "lon": -71.5171
+        }
+      ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-10-14",
+      "when": "tomorrow",
+      "time": "07:00",
+      "top": [
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 26,
+          "label": "Skip",
+          "drive": 104,
+          "flags": [],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:00",
+          "lat": 42.8619,
+          "lon": -71.8788
         },
         {
-          "id": "cannon",
-          "name": "Cannon Mountain Summit",
-          "place": "Franconia Notch, NH",
-          "score": 8,
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 19,
           "label": "Skip",
-          "drive": 51,
+          "drive": 110,
           "flags": [
-            "horizon blocked",
-            "cirrus overhead"
+            "horizon blocked"
           ],
-          "why": "Rain at showtime — the gap would have to open fast.",
-          "time": "06:59",
-          "lat": 44.1569,
-          "lon": -71.6992
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:56",
+          "lat": 42.8151,
+          "lon": -70.819
         },
         {
-          "id": "bretton",
-          "name": "Bretton Woods",
-          "place": "Carroll, NH",
-          "score": 6,
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 16,
           "label": "Skip",
-          "drive": 72,
+          "drive": 80,
           "flags": [
-            "horizon blocked",
-            "cirrus overhead"
+            "horizon blocked"
           ],
-          "why": "Rain at showtime — the gap would have to open fast.",
-          "time": "06:59",
-          "lat": 44.26,
-          "lon": -71.443
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "07:01",
+          "lat": 43.385,
+          "lon": -71.857
         }
       ]
     },
@@ -121,25 +116,10 @@
       "time": "18:03",
       "top": [
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 21,
-          "label": "Skip",
-          "drive": 94,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:03",
-          "lat": 43.2232,
-          "lon": -70.6919
-        },
-        {
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 16,
+          "score": 22,
           "label": "Skip",
           "drive": 94,
           "flags": [
@@ -151,23 +131,38 @@
           "lon": -70.698
         },
         {
-          "id": "newburyportharborlight",
-          "name": "Newburyport Harbor Light",
-          "place": "Newburyport, MA",
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 18,
+          "label": "Skip",
+          "drive": 94,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:03",
+          "lat": 43.2232,
+          "lon": -70.6919
+        },
+        {
+          "id": "newcastle",
+          "name": "New Castle / Portsmouth Harbor",
+          "place": "New Castle, NH",
           "score": 15,
           "label": "Skip",
-          "drive": 110,
+          "drive": 87,
           "flags": [
             "horizon blocked"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "18:04",
-          "lat": 42.8151,
-          "lon": -70.819
+          "time": "18:03",
+          "lat": 43.069,
+          "lon": -70.713
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:10 PM. Nothing looks good. The best is Mount Sunapee Summit at 8. \n\nSunrise this morning at 6:59 AM. Nothing looks good. The best is Middle Sugarloaf at 9. ",
+  "text": "Sunset tonight at 6:08 PM. Nothing looks good. The best is Bald Mountain at 7. \n\nSunrise tomorrow at 7:00 AM. Nothing looks good. The best is Pack Monadnock (Miller SP) at 26. ",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
