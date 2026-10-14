@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-14T13:27:14.967Z",
+  "generated": "2026-10-14T18:24:13.407Z",
   "drive": 120,
   "events": [
     {
@@ -12,23 +12,36 @@
           "id": "agamenticus",
           "name": "Mount Agamenticus",
           "place": "York, ME",
-          "score": 35,
-          "label": "Marginal",
+          "score": 23,
+          "label": "Skip",
           "drive": 94,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "18:03",
           "lat": 43.2232,
           "lon": -70.6919
         },
         {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 22,
+          "label": "Skip",
+          "drive": 94,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:03",
+          "lat": 43.06,
+          "lon": -70.698
+        },
+        {
           "id": "yorkharbor",
           "name": "York Harbor",
           "place": "York, ME",
-          "score": 30,
-          "label": "Marginal",
+          "score": 19,
+          "label": "Skip",
           "drive": 91,
           "flags": [
             "horizon blocked"
@@ -37,21 +50,6 @@
           "time": "18:03",
           "lat": 43.147,
           "lon": -70.626
-        },
-        {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 27,
-          "label": "Skip",
-          "drive": 94,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "18:03",
-          "lat": 43.06,
-          "lon": -70.698
         }
       ]
     },
@@ -59,48 +57,52 @@
       "ev": "sunrise",
       "day": "2026-10-15",
       "when": "tomorrow",
-      "time": "07:01",
+      "time": "07:00",
       "top": [
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 30,
-          "label": "Skip",
-          "drive": 104,
+          "id": "major",
+          "name": "Mount Major Summit",
+          "place": "Alton, NH",
+          "score": 31,
+          "label": "Marginal",
+          "drive": 33,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:01",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "time": "07:00",
+          "lat": 43.5093,
+          "lon": -71.2806
         },
         {
-          "id": "mtpercival",
-          "name": "Mount Percival",
-          "place": "Sandwich, NH",
-          "score": 28,
-          "label": "Skip",
-          "drive": 28,
-          "flags": [],
+          "id": "ellacoya",
+          "name": "Ellacoya State Park",
+          "place": "Gilford, NH",
+          "score": 30,
+          "label": "Marginal",
+          "drive": 22,
+          "flags": [
+            "horizon open"
+          ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:01",
-          "lat": 43.8022,
-          "lon": -71.5225
+          "time": "07:00",
+          "lat": 43.5694,
+          "lon": -71.3547
         },
         {
-          "id": "centersandwich",
-          "name": "Center Sandwich",
-          "place": "Sandwich, NH",
-          "score": 28,
-          "label": "Skip",
-          "drive": 18,
-          "flags": [],
+          "id": "leavittpark",
+          "name": "Leavitt Park",
+          "place": "Meredith, NH",
+          "score": 30,
+          "label": "Marginal",
+          "drive": 8,
+          "flags": [
+            "horizon open"
+          ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:01",
-          "lat": 43.782,
-          "lon": -71.473
+          "time": "07:00",
+          "lat": 43.681,
+          "lon": -71.454
         }
       ]
     },
@@ -108,52 +110,52 @@
       "ev": "sunset",
       "day": "2026-10-15",
       "when": "tomorrow night",
-      "time": "18:03",
+      "time": "18:02",
       "top": [
         {
-          "id": "mtwashington",
-          "name": "Mount Washington Summit",
-          "place": "Sargent's Purchase, NH",
-          "score": 82,
+          "id": "chatham",
+          "name": "Chatham",
+          "place": "Chatham, NH",
+          "score": 77,
           "label": "Go",
-          "drive": 116,
+          "drive": 95,
           "flags": [
             "cirrus overhead",
-            "afterglow to 18:48"
+            "afterglow to 18:47"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:48. Be set up early. (Sun-crossing score alone: 60.)",
-          "time": "18:03",
-          "lat": 44.27,
-          "lon": -71.302
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:47. Be set up early. (Sun-crossing score alone: 50.)",
+          "time": "18:02",
+          "lat": 44.271,
+          "lon": -71.025
         },
         {
-          "id": "greatglen",
-          "name": "Great Glen / Auto Road Base",
-          "place": "Pinkham Notch, NH",
-          "score": 82,
+          "id": "pleasantmtn",
+          "name": "Pleasant Mountain",
+          "place": "Bridgton, ME",
+          "score": 76,
           "label": "Go",
-          "drive": 87,
+          "drive": 90,
           "flags": [
             "cirrus overhead",
-            "afterglow to 18:48"
+            "afterglow to 18:46"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:48. Be set up early. (Sun-crossing score alone: 61.)",
-          "time": "18:03",
-          "lat": 44.261,
-          "lon": -71.257
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:46. Be set up early. (Sun-crossing score alone: 52.)",
+          "time": "18:01",
+          "lat": 44.027,
+          "lon": -70.8223
         },
         {
           "id": "sebago",
           "name": "Sebago Lake State Park",
           "place": "Casco, ME",
-          "score": 80,
+          "score": 76,
           "label": "Go",
           "drive": 95,
           "flags": [
-            "horizon open",
-            "cirrus overhead"
+            "cirrus overhead",
+            "afterglow to 18:45"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:45. Be set up early. (Sun-crossing score alone: 52.)",
           "time": "18:00",
           "lat": 43.9209,
           "lon": -70.5806
@@ -161,6 +163,6 @@
       ]
     }
   ],
-  "text": "Sunset tonight at 6:03 PM. Best bet: Mount Agamenticus, 35, Marginal. horizon blocked. 1 hour 34 minutes away. Then York Harbor 30.\n\nSunrise tomorrow at 7:01 AM. Best bet: Pack Monadnock (Miller SP), 30, Skip. horizon open. 1 hour 44 minutes away.",
+  "text": "Sunset tonight at 6:03 PM. Nothing looks good. The best is Mount Agamenticus at 23. \n\nSunrise tomorrow at 7:00 AM. Best bet: Mount Major Summit, 31, Marginal. horizon open. 33 minutes away. Then Ellacoya State Park 30, and Leavitt Park 30.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
