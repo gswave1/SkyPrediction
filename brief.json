@@ -1,60 +1,55 @@
 {
-  "generated": "2026-10-13T21:05:02.088Z",
+  "generated": "2026-10-14T00:58:31.292Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
-      "day": "2026-10-13",
-      "when": "tonight",
-      "time": "18:08",
+      "day": "2026-10-14",
+      "when": "tomorrow night",
+      "time": "18:03",
       "top": [
         {
-          "id": "baldmtn",
-          "name": "Bald Mountain",
-          "place": "Franconia Notch, NH",
-          "score": 7,
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 24,
           "label": "Skip",
-          "drive": 52,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Rain at showtime — the gap would have to open fast.",
-          "time": "18:08",
-          "lat": 44.183,
-          "lon": -71.704
+          "drive": 94,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:03",
+          "lat": 43.2232,
+          "lon": -70.6919
         },
         {
-          "id": "artists",
-          "name": "Artist's Bluff",
-          "place": "Franconia Notch, NH",
-          "score": 7,
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 23,
           "label": "Skip",
-          "drive": 51,
+          "drive": 94,
           "flags": [
-            "horizon blocked",
-            "cirrus overhead"
+            "horizon blocked"
           ],
-          "why": "Rain at showtime — the gap would have to open fast.",
-          "time": "18:08",
-          "lat": 44.181,
-          "lon": -71.695
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:03",
+          "lat": 43.06,
+          "lon": -70.698
         },
         {
-          "id": "middlesugarloaf",
-          "name": "Middle Sugarloaf",
-          "place": "Bethlehem, NH",
-          "score": 6,
+          "id": "yorkharbor",
+          "name": "York Harbor",
+          "place": "York, ME",
+          "score": 19,
           "label": "Skip",
-          "drive": 71,
+          "drive": 91,
           "flags": [
-            "horizon blocked",
-            "cirrus overhead"
+            "horizon blocked"
           ],
-          "why": "Rain at showtime — the gap would have to open fast.",
-          "time": "18:07",
-          "lat": 44.2513,
-          "lon": -71.5171
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:03",
+          "lat": 43.147,
+          "lon": -70.626
         }
       ]
     },
@@ -68,101 +63,107 @@
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
           "place": "Peterborough, NH",
-          "score": 26,
+          "score": 21,
           "label": "Skip",
           "drive": 104,
-          "flags": [],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "07:00",
           "lat": 42.8619,
           "lon": -71.8788
         },
         {
-          "id": "newburyportharborlight",
-          "name": "Newburyport Harbor Light",
-          "place": "Newburyport, MA",
-          "score": 19,
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
+          "score": 13,
           "label": "Skip",
-          "drive": 110,
+          "drive": 111,
           "flags": [
             "horizon blocked"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:56",
-          "lat": 42.8151,
-          "lon": -70.819
+          "time": "07:03",
+          "lat": 43.4445,
+          "lon": -72.4537
         },
         {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 16,
+          "id": "jennefarm",
+          "name": "Jenne Farm",
+          "place": "Reading, VT",
+          "score": 12,
           "label": "Skip",
-          "drive": 80,
+          "drive": 111,
           "flags": [
             "horizon blocked"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "07:01",
-          "lat": 43.385,
-          "lon": -71.857
+          "time": "07:04",
+          "lat": 43.5245,
+          "lon": -72.5596
         }
       ]
     },
     {
       "ev": "sunset",
-      "day": "2026-10-14",
-      "when": "tomorrow night",
+      "day": "2026-10-15",
+      "when": "Thursday",
       "time": "18:03",
       "top": [
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 22,
-          "label": "Skip",
-          "drive": 94,
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 77,
+          "label": "Go",
+          "drive": 61,
           "flags": [
-            "horizon blocked"
+            "cirrus overhead",
+            "afterglow to 18:48"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:48. Be set up early. (Sun-crossing score alone: 54.)",
           "time": "18:03",
-          "lat": 43.06,
-          "lon": -70.698
+          "lat": 43.3314,
+          "lon": -71.1162
         },
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 18,
-          "label": "Skip",
-          "drive": 94,
+          "id": "greenmtn",
+          "name": "Green Mountain Fire Tower",
+          "place": "Effingham, NH",
+          "score": 76,
+          "label": "Go",
+          "drive": 55,
           "flags": [
-            "horizon blocked"
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 18:47"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:03",
-          "lat": 43.2232,
-          "lon": -70.6919
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:47. Be set up early. (Sun-crossing score alone: 49.)",
+          "time": "18:02",
+          "lat": 43.7675,
+          "lon": -71.0369
         },
         {
-          "id": "newcastle",
-          "name": "New Castle / Portsmouth Harbor",
-          "place": "New Castle, NH",
-          "score": 15,
-          "label": "Skip",
-          "drive": 87,
+          "id": "jobspond",
+          "name": "Jobs Pond",
+          "place": "Westmore, VT",
+          "score": 76,
+          "label": "Go",
+          "drive": 118,
           "flags": [
-            "horizon blocked"
+            "cirrus overhead",
+            "afterglow to 18:50"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "18:03",
-          "lat": 43.069,
-          "lon": -70.713
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:50. Be set up early. (Sun-crossing score alone: 34.)",
+          "time": "18:05",
+          "lat": 44.7622,
+          "lon": -71.9534
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:08 PM. Nothing looks good. The best is Bald Mountain at 7. \n\nSunrise tomorrow at 7:00 AM. Nothing looks good. The best is Pack Monadnock (Miller SP) at 26. ",
+  "text": "Sunset tomorrow night at 6:03 PM. Nothing looks good. The best is Mount Agamenticus at 24. \n\nSunrise tomorrow at 7:00 AM. Nothing looks good. The best is Pack Monadnock (Miller SP) at 21. ",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
