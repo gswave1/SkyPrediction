@@ -1,18 +1,35 @@
 {
-  "generated": "2026-10-15T13:11:46.435Z",
+  "generated": "2026-10-15T18:07:57.392Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-15",
       "when": "tonight",
-      "time": "18:01",
+      "time": "18:00",
       "top": [
+        {
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 83,
+          "label": "Go",
+          "drive": 106,
+          "flags": [
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 18:45"
+          ],
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:45. Be set up early. (Sun-crossing score alone: 75.)",
+          "time": "18:00",
+          "lat": 43.563,
+          "lon": -70.365
+        },
         {
           "id": "agamenticus",
           "name": "Mount Agamenticus",
           "place": "York, ME",
-          "score": 83,
+          "score": 81,
           "label": "Go",
           "drive": 94,
           "flags": [
@@ -20,43 +37,27 @@
             "cirrus overhead",
             "afterglow to 18:46"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:46. Be set up early. (Sun-crossing score alone: 58.)",
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:46. Be set up early. (Sun-crossing score alone: 68.)",
           "time": "18:01",
           "lat": 43.2232,
           "lon": -70.6919
         },
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
+          "id": "chatham",
+          "name": "Chatham",
+          "place": "Chatham, NH",
           "score": 80,
           "label": "Go",
-          "drive": 94,
-          "flags": [
-            "cirrus overhead",
-            "afterglow to 18:47"
-          ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:47. Be set up early. (Sun-crossing score alone: 58.)",
-          "time": "18:02",
-          "lat": 43.06,
-          "lon": -70.698
-        },
-        {
-          "id": "yorkharbor",
-          "name": "York Harbor",
-          "place": "York, ME",
-          "score": 74,
-          "label": "Strong",
-          "drive": 91,
+          "drive": 95,
           "flags": [
             "horizon open",
             "cirrus overhead",
-            "afterglow to 18:46"
+            "afterglow to 18:47"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:46. Be set up early. (Sun-crossing score alone: 49.)",
-          "time": "18:01",
-          "lat": 43.147,
-          "lon": -70.626
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:47. Be set up early. (Sun-crossing score alone: 67.)",
+          "time": "18:02",
+          "lat": 44.271,
+          "lon": -71.025
         }
       ]
     },
@@ -67,52 +68,52 @@
       "time": "06:58",
       "top": [
         {
-          "id": "sebago",
-          "name": "Sebago Lake State Park",
-          "place": "Casco, ME",
-          "score": 37,
-          "label": "Marginal",
-          "drive": 95,
+          "id": "ryeharbor",
+          "name": "Rye Harbor State Park",
+          "place": "Rye, NH",
+          "score": 30,
+          "label": "Skip",
+          "drive": 91,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:58",
-          "lat": 43.9209,
-          "lon": -70.5806
+          "lat": 43.0017,
+          "lon": -70.7446
         },
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 35,
-          "label": "Marginal",
-          "drive": 106,
+          "id": "yorkharbor",
+          "name": "York Harbor",
+          "place": "York, ME",
+          "score": 29,
+          "label": "Skip",
+          "drive": 91,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:57",
-          "lat": 43.563,
-          "lon": -70.365
+          "time": "06:58",
+          "lat": 43.147,
+          "lon": -70.626
         },
         {
-          "id": "capeporpoise",
-          "name": "Cape Porpoise Pier",
-          "place": "Kennebunkport, ME",
-          "score": 34,
-          "label": "Marginal",
-          "drive": 114,
+          "id": "odiorne",
+          "name": "Odiorne Point",
+          "place": "Rye, NH",
+          "score": 29,
+          "label": "Skip",
+          "drive": 86,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:57",
-          "lat": 43.3654,
-          "lon": -70.432
+          "time": "06:58",
+          "lat": 43.0431,
+          "lon": -70.7161
         }
       ]
     },
@@ -120,56 +121,56 @@
       "ev": "sunset",
       "day": "2026-10-16",
       "when": "tomorrow night",
-      "time": "18:02",
+      "time": "18:04",
       "top": [
         {
-          "id": "middlesugarloaf",
-          "name": "Middle Sugarloaf",
-          "place": "Bethlehem, NH",
-          "score": 12,
+          "id": "bog",
+          "name": "Bog Mountain",
+          "place": "Wilmot, NH",
+          "score": 16,
           "label": "Skip",
-          "drive": 71,
+          "drive": 46,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
-          "time": "18:02",
-          "lat": 44.2513,
-          "lon": -71.5171
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:04",
+          "lat": 43.469,
+          "lon": -71.93
         },
         {
-          "id": "greatglen",
-          "name": "Great Glen / Auto Road Base",
-          "place": "Pinkham Notch, NH",
-          "score": 9,
+          "id": "hampton",
+          "name": "Hampton Beach",
+          "place": "Hampton, NH",
+          "score": 10,
           "label": "Skip",
-          "drive": 87,
+          "drive": 90,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun sets outside this spot's open arc.",
           "time": "18:01",
-          "lat": 44.261,
-          "lon": -71.257
+          "lat": 42.9081,
+          "lon": -70.81
         },
         {
-          "id": "owlshead",
-          "name": "Owl's Head, Groton State Forest",
-          "place": "Groton, VT",
-          "score": 9,
+          "id": "pequawket",
+          "name": "Pequawket Pond",
+          "place": "Conway, NH",
+          "score": 10,
           "label": "Skip",
-          "drive": 108,
+          "drive": 54,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "18:05",
-          "lat": 44.297,
-          "lon": -72.295
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "18:01",
+          "lat": 43.9847,
+          "lon": -71.1211
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:01 PM. Best bet: Mount Agamenticus, 83, Go. horizon open, cirrus overhead, afterglow to 18:46. 1 hour 34 minutes away. Then Kittery Point 80, and York Harbor 74.\n\nSunrise tomorrow at 6:58 AM. Best bet: Sebago Lake State Park, 37, Marginal. horizon blocked, cirrus overhead. 1 hour 35 minutes away. Then Scarborough Marsh 35, and Cape Porpoise Pier 34.",
+  "text": "Sunset tonight at 6:00 PM. Best bet: Scarborough Marsh, 83, Go. horizon open, cirrus overhead, afterglow to 18:45. 1 hour 46 minutes away. Then Mount Agamenticus 81, and Chatham 80.\n\nSunrise tomorrow at 6:58 AM. Best bet: Rye Harbor State Park, 30, Skip. horizon blocked, cirrus overhead. 1 hour 31 minutes away.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
