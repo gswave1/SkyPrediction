@@ -1,173 +1,175 @@
 {
-  "generated": "2026-10-15T01:18:20.338Z",
+  "generated": "2026-10-15T13:11:46.435Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-15",
-      "when": "tomorrow night",
-      "time": "18:02",
+      "when": "tonight",
+      "time": "18:01",
       "top": [
         {
-          "id": "intervale",
-          "name": "Intervale Scenic Vista",
-          "place": "Intervale, NH",
-          "score": 85,
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 83,
           "label": "Go",
-          "drive": 67,
+          "drive": 94,
           "flags": [
             "horizon open",
+            "cirrus overhead",
+            "afterglow to 18:46"
+          ],
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:46. Be set up early. (Sun-crossing score alone: 58.)",
+          "time": "18:01",
+          "lat": 43.2232,
+          "lon": -70.6919
+        },
+        {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 80,
+          "label": "Go",
+          "drive": 94,
+          "flags": [
             "cirrus overhead",
             "afterglow to 18:47"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:47. Be set up early. (Sun-crossing score alone: 55.)",
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:47. Be set up early. (Sun-crossing score alone: 58.)",
           "time": "18:02",
-          "lat": 44.0756,
-          "lon": -71.1396
+          "lat": 43.06,
+          "lon": -70.698
         },
         {
-          "id": "sugarhill",
-          "name": "Sunset Hill, Sugar Hill",
-          "place": "Sugar Hill, NH",
-          "score": 84,
-          "label": "Go",
-          "drive": 61,
+          "id": "yorkharbor",
+          "name": "York Harbor",
+          "place": "York, ME",
+          "score": 74,
+          "label": "Strong",
+          "drive": 91,
           "flags": [
             "horizon open",
             "cirrus overhead",
-            "afterglow to 18:50"
+            "afterglow to 18:46"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:50. Be set up early. (Sun-crossing score alone: 64.)",
-          "time": "18:05",
-          "lat": 44.217,
-          "lon": -71.783
-        },
-        {
-          "id": "fossmtn",
-          "name": "Foss Mountain",
-          "place": "Eaton, NH",
-          "score": 82,
-          "label": "Go",
-          "drive": 64,
-          "flags": [
-            "horizon open",
-            "cirrus overhead",
-            "afterglow to 18:47"
-          ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:47. Be set up early. (Sun-crossing score alone: 71.)",
-          "time": "18:02",
-          "lat": 43.8771,
-          "lon": -71.0348
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:46. Be set up early. (Sun-crossing score alone: 49.)",
+          "time": "18:01",
+          "lat": 43.147,
+          "lon": -70.626
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-15",
+      "day": "2026-10-16",
       "when": "tomorrow",
-      "time": "07:00",
+      "time": "06:58",
       "top": [
         {
-          "id": "major",
-          "name": "Mount Major Summit",
-          "place": "Alton, NH",
-          "score": 31,
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 37,
           "label": "Marginal",
-          "drive": 33,
+          "drive": 95,
           "flags": [
-            "horizon open"
+            "horizon blocked",
+            "cirrus overhead"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:00",
-          "lat": 43.5093,
-          "lon": -71.2806
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:58",
+          "lat": 43.9209,
+          "lon": -70.5806
         },
         {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 31,
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 35,
           "label": "Marginal",
-          "drive": 80,
+          "drive": 106,
           "flags": [
-            "horizon open"
+            "horizon blocked",
+            "cirrus overhead"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:02",
-          "lat": 43.385,
-          "lon": -71.857
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:57",
+          "lat": 43.563,
+          "lon": -70.365
         },
         {
-          "id": "leavittpark",
-          "name": "Leavitt Park",
-          "place": "Meredith, NH",
-          "score": 30,
+          "id": "capeporpoise",
+          "name": "Cape Porpoise Pier",
+          "place": "Kennebunkport, ME",
+          "score": 34,
           "label": "Marginal",
-          "drive": 8,
+          "drive": 114,
           "flags": [
-            "horizon open"
+            "horizon blocked",
+            "cirrus overhead"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:00",
-          "lat": 43.681,
-          "lon": -71.454
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:57",
+          "lat": 43.3654,
+          "lon": -70.432
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-10-16",
-      "when": "Friday",
-      "time": "18:05",
+      "when": "tomorrow night",
+      "time": "18:02",
       "top": [
         {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 11,
+          "id": "middlesugarloaf",
+          "name": "Middle Sugarloaf",
+          "place": "Bethlehem, NH",
+          "score": 12,
           "label": "Skip",
-          "drive": 70,
+          "drive": 71,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
-          "time": "18:05",
-          "lat": 43.321,
-          "lon": -72.084
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 250 km out.",
+          "time": "18:02",
+          "lat": 44.2513,
+          "lon": -71.5171
         },
         {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 10,
+          "id": "greatglen",
+          "name": "Great Glen / Auto Road Base",
+          "place": "Pinkham Notch, NH",
+          "score": 9,
           "label": "Skip",
-          "drive": 80,
+          "drive": 87,
           "flags": [
             "horizon blocked"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "18:04",
-          "lat": 43.385,
-          "lon": -71.857
+          "time": "18:01",
+          "lat": 44.261,
+          "lon": -71.257
         },
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
           "score": 9,
           "label": "Skip",
-          "drive": 94,
+          "drive": 108,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. Showers around.",
-          "time": "18:00",
-          "lat": 43.06,
-          "lon": -70.698
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "18:05",
+          "lat": 44.297,
+          "lon": -72.295
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 6:02 PM. Best bet: Intervale Scenic Vista, 85, Go. horizon open, cirrus overhead, afterglow to 18:47. 1 hour 7 minutes away. Then Sunset Hill, Sugar Hill 84, and Foss Mountain 82.\n\nSunrise tomorrow at 7:00 AM. Best bet: Mount Major Summit, 31, Marginal. horizon open. 33 minutes away. Then Mount Kearsarge Summit 31, and Leavitt Park 30.",
+  "text": "Sunset tonight at 6:01 PM. Best bet: Mount Agamenticus, 83, Go. horizon open, cirrus overhead, afterglow to 18:46. 1 hour 34 minutes away. Then Kittery Point 80, and York Harbor 74.\n\nSunrise tomorrow at 6:58 AM. Best bet: Sebago Lake State Park, 37, Marginal. horizon blocked, cirrus overhead. 1 hour 35 minutes away. Then Scarborough Marsh 35, and Cape Porpoise Pier 34.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
