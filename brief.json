@@ -1,115 +1,7 @@
 {
-  "generated": "2026-10-16T20:41:47.864Z",
+  "generated": "2026-10-16T23:20:11.085Z",
   "drive": 120,
   "events": [
-    {
-      "ev": "sunset",
-      "day": "2026-10-16",
-      "when": "tonight",
-      "time": "18:00",
-      "top": [
-        {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 13,
-          "label": "Skip",
-          "drive": 94,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Rain at showtime — the gap would have to open fast.",
-          "time": "18:00",
-          "lat": 43.06,
-          "lon": -70.698
-        },
-        {
-          "id": "nubble",
-          "name": "Nubble Light",
-          "place": "York, ME",
-          "score": 12,
-          "label": "Skip",
-          "drive": 95,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun sets outside this spot's open arc.",
-          "time": "17:59",
-          "lat": 43.166,
-          "lon": -70.593
-        },
-        {
-          "id": "capeporpoise",
-          "name": "Cape Porpoise Pier",
-          "place": "Kennebunkport, ME",
-          "score": 12,
-          "label": "Skip",
-          "drive": 114,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun sets outside this spot's open arc.",
-          "time": "17:59",
-          "lat": 43.3654,
-          "lon": -70.432
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-10-17",
-      "when": "tomorrow",
-      "time": "07:01",
-      "top": [
-        {
-          "id": "fossmtn",
-          "name": "Foss Mountain",
-          "place": "Eaton, NH",
-          "score": 39,
-          "label": "Marginal",
-          "drive": 64,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "07:01",
-          "lat": 43.8771,
-          "lon": -71.0348
-        },
-        {
-          "id": "sebago",
-          "name": "Sebago Lake State Park",
-          "place": "Casco, ME",
-          "score": 37,
-          "label": "Marginal",
-          "drive": 95,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "07:00",
-          "lat": 43.9209,
-          "lon": -70.5806
-        },
-        {
-          "id": "newburyportharborlight",
-          "name": "Newburyport Harbor Light",
-          "place": "Newburyport, MA",
-          "score": 36,
-          "label": "Marginal",
-          "drive": 110,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:59",
-          "lat": 42.8151,
-          "lon": -70.819
-        }
-      ]
-    },
     {
       "ev": "sunset",
       "day": "2026-10-17",
@@ -120,7 +12,7 @@
           "id": "cardigan",
           "name": "Mount Cardigan Summit",
           "place": "Orange, NH",
-          "score": 30,
+          "score": 28,
           "label": "Skip",
           "drive": 57,
           "flags": [],
@@ -133,7 +25,7 @@
           "id": "peacham",
           "name": "Peacham Village",
           "place": "Peacham, VT",
-          "score": 30,
+          "score": 28,
           "label": "Skip",
           "drive": 98,
           "flags": [],
@@ -146,7 +38,7 @@
           "id": "greenmtn",
           "name": "Green Mountain Fire Tower",
           "place": "Effingham, NH",
-          "score": 29,
+          "score": 27,
           "label": "Skip",
           "drive": 55,
           "flags": [],
@@ -156,8 +48,114 @@
           "lon": -71.0369
         }
       ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-10-17",
+      "when": "tomorrow",
+      "time": "06:59",
+      "top": [
+        {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 36,
+          "label": "Marginal",
+          "drive": 94,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:59",
+          "lat": 43.06,
+          "lon": -70.698
+        },
+        {
+          "id": "odiorne",
+          "name": "Odiorne Point",
+          "place": "Rye, NH",
+          "score": 36,
+          "label": "Marginal",
+          "drive": 86,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:59",
+          "lat": 43.0431,
+          "lon": -70.7161
+        },
+        {
+          "id": "ryeharbor",
+          "name": "Rye Harbor State Park",
+          "place": "Rye, NH",
+          "score": 36,
+          "label": "Marginal",
+          "drive": 91,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:59",
+          "lat": 43.0017,
+          "lon": -70.7446
+        }
+      ]
+    },
+    {
+      "ev": "sunset",
+      "day": "2026-10-18",
+      "when": "Sunday",
+      "time": "18:00",
+      "top": [
+        {
+          "id": "willoughby",
+          "name": "Lake Willoughby",
+          "place": "Westmore, VT",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 112,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:00",
+          "lat": 44.735,
+          "lon": -72.047
+        },
+        {
+          "id": "jobspond",
+          "name": "Jobs Pond",
+          "place": "Westmore, VT",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 118,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:00",
+          "lat": 44.7622,
+          "lon": -71.9534
+        },
+        {
+          "id": "willoughbysouth",
+          "name": "Lake Willoughby, south end",
+          "place": "Westmore, VT",
+          "score": 34,
+          "label": "Marginal",
+          "drive": 110,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "18:00",
+          "lat": 44.717,
+          "lon": -72.031
+        }
+      ]
     }
   ],
-  "text": "Sunset tonight at 6:00 PM. Nothing looks good. The best is Kittery Point at 13. \n\nSunrise tomorrow at 7:01 AM. Best bet: Foss Mountain, 39, Marginal. horizon blocked, cirrus overhead. 1 hour 4 minutes away. Then Sebago Lake State Park 37, and Newburyport Harbor Light 36.",
+  "text": "Sunset tomorrow night at 6:03 PM. Nothing looks good. The best is Mount Cardigan Summit at 28. \n\nSunrise tomorrow at 6:59 AM. Best bet: Kittery Point, 36, Marginal. horizon blocked. 1 hour 34 minutes away. Then Odiorne Point 36, and Rye Harbor State Park 36.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
