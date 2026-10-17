@@ -1,57 +1,57 @@
 {
-  "generated": "2026-10-17T19:06:01.608Z",
+  "generated": "2026-10-17T22:02:33.234Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
-      "day": "2026-10-17",
-      "when": "tonight",
-      "time": "17:58",
+      "day": "2026-10-18",
+      "when": "tomorrow night",
+      "time": "17:59",
       "top": [
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 56,
-          "label": "Worth it",
-          "drive": 94,
+          "id": "meredith",
+          "name": "Meredith Bay Docks",
+          "place": "Meredith, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 2,
           "flags": [
             "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:58",
-          "lat": 43.06,
-          "lon": -70.698
-        },
-        {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 54,
-          "label": "Worth it",
-          "drive": 94,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:58",
-          "lat": 43.2232,
-          "lon": -70.6919
-        },
-        {
-          "id": "greenmtn",
-          "name": "Green Mountain Fire Tower",
-          "place": "Effingham, NH",
-          "score": 49,
-          "label": "Worth it",
-          "drive": 55,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "17:59",
-          "lat": 43.7675,
-          "lon": -71.0369
+          "lat": 43.656,
+          "lon": -71.498
+        },
+        {
+          "id": "squam",
+          "name": "Squam Lake",
+          "place": "Holderness, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 13,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:00",
+          "lat": 43.731,
+          "lon": -71.586
+        },
+        {
+          "id": "centerharb",
+          "name": "Center Harbor Town Dock",
+          "place": "Center Harbor, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 10,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:59",
+          "lat": 43.71,
+          "lon": -71.467
         }
       ]
     },
@@ -110,22 +110,24 @@
     },
     {
       "ev": "sunset",
-      "day": "2026-10-18",
-      "when": "tomorrow night",
-      "time": "17:59",
+      "day": "2026-10-19",
+      "when": "Monday",
+      "time": "17:58",
       "top": [
         {
           "id": "meredith",
           "name": "Meredith Bay Docks",
           "place": "Meredith, NH",
-          "score": 32,
-          "label": "Marginal",
+          "score": 93,
+          "label": "Go",
           "drive": 2,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 18:43"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:59",
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:43. Be set up early. (Sun-crossing score alone: 42.)",
+          "time": "17:58",
           "lat": 43.656,
           "lon": -71.498
         },
@@ -133,14 +135,16 @@
           "id": "squam",
           "name": "Squam Lake",
           "place": "Holderness, NH",
-          "score": 32,
-          "label": "Marginal",
+          "score": 93,
+          "label": "Go",
           "drive": 13,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 18:43"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:00",
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:43. Be set up early. (Sun-crossing score alone: 53.)",
+          "time": "17:58",
           "lat": 43.731,
           "lon": -71.586
         },
@@ -148,20 +152,22 @@
           "id": "centerharb",
           "name": "Center Harbor Town Dock",
           "place": "Center Harbor, NH",
-          "score": 32,
-          "label": "Marginal",
+          "score": 93,
+          "label": "Go",
           "drive": 10,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 18:42"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:59",
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:42. Be set up early. (Sun-crossing score alone: 49.)",
+          "time": "17:57",
           "lat": 43.71,
           "lon": -71.467
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:58 PM. Best bet: Kittery Point, 56, Worth it. horizon open. 1 hour 34 minutes away. Then Mount Agamenticus 54, and Green Mountain Fire Tower 49.\n\nSunrise tomorrow at 7:05 AM. Best bet: Newfound Lake, Wellington, 32, Marginal. horizon open. 33 minutes away. Then Newfound Lake, Bristol end 32, and Mount Cardigan Summit 32.",
+  "text": "Sunset tomorrow night at 5:59 PM. Best bet: Meredith Bay Docks, 32, Marginal. horizon open. 2 minutes away. Then Squam Lake 32, and Center Harbor Town Dock 32.\n\nSunrise tomorrow at 7:05 AM. Best bet: Newfound Lake, Wellington, 32, Marginal. horizon open. 33 minutes away. Then Newfound Lake, Bristol end 32, and Mount Cardigan Summit 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
