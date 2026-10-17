@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-17T16:12:25.777Z",
+  "generated": "2026-10-17T19:06:01.608Z",
   "drive": 120,
   "events": [
     {
@@ -24,34 +24,34 @@
           "lon": -70.698
         },
         {
-          "id": "newburyportharborlight",
-          "name": "Newburyport Harbor Light",
-          "place": "Newburyport, MA",
-          "score": 51,
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 54,
           "label": "Worth it",
-          "drive": 110,
+          "drive": 94,
           "flags": [
             "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "17:59",
-          "lat": 42.8151,
-          "lon": -70.819
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:58",
+          "lat": 43.2232,
+          "lon": -70.6919
         },
         {
-          "id": "yorkharbor",
-          "name": "York Harbor",
-          "place": "York, ME",
-          "score": 46,
+          "id": "greenmtn",
+          "name": "Green Mountain Fire Tower",
+          "place": "Effingham, NH",
+          "score": 49,
           "label": "Worth it",
-          "drive": 91,
+          "drive": 55,
           "flags": [
             "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "17:58",
-          "lat": 43.147,
-          "lon": -70.626
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:59",
+          "lat": 43.7675,
+          "lon": -71.0369
         }
       ]
     },
@@ -162,6 +162,6 @@
       ]
     }
   ],
-  "text": "Sunset tonight at 5:58 PM. Best bet: Kittery Point, 56, Worth it. horizon open. 1 hour 34 minutes away. Then Newburyport Harbor Light 51, and York Harbor 46.\n\nSunrise tomorrow at 7:05 AM. Best bet: Newfound Lake, Wellington, 32, Marginal. horizon open. 33 minutes away. Then Newfound Lake, Bristol end 32, and Mount Cardigan Summit 32.",
+  "text": "Sunset tonight at 5:58 PM. Best bet: Kittery Point, 56, Worth it. horizon open. 1 hour 34 minutes away. Then Mount Agamenticus 54, and Green Mountain Fire Tower 49.\n\nSunrise tomorrow at 7:05 AM. Best bet: Newfound Lake, Wellington, 32, Marginal. horizon open. 33 minutes away. Then Newfound Lake, Bristol end 32, and Mount Cardigan Summit 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
