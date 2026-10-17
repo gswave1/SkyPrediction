@@ -1,125 +1,124 @@
 {
-  "generated": "2026-10-17T03:36:39.504Z",
+  "generated": "2026-10-17T12:02:35.928Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-17",
-      "when": "tomorrow night",
+      "when": "tonight",
       "time": "17:58",
       "top": [
         {
           "id": "agamenticus",
           "name": "Mount Agamenticus",
           "place": "York, ME",
-          "score": 53,
+          "score": 56,
           "label": "Worth it",
           "drive": 94,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:58",
           "lat": 43.2232,
           "lon": -70.6919
         },
         {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 47,
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 52,
           "label": "Worth it",
-          "drive": 61,
+          "drive": 94,
           "flags": [
             "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:00",
-          "lat": 43.3314,
-          "lon": -71.1162
-        },
-        {
-          "id": "yorkharbor",
-          "name": "York Harbor",
-          "place": "York, ME",
-          "score": 44,
-          "label": "Marginal",
-          "drive": 91,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Mid-level cloud overhead and a clear run to the horizon. And the sun sets outside this spot's open arc.",
           "time": "17:58",
-          "lat": 43.147,
-          "lon": -70.626
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-10-17",
-      "when": "tomorrow",
-      "time": "06:59",
-      "top": [
-        {
-          "id": "ryeharbor",
-          "name": "Rye Harbor State Park",
-          "place": "Rye, NH",
-          "score": 37,
-          "label": "Marginal",
-          "drive": 91,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:59",
-          "lat": 43.0017,
-          "lon": -70.7446
-        },
-        {
-          "id": "odiorne",
-          "name": "Odiorne Point",
-          "place": "Rye, NH",
-          "score": 35,
-          "label": "Marginal",
-          "drive": 86,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:59",
-          "lat": 43.0431,
-          "lon": -70.7161
+          "lat": 43.06,
+          "lon": -70.698
         },
         {
           "id": "scarborough",
           "name": "Scarborough Marsh",
           "place": "Scarborough, ME",
-          "score": 34,
-          "label": "Marginal",
+          "score": 47,
+          "label": "Worth it",
           "drive": 106,
           "flags": [
-            "horizon blocked",
-            "cirrus overhead"
+            "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:58",
+          "time": "17:56",
           "lat": 43.563,
           "lon": -70.365
         }
       ]
     },
     {
+      "ev": "sunrise",
+      "day": "2026-10-18",
+      "when": "tomorrow",
+      "time": "07:05",
+      "top": [
+        {
+          "id": "newfound",
+          "name": "Newfound Lake, Wellington",
+          "place": "Bristol, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 33,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:05",
+          "lat": 43.664,
+          "lon": -71.767
+        },
+        {
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 70,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:06",
+          "lat": 43.321,
+          "lon": -72.084
+        },
+        {
+          "id": "newfoundsouth",
+          "name": "Newfound Lake, Bristol end",
+          "place": "Bristol, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 27,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:05",
+          "lat": 43.625,
+          "lon": -71.745
+        }
+      ]
+    },
+    {
       "ev": "sunset",
       "day": "2026-10-18",
-      "when": "Sunday",
+      "when": "tomorrow night",
       "time": "18:00",
       "top": [
         {
           "id": "jobspond",
           "name": "Jobs Pond",
           "place": "Westmore, VT",
-          "score": 35,
+          "score": 33,
           "label": "Marginal",
           "drive": 118,
           "flags": [
@@ -134,7 +133,7 @@
           "id": "willoughby",
           "name": "Lake Willoughby",
           "place": "Westmore, VT",
-          "score": 34,
+          "score": 33,
           "label": "Marginal",
           "drive": 112,
           "flags": [
@@ -146,23 +145,23 @@
           "lon": -72.047
         },
         {
-          "id": "burkemtn",
-          "name": "Burke Mountain",
-          "place": "East Burke, VT",
-          "score": 33,
+          "id": "meredith",
+          "name": "Meredith Bay Docks",
+          "place": "Meredith, NH",
+          "score": 32,
           "label": "Marginal",
-          "drive": 110,
+          "drive": 2,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:00",
-          "lat": 44.5705,
-          "lon": -71.893
+          "time": "17:59",
+          "lat": 43.656,
+          "lon": -71.498
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 5:58 PM. Best bet: Mount Agamenticus, 53, Worth it. 1 hour 34 minutes away. Then Blue Job Mountain Fire Tower 47, and York Harbor 44.\n\nSunrise tomorrow at 6:59 AM. Best bet: Rye Harbor State Park, 37, Marginal. horizon blocked, cirrus overhead. 1 hour 31 minutes away. Then Odiorne Point 35, and Scarborough Marsh 34.",
+  "text": "Sunset tonight at 5:58 PM. Best bet: Mount Agamenticus, 56, Worth it. horizon open. 1 hour 34 minutes away. Then Kittery Point 52, and Scarborough Marsh 47.\n\nSunrise tomorrow at 7:05 AM. Best bet: Newfound Lake, Wellington, 32, Marginal. horizon open. 33 minutes away. Then Mount Sunapee Summit 32, and Newfound Lake, Bristol end 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
