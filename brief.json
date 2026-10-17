@@ -1,51 +1,55 @@
 {
-  "generated": "2026-10-16T23:20:11.085Z",
+  "generated": "2026-10-17T03:36:39.504Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-17",
       "when": "tomorrow night",
-      "time": "18:03",
+      "time": "17:58",
       "top": [
         {
-          "id": "cardigan",
-          "name": "Mount Cardigan Summit",
-          "place": "Orange, NH",
-          "score": 28,
-          "label": "Skip",
-          "drive": 57,
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 53,
+          "label": "Worth it",
+          "drive": 94,
           "flags": [],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:03",
-          "lat": 43.6495,
-          "lon": -71.9144
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "time": "17:58",
+          "lat": 43.2232,
+          "lon": -70.6919
         },
         {
-          "id": "peacham",
-          "name": "Peacham Village",
-          "place": "Peacham, VT",
-          "score": 28,
-          "label": "Skip",
-          "drive": 98,
-          "flags": [],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:03",
-          "lat": 44.328,
-          "lon": -72.175
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 47,
+          "label": "Worth it",
+          "drive": 61,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:00",
+          "lat": 43.3314,
+          "lon": -71.1162
         },
         {
-          "id": "greenmtn",
-          "name": "Green Mountain Fire Tower",
-          "place": "Effingham, NH",
-          "score": 27,
-          "label": "Skip",
-          "drive": 55,
-          "flags": [],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:59",
-          "lat": 43.7675,
-          "lon": -71.0369
+          "id": "yorkharbor",
+          "name": "York Harbor",
+          "place": "York, ME",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 91,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Mid-level cloud overhead and a clear run to the horizon. And the sun sets outside this spot's open arc.",
+          "time": "17:58",
+          "lat": 43.147,
+          "lon": -70.626
         }
       ]
     },
@@ -56,29 +60,31 @@
       "time": "06:59",
       "top": [
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 36,
+          "id": "ryeharbor",
+          "name": "Rye Harbor State Park",
+          "place": "Rye, NH",
+          "score": 37,
           "label": "Marginal",
-          "drive": 94,
+          "drive": 91,
           "flags": [
-            "horizon blocked"
+            "horizon blocked",
+            "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:59",
-          "lat": 43.06,
-          "lon": -70.698
+          "lat": 43.0017,
+          "lon": -70.7446
         },
         {
           "id": "odiorne",
           "name": "Odiorne Point",
           "place": "Rye, NH",
-          "score": 36,
+          "score": 35,
           "label": "Marginal",
           "drive": 86,
           "flags": [
-            "horizon blocked"
+            "horizon blocked",
+            "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:59",
@@ -86,19 +92,20 @@
           "lon": -70.7161
         },
         {
-          "id": "ryeharbor",
-          "name": "Rye Harbor State Park",
-          "place": "Rye, NH",
-          "score": 36,
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 34,
           "label": "Marginal",
-          "drive": 91,
+          "drive": 106,
           "flags": [
-            "horizon blocked"
+            "horizon blocked",
+            "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:59",
-          "lat": 43.0017,
-          "lon": -70.7446
+          "time": "06:58",
+          "lat": 43.563,
+          "lon": -70.365
         }
       ]
     },
@@ -109,53 +116,53 @@
       "time": "18:00",
       "top": [
         {
-          "id": "willoughby",
-          "name": "Lake Willoughby",
-          "place": "Westmore, VT",
-          "score": 44,
-          "label": "Marginal",
-          "drive": 112,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:00",
-          "lat": 44.735,
-          "lon": -72.047
-        },
-        {
           "id": "jobspond",
           "name": "Jobs Pond",
           "place": "Westmore, VT",
-          "score": 44,
+          "score": 35,
           "label": "Marginal",
           "drive": 118,
           "flags": [
             "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "18:00",
           "lat": 44.7622,
           "lon": -71.9534
         },
         {
-          "id": "willoughbysouth",
-          "name": "Lake Willoughby, south end",
+          "id": "willoughby",
+          "name": "Lake Willoughby",
           "place": "Westmore, VT",
           "score": 34,
+          "label": "Marginal",
+          "drive": 112,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "18:00",
+          "lat": 44.735,
+          "lon": -72.047
+        },
+        {
+          "id": "burkemtn",
+          "name": "Burke Mountain",
+          "place": "East Burke, VT",
+          "score": 33,
           "label": "Marginal",
           "drive": 110,
           "flags": [
             "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "18:00",
-          "lat": 44.717,
-          "lon": -72.031
+          "lat": 44.5705,
+          "lon": -71.893
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 6:03 PM. Nothing looks good. The best is Mount Cardigan Summit at 28. \n\nSunrise tomorrow at 6:59 AM. Best bet: Kittery Point, 36, Marginal. horizon blocked. 1 hour 34 minutes away. Then Odiorne Point 36, and Rye Harbor State Park 36.",
+  "text": "Sunset tomorrow night at 5:58 PM. Best bet: Mount Agamenticus, 53, Worth it. 1 hour 34 minutes away. Then Blue Job Mountain Fire Tower 47, and York Harbor 44.\n\nSunrise tomorrow at 6:59 AM. Best bet: Rye Harbor State Park, 37, Marginal. horizon blocked, cirrus overhead. 1 hour 31 minutes away. Then Odiorne Point 35, and Scarborough Marsh 34.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
