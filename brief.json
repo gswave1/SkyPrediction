@@ -1,110 +1,106 @@
 {
-  "generated": "2026-10-18T05:33:42.382Z",
+  "generated": "2026-10-18T12:31:06.468Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-18",
       "when": "tonight",
-      "time": "17:58",
+      "time": "18:00",
       "top": [
         {
-          "id": "randolph",
-          "name": "Randolph",
-          "place": "Randolph, NH",
-          "score": 38,
-          "label": "Marginal",
-          "drive": 83,
+          "id": "willoughby",
+          "name": "Lake Willoughby",
+          "place": "Westmore, VT",
+          "score": 53,
+          "label": "Worth it",
+          "drive": 112,
           "flags": [
             "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:58",
-          "lat": 44.358,
-          "lon": -71.368
+          "time": "18:00",
+          "lat": 44.735,
+          "lon": -72.047
         },
         {
-          "id": "middlesugarloaf",
-          "name": "Middle Sugarloaf",
-          "place": "Bethlehem, NH",
-          "score": 35,
-          "label": "Marginal",
-          "drive": 71,
+          "id": "lyndon",
+          "name": "Lyndon Farm Fields",
+          "place": "Northeast Kingdom, VT",
+          "score": 47,
+          "label": "Worth it",
+          "drive": 96,
           "flags": [
             "horizon open"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:59",
-          "lat": 44.2513,
-          "lon": -71.5171
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:00",
+          "lat": 44.565,
+          "lon": -71.973
         },
         {
-          "id": "mtwashington",
-          "name": "Mount Washington Summit",
-          "place": "Sargent's Purchase, NH",
-          "score": 34,
-          "label": "Marginal",
-          "drive": 116,
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 45,
+          "label": "Worth it",
+          "drive": 98,
           "flags": [
             "horizon open"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:58",
-          "lat": 44.27,
-          "lon": -71.302
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "18:01",
+          "lat": 44.328,
+          "lon": -72.175
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-18",
-      "when": "this morning",
-      "time": "07:05",
+      "day": "2026-10-19",
+      "when": "tomorrow",
+      "time": "07:02",
       "top": [
         {
-          "id": "newfound",
-          "name": "Newfound Lake, Wellington",
-          "place": "Bristol, NH",
-          "score": 32,
+          "id": "hampton",
+          "name": "Hampton Beach",
+          "place": "Hampton, NH",
+          "score": 41,
           "label": "Marginal",
-          "drive": 33,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:05",
-          "lat": 43.664,
-          "lon": -71.767
+          "drive": 90,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "07:02",
+          "lat": 42.9081,
+          "lon": -70.81
         },
         {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 32,
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 41,
           "label": "Marginal",
-          "drive": 80,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:05",
-          "lat": 43.385,
-          "lon": -71.857
+          "drive": 110,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "07:02",
+          "lat": 42.8151,
+          "lon": -70.819
         },
         {
-          "id": "bretton",
-          "name": "Bretton Woods",
-          "place": "Carroll, NH",
+          "id": "cherrypond",
+          "name": "Little Cherry Pond",
+          "place": "Pondicherry NWR, NH",
           "score": 32,
           "label": "Marginal",
-          "drive": 72,
+          "drive": 81,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:05",
-          "lat": 44.26,
-          "lon": -71.443
+          "time": "07:07",
+          "lat": 44.3761,
+          "lon": -71.5188
         }
       ]
     },
@@ -112,62 +108,62 @@
       "ev": "sunset",
       "day": "2026-10-19",
       "when": "tomorrow night",
-      "time": "17:55",
+      "time": "17:56",
       "top": [
         {
-          "id": "chatham",
-          "name": "Chatham",
-          "place": "Chatham, NH",
+          "id": "greenmtn",
+          "name": "Green Mountain Fire Tower",
+          "place": "Effingham, NH",
           "score": 87,
           "label": "Go",
-          "drive": 95,
+          "drive": 55,
           "flags": [
             "horizon open",
             "cirrus overhead",
-            "afterglow to 18:40"
+            "afterglow to 18:41"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:40. Be set up early. (Sun-crossing score alone: 60.)",
-          "time": "17:55",
-          "lat": 44.271,
-          "lon": -71.025
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:41. Be set up early. (Sun-crossing score alone: 49.)",
+          "time": "17:56",
+          "lat": 43.7675,
+          "lon": -71.0369
         },
         {
-          "id": "meredith",
-          "name": "Meredith Bay Docks",
-          "place": "Meredith, NH",
-          "score": 87,
+          "id": "pleasantmtn",
+          "name": "Pleasant Mountain",
+          "place": "Bridgton, ME",
+          "score": 86,
           "label": "Go",
-          "drive": 2,
+          "drive": 90,
           "flags": [
             "horizon open",
             "cirrus overhead",
-            "afterglow to 18:43"
+            "afterglow to 18:39"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:43. Be set up early. (Sun-crossing score alone: 58.)",
-          "time": "17:58",
-          "lat": 43.656,
-          "lon": -71.498
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:39. Be set up early. (Sun-crossing score alone: 49.)",
+          "time": "17:54",
+          "lat": 44.027,
+          "lon": -70.8223
         },
         {
-          "id": "squam",
-          "name": "Squam Lake",
-          "place": "Holderness, NH",
-          "score": 87,
+          "id": "major",
+          "name": "Mount Major Summit",
+          "place": "Alton, NH",
+          "score": 84,
           "label": "Go",
-          "drive": 13,
+          "drive": 33,
           "flags": [
             "horizon open",
             "cirrus overhead",
-            "afterglow to 18:43"
+            "afterglow to 18:42"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:43. Be set up early. (Sun-crossing score alone: 58.)",
-          "time": "17:58",
-          "lat": 43.731,
-          "lon": -71.586
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:42. Be set up early. (Sun-crossing score alone: 49.)",
+          "time": "17:57",
+          "lat": 43.5093,
+          "lon": -71.2806
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:58 PM. Best bet: Randolph, 38, Marginal. horizon open. 1 hour 23 minutes away. Then Middle Sugarloaf 35, and Mount Washington Summit 34.\n\nSunrise this morning at 7:05 AM. Best bet: Newfound Lake, Wellington, 32, Marginal. horizon open. 33 minutes away. Then Mount Kearsarge Summit 32, and Bretton Woods 32.",
+  "text": "Sunset tonight at 6:00 PM. Best bet: Lake Willoughby, 53, Worth it. horizon open. 1 hour 52 minutes away. Then Lyndon Farm Fields 47, and Peacham Village 45.\n\nSunrise tomorrow at 7:02 AM. Best bet: Hampton Beach, 41, Marginal. 1 hour 30 minutes away. Then Newburyport Harbor Light 41, and Little Cherry Pond 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
