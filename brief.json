@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-18T16:25:28.742Z",
+  "generated": "2026-10-18T19:19:07.413Z",
   "drive": 120,
   "events": [
     {
@@ -12,13 +12,13 @@
           "id": "willoughby",
           "name": "Lake Willoughby",
           "place": "Westmore, VT",
-          "score": 39,
+          "score": 37,
           "label": "Marginal",
           "drive": 112,
           "flags": [
             "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "18:00",
           "lat": 44.735,
           "lon": -72.047
@@ -42,7 +42,7 @@
           "id": "lyndon",
           "name": "Lyndon Farm Fields",
           "place": "Northeast Kingdom, VT",
-          "score": 34,
+          "score": 33,
           "label": "Marginal",
           "drive": 96,
           "flags": [
@@ -65,10 +65,12 @@
           "id": "hampton",
           "name": "Hampton Beach",
           "place": "Hampton, NH",
-          "score": 38,
+          "score": 40,
           "label": "Marginal",
           "drive": 90,
-          "flags": [],
+          "flags": [
+            "horizon open"
+          ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "07:02",
           "lat": 42.9081,
@@ -78,7 +80,7 @@
           "id": "newburyportharborlight",
           "name": "Newburyport Harbor Light",
           "place": "Newburyport, MA",
-          "score": 35,
+          "score": 36,
           "label": "Marginal",
           "drive": 110,
           "flags": [
@@ -90,17 +92,19 @@
           "lon": -70.819
         },
         {
-          "id": "nubble",
-          "name": "Nubble Light",
-          "place": "York, ME",
-          "score": 34,
+          "id": "newcastle",
+          "name": "New Castle / Portsmouth Harbor",
+          "place": "New Castle, NH",
+          "score": 36,
           "label": "Marginal",
-          "drive": 95,
-          "flags": [],
+          "drive": 87,
+          "flags": [
+            "horizon open"
+          ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:01",
-          "lat": 43.166,
-          "lon": -70.593
+          "time": "07:02",
+          "lat": 43.069,
+          "lon": -70.713
         }
       ]
     },
@@ -164,6 +168,6 @@
       ]
     }
   ],
-  "text": "Sunset tonight at 6:00 PM. Best bet: Lake Willoughby, 39, Marginal. horizon open. 1 hour 52 minutes away. Then Jobs Pond 37, and Lyndon Farm Fields 34.\n\nSunrise tomorrow at 7:02 AM. Best bet: Hampton Beach, 38, Marginal. 1 hour 30 minutes away. Then Newburyport Harbor Light 35, and Nubble Light 34.",
+  "text": "Sunset tonight at 6:00 PM. Best bet: Lake Willoughby, 37, Marginal. horizon open. 1 hour 52 minutes away. Then Jobs Pond 37, and Lyndon Farm Fields 33.\n\nSunrise tomorrow at 7:02 AM. Best bet: Hampton Beach, 40, Marginal. horizon open. 1 hour 30 minutes away. Then Newburyport Harbor Light 36, and New Castle / Portsmouth Harbor 36.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
