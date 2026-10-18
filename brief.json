@@ -1,57 +1,60 @@
 {
-  "generated": "2026-10-18T19:19:07.413Z",
+  "generated": "2026-10-18T22:18:15.595Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
-      "day": "2026-10-18",
-      "when": "tonight",
-      "time": "18:00",
+      "day": "2026-10-19",
+      "when": "tomorrow night",
+      "time": "17:57",
       "top": [
         {
-          "id": "willoughby",
-          "name": "Lake Willoughby",
-          "place": "Westmore, VT",
-          "score": 37,
-          "label": "Marginal",
-          "drive": 112,
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 63,
+          "label": "Strong",
+          "drive": 61,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "afterglow to 18:42"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:00",
-          "lat": 44.735,
-          "lon": -72.047
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:42. Be set up early. (Sun-crossing score alone: 39.)",
+          "time": "17:57",
+          "lat": 43.3314,
+          "lon": -71.1162
         },
         {
-          "id": "jobspond",
-          "name": "Jobs Pond",
-          "place": "Westmore, VT",
-          "score": 37,
-          "label": "Marginal",
-          "drive": 118,
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 62,
+          "label": "Strong",
+          "drive": 94,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "afterglow to 18:40"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:00",
-          "lat": 44.7622,
-          "lon": -71.9534
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:40. Be set up early. (Sun-crossing score alone: 52.)",
+          "time": "17:55",
+          "lat": 43.06,
+          "lon": -70.698
         },
         {
-          "id": "lyndon",
-          "name": "Lyndon Farm Fields",
-          "place": "Northeast Kingdom, VT",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 96,
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 62,
+          "label": "Strong",
+          "drive": 94,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "afterglow to 18:40"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:00",
-          "lat": 44.565,
-          "lon": -71.973
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:40. Be set up early. (Sun-crossing score alone: 37.)",
+          "time": "17:55",
+          "lat": 43.2232,
+          "lon": -70.6919
         }
       ]
     },
@@ -59,115 +62,112 @@
       "ev": "sunrise",
       "day": "2026-10-19",
       "when": "tomorrow",
-      "time": "07:02",
+      "time": "07:09",
       "top": [
         {
-          "id": "hampton",
-          "name": "Hampton Beach",
-          "place": "Hampton, NH",
-          "score": 40,
-          "label": "Marginal",
-          "drive": 90,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "07:02",
-          "lat": 42.9081,
-          "lon": -70.81
-        },
-        {
-          "id": "newburyportharborlight",
-          "name": "Newburyport Harbor Light",
-          "place": "Newburyport, MA",
-          "score": 36,
+          "id": "willoughbysouth",
+          "name": "Lake Willoughby, south end",
+          "place": "Westmore, VT",
+          "score": 32,
           "label": "Marginal",
           "drive": 110,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:02",
-          "lat": 42.8151,
-          "lon": -70.819
+          "time": "07:09",
+          "lat": 44.717,
+          "lon": -72.031
         },
         {
-          "id": "newcastle",
-          "name": "New Castle / Portsmouth Harbor",
-          "place": "New Castle, NH",
-          "score": 36,
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 32,
           "label": "Marginal",
-          "drive": 87,
+          "drive": 98,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:02",
-          "lat": 43.069,
-          "lon": -70.713
+          "time": "07:09",
+          "lat": 44.328,
+          "lon": -72.175
+        },
+        {
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 108,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:10",
+          "lat": 44.297,
+          "lon": -72.295
         }
       ]
     },
     {
       "ev": "sunset",
-      "day": "2026-10-19",
-      "when": "tomorrow night",
-      "time": "17:53",
+      "day": "2026-10-20",
+      "when": "Tuesday",
+      "time": "17:52",
       "top": [
         {
           "id": "scarborough",
           "name": "Scarborough Marsh",
           "place": "Scarborough, ME",
-          "score": 81,
-          "label": "Go",
+          "score": 64,
+          "label": "Strong",
           "drive": 106,
           "flags": [
             "horizon open",
-            "cirrus overhead",
-            "afterglow to 18:38"
+            "afterglow to 18:37"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:38. Be set up early. (Sun-crossing score alone: 51.)",
-          "time": "17:53",
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:37. Be set up early. (Sun-crossing score alone: 45.)",
+          "time": "17:52",
           "lat": 43.563,
           "lon": -70.365
         },
         {
-          "id": "artists",
-          "name": "Artist's Bluff",
-          "place": "Franconia Notch, NH",
-          "score": 81,
-          "label": "Go",
-          "drive": 51,
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 64,
+          "label": "Strong",
+          "drive": 94,
           "flags": [
             "horizon open",
-            "cirrus overhead",
-            "afterglow to 18:43"
+            "afterglow to 18:39"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:43. Be set up early. (Sun-crossing score alone: 58.)",
-          "time": "17:58",
-          "lat": 44.181,
-          "lon": -71.695
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:39. Be set up early. (Sun-crossing score alone: 45.)",
+          "time": "17:54",
+          "lat": 43.06,
+          "lon": -70.698
         },
         {
-          "id": "baldmtn",
-          "name": "Bald Mountain",
-          "place": "Franconia Notch, NH",
-          "score": 81,
-          "label": "Go",
-          "drive": 52,
+          "id": "greenmtn",
+          "name": "Green Mountain Fire Tower",
+          "place": "Effingham, NH",
+          "score": 64,
+          "label": "Strong",
+          "drive": 55,
           "flags": [
             "horizon open",
-            "cirrus overhead",
-            "afterglow to 18:43"
+            "afterglow to 18:39"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:43. Be set up early. (Sun-crossing score alone: 58.)",
-          "time": "17:58",
-          "lat": 44.183,
-          "lon": -71.704
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:39. Be set up early. (Sun-crossing score alone: 39.)",
+          "time": "17:54",
+          "lat": 43.7675,
+          "lon": -71.0369
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:00 PM. Best bet: Lake Willoughby, 37, Marginal. horizon open. 1 hour 52 minutes away. Then Jobs Pond 37, and Lyndon Farm Fields 33.\n\nSunrise tomorrow at 7:02 AM. Best bet: Hampton Beach, 40, Marginal. horizon open. 1 hour 30 minutes away. Then Newburyport Harbor Light 36, and New Castle / Portsmouth Harbor 36.",
+  "text": "Sunset tomorrow night at 5:57 PM. Best bet: Blue Job Mountain Fire Tower, 63, Strong. horizon open, afterglow to 18:42. 1 hour 1 minutes away. Then Kittery Point 62, and Mount Agamenticus 62.\n\nSunrise tomorrow at 7:09 AM. Best bet: Lake Willoughby, south end, 32, Marginal. horizon open. 1 hour 50 minutes away. Then Peacham Village 32, and Owl's Head, Groton State Forest 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
