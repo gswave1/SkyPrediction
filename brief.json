@@ -1,64 +1,64 @@
 {
-  "generated": "2026-10-17T22:02:33.234Z",
+  "generated": "2026-10-18T05:33:42.382Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-18",
-      "when": "tomorrow night",
-      "time": "17:59",
+      "when": "tonight",
+      "time": "17:58",
       "top": [
         {
-          "id": "meredith",
-          "name": "Meredith Bay Docks",
-          "place": "Meredith, NH",
-          "score": 32,
+          "id": "randolph",
+          "name": "Randolph",
+          "place": "Randolph, NH",
+          "score": 38,
           "label": "Marginal",
-          "drive": 2,
+          "drive": 83,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:58",
+          "lat": 44.358,
+          "lon": -71.368
+        },
+        {
+          "id": "middlesugarloaf",
+          "name": "Middle Sugarloaf",
+          "place": "Bethlehem, NH",
+          "score": 35,
+          "label": "Marginal",
+          "drive": 71,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "17:59",
-          "lat": 43.656,
-          "lon": -71.498
+          "lat": 44.2513,
+          "lon": -71.5171
         },
         {
-          "id": "squam",
-          "name": "Squam Lake",
-          "place": "Holderness, NH",
-          "score": 32,
+          "id": "mtwashington",
+          "name": "Mount Washington Summit",
+          "place": "Sargent's Purchase, NH",
+          "score": 34,
           "label": "Marginal",
-          "drive": 13,
+          "drive": 116,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "18:00",
-          "lat": 43.731,
-          "lon": -71.586
-        },
-        {
-          "id": "centerharb",
-          "name": "Center Harbor Town Dock",
-          "place": "Center Harbor, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 10,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:59",
-          "lat": 43.71,
-          "lon": -71.467
+          "time": "17:58",
+          "lat": 44.27,
+          "lon": -71.302
         }
       ]
     },
     {
       "ev": "sunrise",
       "day": "2026-10-18",
-      "when": "tomorrow",
+      "when": "this morning",
       "time": "07:05",
       "top": [
         {
@@ -77,48 +77,65 @@
           "lon": -71.767
         },
         {
-          "id": "newfoundsouth",
-          "name": "Newfound Lake, Bristol end",
-          "place": "Bristol, NH",
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
           "score": 32,
           "label": "Marginal",
-          "drive": 27,
+          "drive": 80,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "07:05",
-          "lat": 43.625,
-          "lon": -71.745
+          "lat": 43.385,
+          "lon": -71.857
         },
         {
-          "id": "cardigan",
-          "name": "Mount Cardigan Summit",
-          "place": "Orange, NH",
+          "id": "bretton",
+          "name": "Bretton Woods",
+          "place": "Carroll, NH",
           "score": 32,
           "label": "Marginal",
-          "drive": 57,
+          "drive": 72,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:06",
-          "lat": 43.6495,
-          "lon": -71.9144
+          "time": "07:05",
+          "lat": 44.26,
+          "lon": -71.443
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-10-19",
-      "when": "Monday",
-      "time": "17:58",
+      "when": "tomorrow night",
+      "time": "17:55",
       "top": [
+        {
+          "id": "chatham",
+          "name": "Chatham",
+          "place": "Chatham, NH",
+          "score": 87,
+          "label": "Go",
+          "drive": 95,
+          "flags": [
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 18:40"
+          ],
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:40. Be set up early. (Sun-crossing score alone: 60.)",
+          "time": "17:55",
+          "lat": 44.271,
+          "lon": -71.025
+        },
         {
           "id": "meredith",
           "name": "Meredith Bay Docks",
           "place": "Meredith, NH",
-          "score": 93,
+          "score": 87,
           "label": "Go",
           "drive": 2,
           "flags": [
@@ -126,7 +143,7 @@
             "cirrus overhead",
             "afterglow to 18:43"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:43. Be set up early. (Sun-crossing score alone: 42.)",
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:43. Be set up early. (Sun-crossing score alone: 58.)",
           "time": "17:58",
           "lat": 43.656,
           "lon": -71.498
@@ -135,7 +152,7 @@
           "id": "squam",
           "name": "Squam Lake",
           "place": "Holderness, NH",
-          "score": 93,
+          "score": 87,
           "label": "Go",
           "drive": 13,
           "flags": [
@@ -143,31 +160,14 @@
             "cirrus overhead",
             "afterglow to 18:43"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:43. Be set up early. (Sun-crossing score alone: 53.)",
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:43. Be set up early. (Sun-crossing score alone: 58.)",
           "time": "17:58",
           "lat": 43.731,
           "lon": -71.586
-        },
-        {
-          "id": "centerharb",
-          "name": "Center Harbor Town Dock",
-          "place": "Center Harbor, NH",
-          "score": 93,
-          "label": "Go",
-          "drive": 10,
-          "flags": [
-            "horizon open",
-            "cirrus overhead",
-            "afterglow to 18:42"
-          ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:42. Be set up early. (Sun-crossing score alone: 49.)",
-          "time": "17:57",
-          "lat": 43.71,
-          "lon": -71.467
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 5:59 PM. Best bet: Meredith Bay Docks, 32, Marginal. horizon open. 2 minutes away. Then Squam Lake 32, and Center Harbor Town Dock 32.\n\nSunrise tomorrow at 7:05 AM. Best bet: Newfound Lake, Wellington, 32, Marginal. horizon open. 33 minutes away. Then Newfound Lake, Bristol end 32, and Mount Cardigan Summit 32.",
+  "text": "Sunset tonight at 5:58 PM. Best bet: Randolph, 38, Marginal. horizon open. 1 hour 23 minutes away. Then Middle Sugarloaf 35, and Mount Washington Summit 34.\n\nSunrise this morning at 7:05 AM. Best bet: Newfound Lake, Wellington, 32, Marginal. horizon open. 33 minutes away. Then Mount Kearsarge Summit 32, and Bretton Woods 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
