@@ -1,114 +1,104 @@
 {
-  "generated": "2026-10-19T05:56:06.263Z",
+  "generated": "2026-10-19T15:22:42.976Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-19",
       "when": "tonight",
-      "time": "17:53",
+      "time": "17:55",
       "top": [
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 75,
-          "label": "Strong",
-          "drive": 106,
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 45,
+          "label": "Marginal",
+          "drive": 94,
           "flags": [
-            "horizon open",
-            "cirrus overhead"
+            "horizon open"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "17:53",
-          "lat": 43.563,
-          "lon": -70.365
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:55",
+          "lat": 43.06,
+          "lon": -70.698
         },
         {
-          "id": "capeporpoise",
-          "name": "Cape Porpoise Pier",
-          "place": "Kennebunkport, ME",
-          "score": 72,
-          "label": "Strong",
-          "drive": 114,
+          "id": "nubble",
+          "name": "Nubble Light",
+          "place": "York, ME",
+          "score": 42,
+          "label": "Marginal",
+          "drive": 95,
           "flags": [
-            "horizon open",
-            "cirrus overhead",
-            "afterglow to 18:39"
+            "horizon open"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:39. Be set up early. (Sun-crossing score alone: 47.)",
-          "time": "17:54",
-          "lat": 43.3654,
-          "lon": -70.432
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "17:55",
+          "lat": 43.166,
+          "lon": -70.593
         },
         {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 62,
-          "label": "Strong",
-          "drive": 61,
+          "id": "longsands",
+          "name": "Long Sands Beach",
+          "place": "Cape Neddick, ME",
+          "score": 42,
+          "label": "Marginal",
+          "drive": 91,
           "flags": [
-            "horizon open",
-            "afterglow to 18:42"
+            "horizon open"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:42. Be set up early. (Sun-crossing score alone: 39.)",
-          "time": "17:57",
-          "lat": 43.3314,
-          "lon": -71.1162
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "17:55",
+          "lat": 43.16,
+          "lon": -70.621
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-19",
-      "when": "this morning",
-      "time": "07:09",
+      "day": "2026-10-20",
+      "when": "tomorrow",
+      "time": "07:03",
       "top": [
         {
-          "id": "willoughbysouth",
-          "name": "Lake Willoughby, south end",
-          "place": "Westmore, VT",
-          "score": 33,
+          "id": "ryeharbor",
+          "name": "Rye Harbor State Park",
+          "place": "Rye, NH",
+          "score": 37,
           "label": "Marginal",
-          "drive": 110,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:09",
-          "lat": 44.717,
-          "lon": -72.031
+          "drive": 91,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "07:03",
+          "lat": 43.0017,
+          "lon": -70.7446
         },
         {
-          "id": "bretton",
-          "name": "Bretton Woods",
-          "place": "Carroll, NH",
-          "score": 32,
+          "id": "newcastle",
+          "name": "New Castle / Portsmouth Harbor",
+          "place": "New Castle, NH",
+          "score": 36,
           "label": "Marginal",
-          "drive": 72,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:06",
-          "lat": 44.26,
-          "lon": -71.443
+          "drive": 87,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "07:03",
+          "lat": 43.069,
+          "lon": -70.713
         },
         {
-          "id": "cherrypond",
-          "name": "Little Cherry Pond",
-          "place": "Pondicherry NWR, NH",
-          "score": 32,
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 36,
           "label": "Marginal",
-          "drive": 81,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:07",
-          "lat": 44.3761,
-          "lon": -71.5188
+          "drive": 94,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "07:03",
+          "lat": 43.06,
+          "lon": -70.698
         }
       ]
     },
@@ -122,7 +112,7 @@
           "id": "moosilauke",
           "name": "Mount Moosilauke Summit",
           "place": "Benton, NH",
-          "score": 47,
+          "score": 51,
           "label": "Worth it",
           "drive": 67,
           "flags": [
@@ -134,38 +124,38 @@
           "lon": -71.8314
         },
         {
-          "id": "mtpemi",
-          "name": "Mount Pemigewasset (Indian Head)",
-          "place": "Lincoln, NH",
-          "score": 47,
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 51,
           "label": "Worth it",
-          "drive": 56,
+          "drive": 94,
           "flags": [
             "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:56",
-          "lat": 44.0975,
-          "lon": -71.6997
+          "time": "17:54",
+          "lat": 43.06,
+          "lon": -70.698
         },
         {
-          "id": "sugarhill",
-          "name": "Sunset Hill, Sugar Hill",
-          "place": "Sugar Hill, NH",
-          "score": 47,
+          "id": "chatham",
+          "name": "Chatham",
+          "place": "Chatham, NH",
+          "score": 51,
           "label": "Worth it",
-          "drive": 61,
+          "drive": 95,
           "flags": [
             "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:56",
-          "lat": 44.217,
-          "lon": -71.783
+          "time": "17:53",
+          "lat": 44.271,
+          "lon": -71.025
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:53 PM. Best bet: Scarborough Marsh, 75, Strong. horizon open, cirrus overhead. 1 hour 46 minutes away. Then Cape Porpoise Pier 72, and Blue Job Mountain Fire Tower 62.\n\nSunrise this morning at 7:09 AM. Best bet: Lake Willoughby, south end, 33, Marginal. horizon open. 1 hour 50 minutes away. Then Bretton Woods 32, and Little Cherry Pond 32.",
+  "text": "Sunset tonight at 5:55 PM. Best bet: Kittery Point, 45, Marginal. horizon open. 1 hour 34 minutes away. Then Nubble Light 42, and Long Sands Beach 42.\n\nSunrise tomorrow at 7:03 AM. Best bet: Rye Harbor State Park, 37, Marginal. 1 hour 31 minutes away. Then New Castle / Portsmouth Harbor 36, and Kittery Point 36.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
