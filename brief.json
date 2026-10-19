@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-18T22:18:15.595Z",
+  "generated": "2026-10-19T00:56:40.663Z",
   "drive": 120,
   "events": [
     {
@@ -121,14 +121,13 @@
           "id": "scarborough",
           "name": "Scarborough Marsh",
           "place": "Scarborough, ME",
-          "score": 64,
-          "label": "Strong",
+          "score": 56,
+          "label": "Worth it",
           "drive": 106,
           "flags": [
-            "horizon open",
-            "afterglow to 18:37"
+            "horizon open"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:37. Be set up early. (Sun-crossing score alone: 45.)",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:52",
           "lat": 43.563,
           "lon": -70.365
@@ -137,33 +136,31 @@
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 64,
-          "label": "Strong",
+          "score": 56,
+          "label": "Worth it",
           "drive": 94,
           "flags": [
-            "horizon open",
-            "afterglow to 18:39"
+            "horizon open"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:39. Be set up early. (Sun-crossing score alone: 45.)",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:54",
           "lat": 43.06,
           "lon": -70.698
         },
         {
-          "id": "greenmtn",
-          "name": "Green Mountain Fire Tower",
-          "place": "Effingham, NH",
-          "score": 64,
-          "label": "Strong",
-          "drive": 55,
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 56,
+          "label": "Worth it",
+          "drive": 94,
           "flags": [
-            "horizon open",
-            "afterglow to 18:39"
+            "horizon open"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:39. Be set up early. (Sun-crossing score alone: 39.)",
-          "time": "17:54",
-          "lat": 43.7675,
-          "lon": -71.0369
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:53",
+          "lat": 43.2232,
+          "lon": -70.6919
         }
       ]
     }
