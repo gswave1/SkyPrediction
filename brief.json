@@ -1,57 +1,57 @@
 {
-  "generated": "2026-10-19T15:22:42.976Z",
+  "generated": "2026-10-19T20:55:43.822Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-19",
       "when": "tonight",
-      "time": "17:55",
+      "time": "17:58",
       "top": [
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 45,
+          "id": "meredith",
+          "name": "Meredith Bay Docks",
+          "place": "Meredith, NH",
+          "score": 32,
           "label": "Marginal",
-          "drive": 94,
+          "drive": 2,
           "flags": [
             "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:55",
-          "lat": 43.06,
-          "lon": -70.698
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:58",
+          "lat": 43.656,
+          "lon": -71.498
         },
         {
-          "id": "nubble",
-          "name": "Nubble Light",
-          "place": "York, ME",
-          "score": 42,
+          "id": "squam",
+          "name": "Squam Lake",
+          "place": "Holderness, NH",
+          "score": 32,
           "label": "Marginal",
-          "drive": 95,
+          "drive": 13,
           "flags": [
             "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "17:55",
-          "lat": 43.166,
-          "lon": -70.593
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:58",
+          "lat": 43.731,
+          "lon": -71.586
         },
         {
-          "id": "longsands",
-          "name": "Long Sands Beach",
-          "place": "Cape Neddick, ME",
-          "score": 42,
+          "id": "centerharb",
+          "name": "Center Harbor Town Dock",
+          "place": "Center Harbor, NH",
+          "score": 32,
           "label": "Marginal",
-          "drive": 91,
+          "drive": 10,
           "flags": [
             "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "17:55",
-          "lat": 43.16,
-          "lon": -70.621
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:57",
+          "lat": 43.71,
+          "lon": -71.467
         }
       ]
     },
@@ -59,46 +59,46 @@
       "ev": "sunrise",
       "day": "2026-10-20",
       "when": "tomorrow",
-      "time": "07:03",
+      "time": "07:02",
       "top": [
         {
-          "id": "ryeharbor",
-          "name": "Rye Harbor State Park",
-          "place": "Rye, NH",
-          "score": 37,
+          "id": "capeporpoise",
+          "name": "Cape Porpoise Pier",
+          "place": "Kennebunkport, ME",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 114,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "07:02",
+          "lat": 43.3654,
+          "lon": -70.432
+        },
+        {
+          "id": "longsands",
+          "name": "Long Sands Beach",
+          "place": "Cape Neddick, ME",
+          "score": 36,
           "label": "Marginal",
           "drive": 91,
           "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "07:03",
-          "lat": 43.0017,
-          "lon": -70.7446
+          "lat": 43.16,
+          "lon": -70.621
         },
         {
-          "id": "newcastle",
-          "name": "New Castle / Portsmouth Harbor",
-          "place": "New Castle, NH",
+          "id": "yorkharbor",
+          "name": "York Harbor",
+          "place": "York, ME",
           "score": 36,
           "label": "Marginal",
-          "drive": 87,
+          "drive": 91,
           "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "07:03",
-          "lat": 43.069,
-          "lon": -70.713
-        },
-        {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 36,
-          "label": "Marginal",
-          "drive": 94,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "07:03",
-          "lat": 43.06,
-          "lon": -70.698
+          "lat": 43.147,
+          "lon": -70.626
         }
       ]
     },
@@ -106,29 +106,44 @@
       "ev": "sunset",
       "day": "2026-10-20",
       "when": "tomorrow night",
-      "time": "17:57",
+      "time": "17:52",
       "top": [
         {
-          "id": "moosilauke",
-          "name": "Mount Moosilauke Summit",
-          "place": "Benton, NH",
-          "score": 51,
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 46,
           "label": "Worth it",
-          "drive": 67,
+          "drive": 106,
           "flags": [
             "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:57",
-          "lat": 44.0241,
-          "lon": -71.8314
+          "time": "17:52",
+          "lat": 43.563,
+          "lon": -70.365
+        },
+        {
+          "id": "capeporpoise",
+          "name": "Cape Porpoise Pier",
+          "place": "Kennebunkport, ME",
+          "score": 40,
+          "label": "Marginal",
+          "drive": 114,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "17:52",
+          "lat": 43.3654,
+          "lon": -70.432
         },
         {
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 51,
-          "label": "Worth it",
+          "score": 39,
+          "label": "Marginal",
           "drive": 94,
           "flags": [
             "horizon open"
@@ -137,25 +152,10 @@
           "time": "17:54",
           "lat": 43.06,
           "lon": -70.698
-        },
-        {
-          "id": "chatham",
-          "name": "Chatham",
-          "place": "Chatham, NH",
-          "score": 51,
-          "label": "Worth it",
-          "drive": 95,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:53",
-          "lat": 44.271,
-          "lon": -71.025
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:55 PM. Best bet: Kittery Point, 45, Marginal. horizon open. 1 hour 34 minutes away. Then Nubble Light 42, and Long Sands Beach 42.\n\nSunrise tomorrow at 7:03 AM. Best bet: Rye Harbor State Park, 37, Marginal. 1 hour 31 minutes away. Then New Castle / Portsmouth Harbor 36, and Kittery Point 36.",
+  "text": "Sunset tonight at 5:58 PM. Best bet: Meredith Bay Docks, 32, Marginal. horizon open. 2 minutes away. Then Squam Lake 32, and Center Harbor Town Dock 32.\n\nSunrise tomorrow at 7:02 AM. Best bet: Cape Porpoise Pier, 38, Marginal. 1 hour 54 minutes away. Then Long Sands Beach 36, and York Harbor 36.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
