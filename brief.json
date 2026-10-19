@@ -1,18 +1,51 @@
 {
-  "generated": "2026-10-19T00:56:40.663Z",
+  "generated": "2026-10-19T05:56:06.263Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-19",
-      "when": "tomorrow night",
-      "time": "17:57",
+      "when": "tonight",
+      "time": "17:53",
       "top": [
+        {
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 75,
+          "label": "Strong",
+          "drive": 106,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "17:53",
+          "lat": 43.563,
+          "lon": -70.365
+        },
+        {
+          "id": "capeporpoise",
+          "name": "Cape Porpoise Pier",
+          "place": "Kennebunkport, ME",
+          "score": 72,
+          "label": "Strong",
+          "drive": 114,
+          "flags": [
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 18:39"
+          ],
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:39. Be set up early. (Sun-crossing score alone: 47.)",
+          "time": "17:54",
+          "lat": 43.3654,
+          "lon": -70.432
+        },
         {
           "id": "bluejob",
           "name": "Blue Job Mountain Fire Tower",
           "place": "Farmington, NH",
-          "score": 63,
+          "score": 62,
           "label": "Strong",
           "drive": 61,
           "flags": [
@@ -23,52 +56,20 @@
           "time": "17:57",
           "lat": 43.3314,
           "lon": -71.1162
-        },
-        {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 62,
-          "label": "Strong",
-          "drive": 94,
-          "flags": [
-            "horizon open",
-            "afterglow to 18:40"
-          ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:40. Be set up early. (Sun-crossing score alone: 52.)",
-          "time": "17:55",
-          "lat": 43.06,
-          "lon": -70.698
-        },
-        {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 62,
-          "label": "Strong",
-          "drive": 94,
-          "flags": [
-            "horizon open",
-            "afterglow to 18:40"
-          ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:40. Be set up early. (Sun-crossing score alone: 37.)",
-          "time": "17:55",
-          "lat": 43.2232,
-          "lon": -70.6919
         }
       ]
     },
     {
       "ev": "sunrise",
       "day": "2026-10-19",
-      "when": "tomorrow",
+      "when": "this morning",
       "time": "07:09",
       "top": [
         {
           "id": "willoughbysouth",
           "name": "Lake Willoughby, south end",
           "place": "Westmore, VT",
-          "score": 32,
+          "score": 33,
           "label": "Marginal",
           "drive": 110,
           "flags": [
@@ -80,91 +81,91 @@
           "lon": -72.031
         },
         {
-          "id": "peacham",
-          "name": "Peacham Village",
-          "place": "Peacham, VT",
+          "id": "bretton",
+          "name": "Bretton Woods",
+          "place": "Carroll, NH",
           "score": 32,
           "label": "Marginal",
-          "drive": 98,
+          "drive": 72,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:09",
-          "lat": 44.328,
-          "lon": -72.175
+          "time": "07:06",
+          "lat": 44.26,
+          "lon": -71.443
         },
         {
-          "id": "owlshead",
-          "name": "Owl's Head, Groton State Forest",
-          "place": "Groton, VT",
+          "id": "cherrypond",
+          "name": "Little Cherry Pond",
+          "place": "Pondicherry NWR, NH",
           "score": 32,
           "label": "Marginal",
-          "drive": 108,
+          "drive": 81,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:10",
-          "lat": 44.297,
-          "lon": -72.295
+          "time": "07:07",
+          "lat": 44.3761,
+          "lon": -71.5188
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-10-20",
-      "when": "Tuesday",
-      "time": "17:52",
+      "when": "tomorrow night",
+      "time": "17:57",
       "top": [
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 56,
+          "id": "moosilauke",
+          "name": "Mount Moosilauke Summit",
+          "place": "Benton, NH",
+          "score": 47,
           "label": "Worth it",
-          "drive": 106,
+          "drive": 67,
           "flags": [
             "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:52",
-          "lat": 43.563,
-          "lon": -70.365
+          "time": "17:57",
+          "lat": 44.0241,
+          "lon": -71.8314
         },
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 56,
+          "id": "mtpemi",
+          "name": "Mount Pemigewasset (Indian Head)",
+          "place": "Lincoln, NH",
+          "score": 47,
           "label": "Worth it",
-          "drive": 94,
+          "drive": 56,
           "flags": [
             "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:54",
-          "lat": 43.06,
-          "lon": -70.698
+          "time": "17:56",
+          "lat": 44.0975,
+          "lon": -71.6997
         },
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 56,
+          "id": "sugarhill",
+          "name": "Sunset Hill, Sugar Hill",
+          "place": "Sugar Hill, NH",
+          "score": 47,
           "label": "Worth it",
-          "drive": 94,
+          "drive": 61,
           "flags": [
             "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:53",
-          "lat": 43.2232,
-          "lon": -70.6919
+          "time": "17:56",
+          "lat": 44.217,
+          "lon": -71.783
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 5:57 PM. Best bet: Blue Job Mountain Fire Tower, 63, Strong. horizon open, afterglow to 18:42. 1 hour 1 minutes away. Then Kittery Point 62, and Mount Agamenticus 62.\n\nSunrise tomorrow at 7:09 AM. Best bet: Lake Willoughby, south end, 32, Marginal. horizon open. 1 hour 50 minutes away. Then Peacham Village 32, and Owl's Head, Groton State Forest 32.",
+  "text": "Sunset tonight at 5:53 PM. Best bet: Scarborough Marsh, 75, Strong. horizon open, cirrus overhead. 1 hour 46 minutes away. Then Cape Porpoise Pier 72, and Blue Job Mountain Fire Tower 62.\n\nSunrise this morning at 7:09 AM. Best bet: Lake Willoughby, south end, 33, Marginal. horizon open. 1 hour 50 minutes away. Then Bretton Woods 32, and Little Cherry Pond 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
