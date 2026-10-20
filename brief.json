@@ -1,107 +1,7 @@
 {
-  "generated": "2026-10-19T20:55:43.822Z",
+  "generated": "2026-10-20T00:11:23.433Z",
   "drive": 120,
   "events": [
-    {
-      "ev": "sunset",
-      "day": "2026-10-19",
-      "when": "tonight",
-      "time": "17:58",
-      "top": [
-        {
-          "id": "meredith",
-          "name": "Meredith Bay Docks",
-          "place": "Meredith, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 2,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:58",
-          "lat": 43.656,
-          "lon": -71.498
-        },
-        {
-          "id": "squam",
-          "name": "Squam Lake",
-          "place": "Holderness, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 13,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:58",
-          "lat": 43.731,
-          "lon": -71.586
-        },
-        {
-          "id": "centerharb",
-          "name": "Center Harbor Town Dock",
-          "place": "Center Harbor, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 10,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:57",
-          "lat": 43.71,
-          "lon": -71.467
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-10-20",
-      "when": "tomorrow",
-      "time": "07:02",
-      "top": [
-        {
-          "id": "capeporpoise",
-          "name": "Cape Porpoise Pier",
-          "place": "Kennebunkport, ME",
-          "score": 38,
-          "label": "Marginal",
-          "drive": 114,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "07:02",
-          "lat": 43.3654,
-          "lon": -70.432
-        },
-        {
-          "id": "longsands",
-          "name": "Long Sands Beach",
-          "place": "Cape Neddick, ME",
-          "score": 36,
-          "label": "Marginal",
-          "drive": 91,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "07:03",
-          "lat": 43.16,
-          "lon": -70.621
-        },
-        {
-          "id": "yorkharbor",
-          "name": "York Harbor",
-          "place": "York, ME",
-          "score": 36,
-          "label": "Marginal",
-          "drive": 91,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "07:03",
-          "lat": 43.147,
-          "lon": -70.626
-        }
-      ]
-    },
     {
       "ev": "sunset",
       "day": "2026-10-20",
@@ -112,7 +12,7 @@
           "id": "scarborough",
           "name": "Scarborough Marsh",
           "place": "Scarborough, ME",
-          "score": 46,
+          "score": 54,
           "label": "Worth it",
           "drive": 106,
           "flags": [
@@ -127,13 +27,14 @@
           "id": "capeporpoise",
           "name": "Cape Porpoise Pier",
           "place": "Kennebunkport, ME",
-          "score": 40,
-          "label": "Marginal",
+          "score": 51,
+          "label": "Worth it",
           "drive": 114,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "afterglow to 18:37"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:37. Be set up early. (Sun-crossing score alone: 33.)",
           "time": "17:52",
           "lat": 43.3654,
           "lon": -70.432
@@ -142,7 +43,7 @@
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 39,
+          "score": 44,
           "label": "Marginal",
           "drive": 94,
           "flags": [
@@ -154,8 +55,121 @@
           "lon": -70.698
         }
       ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-10-20",
+      "when": "tomorrow",
+      "time": "07:08",
+      "top": [
+        {
+          "id": "jefferson",
+          "name": "Jefferson Fields",
+          "place": "Jefferson, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 78,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:08",
+          "lat": 44.3892,
+          "lon": -71.4789
+        },
+        {
+          "id": "chocoruasummit",
+          "name": "Mount Chocorua Summit",
+          "place": "Albany, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 46,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:06",
+          "lat": 43.9541,
+          "lon": -71.2734
+        },
+        {
+          "id": "kimballrd",
+          "name": "Kimball Road",
+          "place": "Lunenburg, VT",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 89,
+          "flags": [
+            "horizon open",
+            "valley fog likely (97)"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:09",
+          "lat": 44.4759,
+          "lon": -71.7045
+        }
+      ]
+    },
+    {
+      "ev": "sunset",
+      "day": "2026-10-21",
+      "when": "Wednesday",
+      "time": "17:50",
+      "top": [
+        {
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 93,
+          "label": "Go",
+          "drive": 106,
+          "flags": [
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 18:35"
+          ],
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:35. Be set up early. (Sun-crossing score alone: 46.)",
+          "time": "17:50",
+          "lat": 43.563,
+          "lon": -70.365
+        },
+        {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 93,
+          "label": "Go",
+          "drive": 94,
+          "flags": [
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 18:37"
+          ],
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:37. Be set up early. (Sun-crossing score alone: 46.)",
+          "time": "17:52",
+          "lat": 43.06,
+          "lon": -70.698
+        },
+        {
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 93,
+          "label": "Go",
+          "drive": 94,
+          "flags": [
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 18:37"
+          ],
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:37. Be set up early. (Sun-crossing score alone: 46.)",
+          "time": "17:52",
+          "lat": 43.2232,
+          "lon": -70.6919
+        }
+      ]
     }
   ],
-  "text": "Sunset tonight at 5:58 PM. Best bet: Meredith Bay Docks, 32, Marginal. horizon open. 2 minutes away. Then Squam Lake 32, and Center Harbor Town Dock 32.\n\nSunrise tomorrow at 7:02 AM. Best bet: Cape Porpoise Pier, 38, Marginal. 1 hour 54 minutes away. Then Long Sands Beach 36, and York Harbor 36.",
+  "text": "Sunset tomorrow night at 5:52 PM. Best bet: Scarborough Marsh, 54, Worth it. horizon open. 1 hour 46 minutes away. Then Cape Porpoise Pier 51, and Kittery Point 44.\n\nSunrise tomorrow at 7:08 AM. Best bet: Jefferson Fields, 32, Marginal. horizon open. 1 hour 18 minutes away. Then Mount Chocorua Summit 32, and Kimball Road 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
