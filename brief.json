@@ -1,57 +1,57 @@
 {
-  "generated": "2026-10-20T13:25:55.781Z",
+  "generated": "2026-10-20T18:24:24.970Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-20",
       "when": "tonight",
-      "time": "17:55",
+      "time": "17:58",
       "top": [
         {
-          "id": "kancsugar",
-          "name": "Sugar Hill Scenic Vista",
-          "place": "Kancamagus Hwy, NH",
-          "score": 35,
+          "id": "bog",
+          "name": "Bog Mountain",
+          "place": "Wilmot, NH",
+          "score": 39,
           "label": "Marginal",
-          "drive": 65,
+          "drive": 46,
           "flags": [
             "horizon open"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:55",
-          "lat": 44.0098,
-          "lon": -71.4277
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:58",
+          "lat": 43.469,
+          "lon": -71.93
         },
         {
-          "id": "tamworth",
-          "name": "Tamworth",
-          "place": "Tamworth, NH",
-          "score": 34,
+          "id": "mtpercival",
+          "name": "Mount Percival",
+          "place": "Sandwich, NH",
+          "score": 37,
           "label": "Marginal",
-          "drive": 37,
+          "drive": 28,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:55",
-          "lat": 43.838,
-          "lon": -71.218
+          "time": "17:56",
+          "lat": 43.8022,
+          "lon": -71.5225
         },
         {
-          "id": "eaton",
-          "name": "Crystal Lake",
-          "place": "Eaton, NH",
-          "score": 34,
+          "id": "westrattle",
+          "name": "West Rattlesnake",
+          "place": "Holderness, NH",
+          "score": 36,
           "label": "Marginal",
-          "drive": 55,
+          "drive": 22,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:54",
-          "lat": 43.914,
-          "lon": -71.074
+          "time": "17:56",
+          "lat": 43.785,
+          "lon": -71.545
         }
       ]
     },
@@ -59,48 +59,50 @@
       "ev": "sunrise",
       "day": "2026-10-21",
       "when": "tomorrow",
-      "time": "07:09",
+      "time": "07:08",
       "top": [
         {
-          "id": "cherrypond",
-          "name": "Little Cherry Pond",
-          "place": "Pondicherry NWR, NH",
-          "score": 30,
-          "label": "Skip",
-          "drive": 81,
-          "flags": [],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:09",
-          "lat": 44.3761,
-          "lon": -71.5188
-        },
-        {
-          "id": "jefferson",
-          "name": "Jefferson Fields",
-          "place": "Jefferson, NH",
-          "score": 30,
-          "label": "Skip",
-          "drive": 78,
-          "flags": [],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:09",
-          "lat": 44.3892,
-          "lon": -71.4789
-        },
-        {
-          "id": "kimballrd",
-          "name": "Kimball Road",
-          "place": "Lunenburg, VT",
-          "score": 29,
-          "label": "Skip",
-          "drive": 89,
+          "id": "chocorualake",
+          "name": "Chocorua Lake (Narrows Bridge)",
+          "place": "Tamworth, NH",
+          "score": 31,
+          "label": "Marginal",
+          "drive": 41,
           "flags": [
-            "valley fog likely (81)"
+            "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:10",
-          "lat": 44.4759,
-          "lon": -71.7045
+          "time": "07:08",
+          "lat": 43.8967,
+          "lon": -71.2686
+        },
+        {
+          "id": "fossmtn",
+          "name": "Foss Mountain",
+          "place": "Eaton, NH",
+          "score": 31,
+          "label": "Marginal",
+          "drive": 64,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:07",
+          "lat": 43.8771,
+          "lon": -71.0348
+        },
+        {
+          "id": "newfound",
+          "name": "Newfound Lake, Wellington",
+          "place": "Bristol, NH",
+          "score": 29,
+          "label": "Skip",
+          "drive": 33,
+          "flags": [],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:09",
+          "lat": 43.664,
+          "lon": -71.767
         }
       ]
     },
@@ -108,8 +110,25 @@
       "ev": "sunset",
       "day": "2026-10-21",
       "when": "tomorrow night",
-      "time": "17:52",
+      "time": "17:53",
       "top": [
+        {
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 67,
+          "label": "Strong",
+          "drive": 110,
+          "flags": [
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 18:38"
+          ],
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:38. Be set up early. (Sun-crossing score alone: 44.)",
+          "time": "17:53",
+          "lat": 42.8151,
+          "lon": -70.819
+        },
         {
           "id": "kitterypoint",
           "name": "Kittery Point",
@@ -126,38 +145,23 @@
           "lon": -70.698
         },
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 48,
-          "label": "Worth it",
-          "drive": 94,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:52",
-          "lat": 43.2232,
-          "lon": -70.6919
-        },
-        {
-          "id": "kancgraham",
-          "name": "C.L. Graham Wangan Overlook",
-          "place": "Kancamagus Hwy, NH",
-          "score": 42,
+          "id": "mtwashington",
+          "name": "Mount Washington Summit",
+          "place": "Sargent's Purchase, NH",
+          "score": 45,
           "label": "Marginal",
-          "drive": 78,
+          "drive": 116,
           "flags": [
             "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:53",
-          "lat": 44.0069,
-          "lon": -71.3608
+          "lat": 44.27,
+          "lon": -71.302
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:55 PM. Best bet: Sugar Hill Scenic Vista, 35, Marginal. horizon open. 1 hour 5 minutes away. Then Tamworth 34, and Crystal Lake 34.\n\nSunrise tomorrow at 7:09 AM. Best bet: Little Cherry Pond, 30, Skip. 1 hour 21 minutes away. Then Jefferson Fields 30.",
+  "text": "Sunset tonight at 5:58 PM. Best bet: Bog Mountain, 39, Marginal. horizon open. 46 minutes away. Then Mount Percival 37, and West Rattlesnake 36.\n\nSunrise tomorrow at 7:08 AM. Best bet: Chocorua Lake (Narrows Bridge), 31, Marginal. horizon open. 41 minutes away. Then Foss Mountain 31.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
