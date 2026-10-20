@@ -1,110 +1,106 @@
 {
-  "generated": "2026-10-20T05:45:24.231Z",
+  "generated": "2026-10-20T13:25:55.781Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-20",
       "when": "tonight",
-      "time": "18:00",
+      "time": "17:55",
       "top": [
         {
-          "id": "ascutney",
-          "name": "Mount Ascutney Summit",
-          "place": "Windsor, VT",
-          "score": 39,
+          "id": "kancsugar",
+          "name": "Sugar Hill Scenic Vista",
+          "place": "Kancamagus Hwy, NH",
+          "score": 35,
           "label": "Marginal",
-          "drive": 111,
+          "drive": 65,
           "flags": [
             "horizon open"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "18:00",
-          "lat": 43.4445,
-          "lon": -72.4537
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:55",
+          "lat": 44.0098,
+          "lon": -71.4277
         },
         {
-          "id": "bog",
-          "name": "Bog Mountain",
-          "place": "Wilmot, NH",
+          "id": "tamworth",
+          "name": "Tamworth",
+          "place": "Tamworth, NH",
           "score": 34,
           "label": "Marginal",
-          "drive": 46,
+          "drive": 37,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:58",
-          "lat": 43.469,
-          "lon": -71.93
+          "time": "17:55",
+          "lat": 43.838,
+          "lon": -71.218
         },
         {
-          "id": "cardigan",
-          "name": "Mount Cardigan Summit",
-          "place": "Orange, NH",
-          "score": 33,
+          "id": "eaton",
+          "name": "Crystal Lake",
+          "place": "Eaton, NH",
+          "score": 34,
           "label": "Marginal",
-          "drive": 57,
+          "drive": 55,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:58",
-          "lat": 43.6495,
-          "lon": -71.9144
+          "time": "17:54",
+          "lat": 43.914,
+          "lon": -71.074
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-20",
-      "when": "this morning",
-      "time": "07:07",
+      "day": "2026-10-21",
+      "when": "tomorrow",
+      "time": "07:09",
       "top": [
         {
-          "id": "mtwashington",
-          "name": "Mount Washington Summit",
-          "place": "Sargent's Purchase, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 116,
-          "flags": [
-            "horizon open"
-          ],
+          "id": "cherrypond",
+          "name": "Little Cherry Pond",
+          "place": "Pondicherry NWR, NH",
+          "score": 30,
+          "label": "Skip",
+          "drive": 81,
+          "flags": [],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:07",
-          "lat": 44.27,
-          "lon": -71.302
+          "time": "07:09",
+          "lat": 44.3761,
+          "lon": -71.5188
         },
         {
-          "id": "lyndon",
-          "name": "Lyndon Farm Fields",
-          "place": "Northeast Kingdom, VT",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 96,
+          "id": "jefferson",
+          "name": "Jefferson Fields",
+          "place": "Jefferson, NH",
+          "score": 30,
+          "label": "Skip",
+          "drive": 78,
+          "flags": [],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:09",
+          "lat": 44.3892,
+          "lon": -71.4789
+        },
+        {
+          "id": "kimballrd",
+          "name": "Kimball Road",
+          "place": "Lunenburg, VT",
+          "score": 29,
+          "label": "Skip",
+          "drive": 89,
           "flags": [
-            "horizon open"
+            "valley fog likely (81)"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "07:10",
-          "lat": 44.565,
-          "lon": -71.973
-        },
-        {
-          "id": "owlshead",
-          "name": "Owl's Head, Groton State Forest",
-          "place": "Groton, VT",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 108,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:11",
-          "lat": 44.297,
-          "lon": -72.295
+          "lat": 44.4759,
+          "lon": -71.7045
         }
       ]
     },
@@ -115,58 +111,53 @@
       "time": "17:52",
       "top": [
         {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 48,
+          "label": "Worth it",
+          "drive": 94,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:52",
+          "lat": 43.06,
+          "lon": -70.698
+        },
+        {
           "id": "agamenticus",
           "name": "Mount Agamenticus",
           "place": "York, ME",
-          "score": 83,
-          "label": "Go",
+          "score": 48,
+          "label": "Worth it",
           "drive": 94,
           "flags": [
-            "horizon open",
-            "cirrus overhead",
-            "afterglow to 18:37"
+            "horizon open"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:37. Be set up early. (Sun-crossing score alone: 49.)",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:52",
           "lat": 43.2232,
           "lon": -70.6919
         },
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 82,
-          "label": "Go",
-          "drive": 106,
+          "id": "kancgraham",
+          "name": "C.L. Graham Wangan Overlook",
+          "place": "Kancamagus Hwy, NH",
+          "score": 42,
+          "label": "Marginal",
+          "drive": 78,
           "flags": [
-            "horizon open",
-            "cirrus overhead",
-            "afterglow to 18:35"
+            "horizon open"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:35. Be set up early. (Sun-crossing score alone: 60.)",
-          "time": "17:50",
-          "lat": 43.563,
-          "lon": -70.365
-        },
-        {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 74,
-          "label": "Strong",
-          "drive": 61,
-          "flags": [
-            "horizon open",
-            "afterglow to 18:38"
-          ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:38. Be set up early. (Sun-crossing score alone: 42.)",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:53",
-          "lat": 43.3314,
-          "lon": -71.1162
+          "lat": 44.0069,
+          "lon": -71.3608
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 6:00 PM. Best bet: Mount Ascutney Summit, 39, Marginal. horizon open. 1 hour 51 minutes away. Then Bog Mountain 34, and Mount Cardigan Summit 33.\n\nSunrise this morning at 7:07 AM. Best bet: Mount Washington Summit, 32, Marginal. horizon open. 1 hour 56 minutes away. Then Lyndon Farm Fields 32, and Owl's Head, Groton State Forest 32.",
+  "text": "Sunset tonight at 5:55 PM. Best bet: Sugar Hill Scenic Vista, 35, Marginal. horizon open. 1 hour 5 minutes away. Then Tamworth 34, and Crystal Lake 34.\n\nSunrise tomorrow at 7:09 AM. Best bet: Little Cherry Pond, 30, Skip. 1 hour 21 minutes away. Then Jefferson Fields 30.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
