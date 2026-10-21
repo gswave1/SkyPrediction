@@ -1,134 +1,153 @@
 {
-  "generated": "2026-10-21T01:24:32.360Z",
+  "generated": "2026-10-21T13:39:55.895Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-21",
-      "when": "tomorrow night",
+      "when": "tonight",
       "time": "17:52",
       "top": [
         {
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 75,
+          "score": 63,
           "label": "Strong",
           "drive": 94,
           "flags": [
             "horizon open",
-            "cirrus overhead",
-            "afterglow to 18:37"
+            "cirrus overhead"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:37. Be set up early. (Sun-crossing score alone: 42.)",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:52",
           "lat": 43.06,
           "lon": -70.698
         },
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 74,
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 61,
           "label": "Strong",
-          "drive": 106,
+          "drive": 110,
           "flags": [
             "horizon open",
             "cirrus overhead",
-            "afterglow to 18:35"
+            "afterglow to 18:38"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:35. Be set up early. (Sun-crossing score alone: 43.)",
-          "time": "17:50",
-          "lat": 43.563,
-          "lon": -70.365
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:38. Be set up early. (Sun-crossing score alone: 51.)",
+          "time": "17:53",
+          "lat": 42.8151,
+          "lon": -70.819
         },
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 74,
+          "id": "hampton",
+          "name": "Hampton Beach",
+          "place": "Hampton, NH",
+          "score": 60,
           "label": "Strong",
-          "drive": 94,
+          "drive": 90,
           "flags": [
             "horizon open",
-            "cirrus overhead",
-            "afterglow to 18:37"
+            "cirrus overhead"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:37. Be set up early. (Sun-crossing score alone: 45.)",
-          "time": "17:52",
-          "lat": 43.2232,
-          "lon": -70.6919
+          "why": "High cloud overhead with an open gap at the horizon. That's the combination. And the sun sets outside this spot's open arc.",
+          "time": "17:53",
+          "lat": 42.9081,
+          "lon": -70.81
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-21",
+      "day": "2026-10-22",
       "when": "tomorrow",
-      "time": "07:07",
+      "time": "07:09",
       "top": [
         {
-          "id": "fossmtn",
-          "name": "Foss Mountain",
-          "place": "Eaton, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 64,
+          "id": "northconway",
+          "name": "Cathedral Ledge",
+          "place": "Bartlett, NH",
+          "score": 53,
+          "label": "Worth it",
+          "drive": 69,
           "flags": [
-            "horizon open"
+            "horizon blocked",
+            "cirrus overhead",
+            "pre-glow from 06:24"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:07",
-          "lat": 43.8771,
-          "lon": -71.0348
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:24, before the sun is up. Be set up early. (Sun-crossing score alone: 36.)",
+          "time": "07:09",
+          "lat": 44.062,
+          "lon": -71.168
         },
         {
-          "id": "greenmtn",
-          "name": "Green Mountain Fire Tower",
-          "place": "Effingham, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 55,
+          "id": "chocoruasummit",
+          "name": "Mount Chocorua Summit",
+          "place": "Albany, NH",
+          "score": 52,
+          "label": "Worth it",
+          "drive": 46,
           "flags": [
-            "horizon open"
+            "horizon blocked",
+            "cirrus overhead",
+            "pre-glow from 06:24"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:06",
-          "lat": 43.7675,
-          "lon": -71.0369
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:24, before the sun is up. Be set up early. (Sun-crossing score alone: 34.)",
+          "time": "07:09",
+          "lat": 43.9541,
+          "lon": -71.2734
         },
         {
-          "id": "chocorualake",
-          "name": "Chocorua Lake (Narrows Bridge)",
-          "place": "Tamworth, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 41,
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 50,
+          "label": "Worth it",
+          "drive": 80,
           "flags": [
-            "horizon open"
+            "horizon blocked",
+            "cirrus overhead",
+            "pre-glow from 06:25"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:08",
-          "lat": 43.8967,
-          "lon": -71.2686
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:25, before the sun is up. Be set up early. (Sun-crossing score alone: 39.)",
+          "time": "07:10",
+          "lat": 43.385,
+          "lon": -71.857
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-10-22",
-      "when": "Thursday",
-      "time": "17:51",
+      "when": "tomorrow night",
+      "time": "17:48",
       "top": [
+        {
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 29,
+          "label": "Skip",
+          "drive": 106,
+          "flags": [],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:48",
+          "lat": 43.563,
+          "lon": -70.365
+        },
         {
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 45,
-          "label": "Marginal",
+          "score": 27,
+          "label": "Skip",
           "drive": 94,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "17:51",
           "lat": 43.06,
           "lon": -70.698
@@ -137,31 +156,20 @@
           "id": "agamenticus",
           "name": "Mount Agamenticus",
           "place": "York, ME",
-          "score": 40,
-          "label": "Marginal",
+          "score": 27,
+          "label": "Skip",
           "drive": 94,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "17:50",
           "lat": 43.2232,
           "lon": -70.6919
-        },
-        {
-          "id": "odiorne",
-          "name": "Odiorne Point",
-          "place": "Rye, NH",
-          "score": 36,
-          "label": "Marginal",
-          "drive": 86,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "17:51",
-          "lat": 43.0431,
-          "lon": -70.7161
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 5:52 PM. Best bet: Kittery Point, 75, Strong. horizon open, cirrus overhead, afterglow to 18:37. 1 hour 34 minutes away. Then Scarborough Marsh 74, and Mount Agamenticus 74.\n\nSunrise tomorrow at 7:07 AM. Best bet: Foss Mountain, 32, Marginal. horizon open. 1 hour 4 minutes away. Then Green Mountain Fire Tower 32, and Chocorua Lake (Narrows Bridge) 32.",
+  "text": "Sunset tonight at 5:52 PM. Best bet: Kittery Point, 63, Strong. horizon open, cirrus overhead. 1 hour 34 minutes away. Then Newburyport Harbor Light 61, and Hampton Beach 60.\n\nSunrise tomorrow at 7:09 AM. Best bet: Cathedral Ledge, 53, Worth it. horizon blocked, cirrus overhead, pre-glow from 06:24. 1 hour 9 minutes away. Then Mount Chocorua Summit 52, and Mount Kearsarge Summit 50.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
