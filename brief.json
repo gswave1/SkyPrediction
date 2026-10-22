@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-21T22:12:56.615Z",
+  "generated": "2026-10-22T01:22:25.492Z",
   "drive": 120,
   "events": [
     {
@@ -12,7 +12,7 @@
           "id": "ossipee",
           "name": "Center Ossipee Pond",
           "place": "Lakes Region, NH",
-          "score": 46,
+          "score": 45,
           "label": "Worth it",
           "drive": 33,
           "flags": [],
@@ -28,7 +28,9 @@
           "score": 45,
           "label": "Marginal",
           "drive": 29,
-          "flags": [],
+          "flags": [
+            "horizon open"
+          ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:53",
           "lat": 43.5178,
@@ -59,50 +61,51 @@
           "id": "jefferson",
           "name": "Jefferson Fields",
           "place": "Jefferson, NH",
-          "score": 65,
+          "score": 66,
           "label": "Strong",
           "drive": 78,
           "flags": [
             "cirrus overhead",
             "pre-glow from 06:25"
           ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:25, before the sun is up. Be set up early. (Sun-crossing score alone: 38.)",
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:25, before the sun is up. Be set up early. (Sun-crossing score alone: 39.)",
           "time": "07:10",
           "lat": 44.3892,
           "lon": -71.4789
         },
         {
-          "id": "kimballrd",
-          "name": "Kimball Road",
-          "place": "Lunenburg, VT",
-          "score": 53,
-          "label": "Worth it",
-          "drive": 89,
-          "flags": [
-            "cirrus overhead",
-            "pre-glow from 06:26",
-            "no valley fog (33)"
-          ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:26, before the sun is up. Be set up early. (Sun-crossing score alone: 36.)",
-          "time": "07:11",
-          "lat": 44.4759,
-          "lon": -71.7045
-        },
-        {
           "id": "moosilauke",
           "name": "Mount Moosilauke Summit",
           "place": "Benton, NH",
-          "score": 49,
+          "score": 60,
           "label": "Worth it",
           "drive": 67,
           "flags": [
             "horizon blocked",
-            "cirrus overhead"
+            "cirrus overhead",
+            "pre-glow from 06:26"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:26, before the sun is up. Be set up early. (Sun-crossing score alone: 46.)",
           "time": "07:11",
           "lat": 44.0241,
           "lon": -71.8314
+        },
+        {
+          "id": "mtwashington",
+          "name": "Mount Washington Summit",
+          "place": "Sargent's Purchase, NH",
+          "score": 55,
+          "label": "Worth it",
+          "drive": 116,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead",
+            "pre-glow from 06:24"
+          ],
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:24, before the sun is up. Be set up early. (Sun-crossing score alone: 36.)",
+          "time": "07:09",
+          "lat": 44.27,
+          "lon": -71.302
         }
       ]
     },
@@ -163,6 +166,6 @@
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 5:51 PM. Best bet: Center Ossipee Pond, 46, Worth it. 33 minutes away. Then Belknap Mountain Fire Tower 45, and Foss Mountain 44.\n\nSunrise tomorrow at 7:10 AM. Best bet: Jefferson Fields, 65, Strong. cirrus overhead, pre-glow from 06:25. 1 hour 18 minutes away. Then Kimball Road 53, and Mount Moosilauke Summit 49.",
+  "text": "Sunset tomorrow night at 5:51 PM. Best bet: Center Ossipee Pond, 45, Worth it. 33 minutes away. Then Belknap Mountain Fire Tower 45, and Foss Mountain 44.\n\nSunrise tomorrow at 7:10 AM. Best bet: Jefferson Fields, 66, Strong. cirrus overhead, pre-glow from 06:25. 1 hour 18 minutes away. Then Mount Moosilauke Summit 60, and Mount Washington Summit 55.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
