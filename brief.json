@@ -1,64 +1,43 @@
 {
-  "generated": "2026-10-22T13:43:52.321Z",
+  "generated": "2026-10-22T22:12:19.975Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
-      "day": "2026-10-22",
-      "when": "tonight",
-      "time": "17:50",
-      "top": [
-        {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 40,
-          "label": "Marginal",
-          "drive": 94,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:50",
-          "lat": 43.2232,
-          "lon": -70.6919
-        },
-        {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 39,
-          "label": "Marginal",
-          "drive": 94,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:51",
-          "lat": 43.06,
-          "lon": -70.698
-        },
-        {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 37,
-          "label": "Marginal",
-          "drive": 106,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:48",
-          "lat": 43.563,
-          "lon": -70.365
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
       "day": "2026-10-23",
-      "when": "tomorrow",
-      "time": "07:15",
+      "when": "tomorrow night",
+      "time": "17:55",
       "top": [
+        {
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 111,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:55",
+          "lat": 43.4445,
+          "lon": -72.4537
+        },
+        {
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 98,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:53",
+          "lat": 44.328,
+          "lon": -72.175
+        },
         {
           "id": "owlshead",
           "name": "Owl's Head, Groton State Forest",
@@ -70,24 +49,32 @@
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:15",
+          "time": "17:54",
           "lat": 44.297,
           "lon": -72.295
-        },
+        }
+      ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-10-23",
+      "when": "tomorrow",
+      "time": "07:14",
+      "top": [
         {
-          "id": "willoughbysouth",
-          "name": "Lake Willoughby, south end",
-          "place": "Westmore, VT",
+          "id": "lyndon",
+          "name": "Lyndon Farm Fields",
+          "place": "Northeast Kingdom, VT",
           "score": 32,
           "label": "Marginal",
-          "drive": 110,
+          "drive": 96,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "07:14",
-          "lat": 44.717,
-          "lon": -72.031
+          "lat": 44.565,
+          "lon": -71.973
         },
         {
           "id": "kimballrd",
@@ -104,63 +91,76 @@
           "time": "07:13",
           "lat": 44.4759,
           "lon": -71.7045
+        },
+        {
+          "id": "burkemtn",
+          "name": "Burke Mountain",
+          "place": "East Burke, VT",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 110,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:14",
+          "lat": 44.5705,
+          "lon": -71.893
         }
       ]
     },
     {
       "ev": "sunset",
-      "day": "2026-10-23",
-      "when": "tomorrow night",
-      "time": "17:52",
+      "day": "2026-10-24",
+      "when": "Saturday",
+      "time": "17:53",
       "top": [
-        {
-          "id": "willoughby",
-          "name": "Lake Willoughby",
-          "place": "Westmore, VT",
-          "score": 37,
-          "label": "Marginal",
-          "drive": 112,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:52",
-          "lat": 44.735,
-          "lon": -72.047
-        },
-        {
-          "id": "ascutney",
-          "name": "Mount Ascutney Summit",
-          "place": "Windsor, VT",
-          "score": 36,
-          "label": "Marginal",
-          "drive": 111,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:55",
-          "lat": 43.4445,
-          "lon": -72.4537
-        },
         {
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
           "place": "Peterborough, NH",
-          "score": 34,
+          "score": 39,
           "label": "Marginal",
           "drive": 104,
           "flags": [
             "horizon open"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:54",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:53",
           "lat": 42.8619,
           "lon": -71.8788
+        },
+        {
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 61,
+          "flags": [],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:49",
+          "lat": 43.3314,
+          "lon": -71.1162
+        },
+        {
+          "id": "lyndon",
+          "name": "Lyndon Farm Fields",
+          "place": "Northeast Kingdom, VT",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 96,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:50",
+          "lat": 44.565,
+          "lon": -71.973
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:50 PM. Best bet: Mount Agamenticus, 40, Marginal. horizon open. 1 hour 34 minutes away. Then Kittery Point 39, and Scarborough Marsh 37.\n\nSunrise tomorrow at 7:15 AM. Best bet: Owl's Head, Groton State Forest, 32, Marginal. horizon open. 1 hour 48 minutes away. Then Lake Willoughby, south end 32, and Kimball Road 32.",
+  "text": "Sunset tomorrow night at 5:55 PM. Best bet: Mount Ascutney Summit, 32, Marginal. horizon open. 1 hour 51 minutes away. Then Peacham Village 32, and Owl's Head, Groton State Forest 32.\n\nSunrise tomorrow at 7:14 AM. Best bet: Lyndon Farm Fields, 32, Marginal. horizon open. 1 hour 36 minutes away. Then Kimball Road 32, and Burke Mountain 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
