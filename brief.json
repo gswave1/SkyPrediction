@@ -1,135 +1,13 @@
 {
-  "generated": "2026-10-23T18:11:24.652Z",
+  "generated": "2026-10-23T21:56:10.763Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
-      "day": "2026-10-23",
-      "when": "tonight",
-      "time": "17:51",
-      "top": [
-        {
-          "id": "jobspond",
-          "name": "Jobs Pond",
-          "place": "Westmore, VT",
-          "score": 34,
-          "label": "Marginal",
-          "drive": 118,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:51",
-          "lat": 44.7622,
-          "lon": -71.9534
-        },
-        {
-          "id": "willoughby",
-          "name": "Lake Willoughby",
-          "place": "Westmore, VT",
-          "score": 34,
-          "label": "Marginal",
-          "drive": 112,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:52",
-          "lat": 44.735,
-          "lon": -72.047
-        },
-        {
-          "id": "lyndon",
-          "name": "Lyndon Farm Fields",
-          "place": "Northeast Kingdom, VT",
-          "score": 34,
-          "label": "Marginal",
-          "drive": 96,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:52",
-          "lat": 44.565,
-          "lon": -71.973
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-10-24",
-      "when": "tomorrow",
-      "time": "07:16",
-      "top": [
-        {
-          "id": "willoughbysouth",
-          "name": "Lake Willoughby, south end",
-          "place": "Westmore, VT",
-          "score": 83,
-          "label": "Go",
-          "drive": 110,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:16",
-          "lat": 44.717,
-          "lon": -72.031
-        },
-        {
-          "id": "middlesugarloaf",
-          "name": "Middle Sugarloaf",
-          "place": "Bethlehem, NH",
-          "score": 83,
-          "label": "Go",
-          "drive": 71,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:13",
-          "lat": 44.2513,
-          "lon": -71.5171
-        },
-        {
-          "id": "mtavalon",
-          "name": "Mount Avalon",
-          "place": "Crawford Notch, NH",
-          "score": 83,
-          "label": "Go",
-          "drive": 84,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:12",
-          "lat": 44.2064,
-          "lon": -71.4264
-        }
-      ]
-    },
-    {
-      "ev": "sunset",
       "day": "2026-10-24",
       "when": "tomorrow night",
-      "time": "17:53",
+      "time": "17:50",
       "top": [
-        {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 104,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:53",
-          "lat": 42.8619,
-          "lon": -71.8788
-        },
         {
           "id": "meredith",
           "name": "Meredith Bay Docks",
@@ -159,10 +37,135 @@
           "time": "17:50",
           "lat": 43.731,
           "lon": -71.586
+        },
+        {
+          "id": "centerharb",
+          "name": "Center Harbor Town Dock",
+          "place": "Center Harbor, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 10,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:50",
+          "lat": 43.71,
+          "lon": -71.467
+        }
+      ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-10-24",
+      "when": "tomorrow",
+      "time": "07:14",
+      "top": [
+        {
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 81,
+          "label": "Go",
+          "drive": 70,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "07:14",
+          "lat": 43.321,
+          "lon": -72.084
+        },
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 80,
+          "label": "Go",
+          "drive": 104,
+          "flags": [
+            "horizon open",
+            "cirrus overhead",
+            "pre-glow from 06:27"
+          ],
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:27, before the sun is up. Be set up early. (Sun-crossing score alone: 65.)",
+          "time": "07:12",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
+        {
+          "id": "mtwashington",
+          "name": "Mount Washington Summit",
+          "place": "Sargent's Purchase, NH",
+          "score": 73,
+          "label": "Strong",
+          "drive": 116,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "07:12",
+          "lat": 44.27,
+          "lon": -71.302
+        }
+      ]
+    },
+    {
+      "ev": "sunset",
+      "day": "2026-10-25",
+      "when": "Sunday",
+      "time": "17:45",
+      "top": [
+        {
+          "id": "chatham",
+          "name": "Chatham",
+          "place": "Chatham, NH",
+          "score": 41,
+          "label": "Marginal",
+          "drive": 95,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:45",
+          "lat": 44.271,
+          "lon": -71.025
+        },
+        {
+          "id": "kancgraham",
+          "name": "C.L. Graham Wangan Overlook",
+          "place": "Kancamagus Hwy, NH",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 78,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:47",
+          "lat": 44.0069,
+          "lon": -71.3608
+        },
+        {
+          "id": "kancsugar",
+          "name": "Sugar Hill Scenic Vista",
+          "place": "Kancamagus Hwy, NH",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 65,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:47",
+          "lat": 44.0098,
+          "lon": -71.4277
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:51 PM. Best bet: Jobs Pond, 34, Marginal. horizon open. 1 hour 58 minutes away. Then Lake Willoughby 34, and Lyndon Farm Fields 34.\n\nSunrise tomorrow at 7:16 AM. Best bet: Lake Willoughby, south end, 83, Go. horizon open, cirrus overhead. 1 hour 50 minutes away. Then Middle Sugarloaf 83, and Mount Avalon 83.",
+  "text": "Sunset tomorrow night at 5:50 PM. Best bet: Meredith Bay Docks, 32, Marginal. horizon open. 2 minutes away. Then Squam Lake 32, and Center Harbor Town Dock 32.\n\nSunrise tomorrow at 7:14 AM. Best bet: Mount Sunapee Summit, 81, Go. horizon open, cirrus overhead. 1 hour 10 minutes away. Then Pack Monadnock (Miller SP) 80, and Mount Washington Summit 73.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
