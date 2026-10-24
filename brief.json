@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T21:56:10.763Z",
+  "generated": "2026-10-24T00:24:18.389Z",
   "drive": 120,
   "events": [
     {
@@ -59,46 +59,30 @@
       "ev": "sunrise",
       "day": "2026-10-24",
       "when": "tomorrow",
-      "time": "07:14",
+      "time": "07:13",
       "top": [
         {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 81,
-          "label": "Go",
-          "drive": 70,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:14",
-          "lat": 43.321,
-          "lon": -72.084
-        },
-        {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 80,
-          "label": "Go",
-          "drive": 104,
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 74,
+          "label": "Strong",
+          "drive": 80,
           "flags": [
             "horizon open",
             "cirrus overhead",
-            "pre-glow from 06:27"
+            "pre-glow from 06:28"
           ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:27, before the sun is up. Be set up early. (Sun-crossing score alone: 65.)",
-          "time": "07:12",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:28, before the sun is up. Be set up early. (Sun-crossing score alone: 59.)",
+          "time": "07:13",
+          "lat": 43.385,
+          "lon": -71.857
         },
         {
           "id": "mtwashington",
           "name": "Mount Washington Summit",
           "place": "Sargent's Purchase, NH",
-          "score": 73,
+          "score": 72,
           "label": "Strong",
           "drive": 116,
           "flags": [
@@ -109,6 +93,22 @@
           "time": "07:12",
           "lat": 44.27,
           "lon": -71.302
+        },
+        {
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 69,
+          "label": "Strong",
+          "drive": 70,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "07:14",
+          "lat": 43.321,
+          "lon": -72.084
         }
       ]
     },
@@ -116,56 +116,56 @@
       "ev": "sunset",
       "day": "2026-10-25",
       "when": "Sunday",
-      "time": "17:45",
+      "time": "17:50",
       "top": [
         {
-          "id": "chatham",
-          "name": "Chatham",
-          "place": "Chatham, NH",
-          "score": 41,
-          "label": "Marginal",
-          "drive": 95,
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 49,
+          "label": "Worth it",
+          "drive": 108,
           "flags": [
             "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:45",
-          "lat": 44.271,
-          "lon": -71.025
+          "time": "17:50",
+          "lat": 44.297,
+          "lon": -72.295
         },
         {
-          "id": "kancgraham",
-          "name": "C.L. Graham Wangan Overlook",
-          "place": "Kancamagus Hwy, NH",
-          "score": 33,
+          "id": "jobspond",
+          "name": "Jobs Pond",
+          "place": "Westmore, VT",
+          "score": 45,
           "label": "Marginal",
-          "drive": 78,
+          "drive": 118,
           "flags": [
             "horizon open"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:47",
-          "lat": 44.0069,
-          "lon": -71.3608
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:48",
+          "lat": 44.7622,
+          "lon": -71.9534
         },
         {
-          "id": "kancsugar",
-          "name": "Sugar Hill Scenic Vista",
-          "place": "Kancamagus Hwy, NH",
-          "score": 33,
+          "id": "lyndon",
+          "name": "Lyndon Farm Fields",
+          "place": "Northeast Kingdom, VT",
+          "score": 45,
           "label": "Marginal",
-          "drive": 65,
+          "drive": 96,
           "flags": [
             "horizon open"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:47",
-          "lat": 44.0098,
-          "lon": -71.4277
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:49",
+          "lat": 44.565,
+          "lon": -71.973
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 5:50 PM. Best bet: Meredith Bay Docks, 32, Marginal. horizon open. 2 minutes away. Then Squam Lake 32, and Center Harbor Town Dock 32.\n\nSunrise tomorrow at 7:14 AM. Best bet: Mount Sunapee Summit, 81, Go. horizon open, cirrus overhead. 1 hour 10 minutes away. Then Pack Monadnock (Miller SP) 80, and Mount Washington Summit 73.",
+  "text": "Sunset tomorrow night at 5:50 PM. Best bet: Meredith Bay Docks, 32, Marginal. horizon open. 2 minutes away. Then Squam Lake 32, and Center Harbor Town Dock 32.\n\nSunrise tomorrow at 7:13 AM. Best bet: Mount Kearsarge Summit, 74, Strong. horizon open, cirrus overhead, pre-glow from 06:28. 1 hour 20 minutes away. Then Mount Washington Summit 72, and Mount Sunapee Summit 69.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
