@@ -1,13 +1,43 @@
 {
-  "generated": "2026-10-24T00:24:18.389Z",
+  "generated": "2026-10-24T05:32:55.288Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-24",
-      "when": "tomorrow night",
-      "time": "17:50",
+      "when": "tonight",
+      "time": "17:53",
       "top": [
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 104,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:53",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
+        {
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 80,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:52",
+          "lat": 43.385,
+          "lon": -71.857
+        },
         {
           "id": "meredith",
           "name": "Meredith Bay Docks",
@@ -22,6 +52,85 @@
           "time": "17:50",
           "lat": 43.656,
           "lon": -71.498
+        }
+      ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-10-24",
+      "when": "this morning",
+      "time": "07:14",
+      "top": [
+        {
+          "id": "cardigan",
+          "name": "Mount Cardigan Summit",
+          "place": "Orange, NH",
+          "score": 80,
+          "label": "Go",
+          "drive": 57,
+          "flags": [
+            "cirrus overhead",
+            "pre-glow from 06:29"
+          ],
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:29, before the sun is up. Be set up early. (Sun-crossing score alone: 59.)",
+          "time": "07:14",
+          "lat": 43.6495,
+          "lon": -71.9144
+        },
+        {
+          "id": "burkemtn",
+          "name": "Burke Mountain",
+          "place": "East Burke, VT",
+          "score": 78,
+          "label": "Go",
+          "drive": 110,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "07:15",
+          "lat": 44.5705,
+          "lon": -71.893
+        },
+        {
+          "id": "newfoundsouth",
+          "name": "Newfound Lake, Bristol end",
+          "place": "Bristol, NH",
+          "score": 78,
+          "label": "Go",
+          "drive": 27,
+          "flags": [
+            "cirrus overhead",
+            "pre-glow from 06:28"
+          ],
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:28, before the sun is up. Be set up early. (Sun-crossing score alone: 64.)",
+          "time": "07:13",
+          "lat": 43.625,
+          "lon": -71.745
+        }
+      ]
+    },
+    {
+      "ev": "sunset",
+      "day": "2026-10-25",
+      "when": "tomorrow night",
+      "time": "17:48",
+      "top": [
+        {
+          "id": "meredith",
+          "name": "Meredith Bay Docks",
+          "place": "Meredith, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 2,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:48",
+          "lat": 43.656,
+          "lon": -71.498
         },
         {
           "id": "squam",
@@ -34,7 +143,7 @@
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:50",
+          "time": "17:49",
           "lat": 43.731,
           "lon": -71.586
         },
@@ -49,123 +158,13 @@
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:50",
+          "time": "17:48",
           "lat": 43.71,
           "lon": -71.467
         }
       ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-10-24",
-      "when": "tomorrow",
-      "time": "07:13",
-      "top": [
-        {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 74,
-          "label": "Strong",
-          "drive": 80,
-          "flags": [
-            "horizon open",
-            "cirrus overhead",
-            "pre-glow from 06:28"
-          ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:28, before the sun is up. Be set up early. (Sun-crossing score alone: 59.)",
-          "time": "07:13",
-          "lat": 43.385,
-          "lon": -71.857
-        },
-        {
-          "id": "mtwashington",
-          "name": "Mount Washington Summit",
-          "place": "Sargent's Purchase, NH",
-          "score": 72,
-          "label": "Strong",
-          "drive": 116,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:12",
-          "lat": 44.27,
-          "lon": -71.302
-        },
-        {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 69,
-          "label": "Strong",
-          "drive": 70,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:14",
-          "lat": 43.321,
-          "lon": -72.084
-        }
-      ]
-    },
-    {
-      "ev": "sunset",
-      "day": "2026-10-25",
-      "when": "Sunday",
-      "time": "17:50",
-      "top": [
-        {
-          "id": "owlshead",
-          "name": "Owl's Head, Groton State Forest",
-          "place": "Groton, VT",
-          "score": 49,
-          "label": "Worth it",
-          "drive": 108,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:50",
-          "lat": 44.297,
-          "lon": -72.295
-        },
-        {
-          "id": "jobspond",
-          "name": "Jobs Pond",
-          "place": "Westmore, VT",
-          "score": 45,
-          "label": "Marginal",
-          "drive": 118,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:48",
-          "lat": 44.7622,
-          "lon": -71.9534
-        },
-        {
-          "id": "lyndon",
-          "name": "Lyndon Farm Fields",
-          "place": "Northeast Kingdom, VT",
-          "score": 45,
-          "label": "Marginal",
-          "drive": 96,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:49",
-          "lat": 44.565,
-          "lon": -71.973
-        }
-      ]
     }
   ],
-  "text": "Sunset tomorrow night at 5:50 PM. Best bet: Meredith Bay Docks, 32, Marginal. horizon open. 2 minutes away. Then Squam Lake 32, and Center Harbor Town Dock 32.\n\nSunrise tomorrow at 7:13 AM. Best bet: Mount Kearsarge Summit, 74, Strong. horizon open, cirrus overhead, pre-glow from 06:28. 1 hour 20 minutes away. Then Mount Washington Summit 72, and Mount Sunapee Summit 69.",
+  "text": "Sunset tonight at 5:53 PM. Best bet: Pack Monadnock (Miller SP), 33, Marginal. horizon open. 1 hour 44 minutes away. Then Mount Kearsarge Summit 32, and Meredith Bay Docks 32.\n\nSunrise this morning at 7:14 AM. Best bet: Mount Cardigan Summit, 80, Go. cirrus overhead, pre-glow from 06:29. 57 minutes away. Then Burke Mountain 78, and Newfound Lake, Bristol end 78.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
