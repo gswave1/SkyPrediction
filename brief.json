@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-24T05:32:55.288Z",
+  "generated": "2026-10-24T12:31:20.052Z",
   "drive": 120,
   "events": [
     {
@@ -12,7 +12,7 @@
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
           "place": "Peterborough, NH",
-          "score": 33,
+          "score": 32,
           "label": "Marginal",
           "drive": 104,
           "flags": [
@@ -24,90 +24,88 @@
           "lon": -71.8788
         },
         {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
           "score": 32,
           "label": "Marginal",
-          "drive": 80,
+          "drive": 70,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:52",
-          "lat": 43.385,
-          "lon": -71.857
+          "time": "17:53",
+          "lat": 43.321,
+          "lon": -72.084
         },
         {
-          "id": "meredith",
-          "name": "Meredith Bay Docks",
-          "place": "Meredith, NH",
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
           "score": 32,
           "label": "Marginal",
-          "drive": 2,
+          "drive": 111,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:50",
-          "lat": 43.656,
-          "lon": -71.498
+          "time": "17:54",
+          "lat": 43.4445,
+          "lon": -72.4537
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-24",
-      "when": "this morning",
-      "time": "07:14",
+      "day": "2026-10-25",
+      "when": "tomorrow",
+      "time": "07:17",
       "top": [
         {
-          "id": "cardigan",
-          "name": "Mount Cardigan Summit",
-          "place": "Orange, NH",
-          "score": 80,
-          "label": "Go",
-          "drive": 57,
+          "id": "willoughbysouth",
+          "name": "Lake Willoughby, south end",
+          "place": "Westmore, VT",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 110,
           "flags": [
-            "cirrus overhead",
-            "pre-glow from 06:29"
+            "horizon open"
           ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:29, before the sun is up. Be set up early. (Sun-crossing score alone: 59.)",
-          "time": "07:14",
-          "lat": 43.6495,
-          "lon": -71.9144
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:17",
+          "lat": 44.717,
+          "lon": -72.031
+        },
+        {
+          "id": "kimballrd",
+          "name": "Kimball Road",
+          "place": "Lunenburg, VT",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 89,
+          "flags": [
+            "horizon open",
+            "valley fog likely (70)"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:15",
+          "lat": 44.4759,
+          "lon": -71.7045
         },
         {
           "id": "burkemtn",
           "name": "Burke Mountain",
           "place": "East Burke, VT",
-          "score": 78,
-          "label": "Go",
+          "score": 32,
+          "label": "Marginal",
           "drive": 110,
           "flags": [
-            "horizon open",
-            "cirrus overhead"
+            "horizon open"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:15",
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:16",
           "lat": 44.5705,
           "lon": -71.893
-        },
-        {
-          "id": "newfoundsouth",
-          "name": "Newfound Lake, Bristol end",
-          "place": "Bristol, NH",
-          "score": 78,
-          "label": "Go",
-          "drive": 27,
-          "flags": [
-            "cirrus overhead",
-            "pre-glow from 06:28"
-          ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:28, before the sun is up. Be set up early. (Sun-crossing score alone: 64.)",
-          "time": "07:13",
-          "lat": 43.625,
-          "lon": -71.745
         }
       ]
     },
@@ -165,6 +163,6 @@
       ]
     }
   ],
-  "text": "Sunset tonight at 5:53 PM. Best bet: Pack Monadnock (Miller SP), 33, Marginal. horizon open. 1 hour 44 minutes away. Then Mount Kearsarge Summit 32, and Meredith Bay Docks 32.\n\nSunrise this morning at 7:14 AM. Best bet: Mount Cardigan Summit, 80, Go. cirrus overhead, pre-glow from 06:29. 57 minutes away. Then Burke Mountain 78, and Newfound Lake, Bristol end 78.",
+  "text": "Sunset tonight at 5:53 PM. Best bet: Pack Monadnock (Miller SP), 32, Marginal. horizon open. 1 hour 44 minutes away. Then Mount Sunapee Summit 32, and Mount Ascutney Summit 32.\n\nSunrise tomorrow at 7:17 AM. Best bet: Lake Willoughby, south end, 32, Marginal. horizon open. 1 hour 50 minutes away. Then Kimball Road 32, and Burke Mountain 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
