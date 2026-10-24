@@ -1,28 +1,13 @@
 {
-  "generated": "2026-10-24T16:29:30.522Z",
+  "generated": "2026-10-24T19:19:41.054Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-24",
       "when": "tonight",
-      "time": "17:53",
+      "time": "17:52",
       "top": [
-        {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 70,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:53",
-          "lat": 43.321,
-          "lon": -72.084
-        },
         {
           "id": "bog",
           "name": "Bog Mountain",
@@ -39,19 +24,34 @@
           "lon": -71.93
         },
         {
-          "id": "ascutney",
-          "name": "Mount Ascutney Summit",
-          "place": "Windsor, VT",
+          "id": "meredith",
+          "name": "Meredith Bay Docks",
+          "place": "Meredith, NH",
           "score": 32,
           "label": "Marginal",
-          "drive": 111,
+          "drive": 2,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:54",
-          "lat": 43.4445,
-          "lon": -72.4537
+          "time": "17:50",
+          "lat": 43.656,
+          "lon": -71.498
+        },
+        {
+          "id": "squam",
+          "name": "Squam Lake",
+          "place": "Holderness, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 13,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:50",
+          "lat": 43.731,
+          "lon": -71.586
         }
       ]
     },
@@ -77,34 +77,35 @@
           "lon": -72.084
         },
         {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
+          "id": "willoughbysouth",
+          "name": "Lake Willoughby, south end",
+          "place": "Westmore, VT",
           "score": 32,
           "label": "Marginal",
-          "drive": 61,
+          "drive": 110,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:11",
-          "lat": 43.3314,
-          "lon": -71.1162
+          "time": "07:17",
+          "lat": 44.717,
+          "lon": -72.031
         },
         {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
+          "id": "kimballrd",
+          "name": "Kimball Road",
+          "place": "Lunenburg, VT",
           "score": 32,
           "label": "Marginal",
-          "drive": 80,
+          "drive": 89,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "valley fog likely (70)"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:14",
-          "lat": 43.385,
-          "lon": -71.857
+          "time": "07:15",
+          "lat": 44.4759,
+          "lon": -71.7045
         }
       ]
     },
@@ -162,6 +163,6 @@
       ]
     }
   ],
-  "text": "Sunset tonight at 5:53 PM. Best bet: Mount Sunapee Summit, 33, Marginal. horizon open. 1 hour 10 minutes away. Then Bog Mountain 33, and Mount Ascutney Summit 32.\n\nSunrise tomorrow at 7:15 AM. Best bet: Mount Sunapee Summit, 32, Marginal. horizon open. 1 hour 10 minutes away. Then Blue Job Mountain Fire Tower 32, and Mount Kearsarge Summit 32.",
+  "text": "Sunset tonight at 5:52 PM. Best bet: Bog Mountain, 33, Marginal. horizon open. 46 minutes away. Then Meredith Bay Docks 32, and Squam Lake 32.\n\nSunrise tomorrow at 7:15 AM. Best bet: Mount Sunapee Summit, 32, Marginal. horizon open. 1 hour 10 minutes away. Then Lake Willoughby, south end 32, and Kimball Road 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }

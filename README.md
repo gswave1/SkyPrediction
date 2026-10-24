@@ -1,14 +1,12 @@
 # Golden Hour Board — live sunset & sunrise ranking
 
-Updated Sat 12:29 PM Eastern (hourly, 4 AM–9 PM). Board: https://gswave1.github.io/SkyPrediction/
+Updated Sat 3:19 PM Eastern (hourly, 4 AM–9 PM). Board: https://gswave1.github.io/SkyPrediction/
 
 Columns: score 0–100 | spot | place | lat,lon | drive min from home (Meredith, NH) | sun time | flags | why. Under 30 = not worth the drive.
 
 ```
-## SUNSET tonight (2026-10-24, ~17:53)
-33 | Mount Sunapee Summit | Newbury, NH | 43.321,-72.084 | 70 min | 17:53 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+## SUNSET tonight (2026-10-24, ~17:52)
 33 | Bog Mountain | Wilmot, NH | 43.469,-71.930 | 46 min | 17:52 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-32 | Mount Ascutney Summit | Windsor, VT | 43.444,-72.454 | 111 min | 17:54 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Meredith Bay Docks | Meredith, NH | 43.656,-71.498 | 2 min | 17:50 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Squam Lake | Holderness, NH | 43.731,-71.586 | 13 min | 17:50 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Center Harbor Town Dock | Center Harbor, NH | 43.710,-71.467 | 10 min | 17:50 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
@@ -36,35 +34,37 @@ Columns: score 0–100 | spot | place | lat,lon | drive min from home (Meredith,
 32 | Mount Washington Summit | Sargent's Purchase, NH | 44.270,-71.302 | 116 min | 17:48 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Mount Lafayette Summit | Franconia Ridge, NH | 44.161,-71.644 | 49 min | 17:50 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Crystal Lake | Eaton, NH | 43.914,-71.074 | 55 min | 17:48 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+32 | Pequawket Pond | Conway, NH | 43.985,-71.121 | 54 min | 17:48 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+32 | Scarborough Marsh | Scarborough, ME | 43.563,-70.365 | 106 min | 17:45 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 
 ## SUNRISE tomorrow (2026-10-25, ~07:15)
 32 | Mount Sunapee Summit | Newbury, NH | 43.321,-72.084 | 70 min | 07:15 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-32 | Blue Job Mountain Fire Tower | Farmington, NH | 43.331,-71.116 | 61 min | 07:11 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-32 | Mount Kearsarge Summit | Wilmot, NH | 43.385,-71.857 | 80 min | 07:14 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Lake Willoughby, south end | Westmore, VT | 44.717,-72.031 | 110 min | 07:17 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Kimball Road | Lunenburg, VT | 44.476,-71.704 | 89 min | 07:15 | horizon open, valley fog likely (70) | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Burke Mountain | East Burke, VT | 44.571,-71.893 | 110 min | 07:16 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-32 | Nubble Light | York, ME | 43.166,-70.593 | 95 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-32 | Long Sands Beach | Cape Neddick, ME | 43.160,-70.621 | 91 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-32 | York Harbor | York, ME | 43.147,-70.626 | 91 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-32 | Mount Agamenticus | York, ME | 43.223,-70.692 | 94 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-32 | Rye Harbor State Park | Rye, NH | 43.002,-70.745 | 91 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Mount Ascutney Summit | Windsor, VT | 43.444,-72.454 | 111 min | 07:17 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Jenne Farm | Reading, VT | 43.525,-72.560 | 111 min | 07:17 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+32 | Mount Kearsarge Summit | Wilmot, NH | 43.385,-71.857 | 80 min | 07:14 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+32 | Pack Monadnock (Miller SP) | Peterborough, NH | 42.862,-71.879 | 104 min | 07:13 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+32 | Newburyport Harbor Light | Newburyport, MA | 42.815,-70.819 | 110 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Hampton Beach | Hampton, NH | 42.908,-70.810 | 90 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-32 | Scarborough Marsh | Scarborough, ME | 43.563,-70.365 | 106 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Odiorne Point | Rye, NH | 43.043,-70.716 | 86 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+32 | Rye Harbor State Park | Rye, NH | 43.002,-70.745 | 91 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+32 | Blue Job Mountain Fire Tower | Farmington, NH | 43.331,-71.116 | 61 min | 07:11 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+32 | Nubble Light | York, ME | 43.166,-70.593 | 95 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | New Castle / Portsmouth Harbor | New Castle, NH | 43.069,-70.713 | 87 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Kittery Point | Kittery, ME | 43.060,-70.698 | 94 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-32 | Newburyport Harbor Light | Newburyport, MA | 42.815,-70.819 | 110 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-32 | Little Cherry Pond | Pondicherry NWR, NH | 44.376,-71.519 | 81 min | 07:14 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-32 | Jefferson Fields | Jefferson, NH | 44.389,-71.479 | 78 min | 07:14 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-32 | Pack Monadnock (Miller SP) | Peterborough, NH | 42.862,-71.879 | 104 min | 07:13 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+32 | Long Sands Beach | Cape Neddick, ME | 43.160,-70.621 | 91 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+32 | Mount Agamenticus | York, ME | 43.223,-70.692 | 94 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+32 | York Harbor | York, ME | 43.147,-70.626 | 91 min | 07:09 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Peacham Village | Peacham, VT | 44.328,-72.175 | 98 min | 07:17 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Owl's Head, Groton State Forest | Groton, VT | 44.297,-72.295 | 108 min | 07:17 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+32 | Mount Major Summit | Alton, NH | 43.509,-71.281 | 33 min | 07:12 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+32 | Little Cherry Pond | Pondicherry NWR, NH | 44.376,-71.519 | 81 min | 07:14 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+32 | Jefferson Fields | Jefferson, NH | 44.389,-71.479 | 78 min | 07:14 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Cape Porpoise Pier | Kennebunkport, ME | 43.365,-70.432 | 114 min | 07:08 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Weirs Beach Boardwalk | Laconia, NH | 43.608,-71.459 | 11 min | 07:13 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
-32 | Mount Major Summit | Alton, NH | 43.509,-71.281 | 33 min | 07:12 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
+32 | Leavitt Park | Meredith, NH | 43.681,-71.454 | 8 min | 07:13 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Belknap Mountain Fire Tower | Gilford, NH | 43.518,-71.369 | 29 min | 07:12 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Ellacoya State Park | Gilford, NH | 43.569,-71.355 | 22 min | 07:12 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
 32 | Lyndon Farm Fields | Northeast Kingdom, VT | 44.565,-71.973 | 96 min | 07:17 | horizon open | Clean horizon but thin cover — expect a quiet gradient, not fire.
