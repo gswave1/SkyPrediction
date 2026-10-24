@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-24T12:31:20.052Z",
+  "generated": "2026-10-24T16:29:30.522Z",
   "drive": 120,
   "events": [
     {
@@ -9,25 +9,10 @@
       "time": "17:53",
       "top": [
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 104,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:53",
-          "lat": 42.8619,
-          "lon": -71.8788
-        },
-        {
           "id": "sunapee",
           "name": "Mount Sunapee Summit",
           "place": "Newbury, NH",
-          "score": 32,
+          "score": 33,
           "label": "Marginal",
           "drive": 70,
           "flags": [
@@ -37,6 +22,21 @@
           "time": "17:53",
           "lat": 43.321,
           "lon": -72.084
+        },
+        {
+          "id": "bog",
+          "name": "Bog Mountain",
+          "place": "Wilmot, NH",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 46,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:52",
+          "lat": 43.469,
+          "lon": -71.93
         },
         {
           "id": "ascutney",
@@ -59,53 +59,52 @@
       "ev": "sunrise",
       "day": "2026-10-25",
       "when": "tomorrow",
-      "time": "07:17",
+      "time": "07:15",
       "top": [
         {
-          "id": "willoughbysouth",
-          "name": "Lake Willoughby, south end",
-          "place": "Westmore, VT",
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
           "score": 32,
           "label": "Marginal",
-          "drive": 110,
+          "drive": 70,
           "flags": [
             "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:17",
-          "lat": 44.717,
-          "lon": -72.031
-        },
-        {
-          "id": "kimballrd",
-          "name": "Kimball Road",
-          "place": "Lunenburg, VT",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 89,
-          "flags": [
-            "horizon open",
-            "valley fog likely (70)"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "07:15",
-          "lat": 44.4759,
-          "lon": -71.7045
+          "lat": 43.321,
+          "lon": -72.084
         },
         {
-          "id": "burkemtn",
-          "name": "Burke Mountain",
-          "place": "East Burke, VT",
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
           "score": 32,
           "label": "Marginal",
-          "drive": 110,
+          "drive": 61,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:16",
-          "lat": 44.5705,
-          "lon": -71.893
+          "time": "07:11",
+          "lat": 43.3314,
+          "lon": -71.1162
+        },
+        {
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 80,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:14",
+          "lat": 43.385,
+          "lon": -71.857
         }
       ]
     },
@@ -113,8 +112,38 @@
       "ev": "sunset",
       "day": "2026-10-25",
       "when": "tomorrow night",
-      "time": "17:48",
+      "time": "17:49",
       "top": [
+        {
+          "id": "willoughby",
+          "name": "Lake Willoughby",
+          "place": "Westmore, VT",
+          "score": 39,
+          "label": "Marginal",
+          "drive": 112,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:49",
+          "lat": 44.735,
+          "lon": -72.047
+        },
+        {
+          "id": "jobspond",
+          "name": "Jobs Pond",
+          "place": "Westmore, VT",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 118,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:48",
+          "lat": 44.7622,
+          "lon": -71.9534
+        },
         {
           "id": "meredith",
           "name": "Meredith Bay Docks",
@@ -129,40 +158,10 @@
           "time": "17:48",
           "lat": 43.656,
           "lon": -71.498
-        },
-        {
-          "id": "squam",
-          "name": "Squam Lake",
-          "place": "Holderness, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 13,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:49",
-          "lat": 43.731,
-          "lon": -71.586
-        },
-        {
-          "id": "centerharb",
-          "name": "Center Harbor Town Dock",
-          "place": "Center Harbor, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 10,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:48",
-          "lat": 43.71,
-          "lon": -71.467
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:53 PM. Best bet: Pack Monadnock (Miller SP), 32, Marginal. horizon open. 1 hour 44 minutes away. Then Mount Sunapee Summit 32, and Mount Ascutney Summit 32.\n\nSunrise tomorrow at 7:17 AM. Best bet: Lake Willoughby, south end, 32, Marginal. horizon open. 1 hour 50 minutes away. Then Kimball Road 32, and Burke Mountain 32.",
+  "text": "Sunset tonight at 5:53 PM. Best bet: Mount Sunapee Summit, 33, Marginal. horizon open. 1 hour 10 minutes away. Then Bog Mountain 33, and Mount Ascutney Summit 32.\n\nSunrise tomorrow at 7:15 AM. Best bet: Mount Sunapee Summit, 32, Marginal. horizon open. 1 hour 10 minutes away. Then Blue Job Mountain Fire Tower 32, and Mount Kearsarge Summit 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
