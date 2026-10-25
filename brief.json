@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-24T22:19:07.837Z",
+  "generated": "2026-10-25T00:55:13.842Z",
   "drive": 120,
   "events": [
     {
@@ -62,6 +62,21 @@
       "time": "07:17",
       "top": [
         {
+          "id": "lyndon",
+          "name": "Lyndon Farm Fields",
+          "place": "Northeast Kingdom, VT",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 96,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:17",
+          "lat": 44.565,
+          "lon": -71.973
+        },
+        {
           "id": "willoughbysouth",
           "name": "Lake Willoughby, south end",
           "place": "Westmore, VT",
@@ -91,21 +106,6 @@
           "time": "07:15",
           "lat": 44.4759,
           "lon": -71.7045
-        },
-        {
-          "id": "burkemtn",
-          "name": "Burke Mountain",
-          "place": "East Burke, VT",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 110,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:16",
-          "lat": 44.5705,
-          "lon": -71.893
         }
       ]
     },
@@ -113,28 +113,43 @@
       "ev": "sunset",
       "day": "2026-10-26",
       "when": "Monday",
-      "time": "17:42",
+      "time": "17:50",
       "top": [
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 36,
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 30,
           "label": "Marginal",
-          "drive": 106,
+          "drive": 104,
           "flags": [
             "horizon blocked"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:42",
-          "lat": 43.563,
-          "lon": -70.365
+          "time": "17:50",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
+        {
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 26,
+          "label": "Skip",
+          "drive": 61,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:46",
+          "lat": 43.3314,
+          "lon": -71.1162
         },
         {
           "id": "agamenticus",
           "name": "Mount Agamenticus",
           "place": "York, ME",
-          "score": 27,
+          "score": 25,
           "label": "Skip",
           "drive": 94,
           "flags": [
@@ -144,25 +159,10 @@
           "time": "17:44",
           "lat": 43.2232,
           "lon": -70.6919
-        },
-        {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 26,
-          "label": "Skip",
-          "drive": 104,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:50",
-          "lat": 42.8619,
-          "lon": -71.8788
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 5:48 PM. Best bet: Jobs Pond, 33, Marginal. horizon open. 1 hour 58 minutes away. Then Meredith Bay Docks 32, and Squam Lake 32.\n\nSunrise tomorrow at 7:17 AM. Best bet: Lake Willoughby, south end, 32, Marginal. horizon open. 1 hour 50 minutes away. Then Kimball Road 32, and Burke Mountain 32.",
+  "text": "Sunset tomorrow night at 5:48 PM. Best bet: Jobs Pond, 33, Marginal. horizon open. 1 hour 58 minutes away. Then Meredith Bay Docks 32, and Squam Lake 32.\n\nSunrise tomorrow at 7:17 AM. Best bet: Lyndon Farm Fields, 32, Marginal. horizon open. 1 hour 36 minutes away. Then Lake Willoughby, south end 32, and Kimball Road 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
