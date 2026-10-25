@@ -1,119 +1,32 @@
 {
-  "generated": "2026-10-25T20:34:57.058Z",
+  "generated": "2026-10-25T23:05:21.825Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
-      "day": "2026-10-25",
-      "when": "tonight",
-      "time": "17:48",
-      "top": [
-        {
-          "id": "meredith",
-          "name": "Meredith Bay Docks",
-          "place": "Meredith, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 2,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:48",
-          "lat": 43.656,
-          "lon": -71.498
-        },
-        {
-          "id": "squam",
-          "name": "Squam Lake",
-          "place": "Holderness, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 13,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:49",
-          "lat": 43.731,
-          "lon": -71.586
-        },
-        {
-          "id": "centerharb",
-          "name": "Center Harbor Town Dock",
-          "place": "Center Harbor, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 10,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:48",
-          "lat": 43.71,
-          "lon": -71.467
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-10-26",
-      "when": "tomorrow",
-      "time": "07:13",
-      "top": [
-        {
-          "id": "fossmtn",
-          "name": "Foss Mountain",
-          "place": "Eaton, NH",
-          "score": 53,
-          "label": "Worth it",
-          "drive": 64,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "07:13",
-          "lat": 43.8771,
-          "lon": -71.0348
-        },
-        {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 52,
-          "label": "Worth it",
-          "drive": 80,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "07:15",
-          "lat": 43.385,
-          "lon": -71.857
-        },
-        {
-          "id": "mtisrael",
-          "name": "Mount Israel",
-          "place": "Sandwich, NH",
-          "score": 51,
-          "label": "Worth it",
-          "drive": 30,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "07:15",
-          "lat": 43.8454,
-          "lon": -71.4716
-        }
-      ]
-    },
-    {
-      "ev": "sunset",
       "day": "2026-10-26",
       "when": "tomorrow night",
-      "time": "17:45",
+      "time": "17:44",
       "top": [
+        {
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 48,
+          "label": "Worth it",
+          "drive": 94,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:44",
+          "lat": 43.2232,
+          "lon": -70.6919
+        },
         {
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 45,
-          "label": "Marginal",
+          "score": 47,
+          "label": "Worth it",
           "drive": 94,
           "flags": [
             "horizon open"
@@ -124,34 +37,123 @@
           "lon": -70.698
         },
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 43,
-          "label": "Marginal",
-          "drive": 94,
-          "flags": [],
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 45,
+          "label": "Worth it",
+          "drive": 106,
+          "flags": [
+            "horizon blocked"
+          ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:44",
-          "lat": 43.2232,
-          "lon": -70.6919
+          "time": "17:42",
+          "lat": 43.563,
+          "lon": -70.365
+        }
+      ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-10-26",
+      "when": "tomorrow",
+      "time": "07:15",
+      "top": [
+        {
+          "id": "mtisrael",
+          "name": "Mount Israel",
+          "place": "Sandwich, NH",
+          "score": 50,
+          "label": "Worth it",
+          "drive": 30,
+          "flags": [],
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "time": "07:15",
+          "lat": 43.8454,
+          "lon": -71.4716
         },
+        {
+          "id": "mtpercival",
+          "name": "Mount Percival",
+          "place": "Sandwich, NH",
+          "score": 50,
+          "label": "Worth it",
+          "drive": 28,
+          "flags": [],
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "time": "07:15",
+          "lat": 43.8022,
+          "lon": -71.5225
+        },
+        {
+          "id": "leavittpark",
+          "name": "Leavitt Park",
+          "place": "Meredith, NH",
+          "score": 50,
+          "label": "Worth it",
+          "drive": 8,
+          "flags": [],
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "time": "07:14",
+          "lat": 43.681,
+          "lon": -71.454
+        }
+      ]
+    },
+    {
+      "ev": "sunset",
+      "day": "2026-10-27",
+      "when": "Tuesday",
+      "time": "17:48",
+      "top": [
         {
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
           "place": "Peterborough, NH",
-          "score": 41,
+          "score": 34,
           "label": "Marginal",
           "drive": 104,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:50",
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:48",
           "lat": 42.8619,
           "lon": -71.8788
+        },
+        {
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 34,
+          "label": "Marginal",
+          "drive": 61,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:44",
+          "lat": 43.3314,
+          "lon": -71.1162
+        },
+        {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 94,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:43",
+          "lat": 43.06,
+          "lon": -70.698
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:48 PM. Best bet: Meredith Bay Docks, 32, Marginal. horizon open. 2 minutes away. Then Squam Lake 32, and Center Harbor Town Dock 32.\n\nSunrise tomorrow at 7:13 AM. Best bet: Foss Mountain, 53, Worth it. 1 hour 4 minutes away. Then Mount Kearsarge Summit 52, and Mount Israel 51.",
+  "text": "Sunset tomorrow night at 5:44 PM. Best bet: Mount Agamenticus, 48, Worth it. 1 hour 34 minutes away. Then Kittery Point 47, and Scarborough Marsh 45.\n\nSunrise tomorrow at 7:15 AM. Best bet: Mount Israel, 50, Worth it. 30 minutes away. Then Mount Percival 50, and Leavitt Park 50.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
