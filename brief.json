@@ -1,28 +1,13 @@
 {
-  "generated": "2026-10-25T00:55:13.842Z",
+  "generated": "2026-10-25T05:49:05.763Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-25",
-      "when": "tomorrow night",
+      "when": "tonight",
       "time": "17:48",
       "top": [
-        {
-          "id": "jobspond",
-          "name": "Jobs Pond",
-          "place": "Westmore, VT",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 118,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:48",
-          "lat": 44.7622,
-          "lon": -71.9534
-        },
         {
           "id": "meredith",
           "name": "Meredith Bay Docks",
@@ -52,13 +37,28 @@
           "time": "17:49",
           "lat": 43.731,
           "lon": -71.586
+        },
+        {
+          "id": "centerharb",
+          "name": "Center Harbor Town Dock",
+          "place": "Center Harbor, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 10,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:48",
+          "lat": 43.71,
+          "lon": -71.467
         }
       ]
     },
     {
       "ev": "sunrise",
       "day": "2026-10-25",
-      "when": "tomorrow",
+      "when": "this morning",
       "time": "07:17",
       "top": [
         {
@@ -100,7 +100,7 @@
           "drive": 89,
           "flags": [
             "horizon open",
-            "valley fog likely (70)"
+            "valley fog likely (73)"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "07:15",
@@ -112,45 +112,15 @@
     {
       "ev": "sunset",
       "day": "2026-10-26",
-      "when": "Monday",
-      "time": "17:50",
+      "when": "tomorrow night",
+      "time": "17:44",
       "top": [
-        {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 30,
-          "label": "Marginal",
-          "drive": 104,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:50",
-          "lat": 42.8619,
-          "lon": -71.8788
-        },
-        {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 26,
-          "label": "Skip",
-          "drive": 61,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:46",
-          "lat": 43.3314,
-          "lon": -71.1162
-        },
         {
           "id": "agamenticus",
           "name": "Mount Agamenticus",
           "place": "York, ME",
-          "score": 25,
-          "label": "Skip",
+          "score": 33,
+          "label": "Marginal",
           "drive": 94,
           "flags": [
             "horizon blocked"
@@ -159,10 +129,36 @@
           "time": "17:44",
           "lat": 43.2232,
           "lon": -70.6919
+        },
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 104,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:50",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
+        {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 94,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:45",
+          "lat": 43.06,
+          "lon": -70.698
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 5:48 PM. Best bet: Jobs Pond, 33, Marginal. horizon open. 1 hour 58 minutes away. Then Meredith Bay Docks 32, and Squam Lake 32.\n\nSunrise tomorrow at 7:17 AM. Best bet: Lyndon Farm Fields, 32, Marginal. horizon open. 1 hour 36 minutes away. Then Lake Willoughby, south end 32, and Kimball Road 32.",
+  "text": "Sunset tonight at 5:48 PM. Best bet: Meredith Bay Docks, 32, Marginal. horizon open. 2 minutes away. Then Squam Lake 32, and Center Harbor Town Dock 32.\n\nSunrise this morning at 7:17 AM. Best bet: Lyndon Farm Fields, 32, Marginal. horizon open. 1 hour 36 minutes away. Then Lake Willoughby, south end 32, and Kimball Road 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
