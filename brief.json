@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25T13:02:52.058Z",
+  "generated": "2026-10-25T17:29:44.770Z",
   "drive": 120,
   "events": [
     {
@@ -59,48 +59,46 @@
       "ev": "sunrise",
       "day": "2026-10-26",
       "when": "tomorrow",
-      "time": "07:16",
+      "time": "07:13",
       "top": [
         {
-          "id": "jefferson",
-          "name": "Jefferson Fields",
-          "place": "Jefferson, NH",
-          "score": 61,
+          "id": "fossmtn",
+          "name": "Foss Mountain",
+          "place": "Eaton, NH",
+          "score": 71,
           "label": "Strong",
-          "drive": 78,
+          "drive": 64,
+          "flags": [],
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "time": "07:13",
+          "lat": 43.8771,
+          "lon": -71.0348
+        },
+        {
+          "id": "newfound",
+          "name": "Newfound Lake, Wellington",
+          "place": "Bristol, NH",
+          "score": 65,
+          "label": "Strong",
+          "drive": 33,
           "flags": [],
           "why": "Mid-level cloud overhead and a clear run to the horizon.",
           "time": "07:16",
-          "lat": 44.3892,
-          "lon": -71.4789
+          "lat": 43.664,
+          "lon": -71.767
         },
         {
-          "id": "cherrypond",
-          "name": "Little Cherry Pond",
-          "place": "Pondicherry NWR, NH",
-          "score": 61,
+          "id": "greenmtn",
+          "name": "Green Mountain Fire Tower",
+          "place": "Effingham, NH",
+          "score": 63,
           "label": "Strong",
-          "drive": 81,
+          "drive": 55,
           "flags": [],
           "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "07:16",
-          "lat": 44.3761,
-          "lon": -71.5188
-        },
-        {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 53,
-          "label": "Worth it",
-          "drive": 80,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "07:15",
-          "lat": 43.385,
-          "lon": -71.857
+          "time": "07:13",
+          "lat": 43.7675,
+          "lon": -71.0369
         }
       ]
     },
@@ -114,20 +112,37 @@
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 34,
-          "label": "Marginal",
+          "score": 49,
+          "label": "Worth it",
           "drive": 94,
-          "flags": [],
+          "flags": [
+            "horizon open"
+          ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:45",
           "lat": 43.06,
           "lon": -70.698
         },
         {
+          "id": "newcastle",
+          "name": "New Castle / Portsmouth Harbor",
+          "place": "New Castle, NH",
+          "score": 41,
+          "label": "Marginal",
+          "drive": 87,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "17:45",
+          "lat": 43.069,
+          "lon": -70.713
+        },
+        {
           "id": "agamenticus",
           "name": "Mount Agamenticus",
           "place": "York, ME",
-          "score": 31,
+          "score": 41,
           "label": "Marginal",
           "drive": 94,
           "flags": [],
@@ -135,23 +150,10 @@
           "time": "17:44",
           "lat": 43.2232,
           "lon": -70.6919
-        },
-        {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 30,
-          "label": "Skip",
-          "drive": 104,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:50",
-          "lat": 42.8619,
-          "lon": -71.8788
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:48 PM. Best bet: Meredith Bay Docks, 32, Marginal. horizon open. 2 minutes away. Then Squam Lake 32, and Center Harbor Town Dock 32.\n\nSunrise tomorrow at 7:16 AM. Best bet: Jefferson Fields, 61, Strong. 1 hour 18 minutes away. Then Little Cherry Pond 61, and Mount Kearsarge Summit 53.",
+  "text": "Sunset tonight at 5:48 PM. Best bet: Meredith Bay Docks, 32, Marginal. horizon open. 2 minutes away. Then Squam Lake 32, and Center Harbor Town Dock 32.\n\nSunrise tomorrow at 7:13 AM. Best bet: Foss Mountain, 71, Strong. 1 hour 4 minutes away. Then Newfound Lake, Wellington 65, and Green Mountain Fire Tower 63.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
