@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25T05:49:05.763Z",
+  "generated": "2026-10-25T13:02:52.058Z",
   "drive": 120,
   "events": [
     {
@@ -57,55 +57,50 @@
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-25",
-      "when": "this morning",
-      "time": "07:17",
+      "day": "2026-10-26",
+      "when": "tomorrow",
+      "time": "07:16",
       "top": [
         {
-          "id": "lyndon",
-          "name": "Lyndon Farm Fields",
-          "place": "Northeast Kingdom, VT",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 96,
+          "id": "jefferson",
+          "name": "Jefferson Fields",
+          "place": "Jefferson, NH",
+          "score": 61,
+          "label": "Strong",
+          "drive": 78,
+          "flags": [],
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "time": "07:16",
+          "lat": 44.3892,
+          "lon": -71.4789
+        },
+        {
+          "id": "cherrypond",
+          "name": "Little Cherry Pond",
+          "place": "Pondicherry NWR, NH",
+          "score": 61,
+          "label": "Strong",
+          "drive": 81,
+          "flags": [],
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "time": "07:16",
+          "lat": 44.3761,
+          "lon": -71.5188
+        },
+        {
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 53,
+          "label": "Worth it",
+          "drive": 80,
           "flags": [
             "horizon open"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:17",
-          "lat": 44.565,
-          "lon": -71.973
-        },
-        {
-          "id": "willoughbysouth",
-          "name": "Lake Willoughby, south end",
-          "place": "Westmore, VT",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 110,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:17",
-          "lat": 44.717,
-          "lon": -72.031
-        },
-        {
-          "id": "kimballrd",
-          "name": "Kimball Road",
-          "place": "Lunenburg, VT",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 89,
-          "flags": [
-            "horizon open",
-            "valley fog likely (73)"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
           "time": "07:15",
-          "lat": 44.4759,
-          "lon": -71.7045
+          "lat": 43.385,
+          "lon": -71.857
         }
       ]
     },
@@ -113,18 +108,29 @@
       "ev": "sunset",
       "day": "2026-10-26",
       "when": "tomorrow night",
-      "time": "17:44",
+      "time": "17:45",
       "top": [
+        {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 34,
+          "label": "Marginal",
+          "drive": 94,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:45",
+          "lat": 43.06,
+          "lon": -70.698
+        },
         {
           "id": "agamenticus",
           "name": "Mount Agamenticus",
           "place": "York, ME",
-          "score": 33,
+          "score": 31,
           "label": "Marginal",
           "drive": 94,
-          "flags": [
-            "horizon blocked"
-          ],
+          "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:44",
           "lat": 43.2232,
@@ -134,31 +140,18 @@
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
           "place": "Peterborough, NH",
-          "score": 33,
-          "label": "Marginal",
+          "score": 30,
+          "label": "Skip",
           "drive": 104,
           "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:50",
           "lat": 42.8619,
           "lon": -71.8788
-        },
-        {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 94,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:45",
-          "lat": 43.06,
-          "lon": -70.698
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:48 PM. Best bet: Meredith Bay Docks, 32, Marginal. horizon open. 2 minutes away. Then Squam Lake 32, and Center Harbor Town Dock 32.\n\nSunrise this morning at 7:17 AM. Best bet: Lyndon Farm Fields, 32, Marginal. horizon open. 1 hour 36 minutes away. Then Lake Willoughby, south end 32, and Kimball Road 32.",
+  "text": "Sunset tonight at 5:48 PM. Best bet: Meredith Bay Docks, 32, Marginal. horizon open. 2 minutes away. Then Squam Lake 32, and Center Harbor Town Dock 32.\n\nSunrise tomorrow at 7:16 AM. Best bet: Jefferson Fields, 61, Strong. 1 hour 18 minutes away. Then Little Cherry Pond 61, and Mount Kearsarge Summit 53.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
