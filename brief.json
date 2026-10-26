@@ -1,32 +1,19 @@
 {
-  "generated": "2026-10-25T23:05:21.825Z",
+  "generated": "2026-10-26T03:55:19.826Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-26",
       "when": "tomorrow night",
-      "time": "17:44",
+      "time": "17:45",
       "top": [
-        {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 48,
-          "label": "Worth it",
-          "drive": 94,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:44",
-          "lat": 43.2232,
-          "lon": -70.6919
-        },
         {
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 47,
-          "label": "Worth it",
+          "score": 62,
+          "label": "Strong",
           "drive": 94,
           "flags": [
             "horizon open"
@@ -37,19 +24,30 @@
           "lon": -70.698
         },
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 45,
-          "label": "Worth it",
-          "drive": 106,
-          "flags": [
-            "horizon blocked"
-          ],
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 60,
+          "label": "Strong",
+          "drive": 94,
+          "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:42",
-          "lat": 43.563,
-          "lon": -70.365
+          "time": "17:44",
+          "lat": 43.2232,
+          "lon": -70.6919
+        },
+        {
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 55,
+          "label": "Worth it",
+          "drive": 61,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:46",
+          "lat": 43.3314,
+          "lon": -71.1162
         }
       ]
     },
@@ -57,43 +55,49 @@
       "ev": "sunrise",
       "day": "2026-10-26",
       "when": "tomorrow",
-      "time": "07:15",
+      "time": "07:16",
       "top": [
+        {
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 49,
+          "label": "Worth it",
+          "drive": 70,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "07:16",
+          "lat": 43.321,
+          "lon": -72.084
+        },
         {
           "id": "mtisrael",
           "name": "Mount Israel",
           "place": "Sandwich, NH",
-          "score": 50,
+          "score": 48,
           "label": "Worth it",
           "drive": 30,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "07:15",
           "lat": 43.8454,
           "lon": -71.4716
         },
         {
-          "id": "mtpercival",
-          "name": "Mount Percival",
-          "place": "Sandwich, NH",
-          "score": 50,
-          "label": "Worth it",
-          "drive": 28,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "07:15",
-          "lat": 43.8022,
-          "lon": -71.5225
-        },
-        {
           "id": "leavittpark",
           "name": "Leavitt Park",
           "place": "Meredith, NH",
-          "score": 50,
+          "score": 48,
           "label": "Worth it",
           "drive": 8,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "07:14",
           "lat": 43.681,
           "lon": -71.454
@@ -104,56 +108,56 @@
       "ev": "sunset",
       "day": "2026-10-27",
       "when": "Tuesday",
-      "time": "17:48",
+      "time": "17:47",
       "top": [
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
+          "id": "bog",
+          "name": "Bog Mountain",
+          "place": "Wilmot, NH",
           "score": 34,
           "label": "Marginal",
-          "drive": 104,
+          "drive": 46,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:48",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "time": "17:47",
+          "lat": 43.469,
+          "lon": -71.93
         },
         {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 34,
-          "label": "Marginal",
-          "drive": 61,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:44",
-          "lat": 43.3314,
-          "lon": -71.1162
-        },
-        {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
           "score": 33,
           "label": "Marginal",
-          "drive": 94,
+          "drive": 95,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:43",
-          "lat": 43.06,
-          "lon": -70.698
+          "time": "17:41",
+          "lat": 43.9209,
+          "lon": -70.5806
+        },
+        {
+          "id": "pleasantmtn",
+          "name": "Pleasant Mountain",
+          "place": "Bridgton, ME",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 90,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:42",
+          "lat": 44.027,
+          "lon": -70.8223
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 5:44 PM. Best bet: Mount Agamenticus, 48, Worth it. 1 hour 34 minutes away. Then Kittery Point 47, and Scarborough Marsh 45.\n\nSunrise tomorrow at 7:15 AM. Best bet: Mount Israel, 50, Worth it. 30 minutes away. Then Mount Percival 50, and Leavitt Park 50.",
+  "text": "Sunset tomorrow night at 5:45 PM. Best bet: Kittery Point, 62, Strong. horizon open. 1 hour 34 minutes away. Then Mount Agamenticus 60, and Blue Job Mountain Fire Tower 55.\n\nSunrise tomorrow at 7:16 AM. Best bet: Mount Sunapee Summit, 49, Worth it. horizon open. 1 hour 10 minutes away. Then Mount Israel 48, and Leavitt Park 48.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
