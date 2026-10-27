@@ -1,28 +1,13 @@
 {
-  "generated": "2026-10-27T14:10:19.489Z",
+  "generated": "2026-10-27T19:55:44.257Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-27",
       "when": "tonight",
-      "time": "17:47",
+      "time": "17:46",
       "top": [
-        {
-          "id": "peacham",
-          "name": "Peacham Village",
-          "place": "Peacham, VT",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 98,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:47",
-          "lat": 44.328,
-          "lon": -72.175
-        },
         {
           "id": "ashland",
           "name": "Ashland",
@@ -52,6 +37,21 @@
           "time": "17:48",
           "lat": 42.8619,
           "lon": -71.8788
+        },
+        {
+          "id": "meredith",
+          "name": "Meredith Bay Docks",
+          "place": "Meredith, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 2,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:45",
+          "lat": 43.656,
+          "lon": -71.498
         }
       ]
     },
@@ -59,53 +59,53 @@
       "ev": "sunrise",
       "day": "2026-10-28",
       "when": "tomorrow",
-      "time": "07:21",
+      "time": "07:12",
       "top": [
         {
-          "id": "jennefarm",
-          "name": "Jenne Farm",
-          "place": "Reading, VT",
-          "score": 79,
+          "id": "capeporpoise",
+          "name": "Cape Porpoise Pier",
+          "place": "Kennebunkport, ME",
+          "score": 82,
           "label": "Go",
-          "drive": 111,
+          "drive": 114,
           "flags": [
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:21",
-          "lat": 43.5245,
-          "lon": -72.5596
+          "time": "07:12",
+          "lat": 43.3654,
+          "lon": -70.432
         },
         {
-          "id": "ascutney",
-          "name": "Mount Ascutney Summit",
-          "place": "Windsor, VT",
-          "score": 78,
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 82,
           "label": "Go",
-          "drive": 111,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:21",
-          "lat": 43.4445,
-          "lon": -72.4537
-        },
-        {
-          "id": "sebago",
-          "name": "Sebago Lake State Park",
-          "place": "Casco, ME",
-          "score": 78,
-          "label": "Go",
-          "drive": 95,
+          "drive": 106,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:14",
-          "lat": 43.9209,
-          "lon": -70.5806
+          "time": "07:12",
+          "lat": 43.563,
+          "lon": -70.365
+        },
+        {
+          "id": "cherrypond",
+          "name": "Little Cherry Pond",
+          "place": "Pondicherry NWR, NH",
+          "score": 79,
+          "label": "Go",
+          "drive": 81,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "07:18",
+          "lat": 44.3761,
+          "lon": -71.5188
         }
       ]
     },
@@ -119,22 +119,35 @@
           "id": "chatham",
           "name": "Chatham",
           "place": "Chatham, NH",
-          "score": 52,
+          "score": 48,
           "label": "Worth it",
           "drive": 95,
-          "flags": [
-            "horizon blocked"
-          ],
+          "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:41",
           "lat": 44.271,
           "lon": -71.025
         },
         {
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 47,
+          "label": "Worth it",
+          "drive": 110,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "17:43",
+          "lat": 42.8151,
+          "lon": -70.819
+        },
+        {
           "id": "sebago",
           "name": "Sebago Lake State Park",
           "place": "Casco, ME",
-          "score": 47,
+          "score": 46,
           "label": "Worth it",
           "drive": 95,
           "flags": [],
@@ -142,23 +155,10 @@
           "time": "17:40",
           "lat": 43.9209,
           "lon": -70.5806
-        },
-        {
-          "id": "eaton",
-          "name": "Crystal Lake",
-          "place": "Eaton, NH",
-          "score": 45,
-          "label": "Worth it",
-          "drive": 55,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "17:42",
-          "lat": 43.914,
-          "lon": -71.074
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:47 PM. Best bet: Peacham Village, 33, Marginal. horizon open. 1 hour 38 minutes away. Then Ashland 33, and Pack Monadnock (Miller SP) 33.\n\nSunrise tomorrow at 7:21 AM. Best bet: Jenne Farm, 79, Go. cirrus overhead. 1 hour 51 minutes away. Then Mount Ascutney Summit 78, and Sebago Lake State Park 78.",
+  "text": "Sunset tonight at 5:46 PM. Best bet: Ashland, 33, Marginal. horizon open. 19 minutes away. Then Pack Monadnock (Miller SP) 33, and Meredith Bay Docks 32.\n\nSunrise tomorrow at 7:12 AM. Best bet: Cape Porpoise Pier, 82, Go. cirrus overhead. 1 hour 54 minutes away. Then Scarborough Marsh 82, and Little Cherry Pond 79.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
