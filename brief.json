@@ -1,18 +1,48 @@
 {
-  "generated": "2026-10-27T06:04:52.500Z",
+  "generated": "2026-10-27T14:10:19.489Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-27",
       "when": "tonight",
-      "time": "17:48",
+      "time": "17:47",
       "top": [
+        {
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 98,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:47",
+          "lat": 44.328,
+          "lon": -72.175
+        },
+        {
+          "id": "ashland",
+          "name": "Ashland",
+          "place": "Ashland, NH",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 19,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:46",
+          "lat": 43.697,
+          "lon": -71.63
+        },
         {
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
           "place": "Peterborough, NH",
-          "score": 37,
+          "score": 33,
           "label": "Marginal",
           "drive": 104,
           "flags": [
@@ -22,91 +52,60 @@
           "time": "17:48",
           "lat": 42.8619,
           "lon": -71.8788
-        },
-        {
-          "id": "cardigan",
-          "name": "Mount Cardigan Summit",
-          "place": "Orange, NH",
-          "score": 37,
-          "label": "Marginal",
-          "drive": 57,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:47",
-          "lat": 43.6495,
-          "lon": -71.9144
-        },
-        {
-          "id": "bog",
-          "name": "Bog Mountain",
-          "place": "Wilmot, NH",
-          "score": 34,
-          "label": "Marginal",
-          "drive": 46,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "17:47",
-          "lat": 43.469,
-          "lon": -71.93
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-27",
-      "when": "this morning",
-      "time": "07:12",
+      "day": "2026-10-28",
+      "when": "tomorrow",
+      "time": "07:21",
       "top": [
         {
-          "id": "newburyportharborlight",
-          "name": "Newburyport Harbor Light",
-          "place": "Newburyport, MA",
+          "id": "jennefarm",
+          "name": "Jenne Farm",
+          "place": "Reading, VT",
+          "score": 79,
+          "label": "Go",
+          "drive": 111,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "07:21",
+          "lat": 43.5245,
+          "lon": -72.5596
+        },
+        {
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
           "score": 78,
           "label": "Go",
-          "drive": 110,
+          "drive": 111,
           "flags": [
-            "horizon open",
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:12",
-          "lat": 42.8151,
-          "lon": -70.819
+          "time": "07:21",
+          "lat": 43.4445,
+          "lon": -72.4537
         },
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 76,
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 78,
           "label": "Go",
-          "drive": 104,
+          "drive": 95,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:16",
-          "lat": 42.8619,
-          "lon": -71.8788
-        },
-        {
-          "id": "yorkharbor",
-          "name": "York Harbor",
-          "place": "York, ME",
-          "score": 66,
-          "label": "Strong",
-          "drive": 91,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "07:11",
-          "lat": 43.147,
-          "lon": -70.626
+          "time": "07:14",
+          "lat": 43.9209,
+          "lon": -70.5806
         }
       ]
     },
@@ -114,13 +113,28 @@
       "ev": "sunset",
       "day": "2026-10-28",
       "when": "tomorrow night",
-      "time": "17:40",
+      "time": "17:41",
       "top": [
+        {
+          "id": "chatham",
+          "name": "Chatham",
+          "place": "Chatham, NH",
+          "score": 52,
+          "label": "Worth it",
+          "drive": 95,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:41",
+          "lat": 44.271,
+          "lon": -71.025
+        },
         {
           "id": "sebago",
           "name": "Sebago Lake State Park",
           "place": "Casco, ME",
-          "score": 50,
+          "score": 47,
           "label": "Worth it",
           "drive": 95,
           "flags": [],
@@ -133,7 +147,7 @@
           "id": "eaton",
           "name": "Crystal Lake",
           "place": "Eaton, NH",
-          "score": 49,
+          "score": 45,
           "label": "Worth it",
           "drive": 55,
           "flags": [],
@@ -141,23 +155,10 @@
           "time": "17:42",
           "lat": 43.914,
           "lon": -71.074
-        },
-        {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 48,
-          "label": "Worth it",
-          "drive": 94,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:42",
-          "lat": 43.06,
-          "lon": -70.698
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:48 PM. Best bet: Pack Monadnock (Miller SP), 37, Marginal. horizon open. 1 hour 44 minutes away. Then Mount Cardigan Summit 37, and Bog Mountain 34.\n\nSunrise this morning at 7:12 AM. Best bet: Newburyport Harbor Light, 78, Go. horizon open, cirrus overhead. 1 hour 50 minutes away. Then Pack Monadnock (Miller SP) 76, and York Harbor 66.",
+  "text": "Sunset tonight at 5:47 PM. Best bet: Peacham Village, 33, Marginal. horizon open. 1 hour 38 minutes away. Then Ashland 33, and Pack Monadnock (Miller SP) 33.\n\nSunrise tomorrow at 7:21 AM. Best bet: Jenne Farm, 79, Go. cirrus overhead. 1 hour 51 minutes away. Then Mount Ascutney Summit 78, and Sebago Lake State Park 78.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
