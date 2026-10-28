@@ -1,133 +1,152 @@
 {
-  "generated": "2026-10-27T23:38:30.326Z",
+  "generated": "2026-10-28T04:46:45.358Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-28",
-      "when": "tomorrow night",
-      "time": "17:43",
+      "when": "tonight",
+      "time": "17:47",
       "top": [
         {
-          "id": "castle",
-          "name": "Castle in the Clouds Overlook",
-          "place": "Moultonborough, NH",
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 76,
+          "label": "Go",
+          "drive": 104,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "17:47",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
+        {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
           "score": 62,
           "label": "Strong",
-          "drive": 26,
+          "drive": 94,
           "flags": [
             "cirrus overhead"
           ],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "17:43",
-          "lat": 43.747,
-          "lon": -71.323
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:42",
+          "lat": 43.06,
+          "lon": -70.698
         },
         {
-          "id": "redhill",
-          "name": "Red Hill Fire Tower",
-          "place": "Moultonborough, NH",
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
           "score": 61,
           "label": "Strong",
-          "drive": 20,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
-          "time": "17:43",
-          "lat": 43.766,
-          "lon": -71.372
-        },
-        {
-          "id": "moultonneck",
-          "name": "Moultonborough Neck",
-          "place": "Moultonborough, NH",
-          "score": 60,
-          "label": "Strong",
-          "drive": 17,
+          "drive": 94,
           "flags": [
             "cirrus overhead"
           ],
           "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "17:43",
-          "lat": 43.696,
-          "lon": -71.406
+          "time": "17:41",
+          "lat": 43.2232,
+          "lon": -70.6919
         }
       ]
     },
     {
       "ev": "sunrise",
       "day": "2026-10-28",
-      "when": "tomorrow",
-      "time": "07:18",
+      "when": "this morning",
+      "time": "07:19",
       "top": [
         {
-          "id": "jefferson",
-          "name": "Jefferson Fields",
-          "place": "Jefferson, NH",
-          "score": 78,
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 86,
           "label": "Go",
-          "drive": 78,
+          "drive": 70,
           "flags": [
             "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:18",
-          "lat": 44.3892,
-          "lon": -71.4789
-        },
-        {
-          "id": "cherrypond",
-          "name": "Little Cherry Pond",
-          "place": "Pondicherry NWR, NH",
-          "score": 78,
-          "label": "Go",
-          "drive": 81,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:18",
-          "lat": 44.3761,
-          "lon": -71.5188
-        },
-        {
-          "id": "owlshead",
-          "name": "Owl's Head, Groton State Forest",
-          "place": "Groton, VT",
-          "score": 72,
-          "label": "Strong",
-          "drive": 108,
-          "flags": [
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:21",
-          "lat": 44.297,
-          "lon": -72.295
+          "time": "07:19",
+          "lat": 43.321,
+          "lon": -72.084
+        },
+        {
+          "id": "mtwashington",
+          "name": "Mount Washington Summit",
+          "place": "Sargent's Purchase, NH",
+          "score": 86,
+          "label": "Go",
+          "drive": 116,
+          "flags": [
+            "horizon open",
+            "cirrus overhead",
+            "pre-glow from 06:32"
+          ],
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:32, before the sun is up. Be set up early. (Sun-crossing score alone: 55.)",
+          "time": "07:17",
+          "lat": 44.27,
+          "lon": -71.302
+        },
+        {
+          "id": "chocoruasummit",
+          "name": "Mount Chocorua Summit",
+          "place": "Albany, NH",
+          "score": 84,
+          "label": "Go",
+          "drive": 46,
+          "flags": [
+            "cirrus overhead",
+            "pre-glow from 06:32"
+          ],
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:32, before the sun is up. Be set up early. (Sun-crossing score alone: 59.)",
+          "time": "07:17",
+          "lat": 43.9541,
+          "lon": -71.2734
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-10-29",
-      "when": "Thursday",
-      "time": "17:42",
+      "when": "tomorrow night",
+      "time": "17:44",
       "top": [
         {
-          "id": "jobspond",
-          "name": "Jobs Pond",
-          "place": "Westmore, VT",
-          "score": 63,
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 72,
           "label": "Strong",
-          "drive": 118,
-          "flags": [],
+          "drive": 98,
+          "flags": [
+            "horizon open"
+          ],
           "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
-          "time": "17:42",
-          "lat": 44.7622,
-          "lon": -71.9534
+          "time": "17:44",
+          "lat": 44.328,
+          "lon": -72.175
+        },
+        {
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 71,
+          "label": "Strong",
+          "drive": 108,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
+          "time": "17:44",
+          "lat": 44.297,
+          "lon": -72.295
         },
         {
           "id": "willoughby",
@@ -136,28 +155,17 @@
           "score": 63,
           "label": "Strong",
           "drive": 112,
-          "flags": [],
-          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
           "time": "17:43",
           "lat": 44.735,
           "lon": -72.047
-        },
-        {
-          "id": "willoughbysouth",
-          "name": "Lake Willoughby, south end",
-          "place": "Westmore, VT",
-          "score": 54,
-          "label": "Worth it",
-          "drive": 110,
-          "flags": [],
-          "why": "High cloud overhead with an open gap at the horizon. That's the combination. And the sun sets outside this spot's open arc.",
-          "time": "17:43",
-          "lat": 44.717,
-          "lon": -72.031
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 5:43 PM. Best bet: Castle in the Clouds Overlook, 62, Strong. cirrus overhead. 26 minutes away. Then Red Hill Fire Tower 61, and Moultonborough Neck 60.\n\nSunrise tomorrow at 7:18 AM. Best bet: Jefferson Fields, 78, Go. horizon open, cirrus overhead. 1 hour 18 minutes away. Then Little Cherry Pond 78, and Owl's Head, Groton State Forest 72.",
+  "text": "Sunset tonight at 5:47 PM. Best bet: Pack Monadnock (Miller SP), 76, Go. cirrus overhead. 1 hour 44 minutes away. Then Kittery Point 62, and Mount Agamenticus 61.\n\nSunrise this morning at 7:19 AM. Best bet: Mount Sunapee Summit, 86, Go. horizon open, cirrus overhead. 1 hour 10 minutes away. Then Mount Washington Summit 86, and Mount Chocorua Summit 84.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
