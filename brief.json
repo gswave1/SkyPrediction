@@ -1,114 +1,110 @@
 {
-  "generated": "2026-10-28T04:46:45.358Z",
+  "generated": "2026-10-28T14:56:59.469Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-28",
       "when": "tonight",
-      "time": "17:47",
+      "time": "17:42",
       "top": [
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 76,
-          "label": "Go",
-          "drive": 104,
+          "id": "intervale",
+          "name": "Intervale Scenic Vista",
+          "place": "Intervale, NH",
+          "score": 62,
+          "label": "Strong",
+          "drive": 67,
           "flags": [
             "cirrus overhead"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "17:47",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "time": "17:42",
+          "lat": 44.0756,
+          "lon": -71.1396
         },
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 62,
-          "label": "Strong",
-          "drive": 94,
+          "id": "lowerfalls",
+          "name": "Lower Falls, Swift River",
+          "place": "Albany, NH",
+          "score": 59,
+          "label": "Worth it",
+          "drive": 57,
           "flags": [
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:42",
-          "lat": 43.06,
-          "lon": -70.698
+          "lat": 43.9964,
+          "lon": -71.2336
         },
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 61,
-          "label": "Strong",
-          "drive": 94,
+          "id": "rockygorge",
+          "name": "Rocky Gorge",
+          "place": "Kancamagus Hwy, NH",
+          "score": 59,
+          "label": "Worth it",
+          "drive": 62,
           "flags": [
             "cirrus overhead"
           ],
           "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "17:41",
-          "lat": 43.2232,
-          "lon": -70.6919
+          "time": "17:42",
+          "lat": 44.004,
+          "lon": -71.278
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-28",
-      "when": "this morning",
-      "time": "07:19",
+      "day": "2026-10-29",
+      "when": "tomorrow",
+      "time": "07:14",
       "top": [
         {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 86,
-          "label": "Go",
-          "drive": 70,
+          "id": "hampton",
+          "name": "Hampton Beach",
+          "place": "Hampton, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 90,
           "flags": [
-            "horizon open",
-            "cirrus overhead"
+            "horizon open"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "07:19",
-          "lat": 43.321,
-          "lon": -72.084
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:14",
+          "lat": 42.9081,
+          "lon": -70.81
         },
         {
-          "id": "mtwashington",
-          "name": "Mount Washington Summit",
-          "place": "Sargent's Purchase, NH",
-          "score": 86,
-          "label": "Go",
-          "drive": 116,
+          "id": "greenmtn",
+          "name": "Green Mountain Fire Tower",
+          "place": "Effingham, NH",
+          "score": 31,
+          "label": "Marginal",
+          "drive": 55,
           "flags": [
-            "horizon open",
-            "cirrus overhead",
-            "pre-glow from 06:32"
+            "horizon open"
           ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:32, before the sun is up. Be set up early. (Sun-crossing score alone: 55.)",
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "07:17",
-          "lat": 44.27,
-          "lon": -71.302
+          "lat": 43.7675,
+          "lon": -71.0369
         },
         {
-          "id": "chocoruasummit",
-          "name": "Mount Chocorua Summit",
-          "place": "Albany, NH",
-          "score": 84,
-          "label": "Go",
-          "drive": 46,
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 31,
+          "label": "Marginal",
+          "drive": 110,
           "flags": [
-            "cirrus overhead",
-            "pre-glow from 06:32"
+            "horizon open"
           ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 06:32, before the sun is up. Be set up early. (Sun-crossing score alone: 59.)",
-          "time": "07:17",
-          "lat": 43.9541,
-          "lon": -71.2734
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:14",
+          "lat": 42.8151,
+          "lon": -70.819
         }
       ]
     },
@@ -116,56 +112,56 @@
       "ev": "sunset",
       "day": "2026-10-29",
       "when": "tomorrow night",
-      "time": "17:44",
+      "time": "17:43",
       "top": [
-        {
-          "id": "peacham",
-          "name": "Peacham Village",
-          "place": "Peacham, VT",
-          "score": 72,
-          "label": "Strong",
-          "drive": 98,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
-          "time": "17:44",
-          "lat": 44.328,
-          "lon": -72.175
-        },
-        {
-          "id": "owlshead",
-          "name": "Owl's Head, Groton State Forest",
-          "place": "Groton, VT",
-          "score": 71,
-          "label": "Strong",
-          "drive": 108,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "High cloud overhead with an open gap at the horizon. That's the combination.",
-          "time": "17:44",
-          "lat": 44.297,
-          "lon": -72.295
-        },
         {
           "id": "willoughby",
           "name": "Lake Willoughby",
           "place": "Westmore, VT",
-          "score": 63,
+          "score": 67,
           "label": "Strong",
           "drive": 112,
           "flags": [
             "cirrus overhead"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 10% high cloud. Open gap at the horizon.",
           "time": "17:43",
           "lat": 44.735,
           "lon": -72.047
+        },
+        {
+          "id": "jobspond",
+          "name": "Jobs Pond",
+          "place": "Westmore, VT",
+          "score": 61,
+          "label": "Strong",
+          "drive": 118,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 9% high cloud. Open gap at the horizon.",
+          "time": "17:42",
+          "lat": 44.7622,
+          "lon": -71.9534
+        },
+        {
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 59,
+          "label": "Worth it",
+          "drive": 98,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "ECMWF reads real cirrus aloft that this model is missing — scored on the profile, not its 7% high cloud. Open gap at the horizon.",
+          "time": "17:44",
+          "lat": 44.328,
+          "lon": -72.175
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:47 PM. Best bet: Pack Monadnock (Miller SP), 76, Go. cirrus overhead. 1 hour 44 minutes away. Then Kittery Point 62, and Mount Agamenticus 61.\n\nSunrise this morning at 7:19 AM. Best bet: Mount Sunapee Summit, 86, Go. horizon open, cirrus overhead. 1 hour 10 minutes away. Then Mount Washington Summit 86, and Mount Chocorua Summit 84.",
+  "text": "Sunset tonight at 5:42 PM. Best bet: Intervale Scenic Vista, 62, Strong. cirrus overhead. 1 hour 7 minutes away. Then Lower Falls, Swift River 59, and Rocky Gorge 59.\n\nSunrise tomorrow at 7:14 AM. Best bet: Hampton Beach, 32, Marginal. horizon open. 1 hour 30 minutes away. Then Green Mountain Fire Tower 31, and Newburyport Harbor Light 31.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
