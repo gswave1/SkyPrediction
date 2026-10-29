@@ -1,69 +1,84 @@
 {
-  "generated": "2026-10-29T00:40:47.977Z",
+  "generated": "2026-10-29T06:50:37.018Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-29",
-      "when": "tomorrow night",
+      "when": "tonight",
       "time": "17:44",
       "top": [
-        {
-          "id": "owlshead",
-          "name": "Owl's Head, Groton State Forest",
-          "place": "Groton, VT",
-          "score": 73,
-          "label": "Strong",
-          "drive": 108,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "17:44",
-          "lat": 44.297,
-          "lon": -72.295
-        },
         {
           "id": "peacham",
           "name": "Peacham Village",
           "place": "Peacham, VT",
-          "score": 72,
+          "score": 74,
           "label": "Strong",
           "drive": 98,
           "flags": [
             "horizon open",
-            "cirrus overhead"
+            "afterglow to 18:29"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:29. Be set up early. (Sun-crossing score alone: 57.)",
           "time": "17:44",
           "lat": 44.328,
           "lon": -72.175
         },
         {
-          "id": "mtwashington",
-          "name": "Mount Washington Summit",
-          "place": "Sargent's Purchase, NH",
-          "score": 70,
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 67,
           "label": "Strong",
-          "drive": 116,
+          "drive": 108,
           "flags": [
             "horizon open",
-            "afterglow to 18:26"
+            "afterglow to 18:29"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:26. Be set up early. (Sun-crossing score alone: 44.)",
-          "time": "17:41",
-          "lat": 44.27,
-          "lon": -71.302
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:29. Be set up early. (Sun-crossing score alone: 57.)",
+          "time": "17:44",
+          "lat": 44.297,
+          "lon": -72.295
+        },
+        {
+          "id": "kimballrd",
+          "name": "Kimball Road",
+          "place": "Lunenburg, VT",
+          "score": 67,
+          "label": "Strong",
+          "drive": 89,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun sets outside this spot's open arc.",
+          "time": "17:42",
+          "lat": 44.4759,
+          "lon": -71.7045
         }
       ]
     },
     {
       "ev": "sunrise",
       "day": "2026-10-29",
-      "when": "tomorrow",
+      "when": "this morning",
       "time": "07:14",
       "top": [
+        {
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 31,
+          "label": "Marginal",
+          "drive": 110,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:14",
+          "lat": 42.8151,
+          "lon": -70.819
+        },
         {
           "id": "hampton",
           "name": "Hampton Beach",
@@ -93,81 +108,61 @@
           "time": "07:19",
           "lat": 43.385,
           "lon": -71.857
-        },
-        {
-          "id": "major",
-          "name": "Mount Major Summit",
-          "place": "Alton, NH",
-          "score": 31,
-          "label": "Marginal",
-          "drive": 33,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:17",
-          "lat": 43.5093,
-          "lon": -71.2806
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-10-30",
-      "when": "Friday",
+      "when": "tomorrow night",
       "time": "17:39",
       "top": [
         {
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 43,
-          "label": "Marginal",
+          "score": 21,
+          "label": "Skip",
           "drive": 94,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
+          "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:39",
           "lat": 43.06,
           "lon": -70.698
         },
         {
-          "id": "yorkharbor",
-          "name": "York Harbor",
-          "place": "York, ME",
-          "score": 38,
-          "label": "Marginal",
-          "drive": 91,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "17:39",
-          "lat": 43.147,
-          "lon": -70.626
-        },
-        {
           "id": "agamenticus",
           "name": "Mount Agamenticus",
           "place": "York, ME",
-          "score": 38,
-          "label": "Marginal",
+          "score": 17,
+          "label": "Skip",
           "drive": 94,
           "flags": [
-            "horizon blocked",
-            "cirrus overhead"
+            "horizon blocked"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:39",
           "lat": 43.2232,
           "lon": -70.6919
+        },
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 15,
+          "label": "Skip",
+          "drive": 104,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:44",
+          "lat": 42.8619,
+          "lon": -71.8788
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 5:44 PM. Best bet: Owl's Head, Groton State Forest, 73, Strong. horizon open, cirrus overhead. 1 hour 48 minutes away. Then Peacham Village 72, and Mount Washington Summit 70.\n\nSunrise tomorrow at 7:14 AM. Best bet: Hampton Beach, 31, Marginal. horizon open. 1 hour 30 minutes away. Then Mount Kearsarge Summit 31, and Mount Major Summit 31.",
+  "text": "Sunset tonight at 5:44 PM. Best bet: Peacham Village, 74, Strong. horizon open, afterglow to 18:29. 1 hour 38 minutes away. Then Owl's Head, Groton State Forest 67, and Kimball Road 67.\n\nSunrise this morning at 7:14 AM. Best bet: Newburyport Harbor Light, 31, Marginal. horizon open. 1 hour 50 minutes away. Then Hampton Beach 31, and Mount Kearsarge Summit 31.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
