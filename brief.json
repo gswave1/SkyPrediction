@@ -1,19 +1,49 @@
 {
-  "generated": "2026-10-29T15:02:23.085Z",
+  "generated": "2026-10-29T20:56:52.482Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-29",
       "when": "tonight",
-      "time": "17:44",
+      "time": "17:43",
       "top": [
+        {
+          "id": "willoughby",
+          "name": "Lake Willoughby",
+          "place": "Westmore, VT",
+          "score": 75,
+          "label": "Go",
+          "drive": 112,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "17:43",
+          "lat": 44.735,
+          "lon": -72.047
+        },
+        {
+          "id": "jobspond",
+          "name": "Jobs Pond",
+          "place": "Westmore, VT",
+          "score": 74,
+          "label": "Strong",
+          "drive": 118,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "17:42",
+          "lat": 44.7622,
+          "lon": -71.9534
+        },
         {
           "id": "peacham",
           "name": "Peacham Village",
           "place": "Peacham, VT",
-          "score": 76,
-          "label": "Go",
+          "score": 68,
+          "label": "Strong",
           "drive": 98,
           "flags": [
             "horizon open",
@@ -23,38 +53,6 @@
           "time": "17:44",
           "lat": 44.328,
           "lon": -72.175
-        },
-        {
-          "id": "owlshead",
-          "name": "Owl's Head, Groton State Forest",
-          "place": "Groton, VT",
-          "score": 76,
-          "label": "Go",
-          "drive": 108,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "17:44",
-          "lat": 44.297,
-          "lon": -72.295
-        },
-        {
-          "id": "welchledges",
-          "name": "Welch Mountain Ledges",
-          "place": "Thornton, NH",
-          "score": 74,
-          "label": "Strong",
-          "drive": 37,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "17:42",
-          "lat": 43.919,
-          "lon": -71.5754
         }
       ]
     },
@@ -68,11 +66,12 @@
           "id": "hampton",
           "name": "Hampton Beach",
           "place": "Hampton, NH",
-          "score": 32,
+          "score": 43,
           "label": "Marginal",
           "drive": 90,
           "flags": [
-            "horizon blocked"
+            "horizon blocked",
+            "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "07:16",
@@ -80,34 +79,35 @@
           "lon": -70.81
         },
         {
-          "id": "ryeharbor",
-          "name": "Rye Harbor State Park",
-          "place": "Rye, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 91,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "07:15",
-          "lat": 43.0017,
-          "lon": -70.7446
-        },
-        {
           "id": "newburyportharborlight",
           "name": "Newburyport Harbor Light",
           "place": "Newburyport, MA",
-          "score": 31,
+          "score": 34,
           "label": "Marginal",
           "drive": 110,
           "flags": [
-            "horizon blocked"
+            "horizon blocked",
+            "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "07:15",
           "lat": 42.8151,
           "lon": -70.819
+        },
+        {
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 61,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "07:18",
+          "lat": 43.3314,
+          "lon": -71.1162
         }
       ]
     },
@@ -121,7 +121,7 @@
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 23,
+          "score": 24,
           "label": "Skip",
           "drive": 94,
           "flags": [],
@@ -131,38 +131,36 @@
           "lon": -70.698
         },
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 18,
-          "label": "Skip",
-          "drive": 106,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:37",
-          "lat": 43.563,
-          "lon": -70.365
-        },
-        {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
           "score": 17,
           "label": "Skip",
-          "drive": 104,
+          "drive": 94,
           "flags": [
             "horizon blocked"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:44",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "time": "17:39",
+          "lat": 43.2232,
+          "lon": -70.6919
+        },
+        {
+          "id": "yorkharbor",
+          "name": "York Harbor",
+          "place": "York, ME",
+          "score": 16,
+          "label": "Skip",
+          "drive": 91,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "17:39",
+          "lat": 43.147,
+          "lon": -70.626
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:44 PM. Best bet: Peacham Village, 76, Go. horizon open, cirrus overhead. 1 hour 38 minutes away. Then Owl's Head, Groton State Forest 76, and Welch Mountain Ledges 74.\n\nSunrise tomorrow at 7:16 AM. Best bet: Hampton Beach, 32, Marginal. horizon blocked. 1 hour 30 minutes away. Then Rye Harbor State Park 32, and Newburyport Harbor Light 31.",
+  "text": "Sunset tonight at 5:43 PM. Best bet: Lake Willoughby, 75, Go. cirrus overhead. 1 hour 52 minutes away. Then Jobs Pond 74, and Peacham Village 68.\n\nSunrise tomorrow at 7:16 AM. Best bet: Hampton Beach, 43, Marginal. horizon blocked, cirrus overhead. 1 hour 30 minutes away. Then Newburyport Harbor Light 34, and Blue Job Mountain Fire Tower 33.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
