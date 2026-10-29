@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-29T06:50:37.018Z",
+  "generated": "2026-10-29T15:02:23.085Z",
   "drive": 120,
   "events": [
     {
@@ -12,14 +12,14 @@
           "id": "peacham",
           "name": "Peacham Village",
           "place": "Peacham, VT",
-          "score": 74,
-          "label": "Strong",
+          "score": 76,
+          "label": "Go",
           "drive": 98,
           "flags": [
             "horizon open",
-            "afterglow to 18:29"
+            "cirrus overhead"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:29. Be set up early. (Sun-crossing score alone: 57.)",
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
           "time": "17:44",
           "lat": 44.328,
           "lon": -72.175
@@ -28,42 +28,72 @@
           "id": "owlshead",
           "name": "Owl's Head, Groton State Forest",
           "place": "Groton, VT",
-          "score": 67,
-          "label": "Strong",
+          "score": 76,
+          "label": "Go",
           "drive": 108,
           "flags": [
             "horizon open",
-            "afterglow to 18:29"
+            "cirrus overhead"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 18:29. Be set up early. (Sun-crossing score alone: 57.)",
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
           "time": "17:44",
           "lat": 44.297,
           "lon": -72.295
         },
         {
-          "id": "kimballrd",
-          "name": "Kimball Road",
-          "place": "Lunenburg, VT",
-          "score": 67,
+          "id": "welchledges",
+          "name": "Welch Mountain Ledges",
+          "place": "Thornton, NH",
+          "score": 74,
           "label": "Strong",
-          "drive": 89,
+          "drive": 37,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun sets outside this spot's open arc.",
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
           "time": "17:42",
-          "lat": 44.4759,
-          "lon": -71.7045
+          "lat": 43.919,
+          "lon": -71.5754
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-29",
-      "when": "this morning",
-      "time": "07:14",
+      "day": "2026-10-30",
+      "when": "tomorrow",
+      "time": "07:16",
       "top": [
+        {
+          "id": "hampton",
+          "name": "Hampton Beach",
+          "place": "Hampton, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 90,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "07:16",
+          "lat": 42.9081,
+          "lon": -70.81
+        },
+        {
+          "id": "ryeharbor",
+          "name": "Rye Harbor State Park",
+          "place": "Rye, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 91,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "07:15",
+          "lat": 43.0017,
+          "lon": -70.7446
+        },
         {
           "id": "newburyportharborlight",
           "name": "Newburyport Harbor Light",
@@ -72,42 +102,12 @@
           "label": "Marginal",
           "drive": 110,
           "flags": [
-            "horizon open"
+            "horizon blocked"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:14",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "07:15",
           "lat": 42.8151,
           "lon": -70.819
-        },
-        {
-          "id": "hampton",
-          "name": "Hampton Beach",
-          "place": "Hampton, NH",
-          "score": 31,
-          "label": "Marginal",
-          "drive": 90,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:14",
-          "lat": 42.9081,
-          "lon": -70.81
-        },
-        {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 31,
-          "label": "Marginal",
-          "drive": 80,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:19",
-          "lat": 43.385,
-          "lon": -71.857
         }
       ]
     },
@@ -121,35 +121,35 @@
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 21,
+          "score": 23,
           "label": "Skip",
           "drive": 94,
           "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
           "time": "17:39",
           "lat": 43.06,
           "lon": -70.698
         },
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 17,
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 18,
           "label": "Skip",
-          "drive": 94,
+          "drive": 106,
           "flags": [
             "horizon blocked"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:39",
-          "lat": 43.2232,
-          "lon": -70.6919
+          "time": "17:37",
+          "lat": 43.563,
+          "lon": -70.365
         },
         {
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
           "place": "Peterborough, NH",
-          "score": 15,
+          "score": 17,
           "label": "Skip",
           "drive": 104,
           "flags": [
@@ -163,6 +163,6 @@
       ]
     }
   ],
-  "text": "Sunset tonight at 5:44 PM. Best bet: Peacham Village, 74, Strong. horizon open, afterglow to 18:29. 1 hour 38 minutes away. Then Owl's Head, Groton State Forest 67, and Kimball Road 67.\n\nSunrise this morning at 7:14 AM. Best bet: Newburyport Harbor Light, 31, Marginal. horizon open. 1 hour 50 minutes away. Then Hampton Beach 31, and Mount Kearsarge Summit 31.",
+  "text": "Sunset tonight at 5:44 PM. Best bet: Peacham Village, 76, Go. horizon open, cirrus overhead. 1 hour 38 minutes away. Then Owl's Head, Groton State Forest 76, and Welch Mountain Ledges 74.\n\nSunrise tomorrow at 7:16 AM. Best bet: Hampton Beach, 32, Marginal. horizon blocked. 1 hour 30 minutes away. Then Rye Harbor State Park 32, and Newburyport Harbor Light 31.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
