@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-30T00:44:04.598Z",
+  "generated": "2026-10-30T06:53:43.948Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-10-30",
-      "when": "tomorrow night",
+      "when": "tonight",
       "time": "17:39",
       "top": [
         {
@@ -22,10 +22,25 @@
           "lon": -70.698
         },
         {
+          "id": "scarborough",
+          "name": "Scarborough Marsh",
+          "place": "Scarborough, ME",
+          "score": 23,
+          "label": "Skip",
+          "drive": 106,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:37",
+          "lat": 43.563,
+          "lon": -70.365
+        },
+        {
           "id": "agamenticus",
           "name": "Mount Agamenticus",
           "place": "York, ME",
-          "score": 20,
+          "score": 22,
           "label": "Skip",
           "drive": 94,
           "flags": [
@@ -35,33 +50,35 @@
           "time": "17:39",
           "lat": 43.2232,
           "lon": -70.6919
-        },
-        {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 20,
-          "label": "Skip",
-          "drive": 106,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:37",
-          "lat": 43.563,
-          "lon": -70.365
         }
       ]
     },
     {
       "ev": "sunrise",
       "day": "2026-10-30",
-      "when": "tomorrow",
-      "time": "07:16",
+      "when": "this morning",
+      "time": "07:20",
       "top": [
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 104,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "07:20",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
         {
           "id": "hampton",
           "name": "Hampton Beach",
           "place": "Hampton, NH",
-          "score": 41,
+          "score": 42,
           "label": "Marginal",
           "drive": 90,
           "flags": [
@@ -74,31 +91,16 @@
           "lon": -70.81
         },
         {
-          "id": "ryeharbor",
-          "name": "Rye Harbor State Park",
-          "place": "Rye, NH",
-          "score": 40,
-          "label": "Marginal",
-          "drive": 91,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "07:15",
-          "lat": 43.0017,
-          "lon": -70.7446
-        },
-        {
           "id": "newcastle",
           "name": "New Castle / Portsmouth Harbor",
           "place": "New Castle, NH",
-          "score": 36,
+          "score": 40,
           "label": "Marginal",
           "drive": 87,
           "flags": [
             "horizon blocked"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
           "time": "07:15",
           "lat": 43.069,
           "lon": -70.713
@@ -108,51 +110,57 @@
     {
       "ev": "sunset",
       "day": "2026-10-31",
-      "when": "Saturday",
-      "time": "17:39",
+      "when": "tomorrow night",
+      "time": "17:43",
       "top": [
         {
-          "id": "belknap",
-          "name": "Belknap Mountain Fire Tower",
-          "place": "Gilford, NH",
-          "score": 61,
-          "label": "Strong",
-          "drive": 29,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "17:39",
-          "lat": 43.5178,
-          "lon": -71.3689
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 50,
+          "label": "Worth it",
+          "drive": 70,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:43",
+          "lat": 43.321,
+          "lon": -72.084
         },
         {
-          "id": "greenmtn",
-          "name": "Green Mountain Fire Tower",
-          "place": "Effingham, NH",
-          "score": 61,
-          "label": "Strong",
-          "drive": 55,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 49,
+          "label": "Worth it",
+          "drive": 94,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:38",
-          "lat": 43.7675,
-          "lon": -71.0369
+          "lat": 43.06,
+          "lon": -70.698
         },
         {
-          "id": "major",
-          "name": "Mount Major Summit",
-          "place": "Alton, NH",
-          "score": 60,
-          "label": "Strong",
-          "drive": 33,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "17:39",
-          "lat": 43.5093,
-          "lon": -71.2806
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 49,
+          "label": "Worth it",
+          "drive": 94,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:37",
+          "lat": 43.2232,
+          "lon": -70.6919
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 5:39 PM. Nothing looks good. The best is Kittery Point at 27. \n\nSunrise tomorrow at 7:16 AM. Best bet: Hampton Beach, 41, Marginal. horizon blocked, cirrus overhead. 1 hour 30 minutes away. Then Rye Harbor State Park 40, and New Castle / Portsmouth Harbor 36.",
+  "text": "Sunset tonight at 5:39 PM. Nothing looks good. The best is Kittery Point at 27. \n\nSunrise this morning at 7:20 AM. Best bet: Pack Monadnock (Miller SP), 44, Marginal. horizon blocked. 1 hour 44 minutes away. Then Hampton Beach 42, and New Castle / Portsmouth Harbor 40.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
