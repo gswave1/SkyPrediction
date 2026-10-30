@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T06:53:43.948Z",
+  "generated": "2026-10-30T14:55:36.584Z",
   "drive": 120,
   "events": [
     {
@@ -22,88 +22,77 @@
           "lon": -70.698
         },
         {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 24,
+          "label": "Skip",
+          "drive": 104,
+          "flags": [],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "17:44",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
+        {
           "id": "scarborough",
           "name": "Scarborough Marsh",
           "place": "Scarborough, ME",
           "score": 23,
           "label": "Skip",
           "drive": 106,
-          "flags": [
-            "horizon blocked"
-          ],
+          "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:37",
           "lat": 43.563,
           "lon": -70.365
-        },
-        {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 22,
-          "label": "Skip",
-          "drive": 94,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:39",
-          "lat": 43.2232,
-          "lon": -70.6919
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-30",
-      "when": "this morning",
-      "time": "07:20",
+      "day": "2026-10-31",
+      "when": "tomorrow",
+      "time": "07:21",
       "top": [
         {
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
           "place": "Peterborough, NH",
-          "score": 44,
-          "label": "Marginal",
+          "score": 27,
+          "label": "Skip",
           "drive": 104,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "07:20",
+          "flags": [],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:21",
           "lat": 42.8619,
           "lon": -71.8788
         },
         {
-          "id": "hampton",
-          "name": "Hampton Beach",
-          "place": "Hampton, NH",
-          "score": 42,
-          "label": "Marginal",
-          "drive": 90,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "07:16",
-          "lat": 42.9081,
-          "lon": -70.81
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 26,
+          "label": "Skip",
+          "drive": 70,
+          "flags": [],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:23",
+          "lat": 43.321,
+          "lon": -72.084
         },
         {
-          "id": "newcastle",
-          "name": "New Castle / Portsmouth Harbor",
-          "place": "New Castle, NH",
-          "score": 40,
-          "label": "Marginal",
-          "drive": 87,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "07:15",
-          "lat": 43.069,
-          "lon": -70.713
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 24,
+          "label": "Skip",
+          "drive": 80,
+          "flags": [],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:22",
+          "lat": 43.385,
+          "lon": -71.857
         }
       ]
     },
@@ -111,56 +100,50 @@
       "ev": "sunset",
       "day": "2026-10-31",
       "when": "tomorrow night",
-      "time": "17:43",
+      "time": "17:39",
       "top": [
         {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 50,
+          "id": "redhill",
+          "name": "Red Hill Fire Tower",
+          "place": "Moultonborough, NH",
+          "score": 45,
           "label": "Worth it",
-          "drive": 70,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:43",
-          "lat": 43.321,
-          "lon": -72.084
+          "drive": 20,
+          "flags": [],
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "time": "17:39",
+          "lat": 43.766,
+          "lon": -71.372
         },
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 49,
-          "label": "Worth it",
-          "drive": 94,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:38",
-          "lat": 43.06,
-          "lon": -70.698
+          "id": "castle",
+          "name": "Castle in the Clouds Overlook",
+          "place": "Moultonborough, NH",
+          "score": 45,
+          "label": "Marginal",
+          "drive": 26,
+          "flags": [],
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "time": "17:39",
+          "lat": 43.747,
+          "lon": -71.323
         },
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 49,
-          "label": "Worth it",
-          "drive": 94,
-          "flags": [
-            "horizon open"
-          ],
+          "id": "eaton",
+          "name": "Crystal Lake",
+          "place": "Eaton, NH",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 55,
+          "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:37",
-          "lat": 43.2232,
-          "lon": -70.6919
+          "lat": 43.914,
+          "lon": -71.074
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:39 PM. Nothing looks good. The best is Kittery Point at 27. \n\nSunrise this morning at 7:20 AM. Best bet: Pack Monadnock (Miller SP), 44, Marginal. horizon blocked. 1 hour 44 minutes away. Then Hampton Beach 42, and New Castle / Portsmouth Harbor 40.",
+  "text": "Sunset tonight at 5:39 PM. Nothing looks good. The best is Kittery Point at 27. \n\nSunrise tomorrow at 7:21 AM. Nothing looks good. The best is Pack Monadnock (Miller SP) at 27. ",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
