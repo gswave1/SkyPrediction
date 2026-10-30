@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T14:55:36.584Z",
+  "generated": "2026-10-30T19:53:11.086Z",
   "drive": 120,
   "events": [
     {
@@ -12,7 +12,7 @@
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 27,
+          "score": 25,
           "label": "Skip",
           "drive": 94,
           "flags": [],
@@ -25,27 +25,27 @@
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
           "place": "Peterborough, NH",
-          "score": 24,
+          "score": 23,
           "label": "Skip",
           "drive": 104,
           "flags": [],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "17:44",
           "lat": 42.8619,
           "lon": -71.8788
         },
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 23,
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 22,
           "label": "Skip",
-          "drive": 106,
+          "drive": 94,
           "flags": [],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:37",
-          "lat": 43.563,
-          "lon": -70.365
+          "time": "17:39",
+          "lat": 43.2232,
+          "lon": -70.6919
         }
       ]
     },
@@ -53,8 +53,21 @@
       "ev": "sunrise",
       "day": "2026-10-31",
       "when": "tomorrow",
-      "time": "07:21",
+      "time": "07:23",
       "top": [
+        {
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 27,
+          "label": "Skip",
+          "drive": 70,
+          "flags": [],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "07:23",
+          "lat": 43.321,
+          "lon": -72.084
+        },
         {
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
@@ -69,30 +82,17 @@
           "lon": -71.8788
         },
         {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 26,
+          "id": "jennefarm",
+          "name": "Jenne Farm",
+          "place": "Reading, VT",
+          "score": 25,
           "label": "Skip",
-          "drive": 70,
+          "drive": 111,
           "flags": [],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:23",
-          "lat": 43.321,
-          "lon": -72.084
-        },
-        {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 24,
-          "label": "Skip",
-          "drive": 80,
-          "flags": [],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:22",
-          "lat": 43.385,
-          "lon": -71.857
+          "time": "07:25",
+          "lat": 43.5245,
+          "lon": -72.5596
         }
       ]
     },
@@ -107,7 +107,7 @@
           "name": "Red Hill Fire Tower",
           "place": "Moultonborough, NH",
           "score": 45,
-          "label": "Worth it",
+          "label": "Marginal",
           "drive": 20,
           "flags": [],
           "why": "Mid-level cloud overhead and a clear run to the horizon.",
@@ -116,23 +116,10 @@
           "lon": -71.372
         },
         {
-          "id": "castle",
-          "name": "Castle in the Clouds Overlook",
-          "place": "Moultonborough, NH",
-          "score": 45,
-          "label": "Marginal",
-          "drive": 26,
-          "flags": [],
-          "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "17:39",
-          "lat": 43.747,
-          "lon": -71.323
-        },
-        {
           "id": "eaton",
           "name": "Crystal Lake",
           "place": "Eaton, NH",
-          "score": 44,
+          "score": 45,
           "label": "Marginal",
           "drive": 55,
           "flags": [],
@@ -140,10 +127,23 @@
           "time": "17:37",
           "lat": 43.914,
           "lon": -71.074
+        },
+        {
+          "id": "castle",
+          "name": "Castle in the Clouds Overlook",
+          "place": "Moultonborough, NH",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 26,
+          "flags": [],
+          "why": "Mid-level cloud overhead and a clear run to the horizon.",
+          "time": "17:39",
+          "lat": 43.747,
+          "lon": -71.323
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:39 PM. Nothing looks good. The best is Kittery Point at 27. \n\nSunrise tomorrow at 7:21 AM. Nothing looks good. The best is Pack Monadnock (Miller SP) at 27. ",
+  "text": "Sunset tonight at 5:39 PM. Nothing looks good. The best is Kittery Point at 25. \n\nSunrise tomorrow at 7:23 AM. Nothing looks good. The best is Mount Sunapee Summit at 27. ",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
