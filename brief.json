@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-31T14:24:25.056Z",
+  "generated": "2026-10-31T19:10:02.391Z",
   "drive": 120,
   "events": [
     {
@@ -9,45 +9,45 @@
       "time": "17:37",
       "top": [
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 49,
-          "label": "Worth it",
-          "drive": 94,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:37",
-          "lat": 43.2232,
-          "lon": -70.6919
-        },
-        {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
-          "score": 47,
-          "label": "Worth it",
-          "drive": 106,
+          "id": "chatham",
+          "name": "Chatham",
+          "place": "Chatham, NH",
+          "score": 44,
+          "label": "Marginal",
+          "drive": 95,
           "flags": [],
           "why": "Mid-level cloud overhead and a clear run to the horizon.",
-          "time": "17:35",
-          "lat": 43.563,
-          "lon": -70.365
+          "time": "17:37",
+          "lat": 44.271,
+          "lon": -71.025
         },
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 46,
-          "label": "Worth it",
-          "drive": 94,
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 43,
+          "label": "Marginal",
+          "drive": 95,
           "flags": [
             "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:38",
-          "lat": 43.06,
-          "lon": -70.698
+          "time": "17:36",
+          "lat": 43.9209,
+          "lon": -70.5806
+        },
+        {
+          "id": "pleasantmtn",
+          "name": "Pleasant Mountain",
+          "place": "Bridgton, ME",
+          "score": 42,
+          "label": "Marginal",
+          "drive": 90,
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:36",
+          "lat": 44.027,
+          "lon": -70.8223
         }
       ]
     },
@@ -57,6 +57,21 @@
       "when": "tomorrow",
       "time": "06:24",
       "top": [
+        {
+          "id": "cherrypond",
+          "name": "Little Cherry Pond",
+          "place": "Pondicherry NWR, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 81,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "06:24",
+          "lat": 44.3761,
+          "lon": -71.5188
+        },
         {
           "id": "therocks",
           "name": "The Rocks",
@@ -86,21 +101,6 @@
           "time": "06:24",
           "lat": 44.2513,
           "lon": -71.5171
-        },
-        {
-          "id": "cannon",
-          "name": "Cannon Mountain Summit",
-          "place": "Franconia Notch, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 51,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:24",
-          "lat": 44.1569,
-          "lon": -71.6992
         }
       ]
     },
@@ -158,6 +158,6 @@
       ]
     }
   ],
-  "text": "Sunset tonight at 5:37 PM. Best bet: Mount Agamenticus, 49, Worth it. 1 hour 34 minutes away. Then Scarborough Marsh 47, and Kittery Point 46.\n\nSunrise tomorrow at 6:24 AM. Best bet: The Rocks, 32, Marginal. horizon open. 1 hour 1 minutes away. Then Middle Sugarloaf 32, and Cannon Mountain Summit 32.",
+  "text": "Sunset tonight at 5:37 PM. Best bet: Chatham, 44, Marginal. 1 hour 35 minutes away. Then Sebago Lake State Park 43, and Pleasant Mountain 42.\n\nSunrise tomorrow at 6:24 AM. Best bet: Little Cherry Pond, 32, Marginal. horizon open. 1 hour 21 minutes away. Then The Rocks 32, and Middle Sugarloaf 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
