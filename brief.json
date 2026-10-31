@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-31T04:43:49.499Z",
+  "generated": "2026-10-31T14:24:25.056Z",
   "drive": 120,
   "events": [
     {
@@ -12,7 +12,7 @@
           "id": "agamenticus",
           "name": "Mount Agamenticus",
           "place": "York, ME",
-          "score": 47,
+          "score": 49,
           "label": "Worth it",
           "drive": 94,
           "flags": [],
@@ -22,79 +22,85 @@
           "lon": -70.6919
         },
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 46,
-          "label": "Worth it",
-          "drive": 94,
-          "flags": [],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "17:38",
-          "lat": 43.06,
-          "lon": -70.698
-        },
-        {
           "id": "scarborough",
           "name": "Scarborough Marsh",
           "place": "Scarborough, ME",
-          "score": 45,
-          "label": "Marginal",
+          "score": 47,
+          "label": "Worth it",
           "drive": 106,
           "flags": [],
           "why": "Mid-level cloud overhead and a clear run to the horizon.",
           "time": "17:35",
           "lat": 43.563,
           "lon": -70.365
+        },
+        {
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 46,
+          "label": "Worth it",
+          "drive": 94,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "17:38",
+          "lat": 43.06,
+          "lon": -70.698
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-10-31",
-      "when": "this morning",
-      "time": "07:23",
+      "day": "2026-11-01",
+      "when": "tomorrow",
+      "time": "06:24",
       "top": [
         {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 31,
+          "id": "therocks",
+          "name": "The Rocks",
+          "place": "Bethlehem, NH",
+          "score": 32,
           "label": "Marginal",
-          "drive": 70,
+          "drive": 61,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:23",
-          "lat": 43.321,
-          "lon": -72.084
+          "time": "06:24",
+          "lat": 44.283,
+          "lon": -71.735
         },
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 30,
-          "label": "Skip",
-          "drive": 104,
-          "flags": [],
+          "id": "middlesugarloaf",
+          "name": "Middle Sugarloaf",
+          "place": "Bethlehem, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 71,
+          "flags": [
+            "horizon open"
+          ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:21",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "time": "06:24",
+          "lat": 44.2513,
+          "lon": -71.5171
         },
         {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 30,
-          "label": "Skip",
-          "drive": 80,
-          "flags": [],
+          "id": "cannon",
+          "name": "Cannon Mountain Summit",
+          "place": "Franconia Notch, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 51,
+          "flags": [
+            "horizon open"
+          ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "07:22",
-          "lat": 43.385,
-          "lon": -71.857
+          "time": "06:24",
+          "lat": 44.1569,
+          "lon": -71.6992
         }
       ]
     },
@@ -102,56 +108,56 @@
       "ev": "sunset",
       "day": "2026-11-01",
       "when": "tomorrow night",
-      "time": "16:35",
+      "time": "16:41",
       "top": [
         {
-          "id": "chatham",
-          "name": "Chatham",
-          "place": "Chatham, NH",
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
           "score": 33,
           "label": "Marginal",
-          "drive": 95,
+          "drive": 104,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "16:35",
-          "lat": 44.271,
-          "lon": -71.025
+          "time": "16:41",
+          "lat": 42.8619,
+          "lon": -71.8788
         },
         {
-          "id": "scarborough",
-          "name": "Scarborough Marsh",
-          "place": "Scarborough, ME",
+          "id": "willoughby",
+          "name": "Lake Willoughby",
+          "place": "Westmore, VT",
           "score": 32,
           "label": "Marginal",
-          "drive": 106,
+          "drive": 112,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "16:34",
-          "lat": 43.563,
-          "lon": -70.365
+          "time": "16:38",
+          "lat": 44.735,
+          "lon": -72.047
         },
         {
-          "id": "pleasantmtn",
-          "name": "Pleasant Mountain",
-          "place": "Bridgton, ME",
+          "id": "jobspond",
+          "name": "Jobs Pond",
+          "place": "Westmore, VT",
           "score": 32,
           "label": "Marginal",
-          "drive": 90,
+          "drive": 118,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "16:35",
-          "lat": 44.027,
-          "lon": -70.8223
+          "time": "16:38",
+          "lat": 44.7622,
+          "lon": -71.9534
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 5:37 PM. Best bet: Mount Agamenticus, 47, Worth it. 1 hour 34 minutes away. Then Kittery Point 46, and Scarborough Marsh 45.\n\nSunrise this morning at 7:23 AM. Best bet: Mount Sunapee Summit, 31, Marginal. horizon open. 1 hour 10 minutes away. Then Pack Monadnock (Miller SP) 30, and Mount Kearsarge Summit 30.",
+  "text": "Sunset tonight at 5:37 PM. Best bet: Mount Agamenticus, 49, Worth it. 1 hour 34 minutes away. Then Scarborough Marsh 47, and Kittery Point 46.\n\nSunrise tomorrow at 6:24 AM. Best bet: The Rocks, 32, Marginal. horizon open. 1 hour 1 minutes away. Then Middle Sugarloaf 32, and Cannon Mountain Summit 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
