@@ -1,28 +1,13 @@
 {
-  "generated": "2026-11-01T14:50:29.081Z",
+  "generated": "2026-11-01T19:25:44.588Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-11-01",
       "when": "tonight",
-      "time": "16:38",
+      "time": "16:43",
       "top": [
-        {
-          "id": "willoughby",
-          "name": "Lake Willoughby",
-          "place": "Westmore, VT",
-          "score": 38,
-          "label": "Marginal",
-          "drive": 112,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "16:38",
-          "lat": 44.735,
-          "lon": -72.047
-        },
         {
           "id": "ascutney",
           "name": "Mount Ascutney Summit",
@@ -39,19 +24,34 @@
           "lon": -72.4537
         },
         {
-          "id": "chatham",
-          "name": "Chatham",
-          "place": "Chatham, NH",
-          "score": 34,
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 33,
           "label": "Marginal",
-          "drive": 95,
+          "drive": 70,
           "flags": [
             "horizon open"
           ],
           "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "16:35",
-          "lat": 44.271,
-          "lon": -71.025
+          "time": "16:41",
+          "lat": 43.321,
+          "lon": -72.084
+        },
+        {
+          "id": "bog",
+          "name": "Bog Mountain",
+          "place": "Wilmot, NH",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 46,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "16:40",
+          "lat": 43.469,
+          "lon": -71.93
         }
       ]
     },
@@ -59,58 +59,55 @@
       "ev": "sunrise",
       "day": "2026-11-02",
       "when": "tomorrow",
-      "time": "06:25",
+      "time": "06:24",
       "top": [
         {
-          "id": "newfoundsouth",
-          "name": "Newfound Lake, Bristol end",
-          "place": "Bristol, NH",
-          "score": 84,
+          "id": "mtwillard",
+          "name": "Mount Willard",
+          "place": "Crawford Notch, NH",
+          "score": 80,
           "label": "Go",
-          "drive": 27,
+          "drive": 76,
           "flags": [
             "horizon open",
             "cirrus overhead",
-            "pre-glow from 05:40"
+            "pre-glow from 05:39"
           ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:40, before the sun is up. Be set up early. (Sun-crossing score alone: 57.)",
-          "time": "06:25",
-          "lat": 43.625,
-          "lon": -71.745
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:39, before the sun is up. Be set up early. (Sun-crossing score alone: 52.)",
+          "time": "06:24",
+          "lat": 44.204,
+          "lon": -71.411
         },
         {
-          "id": "newfound",
-          "name": "Newfound Lake, Wellington",
-          "place": "Bristol, NH",
-          "score": 84,
+          "id": "lafayette",
+          "name": "Mount Lafayette Summit",
+          "place": "Franconia Ridge, NH",
+          "score": 79,
           "label": "Go",
-          "drive": 33,
+          "drive": 49,
           "flags": [
-            "horizon open",
-            "cirrus overhead",
-            "pre-glow from 05:40"
+            "cirrus overhead"
           ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:40, before the sun is up. Be set up early. (Sun-crossing score alone: 60.)",
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
           "time": "06:25",
-          "lat": 43.664,
-          "lon": -71.767
+          "lat": 44.1608,
+          "lon": -71.6444
         },
         {
-          "id": "cardigan",
-          "name": "Mount Cardigan Summit",
-          "place": "Orange, NH",
-          "score": 83,
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 79,
           "label": "Go",
-          "drive": 57,
+          "drive": 98,
           "flags": [
-            "horizon open",
             "cirrus overhead",
-            "pre-glow from 05:40"
+            "pre-glow from 05:43"
           ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:40, before the sun is up. Be set up early. (Sun-crossing score alone: 62.)",
-          "time": "06:25",
-          "lat": 43.6495,
-          "lon": -71.9144
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:43, before the sun is up. Be set up early. (Sun-crossing score alone: 56.)",
+          "time": "06:28",
+          "lat": 44.328,
+          "lon": -72.175
         }
       ]
     },
@@ -118,28 +115,13 @@
       "ev": "sunset",
       "day": "2026-11-02",
       "when": "tomorrow night",
-      "time": "16:35",
+      "time": "16:33",
       "top": [
-        {
-          "id": "greenmtn",
-          "name": "Green Mountain Fire Tower",
-          "place": "Effingham, NH",
-          "score": 80,
-          "label": "Go",
-          "drive": 55,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "16:35",
-          "lat": 43.7675,
-          "lon": -71.0369
-        },
         {
           "id": "scarborough",
           "name": "Scarborough Marsh",
           "place": "Scarborough, ME",
-          "score": 80,
+          "score": 79,
           "label": "Go",
           "drive": 106,
           "flags": [
@@ -151,23 +133,38 @@
           "lon": -70.365
         },
         {
-          "id": "cardigan",
-          "name": "Mount Cardigan Summit",
-          "place": "Orange, NH",
-          "score": 79,
+          "id": "greenmtn",
+          "name": "Green Mountain Fire Tower",
+          "place": "Effingham, NH",
+          "score": 78,
           "label": "Go",
-          "drive": 57,
+          "drive": 55,
           "flags": [
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "16:39",
-          "lat": 43.6495,
-          "lon": -71.9144
+          "time": "16:35",
+          "lat": 43.7675,
+          "lon": -71.0369
+        },
+        {
+          "id": "meredith",
+          "name": "Meredith Bay Docks",
+          "place": "Meredith, NH",
+          "score": 78,
+          "label": "Go",
+          "drive": 2,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "16:37",
+          "lat": 43.656,
+          "lon": -71.498
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 4:38 PM. Best bet: Lake Willoughby, 38, Marginal. horizon open. 1 hour 52 minutes away. Then Mount Ascutney Summit 35, and Chatham 34.\n\nSunrise tomorrow at 6:25 AM. Best bet: Newfound Lake, Bristol end, 84, Go. horizon open, cirrus overhead, pre-glow from 05:40. 27 minutes away. Then Newfound Lake, Wellington 84, and Mount Cardigan Summit 83.",
+  "text": "Sunset tonight at 4:43 PM. Best bet: Mount Ascutney Summit, 35, Marginal. horizon open. 1 hour 51 minutes away. Then Mount Sunapee Summit 33, and Bog Mountain 33.\n\nSunrise tomorrow at 6:24 AM. Best bet: Mount Willard, 80, Go. horizon open, cirrus overhead, pre-glow from 05:39. 1 hour 16 minutes away. Then Mount Lafayette Summit 79, and Peacham Village 79.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
