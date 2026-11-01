@@ -1,48 +1,48 @@
 {
-  "generated": "2026-11-01T05:05:30.894Z",
+  "generated": "2026-11-01T14:50:29.081Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-11-01",
       "when": "tonight",
-      "time": "16:37",
+      "time": "16:38",
       "top": [
         {
-          "id": "kancgraham",
-          "name": "C.L. Graham Wangan Overlook",
-          "place": "Kancamagus Hwy, NH",
-          "score": 43,
-          "label": "Marginal",
-          "drive": 78,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "16:37",
-          "lat": 44.0069,
-          "lon": -71.3608
-        },
-        {
-          "id": "chocoruasummit",
-          "name": "Mount Chocorua Summit",
-          "place": "Albany, NH",
+          "id": "willoughby",
+          "name": "Lake Willoughby",
+          "place": "Westmore, VT",
           "score": 38,
           "label": "Marginal",
-          "drive": 46,
+          "drive": 112,
           "flags": [
             "horizon open"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "16:37",
-          "lat": 43.9541,
-          "lon": -71.2734
+          "time": "16:38",
+          "lat": 44.735,
+          "lon": -72.047
+        },
+        {
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
+          "score": 35,
+          "label": "Marginal",
+          "drive": 111,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "16:43",
+          "lat": 43.4445,
+          "lon": -72.4537
         },
         {
           "id": "chatham",
           "name": "Chatham",
           "place": "Chatham, NH",
-          "score": 37,
+          "score": 34,
           "label": "Marginal",
           "drive": 95,
           "flags": [
@@ -57,54 +57,60 @@
     },
     {
       "ev": "sunrise",
-      "day": "2026-11-01",
-      "when": "this morning",
-      "time": "06:23",
+      "day": "2026-11-02",
+      "when": "tomorrow",
+      "time": "06:25",
       "top": [
         {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 80,
+          "id": "newfoundsouth",
+          "name": "Newfound Lake, Bristol end",
+          "place": "Bristol, NH",
+          "score": 84,
+          "label": "Go",
+          "drive": 27,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "cirrus overhead",
+            "pre-glow from 05:40"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:23",
-          "lat": 43.385,
-          "lon": -71.857
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:40, before the sun is up. Be set up early. (Sun-crossing score alone: 57.)",
+          "time": "06:25",
+          "lat": 43.625,
+          "lon": -71.745
         },
         {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 70,
+          "id": "newfound",
+          "name": "Newfound Lake, Wellington",
+          "place": "Bristol, NH",
+          "score": 84,
+          "label": "Go",
+          "drive": 33,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "cirrus overhead",
+            "pre-glow from 05:40"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:24",
-          "lat": 43.321,
-          "lon": -72.084
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:40, before the sun is up. Be set up early. (Sun-crossing score alone: 60.)",
+          "time": "06:25",
+          "lat": 43.664,
+          "lon": -71.767
         },
         {
-          "id": "cherrypond",
-          "name": "Little Cherry Pond",
-          "place": "Pondicherry NWR, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 81,
+          "id": "cardigan",
+          "name": "Mount Cardigan Summit",
+          "place": "Orange, NH",
+          "score": 83,
+          "label": "Go",
+          "drive": 57,
           "flags": [
-            "horizon open"
+            "horizon open",
+            "cirrus overhead",
+            "pre-glow from 05:40"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:24",
-          "lat": 44.3761,
-          "lon": -71.5188
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:40, before the sun is up. Be set up early. (Sun-crossing score alone: 62.)",
+          "time": "06:25",
+          "lat": 43.6495,
+          "lon": -71.9144
         }
       ]
     },
@@ -115,42 +121,25 @@
       "time": "16:35",
       "top": [
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 81,
+          "id": "greenmtn",
+          "name": "Green Mountain Fire Tower",
+          "place": "Effingham, NH",
+          "score": 80,
           "label": "Go",
-          "drive": 94,
+          "drive": 55,
           "flags": [
-            "horizon open",
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
           "time": "16:35",
-          "lat": 43.2232,
-          "lon": -70.6919
-        },
-        {
-          "id": "sebago",
-          "name": "Sebago Lake State Park",
-          "place": "Casco, ME",
-          "score": 79,
-          "label": "Go",
-          "drive": 95,
-          "flags": [
-            "cirrus overhead",
-            "afterglow to 17:18"
-          ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:18. Be set up early. (Sun-crossing score alone: 60.)",
-          "time": "16:33",
-          "lat": 43.9209,
-          "lon": -70.5806
+          "lat": 43.7675,
+          "lon": -71.0369
         },
         {
           "id": "scarborough",
           "name": "Scarborough Marsh",
           "place": "Scarborough, ME",
-          "score": 78,
+          "score": 80,
           "label": "Go",
           "drive": 106,
           "flags": [
@@ -160,10 +149,25 @@
           "time": "16:33",
           "lat": 43.563,
           "lon": -70.365
+        },
+        {
+          "id": "cardigan",
+          "name": "Mount Cardigan Summit",
+          "place": "Orange, NH",
+          "score": 79,
+          "label": "Go",
+          "drive": 57,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "16:39",
+          "lat": 43.6495,
+          "lon": -71.9144
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 4:37 PM. Best bet: C.L. Graham Wangan Overlook, 43, Marginal. horizon open. 1 hour 18 minutes away. Then Mount Chocorua Summit 38, and Chatham 37.\n\nSunrise this morning at 6:23 AM. Best bet: Mount Kearsarge Summit, 32, Marginal. horizon open. 1 hour 20 minutes away. Then Mount Sunapee Summit 32, and Little Cherry Pond 32.",
+  "text": "Sunset tonight at 4:38 PM. Best bet: Lake Willoughby, 38, Marginal. horizon open. 1 hour 52 minutes away. Then Mount Ascutney Summit 35, and Chatham 34.\n\nSunrise tomorrow at 6:25 AM. Best bet: Newfound Lake, Bristol end, 84, Go. horizon open, cirrus overhead, pre-glow from 05:40. 27 minutes away. Then Newfound Lake, Wellington 84, and Mount Cardigan Summit 83.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
