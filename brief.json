@@ -1,33 +1,48 @@
 {
-  "generated": "2026-10-31T23:11:19.929Z",
+  "generated": "2026-11-01T05:05:30.894Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-11-01",
-      "when": "tomorrow night",
-      "time": "16:43",
+      "when": "tonight",
+      "time": "16:37",
       "top": [
         {
-          "id": "ascutney",
-          "name": "Mount Ascutney Summit",
-          "place": "Windsor, VT",
-          "score": 34,
+          "id": "kancgraham",
+          "name": "C.L. Graham Wangan Overlook",
+          "place": "Kancamagus Hwy, NH",
+          "score": 43,
           "label": "Marginal",
-          "drive": 111,
+          "drive": 78,
           "flags": [
             "horizon open"
           ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "16:43",
-          "lat": 43.4445,
-          "lon": -72.4537
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "16:37",
+          "lat": 44.0069,
+          "lon": -71.3608
+        },
+        {
+          "id": "chocoruasummit",
+          "name": "Mount Chocorua Summit",
+          "place": "Albany, NH",
+          "score": 38,
+          "label": "Marginal",
+          "drive": 46,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "16:37",
+          "lat": 43.9541,
+          "lon": -71.2734
         },
         {
           "id": "chatham",
           "name": "Chatham",
           "place": "Chatham, NH",
-          "score": 33,
+          "score": 37,
           "label": "Marginal",
           "drive": 95,
           "flags": [
@@ -37,30 +52,45 @@
           "time": "16:35",
           "lat": 44.271,
           "lon": -71.025
-        },
-        {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 104,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "16:41",
-          "lat": 42.8619,
-          "lon": -71.8788
         }
       ]
     },
     {
       "ev": "sunrise",
       "day": "2026-11-01",
-      "when": "tomorrow",
-      "time": "06:24",
+      "when": "this morning",
+      "time": "06:23",
       "top": [
+        {
+          "id": "kearsarge",
+          "name": "Mount Kearsarge Summit",
+          "place": "Wilmot, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 80,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "06:23",
+          "lat": 43.385,
+          "lon": -71.857
+        },
+        {
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 32,
+          "label": "Marginal",
+          "drive": 70,
+          "flags": [
+            "horizon open"
+          ],
+          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
+          "time": "06:24",
+          "lat": 43.321,
+          "lon": -72.084
+        },
         {
           "id": "cherrypond",
           "name": "Little Cherry Pond",
@@ -75,81 +105,53 @@
           "time": "06:24",
           "lat": 44.3761,
           "lon": -71.5188
-        },
-        {
-          "id": "lafayette",
-          "name": "Mount Lafayette Summit",
-          "place": "Franconia Ridge, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 49,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:24",
-          "lat": 44.1608,
-          "lon": -71.6444
-        },
-        {
-          "id": "owlshead",
-          "name": "Owl's Head, Groton State Forest",
-          "place": "Groton, VT",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 108,
-          "flags": [
-            "horizon open"
-          ],
-          "why": "Clean horizon but thin cover — expect a quiet gradient, not fire.",
-          "time": "06:27",
-          "lat": 44.297,
-          "lon": -72.295
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-11-02",
-      "when": "Monday",
+      "when": "tomorrow night",
       "time": "16:35",
       "top": [
         {
-          "id": "pequawket",
-          "name": "Pequawket Pond",
-          "place": "Conway, NH",
-          "score": 73,
-          "label": "Strong",
-          "drive": 54,
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 81,
+          "label": "Go",
+          "drive": 94,
           "flags": [
+            "horizon open",
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
           "time": "16:35",
-          "lat": 43.9847,
-          "lon": -71.1211
+          "lat": 43.2232,
+          "lon": -70.6919
         },
         {
-          "id": "intervale",
-          "name": "Intervale Scenic Vista",
-          "place": "Intervale, NH",
-          "score": 69,
-          "label": "Strong",
-          "drive": 67,
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 79,
+          "label": "Go",
+          "drive": 95,
           "flags": [
-            "cirrus overhead"
+            "cirrus overhead",
+            "afterglow to 17:18"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "16:35",
-          "lat": 44.0756,
-          "lon": -71.1396
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:18. Be set up early. (Sun-crossing score alone: 60.)",
+          "time": "16:33",
+          "lat": 43.9209,
+          "lon": -70.5806
         },
         {
           "id": "scarborough",
           "name": "Scarborough Marsh",
           "place": "Scarborough, ME",
-          "score": 68,
-          "label": "Strong",
+          "score": 78,
+          "label": "Go",
           "drive": 106,
           "flags": [
             "cirrus overhead"
@@ -162,6 +164,6 @@
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 4:43 PM. Best bet: Mount Ascutney Summit, 34, Marginal. horizon open. 1 hour 51 minutes away. Then Chatham 33, and Pack Monadnock (Miller SP) 33.\n\nSunrise tomorrow at 6:24 AM. Best bet: Little Cherry Pond, 32, Marginal. horizon open. 1 hour 21 minutes away. Then Mount Lafayette Summit 32, and Owl's Head, Groton State Forest 32.",
+  "text": "Sunset tonight at 4:37 PM. Best bet: C.L. Graham Wangan Overlook, 43, Marginal. horizon open. 1 hour 18 minutes away. Then Mount Chocorua Summit 38, and Chatham 37.\n\nSunrise this morning at 6:23 AM. Best bet: Mount Kearsarge Summit, 32, Marginal. horizon open. 1 hour 20 minutes away. Then Mount Sunapee Summit 32, and Little Cherry Pond 32.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
