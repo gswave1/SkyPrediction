@@ -1,71 +1,89 @@
 {
-  "generated": "2026-11-01T23:25:54.331Z",
+  "generated": "2026-11-02T05:06:31.645Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-11-02",
-      "when": "tomorrow night",
-      "time": "16:41",
+      "when": "tonight",
+      "time": "16:33",
       "top": [
         {
-          "id": "ascutney",
-          "name": "Mount Ascutney Summit",
-          "place": "Windsor, VT",
-          "score": 83,
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 82,
           "label": "Go",
-          "drive": 111,
+          "drive": 95,
           "flags": [
-            "cirrus overhead"
+            "cirrus overhead",
+            "afterglow to 17:18"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "16:41",
-          "lat": 43.4445,
-          "lon": -72.4537
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:18. Be set up early. (Sun-crossing score alone: 59.)",
+          "time": "16:33",
+          "lat": 43.9209,
+          "lon": -70.5806
         },
         {
-          "id": "cardigan",
-          "name": "Mount Cardigan Summit",
-          "place": "Orange, NH",
-          "score": 83,
+          "id": "greenmtn",
+          "name": "Green Mountain Fire Tower",
+          "place": "Effingham, NH",
+          "score": 80,
           "label": "Go",
-          "drive": 57,
+          "drive": 55,
           "flags": [
-            "cirrus overhead"
+            "cirrus overhead",
+            "afterglow to 17:20"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "16:39",
-          "lat": 43.6495,
-          "lon": -71.9144
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:20. Be set up early. (Sun-crossing score alone: 68.)",
+          "time": "16:35",
+          "lat": 43.7675,
+          "lon": -71.0369
         },
         {
-          "id": "jennefarm",
-          "name": "Jenne Farm",
-          "place": "Reading, VT",
-          "score": 79,
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 78,
           "label": "Go",
-          "drive": 111,
+          "drive": 98,
           "flags": [
-            "cirrus overhead"
+            "cirrus overhead",
+            "afterglow to 17:23"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun sets outside this spot's open arc.",
-          "time": "16:41",
-          "lat": 43.5245,
-          "lon": -72.5596
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:23. Be set up early. (Sun-crossing score alone: 60.)",
+          "time": "16:38",
+          "lat": 44.328,
+          "lon": -72.175
         }
       ]
     },
     {
       "ev": "sunrise",
       "day": "2026-11-02",
-      "when": "tomorrow",
-      "time": "06:24",
+      "when": "this morning",
+      "time": "06:26",
       "top": [
+        {
+          "id": "therocks",
+          "name": "The Rocks",
+          "place": "Bethlehem, NH",
+          "score": 79,
+          "label": "Go",
+          "drive": 61,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "06:26",
+          "lat": 44.283,
+          "lon": -71.735
+        },
         {
           "id": "mtavalon",
           "name": "Mount Avalon",
           "place": "Crawford Notch, NH",
-          "score": 84,
+          "score": 79,
           "label": "Go",
           "drive": 84,
           "flags": [
@@ -78,57 +96,40 @@
           "lon": -71.4264
         },
         {
-          "id": "middlesugarloaf",
-          "name": "Middle Sugarloaf",
-          "place": "Bethlehem, NH",
-          "score": 84,
+          "id": "cardigan",
+          "name": "Mount Cardigan Summit",
+          "place": "Orange, NH",
+          "score": 78,
           "label": "Go",
-          "drive": 71,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:25",
-          "lat": 44.2513,
-          "lon": -71.5171
-        },
-        {
-          "id": "bretton",
-          "name": "Bretton Woods",
-          "place": "Carroll, NH",
-          "score": 80,
-          "label": "Go",
-          "drive": 72,
+          "drive": 57,
           "flags": [
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
           "time": "06:25",
-          "lat": 44.26,
-          "lon": -71.443
+          "lat": 43.6495,
+          "lon": -71.9144
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-11-03",
-      "when": "Tuesday",
+      "when": "tomorrow night",
       "time": "16:39",
       "top": [
         {
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
           "place": "Peterborough, NH",
-          "score": 51,
-          "label": "Worth it",
+          "score": 43,
+          "label": "Marginal",
           "drive": 104,
           "flags": [
             "horizon blocked",
-            "cirrus overhead",
-            "afterglow to 17:24"
+            "cirrus overhead"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:24. Be set up early. (Sun-crossing score alone: 37.)",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "16:39",
           "lat": 42.8619,
           "lon": -71.8788
@@ -137,10 +138,11 @@
           "id": "newburyportharborlight",
           "name": "Newburyport Harbor Light",
           "place": "Newburyport, MA",
-          "score": 45,
+          "score": 41,
           "label": "Marginal",
           "drive": 110,
           "flags": [
+            "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
@@ -149,24 +151,24 @@
           "lon": -70.819
         },
         {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 43,
+          "id": "kitterypoint",
+          "name": "Kittery Point",
+          "place": "Kittery, ME",
+          "score": 37,
           "label": "Marginal",
-          "drive": 80,
+          "drive": 94,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "16:38",
-          "lat": 43.385,
-          "lon": -71.857
+          "time": "16:34",
+          "lat": 43.06,
+          "lon": -70.698
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 4:41 PM. Best bet: Mount Ascutney Summit, 83, Go. cirrus overhead. 1 hour 51 minutes away. Then Mount Cardigan Summit 83, and Jenne Farm 79.\n\nSunrise tomorrow at 6:24 AM. Best bet: Mount Avalon, 84, Go. horizon open, cirrus overhead. 1 hour 24 minutes away. Then Middle Sugarloaf 84, and Bretton Woods 80.",
+  "text": "Sunset tonight at 4:33 PM. Best bet: Sebago Lake State Park, 82, Go. cirrus overhead, afterglow to 17:18. 1 hour 35 minutes away. Then Green Mountain Fire Tower 80, and Peacham Village 78.\n\nSunrise this morning at 6:26 AM. Best bet: The Rocks, 79, Go. cirrus overhead. 1 hour 1 minutes away. Then Mount Avalon 79, and Mount Cardigan Summit 78.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
