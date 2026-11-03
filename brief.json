@@ -1,110 +1,113 @@
 {
-  "generated": "2026-11-03T07:43:05.592Z",
+  "generated": "2026-11-03T15:58:39.057Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-11-03",
       "when": "tonight",
-      "time": "16:33",
+      "time": "16:38",
       "top": [
         {
-          "id": "longsands",
-          "name": "Long Sands Beach",
-          "place": "Cape Neddick, ME",
-          "score": 46,
-          "label": "Worth it",
-          "drive": 91,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun sets outside this spot's open arc.",
-          "time": "16:33",
-          "lat": 43.16,
-          "lon": -70.621
-        },
-        {
-          "id": "nubble",
-          "name": "Nubble Light",
-          "place": "York, ME",
-          "score": 43,
+          "id": "bog",
+          "name": "Bog Mountain",
+          "place": "Wilmot, NH",
+          "score": 31,
           "label": "Marginal",
-          "drive": 95,
+          "drive": 46,
           "flags": [
+            "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun sets outside this spot's open arc.",
-          "time": "16:33",
-          "lat": 43.166,
-          "lon": -70.593
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "16:38",
+          "lat": 43.469,
+          "lon": -71.93
         },
         {
-          "id": "kitterypoint",
-          "name": "Kittery Point",
-          "place": "Kittery, ME",
-          "score": 41,
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 31,
           "label": "Marginal",
           "drive": 94,
           "flags": [
             "cirrus overhead"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "16:34",
-          "lat": 43.06,
-          "lon": -70.698
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "16:33",
+          "lat": 43.2232,
+          "lon": -70.6919
+        },
+        {
+          "id": "sunapee",
+          "name": "Mount Sunapee Summit",
+          "place": "Newbury, NH",
+          "score": 31,
+          "label": "Marginal",
+          "drive": 70,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "16:39",
+          "lat": 43.321,
+          "lon": -72.084
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-11-03",
-      "when": "this morning",
-      "time": "06:25",
+      "day": "2026-11-04",
+      "when": "tomorrow",
+      "time": "06:30",
       "top": [
+        {
+          "id": "ascutney",
+          "name": "Mount Ascutney Summit",
+          "place": "Windsor, VT",
+          "score": 69,
+          "label": "Strong",
+          "drive": 111,
+          "flags": [
+            "cirrus overhead",
+            "pre-glow from 05:45"
+          ],
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:45, before the sun is up. Be set up early. (Sun-crossing score alone: 53.)",
+          "time": "06:30",
+          "lat": 43.4445,
+          "lon": -72.4537
+        },
         {
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
           "place": "Peterborough, NH",
-          "score": 72,
+          "score": 69,
           "label": "Strong",
           "drive": 104,
           "flags": [
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:25",
+          "time": "06:26",
           "lat": 42.8619,
           "lon": -71.8788
         },
         {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 71,
+          "id": "cardigan",
+          "name": "Mount Cardigan Summit",
+          "place": "Orange, NH",
+          "score": 67,
           "label": "Strong",
-          "drive": 80,
+          "drive": 57,
           "flags": [
             "cirrus overhead"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:26",
-          "lat": 43.385,
-          "lon": -71.857
-        },
-        {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 70,
-          "label": "Strong",
-          "drive": 70,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "06:27",
-          "lat": 43.321,
-          "lon": -72.084
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "06:28",
+          "lat": 43.6495,
+          "lon": -71.9144
         }
       ]
     },
@@ -112,59 +115,59 @@
       "ev": "sunset",
       "day": "2026-11-04",
       "when": "tomorrow night",
-      "time": "16:36",
+      "time": "16:34",
       "top": [
         {
-          "id": "peacham",
-          "name": "Peacham Village",
-          "place": "Peacham, VT",
-          "score": 80,
+          "id": "willoughby",
+          "name": "Lake Willoughby",
+          "place": "Westmore, VT",
+          "score": 77,
           "label": "Go",
-          "drive": 98,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "16:36",
-          "lat": 44.328,
-          "lon": -72.175
-        },
-        {
-          "id": "owlshead",
-          "name": "Owl's Head, Groton State Forest",
-          "place": "Groton, VT",
-          "score": 80,
-          "label": "Go",
-          "drive": 108,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "16:36",
-          "lat": 44.297,
-          "lon": -72.295
-        },
-        {
-          "id": "lyndon",
-          "name": "Lyndon Farm Fields",
-          "place": "Northeast Kingdom, VT",
-          "score": 80,
-          "label": "Go",
-          "drive": 96,
+          "drive": 112,
           "flags": [
             "horizon open",
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
           "time": "16:34",
-          "lat": 44.565,
-          "lon": -71.973
+          "lat": 44.735,
+          "lon": -72.047
+        },
+        {
+          "id": "jobspond",
+          "name": "Jobs Pond",
+          "place": "Westmore, VT",
+          "score": 77,
+          "label": "Go",
+          "drive": 118,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "16:34",
+          "lat": 44.7622,
+          "lon": -71.9534
+        },
+        {
+          "id": "willoughbysouth",
+          "name": "Lake Willoughby, south end",
+          "place": "Westmore, VT",
+          "score": 67,
+          "label": "Strong",
+          "drive": 110,
+          "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun sets outside this spot's open arc.",
+          "time": "16:34",
+          "lat": 44.717,
+          "lon": -72.031
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 4:33 PM. Best bet: Long Sands Beach, 46, Worth it. cirrus overhead. 1 hour 31 minutes away. Then Nubble Light 43, and Kittery Point 41.\n\nSunrise this morning at 6:25 AM. Best bet: Pack Monadnock (Miller SP), 72, Strong. cirrus overhead. 1 hour 44 minutes away. Then Mount Kearsarge Summit 71, and Mount Sunapee Summit 70.",
+  "text": "Sunset tonight at 4:38 PM. Best bet: Bog Mountain, 31, Marginal. horizon blocked, cirrus overhead. 46 minutes away. Then Mount Agamenticus 31, and Mount Sunapee Summit 31.\n\nSunrise tomorrow at 6:30 AM. Best bet: Mount Ascutney Summit, 69, Strong. cirrus overhead, pre-glow from 05:45. 1 hour 51 minutes away. Then Pack Monadnock (Miller SP) 69, and Mount Cardigan Summit 67.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
