@@ -1,114 +1,7 @@
 {
-  "generated": "2026-11-02T18:00:24.004Z",
+  "generated": "2026-11-03T00:54:08.338Z",
   "drive": 120,
   "events": [
-    {
-      "ev": "sunset",
-      "day": "2026-11-02",
-      "when": "tonight",
-      "time": "16:40",
-      "top": [
-        {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 82,
-          "label": "Go",
-          "drive": 104,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "16:40",
-          "lat": 42.8619,
-          "lon": -71.8788
-        },
-        {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 82,
-          "label": "Go",
-          "drive": 61,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "16:36",
-          "lat": 43.3314,
-          "lon": -71.1162
-        },
-        {
-          "id": "ascutney",
-          "name": "Mount Ascutney Summit",
-          "place": "Windsor, VT",
-          "score": 81,
-          "label": "Go",
-          "drive": 111,
-          "flags": [
-            "horizon open",
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "16:41",
-          "lat": 43.4445,
-          "lon": -72.4537
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-11-03",
-      "when": "tomorrow",
-      "time": "06:20",
-      "top": [
-        {
-          "id": "yorkharbor",
-          "name": "York Harbor",
-          "place": "York, ME",
-          "score": 50,
-          "label": "Worth it",
-          "drive": 91,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:20",
-          "lat": 43.147,
-          "lon": -70.626
-        },
-        {
-          "id": "odiorne",
-          "name": "Odiorne Point",
-          "place": "Rye, NH",
-          "score": 48,
-          "label": "Worth it",
-          "drive": 86,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:21",
-          "lat": 43.0431,
-          "lon": -70.7161
-        },
-        {
-          "id": "nubble",
-          "name": "Nubble Light",
-          "place": "York, ME",
-          "score": 48,
-          "label": "Worth it",
-          "drive": 95,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:20",
-          "lat": 43.166,
-          "lon": -70.593
-        }
-      ]
-    },
     {
       "ev": "sunset",
       "day": "2026-11-03",
@@ -119,11 +12,10 @@
           "id": "kitterypoint",
           "name": "Kittery Point",
           "place": "Kittery, ME",
-          "score": 35,
-          "label": "Marginal",
+          "score": 53,
+          "label": "Worth it",
           "drive": 94,
           "flags": [
-            "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
@@ -132,39 +24,153 @@
           "lon": -70.698
         },
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 35,
-          "label": "Marginal",
-          "drive": 104,
+          "id": "odiorne",
+          "name": "Odiorne Point",
+          "place": "Rye, NH",
+          "score": 49,
+          "label": "Worth it",
+          "drive": 86,
           "flags": [
             "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "16:39",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "16:34",
+          "lat": 43.0431,
+          "lon": -70.7161
         },
         {
-          "id": "agamenticus",
-          "name": "Mount Agamenticus",
-          "place": "York, ME",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 94,
+          "id": "newcastle",
+          "name": "New Castle / Portsmouth Harbor",
+          "place": "New Castle, NH",
+          "score": 46,
+          "label": "Worth it",
+          "drive": 87,
           "flags": [
-            "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
+          "time": "16:34",
+          "lat": 43.069,
+          "lon": -70.713
+        }
+      ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-11-03",
+      "when": "tomorrow",
+      "time": "06:21",
+      "top": [
+        {
+          "id": "odiorne",
+          "name": "Odiorne Point",
+          "place": "Rye, NH",
+          "score": 78,
+          "label": "Go",
+          "drive": 86,
+          "flags": [
+            "cirrus overhead",
+            "pre-glow from 05:36"
+          ],
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:36, before the sun is up. Be set up early. (Sun-crossing score alone: 56.)",
+          "time": "06:21",
+          "lat": 43.0431,
+          "lon": -70.7161
+        },
+        {
+          "id": "ryeharbor",
+          "name": "Rye Harbor State Park",
+          "place": "Rye, NH",
+          "score": 78,
+          "label": "Go",
+          "drive": 91,
+          "flags": [
+            "cirrus overhead",
+            "pre-glow from 05:36"
+          ],
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:36, before the sun is up. Be set up early. (Sun-crossing score alone: 57.)",
+          "time": "06:21",
+          "lat": 43.0017,
+          "lon": -70.7446
+        },
+        {
+          "id": "hampton",
+          "name": "Hampton Beach",
+          "place": "Hampton, NH",
+          "score": 77,
+          "label": "Go",
+          "drive": 90,
+          "flags": [
+            "cirrus overhead",
+            "pre-glow from 05:36"
+          ],
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:36, before the sun is up. Be set up early. (Sun-crossing score alone: 59.)",
+          "time": "06:21",
+          "lat": 42.9081,
+          "lon": -70.81
+        }
+      ]
+    },
+    {
+      "ev": "sunset",
+      "day": "2026-11-04",
+      "when": "Wednesday",
+      "time": "16:32",
+      "top": [
+        {
+          "id": "greatglen",
+          "name": "Great Glen / Auto Road Base",
+          "place": "Pinkham Notch, NH",
+          "score": 87,
+          "label": "Go",
+          "drive": 87,
+          "flags": [
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 17:17"
+          ],
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:17. Be set up early. (Sun-crossing score alone: 75.)",
+          "time": "16:32",
+          "lat": 44.261,
+          "lon": -71.257
+        },
+        {
+          "id": "mtwashington",
+          "name": "Mount Washington Summit",
+          "place": "Sargent's Purchase, NH",
+          "score": 87,
+          "label": "Go",
+          "drive": 116,
+          "flags": [
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 17:17"
+          ],
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:17. Be set up early. (Sun-crossing score alone: 75.)",
+          "time": "16:32",
+          "lat": 44.27,
+          "lon": -71.302
+        },
+        {
+          "id": "kancgraham",
+          "name": "C.L. Graham Wangan Overlook",
+          "place": "Kancamagus Hwy, NH",
+          "score": 84,
+          "label": "Go",
+          "drive": 78,
+          "flags": [
+            "horizon open",
+            "cirrus overhead",
+            "afterglow to 17:18"
+          ],
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:18. Be set up early. (Sun-crossing score alone: 70.)",
           "time": "16:33",
-          "lat": 43.2232,
-          "lon": -70.6919
+          "lat": 44.0069,
+          "lon": -71.3608
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 4:40 PM. Best bet: Pack Monadnock (Miller SP), 82, Go. cirrus overhead. 1 hour 44 minutes away. Then Blue Job Mountain Fire Tower 82, and Mount Ascutney Summit 81.\n\nSunrise tomorrow at 6:20 AM. Best bet: York Harbor, 50, Worth it. cirrus overhead. 1 hour 31 minutes away. Then Odiorne Point 48, and Nubble Light 48.",
+  "text": "Sunset tomorrow night at 4:34 PM. Best bet: Kittery Point, 53, Worth it. cirrus overhead. 1 hour 34 minutes away. Then Odiorne Point 49, and New Castle / Portsmouth Harbor 46.\n\nSunrise tomorrow at 6:21 AM. Best bet: Odiorne Point, 78, Go. cirrus overhead, pre-glow from 05:36. 1 hour 26 minutes away. Then Rye Harbor State Park 78, and Hampton Beach 77.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
