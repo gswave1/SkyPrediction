@@ -1,172 +1,175 @@
 {
-  "generated": "2026-11-04T02:00:09.602Z",
+  "generated": "2026-11-04T16:04:37.022Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-11-04",
-      "when": "tomorrow night",
-      "time": "16:34",
+      "when": "tonight",
+      "time": "16:36",
       "top": [
         {
-          "id": "jobspond",
-          "name": "Jobs Pond",
-          "place": "Westmore, VT",
-          "score": 73,
-          "label": "Strong",
-          "drive": 118,
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 86,
+          "label": "Go",
+          "drive": 98,
           "flags": [
+            "horizon open",
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "16:36",
+          "lat": 44.328,
+          "lon": -72.175
+        },
+        {
+          "id": "lyndon",
+          "name": "Lyndon Farm Fields",
+          "place": "Northeast Kingdom, VT",
+          "score": 85,
+          "label": "Go",
+          "drive": 96,
+          "flags": [
+            "horizon open",
             "cirrus overhead"
           ],
           "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
           "time": "16:34",
-          "lat": 44.7622,
-          "lon": -71.9534
+          "lat": 44.565,
+          "lon": -71.973
         },
         {
-          "id": "willoughby",
-          "name": "Lake Willoughby",
-          "place": "Westmore, VT",
-          "score": 70,
-          "label": "Strong",
-          "drive": 112,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
-          "time": "16:34",
-          "lat": 44.735,
-          "lon": -72.047
-        },
-        {
-          "id": "willoughbysouth",
-          "name": "Lake Willoughby, south end",
-          "place": "Westmore, VT",
-          "score": 69,
-          "label": "Strong",
+          "id": "burkemtn",
+          "name": "Burke Mountain",
+          "place": "East Burke, VT",
+          "score": 85,
+          "label": "Go",
           "drive": 110,
           "flags": [
+            "horizon open",
             "cirrus overhead"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. And the sun sets outside this spot's open arc.",
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
           "time": "16:34",
-          "lat": 44.717,
-          "lon": -72.031
+          "lat": 44.5705,
+          "lon": -71.893
         }
       ]
     },
     {
       "ev": "sunrise",
-      "day": "2026-11-04",
+      "day": "2026-11-05",
       "when": "tomorrow",
-      "time": "06:27",
+      "time": "06:28",
       "top": [
         {
-          "id": "kearsarge",
-          "name": "Mount Kearsarge Summit",
-          "place": "Wilmot, NH",
-          "score": 77,
-          "label": "Go",
-          "drive": 80,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "06:27",
-          "lat": 43.385,
-          "lon": -71.857
-        },
-        {
-          "id": "sunapee",
-          "name": "Mount Sunapee Summit",
-          "place": "Newbury, NH",
-          "score": 73,
+          "id": "mtwashington",
+          "name": "Mount Washington Summit",
+          "place": "Sargent's Purchase, NH",
+          "score": 70,
           "label": "Strong",
-          "drive": 70,
+          "drive": 116,
           "flags": [
             "cirrus overhead",
             "pre-glow from 05:43"
           ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:43, before the sun is up. Be set up early. (Sun-crossing score alone: 59.)",
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:43, before the sun is up. Be set up early. (Sun-crossing score alone: 39.)",
           "time": "06:28",
-          "lat": 43.321,
-          "lon": -72.084
+          "lat": 44.27,
+          "lon": -71.302
         },
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 70,
+          "id": "randolph",
+          "name": "Randolph",
+          "place": "Randolph, NH",
+          "score": 65,
           "label": "Strong",
-          "drive": 104,
+          "drive": 83,
           "flags": [
             "cirrus overhead",
-            "pre-glow from 05:41"
+            "pre-glow from 05:44"
           ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:41, before the sun is up. Be set up early. (Sun-crossing score alone: 57.)",
-          "time": "06:26",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:44, before the sun is up. Be set up early. (Sun-crossing score alone: 36.)",
+          "time": "06:29",
+          "lat": 44.358,
+          "lon": -71.368
+        },
+        {
+          "id": "middlesugarloaf",
+          "name": "Middle Sugarloaf",
+          "place": "Bethlehem, NH",
+          "score": 63,
+          "label": "Strong",
+          "drive": 71,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "06:29",
+          "lat": 44.2513,
+          "lon": -71.5171
         }
       ]
     },
     {
       "ev": "sunset",
       "day": "2026-11-05",
-      "when": "Thursday",
-      "time": "16:33",
+      "when": "tomorrow night",
+      "time": "16:31",
       "top": [
         {
-          "id": "major",
-          "name": "Mount Major Summit",
-          "place": "Alton, NH",
-          "score": 34,
-          "label": "Marginal",
-          "drive": 33,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "16:33",
-          "lat": 43.5093,
-          "lon": -71.2806
-        },
-        {
-          "id": "belknap",
-          "name": "Belknap Mountain Fire Tower",
-          "place": "Gilford, NH",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 29,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "16:33",
-          "lat": 43.5178,
-          "lon": -71.3689
-        },
-        {
-          "id": "altonbay",
-          "name": "Alton Bay",
-          "place": "Alton, NH",
-          "score": 29,
+          "id": "agamenticus",
+          "name": "Mount Agamenticus",
+          "place": "York, ME",
+          "score": 21,
           "label": "Skip",
-          "drive": 32,
+          "drive": 94,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. And the sun sets outside this spot's open arc.",
-          "time": "16:33",
-          "lat": 43.476,
-          "lon": -71.24
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "16:31",
+          "lat": 43.2232,
+          "lon": -70.6919
+        },
+        {
+          "id": "newburyportharborlight",
+          "name": "Newburyport Harbor Light",
+          "place": "Newburyport, MA",
+          "score": 19,
+          "label": "Skip",
+          "drive": 110,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun sets outside this spot's open arc.",
+          "time": "16:32",
+          "lat": 42.8151,
+          "lon": -70.819
+        },
+        {
+          "id": "yorkharbor",
+          "name": "York Harbor",
+          "place": "York, ME",
+          "score": 18,
+          "label": "Skip",
+          "drive": 91,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun sets outside this spot's open arc.",
+          "time": "16:31",
+          "lat": 43.147,
+          "lon": -70.626
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 4:34 PM. Best bet: Jobs Pond, 73, Strong. cirrus overhead. 1 hour 58 minutes away. Then Lake Willoughby 70, and Lake Willoughby, south end 69.\n\nSunrise tomorrow at 6:27 AM. Best bet: Mount Kearsarge Summit, 77, Go. cirrus overhead. 1 hour 20 minutes away. Then Mount Sunapee Summit 73, and Pack Monadnock (Miller SP) 70.",
+  "text": "Sunset tonight at 4:36 PM. Best bet: Peacham Village, 86, Go. horizon open, cirrus overhead. 1 hour 38 minutes away. Then Lyndon Farm Fields 85, and Burke Mountain 85.\n\nSunrise tomorrow at 6:28 AM. Best bet: Mount Washington Summit, 70, Strong. cirrus overhead, pre-glow from 05:43. 1 hour 56 minutes away. Then Randolph 65, and Middle Sugarloaf 63.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
