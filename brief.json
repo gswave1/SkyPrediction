@@ -1,119 +1,7 @@
 {
-  "generated": "2026-11-05T16:26:24.337Z",
+  "generated": "2026-11-05T22:36:55.980Z",
   "drive": 120,
   "events": [
-    {
-      "ev": "sunset",
-      "day": "2026-11-05",
-      "when": "tonight",
-      "time": "16:31",
-      "top": [
-        {
-          "id": "greenmtn",
-          "name": "Green Mountain Fire Tower",
-          "place": "Effingham, NH",
-          "score": 29,
-          "label": "Skip",
-          "drive": 55,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "16:31",
-          "lat": 43.7675,
-          "lon": -71.0369
-        },
-        {
-          "id": "hampton",
-          "name": "Hampton Beach",
-          "place": "Hampton, NH",
-          "score": 24,
-          "label": "Skip",
-          "drive": 90,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun sets outside this spot's open arc.",
-          "time": "16:32",
-          "lat": 42.9081,
-          "lon": -70.81
-        },
-        {
-          "id": "newburyportharborlight",
-          "name": "Newburyport Harbor Light",
-          "place": "Newburyport, MA",
-          "score": 22,
-          "label": "Skip",
-          "drive": 110,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. And the sun sets outside this spot's open arc.",
-          "time": "16:32",
-          "lat": 42.8151,
-          "lon": -70.819
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-11-06",
-      "when": "tomorrow",
-      "time": "06:33",
-      "top": [
-        {
-          "id": "jennefarm",
-          "name": "Jenne Farm",
-          "place": "Reading, VT",
-          "score": 34,
-          "label": "Marginal",
-          "drive": 111,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:33",
-          "lat": 43.5245,
-          "lon": -72.5596
-        },
-        {
-          "id": "lafayette",
-          "name": "Mount Lafayette Summit",
-          "place": "Franconia Ridge, NH",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 49,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:31",
-          "lat": 44.1608,
-          "lon": -71.6444
-        },
-        {
-          "id": "cannon",
-          "name": "Cannon Mountain Summit",
-          "place": "Franconia Notch, NH",
-          "score": 32,
-          "label": "Marginal",
-          "drive": 51,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:31",
-          "lat": 44.1569,
-          "lon": -71.6992
-        }
-      ]
-    },
     {
       "ev": "sunset",
       "day": "2026-11-06",
@@ -121,19 +9,34 @@
       "time": "16:32",
       "top": [
         {
-          "id": "sugarhill",
-          "name": "Sunset Hill, Sugar Hill",
-          "place": "Sugar Hill, NH",
+          "id": "profilelake",
+          "name": "Profile Lake",
+          "place": "Franconia Notch, NH",
           "score": 53,
           "label": "Worth it",
-          "drive": 61,
+          "drive": 51,
           "flags": [
             "cirrus overhead"
           ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated.",
           "time": "16:32",
-          "lat": 44.217,
-          "lon": -71.783
+          "lat": 44.162,
+          "lon": -71.677
+        },
+        {
+          "id": "echolake",
+          "name": "Echo Lake",
+          "place": "Franconia Notch, NH",
+          "score": 53,
+          "label": "Worth it",
+          "drive": 60,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "16:32",
+          "lat": 44.187,
+          "lon": -71.69
         },
         {
           "id": "artists",
@@ -149,25 +52,119 @@
           "time": "16:32",
           "lat": 44.181,
           "lon": -71.695
-        },
+        }
+      ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-11-06",
+      "when": "tomorrow",
+      "time": "06:33",
+      "top": [
         {
-          "id": "profilelake",
-          "name": "Profile Lake",
-          "place": "Franconia Notch, NH",
-          "score": 53,
-          "label": "Worth it",
-          "drive": 51,
+          "id": "willoughbysouth",
+          "name": "Lake Willoughby, south end",
+          "place": "Westmore, VT",
+          "score": 30,
+          "label": "Skip",
+          "drive": 110,
           "flags": [
+            "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "16:32",
-          "lat": 44.162,
-          "lon": -71.677
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:33",
+          "lat": 44.717,
+          "lon": -72.031
+        },
+        {
+          "id": "newfound",
+          "name": "Newfound Lake, Wellington",
+          "place": "Bristol, NH",
+          "score": 28,
+          "label": "Skip",
+          "drive": 33,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:30",
+          "lat": 43.664,
+          "lon": -71.767
+        },
+        {
+          "id": "cannon",
+          "name": "Cannon Mountain Summit",
+          "place": "Franconia Notch, NH",
+          "score": 28,
+          "label": "Skip",
+          "drive": 51,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:31",
+          "lat": 44.1569,
+          "lon": -71.6992
+        }
+      ]
+    },
+    {
+      "ev": "sunset",
+      "day": "2026-11-07",
+      "when": "Saturday",
+      "time": "16:34",
+      "top": [
+        {
+          "id": "packmonadnock",
+          "name": "Pack Monadnock (Miller SP)",
+          "place": "Peterborough, NH",
+          "score": 4,
+          "label": "Skip",
+          "drive": 104,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "16:34",
+          "lat": 42.8619,
+          "lon": -71.8788
+        },
+        {
+          "id": "bog",
+          "name": "Bog Mountain",
+          "place": "Wilmot, NH",
+          "score": 4,
+          "label": "Skip",
+          "drive": 46,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "16:33",
+          "lat": 43.469,
+          "lon": -71.93
+        },
+        {
+          "id": "bluejob",
+          "name": "Blue Job Mountain Fire Tower",
+          "place": "Farmington, NH",
+          "score": 4,
+          "label": "Skip",
+          "drive": 61,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "16:30",
+          "lat": 43.3314,
+          "lon": -71.1162
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 4:31 PM. Nothing looks good. The best is Green Mountain Fire Tower at 29. \n\nSunrise tomorrow at 6:33 AM. Best bet: Jenne Farm, 34, Marginal. horizon blocked, cirrus overhead. 1 hour 51 minutes away. Then Mount Lafayette Summit 33, and Cannon Mountain Summit 32.",
+  "text": "Sunset tomorrow night at 4:32 PM. Best bet: Profile Lake, 53, Worth it. cirrus overhead. 51 minutes away. Then Echo Lake 53, and Artist's Bluff 53.\n\nSunrise tomorrow at 6:33 AM. Best bet: Lake Willoughby, south end, 30, Skip. horizon blocked, cirrus overhead. 1 hour 50 minutes away.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
