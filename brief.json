@@ -1,59 +1,60 @@
 {
-  "generated": "2026-11-04T22:29:58.894Z",
+  "generated": "2026-11-05T03:19:09.883Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-11-05",
       "when": "tomorrow night",
-      "time": "16:31",
+      "time": "16:29",
       "top": [
         {
-          "id": "greenmtn",
-          "name": "Green Mountain Fire Tower",
-          "place": "Effingham, NH",
-          "score": 21,
-          "label": "Skip",
-          "drive": 55,
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 33,
+          "label": "Marginal",
+          "drive": 95,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "16:31",
-          "lat": 43.7675,
-          "lon": -71.0369
+          "time": "16:29",
+          "lat": 43.9209,
+          "lon": -70.5806
         },
         {
-          "id": "profilelake",
-          "name": "Profile Lake",
-          "place": "Franconia Notch, NH",
-          "score": 17,
-          "label": "Skip",
-          "drive": 51,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "16:33",
-          "lat": 44.162,
-          "lon": -71.677
-        },
-        {
-          "id": "eaton",
-          "name": "Crystal Lake",
-          "place": "Eaton, NH",
-          "score": 17,
-          "label": "Skip",
+          "id": "greenmtn",
+          "name": "Green Mountain Fire Tower",
+          "place": "Effingham, NH",
+          "score": 31,
+          "label": "Marginal",
           "drive": 55,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "16:31",
-          "lat": 43.914,
-          "lon": -71.074
+          "lat": 43.7675,
+          "lon": -71.0369
+        },
+        {
+          "id": "wolfeboro",
+          "name": "Wolfeboro Town Docks",
+          "place": "Wolfeboro, NH",
+          "score": 18,
+          "label": "Skip",
+          "drive": 46,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "16:32",
+          "lat": 43.582,
+          "lon": -71.21
         }
       ]
     },
@@ -61,56 +62,52 @@
       "ev": "sunrise",
       "day": "2026-11-05",
       "when": "tomorrow",
-      "time": "06:31",
+      "time": "06:32",
       "top": [
         {
-          "id": "lyndon",
-          "name": "Lyndon Farm Fields",
-          "place": "Northeast Kingdom, VT",
-          "score": 71,
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 74,
           "label": "Strong",
-          "drive": 96,
+          "drive": 108,
           "flags": [
-            "cirrus overhead",
-            "pre-glow from 05:46"
+            "cirrus overhead"
           ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:46, before the sun is up. Be set up early. (Sun-crossing score alone: 43.)",
-          "time": "06:31",
-          "lat": 44.565,
-          "lon": -71.973
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "06:32",
+          "lat": 44.297,
+          "lon": -72.295
         },
         {
-          "id": "burkemtn",
-          "name": "Burke Mountain",
-          "place": "East Burke, VT",
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
           "score": 70,
           "label": "Strong",
-          "drive": 110,
+          "drive": 98,
           "flags": [
-            "cirrus overhead",
-            "pre-glow from 05:46"
+            "cirrus overhead"
           ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:46, before the sun is up. Be set up early. (Sun-crossing score alone: 40.)",
-          "time": "06:31",
-          "lat": 44.5705,
-          "lon": -71.893
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "06:32",
+          "lat": 44.328,
+          "lon": -72.175
         },
         {
-          "id": "kimballrd",
-          "name": "Kimball Road",
-          "place": "Lunenburg, VT",
+          "id": "newfound",
+          "name": "Newfound Lake, Wellington",
+          "place": "Bristol, NH",
           "score": 67,
           "label": "Strong",
-          "drive": 89,
+          "drive": 33,
           "flags": [
-            "cirrus overhead",
-            "pre-glow from 05:45",
-            "valley fog possible (49)"
+            "cirrus overhead"
           ],
-          "why": "Pre-glow: a sheet of high cloud over a clear gap — the whole sky can go red from about 05:45, before the sun is up. Be set up early. (Sun-crossing score alone: 32.)",
-          "time": "06:30",
-          "lat": 44.4759,
-          "lon": -71.7045
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination.",
+          "time": "06:29",
+          "lat": 43.664,
+          "lon": -71.767
         }
       ]
     },
@@ -118,59 +115,59 @@
       "ev": "sunset",
       "day": "2026-11-06",
       "when": "Friday",
-      "time": "16:32",
+      "time": "16:30",
       "top": [
         {
-          "id": "cannon",
-          "name": "Cannon Mountain Summit",
-          "place": "Franconia Notch, NH",
-          "score": 48,
+          "id": "rockygorge",
+          "name": "Rocky Gorge",
+          "place": "Kancamagus Hwy, NH",
+          "score": 55,
           "label": "Worth it",
-          "drive": 51,
+          "drive": 62,
           "flags": [
             "cirrus overhead",
-            "afterglow to 17:17"
+            "afterglow to 17:15"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:17. Be set up early. (Sun-crossing score alone: 28.)",
-          "time": "16:32",
-          "lat": 44.1569,
-          "lon": -71.6992
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:15. Be set up early. (Sun-crossing score alone: 37.)",
+          "time": "16:30",
+          "lat": 44.004,
+          "lon": -71.278
         },
         {
-          "id": "profilelake",
-          "name": "Profile Lake",
-          "place": "Franconia Notch, NH",
-          "score": 48,
+          "id": "lowerfalls",
+          "name": "Lower Falls, Swift River",
+          "place": "Albany, NH",
+          "score": 52,
           "label": "Worth it",
-          "drive": 51,
+          "drive": 57,
           "flags": [
             "cirrus overhead",
-            "afterglow to 17:17"
+            "afterglow to 17:15"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:17. Be set up early. (Sun-crossing score alone: 28.)",
-          "time": "16:32",
-          "lat": 44.162,
-          "lon": -71.677
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:15. Be set up early. (Sun-crossing score alone: 35.)",
+          "time": "16:30",
+          "lat": 43.9964,
+          "lon": -71.2336
         },
         {
-          "id": "mtpercival",
-          "name": "Mount Percival",
-          "place": "Sandwich, NH",
-          "score": 47,
+          "id": "sebago",
+          "name": "Sebago Lake State Park",
+          "place": "Casco, ME",
+          "score": 50,
           "label": "Worth it",
-          "drive": 28,
+          "drive": 95,
           "flags": [
             "cirrus overhead",
-            "afterglow to 17:17"
+            "afterglow to 17:13"
           ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:17. Be set up early. (Sun-crossing score alone: 26.)",
-          "time": "16:32",
-          "lat": 43.8022,
-          "lon": -71.5225
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:13. Be set up early. (Sun-crossing score alone: 27.)",
+          "time": "16:28",
+          "lat": 43.9209,
+          "lon": -70.5806
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 4:31 PM. Nothing looks good. The best is Green Mountain Fire Tower at 21. \n\nSunrise tomorrow at 6:31 AM. Best bet: Lyndon Farm Fields, 71, Strong. cirrus overhead, pre-glow from 05:46. 1 hour 36 minutes away. Then Burke Mountain 70, and Kimball Road 67.",
+  "text": "Sunset tomorrow night at 4:29 PM. Best bet: Sebago Lake State Park, 33, Marginal. horizon blocked, cirrus overhead. 1 hour 35 minutes away. Then Green Mountain Fire Tower 31.\n\nSunrise tomorrow at 6:32 AM. Best bet: Owl's Head, Groton State Forest, 74, Strong. cirrus overhead. 1 hour 48 minutes away. Then Peacham Village 70, and Newfound Lake, Wellington 67.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
