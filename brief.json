@@ -1,172 +1,166 @@
 {
-  "generated": "2026-11-06T03:18:04.599Z",
+  "generated": "2026-11-06T15:46:51.524Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
       "day": "2026-11-06",
-      "when": "tomorrow night",
-      "time": "16:32",
+      "when": "tonight",
+      "time": "16:33",
       "top": [
-        {
-          "id": "baldmtn",
-          "name": "Bald Mountain",
-          "place": "Franconia Notch, NH",
-          "score": 68,
-          "label": "Strong",
-          "drive": 52,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "16:32",
-          "lat": 44.183,
-          "lon": -71.704
-        },
-        {
-          "id": "jefferson",
-          "name": "Jefferson Fields",
-          "place": "Jefferson, NH",
-          "score": 63,
-          "label": "Strong",
-          "drive": 78,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead",
-            "afterglow to 17:15"
-          ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:15. Be set up early. (Sun-crossing score alone: 47.)",
-          "time": "16:30",
-          "lat": 44.3892,
-          "lon": -71.4789
-        },
-        {
-          "id": "profilelake",
-          "name": "Profile Lake",
-          "place": "Franconia Notch, NH",
-          "score": 63,
-          "label": "Strong",
-          "drive": 51,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "16:32",
-          "lat": 44.162,
-          "lon": -71.677
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-11-06",
-      "when": "tomorrow",
-      "time": "06:33",
-      "top": [
-        {
-          "id": "willoughbysouth",
-          "name": "Lake Willoughby, south end",
-          "place": "Westmore, VT",
-          "score": 33,
-          "label": "Marginal",
-          "drive": 110,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:33",
-          "lat": 44.717,
-          "lon": -72.031
-        },
         {
           "id": "peacham",
           "name": "Peacham Village",
           "place": "Peacham, VT",
-          "score": 31,
-          "label": "Marginal",
+          "score": 58,
+          "label": "Worth it",
           "drive": 98,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:33",
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "16:33",
           "lat": 44.328,
           "lon": -72.175
+        },
+        {
+          "id": "burkemtn",
+          "name": "Burke Mountain",
+          "place": "East Burke, VT",
+          "score": 54,
+          "label": "Worth it",
+          "drive": 110,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "16:31",
+          "lat": 44.5705,
+          "lon": -71.893
         },
         {
           "id": "owlshead",
           "name": "Owl's Head, Groton State Forest",
           "place": "Groton, VT",
-          "score": 30,
-          "label": "Marginal",
+          "score": 50,
+          "label": "Worth it",
           "drive": 108,
-          "flags": [
-            "horizon blocked",
-            "cirrus overhead"
-          ],
-          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
-          "time": "06:34",
+          "flags": [],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "16:34",
           "lat": 44.297,
           "lon": -72.295
         }
       ]
     },
     {
-      "ev": "sunset",
+      "ev": "sunrise",
       "day": "2026-11-07",
-      "when": "Saturday",
-      "time": "16:31",
+      "when": "tomorrow",
+      "time": "06:26",
       "top": [
         {
-          "id": "sugarhill",
-          "name": "Sunset Hill, Sugar Hill",
-          "place": "Sugar Hill, NH",
-          "score": 5,
+          "id": "yorkharbor",
+          "name": "York Harbor",
+          "place": "York, ME",
+          "score": 11,
           "label": "Skip",
-          "drive": 61,
+          "drive": 91,
           "flags": [
-            "horizon blocked"
+            "horizon blocked",
+            "cirrus overhead"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. Showers around.",
-          "time": "16:31",
-          "lat": 44.217,
-          "lon": -71.783
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:26",
+          "lat": 43.147,
+          "lon": -70.626
         },
         {
-          "id": "burkemtn",
-          "name": "Burke Mountain",
-          "place": "East Burke, VT",
-          "score": 4,
+          "id": "nubble",
+          "name": "Nubble Light",
+          "place": "York, ME",
+          "score": 11,
           "label": "Skip",
-          "drive": 110,
+          "drive": 95,
           "flags": [
-            "horizon blocked"
+            "horizon blocked",
+            "cirrus overhead"
           ],
-          "why": "Rain at showtime — the gap would have to open fast.",
-          "time": "16:30",
-          "lat": 44.5705,
-          "lon": -71.893
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:26",
+          "lat": 43.166,
+          "lon": -70.593
         },
         {
-          "id": "packmonadnock",
-          "name": "Pack Monadnock (Miller SP)",
-          "place": "Peterborough, NH",
-          "score": 4,
+          "id": "longsands",
+          "name": "Long Sands Beach",
+          "place": "Cape Neddick, ME",
+          "score": 11,
           "label": "Skip",
-          "drive": 104,
+          "drive": 91,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 80 km out.",
+          "time": "06:26",
+          "lat": 43.16,
+          "lon": -70.621
+        }
+      ]
+    },
+    {
+      "ev": "sunset",
+      "day": "2026-11-07",
+      "when": "tomorrow night",
+      "time": "16:32",
+      "top": [
+        {
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 7,
+          "label": "Skip",
+          "drive": 108,
           "flags": [
             "horizon blocked"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "16:34",
-          "lat": 42.8619,
-          "lon": -71.8788
+          "time": "16:32",
+          "lat": 44.297,
+          "lon": -72.295
+        },
+        {
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 7,
+          "label": "Skip",
+          "drive": 98,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "16:32",
+          "lat": 44.328,
+          "lon": -72.175
+        },
+        {
+          "id": "castle",
+          "name": "Castle in the Clouds Overlook",
+          "place": "Moultonborough, NH",
+          "score": 6,
+          "label": "Skip",
+          "drive": 26,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "16:30",
+          "lat": 43.747,
+          "lon": -71.323
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 4:32 PM. Best bet: Bald Mountain, 68, Strong. cirrus overhead. 52 minutes away. Then Jefferson Fields 63, and Profile Lake 63.\n\nSunrise tomorrow at 6:33 AM. Best bet: Lake Willoughby, south end, 33, Marginal. horizon blocked, cirrus overhead. 1 hour 50 minutes away. Then Peacham Village 31, and Owl's Head, Groton State Forest 30.",
+  "text": "Sunset tonight at 4:33 PM. Best bet: Peacham Village, 58, Worth it. 1 hour 38 minutes away. Then Burke Mountain 54, and Owl's Head, Groton State Forest 50.\n\nSunrise tomorrow at 6:26 AM. Nothing looks good. The best is York Harbor at 11. ",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
