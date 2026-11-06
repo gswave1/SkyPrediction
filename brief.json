@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T22:36:55.980Z",
+  "generated": "2026-11-06T03:18:04.599Z",
   "drive": 120,
   "events": [
     {
@@ -9,11 +9,43 @@
       "time": "16:32",
       "top": [
         {
+          "id": "baldmtn",
+          "name": "Bald Mountain",
+          "place": "Franconia Notch, NH",
+          "score": 68,
+          "label": "Strong",
+          "drive": 52,
+          "flags": [
+            "cirrus overhead"
+          ],
+          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "16:32",
+          "lat": 44.183,
+          "lon": -71.704
+        },
+        {
+          "id": "jefferson",
+          "name": "Jefferson Fields",
+          "place": "Jefferson, NH",
+          "score": 63,
+          "label": "Strong",
+          "drive": 78,
+          "flags": [
+            "horizon blocked",
+            "cirrus overhead",
+            "afterglow to 17:15"
+          ],
+          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:15. Be set up early. (Sun-crossing score alone: 47.)",
+          "time": "16:30",
+          "lat": 44.3892,
+          "lon": -71.4789
+        },
+        {
           "id": "profilelake",
           "name": "Profile Lake",
           "place": "Franconia Notch, NH",
-          "score": 53,
-          "label": "Worth it",
+          "score": 63,
+          "label": "Strong",
           "drive": 51,
           "flags": [
             "cirrus overhead"
@@ -22,36 +54,6 @@
           "time": "16:32",
           "lat": 44.162,
           "lon": -71.677
-        },
-        {
-          "id": "echolake",
-          "name": "Echo Lake",
-          "place": "Franconia Notch, NH",
-          "score": 53,
-          "label": "Worth it",
-          "drive": 60,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "16:32",
-          "lat": 44.187,
-          "lon": -71.69
-        },
-        {
-          "id": "artists",
-          "name": "Artist's Bluff",
-          "place": "Franconia Notch, NH",
-          "score": 53,
-          "label": "Worth it",
-          "drive": 51,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "16:32",
-          "lat": 44.181,
-          "lon": -71.695
         }
       ]
     },
@@ -65,49 +67,49 @@
           "id": "willoughbysouth",
           "name": "Lake Willoughby, south end",
           "place": "Westmore, VT",
-          "score": 30,
-          "label": "Skip",
+          "score": 33,
+          "label": "Marginal",
           "drive": 110,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
           "time": "06:33",
           "lat": 44.717,
           "lon": -72.031
         },
         {
-          "id": "newfound",
-          "name": "Newfound Lake, Wellington",
-          "place": "Bristol, NH",
-          "score": 28,
-          "label": "Skip",
-          "drive": 33,
+          "id": "peacham",
+          "name": "Peacham Village",
+          "place": "Peacham, VT",
+          "score": 31,
+          "label": "Marginal",
+          "drive": 98,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "06:30",
-          "lat": 43.664,
-          "lon": -71.767
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:33",
+          "lat": 44.328,
+          "lon": -72.175
         },
         {
-          "id": "cannon",
-          "name": "Cannon Mountain Summit",
-          "place": "Franconia Notch, NH",
-          "score": 28,
-          "label": "Skip",
-          "drive": 51,
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 30,
+          "label": "Marginal",
+          "drive": 108,
           "flags": [
             "horizon blocked",
             "cirrus overhead"
           ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "06:31",
-          "lat": 44.1569,
-          "lon": -71.6992
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in.",
+          "time": "06:34",
+          "lat": 44.297,
+          "lon": -72.295
         }
       ]
     },
@@ -115,8 +117,38 @@
       "ev": "sunset",
       "day": "2026-11-07",
       "when": "Saturday",
-      "time": "16:34",
+      "time": "16:31",
       "top": [
+        {
+          "id": "sugarhill",
+          "name": "Sunset Hill, Sugar Hill",
+          "place": "Sugar Hill, NH",
+          "score": 5,
+          "label": "Skip",
+          "drive": 61,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out. Showers around.",
+          "time": "16:31",
+          "lat": 44.217,
+          "lon": -71.783
+        },
+        {
+          "id": "burkemtn",
+          "name": "Burke Mountain",
+          "place": "East Burke, VT",
+          "score": 4,
+          "label": "Skip",
+          "drive": 110,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Rain at showtime — the gap would have to open fast.",
+          "time": "16:30",
+          "lat": 44.5705,
+          "lon": -71.893
+        },
         {
           "id": "packmonadnock",
           "name": "Pack Monadnock (Miller SP)",
@@ -131,40 +163,10 @@
           "time": "16:34",
           "lat": 42.8619,
           "lon": -71.8788
-        },
-        {
-          "id": "bog",
-          "name": "Bog Mountain",
-          "place": "Wilmot, NH",
-          "score": 4,
-          "label": "Skip",
-          "drive": 46,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "16:33",
-          "lat": 43.469,
-          "lon": -71.93
-        },
-        {
-          "id": "bluejob",
-          "name": "Blue Job Mountain Fire Tower",
-          "place": "Farmington, NH",
-          "score": 4,
-          "label": "Skip",
-          "drive": 61,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "16:30",
-          "lat": 43.3314,
-          "lon": -71.1162
         }
       ]
     }
   ],
-  "text": "Sunset tomorrow night at 4:32 PM. Best bet: Profile Lake, 53, Worth it. cirrus overhead. 51 minutes away. Then Echo Lake 53, and Artist's Bluff 53.\n\nSunrise tomorrow at 6:33 AM. Best bet: Lake Willoughby, south end, 30, Skip. horizon blocked, cirrus overhead. 1 hour 50 minutes away.",
+  "text": "Sunset tomorrow night at 4:32 PM. Best bet: Bald Mountain, 68, Strong. cirrus overhead. 52 minutes away. Then Jefferson Fields 63, and Profile Lake 63.\n\nSunrise tomorrow at 6:33 AM. Best bet: Lake Willoughby, south end, 33, Marginal. horizon blocked, cirrus overhead. 1 hour 50 minutes away. Then Peacham Village 31, and Owl's Head, Groton State Forest 30.",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
