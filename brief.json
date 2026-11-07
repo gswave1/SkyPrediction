@@ -1,140 +1,33 @@
 {
-  "generated": "2026-11-06T21:23:05.443Z",
+  "generated": "2026-11-07T01:43:21.211Z",
   "drive": 120,
   "events": [
     {
       "ev": "sunset",
-      "day": "2026-11-06",
-      "when": "tonight",
-      "time": "16:30",
-      "top": [
-        {
-          "id": "jefferson",
-          "name": "Jefferson Fields",
-          "place": "Jefferson, NH",
-          "score": 76,
-          "label": "Go",
-          "drive": 78,
-          "flags": [
-            "cirrus overhead",
-            "afterglow to 17:15"
-          ],
-          "why": "Afterglow: a sheet of high cloud over a clear gap — the whole sky can go red after sunset, until about 17:15. Be set up early. (Sun-crossing score alone: 51.)",
-          "time": "16:30",
-          "lat": 44.3892,
-          "lon": -71.4789
-        },
-        {
-          "id": "cherrypond",
-          "name": "Little Cherry Pond",
-          "place": "Pondicherry NWR, NH",
-          "score": 76,
-          "label": "Go",
-          "drive": 81,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated. And the sun sets outside this spot's open arc.",
-          "time": "16:30",
-          "lat": 44.3761,
-          "lon": -71.5188
-        },
-        {
-          "id": "ascutney",
-          "name": "Mount Ascutney Summit",
-          "place": "Windsor, VT",
-          "score": 67,
-          "label": "Strong",
-          "drive": 111,
-          "flags": [
-            "cirrus overhead"
-          ],
-          "why": "Confirmed cirrus overhead with an open gap at the horizon. That's the combination. Rain cleared through earlier — washed air, so the color should run saturated.",
-          "time": "16:36",
-          "lat": 43.4445,
-          "lon": -72.4537
-        }
-      ]
-    },
-    {
-      "ev": "sunrise",
-      "day": "2026-11-07",
-      "when": "tomorrow",
-      "time": "06:32",
-      "top": [
-        {
-          "id": "cannon",
-          "name": "Cannon Mountain Summit",
-          "place": "Franconia Notch, NH",
-          "score": 12,
-          "label": "Skip",
-          "drive": 51,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "06:32",
-          "lat": 44.1569,
-          "lon": -71.6992
-        },
-        {
-          "id": "lafayette",
-          "name": "Mount Lafayette Summit",
-          "place": "Franconia Ridge, NH",
-          "score": 11,
-          "label": "Skip",
-          "drive": 49,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "06:32",
-          "lat": 44.1608,
-          "lon": -71.6444
-        },
-        {
-          "id": "willoughbysouth",
-          "name": "Lake Willoughby, south end",
-          "place": "Westmore, VT",
-          "score": 11,
-          "label": "Skip",
-          "drive": 110,
-          "flags": [
-            "horizon blocked"
-          ],
-          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "06:35",
-          "lat": 44.717,
-          "lon": -72.031
-        }
-      ]
-    },
-    {
-      "ev": "sunset",
       "day": "2026-11-07",
       "when": "tomorrow night",
-      "time": "16:30",
+      "time": "16:29",
       "top": [
         {
-          "id": "castle",
-          "name": "Castle in the Clouds Overlook",
-          "place": "Moultonborough, NH",
-          "score": 7,
+          "id": "chocoruasummit",
+          "name": "Mount Chocorua Summit",
+          "place": "Albany, NH",
+          "score": 5,
           "label": "Skip",
-          "drive": 26,
+          "drive": 46,
           "flags": [
             "horizon blocked"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "16:30",
-          "lat": 43.747,
-          "lon": -71.323
+          "time": "16:29",
+          "lat": 43.9541,
+          "lon": -71.2734
         },
         {
           "id": "randolph",
           "name": "Randolph",
           "place": "Randolph, NH",
-          "score": 6,
+          "score": 5,
           "label": "Skip",
           "drive": 83,
           "flags": [
@@ -146,23 +39,129 @@
           "lon": -71.368
         },
         {
-          "id": "belknap",
-          "name": "Belknap Mountain Fire Tower",
-          "place": "Gilford, NH",
-          "score": 6,
+          "id": "centerharb",
+          "name": "Center Harbor Town Dock",
+          "place": "Center Harbor, NH",
+          "score": 5,
           "label": "Skip",
-          "drive": 29,
+          "drive": 10,
           "flags": [
             "horizon blocked"
           ],
           "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
-          "time": "16:31",
-          "lat": 43.5178,
-          "lon": -71.3689
+          "time": "16:30",
+          "lat": 43.71,
+          "lon": -71.467
+        }
+      ]
+    },
+    {
+      "ev": "sunrise",
+      "day": "2026-11-07",
+      "when": "tomorrow",
+      "time": "06:31",
+      "top": [
+        {
+          "id": "mtpercival",
+          "name": "Mount Percival",
+          "place": "Sandwich, NH",
+          "score": 10,
+          "label": "Skip",
+          "drive": 28,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:31",
+          "lat": 43.8022,
+          "lon": -71.5225
+        },
+        {
+          "id": "owlshead",
+          "name": "Owl's Head, Groton State Forest",
+          "place": "Groton, VT",
+          "score": 10,
+          "label": "Skip",
+          "drive": 108,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:35",
+          "lat": 44.297,
+          "lon": -72.295
+        },
+        {
+          "id": "mtisrael",
+          "name": "Mount Israel",
+          "place": "Sandwich, NH",
+          "score": 9,
+          "label": "Skip",
+          "drive": 30,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Light can't get in. Low cloud is parked in the gap the sun has to come through — worst about 150 km out.",
+          "time": "06:31",
+          "lat": 43.8454,
+          "lon": -71.4716
+        }
+      ]
+    },
+    {
+      "ev": "sunset",
+      "day": "2026-11-08",
+      "when": "Sunday",
+      "time": "16:29",
+      "top": [
+        {
+          "id": "castle",
+          "name": "Castle in the Clouds Overlook",
+          "place": "Moultonborough, NH",
+          "score": 48,
+          "label": "Worth it",
+          "drive": 26,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "16:29",
+          "lat": 43.747,
+          "lon": -71.323
+        },
+        {
+          "id": "redhill",
+          "name": "Red Hill Fire Tower",
+          "place": "Moultonborough, NH",
+          "score": 46,
+          "label": "Worth it",
+          "drive": 20,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "16:29",
+          "lat": 43.766,
+          "lon": -71.372
+        },
+        {
+          "id": "ossipee",
+          "name": "Center Ossipee Pond",
+          "place": "Lakes Region, NH",
+          "score": 46,
+          "label": "Worth it",
+          "drive": 33,
+          "flags": [
+            "horizon blocked"
+          ],
+          "why": "Partial setup: some cloud to catch light, some of the gap filled in. Rain cleared through earlier — washed air, so the color should run saturated.",
+          "time": "16:28",
+          "lat": 43.8108,
+          "lon": -71.1878
         }
       ]
     }
   ],
-  "text": "Sunset tonight at 4:30 PM. Best bet: Jefferson Fields, 76, Go. cirrus overhead, afterglow to 17:15. 1 hour 18 minutes away. Then Little Cherry Pond 76, and Mount Ascutney Summit 67.\n\nSunrise tomorrow at 6:32 AM. Nothing looks good. The best is Cannon Mountain Summit at 12. ",
+  "text": "Sunset tomorrow night at 4:29 PM. Nothing looks good. The best is Mount Chocorua Summit at 5. \n\nSunrise tomorrow at 6:31 AM. Nothing looks good. The best is Mount Percival at 10. ",
   "note": "drive = minutes from home (Meredith, NH). all = every spot, unfiltered. Scores 0-100."
 }
